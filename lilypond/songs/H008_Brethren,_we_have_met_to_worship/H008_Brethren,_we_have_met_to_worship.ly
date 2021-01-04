@@ -85,66 +85,44 @@ verseD = \lyricmode {
   Christ will call us home to _ heav -- en. At his ta -- ble we'll sit _ down.
   Christ will _ gird him -- self and _ serve _ us _ with sweet _ man -- na all a -- round.
 }
-%verseE = \lyricmode { }
-%verseF = \lyricmode { }
+verseE = \lyricmode { }
+verseF = \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano
-  % Uncomment what you need. If more than 4, fill in the second argument as shown in 5 and 6
+  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
   \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
-  %\new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
-  %\new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
+  \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
+  \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
 
 %% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into 
+%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
 %% a lower staff.
 
 %% Traditional notation
-\book {
-  \bookOutputSuffix "trad"
-  \score {
-    \fillTradScore \soprano \alto \tenor \bass
-  }
-}
+\book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass } }
 
-% %Traditional with shaped noteheads (broken on non-combined chords)
-\book {
-  \bookOutputSuffix "shapenote"
-  \score {
-    \fillTradScore {\aikenHeads \soprano} {\aikenHeads \alto} {\aikenHeads \tenor} {\aikenHeads \bass}
-  }
-}
+%% Traditional with shaped noteheads (broken on non-combined chords)
+\book { \bookOutputSuffix "shapenote" \score { \fillTradScore {\aikenHeads \soprano} {\aikenHeads \alto} {\aikenHeads \tenor} {\aikenHeads \bass} } }
 
 %% Clairnotes Notation
-\book {
-  \bookOutputSuffix "clairnote"
-  \score {
-    \fillClairScore \soprano \alto \tenor \bass
-  }
-}
+\book { \bookOutputSuffix "clairnote" \score { \fillClairScore \soprano \alto \tenor \bass } }
 
 %% MIDI output
 \score {
   <<
-    \soprano
-    \alto
-    \tenor
-    \bass
+    \new Staff \with { midiMaximumVolume = #0.9 } \soprano
+    \new Staff \with { midiMaximumVolume = #0.7  } \alto
+    \new Staff \with { midiMaximumVolume = #0.8  } \tenor
+    \new Staff \with { midiMaximumVolume = #0.9 } \bass
   >>
   \midi {
-    \context {
-      \Staff
-      \remove "Staff_performer"
-    }
-    \context {
-      \Voice
-      \consists "Staff_performer"
-    }
+    \context { \Staff \remove "Staff_performer" }
+    \context { \Voice \consists "Staff_performer" }
     \tempo  4 = 130
   }
 }
-

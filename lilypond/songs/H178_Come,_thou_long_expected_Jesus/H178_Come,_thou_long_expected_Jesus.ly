@@ -9,7 +9,7 @@
   title = \titleText "Come, thou long-expected Jesus"
   subtitle = \smallText "From Hymnal: A Worship Book #178"
   composer = \smallText "Music: Arranged by Ralph Vaughn Williams"
-  poet = \smallText "Charles Wesley"
+  poet = \smallText "Text: Charles Wesley"
   meter = \smallText "87.87 D"
   copyright =\smallText "Public Domain. Free to distribute, modify, and perform. Typeset by Kenan Schaefkofer."
   tagline = \tagline
@@ -33,24 +33,20 @@ verseB = \lyricmode {
   By thine own e -- ter -- nal Spir -- it, rule in all our hearts a -- lone.
   By thine all -- suf -- fi -- cient mer -- it, raise us to thy glo -- rious throne.
 }
-verseC = \lyricmode {
-
-}
-verseD = \lyricmode {
-
-}
-%verseE = \lyricmode { }
-%verseF = \lyricmode { }
+verseC = \lyricmode { }
+verseD = \lyricmode { }
+verseE = \lyricmode { }
+verseF = \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano
-  % Uncomment what you need. If more than 4, fill in the second argument as shown in 5 and 6
+  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
   \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
-  %\new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
-  %\new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
+  \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
+  \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
 
 %% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
@@ -58,59 +54,25 @@ all_verses = <<
 %% a lower staff.
 
 %% Traditional notation
-\book {
-  \bookOutputSuffix "trad"
-  \score {
-    \fillTradScore \soprano \alto \tenor \bass
-  }
-}
+\book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass } }
 
-% %Traditional with shaped noteheads (broken on non-combined chords)
-\book {
-  \bookOutputSuffix "shapenote"
-  \score {
-    \fillTradScore {\aikenHeads \soprano} {\aikenHeads \alto} {\aikenHeads \tenor} {\aikenHeads \bass}
-  }
-}
+%% Traditional with shaped noteheads (broken on non-combined chords)
+\book { \bookOutputSuffix "shapenote" \score { \fillTradScore {\aikenHeads \soprano} {\aikenHeads \alto} {\aikenHeads \tenor} {\aikenHeads \bass} } }
 
 %% Clairnotes Notation
-\book {
-  \bookOutputSuffix "clairnote"
-  \score {
-    \fillClairScore \soprano \alto \tenor \bass
-  }
-}
- 
+\book { \bookOutputSuffix "clairnote" \score { \fillClairScore \soprano \alto \tenor \bass } }
 
 %% MIDI output
 \score {
   <<
-    \new Staff \with {
-            midiMinimumVolume = #0.5  
-            midiMaximumVolume = #0.9
-    } \soprano
-     \new Staff \with {
-            midiMinimumVolume = #0.2
-            midiMaximumVolume = #0.7  
-    } \alto
-     \new Staff \with {
-            midiMinimumVolume = #0.4 
-            midiMaximumVolume = #0.8  
-    } \tenor
-     \new Staff \with {
-            midiMinimumVolume = #0.4
-            midiMaximumVolume = #0.9
-    } \bass
+    \new Staff \with { midiMaximumVolume = #0.9 } \soprano
+    \new Staff \with { midiMaximumVolume = #0.7  } \alto
+    \new Staff \with { midiMaximumVolume = #0.8  } \tenor
+    \new Staff \with { midiMaximumVolume = #0.9 } \bass
   >>
   \midi {
-    \context {
-      \Staff
-      \remove "Staff_performer"
-    }
-    \context {
-      \Voice
-      \consists "Staff_performer"
-    } 
+    \context { \Staff \remove "Staff_performer" }
+    \context { \Voice \consists "Staff_performer" }
     \tempo  4 = 120
   }
 }
