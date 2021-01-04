@@ -5,11 +5,11 @@
 \include "../../lib/hymn_common.ly"
 %\include "color_by_pitch.ly"
 \header {
-  title = \titleText "Come, thou long-expected Jesus"
-  subtitle = \smallText "From Hymnal: A Worship Book #178"
-  composer = \smallText "Music: Arranged by Ralph Vaughn Williams"
-  poet = \smallText "Charles Wesley"
-  meter = \smallText "87.87 D"
+  title = \titleText "Title goes here"
+  subtitle = \smallText "Optionally where this is pulled from"
+  composer = \smallText "Music: Where music from"
+  poet = \smallText "Text: Where text from"
+  meter = \smallText "Meter goes here, e.g. 87.87 D"
   copyright =\smallText "Public Domain. Free to distribute, modify, and perform. Typeset by Kenan Schaefkofer."
   tagline = \tagline
 }
@@ -32,7 +32,7 @@ globalParts = {
 %% NOTES
 soprano = {
   \globalParts
-  \relative g' {} \break
+  \relative g' { c4 d e f} \break
   \relative g' {} \break
   \relative g' {} \break
   \relative g' {}\break
@@ -47,7 +47,7 @@ alto = {
 }
 tenor = {
   \globalParts
-  \relative a {}
+  \relative a { a4 b c d }
   \relative a {}
   \relative a {}
   \relative a {}
@@ -62,17 +62,16 @@ bass = {
 
 %% LYRICS
 verseA = \lyricmode {
-  Breth -- ren _  we have met to _ wor -- _ ship _ and a -- _ dore the Lord our God.
-  Will you _ pray with all your _ pow -- _ er _ while we _ try to preach the word?
+  Ly -- rics
 }
 verseB = \lyricmode {
-
+  for each
 }
 verseC = \lyricmode {
-
+ verse
 }
 verseD = \lyricmode {
-
+ go here.
 }
 %verseE = \lyricmode { }
 %verseF = \lyricmode { }
@@ -94,6 +93,7 @@ all_verses = <<
 
 %% Traditional notation
 \book {
+  \bookOutputSuffix "trad"
   \score {
     \fillTradScore \soprano \alto \tenor \bass
   }
@@ -101,6 +101,7 @@ all_verses = <<
 
 % %Traditional with shaped noteheads (broken on non-combined chords)
 \book {
+  \bookOutputSuffix "shapenote"
   \score {
     \fillTradScore {\aikenHeads \soprano} {\aikenHeads \alto} {\aikenHeads \tenor} {\aikenHeads \bass}
   }
@@ -108,6 +109,7 @@ all_verses = <<
 
 %% Clairnotes Notation
 \book {
+  \bookOutputSuffix "clairnote"
   \score {
     \fillClairScore \soprano \alto \tenor \bass
   }
