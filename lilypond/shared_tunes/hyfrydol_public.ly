@@ -48,20 +48,8 @@ bass = {
   \relative d { a'4( f) a | g4.( f8) e4 | f2 a,4 | c2 8 bf | a2 4 | bf( a) bf | c2 4 | f2. |}
 }
 
-\score {
-<<
-\new Staff = "top"
-      <<
+all_verses = { }
 
-        \new Voice \with {
-          midiInstrument = "acoustic grand"
-        } << \partcombine #'(2 . 9) $soprano $alto >>
-      >>
-      \new Staff = "bottom" <<
-        \new Voice \with {
-          midiInstrument = "acoustic grand"
-        } { \clef bass << \partcombine #'(2 . 9) $tenor $bass >> }
-      >>
->>
-}
-
+%% UNCOMMENT to VERIFY, then RECOMMENT
+%\book { \score { \fillTradScore \soprano \alto \tenor \bass } }
+%\score { << \soprano \alto \tenor \bass >> \midi { \tempo  4 = 120 } }
