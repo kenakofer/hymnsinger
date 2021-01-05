@@ -15,17 +15,6 @@ globalParts = {
   \hymnBeamExceptions
 }
 
-globalLyrics = {
-          \override LyricHyphen.minimum-distance = #1.0 % Ensure hyphens are visible
-          \set fontSize = #-1
-          \override StanzaNumber #'font-name = #"FreeSerif"
-          \override LyricText #'font-name = #"FreeSerif"
-          \override InstrumentName #'font-name = #"FreeSerif"
-          \override InstrumentName #'X-offset = #2
-          %% Not sure if this does anything, but it was in lilypond's template
-          \override VerticalAxisGroup #'staff-affinity = #CENTER
-
-}
 globalLyrics =
 #(define-music-function
   (parser location firstLabel laterLabel)
@@ -34,11 +23,13 @@ globalLyrics =
     {
           \override LyricHyphen.minimum-distance = #1.0 % Ensure hyphens are visible
           \set fontSize = #-1
-          \override StanzaNumber #'font-name = #"FreeSerif"
-          \override LyricText #'font-name = #"FreeSerif"
-          \override InstrumentName #'font-name = #"FreeSerif"
+          \override LyricText.font-family = #'roman
+          \override InstrumentName.font-family = #'roman
+          \override InstrumentName.font-series = #'regular
           \override InstrumentName #'X-offset = #2.5
           \override InstrumentName #'font-size = #-1
+          \override StanzaNumber.font-family = #'roman
+          \override StanzaNumber.font-series = #'bold
           \set stanza = #firstLabel
           \set shortVocalName = #laterLabel
 }
@@ -50,7 +41,7 @@ smallText =
     (markup?)
     #{
       \markup{
-        \override #'(font-name . "Linux Biolinum")
+        %\override #'(font-name . "Linux Biolinum")
         \fontsize #-2
         #text
       }
@@ -62,7 +53,7 @@ smallText =
     (markup?)
     #{
       \markup{
-        \override #'(font-name . "Linux Biolinum")
+        %\override #'(font-name . "Linux Biolinum")
         \fontsize #1
         #text
       }

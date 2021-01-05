@@ -16,7 +16,9 @@ find ./lilypond/songs -type f -iname "*.ly" -print0 | while IFS= read -r -d $'\0
         echo "     --> Generating outputs (*.pdf, *.midi, *.png) for "
         echo "     --> $BASE.ly"
         echo "     -->"
-        lilypond -s -o $OUTPUT_DIR $INPUT
+        # Point and click bloats the file size, makes every note into a "link",
+        # and the file size larger. We disable for the pdfs
+        lilypond -s -o $OUTPUT_DIR -dno-point-and-click $INPUT 
         lilypond -s -o $OUTPUT_DIR -fpng -dresolution=150 $INPUT
     fi
 done;
