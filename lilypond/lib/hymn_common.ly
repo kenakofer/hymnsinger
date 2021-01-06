@@ -7,6 +7,8 @@ hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
 hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
 hymnBeamExceptions = \set Timing.beamExceptions = #'()
 
+songChords = { }
+
 globalParts = {
   \hymnKey
   \hymnTime
@@ -122,13 +124,13 @@ smallText =
   
    fillTradScore =
   #(define-music-function
-    (parser location topA topB bottomA bottomB)
-    (ly:music? ly:music? ly:music? ly:music?)
+    (parser location topA topB bottomA bottomB songChords)
+    (ly:music? ly:music? ly:music? ly:music? ly:music?)
     #{
       <<
+        $songChords
         \new TradStaff = "top"
         <<
-
           \new Voice \with {
             
           } << \partcombine #'(2 . 9) $topA $topB >>
@@ -153,6 +155,7 @@ smallText =
   \context {
     \Score
     \remove "Bar_number_engraver"
+    \override ChordName #'font-size = #.5
   }
   \context {
     \Voice

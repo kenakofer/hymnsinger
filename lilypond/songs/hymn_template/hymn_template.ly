@@ -8,6 +8,7 @@
   title = \titleText "Title goes here"
   %subtitle = \smallText "Optional"
   composer = \smallText "Music: Where music from, year"
+  %arranger = \smallText "Arranged by (optional), year"
   poet = \smallText "Text: Where text from, year"
   meter = \smallText "TUNE NAME AND METER E.G 87.87 D"
   copyright =\smallText "Public Domain. Free to distribute, modify, and perform. Typeset by Kenan Schaefkofer."
@@ -59,6 +60,9 @@ bass = {
   \relative d {}
   \relative d {}
 }
+songChords = \chords {
+  \set chordChanges = ##t
+}
 
 %% LYRICS
 verseA = \lyricmode {
@@ -92,10 +96,10 @@ all_verses = <<
 %% a lower staff.
 
 %% Traditional notation
-\book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass } }
+\book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }
 
 %% Traditional with shaped noteheads (broken on non-combined chords)
-\book { \bookOutputSuffix "shapenote" \score { \fillTradScore {\aikenHeads \soprano} {\aikenHeads \alto} {\aikenHeads \tenor} {\aikenHeads \bass} } }
+\book { \bookOutputSuffix "shapenote" \score { \fillTradScore {\aikenHeads \soprano} {\aikenHeads \alto} {\aikenHeads \tenor} {\aikenHeads \bass} \songChords } }
 
 %% Clairnotes Notation
 \book { \bookOutputSuffix "clairnote" \score { \fillClairScore \soprano \alto \tenor \bass } }

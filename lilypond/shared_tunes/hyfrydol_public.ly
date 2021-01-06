@@ -47,6 +47,14 @@ bass = {
   \relative d { a'2 4 | d,2 4 | g2 4 | c,4( d) e | f2 e4 | d( bf) f | g2 bf4 | c2. | }
   \relative d { a'4( f) a | g4.( f8) e4 | f2 a,4 | c2 8 bf | a2 4 | bf( a) bf | c2 4 | f2. |}
 }
+songChords = \chords {
+  \set chordChanges = ##t
+    f2. f g:m7 c f f g2:m c4 f2.
+    f2. f g:m7 c f f g2:m c4 f2.
+    a:m d:m g:m c2 c4:7 f2. f g:m c2:sus c4
+    f2. c:7 f c a:m bf f2 c4 f2.
+    
+}
 
 all_verses = { }
 
