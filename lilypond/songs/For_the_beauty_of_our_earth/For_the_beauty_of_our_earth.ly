@@ -31,12 +31,12 @@ verseC = \lyricmode {
   For the 'me', 'my -- self', and 'I', con -- scious links to sound and sight:
 }
 verseD = \lyricmode {
-  For the joy of hu -- man love, broth -- er, sis -- ter, par -- ent, child,
-  friends on earth and friends a -- bove, for all gen -- tle thoughts and mild:
+  For the joy of hu -- man care, sib -- ling, part -- ner, par -- ent, child,
+  friends we've lost and friends still here, for all self -- less thoughts and mild:
 }
 verseE = \lyricmode {
   For thy Truth both harsh and kind, sha -- dowed set -- ter of our stage,
-  pat -- terns sought by hu -- man mind, steer -- ing us from age to age,
+  pat -- terns sought by hu -- man mind, guid -- ing us from age to age,
 }
 verseF = \lyricmode { }
 
