@@ -6,10 +6,10 @@
 %\include "color_by_pitch.ly"
 \header {
   title = \titleText "Title goes here"
-  subtitle = \smallText "Optionally where this is pulled from"
-  composer = \smallText "Music: Where music from"
-  poet = \smallText "Text: Where text from"
-  meter = \smallText "Meter goes here, e.g. 87.87 D"
+  %subtitle = \smallText "Optional"
+  composer = \smallText "Music: Where music from, year"
+  poet = \smallText "Text: Where text from, year"
+  meter = \smallText "TUNE NAME AND METER E.G 87.87 D"
   copyright =\smallText "Public Domain. Free to distribute, modify, and perform. Typeset by Kenan Schaefkofer."
   tagline = \tagline
 }

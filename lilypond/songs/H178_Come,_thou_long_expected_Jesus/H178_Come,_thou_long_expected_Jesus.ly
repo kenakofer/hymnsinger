@@ -7,10 +7,11 @@
 %\include "color_by_pitch.ly"
 \header {
   title = \titleText "Come, thou long-expected Jesus"
-  subtitle = \smallText "From Hymnal: A Worship Book #178"
-  composer = \smallText "Music: Arranged by Ralph Vaughn Williams"
-  poet = \smallText "Text: Charles Wesley"
-  meter = \smallText "87.87 D"
+  %subtitle = \smallText "From Hymnal: A Worship Book #178"
+  composer = \smallText "Music: Rowland H. Prichard ca. 1830"
+  arranger = \smallText "Arranged by Ralph Vaughn Williams, 1906"
+  poet = \smallText "Text: Charles Wesley, 1744"
+  meter = \smallText "HYFRYDOL 87.87 D"
   copyright =\smallText "Public Domain. Free to distribute, modify, and perform. Typeset by Kenan Schaefkofer."
   tagline = \tagline
 }

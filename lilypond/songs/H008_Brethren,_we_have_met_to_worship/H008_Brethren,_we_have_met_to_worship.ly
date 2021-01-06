@@ -6,10 +6,9 @@
 %\include "color_by_pitch.ly"
 \header {
   title = \titleText "Brethren, we have met to worship"
-  subtitle = \smallText "From Hymnal: A Worship Book #8"
   composer = \smallText "Music: The Columbian Harmony, 1825"
   poet = \smallText "Text: The Columbian Harmony, 1825"
-  meter = \smallText "87.87 D"
+  meter = \smallText "HOLY MANNA 87.87 D"
   copyright =\smallText "Public Domain. Free to distribute, modify, and perform. Typeset by Kenan Schaefkofer."
   tagline = \tagline
 }

@@ -43,8 +43,28 @@ smallText =
     #{
       \markup{
         %\override #'(font-name . "Linux Biolinum")
+        \override #'(font-series . "regular")
         \fontsize #-2
         #text
+      }
+    #})
+  
+ threeLineSmallText =
+  #(define-scheme-function
+    (parser location textA textB)
+    (markup? markup? markup?)
+    #{
+      \markup{
+        \override #'(baseline-skip . 2)
+        \column {
+          %\override #'(font-name . "Linux Biolinum")
+          \fontsize #-2
+          \line { #textA }
+          \fontsize #-2
+          \line { #textB }          
+          \fontsize #-2
+          \line { #textB }
+        }
       }
     #})
   
