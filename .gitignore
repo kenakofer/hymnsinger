@@ -1,5 +1,15 @@
 *.pdf
 *.png
-*.midi
+/lilypond/**/*.midi
 .DS_Store
 _site
+.bundle
+.jekyll-cache
+ruby-version
+sass-cache/
+*.swp
+.ruby-version
+.sass-cache/
+Gemfile
+Gemfile.lock
+vendor/

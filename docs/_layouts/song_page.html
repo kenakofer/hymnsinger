@@ -15,11 +15,7 @@
   <body>
     <script>
     window.song_filename = "{{ page.song_file }}";
-    {% if jekyll.environment == "production" %}
-        window.midi_url = "https://github.com/kenanbit/hymn-hosting/releases/latest/download/{{ page.song_file }}.midi";
-    {% else %}
-        window.midi_url = "http://127.0.0.1:4000/local_lilypond_outputs/{{ page.song_file }}.midi";
-    {% endif %}
+    window.midi_url = "local_lilypond_outputs/{{ page.song_file }}.midi";
     function changeImage(variant) {
         var img = document.getElementById("music_image");
         img.src="https://github.com/kenanbit/hymn-hosting/releases/latest/download/{{ page.song_file }}-"+variant+".png";
