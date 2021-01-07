@@ -1,6 +1,6 @@
-## Welcome to GitHub Pages
+## Welcome to Hymn Hosting
 
-You can use the [editor on GitHub](https://github.com/kenanbit/hymn-hosting/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+We'll see how well this works...
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
