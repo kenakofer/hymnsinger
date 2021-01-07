@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+{% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <script>
+    window.song_filename = "{{ page.song_file }}";
+    {% if jekyll.environment == "production" %}
+        window.midi_url = "https://github.com/kenanbit/hymn-hosting/releases/latest/download/{{ page.song_file }}.midi";
+    {% else %}
+        window.midi_url = "http://127.0.0.1:4000/local_lilypond_outputs/{{ page.song_file }}.midi";
+    {% endif %}
+    function changeImage(variant) {
+        var img = document.getElementById("music_image");
+        img.src="https://github.com/kenanbit/hymn-hosting/releases/latest/download/{{ page.song_file }}-"+variant+".png";
+        return false;
+    }
+    </script>
+    <script src="assets/js/midiplayer.js"></script>
+    <script src="assets/js/soundfont-player.js"></script>
+    <script src="assets/js/app.js"></script>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Song Page</h1>
+        <p class="header">{{ page.song_file }}</p>
+
+        {% include navigation.html %}
+
+        <ul>
+          {% if site.show_downloads %}
+            <li class="download"><a class="buttons" href="{{ site.github.zip_url }}">Download ZIP</a></li>
+            <li class="download"><a class="buttons" href="{{ site.github.tar_url }}">Download TAR</a></li>
+          {% endif %}
+
+          <button class="button button-primary" id="play-button" onclick="Player.isPlaying() ? pause() : play();" disabled="disabled">Play</button>
+          <button class="button" onclick="stop()">Stop</button>
+
+          <p id="select-file">
+            <input type="file" onchange="loadFile()" onclick="Player.stop()" />
+          </p>
+            Tempo: <span id="tempo-display"></span> bpm<br />
+            <input type="range" onchange="Player.pause();Player.setTempo(this.value);Player.play()" min="50" max="200">
+        <div style="border:1px solid #ccc;margin-bottom:12px;background:#f7f7f7;">
+            <div id="play-bar" style="height:20px;background:#33C3F0;width:0%;"></div>
+        </div>
+        <br />
+          <!--<li><a class="buttons github" href="{{ site.github.repository_url }}">View On GitHub</a></li>-->
+        </ul>
+      </header>
+
+      <section>
+        {{ content }}
+      </section>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    {% if site.google_analytics %}
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', '{{ site.google_analytics }}', 'auto');
+        ga('send', 'pageview');
+      </script>
+    {% endif %}
+  </body>
+</html>
