@@ -8,7 +8,7 @@ case "$response" in
         echo "Clearing out files..."
         find . -type f -name '*.pdf' -exec rm {} +
         find . -type f -name '*.midi' -exec rm {} +
-        find . -type f -name '*.' -exec rm {} +
+        find . -type f -name '*.png' -exec rm {} +
         echo "Done."
         ;;
     *)

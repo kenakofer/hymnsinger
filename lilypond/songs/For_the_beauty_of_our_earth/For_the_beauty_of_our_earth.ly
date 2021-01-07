@@ -20,6 +20,7 @@
 verseA = \lyricmode {
   For the beau -- ty of our earth, for the glo -- ry of the skies,
   for the love which from our birth o -- ver and a -- round us lies:
+  %% CHORUS
   Mo -- ther Earth, to thee we raise this our hymn of grate -- ful praise.
 }
 verseB = \lyricmode {
