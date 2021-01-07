@@ -20,7 +20,7 @@ globalParts = {
 %% NOTES
 soprano = {
   \globalParts
-  \relative g' { \partial 4 d4 | g2 b8( g) | b2 a4 | g2 e4 | d2 d4 | g2 b8( g) | b2 a4 | d2.~ | \partial 2 d2 } \break
+  \relative g' { \partial 4 d4 | g2 b8( g) | b2 a4 | g2 e4 | d2 d4 | g2 b8( g) | b2 a4 | d2.~ | \partial 2 d2 \bar " " } \break
   \relative g' { \partial 4 b4 | d4.( b8) d( b) | g2 d4 | e4.( g8) g( e) | d2 d4 | g2 b8( g) | b2 a4 | g2.~ | 2 }
   \bar "|."
 }
@@ -48,5 +48,5 @@ songChords = \chords {
 all_verses = { }
 
 %% UNCOMMENT to VERIFY, then RECOMMENT
-%\book { \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }
+\book { \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }
 %\score { << \soprano \alto \tenor \bass >> \midi { \tempo  4 = 120 } }
