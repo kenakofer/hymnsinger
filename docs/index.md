@@ -8,7 +8,7 @@ We'll see how well this works...
 
 Title is: {{ page.title }}
 my_number is: {{ page.my_number }}
-[link](test_song)
+[link](test-song.html)
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
