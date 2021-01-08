@@ -1,0 +1,30 @@
+---
+---
+#score-variants {
+    border: none;
+}
+#score-variants td {
+    background-color: transparent;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+#music-image {
+    -filter: sepia(.5) brightness(.97);
+    -webkit-filter: sepia(.5) brightness(.97);
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1)}
+body {
+    background-color: #F7F7EE /* Body should match song-image color after filters */
+}
+label {
+    display: inline-block;
+    padding: 2px 5px;
+    border: solid 2px lightgray;
+    border-radius: 4px;
+}
+input[type="radio"] {
+    display:none;
+}
+input[type="radio"]:checked + label {
+    border: solid 2px black;
+}

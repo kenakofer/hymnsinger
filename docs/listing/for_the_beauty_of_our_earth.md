@@ -7,11 +7,14 @@ song_file: for_the_beauty_of_our_earth
 <table id="score-variants">
 <tr>
 <td>
-<button id="traditional" onclick="changeImage('trad');">Traditional Score</button>
+<input type="radio" id="traditional" name="variant-radio" onclick="changeImage('trad');">
+<label for="traditional">Traditional Score</label>
 </td><td>
-<button id="shapenote" onclick="changeImage('shapenote');">Shape Note Score</button>
+<input type="radio" id="shapenote" name="variant-radio" onclick="changeImage('shapenote');">
+<label for="shapenote">Shapenote Score</label>
 </td><td>
-<button id="clairnote" onclick="changeImage('clairnote');">Clairnote Score</button>
+<input type="radio" id="clairnote" name="variant-radio" onclick="changeImage('clairnote');">
+<label for="clairnote">Clairnote Score</label>
 </td>
 </tr>
 <tr>
@@ -25,4 +28,4 @@ song_file: for_the_beauty_of_our_earth
 </tr>
 </table>
 
-![Song image](https://github.com/kenanbit/hymn-hosting/releases/latest/download/{{ page.song_file }}-trad.png){: #music_image }
+![Song image](https://github.com/kenanbit/hymn-hosting/releases/latest/download/{{ page.song_file }}-trad.png){: #music-image }

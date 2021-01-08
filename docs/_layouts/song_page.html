@@ -6,6 +6,7 @@
 
 {% seo %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="/assets/css/styles.css">
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
@@ -18,7 +19,7 @@
     window.song_filename = "{{ page.song_file }}";
     window.midi_url = "/local_lilypond_outputs/{{ page.song_file }}.midi";
     function changeImage(variant) {
-        var img = document.getElementById("music_image");
+        var img = document.getElementById("music-image");
         img.src="https://github.com/kenanbit/hymn-hosting/releases/latest/download/{{ page.song_file }}-"+variant+".png";
         return false;
     }

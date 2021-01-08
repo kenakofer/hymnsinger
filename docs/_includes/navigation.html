@@ -1,4 +1,5 @@
 <nav>
     <a href="index.html" {% if page.url == "/" %}style="color: red;"{% endif %}>Home</a><br />
-    <a href="hymn-index.html" {% if page.url == "hymn-index.html" %}style="color: red;"{% endif %}>Full Hymn Index</a><br />
+    <a href="{% link hymn-index.md %}" {% if link == "hymn-index.html" %}style="color: red;"{% endif %}>Full Hymn Index</a><br /><p>
 </nav>
+
