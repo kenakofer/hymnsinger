@@ -26,7 +26,6 @@ This is a project to make or take hymns with permissive copyright status, typese
 
  - Differentiate fonts png versus pdf?
    Change text locations
- - Set up github pages site with appropriate theme
  - Solve crackling in sound-font-player audio in Firefox
  - Better piano soundfont
  - Email lilypond list regarding shape notes + partsCombine
@@ -35,3 +34,18 @@ This is a project to make or take hymns with permissive copyright status, typese
     - Melody of slowly turning (Make your own harmonization and lyrics, even though the originals are so good...)
  - Lyrics export
    Stem default directions down/up?
+   CSS tweaks:
+    - Fix large/small screen differences
+      Make song page background white to match pdf
+   Midiplayer tweaks:
+      Show tempo on file load
+      Don't reset tempo on play start (inhibit tempo event)
+      Don't start playing on tempo change
+      Change stop to restart
+      Figure out if dragging through the file is possible
+      Fix play/pause indication
+      Loop play?
+      Add master volume slider
+      Add pitch change slider
+      Add Instrument change option
+      Add expandable advanced panel, place most things inside

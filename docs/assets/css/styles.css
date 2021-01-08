@@ -2,6 +2,7 @@
 ---
 #score-variants {
     border: none;
+    margin: 0;
 }
 #score-variants td {
     background-color: transparent;
@@ -9,12 +10,19 @@
     padding: 0px;
     margin: 0px;
 }
+#choice-and-music {
+    padding-top: 10px;
+    margin-top: 30px;
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+}
 #music-image {
     -filter: sepia(.5) brightness(.97);
     -webkit-filter: sepia(.5) brightness(.97);
-    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1)}
+    max-width: 900px;
+}
 body {
-    background-color: #F7F7EE /* Body should match song-image color after filters */
+    background-color: #F7F7EE /* Body should match music-image color after filters */
 }
 label {
     display: inline-block;
@@ -27,4 +35,40 @@ input[type="radio"] {
 }
 input[type="radio"]:checked + label {
     border: solid 2px black;
+}
+img {
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    margin: 0;
+    border: none;
+    width: 100%;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted #C30000;
+  padding: 0 2px;
+  color: #C30000;
+  font-weight: 200;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
