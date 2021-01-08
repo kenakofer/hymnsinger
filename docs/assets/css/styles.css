@@ -56,12 +56,13 @@ img {
 /* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
+  width: 150px;
   background-color: black;
   color: #fff;
   text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
+  padding: 5px 4px;
+  border-radius: 4px;
+  line-height: 1.4;
  
   /* Position the tooltip text - see examples below! */
   position: absolute;
@@ -72,3 +73,19 @@ img {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+.lyric-box {
+    font-size: 12px;
+    overflow-y: scroll;
+    height: 50px;
+    max-width: 390px;
+    display: inline-block;
+    margin: 0;
+    line-height: 1.2;
+    white-space: pre-wrap;
+    border-radius: 4px;
+    width: 95%;
+}
+
+thead, tbody, tfoot { vertical-align: middle } /* add this rule*/
+td, th, tr { vertical-align: inherit } /* add this rule */

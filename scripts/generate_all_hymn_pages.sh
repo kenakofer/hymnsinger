@@ -1,5 +1,6 @@
 #!/bin/bash
 
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 # Set up the listing index first
 
 LISTFILE="docs/hymn-index.md"
@@ -7,6 +8,7 @@ echo "---" > $LISTFILE
 echo "title: Hymn Host Index" >> $LISTFILE
 echo "layout: default" >> $LISTFILE
 echo "---" >> $LISTFILE
+echo "<table><tr><th>Song</th><th>Lyrics</th></tr>" >> $LISTFILE
 
 
 find lilypond/songs -type f -iname "*.ly" -print0 | while IFS= read -r -d $'\0' file; do
@@ -27,5 +29,12 @@ find lilypond/songs -type f -iname "*.ly" -print0 | while IFS= read -r -d $'\0' 
     #sed -i -e 's/\[SPACE_NAME\]/'"$SPACE_BASE"'/g' $OUTPUT
 
     # Add to hymn index
-    echo " - [$SPACE_BASE](listing/$BASE.html)" >> $LISTFILE
+    echo "<tr><td><a href=\"listing/$BASE.html\">" >> $LISTFILE
+    echo $SPACE_BASE | awk '{for (i=1;i<=NF;i++) $i=toupper(substr($i,1,1)) substr($i,2)} 1' >> $LISTFILE # Uppercase
+    echo "</a></td>" >> $LISTFILE
+    echo -n "<td class='lyric-box'>" >> $LISTFILE
+    # Output lyrics
+    $SCRIPT_DIR/extract_lyrics.py $file >> $LISTFILE
+    echo -n "</td></tr>" >> $LISTFILE
 done
+echo "</table>" >> $LISTFILE

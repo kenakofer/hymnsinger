@@ -1,0 +1,36 @@
+<div id="choice-and-music">
+    <table id="score-variants">
+    <tr>
+    <td>
+    <input type="radio" id="traditional" name="variant-radio" checked onclick="changeImage('trad');">
+    <label for="traditional">Traditional Score</label>
+    </td><td>
+    <input type="radio" id="shapenote" name="variant-radio" onclick="changeImage('shapenote');">
+    <label for="shapenote">Shapenote Score</label>
+    </td><td>
+    <input type="radio" id="clairnote" name="variant-radio" onclick="changeImage('clairnote');">
+    <label for="clairnote">Clairnote Score</label>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    (<a href="https://github.com/kenanbit/hymn-hosting/releases/latest/download/{{ page.song_file }}-trad.pdf">PDF</a>)
+    </td><td>
+    (<a href="https://github.com/kenanbit/hymn-hosting/releases/latest/download/{{ page.song_file }}-shapenote.pdf">PDF</a>)
+        (<div class="tooltip">
+            ?
+            <span class="tooltiptext">(Beta) Shapenotes mean that each pitch in "do, re, mi, fa, so, la, ti" get one of 7 shapes. This supplemental data may improve sight-reading over time.
+            </span>
+        </div>)
+    </td><td>
+        (<a href="https://github.com/kenanbit/hymn-hosting/releases/latest/download/{{ page.song_file }}-clairnote.pdf">PDF</a>)
+        (<div class="tooltip">
+            <a href="https://clairnote.org/" target="_blank">?</a>
+            <span class="tooltiptext">Clairnotes is easier than normal music, without any ♯ or ♭ signs or key signatures. Every pitch has its own vertical position. Click for more details.
+            </span>
+        </div>)
+    </td>
+    </tr>
+    </table>
+    <img src="https://github.com/kenanbit/hymn-hosting/releases/latest/download/{{ page.song_file }}-trad.png" alt="Song image" id="music-image">
+</div>
