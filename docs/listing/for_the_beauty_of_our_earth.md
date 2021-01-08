@@ -1,9 +1,8 @@
 ---
 layout: song_page
-song_file: come_thou_long_expected_jesus
+tags: hymn accessible listed
+song_file: for_the_beauty_of_our_earth
 ---
-
-{{ site.tags.LISTED }}
 
 <button id="traditional" onclick="changeImage('trad');">Traditional Score</button>
 <button id="shapenote" onclick="changeImage('shapenote');">Shape Note Score</button>

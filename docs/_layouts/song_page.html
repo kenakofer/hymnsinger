@@ -11,44 +11,53 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    {% include collecttags.html %}
   </head>
   <body>
     <script>
     window.song_filename = "{{ page.song_file }}";
-    window.midi_url = "local_lilypond_outputs/{{ page.song_file }}.midi";
+    window.midi_url = "/local_lilypond_outputs/{{ page.song_file }}.midi";
     function changeImage(variant) {
         var img = document.getElementById("music_image");
         img.src="https://github.com/kenanbit/hymn-hosting/releases/latest/download/{{ page.song_file }}-"+variant+".png";
         return false;
     }
     </script>
-    <script src="assets/js/midiplayer.js"></script>
-    <script src="assets/js/soundfont-player.js"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="/assets/js/midiplayer.js"></script>
+    <script src="/assets/js/soundfont-player.js"></script>
+    <script src="/assets/js/app.js"></script>
     <div class="wrapper">
       <header>
-        <h1 class="header">Song Page</h1>
-        <p class="header">{{ page.song_file }}</p>
-
-        {% include navigation.html %}
-
-        <ul>
-          {% if site.show_downloads %}
-            <li class="download"><a class="buttons" href="{{ site.github.zip_url }}">Download ZIP</a></li>
-            <li class="download"><a class="buttons" href="{{ site.github.tar_url }}">Download TAR</a></li>
-          {% endif %}
-
+        <h1 class="header">Playback</h1>
           <button class="button button-primary" id="play-button" onclick="Player.isPlaying() ? pause() : play();" disabled="disabled">Play</button>
-          <button class="button" onclick="stop()">Stop</button>
+          <button class="button" onclick="stop()">Stop</button><br/>
 
-          <p id="select-file">
-            <input type="file" onchange="loadFile()" onclick="Player.stop()" />
-          </p>
             Tempo: <span id="tempo-display"></span> bpm<br />
             <input type="range" onchange="Player.pause();Player.setTempo(this.value);Player.play()" min="50" max="200">
         <div style="border:1px solid #ccc;margin-bottom:12px;background:#f7f7f7;">
             <div id="play-bar" style="height:20px;background:#33C3F0;width:0%;"></div>
         </div>
+        <table>
+            <tr>
+                <th>S</th><th>A</th><th>T</th><th>B</th>
+            </tr>
+            <tr>
+                <td>
+                    <input type="range" orient="vertical" onchange="channel_to_velocity[1]=this.value" min="0" max="200">
+                </td>
+                <td>
+        <input type="range" orient="vertical" onchange="channel_to_velocity[2]=this.value" min="0" max="200">
+                </td>
+                <td>
+        <input type="range" orient="vertical" onchange="channel_to_velocity[3]=this.value" min="0" max="200">
+                </td>
+                <td>
+        <input type="range" orient="vertical" onchange="channel_to_velocity[4]=this.value" min="0" max="200">
+                </td>
+            </tr>
+        </table>
+
+
         <br />
           <!--<li><a class="buttons github" href="{{ site.github.repository_url }}">View On GitHub</a></li>-->
         </ul>
