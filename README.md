@@ -34,3 +34,4 @@ This is a project to make or take hymns with permissive copyright status, typese
     - Amazing grace tune, possibly with the alternative "Truth" lyrics
     - Melody of slowly turning (Make your own harmonization and lyrics, even though the originals are so good...)
  - Lyrics export
+   Stem default directions down/up?
