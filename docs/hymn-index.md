@@ -3,7 +3,7 @@ title: Hymn Host Index
 layout: default
 ---
 <table><tr><th>Song</th><th>Lyrics</th></tr>
-<tr><td><a href="listing/brethren_we_have_met_to_worship.html">
+<tr><td class='hymn-name-box'><a href="listing/brethren_we_have_met_to_worship.html">
 Brethren We Have Met To Worship
 </a></td>
 <td class='lyric-box'>Brethren we have met to worship and adore the Lord our God.
@@ -26,7 +26,7 @@ Let us love and pray for sinners till our God makes all things new.
 Christ will call us home to heaven. At his table we'll sit down.
 Christ will gird himself and serve us with sweet manna all around.
 
-</td></tr><tr><td><a href="listing/come_thou_long_expected_jesus.html">
+</td></tr><tr><td class='hymn-name-box'><a href="listing/come_thou_long_expected_jesus.html">
 Come Thou Long Expected Jesus
 </a></td>
 <td class='lyric-box'>Come, thou longexpected Jesus! born to set thy people free,
@@ -39,7 +39,7 @@ born to reign in us forever, now thy gracious kingdom bring.
 By thine own eternal Spirit, rule in all our hearts alone.
 By thine allsufficient merit, raise us to thy glorious throne.
 
-</td></tr><tr><td><a href="listing/break_forth.html">
+</td></tr><tr><td class='hymn-name-box'><a href="listing/break_forth.html">
 Break Forth
 </a></td>
 <td class='lyric-box'>Break forth, O beauteous heav'nly light, and usher in the morning.
@@ -47,7 +47,7 @@ O shepherds, shrink not with affright, but hear the angel's warning.
 This child, now weak in infancy, our confidence and joy shall be,
 the power of Satan breaking, our peace eternal making.
 
-</td></tr><tr><td><a href="listing/for_the_beauty_of_our_earth.html">
+</td></tr><tr><td class='hymn-name-box'><a href="listing/for_the_beauty_of_our_earth.html">
 For The Beauty Of Our Earth
 </a></td>
 <td class='lyric-box'>For the beauty of our earth, for the glory of the skies,

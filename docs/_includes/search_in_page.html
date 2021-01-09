@@ -1,0 +1,22 @@
+<div class='search-div'>
+  <input type="text" id="search-text" placeholder="e.g. love">
+  <button id='search-button' onclick="pageFind()">Find in page</button>
+</div>
+<script>
+function pageFind() {
+  window.find(document.getElementById("search-text").value, false, false, true);
+}
+// Get the input field
+var input = document.getElementById("search-text");
+
+// Execute a function when the user releases a key on the keyboard
+input.addEventListener("keyup", function(event) {
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("search-button").click();
+  }
+});
+</script>

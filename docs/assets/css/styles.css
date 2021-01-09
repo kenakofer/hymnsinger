@@ -1,5 +1,8 @@
 ---
 ---
+section {
+    margin-top: 30px;
+}
 #score-variants {
     border: none;
     margin: 0;
@@ -93,6 +96,25 @@ img {
   font-weight: 500;
   font-size: 18px;
   font-family: Arvo, sans-serif;
+}
+
+.hymn-name-box {
+    background: #e7e3df;
+}
+.hymn-name-box a {
+    font-weight: 500;
+}
+
+.search-div {
+position: fixed;
+background: #232323;
+padding: 4px;
+border-bottom-right-radius: 6px;
+border-width: 0 2px 2px 0;
+border-style: solid;
+border-color: #f7f7ee;
+left: 0;
+top: 0;
 }
 
 thead, tbody, tfoot { vertical-align: middle } /* add this rule*/
