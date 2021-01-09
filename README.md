@@ -26,8 +26,6 @@ This is a project to make or take hymns with permissive copyright status, typese
 
  - Differentiate fonts png versus pdf?
    Change text locations
- - Solve crackling in sound-font-player audio in Firefox
- - Better piano soundfont
  - Email lilypond list regarding shape notes + partsCombine
  - Typeset more hymns/tunes
     - Amazing grace tune, possibly with the alternative "Truth" lyrics
@@ -45,7 +43,10 @@ This is a project to make or take hymns with permissive copyright status, typese
       Figure out if dragging through the file is possible
       Fix play/pause indication
       Loop play?
+                                console.log(event;
       Add master volume slider
       Add pitch change slider
       Add Instrument change option
       Add expandable advanced panel, place most things inside
+    Find in page doesn't work on mobile, maybe just suggest using find in page?
+    Play sample on the index page

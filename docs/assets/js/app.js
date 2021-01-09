@@ -22,21 +22,28 @@ var stop = function() {
 	document.getElementById('play-button').innerHTML = 'Play';
 }
 var channel_to_velocity = {
-    1: 130,
-    2: 50,
-    3: 0,
-    4: 100
+    1: 110,
+    2: 60,
+    3: 70,
+    4: 90
+}
+var note_playing_on_channel = {
+    1: 0
 }
 
-Soundfont.instrument(ac, 'https://raw.githubusercontent.com/gleitz/midi-js-soundfonts/gh-pages/MusyngKite/acoustic_guitar_nylon-mp3.js').then(function (instrument) {
+//Soundfont.instrument(ac, 'https://raw.githubusercontent.com/gleitz/midi-js-soundfonts/gh-pages/MusyngKite/acoustic_guitar_nylon-mp3.js').then(function (instrument) {
+Soundfont.instrument(ac, 'https://raw.githubusercontent.com/gleitz/midi-js-soundfonts/gh-pages/MusyngKite/acoustic_grand_piano-mp3.js').then(function (instrument) {
 
 	loadArrayBuffer = function(buffer) {
 		Player = new MidiPlayer.Player(function(event) {
-			if (event.name == 'Note on' && event.velocity > 0) {
+			if (event.name == 'Note on') {
                             my_velocity = channel_to_velocity[event.channel]
-                            if (event.velocity == 0)
-                                my_velocity = 0;
-                            instrument.play(event.noteName, ac.currentTime, {gain:my_velocity/100}).stop(ac.currentTime + 0.3)
+                            if (event.velocity == 0) {
+                                note_playing_on_channel[event.channel].stop(ac.currentTime);
+                                note_playing_on_channel[event.channel] = 0;
+                            } else {
+                                note_playing_on_channel[event.channel] = instrument.play(event.noteName, ac.currentTime, {gain:my_velocity/100})
+                            }
 			}
 
 			document.getElementById('tempo-display').innerHTML = Player.tempo;
