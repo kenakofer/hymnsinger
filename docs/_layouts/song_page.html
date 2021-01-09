@@ -6,7 +6,7 @@
 
 {% seo %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
@@ -17,19 +17,19 @@
   <body>
     <script>
     window.song_filename = "{{ page.song_file }}";
-    window.midi_url = "/local_lilypond_outputs/{{ page.song_file }}.midi";
+    window.midi_url = "{{ site.baseurl }}/local_lilypond_outputs/{{ page.song_file }}.midi";
     function changeImage(variant) {
         var img = document.getElementById("music-image");
         img.src="https://github.com/kenanbit/hymn-hosting/releases/latest/download/{{ page.song_file }}-"+variant+".png";
         return false;
     }
     </script>
-    <script src="/assets/js/midiplayer.js"></script>
-    <script src="/assets/js/soundfont-player.js"></script>
-    <script src="/assets/js/app.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/midiplayer.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/soundfont-player.js"></script>
+    <script src="{{ site.baseurl }}/assets/js/app.js"></script>
     <div class="wrapper">
       <header>
-          &larr; <a href="/hymn-index.html" style="color: red;">Back to list</a>
+          &larr; <a href="{{ site.baseurl }}/hymn-index.html" style="color: red;">Back to list</a>
         <h1 class="header">Playback</h1>
           <button class="button button-primary" id="play-button" onclick="Player.isPlaying() ? pause() : play();" disabled="disabled">Play</button>
           <button class="button" onclick="stop()">Stop</button><br/>
