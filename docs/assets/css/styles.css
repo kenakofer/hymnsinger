@@ -89,6 +89,11 @@ img {
     border-width: 1px 0px 4px 0px;
     border-style: solid;
 }
+.lyric-box::first-letter {
+  font-weight: 500;
+  font-size: 18px;
+  font-family: Arvo, sans-serif;
+}
 
 thead, tbody, tfoot { vertical-align: middle } /* add this rule*/
 td, th, tr { vertical-align: inherit } /* add this rule */
