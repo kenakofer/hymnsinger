@@ -39,6 +39,14 @@ born to reign in us forever, now thy gracious kingdom bring.
 By thine own eternal Spirit, rule in all our hearts alone.
 By thine allsufficient merit, raise us to thy glorious throne.
 
+</td></tr><tr><td><a href="listing/break_forth.html">
+Break Forth
+</a></td>
+<td class='lyric-box'>Break forth, O beauteous heav'nly light, and usher in the morning.
+O shepherds, shrink not with affright, but hear the angel's warning.
+This child, now weak in infancy, our confidence and joy shall be,
+the power of Satan breaking, our peace eternal making.
+
 </td></tr><tr><td><a href="listing/for_the_beauty_of_our_earth.html">
 For The Beauty Of Our Earth
 </a></td>
