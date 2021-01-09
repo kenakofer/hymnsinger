@@ -29,8 +29,8 @@ find lilypond/songs -type f -iname "*.ly" -print0 | while IFS= read -r -d $'\0' 
     #sed -i -e 's/\[SPACE_NAME\]/'"$SPACE_BASE"'/g' $OUTPUT
 
     # Add to hymn index
-    echo "<tr><td><a href=\"listing/$BASE.html\">" >> $LISTFILE
-    echo $SPACE_BASE | awk '{for (i=1;i<=NF;i++) $i=toupper(substr($i,1,1)) substr($i,2)} 1' >> $LISTFILE # Uppercase
+    echo "<tr><td class='hymn-name-box'><a href=\"listing/$BASE.html\">" >> $LISTFILE
+    echo $SPACE_BASE | awk '{for (i=1;i<=NF;i++) $i=toupper(substr($i,1,1)) substr($i,2)} 1' >> $LISTFILE # Uppercase first letter
     echo "</a></td>" >> $LISTFILE
     echo -n "<td class='lyric-box'>" >> $LISTFILE
     # Output lyrics
