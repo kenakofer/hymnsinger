@@ -5,6 +5,8 @@ var ac = new AudioContext || new webkitAudioContext;
 
 var changeTempo = function(tempo) {
 	Player.tempo = tempo;
+        document.getElementById('tempo-input').value = tempo;
+        document.getElementById('tempo-display').innerHTML = tempo;
 }
 
 var play = function() {
@@ -64,6 +66,7 @@ Soundfont.instrument(ac, 'https://raw.githubusercontent.com/gleitz/midi-js-sound
     oReq.onload = function(oEvent) {
       window.midi_buffer = oReq.response;
       loadArrayBuffer(window.midi_buffer);
+      changeTempo(Player.tempo);
     };
     oReq.send();
 });

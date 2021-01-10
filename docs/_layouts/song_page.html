@@ -39,7 +39,8 @@
             <div id="play-bar" style="height:20px;background:#33C3F0;width:0%;"></div>
         </div>
         Tempo: <span id="tempo-display"></span> bpm<br />
-        <input type="range" onchange="Player.pause();Player.setTempo(this.value);Player.play()" min="50" max="200">
+        <!--<input id='tempo-input' type="range" onchange="Player.pause();Player.setTempo(this.value);Player.play()" min="50" max="200">-->
+        <input id='tempo-input' type="range" onchange="changeTempo(this.value);" min="50" max="200">
         <table class='part-volume'>
             <tr>
                 <tr>

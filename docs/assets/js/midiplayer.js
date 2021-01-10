@@ -913,12 +913,14 @@ var MidiPlayer = (function () {
                 }
               } else if (event) {
                 if (event.hasOwnProperty('name') && event.name === 'Set Tempo') {
+                  // I, Kenan commented this out. I don't want tempo to change
+                  // except in dry run
                   // Grab tempo if available.
-                  this.setTempo(event.data);
+                  //this.setTempo(event.data);
 
-                  if (this.isPlaying()) {
-                    this.pause().play();
-                  }
+                  //if (this.isPlaying()) {
+                    //this.pause().play();
+                  //}
                 }
 
                 this.emitEvent(event);
