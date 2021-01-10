@@ -21,4 +21,4 @@ git push
 
 # Add the song outputs to the release
 LATEST_RELEASE=`gh release list | head -n1 | awk '{print $1;}'`
-gh release upload $LATEST_RELEASE "docs/local_lilypond_outputs/$BASE_NAME"*
+gh release upload --clobber $LATEST_RELEASE "docs/local_lilypond_outputs/$BASE_NAME"*
