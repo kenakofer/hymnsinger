@@ -36,3 +36,5 @@ This is a project to make or take hymns with permissive copyright status, typese
     Play sample on the index page?
     Fix playback on mobile firefox
     Screenshot on home page showing e.g. amazing grace old and new.
+    Sort index page somehow
+    Tag hymns/Set up tag pages

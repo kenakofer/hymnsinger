@@ -38,6 +38,7 @@ Soundfont.instrument(ac, 'https://raw.githubusercontent.com/gleitz/midi-js-sound
 
 	loadArrayBuffer = function(buffer) {
 		Player = new MidiPlayer.Player(function(event) {
+                        //console.log(event);
 			if (event.name == 'Note on') {
                             my_velocity = channel_to_velocity[event.channel]
                             if (event.velocity == 0) {

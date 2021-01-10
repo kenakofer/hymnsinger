@@ -890,12 +890,15 @@ var MidiPlayer = (function () {
         if (!this.inLoop) {
           this.inLoop = true;
           this.tick = this.getCurrentTick();
+          var stop_flag = false;
           this.tracks.forEach(function (track, index) {
+            if (stop_flag)
+                return;
             // Handle next event
             if (!dryRun && this.endOfFile()) {
-              //console.log('end of file')
               this.triggerPlayerEvent('endOfFile');
               this.stop();
+              stop_flag = true;
             } else {
               var event = track.handleEvent(this.tick, dryRun);
 
