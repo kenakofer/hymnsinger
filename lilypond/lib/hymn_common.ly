@@ -108,14 +108,14 @@ smallText =
         <<
 
           \new Voice \with {
-          } << \partcombine #'(2 . 9) $topA $topB >>
+          } << \partcombine #'(2 . 11) $topA $topB >>
           \all_verses
         >>
         \new Staff = "bottom" \with {
           \cnNoteheadStyle "funksol"
         }<<
           \new Voice \with {
-          } { \clef bass << \partcombine #'(2 . 9) $bottomA $bottomB >> }
+          } { \clef bass << \partcombine #'(2 . 11) $bottomA $bottomB >> }
         >>
       >>
     #})
@@ -131,13 +131,13 @@ smallText =
         <<
           \new Voice \with {
             
-          } << \partcombine #'(2 . 9) $topA $topB >>
+          } << \partcombine #'(2 . 11) $topA $topB >>
           \all_verses
         >>
         \new TradStaff = "bottom" <<
           \new Voice \with {
             
-          } { \clef bass << \partcombine #'(2 . 9) $bottomA $bottomB >> }
+          } { \clef bass << \partcombine #'(2 . 11) $bottomA $bottomB >> }
         >>
       >>
     #})
