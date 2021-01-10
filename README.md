@@ -2,39 +2,24 @@
 
 This is a project to make or take hymns with permissive copyright status, typeset them with lilypond in a variety of formats, and serve them online in a friendly and usable github pages site. It has a long ways to go yet.
 
-### Features of the site should include:
+### Features of the site include:
  - Easy browsing of the full hymn selection
  - An interface for simultaneously viewing and playing the hymn
-     - Links to editing the Lilypond source
      - Ability to change volume on a per-part basis
- - Add new songs easily
  - Multiple formats supported
+   Full mobile support (issues with android firefox at the moment)
+ - I can add new songs easily
 
-### Current directions:
- - Fix large PDF sizes, probably font inclusion issue
-     - Size with biolinum: "339K Jan  5 11:45 H008_Brethren,_we_have_met_to_worship-clairnote.pdf_"
-       Size without: 338K
-       Siz without any fonts: 226K
-       still too big
-       Siz with `lilypond -dgs-never-embed-fonts H008_Brethren,_we_have_met_to_worship.ly': 188K
-       Size with `lilypond -dgs-never-embed-fonts -dno-point-and-click H008_Brethren,_we_have_met_to_worship.ly`: 24K
-       Same, but with free-serif re-enabled: 137K
-       free-serif switched to roman: 61K
-       Looks terrible, how long has that been happening?
-       `lilypond -dno-point-and-click H008_Brethren,_we_have_met_to_worship.ly` with just roman looks fine at 62K
-       Check
-
+### Possible TODOs:
  - Differentiate fonts png versus pdf?
-   Change text locations
+   Change hymn text locations
  - Email lilypond list regarding shape notes + partsCombine
  - Typeset more hymns/tunes
-    - Amazing grace tune, possibly with the alternative "Truth" lyrics
+    - Amazing grace tune, possibly with the alternative lyrics
     - Melody of slowly turning (Make your own harmonization and lyrics, even though the originals are so good...)
- - Lyrics export
    Stem default directions down/up?
    CSS tweaks:
     - Fix large/small screen differences
-      Make song page background white to match pdf
    Midiplayer tweaks:
       Show tempo on file load
       Don't reset tempo on play start (inhibit tempo event)
@@ -43,10 +28,11 @@ This is a project to make or take hymns with permissive copyright status, typese
       Figure out if dragging through the file is possible
       Fix play/pause indication
       Loop play?
-                                console.log(event;
       Add master volume slider
       Add pitch change slider
       Add Instrument change option
-      Add expandable advanced panel, place most things inside
-    Find in page doesn't work on mobile, maybe just suggest using find in page?
-    Play sample on the index page
+      Add expandable advanced panel, place most things inside to avoid clutter
+    Find in page doesn't work on mobile, maybe just suggest using find in page? Or use a better library
+    Play sample on the index page?
+    Fix playback on mobile firefox
+    Screenshot on home page showing e.g. amazing grace old and new.
