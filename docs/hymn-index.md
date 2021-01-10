@@ -54,6 +54,29 @@ born to reign in us forever, now thy gracious kingdom bring.
 By thine own eternal Spirit, rule in all our hearts alone.
 By thine allsufficient merit, raise us to thy glorious throne.
 
+</td></tr><tr><td class='hymn-name-box'><a href="listing/help_us_to_help_each_other_lord.html">
+Help Us To Help Each Other Lord
+</a></td>
+<td class='lyric-box'>Help us to help each other, Lord,
+each other's cross to bear,
+let each his friendly aid afford,
+and feel another's care.
+
+Up into thee, our living head,
+let us in all things grow,
+and by thy sacrifice be led
+the fruits of love to show.
+
+Touched by the lodestone of thy love
+let all our hearts agree;
+and ever toward each other move,
+and ever move toward thee.
+
+This is the bond of perfectness,
+thy spotless charity.
+O let us still, we pray, possess
+the mind that was in thee.
+
 </td></tr><tr><td class='hymn-name-box'><a href="listing/break_forth.html">
 Break Forth
 </a></td>
