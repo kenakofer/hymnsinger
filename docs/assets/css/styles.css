@@ -116,6 +116,12 @@ border-color: #f7f7ee;
 left: 0;
 top: 0;
 }
+h1 {
+    margin-top: 0;
+}
+ul, ol{
+    margin-top: -20px;
+}
 
 thead, tbody, tfoot { vertical-align: middle } /* add this rule*/
 td, th, tr { vertical-align: inherit } /* add this rule */

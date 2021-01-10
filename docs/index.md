@@ -2,44 +2,25 @@
 my_number: 5
 ---
 
-## Welcome to Hymn Hosting
+# Welcome to Hymn Hosting
 
-We'll see how well this works...
+Music can be more inviting and better presented, especially the *dusty old harmonies* in hymnals. One shouldn't need a music degree to learn and enjoy these musical works.
 
-Title is: {{ page.title }}
-my_number is: {{ page.my_number }}
-[link](test-song.html)
+### No ads, no catch, just 🎵 that wants to be free!
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This site provides **full sheet music** and **in-browser playback** on every song's page. If you'd like to learn one of the voice parts to a song, you can **adjust individual volume levels** to hear certain part more loudly.
 
-### Markdown
+Check out the [Full Hymn Index]({{ baseurl }}/hymn-index.html).
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### How it's done
 
-```markdown
-Syntax highlighted code block
+I "typeset" songs using [Lilypond](http://lilypond.org/). Lilypond turns a musical code file into PDF, PNG, and MIDI files which are all provided here for download. Of course, check out the [github project](https://github.com/kenanbit/hymn-hosting) to view the source files for the songs and make your own changes.
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
+Or, reach out to **request an added song**. Ensure that:
+ 1. The copyright is permissive or it is in public domain
+ 1. You provide a quality photo of the sheet music
 
-1. Numbered
-2. List
+Or, **Typeset a hymn yourself** using the Lilypond templates on github, and open a pull request to get it added here. I love having collaborators!
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/kenanbit/hymn-hosting/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+**Regarding copyright**, the hymns hosted here have, to the best of my knowledge, no copyright restriction. Please reach out if I have erred and included a restricted work.

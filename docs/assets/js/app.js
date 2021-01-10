@@ -25,7 +25,7 @@ var channel_to_velocity = {
     1: 110,
     2: 60,
     3: 70,
-    4: 90
+    4: 80
 }
 var note_playing_on_channel = {
     1: 0
