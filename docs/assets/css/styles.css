@@ -39,6 +39,18 @@ input[type="radio"] {
 input[type="radio"]:checked + label {
     border: solid 2px black;
 }
+.part-volume {
+    background: #ccc;
+    margin: 0;
+}
+.part-volume td, .part-volume th{
+    /*max-width: 100px;*/
+    padding: 0 10px;
+}
+.part-volume input {
+    /*max-width: 100px;*/
+    width: 100%;
+}
 img {
     position: relative;
     margin: 0 auto;
@@ -121,6 +133,12 @@ h1 {
 }
 ul, ol{
     margin-top: -20px;
+}
+@media print, screen and (max-width: 960px) {
+    header {
+    max-width: 400px;
+    padding-right: 34px;
+    }
 }
 
 thead, tbody, tfoot { vertical-align: middle } /* add this rule*/

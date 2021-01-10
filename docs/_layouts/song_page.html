@@ -35,35 +35,34 @@
           <button class="button button-primary" id="play-button" onclick="Player.isPlaying() ? pause() : play();" disabled="disabled">Play</button>
           <button class="button" onclick="stop()">Stop</button><br/>
 
-            Tempo: <span id="tempo-display"></span> bpm<br />
-            <input type="range" onchange="Player.pause();Player.setTempo(this.value);Player.play()" min="50" max="200">
         <div style="border:1px solid #ccc;margin-bottom:12px;background:#f7f7f7;">
             <div id="play-bar" style="height:20px;background:#33C3F0;width:0%;"></div>
         </div>
-        <table>
+        Tempo: <span id="tempo-display"></span> bpm<br />
+        <input type="range" onchange="Player.pause();Player.setTempo(this.value);Player.play()" min="50" max="200">
+        <table class='part-volume'>
             <tr>
-                <th>S</th><th>A</th><th>T</th><th>B</th>
-            </tr>
-            <tr>
-                <td>
-                    <input type="range" orient="vertical" onchange="channel_to_velocity[1]=this.value" min="0" max="200">
-                </td>
-                <td>
-        <input type="range" orient="vertical" onchange="channel_to_velocity[2]=this.value" min="0" max="200">
-                </td>
-                <td>
-        <input type="range" orient="vertical" onchange="channel_to_velocity[3]=this.value" min="0" max="200">
-                </td>
-                <td>
-        <input type="range" orient="vertical" onchange="channel_to_velocity[4]=this.value" min="0" max="200">
-                </td>
+                <tr>
+                <th>S</th>
+                <td ><input type="range" onchange="channel_to_velocity[1]=this.value" min="0" max="200" value="110"></td>
+                </tr>
+
+                <tr>
+                <th>A</th>
+                <td ><input type="range" onchange="channel_to_velocity[2]=this.value" min="0" max="200" value="60"></td>
+                </tr>
+
+                <tr>
+                <th>T</th>
+                <td ><input type="range" onchange="channel_to_velocity[3]=this.value" min="0" max="200" value="70"></td>
+                </tr>
+
+                <tr>
+                <th>B</th>
+                <td ><input type="range" onchange="channel_to_velocity[4]=this.value" min="0" max="200" value="80"></td>
+                </tr>
             </tr>
         </table>
-
-
-        <br />
-          <!--<li><a class="buttons github" href="{{ site.github.repository_url }}">View On GitHub</a></li>-->
-        </ul>
       </header>
 
       <section>
