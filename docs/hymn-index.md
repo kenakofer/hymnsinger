@@ -6,11 +6,15 @@ layout: default
 <tr><td class='hymn-name-box'><a href="listing/tis_a_gift_to_be_simple.html">
 Tis A Gift To Be Simple
 </a></td>
-<td class='lyric-box'>'Tis a gift to be simple, 'tis a gift to be free, 'tis a gift to come down where we ought to be.
-And when we find ourselves in the place just right 'twill be in the valley of love and delight.
+<td class='lyric-box'>'Tis a gift to be simple, 'tis a gift to be free,
+'tis a gift to come down where we ought to be.
+And when we find ourselves in the place just right
+'twill be in the valley of love and delight.
 
-When true simplicity is gained, to bow and to bend we will not be ashamed;
-to turn, turn, will be our delight, till by turning, turning we come round right.
+When true simplicity is gained,
+to bow and to bend we will not be ashamed;
+to turn, turn, will be our delight,
+till by turning, turning we come round right.
 
 </td></tr><tr><td class='hymn-name-box'><a href="listing/breath_on_me_breath_of_god.html">
 Breath On Me Breath Of God
