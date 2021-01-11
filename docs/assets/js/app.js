@@ -41,11 +41,12 @@ Soundfont.instrument(ac, 'https://raw.githubusercontent.com/gleitz/midi-js-sound
                         //console.log(event);
 			if (event.name == 'Note on') {
                             my_velocity = channel_to_velocity[event.channel]
+                            note_index = event.channel +' '+ event.noteName;
                             if (event.velocity == 0) {
-                                note_playing_on_channel[event.channel].stop(ac.currentTime);
-                                note_playing_on_channel[event.channel] = 0;
+                                note_playing_on_channel[note_index].stop(ac.currentTime);
+                                note_playing_on_channel[note_index] = 0;
                             } else {
-                                note_playing_on_channel[event.channel] = instrument.play(event.noteName, ac.currentTime, {gain:my_velocity/100})
+                                note_playing_on_channel[note_index] = instrument.play(event.noteName, ac.currentTime, {gain:my_velocity/100})
                             }
 			}
 
