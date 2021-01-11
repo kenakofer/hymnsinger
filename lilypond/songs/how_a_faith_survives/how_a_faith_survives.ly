@@ -86,7 +86,7 @@ extra_verses = \markup {
 
      \column {
       \line { \bold "2."
-        \column {
+        \column { % LYRICS-START
 "\"You doubt your very family!\" your instincts diatribe."
 "Decide: Be shunned to wilderness, or live a harmless lie"
 "Choose against evolvéd traits? Your logic may agree,"
@@ -96,7 +96,7 @@ extra_verses = \markup {
       }
       \combine \null \vspace #0.1 % adds vertical spacing between verses
       \line { \bold "3."
-        \column {
+        \column { % LYRICS-START
 "Is instinct unpersuasive? Try a sample of Pascal:"
 "A slim chance of eternal bliss is worth more than your all."
 "Take a page from Paul's Epistles, dodge eternal pain."
@@ -108,7 +108,7 @@ extra_verses = \markup {
     \hspace #0.1 % adds horizontal spacing between columns;
     \column {
       \line { \bold "4."
-        \column {
+        \column { % LYRICS-START
 "To start: believe, O wretch, your life is worthless, justly lost,"
 "and second: faith's your only hope, at seemingly no cost!"
 "Third: pay up in duties due (for faith is proved by work)."
@@ -118,7 +118,7 @@ extra_verses = \markup {
       }
       \combine \null \vspace #0.1 % adds vertical spacing between verses
       \line { \bold "5."
-        \column {
+        \column { % LYRICS-START
 "Mere reason of one mind can't win; the test of time is passed."
 "Religions of today are the religions fit to last."
 "Members true through power, fear, or friendly company"

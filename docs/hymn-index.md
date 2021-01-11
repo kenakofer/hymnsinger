@@ -63,6 +63,30 @@ Prodigal, I'll work in you, ensure your faith still thrive.
 I'll bring you back within the fold. Without you can't survive.
 Without you can't survive!
 
+"You doubt your very family!" your instincts diatribe.
+Decide: Be shunned to wilderness, or live a harmless lie
+Choose against evolvéd traits? Your logic may agree,
+but I, your gut, crave not the truth, I crave community.
+I crave community!
+
+Is instinct unpersuasive? Try a sample of Pascal:
+A slim chance of eternal bliss is worth more than your all.
+Take a page from Paul's Epistles, dodge eternal pain.
+Salvation's path is markéd well, with brimstone in the drain.
+With brimstone in the drain!
+
+To start: believe, O wretch, your life is worthless, justly lost,
+and second: faith's your only hope, at seemingly no cost!
+Third: pay up in duties due (for faith is proved by work).
+Redeem more souls tomorrow. Brother's watching if you shirk.
+God's watching if you shirk!
+
+Mere reason of one mind can't win; the test of time is passed.
+Religions of today are the religions fit to last.
+Members true through power, fear, or friendly company
+instill again in children's minds, "Don't eat from yonder tree."
+"Don't eat from yonder tree!"
+
 </td></tr><tr><td class='hymn-name-box'><a href="listing/come_thou_long_expected_jesus.html">
 Come Thou Long Expected Jesus
 </a></td>
