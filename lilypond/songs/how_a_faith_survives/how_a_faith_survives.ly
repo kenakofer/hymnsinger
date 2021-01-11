@@ -70,18 +70,18 @@ songChords = \chords {
 
 %% LYRICS
 verseA = \lyricmode {
-  I've grown con -- cerned as I look on. I see you doubt the truth,
+  A voice within has grown concerned: ''I see you doubt the truth,
   the cove -- nant that your faith, your church, im -- part -- ed in your youth.
   Pro -- di -- gal, I'll work in you, en -- sure your faith still thrive.
   I'll bring you back with -- in the fold. With -- out you can't sur -- vive.
-  With -- out you can't sur -- vive!
+  With -- out you can't sur -- vive!''
 }
 
 extra_verses = \markup {
        \fontsize #-1.5
 
   \fill-line {
-    %\hspace #0.1 % moves the column off the left margin;
+    \hspace #-25.0 % moves the column off the left margin;
      % can be removed if space on the page is tight
      \vspace #1
 
@@ -89,10 +89,10 @@ extra_verses = \markup {
       \line { \bold "2."
         \column { % LYRICS-START
 "\"You doubt your very family!\" your instincts diatribe."
-"Decide: Be shunned to wilderness, or live a harmless lie"
-"Choose against evolvéd traits? Your logic may agree,"
-"but I, your gut, crave not the truth, I crave community."
-"I crave community!"
+"Decide: Be shunned to wilderness, or live a harmless lie."
+"Act against evolvéd traits? Your logic may agree,"
+"but in your gut, you crave not truth, you crave community."
+"You crave community!"
         }
       }
       \combine \null \vspace #0.1 % adds vertical spacing between verses
@@ -112,9 +112,9 @@ extra_verses = \markup {
         \column { % LYRICS-START
 "To start: believe, O wretch, your life is worthless, justly lost,"
 "and second: faith's your only hope, at seemingly no cost!"
-"Third: pay up in duties due (for faith is proved by work)."
-"Redeem more souls tomorrow. Brother's watching if you shirk."
-"God's watching if you shirk!"
+"Third, since faith is proved by work, pay up in duties due:"
+"Two hands on plow, and don't look back, for Brother's watching you."
+"Your God is watching you!"
         }
       }
       \combine \null \vspace #0.1 % adds vertical spacing between verses
@@ -123,8 +123,8 @@ extra_verses = \markup {
 "Mere reason of one mind can't win; the test of time is passed."
 "Religions of today are the religions fit to last."
 "Members true through power, fear, or friendly company"
-"instill again in children's minds, \"Don't eat from yonder tree.\""
-"\"Don't eat from yonder tree!\""
+"instill again in children's minds, \"Eat not from yonder tree.\""
+"\"Eat not from yonder tree!\""
         }
       }
     }
