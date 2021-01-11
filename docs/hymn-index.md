@@ -59,7 +59,7 @@ How A Faith Survives
 </a></td>
 <td class='lyric-box'>I've grown concerned as I look on. I see you doubt the truth,
 the covenant that your faith, your church, imparted in your youth.
-I'm the reinforcement, to ensure your faith still thrive.
+Prodigal, I'll work in you, ensure your faith still thrive.
 I'll bring you back within the fold. Without you can't survive.
 Without you can't survive!
 
