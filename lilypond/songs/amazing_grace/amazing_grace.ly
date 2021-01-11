@@ -3,6 +3,7 @@
 \language "english"
 \include "../../lib/clairnote.ly"
 \include "../../lib/hymn_common.ly"
+\include "../../shared_tunes/amazing_grace.ly"
 %\include "color_by_pitch.ly"
 
 %% See docs/all_tags.txt for the full list available
@@ -16,53 +17,6 @@ tags = "christian 4part acapella 6verse musicbyother textbyother"
   meter = \smallText "NEW BRITAIN (AMAZING GRACE) CM"
   copyright =\smallText "Public Domain. Free to distribute, modify, and perform. Typeset by Kenan Schaefkofer."
   tagline = \tagline
-}
-
-%% SETTINGS
-hymnKey = \key g \major
-hymnTime = \time 3/4
-%% Adjust these to fix beaming
-%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-%hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-%hymnBeatExceptions = \set Timing.beamExceptions = #'()
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-}
-
-%% NOTES
-soprano = {
-  \globalParts
-  \relative g' { \partial 4 d4 | g2 b8( g) | b2 a4 | g2 e4 | d2 4 | g2 b8( g) | b2 a4 | d2.~ | \partial 2 d2 \bar " " | } \break
-  \relative g' { \partial 4 b4 | d4.( b8) d8( b) | g2 d4 | e4.( g8) g( e) | d2 4 | g2 b8( g) | b2 a4 | g2.~ | \partial 2 g2 | } \break
-  \bar "|."
-}
-alto = {
-  \globalParts
-  \relative e' { b4 | b2 d4 | d2 c4 | b2 c4 | b2 4 | b2 d4 | d2 4 | fs2( g4 | a2) | }
-  \relative e' { fs4 | d2 4 | 2 4 | c4.( d8) c4 | b2 d4 | b2 d4 | g2 fs4 | d2.~ | 2 | }
-  \relative e' {}
-  \relative e' {}
-}
-tenor = {
-  \globalParts
-  \relative a { g4 | d2 g4 | g2 fs4 | g2 4 | g2 4 | d2 g4 | g2 fs4 | a2( b4 | c2) | }
-  \relative a { d4 | b4.( g8) b g | g2 4 | g2 e8 g | g2 4 | g2 g8 b | d2 c4 | b2.~ | 2 | }
-  \relative a {}
-  \relative a {}
-}
-bass = {
-  \globalParts
-  \relative d { g,4 | g2 8 b | d2 4 | e2 c4 | g2 4 | g2 8 b | d2 4 | d2.~ | d2 | }
-  \relative d { d4 | g2 4 | b,2 4 | c4.( b8) c4 | g2 b4 | e2 d4 | d2 4 | g2.~ | 2 |}
-  \relative d {}
-  \relative d {}
-}
-songChords = \chords {
-  \set chordChanges = ##t
 }
 
 %% LYRICS
