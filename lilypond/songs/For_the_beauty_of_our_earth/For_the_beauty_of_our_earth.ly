@@ -5,6 +5,7 @@
 \include "../../lib/hymn_common.ly"
 \include "../../shared_tunes/dix.ly"
 %\include "color_by_pitch.ly"
+tags = "secular 4part acapella 5verse musicbyother textadaptedbykenan"
 \header {
   title = \titleText "For the beauty of our earth"
   %subtitle = \smallText "Optional"

@@ -5,6 +5,7 @@
 \include "../../lib/hymn_common.ly"
 \include "../../shared_tunes/hyfrydol_public.ly"
 %\include "color_by_pitch.ly"
+tags = "christian 4part acapella 2verse musicbyother textbyother"
 \header {
   title = \titleText "Come, thou long-expected Jesus"
   %subtitle = \smallText "From Hymnal: A Worship Book #178"

@@ -21,9 +21,6 @@ This is a project to make or take hymns with permissive copyright status, typese
    CSS tweaks:
     - Fix large/small screen differences
    Midiplayer tweaks:
-      Show tempo on file load
-      Don't reset tempo on play start (inhibit tempo event)
-      Don't start playing on tempo change
       Change stop to restart
       Figure out if dragging through the file is possible
       Fix play/pause indication
@@ -38,3 +35,5 @@ This is a project to make or take hymns with permissive copyright status, typese
     Screenshot on home page showing e.g. amazing grace old and new.
     Sort index page somehow
     Tag hymns/Set up tag pages
+    Fix multi-page output
+    Fixup words to how_a_faith_survives

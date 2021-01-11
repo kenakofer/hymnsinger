@@ -4,6 +4,7 @@
 \include "../../lib/clairnote.ly"
 \include "../../lib/hymn_common.ly"
 %\include "color_by_pitch.ly"
+tags = "christian 4part acapella 1verse musicbyother textbyother"
 \header {
   title = \titleText "Break forth, O beauteous heavenly light"
   %subtitle = \smallText "Optional"

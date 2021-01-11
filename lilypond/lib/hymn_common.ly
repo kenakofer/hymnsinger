@@ -92,6 +92,9 @@ smallText =
           $(lilypond-version)
           \char ##x2014
           "http://lilypond.org"
+          \char ##x2014
+          "Tags:"
+          \tags
         }
       }
     #})

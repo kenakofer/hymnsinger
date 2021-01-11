@@ -4,6 +4,7 @@
 \include "../../lib/clairnote.ly"
 \include "../../lib/hymn_common.ly"
 %\include "color_by_pitch.ly"
+tags = "theist 4part acapella 4verse musicbyother textbyother"
 \header {
   title = \titleText "Breath on me, breath of God"
   composer = \smallText "Music: Edwin Hatch, 1878"

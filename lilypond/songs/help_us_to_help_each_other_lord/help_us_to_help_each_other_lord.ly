@@ -4,6 +4,7 @@
 \include "../../lib/clairnote.ly"
 \include "../../lib/hymn_common.ly"
 %\include "color_by_pitch.ly"
+tags = "christian 4part acapella 4verse musicbyother textbyother"
 \header {
   title = \titleText "Help us to help each other, Lord"
   composer = \smallText "Music: François H. Barthélémon,  1833"

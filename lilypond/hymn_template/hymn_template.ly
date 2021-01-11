@@ -4,6 +4,9 @@
 \include "../../lib/clairnote.ly"
 \include "../../lib/hymn_common.ly"
 %\include "color_by_pitch.ly"
+
+%% See docs/all_tags.txt for the full list available
+tags = "christian 4part acapella 3verse musicbyother textbyother"
 \header {
   title = \titleText "Title goes here"
   %subtitle = \smallText "Optional"

@@ -4,6 +4,7 @@
 \include "../../lib/clairnote.ly"
 \include "../../lib/hymn_common.ly"
 %\include "color_by_pitch.ly"
+tags = "secular 1part accompanied 5verse arrbykenan textbykenan"
 \header {
   title = \titleText "How a faith survives"
   %subtitle = \smallText "Optional"
