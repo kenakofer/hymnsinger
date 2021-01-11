@@ -58,7 +58,7 @@ def join_verse_line(line, remove_quotes):
 
 def output_table_row(song_file_base, lyrics, tags, output_file):
     with open(output_file, 'a') as f:
-        f.write("<tr><td class='hymn-name-box'><a href=\"listing/"+song_file_base+".html\">")
+        f.write("<tr><td class='hymn-name-box'><a href=\"{{ site.baseurl }}/listing/"+song_file_base+".html\">")
         song_title = " ".join(map(lambda w: w[0].upper() + w[1:], song_file_base.split("_")))
         f.write(song_title)
         f.write("</a></td><td class='lyric-box'>")

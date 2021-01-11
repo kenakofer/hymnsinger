@@ -3,7 +3,7 @@ title: Hymns tagged theist
 layout: default
 ---
 <table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>
-<tr><td class='hymn-name-box'><a href="listing/breath_on_me_breath_of_god.html">Breath On Me Breath Of God</a></td><td class='lyric-box'>Breathe on me, breath of God. Fill me with life anew
+<tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/breath_on_me_breath_of_god.html">Breath On Me Breath Of God</a></td><td class='lyric-box'>Breathe on me, breath of God. Fill me with life anew
 that I may love what thou dost love, and do what thou wouldst do.
 
 Breath on me, breath of God, un-til my heart is pure,

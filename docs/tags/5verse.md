@@ -3,7 +3,7 @@ title: Hymns tagged 5verse
 layout: default
 ---
 <table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>
-<tr><td class='hymn-name-box'><a href="listing/how_a_faith_survives.html">How A Faith Survives</a></td><td class='lyric-box'>I've grown concerned as I look on. I see you doubt the truth,
+<tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/how_a_faith_survives.html">How A Faith Survives</a></td><td class='lyric-box'>I've grown concerned as I look on. I see you doubt the truth,
 the covenant that your faith, your church, imparted in your youth.
 Prodigal, I'll work in you, ensure your faith still thrive.
 I'll bring you back within the fold. Without you can't survive.
@@ -33,7 +33,7 @@ Members true through power, fear, or friendly company
 instill again in children's minds, "Don't eat from yonder tree."
 "Don't eat from yonder tree!"
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/accompanied.html">accompanied</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbykenan.html">textbykenan</a></td></tr><tr><td class='hymn-name-box'><a href="listing/for_the_beauty_of_our_earth.html">For The Beauty Of Our Earth</a></td><td class='lyric-box'>For the beauty of our earth, for the glory of the skies,
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/accompanied.html">accompanied</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbykenan.html">textbykenan</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/for_the_beauty_of_our_earth.html">For The Beauty Of Our Earth</a></td><td class='lyric-box'>For the beauty of our earth, for the glory of the skies,
 for the love which from our birth over and around us lies:
 
   Mother Earth, to thee we raise this our hymn of grateful praise.

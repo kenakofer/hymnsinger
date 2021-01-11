@@ -42,7 +42,7 @@ soprano = {
 }
 alto = {
   \globalParts
-  \relative e' { c8 8 | 4 d8 e f f f g | f4 8 8 f4 e8 d | c4 e e d4 | d8 d d d c4 }
+  \relative e' { c8 8 | 4 d8 e f c f g | f4 8 8 f4 e8 d | c4 e e d4 | d8 d d d c4 }
   \relative e' { c | 8 c d e f4 8 g | a( g) f4 f4 f | f8( e) d d d4 e8 e | f4 d8 d c4 r }
   \relative e' { f2 f4. c8 | f8 f f e d4. e8 | f4 f8 g a4 f8 f | e4 8 f e4 |  }
   \relative e' { r8 c | c2 4. 8 | c8( d) e g f4 e8 f | f( e) d4 d e8 e | f4 d c | }

@@ -3,7 +3,7 @@ title: Hymns tagged 1part
 layout: default
 ---
 <table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>
-<tr><td class='hymn-name-box'><a href="listing/how_a_faith_survives.html">How A Faith Survives</a></td><td class='lyric-box'>I've grown concerned as I look on. I see you doubt the truth,
+<tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/how_a_faith_survives.html">How A Faith Survives</a></td><td class='lyric-box'>I've grown concerned as I look on. I see you doubt the truth,
 the covenant that your faith, your church, imparted in your youth.
 Prodigal, I'll work in you, ensure your faith still thrive.
 I'll bring you back within the fold. Without you can't survive.
