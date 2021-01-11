@@ -39,6 +39,15 @@ input[type="radio"] {
 input[type="radio"]:checked + label {
     border: solid 2px black;
 }
+.tempo-panel {
+    background: #ccc;
+    margin-bottom: 10px;
+    padding: 0 10px 0 5px;
+    color: black;
+}
+.tempo-panel input {
+    width: 100%;
+}
 .part-volume {
     background: #ccc;
     margin: 0;

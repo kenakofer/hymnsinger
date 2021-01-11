@@ -38,9 +38,11 @@
         <div style="border:1px solid #ccc;margin-bottom:12px;background:#f7f7f7;">
             <div id="play-bar" style="height:20px;background:#33C3F0;width:0%;"></div>
         </div>
-        Tempo: <span id="tempo-display"></span> bpm<br />
-        <!--<input id='tempo-input' type="range" onchange="Player.pause();Player.setTempo(this.value);Player.play()" min="50" max="200">-->
-        <input id='tempo-input' type="range" onchange="changeTempo(this.value);" min="50" max="200">
+        <div class="tempo-panel">
+            Tempo: <span id="tempo-display"></span> bpm<br />
+            <!--<input id='tempo-input' type="range" onchange="Player.pause();Player.setTempo(this.value);Player.play()" min="50" max="200">-->
+            <input id='tempo-input' type="range" onchange="changeTempo(this.value);" min="50" max="200">
+        </div>
         <table class='part-volume'>
             <tr>
                 <tr>
