@@ -2,7 +2,7 @@
 title: Hymn Host Index
 layout: default
 ---
-<table><tr><th>Song</th><th>Lyrics</th></tr>
+<table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>
 <tr><td class='hymn-name-box'><a href="listing/tis_a_gift_to_be_simple.html">
 Tis A Gift To Be Simple
 </a></td>
@@ -16,7 +16,27 @@ to bow and to bend we will not be ashamed;
 to turn, turn, will be our delight,
 till by turning, turning we come round right.
 
-</td></tr><tr><td class='hymn-name-box'><a href="listing/breath_on_me_breath_of_god.html">
+</td><td>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/secular.html">
+secular
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/4part.html">
+4part
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/acapella.html">
+acapella
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/1verse.html">
+1verse
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/arrbykenan.html">
+arrbykenan
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/textbyother.html">
+textbyother
+</a>
+</td></tr>
+<tr><td class='hymn-name-box'><a href="listing/breath_on_me_breath_of_god.html">
 Breath On Me Breath Of God
 </a></td>
 <td class='lyric-box'>Breathe on me, breath of God. Fill me with life anew
@@ -31,7 +51,27 @@ till all this earthly part of me glows with thy fire divine.
 Breath on me, breath of God, so shall I never die,
 but live with thee the perfect life of thine eternity.
 
-</td></tr><tr><td class='hymn-name-box'><a href="listing/brethren_we_have_met_to_worship.html">
+</td><td>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/theist.html">
+theist
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/4part.html">
+4part
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/acapella.html">
+acapella
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/4verse.html">
+4verse
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/musicbyother.html">
+musicbyother
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/textbyother.html">
+textbyother
+</a>
+</td></tr>
+<tr><td class='hymn-name-box'><a href="listing/brethren_we_have_met_to_worship.html">
 Brethren We Have Met To Worship
 </a></td>
 <td class='lyric-box'>Brethren we have met to worship and adore the Lord our God.
@@ -54,7 +94,27 @@ Let us love and pray for sinners till our God makes all things new.
 Christ will call us home to heaven. At his table we'll sit down.
 Christ will gird himself and serve us with sweet manna all around.
 
-</td></tr><tr><td class='hymn-name-box'><a href="listing/how_a_faith_survives.html">
+</td><td>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/christian.html">
+christian
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/4part.html">
+4part
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/acapella.html">
+acapella
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/4verse.html">
+4verse
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/musicbyother.html">
+musicbyother
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/textbyother.html">
+textbyother
+</a>
+</td></tr>
+<tr><td class='hymn-name-box'><a href="listing/how_a_faith_survives.html">
 How A Faith Survives
 </a></td>
 <td class='lyric-box'>I've grown concerned as I look on. I see you doubt the truth,
@@ -87,7 +147,27 @@ Members true through power, fear, or friendly company
 instill again in children's minds, "Don't eat from yonder tree."
 "Don't eat from yonder tree!"
 
-</td></tr><tr><td class='hymn-name-box'><a href="listing/come_thou_long_expected_jesus.html">
+</td><td>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/secular.html">
+secular
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/1part.html">
+1part
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/accompanied.html">
+accompanied
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/5verse.html">
+5verse
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/arrbykenan.html">
+arrbykenan
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/textbykenan.html">
+textbykenan
+</a>
+</td></tr>
+<tr><td class='hymn-name-box'><a href="listing/come_thou_long_expected_jesus.html">
 Come Thou Long Expected Jesus
 </a></td>
 <td class='lyric-box'>Come, thou longexpected Jesus! born to set thy people free,
@@ -100,7 +180,27 @@ born to reign in us forever, now thy gracious kingdom bring.
 By thine own eternal Spirit, rule in all our hearts alone.
 By thine allsufficient merit, raise us to thy glorious throne.
 
-</td></tr><tr><td class='hymn-name-box'><a href="listing/help_us_to_help_each_other_lord.html">
+</td><td>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/christian.html">
+christian
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/4part.html">
+4part
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/acapella.html">
+acapella
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/2verse.html">
+2verse
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/musicbyother.html">
+musicbyother
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/textbyother.html">
+textbyother
+</a>
+</td></tr>
+<tr><td class='hymn-name-box'><a href="listing/help_us_to_help_each_other_lord.html">
 Help Us To Help Each Other Lord
 </a></td>
 <td class='lyric-box'>Help us to help each other, Lord,
@@ -123,7 +223,27 @@ thy spotless charity.
 O let us still, we pray, possess
 the mind that was in thee.
 
-</td></tr><tr><td class='hymn-name-box'><a href="listing/break_forth.html">
+</td><td>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/christian.html">
+christian
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/4part.html">
+4part
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/acapella.html">
+acapella
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/4verse.html">
+4verse
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/musicbyother.html">
+musicbyother
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/textbyother.html">
+textbyother
+</a>
+</td></tr>
+<tr><td class='hymn-name-box'><a href="listing/break_forth.html">
 Break Forth
 </a></td>
 <td class='lyric-box'>Break forth, O beauteous heav'nly light, and usher in the morning.
@@ -131,7 +251,27 @@ O shepherds, shrink not with affright, but hear the angel's warning.
 This child, now weak in infancy, our confidence and joy shall be,
 the power of Satan breaking, our peace eternal making.
 
-</td></tr><tr><td class='hymn-name-box'><a href="listing/for_the_beauty_of_our_earth.html">
+</td><td>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/christian.html">
+christian
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/4part.html">
+4part
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/acapella.html">
+acapella
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/1verse.html">
+1verse
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/musicbyother.html">
+musicbyother
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/textbyother.html">
+textbyother
+</a>
+</td></tr>
+<tr><td class='hymn-name-box'><a href="listing/for_the_beauty_of_our_earth.html">
 For The Beauty Of Our Earth
 </a></td>
 <td class='lyric-box'>For the beauty of our earth, for the glory of the skies,
@@ -151,4 +291,24 @@ friends we've lost and friends still here, for all selfless thoughts and mild:
 For thy Truth both harsh and kind, shadowed setter of our stage,
 patterns sought by human mind, guiding us from age to age,
 
-</td></tr></table>
+</td><td>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/secular.html">
+secular
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/4part.html">
+4part
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/acapella.html">
+acapella
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/5verse.html">
+5verse
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/musicbyother.html">
+musicbyother
+</a>
+<a class="taglink" href="{{ site.baseurl }}/tag_listing/textadaptedbykenan.html">
+textadaptedbykenan
+</a>
+</td></tr>
+</table>

@@ -8,7 +8,7 @@ echo "---" > $LISTFILE
 echo "title: Hymn Host Index" >> $LISTFILE
 echo "layout: default" >> $LISTFILE
 echo "---" >> $LISTFILE
-echo "<table><tr><th>Song</th><th>Lyrics</th></tr>" >> $LISTFILE
+echo "<table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>" >> $LISTFILE
 
 
 find lilypond/songs -type f -iname "*.ly" -print0 | while IFS= read -r -d $'\0' file; do
@@ -35,6 +35,9 @@ find lilypond/songs -type f -iname "*.ly" -print0 | while IFS= read -r -d $'\0' 
     echo -n "<td class='lyric-box'>" >> $LISTFILE
     # Output lyrics
     $SCRIPT_DIR/extract_lyrics.py $file >> $LISTFILE
-    echo -n "</td></tr>" >> $LISTFILE
+    echo -n "</td>" >> $LISTFILE
+    echo "<td>" >> $LISTFILE
+    $SCRIPT_DIR/extract_tag_html.py $file >> $LISTFILE
+    echo "</td></tr>" >> $LISTFILE
 done
 echo "</table>" >> $LISTFILE
