@@ -4,9 +4,13 @@ var AudioContext = window.AudioContext || window.webkitAudioContext || false;
 var ac = new AudioContext || new webkitAudioContext;
 
 var changeTempo = function(tempo) {
+        was_playing = Player.isPlaying()
+        Player.pause();
 	Player.tempo = tempo;
         document.getElementById('tempo-input').value = tempo;
         document.getElementById('tempo-display').innerHTML = tempo;
+        if (was_playing)
+            Player.play();
 }
 
 var play = function() {
