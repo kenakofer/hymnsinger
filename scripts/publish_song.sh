@@ -17,7 +17,7 @@ git add docs/hymn-index*
 git add docs/tags
 
 # Commit and push
-git commit -m "Add new song \"$BASE_NAME\""
+git commit -m "Add/update song \"$BASE_NAME\""
 git push
 
 # Add the song outputs to the release
