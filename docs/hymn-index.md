@@ -54,6 +54,15 @@ Let us love and pray for sinners till our God makes all things new.
 Christ will call us home to heaven. At his table we'll sit down.
 Christ will gird himself and serve us with sweet manna all around.
 
+</td></tr><tr><td class='hymn-name-box'><a href="listing/how_a_faith_survives.html">
+How A Faith Survives
+</a></td>
+<td class='lyric-box'>I've grown concerned as I look on. I see you doubt the truth,
+the covenant that your faith, your church, imparted in your youth.
+I'm the reinforcement, to ensure your faith still thrive.
+I'll bring you back within the fold. Without you can't survive.
+Without you can't survive!
+
 </td></tr><tr><td class='hymn-name-box'><a href="listing/come_thou_long_expected_jesus.html">
 Come Thou Long Expected Jesus
 </a></td>
