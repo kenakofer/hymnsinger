@@ -6,7 +6,7 @@
 %\include "color_by_pitch.ly"
 tags = "secular 1part accompanied 5verse arrbykenan textbykenan"
 \header {
-  title = \titleText "How a faith survives"
+  title = \titleText "Religion fit to last"
   %subtitle = \smallText "Optional"
   composer = \smallText "Music: French folk melody"
   arranger = \smallText "Arranged by Kenan Schaefkofer, 2021"
