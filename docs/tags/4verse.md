@@ -55,7 +55,27 @@ thy spotless charity.
 O let us still, we pray, possess
 the mind that was in thee.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/angels_we_have_heard.html">Angels We Have Heard</a></td><td class='lyric-box'>Angels we have heard on high, singing sweetly through the night,
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_little_town.html">O Little Town</a></td><td class='lyric-box'>O little town of Bethlehem, how still we see thee lie!
+Above thy deep and dreamless sleep the silent stars go by.
+Yet in thy dark streets shineth the everlasting light;
+the hopes and fears of all the years are met in thee tonight.
+
+For Christ is born of Mary, and gathered all above,
+while mortals sleep, the angels keep their watch of wond'ring love.
+O morning stars, together proclaim the holy birth!
+and praises sing to God the King, and peace to all the earth!
+
+How silently, how silently, the wondrous gift is giv'n!
+So God imparts to human hearts the blessings of the heav'ns.
+No ear may hear his coming, but in this world of sin,
+where meek souls will receive him still the dear Christ enters in.
+
+O holy Child of Bethlehem, descend to us we pray,
+cast out our sin, and enter in, be born in us today!
+We hear the Christmas angels the great glad tidings tell.
+O come to us, abide with us, our Lord Immanuel!
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/winter.html">winter</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/angels_we_have_heard.html">Angels We Have Heard</a></td><td class='lyric-box'>Angels we have heard on high, singing sweetly through the night,
 and the mountains in reply echoing their brave delight.
 
   Gloria in excelsis Deo, gloria in excelsis Deo.
