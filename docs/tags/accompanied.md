@@ -90,8 +90,8 @@ pure, universal Love thou art.
 To me, to all, thy mercies move -
 thy nature, and thy name is Love.
 
-My prayer hath power with God; the grace
-unspeakable I now receive!
+My prayer hath power with God;
+the grace unspeakable I now receive!
 Through faith I see thee face to face,
 I see thee face to face, and live!
 In vain I have not wept and strove -

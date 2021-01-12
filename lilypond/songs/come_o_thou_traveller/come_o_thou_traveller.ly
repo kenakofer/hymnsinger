@@ -89,11 +89,11 @@ all_verses = <<
 >>
 
 extra_verses = \markup {
-       \fontsize #-2.5
+       \fontsize #-1.5
 
   \fill-line {
      \column {
-      \line { \bold "3."
+      \line { \bold "3"
         \column { % LYRICS-START
 "In vain thou strugglest to get free;"
 "I never will unloose my hold."
@@ -104,7 +104,7 @@ extra_verses = \markup {
         }
       }
       \combine \null \vspace #0.1 % adds vertical spacing between verses
-      \line { \bold "4."
+      \line { \bold "4"
         \column { % LYRICS-START
 "Wilt thou not yet to me reveal"
 "thy new, unuerable name?"
@@ -115,7 +115,7 @@ extra_verses = \markup {
         }
       }
       \combine \null \vspace #0.1 % adds vertical spacing between verses
-      \line { \bold "5."
+      \line { \bold "5"
         \column { % LYRICS-START
 "'Tis all in vain to hold thy tongue"
 "or touch the hollow of my thigh."
@@ -127,7 +127,7 @@ extra_verses = \markup {
       }
     }
     \column {
-      \line { \bold "6."
+      \line { \bold "6"
         \column { % LYRICS-START
 "What though my shrinking flesh complain"
 "and murmur to contend so long,"
@@ -138,7 +138,7 @@ extra_verses = \markup {
         }
       }
       \combine \null \vspace #0.1 % adds vertical spacing between verses
-      \line { \bold "7."
+      \line { \bold "7"
         \column { % LYRICS-START
 "My strength is gone, my nature dies,"
 "I sink beneath thy weighty hand,"
@@ -149,7 +149,7 @@ extra_verses = \markup {
         }
       }
       \combine \null \vspace #0.1 % adds vertical spacing between verses
-      \line { \bold "8."
+      \line { \bold "8"
         \column { % LYRICS-START
 "Yield to me now - for I am weak"
 "but confident in self-despair!"
@@ -161,7 +161,7 @@ extra_verses = \markup {
       }
     }
     \column {
-      \line { \bold "9."
+      \line { \bold "9"
         \column { % LYRICS-START
 "'Tis Love! 'tis Love! thou diedst for me,"
 "I hear thy whisper in my heart."
@@ -172,10 +172,10 @@ extra_verses = \markup {
         }
       }
       \combine \null \vspace #0.1 % adds vertical spacing between verses
-      \line { \bold "10."
+      \line { \bold "10"
         \column { % LYRICS-START
-"My prayer hath power with God; the grace"
-"unspeakable I now receive!"
+"My prayer hath power with God;"
+"the grace unspeakable I now receive!"
 "Through faith I see thee face to face,"
 "I see thee face to face, and live!"
 "In vain I have not wept and strove -"
@@ -183,7 +183,7 @@ extra_verses = \markup {
         }
       }
       \combine \null \vspace #0.1 % adds vertical spacing between verses
-      \line { \bold "11."
+      \line { \bold "11"
         \column { % LYRICS-START
 "Contented now upon my thigh"
 "I halt, till life's short journey end."
