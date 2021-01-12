@@ -12,10 +12,8 @@ This is a project to make or take hymns with permissive copyright status, typese
 
 ### Possible TODOs:
  - Differentiate fonts png versus pdf?
-   Change hymn text locations
  - Email lilypond list regarding shape notes + partsCombine
  - Typeset more hymns/tunes
-    - Amazing grace tune, possibly with the alternative lyrics
     - Melody of slowly turning (Make your own harmonization and lyrics, even though the originals are so good...)
    Stem default directions down/up?
    CSS tweaks:
@@ -34,6 +32,5 @@ This is a project to make or take hymns with permissive copyright status, typese
     Fix playback on mobile firefox
     Screenshot on home page showing e.g. amazing grace old and new.
     Sort index page somehow
-    Tag hymns/Set up tag pages
     Fix multi-page output
     Fixup words to how_a_faith_survives
