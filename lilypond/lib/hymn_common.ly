@@ -107,6 +107,7 @@ smallText =
       <<
         \new Staff = "top" \with {
           \cnNoteheadStyle "funksol"
+          printPartCombineTexts = ##f
         }
         <<
 
@@ -116,6 +117,7 @@ smallText =
         >>
         \new Staff = "bottom" \with {
           \cnNoteheadStyle "funksol"
+          printPartCombineTexts = ##f
         }<<
           \new Voice \with {
           } { \clef bass << \partcombine #'(2 . 11) $bottomA $bottomB >> }
@@ -130,14 +132,18 @@ smallText =
     #{
       <<
         $songChords
-        \new TradStaff = "top"
+        \new TradStaff = "top" \with {
+          printPartCombineTexts = ##f
+        }
         <<
           \new Voice \with {
             
           } << \partcombine #'(2 . 11) $topA $topB >>
           \all_verses
         >>
-        \new TradStaff = "bottom" <<
+        \new TradStaff = "bottom" \with {
+          printPartCombineTexts = ##f
+        } <<
           \new Voice \with {
             
           } { \clef bass << \partcombine #'(2 . 11) $bottomA $bottomB >> }

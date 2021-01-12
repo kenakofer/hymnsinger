@@ -48,5 +48,5 @@ songChords = \chords {
 all_verses = { }
 
 %% UNCOMMENT to VERIFY, then RECOMMENT
-\book { \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }
+%\book { \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }
 %\score { << \soprano \alto \tenor \bass >> \midi { \tempo  4 = 120 } }
