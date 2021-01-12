@@ -70,9 +70,9 @@ songChords = \chords {
 
 %% LYRICS
 verseA = \lyricmode {
-  A voice within has grown concerned: ''I see you doubt the truth,
-  the cove -- nant that your faith, your church, im -- part -- ed in your youth.
-  Pro -- di -- gal, I'll work in you, en -- sure your faith still thrive.
+  A voice with -- in be -- comes dis -- tressed to see you taste the fruit,
+  for -- bid -- den by your God and creed, res -- pec -- ted since your youth:
+  ''Pro -- di -- gal, I'll fight in you, re -- store your faith to thrive.
   I'll bring you back with -- in the fold. With -- out you can't sur -- vive.
   With -- out you can't sur -- vive!''
 }
@@ -88,9 +88,9 @@ extra_verses = \markup {
      \column {
       \line { \bold "2."
         \column { % LYRICS-START
-"\"You doubt your very family!\" your instincts diatribe."
-"Decide: Be shunned to wilderness, or live a harmless lie."
-"Act against evolvéd traits? Your logic may agree,"
+"\"You'd loose the bond of family!\" your instinct diatribes."
+"Decide: Be shunned to wilderness, or rest in harmless lies."
+"Act against evolvéd traits? Your logic might agree,"
 "but in your gut, you crave not truth, you crave community."
 "You crave community!"
         }
@@ -100,9 +100,9 @@ extra_verses = \markup {
         \column { % LYRICS-START
 "Is instinct unpersuasive? Try a sample of Pascal:"
 "A slim chance of eternal bliss is worth more than your all."
-"Take a page from Paul's Epistles, dodge eternal pain."
-"Salvation's path is markéd well, with brimstone in the drain."
-"With brimstone in the drain!"
+"Walk along the Roman Road, avoid eternal pain."
+"Salvation's path is markéd well, with brimstone in the drain,"
+"With brimstone in the drain:"
         }
       }
     }
@@ -147,11 +147,15 @@ all_verses = <<
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } \extra_verses }
 
 %% Traditional with shaped noteheads (broken on non-combined chords)
-\book { \bookOutputSuffix "shapenote" \score { \fillTradScore {\aikenHeads \soprano} {\aikenHeads \alto} {\aikenHeads \tenor} {\aikenHeads \bass} \songChords } }
+\book { \bookOutputSuffix "shapenote" \score { \fillTradScore {\aikenHeads \soprano} {\aikenHeads \alto} {\aikenHeads \tenor} {\aikenHeads \bass} \songChords } \extra_verses }
 
 %% Clairnotes Notation
-\book { \bookOutputSuffix "clairnote" \score { \fillClairScore \soprano \alto \tenor \bass } }
-
+%% Clairnotes Notation
+\book { \bookOutputSuffix "clairnote" \score { 
+  \layout {
+    #(layout-set-staff-size 16)
+  } \fillClairScore \soprano \alto \tenor \bass 
+} \extra_verses}
 %% MIDI output
 \score {
   <<
