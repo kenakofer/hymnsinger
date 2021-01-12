@@ -1,3 +1,8 @@
+---
+title: Hymns tagged winter
+layout: default
+---
+<table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>
 <tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/angels_we_have_heard.html">Angels We Have Heard</a></td><td class='lyric-box'>Angels we have heard on high, singing sweetly through the night,
 and the mountains in reply echoing their brave delight.
 
