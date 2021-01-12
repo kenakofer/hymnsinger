@@ -10,7 +10,7 @@ Music can be more inviting and better presented, especially the *dusty old harmo
 
 This site provides **full sheet music** and **in-browser playback** on every song's page. If you'd like to learn one of the voice parts to a song, you can **adjust individual volume levels** to hear certain part more loudly.
 
-Check out the [Full Hymn Index]({{ baseurl }}/hymn-index.html).
+Check out the [Full Hymn Index]({{ site.baseurl }}/hymn-index.html).
 
 ### How it's done
 
