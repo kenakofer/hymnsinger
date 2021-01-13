@@ -13,7 +13,7 @@ tags = "secular 4part acapella 5verse musicbyother textadaptedbykenan"
   %arranger = \smallText "Arranged by William H. Monk, 1861"
   poet = \twoLineSmallText "Text: Folliott S. Pierpoint, 1864" "Adapted by Kenan Schaefkofer, 2021"
   meter = \smallText "DIX 77.77.77"
-  copyright =\smallText "Public Domain. Free to distribute, modify, and perform. Typeset by Kenan Schaefkofer."
+  copyright = \public_domain_notice "Kenan Schaefkofer"
   tagline = \tagline
 }
 

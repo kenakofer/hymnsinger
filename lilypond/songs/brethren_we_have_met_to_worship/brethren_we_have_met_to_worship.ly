@@ -10,7 +10,7 @@ tags = "christian 4part acapella 4verse musicbyother textbyother"
   composer = \smallText "Music: The Columbian Harmony, 1825"
   poet = \smallText "Text: The Columbian Harmony, 1825"
   meter = \smallText "HOLY MANNA 87.87 D"
-  copyright =\smallText "Public Domain. Free to distribute, modify, and perform. Typeset by Kenan Schaefkofer."
+  copyright = \public_domain_notice "Kenan Schaefkofer"
   tagline = \tagline
 }
 

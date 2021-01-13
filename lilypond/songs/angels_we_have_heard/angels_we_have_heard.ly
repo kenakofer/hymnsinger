@@ -12,7 +12,7 @@ tags = "christian 4part acapella 4verse musicbyother textbyother winter"
   composer = \smallText "Music: Traditional French carol, 1855"
   poet = \smallText "Text: tr. anonymous, altered by Earl Marlatt, 1937"
   meter = \smallText "GLORIA 77.77 with refrain"
-  copyright =\smallText "Public Domain. Free to distribute, modify, and perform. Typeset by Kenan Schaefkofer."
+  copyright = \public_domain_notice "Kenan Schaefkofer"
   tagline = \tagline
 }
 

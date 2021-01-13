@@ -12,7 +12,7 @@ tags = "christian 4part acapella 1verse musicbyother textbyother"
   arranger = \smallText "Harmonized by J. S. Bach, 1734"
   poet = \smallText "Text: Johann Rist, 1641, tr. John Troutbeck ca. 1885"
   meter = \smallText "ERMUNTRE DICH 87.87.88.77"
-  copyright =\smallText "Public Domain. Free to distribute, modify, and perform. Typeset by Kenan Schaefkofer."
+  copyright = \public_domain_notice "Kenan Schaefkofer"
   tagline = \tagline
 }
 

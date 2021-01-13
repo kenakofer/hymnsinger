@@ -12,7 +12,7 @@ tags = "secular 4part acapella 1verse arrbykenan textbyother"
   arranger = \smallText "Arranged by Kenan Schaefkofer, 2021"
   poet = \smallText "Text: Joseph Bracket, 1848"
   meter = \smallText "SIMPLE GIFTS IRREGULAR"
-  copyright =\smallText "Public Domain. Free to distribute, modify, and perform. Typeset by Kenan Schaefkofer."
+  copyright = \public_domain_notice "Kenan Schaefkofer"
   tagline = \tagline
 }
 

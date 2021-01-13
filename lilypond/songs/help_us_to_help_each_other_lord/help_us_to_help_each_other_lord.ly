@@ -11,7 +11,7 @@ tags = "christian 4part acapella 4verse musicbyother textbyother"
   %arranger = \smallText "Adapted by Robert Simpson, 1833"
   poet = \smallText "Text: Charles Wesley, 1742"
   meter = \smallText "BALERMA CM"
-  copyright =\smallText "Public Domain. Free to distribute, modify, and perform. Typeset by Kenan Schaefkofer."
+  copyright = \public_domain_notice "Kenan Schaefkofer"
   tagline = \tagline
 }
 

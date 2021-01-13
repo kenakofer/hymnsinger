@@ -14,7 +14,7 @@ tags = "theist 1part accompanied 11verse arrbykenan textbyother"
   arranger = \smallText "Arranged by Kenan Schaefkofer, 2018"
   poet = \smallText "Text: Charles Wesley, 1742"
   meter = \smallText "VERNON 88.88.88"
-  copyright =\smallText "Public Domain. Free to distribute, modify, and perform. Typeset by Kenan Schaefkofer."
+  copyright = \public_domain_notice "Kenan Schaefkofer"
   tagline = \tagline
 }
 

@@ -3,55 +3,93 @@
 \language "english"
 \include "../../lib/clairnote.ly"
 \include "../../lib/hymn_common.ly"
-\include "../../shared_tunes/amazing_grace.ly"
 %\include "color_by_pitch.ly"
 
 %% See docs/all_tags.txt for the full list available
-tags = "christian 4part acapella 6verse musicbyother textbyother"
+tags = "theist 4part acapella 5verse arrbykenan textbyother"
 \header {
-  title = \titleText "Amazing grace"
+  title = \titleText "Be thou my vision"
   %subtitle = \smallText "Optional"
-  composer = \smallText "Music: American folk melody, 1831"
-  %arranger = \smallText "Arranged by Edwin O. Excell, 1900"
-  poet = \smallText "Text: John Newton, 1779 (Sts. 1-5), 1790 (St. 6)"
-  meter = \smallText "NEW BRITAIN (AMAZING GRACE) CM"
+  composer = \smallText "Music: Irish melody, 1909"
+  arranger = \smallText "Arranged by Kenan Schaefkofer, year"
+  poet = \smallText "Text: Where text from, year"
+  meter = \smallText "TUNE NAME AND METER E.G 87.87 D"
   copyright = \public_domain_notice "Kenan Schaefkofer"
   tagline = \tagline
 }
 
+%% SETTINGS
+hymnKey = \key e \major
+hymnTime = \time 3/4
+%% Adjust these to fix beaming
+%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
+%hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
+%hymnBeatExceptions = \set Timing.beamExceptions = #'()
+globalParts = {
+  \hymnKey
+  \hymnTime
+  \hymnBaseMoment
+  \hymnBeatStructure
+  \hymnBeamExceptions
+}
+
+%% NOTES
+soprano = {
+  \globalParts
+  \relative g' { e4 e fs8 e | cs4 b b8 cs | e4 e fs | g2. | } \break
+  \relative g' { fs4 4 4 | fs gs b | cs b gs | b2. | } \break
+  \relative g' { cs4 8 ds e ds | cs4( b) gs | b e, ds | cs2( b4 | } \break
+  \relative g' { e4 gs b | cs8 b gs4 e8 gs | fs4 e e | e2. | }\break
+  \bar "|."
+}
+alto = {
+  \globalParts
+  \relative e' {}
+  \relative e' {}
+  \relative e' {}
+  \relative e' {}
+}
+tenor = {
+  \globalParts
+  \relative a {}
+  \relative a {}
+  \relative a {}
+  \relative a {}
+}
+bass = {
+  \globalParts
+  \relative d {}
+  \relative d {}
+  \relative d {}
+  \relative d {}
+}
+songChords = \chords {
+  \set chordChanges = ##t
+}
+
 %% LYRICS
 verseA = \lyricmode {
-  A -- maz -- ing grace! how sweet the sound, that saved a wretch like me!
-  I once was lost, but now am found, was blind, but now I see.
+  Ly -- rics
 }
 verseB = \lyricmode {
-  'Twas grace that taught my heart to fear, and grace my fears re -- lieved.
-  How pre -- cious did that grace ap -- pear the hour I first be -- lieved.
+  for each
 }
 verseC = \lyricmode {
-  Through man -- y dan -- gers, toils, and snares, I have al -- read -- y come.
-  'Tis grace has brought me safe thus far, and grace will lead me home.
+ verse
 }
 verseD = \lyricmode {
-  Yes, when this flesh and heart shall fail, and mor -- tal life shall cease,
-  I shall pos -- sess, with -- in the vail, a life of joy and peace.
+ go here.
 }
-verseE = \lyricmode {
-  The earth shall soon dis -- solve like snow, the sun for -- bear to shine;
-  but God, who called me here be -- low, will be for -- ev -- er mine.
-}
-verseF = \lyricmode {
-  When we've been there ten thou -- sand years, bright shin -- ing as the sun,
-  we've no less days to sing God's praise than when we'd first be -- gun.
-}
+verseE = \lyricmode { }
+verseF = \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano
   % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "1" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "2" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "3" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "4" \verseD }
+  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
+  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
+  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
+  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>

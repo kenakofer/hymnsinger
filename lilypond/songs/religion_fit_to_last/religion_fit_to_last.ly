@@ -12,7 +12,7 @@ tags = "secular 1part accompanied 5verse arrbykenan textbykenan"
   arranger = \smallText "Arranged by Kenan Schaefkofer, 2021"
   poet = \smallText "Text: Kenan Schaefkofer, 2021"
   meter = \smallText "JESOUS AHATONHIA (adapted) 86.86.76.86"
-  copyright =\smallText "Public Domain. Free to distribute, modify, and perform. Typeset by Kenan Schaefkofer."
+  copyright = \public_domain_notice "Kenan Schaefkofer"
   tagline = \tagline
 }
 

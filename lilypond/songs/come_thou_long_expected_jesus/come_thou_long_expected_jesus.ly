@@ -13,7 +13,7 @@ tags = "christian 4part acapella 2verse musicbyother textbyother"
   arranger = \smallText "Arranged by Ralph Vaughn Williams, 1906"
   poet = \smallText "Text: Charles Wesley, 1744"
   meter = \smallText "HYFRYDOL 87.87 D"
-  copyright =\smallText "Public Domain. Free to distribute, modify, and perform. Typeset by Kenan Schaefkofer."
+  copyright = \public_domain_notice "Kenan Schaefkofer"
   tagline = \tagline
 }
 

@@ -14,7 +14,7 @@ tags = "secular 4part acapella 3verse arrbykenan textbyother"
   arranger = \smallText "Arranged by Kenan Schaefkofer, 2021"
   poet = \smallText "Text: African-American Spiritual"
   meter = \smallText "WE SHALL OVERCOME (irregular)"
-  copyright =\smallText "Public Domain. Free to distribute, modify, and perform. Typeset by Kenan Schaefkofer."
+  copyright = \public_domain_notice "Kenan Schaefkofer"
   tagline = \tagline
 }
 

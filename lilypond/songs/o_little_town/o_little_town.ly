@@ -14,7 +14,7 @@ tags = "christian 4part acapella 4verse musicbyother textbyother winter"
   %arranger = \smallText "Arranged by (optional), year"
   poet = \smallText "Text: Phillips Brooks, 1874"
   meter = \smallText "ST. LOUIS 86.86.76.86"
-  copyright =\smallText "Public Domain. Free to distribute, modify, and perform. Typeset by Kenan Schaefkofer."
+  copyright = \public_domain_notice "Kenan Schaefkofer"
   tagline = \tagline
 }
 

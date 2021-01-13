@@ -12,7 +12,7 @@ tags = "christian 4part acapella 3verse musicbyother textbyother winter"
   composer = \smallText "Music: traditional English melody"
   poet = \smallText "Text: William C. Dix, ca. 1865"
   meter = \smallText "GREENSLEEVES 87.87.68.67"
-  copyright =\smallText "Public Domain. Free to distribute, modify, and perform. Typeset by Kenan Schaefkofer."
+  copyright = \public_domain_notice "Kenan Schaefkofer"
   tagline = \tagline
 }
 

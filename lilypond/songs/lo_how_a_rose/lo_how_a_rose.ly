@@ -14,7 +14,7 @@ tags = "christian 4part acapella 3verse musicbyother textbyother winter"
   %arranger = \smallText "Arranged by (optional), year"
   poet = \smallText "Tr. Theodore Baker (Sts. 1-2), 1894, Harriet Spaeth (St. 3), 1875"
   meter = \smallText "ES IST EIN ROS' 76.76.676"
-  copyright =\smallText "Public Domain. Free to distribute, modify, and perform. Typeset by Kenan Schaefkofer."
+  copyright = \public_domain_notice "Kenan Schaefkofer"
   tagline = \tagline
 }
 

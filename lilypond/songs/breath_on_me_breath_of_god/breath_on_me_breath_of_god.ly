@@ -10,7 +10,7 @@ tags = "theist 4part acapella 4verse musicbyother textbyother"
   composer = \smallText "Music: Edwin Hatch, 1878"
   poet = \smallText "Text: Robert Jackson, 1888"
   meter = \smallText "TRENTHAM SM"
-  copyright =\smallText "Public Domain. Free to distribute, modify, and perform. Typeset by Kenan Schaefkofer."
+  copyright = \public_domain_notice "Kenan Schaefkofer"
   tagline = \tagline
 }
 
