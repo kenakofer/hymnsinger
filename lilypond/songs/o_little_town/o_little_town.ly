@@ -37,8 +37,8 @@ globalParts = {
 soprano = {
   \globalParts
   \relative g' { \partial 4 a4 | a a gs a | c bf d, g | f e8( f) g4 c, | \partial 2. a'2. \bar " " | } \break
-  \relative g' { \partial 4 a4 | a a d c | c bf d, g | f e8( f) a4 g | \partial 2. f'2. \bar " " |} \break
-  \relative g' { \partial 4 a4 | a a g f | e2 4 e | d e f g | \partial 2. a'2. \bar " " | } \break
+  \relative g' { \partial 4 a4 | a a d c | c bf d, g | f e8( f) a4 g | \partial 2. f2. \bar " " |} \break
+  \relative g' { \partial 4 a4 | a a g f | e2 4 e | d e f g | \partial 2. a2. \bar " " | } \break
   \relative g' { \partial 4 a4 | a a gs a | c bf d, d' | c f, a4. g8 | \partial 2. f2. | }\break
   \bar "|."
 }
