@@ -86,6 +86,26 @@ thy spotless charity.
 O let us still, we pray, possess
 the mind that was in thee.
 
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/joyful_joyful.html">Joyful Joyful</a></td><td class='lyric-box'>Joyful, joyful, we adore thee, God of glory, Lord of love.
+Hearts unfold like flow'rs before thee, praising thee their sun above.
+Melt the clouds of sin and sadness; drive the dark of doubt away.
+Giver of immortal gladness, fill us with the light of day!
+
+All thy works with joy surround thee, earth and heav'n reflect thy rays,
+stars and angels sing around thee, center of unbroken praise.
+Field and forest, vale and mountain, blooming meadow, flashing sea,
+charting bird and flowing fountain call us to rejoice in thee.
+
+Thou art giving and forgiving, ever blessing, ever bless'd,
+wellspring of the joy of living, oceandepth of happy rest!
+Thou our Maker, Christ our brother, all who live in love are thine.
+Teach us how to love each other, lift us to the joy divine.
+
+Mortals join the mighty chorus which the morning stars began.
+Love divine is reigning o'er us, leading us with mercy's hand.
+Ever singing, march we onward, victors in the midst of strife.
+Joyful music lifts us sunward in the triumph song of life!
+
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/lo_how_a_rose.html">Lo How A Rose</a></td><td class='lyric-box'>Lo, how a Rose e'er blooming from tender stem has sprung!
 Of Jesse's lineage coming as saints of old have sung.
 It came a flow'ret bright, amid the cold of winter,
