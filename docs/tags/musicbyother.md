@@ -3,7 +3,23 @@ title: Hymns tagged musicbyother
 layout: default
 ---
 <table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>
-<tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/what_child_is_this.html">What Child Is This</a></td><td class='lyric-box'>What Child is this, who, laid to rest, on Mary's lap is sleeping,
+<tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/all_hail_the_power.html">All Hail The Power</a></td><td class='lyric-box'>All hail the pow’r of Jesus’ name! Let angels prostrate fall.
+Bring forth the royal diadem, and crown him Lord of all.
+Bring forth the royal diadem, and crown him Lord of all!
+
+O seed of Israel’s chosen race now ransomed from the fall,
+hail him who saves you by his grace, and crown him Lord of all.
+Hail him who saves you by his grace, and crown him Lord of all!
+
+Let ev’ry tongue and ev’ry tribe responsive to his call,
+to him all majesty ascribe, and crown him Lord of all.
+To him all majesty ascribe, and crown him Lord of all!
+
+Oh, that with all the sacred throng we at his feet may fall!
+We’ll join the everlasting song and crown him Lord of all.
+We’ll join the everlasting song and crown him Lord of all!
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/what_child_is_this.html">What Child Is This</a></td><td class='lyric-box'>What Child is this, who, laid to rest, on Mary's lap is sleeping,
 whom angels greet with anthems sweet, while shepherds watch are keeping?
 This, this is Christ the King, whom shepherds guard and angels sing.
 Haste, haste to bring him laud, the babe, the son of Mary!
