@@ -38,6 +38,24 @@ globalLyrics =
 }
   #})
 
+public_domain_notice =
+  #(define-scheme-function
+    (parser location text)
+    (markup?)
+    #{
+      \markup{
+        %\override #'(font-name . "Linux Biolinum")
+        \override #'(font-series . "regular")
+        \fontsize #-4 {
+        "The typesetter"
+        \bold #text
+        "has waived all copyright and related rights to this work, dedicating it to the"
+        \bold "public domain"
+        "to the extent possible under law."
+        }
+      }
+    #})
+
 smallText =
   #(define-scheme-function
     (parser location text)
@@ -112,7 +130,7 @@ smallText =
         <<
 
           \new Voice \with {
-          } << \partcombine #'(2 . 11) $topA $topB >>
+          } << \partcombine #'(2 . 20) $topA $topB >>
           \all_verses
         >>
         \new Staff = "bottom" \with {
@@ -120,7 +138,7 @@ smallText =
           printPartCombineTexts = ##f
         }<<
           \new Voice \with {
-          } { \clef bass << \partcombine #'(2 . 11) $bottomA $bottomB >> }
+          } { \clef bass << \partcombine #'(2 . 20) $bottomA $bottomB >> }
         >>
       >>
     #})
@@ -138,7 +156,7 @@ smallText =
         <<
           \new Voice \with {
             
-          } << \partcombine #'(2 . 11) $topA $topB >>
+          } << \partcombine #'(2 . 20) $topA $topB >>
           \all_verses
         >>
         \new TradStaff = "bottom" \with {
@@ -146,7 +164,7 @@ smallText =
         } <<
           \new Voice \with {
             
-          } { \clef bass << \partcombine #'(2 . 11) $bottomA $bottomB >> }
+          } { \clef bass << \partcombine #'(2 . 20) $bottomA $bottomB >> }
         >>
       >>
     #})

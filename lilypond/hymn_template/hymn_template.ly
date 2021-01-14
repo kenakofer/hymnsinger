@@ -14,7 +14,7 @@ tags = "christian 4part acapella 3verse musicbyother textbyother"
   %arranger = \smallText "Arranged by (optional), year"
   poet = \smallText "Text: Where text from, year"
   meter = \smallText "TUNE NAME AND METER E.G 87.87 D"
-  copyright =\smallText "Public Domain. Free to distribute, modify, and perform. Typeset by Kenan Schaefkofer."
+  copyright = \public_domain_notice "Kenan Schaefkofer"
   tagline = \tagline
 }
 
