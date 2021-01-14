@@ -156,7 +156,37 @@ Love divine is reigning o'er us, leading us with mercy's hand.
 Ever singing, march we onward, victors in the midst of strife.
 Joyful music lifts us sunward in the triumph song of life!
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/lo_how_a_rose.html">Lo How A Rose</a></td><td class='lyric-box'>Lo, how a Rose e'er blooming from tender stem has sprung!
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/once_to_every_soul.html">Once To Every Soul</a></td><td class='lyric-box'>Once to ev’ry soul and nation
+comes the moment to decide,
+in the strife of truth with falsehood,
+for the good or evil side;
+
+Then to side with truth is noble,
+when we share her wretched crust,
+ere her cause bring fame and profit,
+and ’tis prosp’rous to be just;
+
+New occasions teach new duties,
+time makes ancient good uncouth;
+they must upward still and onward
+who would keep abreast of truth.
+
+Lo, before us gleam her campfires!
+We ourselves must seekers be,
+nor attempt the future's portal
+with the past's bloodrusted key.
+
+Though the cause of evil prosper,
+yet ’tis truth alone is strong;
+though her portion be the scaffold,
+and upon the throne be wrong.
+
+Then it is the brave one chooses,
+while the coward stands aside
+till the multitude make virtue
+of the faith they had denied.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/lo_how_a_rose.html">Lo How A Rose</a></td><td class='lyric-box'>Lo, how a Rose e'er blooming from tender stem has sprung!
 Of Jesse's lineage coming as saints of old have sung.
 It came a flow'ret bright, amid the cold of winter,
 when halfspent was the night.
