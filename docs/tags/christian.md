@@ -122,7 +122,22 @@ Human, yet very God, from sin and death he saves us,
 and lightens ev'ry load.
 
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/winter.html">winter</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_little_town.html">O Little Town</a></td><td class='lyric-box'>O little town of Bethlehem, how still we see thee lie!
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/winter.html">winter</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_thou_fount.html">Come Thou Fount</a></td><td class='lyric-box'>Come, Thou Fount of ev'ry blessing, tune my heart to sing thy grace;
+Streams of mercy, never ceasing, call for songs of loudest praise.
+Teach me some melodious sonnet, sung by flaming tongues above.
+Praise the mount! I’m fixed upon it, mount of God’s unchanging love.
+
+Here I raise my Ebenezer; here by Thy great help I’ve come;
+And I hope, by thy good pleasure, safely to arrive at home.
+Jesus sought me when a stranger, wand’ring from the fold of God;
+He, to rescue me from danger, interposed his precious blood; }
+O to grace how great a debtor daily I’m constrained to be!
+Let that grace now, like a fetter, bind my wand’ring heart to thee.
+Prone to wander, Lord, I feel it, prone to leave the God I love;
+Here’s my heart, O take and seal it, seal it for thy courts above.
+
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_little_town.html">O Little Town</a></td><td class='lyric-box'>O little town of Bethlehem, how still we see thee lie!
 Above thy deep and dreamless sleep the silent stars go by.
 Yet in thy dark streets shineth the everlasting light;
 the hopes and fears of all the years are met in thee tonight.
