@@ -3,22 +3,21 @@ title: Hymns tagged winter
 layout: default
 ---
 <table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>
-<tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/what_child_is_this.html">What Child Is This</a></td><td class='lyric-box'>What Child is this, who, laid to rest, on Mary's lap is sleeping,
-whom angels greet with anthems sweet, while shepherds watch are keeping?
-This, this is Christ the King, whom shepherds guard and angels sing.
-Haste, haste to bring him laud, the babe, the son of Mary!
+<tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/angels_we_have_heard.html">Angels We Have Heard</a></td><td class='lyric-box'>Angels we have heard on high, singing sweetly through the night,
+and the mountains in reply echoing their brave delight.
 
-Why lies he in such mean estate where ox and ass are feeding?
-Good Christian, fear, for sinners here the silent Word is pleading.
-Nails, spear shall pierce him through, the cross be borne for me, for you.
-Hail, hail the Wordmadeflesh, the babe, the son of Mary!
+  Gloria in excelsis Deo, gloria in excelsis Deo.
 
-So bring him incense, gold, and myrrh, come, peasant, king, to own him.
-The King of kings salvation brings, let loving hearts enthrone him.
-Raise, raise the song on high; the virgin sings her lullaby.
-Joy, joy for Christ is born, the babe, the son of Mary!
+Shepherds, why this jebilee? Why these songs of happy cheer?
+What great brightness did you see? What glad tidings did you hear?
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/winter.html">winter</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/lo_how_a_rose.html">Lo How A Rose</a></td><td class='lyric-box'>Lo, how a Rose e'er blooming from tender stem has sprung!
+Come to Bethlehem and see him whose birth the angels sing.
+Come, adore on bended knee Christ, the Lord, the newborn King.
+
+See him in a manger laid whom the angels praise above.
+Mary, Joseph, lend your aid, while we rais our hearts in love.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/winter.html">winter</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/lo_how_a_rose.html">Lo How A Rose</a></td><td class='lyric-box'>Lo, how a Rose e'er blooming from tender stem has sprung!
 Of Jesse's lineage coming as saints of old have sung.
 It came a flow'ret bright, amid the cold of winter,
 when halfspent was the night.
@@ -54,18 +53,19 @@ cast out our sin, and enter in, be born in us today!
 We hear the Christmas angels the great glad tidings tell.
 O come to us, abide with us, our Lord Immanuel!
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/winter.html">winter</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/angels_we_have_heard.html">Angels We Have Heard</a></td><td class='lyric-box'>Angels we have heard on high, singing sweetly through the night,
-and the mountains in reply echoing their brave delight.
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/winter.html">winter</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/what_child_is_this.html">What Child Is This</a></td><td class='lyric-box'>What Child is this, who, laid to rest, on Mary's lap is sleeping,
+whom angels greet with anthems sweet, while shepherds watch are keeping?
+This, this is Christ the King, whom shepherds guard and angels sing.
+Haste, haste to bring him laud, the babe, the son of Mary!
 
-  Gloria in excelsis Deo, gloria in excelsis Deo.
+Why lies he in such mean estate where ox and ass are feeding?
+Good Christian, fear, for sinners here the silent Word is pleading.
+Nails, spear shall pierce him through, the cross be borne for me, for you.
+Hail, hail the Wordmadeflesh, the babe, the son of Mary!
 
-Shepherds, why this jebilee? Why these songs of happy cheer?
-What great brightness did you see? What glad tidings did you hear?
+So bring him incense, gold, and myrrh, come, peasant, king, to own him.
+The King of kings salvation brings, let loving hearts enthrone him.
+Raise, raise the song on high; the virgin sings her lullaby.
+Joy, joy for Christ is born, the babe, the son of Mary!
 
-Come to Bethlehem and see him whose birth the angels sing.
-Come, adore on bended knee Christ, the Lord, the newborn King.
-
-See him in a manger laid whom the angels praise above.
-Mary, Joseph, lend your aid, while we rais our hearts in love.
-
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/winter.html">winter</a></td></tr>
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/winter.html">winter</a></td></tr>

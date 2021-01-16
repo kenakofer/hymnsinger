@@ -23,7 +23,7 @@ echo "---" >> $LISTFILE
 echo "<table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>" >> $LISTFILE
 
 
-find lilypond/songs -type f -iname "*.ly" -print0 | while IFS= read -r -d $'\0' file; do
+find lilypond/songs -type f -iname "*.ly" -print0 | sort -z | while IFS= read -r -d $'\0' file; do
     BASE=`basename "$file"`
     BASE="${BASE%%.*}"
     SPACE_BASE=`echo "$BASE" | sed 's/_/ /g'`

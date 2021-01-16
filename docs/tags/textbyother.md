@@ -3,7 +3,27 @@ title: Hymns tagged textbyother
 layout: default
 ---
 <table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>
-<tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/all_hail_the_power.html">All Hail The Power</a></td><td class='lyric-box'>All hail the pow’r of Jesus’ name! Let angels prostrate fall.
+<tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/abide_with_me.html">Abide With Me</a></td><td class='lyric-box'>Abide with me; Fast falls the eventide,
+The darkness deepens; Lord, with me abide!
+When other helpers fail, and comforts flee,
+Help of the helpless, oh, abide with me.
+
+Swift to its close ebbs out life’s little day;
+Earth’s joys grow dim, its glories pass away;
+Change and decay in all around I see;
+O Thou who changest not, abide with me.
+
+Thou on my head in early youth didst smile,
+And though rebellious and perverse meanwhile,
+Thou hast not left me, oft as I left Thee.
+On to the close, O Lord, abide with me.
+
+I fear no foe, with Thee at hand to bless;
+Ills have no weight, and tears no bitterness.
+Where is death’s sting? Where, grave, thy victory?
+I triumph still, if Thou abide with me.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/all_hail_the_power.html">All Hail The Power</a></td><td class='lyric-box'>All hail the pow’r of Jesus’ name! Let angels prostrate fall.
 Bring forth the royal diadem, and crown him Lord of all.
 Bring forth the royal diadem, and crown him Lord of all!
 
@@ -19,32 +39,91 @@ Oh, that with all the sacred throng we at his feet may fall!
 We’ll join the everlasting song and crown him Lord of all.
 We’ll join the everlasting song and crown him Lord of all!
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/tis_a_gift_to_be_simple.html">Tis A Gift To Be Simple</a></td><td class='lyric-box'>'Tis a gift to be simple, 'tis a gift to be free,
-'tis a gift to come down where we ought to be.
-And when we find ourselves in the place just right
-'twill be in the valley of love and delight.
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/amazing_grace.html">Amazing Grace</a></td><td class='lyric-box'>Amazing grace! how sweet the sound, that saved a wretch like me!
+I once was lost, but now am found, was blind, but now I see.
 
-When true simplicity is gained,
-to bow and to bend we will not be ashamed;
-to turn, turn, will be our delight,
-till by turning, turning we come round right.
+'Twas grace that taught my heart to fear, and grace my fears relieved.
+How precious did that grace appear the hour I first believed.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/1verse.html">1verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/what_child_is_this.html">What Child Is This</a></td><td class='lyric-box'>What Child is this, who, laid to rest, on Mary's lap is sleeping,
-whom angels greet with anthems sweet, while shepherds watch are keeping?
-This, this is Christ the King, whom shepherds guard and angels sing.
-Haste, haste to bring him laud, the babe, the son of Mary!
+Through many dangers, toils, and snares, I have already come.
+'Tis grace has brought me safe thus far, and grace will lead me home.
 
-Why lies he in such mean estate where ox and ass are feeding?
-Good Christian, fear, for sinners here the silent Word is pleading.
-Nails, spear shall pierce him through, the cross be borne for me, for you.
-Hail, hail the Wordmadeflesh, the babe, the son of Mary!
+Yes, when this flesh and heart shall fail, and mortal life shall cease,
+I shall possess, within the vail, a life of joy and peace.
 
-So bring him incense, gold, and myrrh, come, peasant, king, to own him.
-The King of kings salvation brings, let loving hearts enthrone him.
-Raise, raise the song on high; the virgin sings her lullaby.
-Joy, joy for Christ is born, the babe, the son of Mary!
+The earth shall soon dissolve like snow, the sun forbear to shine;
+but God, who called me here below, will be forever mine.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/winter.html">winter</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/breath_on_me_breath_of_god.html">Breath On Me Breath Of God</a></td><td class='lyric-box'>Breathe on me, breath of God. Fill me with life anew
+When we've been there ten thousand years, bright shining as the sun,
+we've no less days to sing God's praise than when we'd first begun.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/6verse.html">6verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/angels_we_have_heard.html">Angels We Have Heard</a></td><td class='lyric-box'>Angels we have heard on high, singing sweetly through the night,
+and the mountains in reply echoing their brave delight.
+
+  Gloria in excelsis Deo, gloria in excelsis Deo.
+
+Shepherds, why this jebilee? Why these songs of happy cheer?
+What great brightness did you see? What glad tidings did you hear?
+
+Come to Bethlehem and see him whose birth the angels sing.
+Come, adore on bended knee Christ, the Lord, the newborn King.
+
+See him in a manger laid whom the angels praise above.
+Mary, Joseph, lend your aid, while we rais our hearts in love.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/winter.html">winter</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/be_still_my_soul.html">Be Still My Soul</a></td><td class='lyric-box'>Be still, my soul; the Lord is on thy side;
+bear patiently the cross of grief or pain;
+leave to thy God to order and provide;
+in every change he faithful will remain.
+Be still, my soul; thy best, thy heav’nly friend
+through thorny ways leads to a joyful end.
+
+Be still, my soul; thy God doth undertake
+to guide the future as he has the past.
+Thy hope, thy confidence, let nothing shake;
+all now mysterious shall be bright at last.
+Be still, my soul; the waves and winds still know
+his voice who ruled them while he dwelt below.
+
+Be still, my soul; the hour is hast’ning on
+when we shall be forever with the Lord,
+when disappointment, grief, and fear are gone,
+sorrow forgot, love’s purest joys restored.
+Be still, my soul; when change and tears are past,
+all safe and blessed we shall meet at last.
+
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/be_thou_my_vision.html">Be Thou My Vision</a></td><td class='lyric-box'>Be thou my vision, O Lord of my heart;
+naught be all else to me save that thou art.
+Thou my best thought, by day or by night,
+waking or sleeping thy presence my light.
+
+Be thou my wisdom, be thou my true word;
+I ever with thee, and thou with me, Lord.
+Thou my great Ma-ker, thy child may I be,
+thou in me dwelling, and I one with thee.
+
+Be thou my buckler, my sword for the fight.
+Be thou my dignity, thou my delight,
+thou my soul's shelter, thou my high tower.
+Raise thou me heav'nward, O Pow'r of my pow'r.
+
+Riches I heed not, nor vain, empty praise;
+thou mine inheritance, now and always.
+Thou and thou only, first in my heart,
+high King of heaven, my treasure thou art.
+
+High King of heaven, when vict'ry is won
+may I reach heaven's joys, O bright heav'n's Sun!
+Heart of my heart, whatever befall,
+still be my vision, O Ruler of all.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/break_forth.html">Break Forth</a></td><td class='lyric-box'>Break forth, O beauteous heav'nly light, and usher in the morning.
+O shepherds, shrink not with affright, but hear the angel's warning.
+This child, now weak in infancy, our confidence and joy shall be,
+the power of Satan breaking, our peace eternal making.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/1verse.html">1verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/breath_on_me_breath_of_god.html">Breath On Me Breath Of God</a></td><td class='lyric-box'>Breathe on me, breath of God. Fill me with life anew
 that I may love what thou dost love, and do what thou wouldst do.
 
 Breath on me, breath of God, un-til my heart is pure,
@@ -76,64 +155,7 @@ Let us love and pray for sinners till our God makes all things new.
 Christ will call us home to heaven. At his table we'll sit down.
 Christ will gird himself and serve us with sweet manna all around.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/be_still_my_soul.html">Be Still My Soul</a></td><td class='lyric-box'>Be still, my soul; the Lord is on thy side;
-bear patiently the cross of grief or pain;
-leave to thy God to order and provide;
-in every change he faithful will remain.
-Be still, my soul; thy best, thy heav’nly friend
-through thorny ways leads to a joyful end.
-
-Be still, my soul; thy God doth undertake
-to guide the future as he has the past.
-Thy hope, thy confidence, let nothing shake;
-all now mysterious shall be bright at last.
-Be still, my soul; the waves and winds still know
-his voice who ruled them while he dwelt below.
-
-Be still, my soul; the hour is hast’ning on
-when we shall be forever with the Lord,
-when disappointment, grief, and fear are gone,
-sorrow forgot, love’s purest joys restored.
-Be still, my soul; when change and tears are past,
-all safe and blessed we shall meet at last.
-
-
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/lift_every_voice_and_sing.html">Lift Every Voice And Sing</a></td><td class='lyric-box'>Lift ev'ry voice and sing, till earth and heaven ring,
-ring with the harmonies of liberty.
-Let our rejoicing rise high as the list'ning skies,
-let it resound loud as the rolling sea.
-
-Sing a song full of the faith that the dark past has taught us.
-Sing a song full of the hope that the present has brought us.
-
-Facing the rising sun of our new day begun,
-let us march on till victory is won.
-
-Stony the road we trod, bitter the chast'ning rod,
-felt in the days when hope unborn had died,
-yet with a steady beat, have not our weary feet
-come to the place for which our people sighed?
-
-We have come over a way that with tears has been watered.
-We have come, treading our path thro' the blood of the slaughtered,
-
-out of the gloomy past till now we stand at last
-where the bright gleam of our bright star is cast.
-
-God of our weary years, God of our silent tears,
-thou who hast brought us thus far on the way,
-thou who hast by thy might, led us into the light,
-keep us forever in the path, we pray.
-
-Lest our feet stray from the places, our God, where we met thee,
-lest, our hearts drunk with the wine of the world, we forget thee,
-
-shadowed beneath thy hand, may we forever stand,
-true to our God, true to our native land.
-
-
-
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theistic.html">theistic</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_my_way.html">Come My Way</a></td><td class='lyric-box'>Come, my Way, my Truth, my Life:
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_my_way.html">Come My Way</a></td><td class='lyric-box'>Come, my Way, my Truth, my Life:
 such a way as gives me breath;
 such a truth as ends all strife;
 such a life as killeth death.
@@ -148,83 +170,7 @@ such a joy as none can move;
 such a love as none can part;
 such a heart as joys in love.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/5part.html">5part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_day_you_gave_us.html">The Day You Gave Us</a></td><td class='lyric-box'>The day you gave us, Lord, is ended;
-the darkness falls at your request.
-To you our morning hymns ascended;
-your praise shall sanctify our rest.
-
-We thank you that your church, unsleeping
-while earth rolls onward into light,
-through all the world its watch is keeping,
-and never rests by day or night.
-
-As over continent and island
-each dawn leads on another day,
-the voice of prayer is never silent,
-nor do the praises die away.
-
-So be it, Lord, your throne shall never,
-like earth's proud kingdoms pass away.
-Your kinddom stands and grows forever,
-until there dawns your glorious day.
-
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/amazing_grace.html">Amazing Grace</a></td><td class='lyric-box'>Amazing grace! how sweet the sound, that saved a wretch like me!
-I once was lost, but now am found, was blind, but now I see.
-
-'Twas grace that taught my heart to fear, and grace my fears relieved.
-How precious did that grace appear the hour I first believed.
-
-Through many dangers, toils, and snares, I have already come.
-'Tis grace has brought me safe thus far, and grace will lead me home.
-
-Yes, when this flesh and heart shall fail, and mortal life shall cease,
-I shall possess, within the vail, a life of joy and peace.
-
-The earth shall soon dissolve like snow, the sun forbear to shine;
-but God, who called me here below, will be forever mine.
-
-When we've been there ten thousand years, bright shining as the sun,
-we've no less days to sing God's praise than when we'd first begun.
-
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/6verse.html">6verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/abide_with_me.html">Abide With Me</a></td><td class='lyric-box'>Abide with me; Fast falls the eventide,
-The darkness deepens; Lord, with me abide!
-When other helpers fail, and comforts flee,
-Help of the helpless, oh, abide with me.
-
-Swift to its close ebbs out life’s little day;
-Earth’s joys grow dim, its glories pass away;
-Change and decay in all around I see;
-O Thou who changest not, abide with me.
-
-Thou on my head in early youth didst smile,
-And though rebellious and perverse meanwhile,
-Thou hast not left me, oft as I left Thee.
-On to the close, O Lord, abide with me.
-
-I fear no foe, with Thee at hand to bless;
-Ills have no weight, and tears no bitterness.
-Where is death’s sting? Where, grave, thy victory?
-I triumph still, if Thou abide with me.
-
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/we_shall_overcome.html">We Shall Overcome</a></td><td class='lyric-box'>We shall overcome,
-we shall overcome,
-we shall overcome someday!
-O deep in my heart
-I do believe
-we shall overcome, someday!
-
-
-
-
-We'll walk hand in hand ... some day!
-
-We shall live in peace … some day!
-
-We are not afraid … today!
-
-God will see us through ... some day!
-
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_o_thou_traveller.html">Come O Thou Traveller</a></td><td class='lyric-box'>Come, O thou Traveler unknown, whom still, I hold, but cannot see!
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/5part.html">5part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_o_thou_traveller.html">Come O Thou Traveller</a></td><td class='lyric-box'>Come, O thou Traveler unknown, whom still, I hold, but cannot see!
 My company before is gone, and I am left alone with thee.
 With thee all night I mean to stay, and wrestle till the break of day.
 
@@ -295,7 +241,22 @@ on thee alone for strength depend,
 nor have I power from thee to move.
 Thy nature, and thy name is Love!
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/accompanied.html">accompanied</a><a class="taglink" href="{{ site.baseurl }}/tags/11verse.html">11verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_thou_long_expected_jesus.html">Come Thou Long Expected Jesus</a></td><td class='lyric-box'>Come, thou longexpected Jesus! born to set thy people free,
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/accompanied.html">accompanied</a><a class="taglink" href="{{ site.baseurl }}/tags/11verse.html">11verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_thou_fount.html">Come Thou Fount</a></td><td class='lyric-box'>Come, Thou Fount of ev'ry blessing, tune my heart to sing thy grace;
+Streams of mercy, never ceasing, call for songs of loudest praise.
+Teach me some melodious sonnet, sung by flaming tongues above.
+Praise the mount! I’m fixed upon it, mount of God’s unchanging love.
+
+Here I raise my Ebenezer; here by Thy great help I’ve come;
+And I hope, by thy good pleasure, safely to arrive at home.
+Jesus sought me when a stranger, wand’ring from the fold of God;
+He, to rescue me from danger, interposed his precious blood; }
+O to grace how great a debtor daily I’m constrained to be!
+Let that grace now, like a fetter, bind my wand’ring heart to thee.
+Prone to wander, Lord, I feel it, prone to leave the God I love;
+Here’s my heart, O take and seal it, seal it for thy courts above.
+
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_thou_long_expected_jesus.html">Come Thou Long Expected Jesus</a></td><td class='lyric-box'>Come, thou longexpected Jesus! born to set thy people free,
 from our fears and sins release us, let us find our rest in thee.
 Israel's strength and consolation, hope of all the earth thou art,
 dear desire of evry nation, joy of ev'ry longing heart.
@@ -345,7 +306,85 @@ Love divine is reigning o'er us, leading us with mercy's hand.
 Ever singing, march we onward, victors in the midst of strife.
 Joyful music lifts us sunward in the triumph song of life!
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/once_to_every_soul.html">Once To Every Soul</a></td><td class='lyric-box'>Once to ev’ry soul and nation
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/lift_every_voice_and_sing.html">Lift Every Voice And Sing</a></td><td class='lyric-box'>Lift ev'ry voice and sing, till earth and heaven ring,
+ring with the harmonies of liberty.
+Let our rejoicing rise high as the list'ning skies,
+let it resound loud as the rolling sea.
+
+Sing a song full of the faith that the dark past has taught us.
+Sing a song full of the hope that the present has brought us.
+
+Facing the rising sun of our new day begun,
+let us march on till victory is won.
+
+Stony the road we trod, bitter the chast'ning rod,
+felt in the days when hope unborn had died,
+yet with a steady beat, have not our weary feet
+come to the place for which our people sighed?
+
+We have come over a way that with tears has been watered.
+We have come, treading our path thro' the blood of the slaughtered,
+
+out of the gloomy past till now we stand at last
+where the bright gleam of our bright star is cast.
+
+God of our weary years, God of our silent tears,
+thou who hast brought us thus far on the way,
+thou who hast by thy might, led us into the light,
+keep us forever in the path, we pray.
+
+Lest our feet stray from the places, our God, where we met thee,
+lest, our hearts drunk with the wine of the world, we forget thee,
+
+shadowed beneath thy hand, may we forever stand,
+true to our God, true to our native land.
+
+
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theistic.html">theistic</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/lo_how_a_rose.html">Lo How A Rose</a></td><td class='lyric-box'>Lo, how a Rose e'er blooming from tender stem has sprung!
+Of Jesse's lineage coming as saints of old have sung.
+It came a flow'ret bright, amid the cold of winter,
+when halfspent was the night.
+
+Isaiah 'twas foretold it, the Rose I have in mind.
+With Mary we behold it, the virgin mother kind.
+To show God's love aright, she bore to us a Savior,
+when halfspent was the night.
+
+Flower, whose fragrance tender with sweetness fills the air,
+dispel in glorious splendor the darkness ev'rywhere.
+Human, yet very God, from sin and death he saves us,
+and lightens ev'ry load.
+
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/winter.html">winter</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/my_life_flows_on.html">My Life Flows On</a></td><td class='lyric-box'>Lyrics
+
+for each
+
+
+go here.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_little_town.html">O Little Town</a></td><td class='lyric-box'>O little town of Bethlehem, how still we see thee lie!
+Above thy deep and dreamless sleep the silent stars go by.
+Yet in thy dark streets shineth the everlasting light;
+the hopes and fears of all the years are met in thee tonight.
+
+For Christ is born of Mary, and gathered all above,
+while mortals sleep, the angels keep their watch of wond'ring love.
+O morning stars, together proclaim the holy birth!
+and praises sing to God the King, and peace to all the earth!
+
+How silently, how silently, the wondrous gift is giv'n!
+So God imparts to human hearts the blessings of the heav'ns.
+No ear may hear his coming, but in this world of sin,
+where meek souls will receive him still the dear Christ enters in.
+
+O holy Child of Bethlehem, descend to us we pray,
+cast out our sin, and enter in, be born in us today!
+We hear the Christmas angels the great glad tidings tell.
+O come to us, abide with us, our Lord Immanuel!
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/winter.html">winter</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/once_to_every_soul.html">Once To Every Soul</a></td><td class='lyric-box'>Once to ev’ry soul and nation
 comes the moment to decide,
 in the strife of truth with falsehood,
 for the good or evil side;
@@ -375,106 +414,67 @@ while the coward stands aside
 till the multitude make virtue
 of the faith they had denied.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/my_life_flows_on.html">My Life Flows On</a></td><td class='lyric-box'>Lyrics
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_day_you_gave_us.html">The Day You Gave Us</a></td><td class='lyric-box'>The day you gave us, Lord, is ended;
+the darkness falls at your request.
+To you our morning hymns ascended;
+your praise shall sanctify our rest.
 
-for each
+We thank you that your church, unsleeping
+while earth rolls onward into light,
+through all the world its watch is keeping,
+and never rests by day or night.
+
+As over continent and island
+each dawn leads on another day,
+the voice of prayer is never silent,
+nor do the praises die away.
+
+So be it, Lord, your throne shall never,
+like earth's proud kingdoms pass away.
+Your kinddom stands and grows forever,
+until there dawns your glorious day.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/tis_a_gift_to_be_simple.html">Tis A Gift To Be Simple</a></td><td class='lyric-box'>'Tis a gift to be simple, 'tis a gift to be free,
+'tis a gift to come down where we ought to be.
+And when we find ourselves in the place just right
+'twill be in the valley of love and delight.
+
+When true simplicity is gained,
+to bow and to bend we will not be ashamed;
+to turn, turn, will be our delight,
+till by turning, turning we come round right.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/1verse.html">1verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/we_shall_overcome.html">We Shall Overcome</a></td><td class='lyric-box'>We shall overcome,
+we shall overcome,
+we shall overcome someday!
+O deep in my heart
+I do believe
+we shall overcome, someday!
 
 
-go here.
-
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/lo_how_a_rose.html">Lo How A Rose</a></td><td class='lyric-box'>Lo, how a Rose e'er blooming from tender stem has sprung!
-Of Jesse's lineage coming as saints of old have sung.
-It came a flow'ret bright, amid the cold of winter,
-when halfspent was the night.
-
-Isaiah 'twas foretold it, the Rose I have in mind.
-With Mary we behold it, the virgin mother kind.
-To show God's love aright, she bore to us a Savior,
-when halfspent was the night.
-
-Flower, whose fragrance tender with sweetness fills the air,
-dispel in glorious splendor the darkness ev'rywhere.
-Human, yet very God, from sin and death he saves us,
-and lightens ev'ry load.
 
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/winter.html">winter</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_thou_fount.html">Come Thou Fount</a></td><td class='lyric-box'>Come, Thou Fount of ev'ry blessing, tune my heart to sing thy grace;
-Streams of mercy, never ceasing, call for songs of loudest praise.
-Teach me some melodious sonnet, sung by flaming tongues above.
-Praise the mount! I’m fixed upon it, mount of God’s unchanging love.
+We'll walk hand in hand ... some day!
 
-Here I raise my Ebenezer; here by Thy great help I’ve come;
-And I hope, by thy good pleasure, safely to arrive at home.
-Jesus sought me when a stranger, wand’ring from the fold of God;
-He, to rescue me from danger, interposed his precious blood; }
-O to grace how great a debtor daily I’m constrained to be!
-Let that grace now, like a fetter, bind my wand’ring heart to thee.
-Prone to wander, Lord, I feel it, prone to leave the God I love;
-Here’s my heart, O take and seal it, seal it for thy courts above.
+We shall live in peace … some day!
 
+We are not afraid … today!
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_little_town.html">O Little Town</a></td><td class='lyric-box'>O little town of Bethlehem, how still we see thee lie!
-Above thy deep and dreamless sleep the silent stars go by.
-Yet in thy dark streets shineth the everlasting light;
-the hopes and fears of all the years are met in thee tonight.
+God will see us through ... some day!
 
-For Christ is born of Mary, and gathered all above,
-while mortals sleep, the angels keep their watch of wond'ring love.
-O morning stars, together proclaim the holy birth!
-and praises sing to God the King, and peace to all the earth!
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/what_child_is_this.html">What Child Is This</a></td><td class='lyric-box'>What Child is this, who, laid to rest, on Mary's lap is sleeping,
+whom angels greet with anthems sweet, while shepherds watch are keeping?
+This, this is Christ the King, whom shepherds guard and angels sing.
+Haste, haste to bring him laud, the babe, the son of Mary!
 
-How silently, how silently, the wondrous gift is giv'n!
-So God imparts to human hearts the blessings of the heav'ns.
-No ear may hear his coming, but in this world of sin,
-where meek souls will receive him still the dear Christ enters in.
+Why lies he in such mean estate where ox and ass are feeding?
+Good Christian, fear, for sinners here the silent Word is pleading.
+Nails, spear shall pierce him through, the cross be borne for me, for you.
+Hail, hail the Wordmadeflesh, the babe, the son of Mary!
 
-O holy Child of Bethlehem, descend to us we pray,
-cast out our sin, and enter in, be born in us today!
-We hear the Christmas angels the great glad tidings tell.
-O come to us, abide with us, our Lord Immanuel!
+So bring him incense, gold, and myrrh, come, peasant, king, to own him.
+The King of kings salvation brings, let loving hearts enthrone him.
+Raise, raise the song on high; the virgin sings her lullaby.
+Joy, joy for Christ is born, the babe, the son of Mary!
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/winter.html">winter</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/angels_we_have_heard.html">Angels We Have Heard</a></td><td class='lyric-box'>Angels we have heard on high, singing sweetly through the night,
-and the mountains in reply echoing their brave delight.
-
-  Gloria in excelsis Deo, gloria in excelsis Deo.
-
-Shepherds, why this jebilee? Why these songs of happy cheer?
-What great brightness did you see? What glad tidings did you hear?
-
-Come to Bethlehem and see him whose birth the angels sing.
-Come, adore on bended knee Christ, the Lord, the newborn King.
-
-See him in a manger laid whom the angels praise above.
-Mary, Joseph, lend your aid, while we rais our hearts in love.
-
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/winter.html">winter</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/be_thou_my_vision.html">Be Thou My Vision</a></td><td class='lyric-box'>Be thou my vision, O Lord of my heart;
-naught be all else to me save that thou art.
-Thou my best thought, by day or by night,
-waking or sleeping thy presence my light.
-
-Be thou my wisdom, be thou my true word;
-I ever with thee, and thou with me, Lord.
-Thou my great Ma-ker, thy child may I be,
-thou in me dwelling, and I one with thee.
-
-Be thou my buckler, my sword for the fight.
-Be thou my dignity, thou my delight,
-thou my soul's shelter, thou my high tower.
-Raise thou me heav'nward, O Pow'r of my pow'r.
-
-Riches I heed not, nor vain, empty praise;
-thou mine inheritance, now and always.
-Thou and thou only, first in my heart,
-high King of heaven, my treasure thou art.
-
-High King of heaven, when vict'ry is won
-may I reach heaven's joys, O bright heav'n's Sun!
-Heart of my heart, whatever befall,
-still be my vision, O Ruler of all.
-
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/break_forth.html">Break Forth</a></td><td class='lyric-box'>Break forth, O beauteous heav'nly light, and usher in the morning.
-O shepherds, shrink not with affright, but hear the angel's warning.
-This child, now weak in infancy, our confidence and joy shall be,
-the power of Satan breaking, our peace eternal making.
-
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/1verse.html">1verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr>
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/winter.html">winter</a></td></tr>
