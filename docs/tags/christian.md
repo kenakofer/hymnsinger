@@ -54,6 +54,26 @@ Let us love and pray for sinners till our God makes all things new.
 Christ will call us home to heaven. At his table we'll sit down.
 Christ will gird himself and serve us with sweet manna all around.
 
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_day_you_gave_us.html">The Day You Gave Us</a></td><td class='lyric-box'>The day you gave us, Lord, is ended;
+the darkness falls at your request.
+To you our morning hymns ascended;
+your praise shall sanctify our rest.
+
+We thank you that your church, unsleeping
+while earth rolls onward into light,
+through all the world its watch is keeping,
+and never rests by day or night.
+
+As over continent and island
+each dawn leads on another day,
+the voice of prayer is never silent,
+nor do the praises die away.
+
+So be it, Lord, your throne shall never,
+like earth's proud kingdoms pass away.
+Your kinddom stands and grows forever,
+until there dawns your glorious day.
+
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/amazing_grace.html">Amazing Grace</a></td><td class='lyric-box'>Amazing grace! how sweet the sound, that saved a wretch like me!
 I once was lost, but now am found, was blind, but now I see.
 

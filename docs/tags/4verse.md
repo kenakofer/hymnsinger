@@ -51,7 +51,47 @@ Let us love and pray for sinners till our God makes all things new.
 Christ will call us home to heaven. At his table we'll sit down.
 Christ will gird himself and serve us with sweet manna all around.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/help_us_to_help_each_other_lord.html">Help Us To Help Each Other Lord</a></td><td class='lyric-box'>Help us to help each other, Lord,
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_day_you_gave_us.html">The Day You Gave Us</a></td><td class='lyric-box'>The day you gave us, Lord, is ended;
+the darkness falls at your request.
+To you our morning hymns ascended;
+your praise shall sanctify our rest.
+
+We thank you that your church, unsleeping
+while earth rolls onward into light,
+through all the world its watch is keeping,
+and never rests by day or night.
+
+As over continent and island
+each dawn leads on another day,
+the voice of prayer is never silent,
+nor do the praises die away.
+
+So be it, Lord, your throne shall never,
+like earth's proud kingdoms pass away.
+Your kinddom stands and grows forever,
+until there dawns your glorious day.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/abide_with_me.html">Abide With Me</a></td><td class='lyric-box'>Abide with me; Fast falls the eventide,
+The darkness deepens; Lord, with me abide!
+When other helpers fail, and comforts flee,
+Help of the helpless, oh, abide with me.
+
+Swift to its close ebbs out life’s little day;
+Earth’s joys grow dim, its glories pass away;
+Change and decay in all around I see;
+O Thou who changest not, abide with me.
+
+Thou on my head in early youth didst smile,
+And though rebellious and perverse meanwhile,
+Thou hast not left me, oft as I left Thee.
+On to the close, O Lord, abide with me.
+
+I fear no foe, with Thee at hand to bless;
+Ills have no weight, and tears no bitterness.
+Where is death’s sting? Where, grave, thy victory?
+I triumph still, if Thou abide with me.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/help_us_to_help_each_other_lord.html">Help Us To Help Each Other Lord</a></td><td class='lyric-box'>Help us to help each other, Lord,
 each other's cross to bear,
 let each his friendly aid afford,
 and feel another's care.
@@ -91,7 +131,35 @@ Love divine is reigning o'er us, leading us with mercy's hand.
 Ever singing, march we onward, victors in the midst of strife.
 Joyful music lifts us sunward in the triumph song of life!
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_little_town.html">O Little Town</a></td><td class='lyric-box'>O little town of Bethlehem, how still we see thee lie!
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/now_all_the_woods_are_sleeping.html">Now All The Woods Are Sleeping</a></td><td class='lyric-box'>Now all the woods are sleeping,
+the night and stillness creeping
+o'er city, field, and beast;
+but thou, my heart, awake be,
+with pray'rful thanks, attend thee,
+to dearest Treasures ere thou rest.
+
+Why Sun, are you retreating?
+The Moon, in dance, now leading
+the ancient ballad, Night.
+Likewise, a brighter glory
+will we infuse our story,
+if Truth croons soft as yonder light.
+
+Now obligation ceases,
+this Night the tired releases
+and bids you sleep begin:
+My love, there comes a morrow
+shall set thee free from sorrow,
+and all the anxious toil within.
+
+My loved ones, rest securely,
+from ev'ry peril surely
+protected be your heads;
+and happy slumbers send you,
+and ev'ry care attend you,
+as trusted souls watch o'er your beds.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textadaptedbykenan.html">textadaptedbykenan</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_little_town.html">O Little Town</a></td><td class='lyric-box'>O little town of Bethlehem, how still we see thee lie!
 Above thy deep and dreamless sleep the silent stars go by.
 Yet in thy dark streets shineth the everlasting light;
 the hopes and fears of all the years are met in thee tonight.

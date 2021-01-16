@@ -91,7 +91,35 @@ while the coward stands aside
 till the multitude make virtue
 of the faith they had denied.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/for_the_beauty_of_our_earth.html">For The Beauty Of Our Earth</a></td><td class='lyric-box'>For the beauty of our earth, for the glory of the skies,
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/now_all_the_woods_are_sleeping.html">Now All The Woods Are Sleeping</a></td><td class='lyric-box'>Now all the woods are sleeping,
+the night and stillness creeping
+o'er city, field, and beast;
+but thou, my heart, awake be,
+with pray'rful thanks, attend thee,
+to dearest Treasures ere thou rest.
+
+Why Sun, are you retreating?
+The Moon, in dance, now leading
+the ancient ballad, Night.
+Likewise, a brighter glory
+will we infuse our story,
+if Truth croons soft as yonder light.
+
+Now obligation ceases,
+this Night the tired releases
+and bids you sleep begin:
+My love, there comes a morrow
+shall set thee free from sorrow,
+and all the anxious toil within.
+
+My loved ones, rest securely,
+from ev'ry peril surely
+protected be your heads;
+and happy slumbers send you,
+and ev'ry care attend you,
+as trusted souls watch o'er your beds.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textadaptedbykenan.html">textadaptedbykenan</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/for_the_beauty_of_our_earth.html">For The Beauty Of Our Earth</a></td><td class='lyric-box'>For the beauty of our earth, for the glory of the skies,
 for the love which from our birth over and around us lies:
 
   Mother Earth, to thee we raise this our hymn of grateful praise.

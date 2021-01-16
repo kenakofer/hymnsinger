@@ -37,7 +37,27 @@ Be still, my soul; when change and tears are past,
 all safe and blessed we shall meet at last.
 
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_o_thou_traveller.html">Come O Thou Traveller</a></td><td class='lyric-box'>Come, O thou Traveler unknown, whom still, I hold, but cannot see!
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/abide_with_me.html">Abide With Me</a></td><td class='lyric-box'>Abide with me; Fast falls the eventide,
+The darkness deepens; Lord, with me abide!
+When other helpers fail, and comforts flee,
+Help of the helpless, oh, abide with me.
+
+Swift to its close ebbs out life’s little day;
+Earth’s joys grow dim, its glories pass away;
+Change and decay in all around I see;
+O Thou who changest not, abide with me.
+
+Thou on my head in early youth didst smile,
+And though rebellious and perverse meanwhile,
+Thou hast not left me, oft as I left Thee.
+On to the close, O Lord, abide with me.
+
+I fear no foe, with Thee at hand to bless;
+Ills have no weight, and tears no bitterness.
+Where is death’s sting? Where, grave, thy victory?
+I triumph still, if Thou abide with me.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_o_thou_traveller.html">Come O Thou Traveller</a></td><td class='lyric-box'>Come, O thou Traveler unknown, whom still, I hold, but cannot see!
 My company before is gone, and I am left alone with thee.
 With thee all night I mean to stay, and wrestle till the break of day.
 

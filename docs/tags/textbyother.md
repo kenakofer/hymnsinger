@@ -98,7 +98,27 @@ Be still, my soul; when change and tears are past,
 all safe and blessed we shall meet at last.
 
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/amazing_grace.html">Amazing Grace</a></td><td class='lyric-box'>Amazing grace! how sweet the sound, that saved a wretch like me!
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_day_you_gave_us.html">The Day You Gave Us</a></td><td class='lyric-box'>The day you gave us, Lord, is ended;
+the darkness falls at your request.
+To you our morning hymns ascended;
+your praise shall sanctify our rest.
+
+We thank you that your church, unsleeping
+while earth rolls onward into light,
+through all the world its watch is keeping,
+and never rests by day or night.
+
+As over continent and island
+each dawn leads on another day,
+the voice of prayer is never silent,
+nor do the praises die away.
+
+So be it, Lord, your throne shall never,
+like earth's proud kingdoms pass away.
+Your kinddom stands and grows forever,
+until there dawns your glorious day.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/amazing_grace.html">Amazing Grace</a></td><td class='lyric-box'>Amazing grace! how sweet the sound, that saved a wretch like me!
 I once was lost, but now am found, was blind, but now I see.
 
 'Twas grace that taught my heart to fear, and grace my fears relieved.
@@ -116,7 +136,27 @@ but God, who called me here below, will be forever mine.
 When we've been there ten thousand years, bright shining as the sun,
 we've no less days to sing God's praise than when we'd first begun.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/6verse.html">6verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/we_shall_overcome.html">We Shall Overcome</a></td><td class='lyric-box'>We shall overcome,
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/6verse.html">6verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/abide_with_me.html">Abide With Me</a></td><td class='lyric-box'>Abide with me; Fast falls the eventide,
+The darkness deepens; Lord, with me abide!
+When other helpers fail, and comforts flee,
+Help of the helpless, oh, abide with me.
+
+Swift to its close ebbs out life’s little day;
+Earth’s joys grow dim, its glories pass away;
+Change and decay in all around I see;
+O Thou who changest not, abide with me.
+
+Thou on my head in early youth didst smile,
+And though rebellious and perverse meanwhile,
+Thou hast not left me, oft as I left Thee.
+On to the close, O Lord, abide with me.
+
+I fear no foe, with Thee at hand to bless;
+Ills have no weight, and tears no bitterness.
+Where is death’s sting? Where, grave, thy victory?
+I triumph still, if Thou abide with me.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/we_shall_overcome.html">We Shall Overcome</a></td><td class='lyric-box'>We shall overcome,
 we shall overcome,
 we shall overcome someday!
 O deep in my heart
