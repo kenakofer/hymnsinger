@@ -1,0 +1,168 @@
+\version "2.20.0"
+#(ly:set-option 'relative-includes #t)
+\language "english"
+\include "../../lib/clairnote.ly"
+\include "../../lib/hymn_common.ly"
+%\include "color_by_pitch.ly"
+
+%% See docs/all_tags.txt for the full list available
+tags = "theistic 4part acapella 3verse musicbyother textbyother"
+\header {
+  title = \titleText "Lift every voice and sing"
+  %subtitle = \smallText "Optional"
+  composer = \smallText "Music: J. Rosamond Johnson, 1899"
+  %arranger = \smallText "Arranged by (optional), year"
+  poet = \smallText "Text: J. Rosamond Johnson, 1899"
+  meter = \smallText "ANTHEM 66 10.66 10.14 14 66 10"
+  copyright = \public_domain_notice "Kenan Schaefkofer"
+  tagline = \tagline
+}
+
+%% SETTINGS
+hymnKey = \key g \major
+hymnTime = \time 6/8
+globalParts = {
+  \hymnKey
+  \hymnTime
+  \override NonMusicalPaperColumn.page-break-permission = ##f
+}
+
+%% NOTES
+soprano = {
+  \globalParts
+  \relative g' { \partial 4. fs8 g a | b4. b | b b8 c d | b4. a | g \bar "" } \break
+  \relative g' { g8 a b | c4. b | g a | g4.~ 4 8 | fs4. \bar "" } \break
+  \relative g' { fs8 g a | b4. b | e4. 8 d b | c4. b4( a8) | g4. \bar "" } \break
+  \relative g' { g8 a as | b4. 8 a g | a4.~ 4 g8 | g4.~ g } \pageBreak
+
+  \relative g' { g4. d | e e8 d b | e d b e d b | d4. d } \break
+  \relative g' { g4. d | ef ef8 d c | ef d c ef d c | b'4.~ b | c4.~ c~ | c4. \bar "" } \break
+
+  \relative g' { fs8 g a | b4. b | e4. 8 d b | c4. b4( a8) | g4. \bar "" } \break
+  \relative g' { g8 a as | b4. 8 a g | a4.~ 4 g8 | g4.~ g }\break
+  \bar "|."
+}
+alto = {
+  \globalParts
+  \relative e' { d8 e fs | g4. ds | e e8 e e | g4. fs | e }
+  \relative e' { e8 ds e | e4. ds | e e | d4.~ 4 e8 | fs4. }
+  \relative e' { d8 e fs | g4. ds | e e8 f f | e4. ds | e }
+  \relative e' { e8 e e | d4. g8 fs g | fs4.~ 4 g8 | g4.~ g }
+
+  \relative e' { g4. d | e e8 d b | e d b e d b | d4. d }
+  \relative e' { g4. d | ef ef8 d c | ef d c ef d c | d4.~ d | d4.~ d~ | d4. }
+
+  \relative e' { d8 e fs | g4. ds | e e8 f f | e4. ds | e }
+  \relative e' { e8 e e | d4. g8 fs g | fs4.~ 4 g8 | g4.~ g }
+}
+tenor = {
+  \globalParts
+  \relative a { fs8 g a | b4. a | g g8 g g | g4. c | b }
+  \relative a { b8 c b | a4. b4( a8) |  g4. c | b4.~ 4 as8 | c4. }
+  \relative a { fs8 g a | b4. a | gs gs8 b d | c4. b | c }
+  \relative a { bf8 a g | g4. d'8 c b | c4.~ 4 b8 | b4.~ b }
+
+  \relative a { g4. d | e e8 d b | e d b e d b | d4. d }
+  \relative a { g4. d | ef ef8 d c | ef d c ef d c | b'4.( es) | fs4.~ fs~ | fs4. }
+
+  \relative a { fs8 g a | b4. a | gs gs8 b d | c4. b | c }
+  \relative a { bf8 a g | g4. d'8 c b | c4.~ 4 b8 | b4.~ b }
+}
+bass = {
+  \globalParts
+  \relative d { d8 e fs | g4. fs | e e8 8 8 | d4. ds | e }
+  \relative d { e8 fs g | a4. b, | c4. c | d4.~ 4 cs8 | d4. }
+  \relative d { d8 e fs | g4. fs | e e8 gs8 gs | a4. b4( b,8) | c4.}
+  \relative d { cs8 8 8 | d4. d8 ds e16 ds | d4.~ 4 g,8 | g4.~ g }
+
+  \relative d { g4. d | e e8 d b | e d b e d b | d4. d }
+  \relative d { g4. d | ef ef8 d c | ef d c ef d c | g'4.( gs) | a8( d,4)~ d4.~ | d4. }
+
+  \relative d { d8 e fs | g4. fs | e e8 gs8 gs | a4. b4( b,8) | c4.}
+  \relative d { cs8 8 8 | d4. d8 ds e16 ds | d4.~ 4 g,8 | g4.~ g }
+}
+songChords = \chords {
+  \set chordChanges = ##t
+}
+
+%% LYRICS
+verseA = \lyricmode {
+  Lift ev -- 'ry voice and sing, till earth and heav -- en ring,
+  ring with the har -- mo -- nies of lib -- er -- ty.
+  Let our re -- joic -- ing rise high as the lis -- t'ning skies,
+  let it re -- sound loud as the roll -- ing sea.
+
+  Sing a song full of the faith that the dark past has taught us.
+  Sing a song full of the hope that the pres -- ent has brought us.
+
+  Fac -- ing the ris -- ing sun of our new day be -- gun,
+  let us march on till vic -- to -- ry is won.
+}
+verseB = \lyricmode {
+  Ston -- y the road we trod, bit -- ter the chas -- t'ning rod,
+  felt in the days when hope un -- born had died,
+  yet with a stead -- y beat, have not our wea -- ry feet
+  come to the place for which our peo -- ple sighed?
+
+  We have come o -- ver a way that with tears has been wa -- tered.
+  We have come, tread -- ing our path thro' the blood of the slaugh -- tered,
+
+  out of the gloom -- y past till now we stand at last
+  where the bright gleam of our bright star is cast.
+}
+verseC = \lyricmode {
+  God of our wea -- ry years, God of our si -- lent tears,
+  thou who hast brought us thus far on the way,
+  thou who hast by thy might, led us in -- to the light,
+  keep us for -- ev -- er in the path, we pray.
+
+  Lest our feet stray from the plac -- es, our God, where we met thee,
+  lest, our hearts drunk with the wine of the world, we for -- get thee,
+
+  shad -- owed be -- neath thy hand, may we for -- ev -- er stand,
+  true to our God, true to our na -- tive land.
+
+}
+verseD = \lyricmode {
+}
+verseE = \lyricmode { }
+verseF = \lyricmode { }
+
+all_verses = <<
+  \new NullVoice = "soprano" \soprano
+  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
+  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
+  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
+  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
+  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
+  \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
+  \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
+>>
+
+%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
+%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
+%% a lower staff.
+
+%% Traditional notation
+\book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }
+
+%% Traditional with shaped noteheads (broken on non-combined chords)
+\book { \bookOutputSuffix "shapenote" \score { \fillTradScore {\aikenHeads \soprano} {\aikenHeads \alto} {\aikenHeads \tenor} {\aikenHeads \bass} \songChords } }
+
+%% Clairnotes Notation
+\book { \bookOutputSuffix "clairnote" \score { \fillClairScore \soprano \alto \tenor \bass } }
+
+%% MIDI output
+\score {
+  <<
+    \new Staff \with { midiMaximumVolume = #0.9 } \soprano
+    \new Staff \with { midiMaximumVolume = #0.7  } \alto
+    \new Staff \with { midiMaximumVolume = #0.8  } \tenor
+    \new Staff \with { midiMaximumVolume = #0.9 } \bass
+  >>
+  \midi {
+    \context { \Staff \remove "Staff_performer" }
+    \context { \Voice \consists "Staff_performer" }
+    \tempo  4 = 120
+  }
+}
