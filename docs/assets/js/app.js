@@ -1,6 +1,6 @@
 var MidiPlayer = MidiPlayer;
 var loadFile, Player, loadArrayBuffer;
-var AudioContext = window.AudioContext || window.webkitAudioContext || false; 
+var AudioContext = window.AudioContext || window.webkitAudioContext || false;
 var ac = new AudioContext || new webkitAudioContext;
 
 var changeTempo = function(tempo) {
@@ -28,10 +28,10 @@ var stop = function() {
 	document.getElementById('play-button').innerHTML = 'Play';
 }
 var channel_to_velocity = {
-    1: 110,
-    2: 60,
-    3: 70,
-    4: 80
+    1: 150,
+    2: 90,
+    3: 105,
+    4: 120
 }
 var note_playing_on_channel = {
     1: 0
