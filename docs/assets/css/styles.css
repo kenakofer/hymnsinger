@@ -75,6 +75,7 @@ img {
   padding: 0 2px;
   color: #C30000;
   font-weight: 200;
+  cursor: help;
 }
 
 /* Tooltip text */
@@ -87,7 +88,9 @@ img {
   padding: 5px 4px;
   border-radius: 4px;
   line-height: 1.4;
- 
+  font-size: 12px;
+  font-weight: 200;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;

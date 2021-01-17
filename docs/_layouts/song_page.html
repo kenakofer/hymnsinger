@@ -46,22 +46,54 @@
         <table class='part-volume'>
             <tr>
                 <tr>
-                <th>S</th>
+                <th>
+                  <div class="tooltip">
+                    S
+                    <span class="tooltiptext">
+                      Soprano volume adjust. Soprano sings the highest, most important notes (the melody). Their notes are seen above the lyrics.
+                    </span>
+                  </div>
+                </th>
                 <td ><input type="range" onchange="channel_to_velocity[1]=this.value" min="0" max="200" value="150"></td>
                 </tr>
 
                 <tr>
-                <th>A</th>
+                  <th>
+                    <div class="tooltip">
+                      A
+                      <span class="tooltiptext">
+                        Alto volume adjust. Alto is lower than soprano, on the staff above the lyrics. They sing a harmony that supports the soprano's melody, so their notes might not sound song-like by themselves.
+                      </span>
+                    </div>
+                  </th>
                 <td ><input type="range" onchange="channel_to_velocity[2]=this.value" min="0" max="200" value="90"></td>
                 </tr>
 
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+
                 <tr>
-                <th>T</th>
+                  <th>
+                  <div class="tooltip">
+                    T
+                    <span class="tooltiptext">
+                      Tenor volume adjust. Tenor is higher than bass, on the staff below the lyrics. They sing a harmony that supports the soprano's melody, so their notes might not sound song-like by themselves.
+                    </span>
+                  </div>
+                  </th>
                 <td ><input type="range" onchange="channel_to_velocity[3]=this.value" min="0" max="200" value="105"></td>
                 </tr>
 
                 <tr>
-                <th>B</th>
+                  <th>
+                  <div class="tooltip">
+                    B
+                    <span class="tooltiptext">
+                      Bass volume adjust. Bass sings the lowest notes on the staff below the lyrics. Their notes provide a foundation for all the other parts.
+                    </span>
+                  </div>
+                  </th>
                 <td ><input type="range" onchange="channel_to_velocity[4]=this.value" min="0" max="200" value="120"></td>
                 </tr>
             </tr>
