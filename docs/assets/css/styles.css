@@ -21,6 +21,7 @@ section {
 }
 #music-image {
     -filter: sepia(.5) brightness(.97);
+    filter: sepia(.5) brightness(.97);
     -webkit-filter: sepia(.5) brightness(.97);
     max-width: 900px;
 }
@@ -95,6 +96,9 @@ img {
   position: absolute;
   z-index: 1;
 }
+.tooltip .tooltiptext-rightside {
+  right: 0px;
+}
 
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
@@ -161,6 +165,14 @@ ul, ol{
     header {
     max-width: 400px;
     padding-right: 34px;
+    }
+}
+@media print, screen and (max-width: 720px) {
+    section {
+        padding: 0;
+    }
+    body {
+        padding: 0;
     }
 }
 
