@@ -29,6 +29,7 @@ globalParts = {
   \hymnBaseMoment
   \hymnBeatStructure
   \hymnBeamExceptions
+  \numericTimeSignature
 }
 
 %% NOTES
@@ -140,7 +141,7 @@ all_verses = <<
 >>
 
 %% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into 
+%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
 %% a lower staff.
 
 %% Traditional notation
@@ -151,10 +152,10 @@ all_verses = <<
 
 %% Clairnotes Notation
 %% Clairnotes Notation
-\book { \bookOutputSuffix "clairnote" \score { 
+\book { \bookOutputSuffix "clairnote" \score {
   \layout {
     #(layout-set-staff-size 16)
-  } \fillClairScore \soprano \alto \tenor \bass 
+  } \fillClairScore \soprano \alto \tenor \bass
 } \extra_verses}
 %% MIDI output
 \score {

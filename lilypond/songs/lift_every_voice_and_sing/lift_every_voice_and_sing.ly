@@ -25,6 +25,7 @@ globalParts = {
   \hymnKey
   \hymnTime
   \override NonMusicalPaperColumn.page-break-permission = ##f
+  \numericTimeSignature
 }
 
 %% NOTES

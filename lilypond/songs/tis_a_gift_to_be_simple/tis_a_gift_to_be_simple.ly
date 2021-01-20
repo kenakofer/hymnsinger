@@ -29,6 +29,7 @@ globalParts = {
   \hymnBaseMoment
   \hymnBeatStructure
   \hymnBeamExceptions
+  \numericTimeSignature
 }
 
 %% NOTES
@@ -47,7 +48,7 @@ alto = {
   \relative e' { f2 f4. c8 | f8 f f e d4. e8 | f4 f8 g a4 f8 f | e4 8 f e4 |  }
   \relative e' { r8 c | c2 4. 8 | c8( d) e g f4 e8 f | f( e) d4 d e8 e | f4 d c | }
 }
-tenor = { 
+tenor = {
   \globalParts
   \relative a { c8 c | a4 8 c c a a g | a4 g8 g a4 bf8 bf | c4 c c8( bf) a4 | bf8 c bf g c( bf) |  }
   \relative a { a8( g) | f f a c c4 8 bf | a4 a4 a4 bf | g a8 g f4 a8 bf | bf8( a) g8 g a4 r | }
@@ -71,10 +72,10 @@ verseA = \lyricmode {
   'tis a gift to come down where we ought to be.
   And when we find our -- selves in the place just right
   'twill be in the val -- ley of love and de -- light.
-  
+
   When true sim -- pli -- ci -- ty is gained,
   to bow and to bend we will not be a -- shamed;
-  to turn, turn, will be our de -- light, 
+  to turn, turn, will be our de -- light,
   till by turn -- ing, turn -- ing we come round right.
 }
 verseB = \lyricmode { }
@@ -95,7 +96,7 @@ all_verses = <<
 >>
 
 %% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into 
+%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
 %% a lower staff.
 
 %% Traditional notation

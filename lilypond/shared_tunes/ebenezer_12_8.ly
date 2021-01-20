@@ -10,6 +10,7 @@ globalParts = {
   \hymnTime
   \hymnBaseMoment
   \hymnBeamExceptions
+  \numericTimeSignature
 }
 
 %% NOTES

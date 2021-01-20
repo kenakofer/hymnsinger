@@ -31,6 +31,7 @@ globalParts = {
   \hymnBaseMoment
   \hymnBeatStructure
   \hymnBeamExceptions
+  \numericTimeSignature
 }
 
 %% NOTES
@@ -40,7 +41,7 @@ soprano = {
   \relative g' { b4 b c d | d c b a | g g a b | a4. g8 g2 | } \break
   \relative g' { a4 a b g | a b8( c) b4 g | a b8( c) b4 a | g a d2 | } \break
   \relative g' { b4 b c d | d c b a | g g a b | a4. g8 g2 }\break
-  \bar "|." 
+  \bar "|."
 }
 alto = {
   \globalParts
@@ -108,7 +109,7 @@ all_verses = <<
 >>
 
 %% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into 
+%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
 %% a lower staff.
 
 %% Traditional notation

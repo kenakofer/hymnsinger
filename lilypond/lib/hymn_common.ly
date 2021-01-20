@@ -15,6 +15,7 @@ globalParts = {
   \hymnBaseMoment
   \hymnBeatStructure
   \hymnBeamExceptions
+  \numericTimeSignature
 }
 
 globalLyrics =
@@ -68,7 +69,7 @@ smallText =
         #text
       }
     #})
-  
+
  twoLineSmallText =
   #(define-scheme-function
     (parser location textA textB)
@@ -85,7 +86,7 @@ smallText =
         }
       }
     #})
-  
+
  titleText =
   #(define-scheme-function
     (parser location text)
@@ -97,7 +98,7 @@ smallText =
         #text
       }
     #})
-  
+
   tagline =
   #(define-scheme-function
     (parser location) ()
@@ -116,7 +117,7 @@ smallText =
         }
       }
     #})
-  
+
   fillClairScore =
   #(define-music-function
     (parser location topA topB bottomA bottomB)
@@ -142,7 +143,7 @@ smallText =
         >>
       >>
     #})
-  
+
    fillTradScore =
   #(define-music-function
     (parser location topA topB bottomA bottomB songChords)
@@ -155,7 +156,7 @@ smallText =
         }
         <<
           \new Voice \with {
-            
+
           } << \partcombine #'(2 . 20) $topA $topB >>
           \all_verses
         >>
@@ -163,7 +164,7 @@ smallText =
           printPartCombineTexts = ##f
         } <<
           \new Voice \with {
-            
+
           } { \clef bass << \partcombine #'(2 . 20) $bottomA $bottomB >> }
         >>
       >>

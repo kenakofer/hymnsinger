@@ -15,6 +15,7 @@ globalParts = {
   \hymnBaseMoment
   \hymnBeatStructure
   \hymnBeamExceptions
+  \numericTimeSignature
 }
 
 %% NOTES
@@ -28,8 +29,8 @@ soprano = {
 }
 alto = {
   \globalParts
-  \relative e' { c2 e4 | f2 4 | d( g) f | e( d) e | f( c) d8( e) | f4( e) d | d2 e4 | f2. | } 
-  \relative e' { c2 e4 | f2 4 | d( g) f | e( d) e | f( c) d8( e) | f4( e) d | d2 e4 | f2. | } 
+  \relative e' { c2 e4 | f2 4 | d( g) f | e( d) e | f( c) d8( e) | f4( e) d | d2 e4 | f2. | }
+  \relative e' { c2 e4 | f2 4 | d( g) f | e( d) e | f( c) d8( e) | f4( e) d | d2 e4 | f2. | }
   \relative e' { e2 e4 | f2 4 | f( e) d | e2 e4 | f2 f4 | f( g) a | a( bf) f | f2 e4 | }
   \relative e' { f2  e4 | g2 g4 | f( c) c | c2 c4 | c( f) e | d( f) f | f2 e4 | f2. |}
 }
@@ -53,7 +54,7 @@ songChords = \chords {
     f2. f g:m7 c f f g2:m c4 f2.
     a:m d:m g:m c2 c4:7 f2. f g:m c2:sus c4
     f2. c:7 f c a:m bf f2 c4 f2.
-    
+
 }
 
 all_verses = { }
