@@ -36,6 +36,7 @@ globalParts = {
 %% NOTES
 soprano = {
   \globalParts
+  \stemUp
   \relative g' { g4 g g | g4. f8 f4 | af af af | af g2 | } \break
   \relative g' { c4 d c | bf4. af8 g4 | f g a | bf2. | } \break
   \relative g' { bf4 c d | ef4. d8 c4 | bf af g | g f2 | } \break
