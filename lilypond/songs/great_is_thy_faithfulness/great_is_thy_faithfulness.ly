@@ -12,7 +12,7 @@ tags = "theist 4part acapella 3verse musicbyother textbyother"
   %subtitle = \smallText "Optional"
   composer = \smallText "Music: William M. Runyan, 1923"
   poet = \smallText "Text: Thomas O. Chisholm, 1923"
-  meter = \smallText "TUNE NAME AND METER E.G 87.87 D"
+  meter = \smallText "FAITHFULNESS 11 10.11 10 with refrain"
   copyright = \public_domain_notice "Kenan Schaefkofer"
   tagline = \tagline
 }
