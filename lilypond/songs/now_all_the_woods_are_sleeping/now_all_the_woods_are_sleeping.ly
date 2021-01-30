@@ -48,7 +48,7 @@ alto = {
   \globalParts
   \relative e' { d2 e4 fs g2 g g g | r4 d4 g e d2 d d4( cs) d2 | }
   \relative e' { r4 b4 e d d b d2 | }
-  \relative e' { r4 fs4 e fs g2 d e4( fs) g2 | r4 g4 g g fs2 d | d4( cs) d2 | }
+  \relative e' { r4 fs4 e fs g2 d e4( fs) g2 | r4 g4 g g fs2 d d4( cs) d2 | }
   \relative e' { r4 d4 e e fs2 a g2. fs4 d1 }
 }
 tenor = {
@@ -83,8 +83,8 @@ verseB = \lyricmode {
   The Moon, in dance, now lead -- ing
   the anc -- ient bal -- lad, Night.
   Like -- wise, a bright -- er glo -- ry
-  will we in -- fuse our sto -- ry,
-  if Truth croons soft as yon -- der light.
+  does Truth in -- fuse our sto -- ry,
+  when off -- ered soft as yon -- der light.
 }
 verseC = \lyricmode {
   Now ob -- li -- ga -- tion ceas -- es,

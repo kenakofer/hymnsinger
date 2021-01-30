@@ -136,8 +136,8 @@ Why Sun, are you retreating?
 The Moon, in dance, now leading
 the ancient ballad, Night.
 Likewise, a brighter glory
-will we infuse our story,
-if Truth croons soft as yonder light.
+does Truth infuse our story,
+when offered soft as yonder light.
 
 Now obligation ceases,
 this Night the tired releases
