@@ -105,13 +105,13 @@ Act against evolvéd traits? Your logic might agree,
 but in your gut, you crave not truth, you crave community.
 You crave community!
 
-Is instinct unpersuasive? Try a sample of Pascal:
+If earthly fears don't move you, try a sample of Pascal:
 A slim chance of eternal bliss is worth more than your all.
 Walk along the Roman Road, avoid eternal pain.
 Salvation's path is markéd well, with brimstone in the drain,
 With brimstone in the drain:
 
-To start: believe, O wretch, your life is worthless, justly lost,
+Step one: believe, O wretch, your life is worthless, justly lost,
 and second: faith's your only hope, at seemingly no cost!
 Third, since faith is proved by work, pay up in duties due:
 Two hands on plow, and don't look back, for Brother's watching you.

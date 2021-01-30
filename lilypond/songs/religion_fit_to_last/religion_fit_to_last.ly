@@ -99,7 +99,7 @@ extra_verses = \markup {
       \combine \null \vspace #0.1 % adds vertical spacing between verses
       \line { \bold "3."
         \column { % LYRICS-START
-"Is instinct unpersuasive? Try a sample of Pascal:"
+"If earthly fears don't move you, try a sample of Pascal:"
 "A slim chance of eternal bliss is worth more than your all."
 "Walk along the Roman Road, avoid eternal pain."
 "Salvation's path is markéd well, with brimstone in the drain,"
@@ -111,7 +111,7 @@ extra_verses = \markup {
     \column {
       \line { \bold "4."
         \column { % LYRICS-START
-"To start: believe, O wretch, your life is worthless, justly lost,"
+"Step one: believe, O wretch, your life is worthless, justly lost,"
 "and second: faith's your only hope, at seemingly no cost!"
 "Third, since faith is proved by work, pay up in duties due:"
 "Two hands on plow, and don't look back, for Brother's watching you."
