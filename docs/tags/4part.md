@@ -237,7 +237,32 @@ thy spotless charity.
 O let us still, we pray, possess
 the mind that was in thee.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/joyful_joyful.html">Joyful Joyful</a></td><td class='lyric-box'>Joyful, joyful, we adore thee, God of glory, Lord of love.
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/i_walk_the_unfrequented_road.html">I Walk The Unfrequented Road</a></td><td class='lyric-box'>I walk the unfrequented road
+with open eye and ear;
+I watch afield the farmer load
+the bounty of the year.
+
+I filch the fruit of no one's toil—
+no trespasser am I—
+and yet I reap from every soil
+and from the boundless sky
+
+I gather where I did not sow,
+and bind the mystic sheaf,
+the amber air, the river's flow,
+the rustle of the leaf.
+
+A beauty springtime never knew
+haunts all the quiet ways,
+and sweeter shines the landscape through
+its veil of autumn haze.
+
+I face the hills, the streams, the wood,
+and feel with all akin;
+my heart expands; their fortitude
+and peace and joy flow in.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/joyful_joyful.html">Joyful Joyful</a></td><td class='lyric-box'>Joyful, joyful, we adore thee, God of glory, Lord of love.
 Hearts unfold like flow'rs before thee, praising thee their sun above.
 Melt the clouds of sin and sadness; drive the dark of doubt away.
 Giver of immortal gladness, fill us with the light of day!
