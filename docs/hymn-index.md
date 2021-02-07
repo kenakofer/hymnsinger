@@ -266,7 +266,37 @@ born to reign in us forever, now thy gracious kingdom bring.
 By thine own eternal Spirit, rule in all our hearts alone.
 By thine allsufficient merit, raise us to thy glorious throne.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/2verse.html">2verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/for_the_beauty_of_our_earth.html">For The Beauty Of Our Earth</a></td><td class='lyric-box'>For the beauty of our earth, for the glory of her skies,
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/2verse.html">2verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/comfort_comfort_o_my_people.html">Comfort Comfort O My People</a></td><td class='lyric-box'>Comfort, comfort, O my people,
+speak of peace, now says our God.
+Comfort those who sit in darkness,
+mourning 'neath their sorrows' load.
+
+Speak unto Jerusalem
+of the peace that waits for them.
+Tell of all the sins I cover,
+and that warfare now is over.
+
+Hark, the voice of one who's crying
+in the desert far and near,
+bidding all to full repentance
+since the kingdom now is here.
+
+O that warning cry obey!
+Now prepare for God a way.
+Let the valleys rise to meet God
+and the hills bow down to greet God.
+
+O make straight what long was crooked,
+make the rougher places plain.
+Let your hearts be true and humble,
+as befits God's holy reign.
+
+For the glory of the Lord
+now o'er earth is shed abroad.
+And all flesh shall see the token
+that God's word is never broken.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/for_the_beauty_of_our_earth.html">For The Beauty Of Our Earth</a></td><td class='lyric-box'>For the beauty of our earth, for the glory of her skies,
 for the love which from our birth over and around us lies:
 
   Source of all, to thee we raise this our hymn of grateful praise.
