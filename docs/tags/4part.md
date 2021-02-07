@@ -565,4 +565,32 @@ The King of kings salvation brings, let loving hearts enthrone him.
 Raise, raise the song on high; the virgin sings her lullaby.
 Joy, joy for Christ is born, the babe, the son of Mary!
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/winter.html">winter</a></td></tr>
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/winter.html">winter</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/when_israel_was_in_egypts_land.html">When Israel Was In Egypts Land</a></td><td class='lyric-box'>When Israel was in Egypt's land,
+let my people go,
+oppressed so hard they could not stand,
+let my people go.
+
+  Go down, Moses, way down in Egypt's land,
+  tell old Pharaoh: let my people go.
+
+The Lord told Moses what to do,
+let my people go,
+to lead the Hebrew children through,
+let my people go.
+
+As Israel stood by water's side,
+let my people go,
+at God's command it did divide,
+let my people go.
+
+When they had reached the other shore,
+let my people go,
+they let the song of triumph soar,
+let my people go.
+
+Lord, help us all from bondage flee,
+let my people go,
+and let us all in Christ be free,
+let my people go.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr>
