@@ -17,7 +17,7 @@ git add docs/hymn-index*
 git add docs/tags
 
 # Commit and push
-git commit -m "Republish all songs"
+git commit -e -m "Republish all songs"
 git push
 
 # Add the song outputs to the release
