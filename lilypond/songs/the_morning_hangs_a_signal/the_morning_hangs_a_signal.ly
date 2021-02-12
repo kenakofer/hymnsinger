@@ -59,7 +59,7 @@ tenor = {
 }
 bass = {
   \globalParts
-  \relative d { d4 | d d d a, | d2 4 fs | g d e a, | d2. }
+  \relative d { d4 | d d d a | d2 4 fs | g d e a, | d2. }
   \relative d { d4 | d d d a | d2 b4 fs | g b e, a | d2. }
   \relative d { d4 | g fs e a, | b2 cs4 d | fs4 g fs d | a2. }
   \relative d { a4 | b b8 a d4 8 cs | d4( b) a d | b fs g a | d2. }
