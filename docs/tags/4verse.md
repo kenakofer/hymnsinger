@@ -23,7 +23,7 @@ Ills have no weight, and tears no bitterness.
 Where is death’s sting? Where, grave, thy victory?
 I triumph still, if Thou abide with me.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/all_hail_the_power.html">All Hail The Power</a></td><td class='lyric-box'>All hail the pow’r of Jesus’ name! Let angels prostrate fall.
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/evening.html">evening</a><a class="taglink" href="{{ site.baseurl }}/tags/death.html">death</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/all_hail_the_power.html">All Hail The Power</a></td><td class='lyric-box'>All hail the pow’r of Jesus’ name! Let angels prostrate fall.
 Bring forth the royal diadem, and crown him Lord of all.
 Bring forth the royal diadem, and crown him Lord of all!
 
@@ -173,7 +173,7 @@ and happy slumbers send you,
 and ev'ry care attend you,
 as trusted souls watch o'er your beds.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textadaptedbykenan.html">textadaptedbykenan</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_come_all_ye_faithful.html">O Come All Ye Faithful</a></td><td class='lyric-box'>O come, all ye faithful, joyful and triumphant,
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textadaptedbykenan.html">textadaptedbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/evening.html">evening</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_come_all_ye_faithful.html">O Come All Ye Faithful</a></td><td class='lyric-box'>O come, all ye faithful, joyful and triumphant,
 O come ye, O come ye to Bethlehem. Come and behold him,
 born the King of angels.
 
@@ -214,7 +214,7 @@ cast out our sin, and enter in, be born in us today!
 We hear the Christmas angels the great glad tidings tell.
 O come to us, abide with us, our Lord Immanuel!
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/winter.html">winter</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_day_you_gave_us.html">The Day You Gave Us</a></td><td class='lyric-box'>The day you gave us, Lord, is ended;
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/winter.html">winter</a><a class="taglink" href="{{ site.baseurl }}/tags/evening.html">evening</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_day_you_gave_us.html">The Day You Gave Us</a></td><td class='lyric-box'>The day you gave us, Lord, is ended;
 the darkness falls at your request.
 To you our morning hymns ascended;
 your praise shall sanctify our rest.
@@ -234,4 +234,4 @@ like earth's proud kingdoms pass away.
 Your kinddom stands and grows forever,
 until there dawns your glorious day.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr>
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/evening.html">evening</a></td></tr>

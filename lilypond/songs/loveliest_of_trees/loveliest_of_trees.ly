@@ -6,7 +6,7 @@
 %\include "color_by_pitch.ly"
 
 %% See docs/all_tags.txt for the full list available
-tags = "secular 4part acapella 3verse musicbyother textbyother"
+tags = "secular 4part acapella 3verse musicbyother textbyother spring"
 \header {
   title = \titleText "Lovelist of trees"
   %subtitle = \smallText "Optional"

@@ -60,7 +60,7 @@ and feel with all akin;
 my heart expands; their fortitude
 and peace and joy flow in.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/loveliest_of_trees.html">Loveliest Of Trees</a></td><td class='lyric-box'>Loveliest of trees, the cherry now,
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/autumn.html">autumn</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/loveliest_of_trees.html">Loveliest Of Trees</a></td><td class='lyric-box'>Loveliest of trees, the cherry now,
 hung with bloom along the bough,
 it stands about the woodland ride
 wearing white for Eastertide.
@@ -75,7 +75,7 @@ fifty springs are little room,
 about the woodlands I will go,
 see the cherry hung with snow.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/may_nothing_evil_cross_this_door.html">May Nothing Evil Cross This Door</a></td><td class='lyric-box'>May nothing evil cross this door,
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/spring.html">spring</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/may_nothing_evil_cross_this_door.html">May Nothing Evil Cross This Door</a></td><td class='lyric-box'>May nothing evil cross this door,
 and may ill fortune never pry
 about these windows; may the roar
 and rain go by.
@@ -123,7 +123,7 @@ and happy slumbers send you,
 and ev'ry care attend you,
 as trusted souls watch o'er your beds.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textadaptedbykenan.html">textadaptedbykenan</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/now_the_day_is_over.html">Now The Day Is Over</a></td><td class='lyric-box'>Now the day is over,
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textadaptedbykenan.html">textadaptedbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/evening.html">evening</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/now_the_day_is_over.html">Now The Day Is Over</a></td><td class='lyric-box'>Now the day is over,
 night is drawing nigh,
 shadows of the evening
 steal across the sky.
@@ -148,7 +148,7 @@ of another spring
 keeps the the ancient promise
 fall and winter bring.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/once_to_every_soul.html">Once To Every Soul</a></td><td class='lyric-box'>Once to ev’ry soul and nation
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/evening.html">evening</a><a class="taglink" href="{{ site.baseurl }}/tags/autumn.html">autumn</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/once_to_every_soul.html">Once To Every Soul</a></td><td class='lyric-box'>Once to ev’ry soul and nation
 comes the moment to decide,
 in the strife of truth with falsehood,
 for the good or evil side;
@@ -223,7 +223,7 @@ when life's great meaning breaketh in sunrise on our ways.
 Behold the radiant token of truth above all fear;
 night shall release its splendor that morning shall appear.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/tis_a_gift_to_be_simple.html">Tis A Gift To Be Simple</a></td><td class='lyric-box'>'Tis a gift to be simple, 'tis a gift to be free,
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/morning.html">morning</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/tis_a_gift_to_be_simple.html">Tis A Gift To Be Simple</a></td><td class='lyric-box'>'Tis a gift to be simple, 'tis a gift to be free,
 'tis a gift to come down where we ought to be.
 And when we find ourselves in the place just right
 'twill be in the valley of love and delight.
@@ -238,7 +238,7 @@ Warm southern wind, blow softly here,
 Green sod above, lie light, lie light.
 Good night, dear heart, good night, good night.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/1verse.html">1verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbykenan.html">musicbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/we_shall_overcome.html">We Shall Overcome</a></td><td class='lyric-box'>We shall overcome,
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/1verse.html">1verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbykenan.html">musicbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/summer.html">summer</a><a class="taglink" href="{{ site.baseurl }}/tags/death.html">death</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/we_shall_overcome.html">We Shall Overcome</a></td><td class='lyric-box'>We shall overcome,
 we shall overcome,
 we shall overcome someday!
 O deep in my heart

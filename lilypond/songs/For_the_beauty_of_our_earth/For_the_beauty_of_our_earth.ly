@@ -19,10 +19,10 @@ tags = "secular 4part acapella 5verse musicbyother textadaptedbykenan"
 
 %% LYRICS
 verseA = \lyricmode {
-  For the beau -- ty of our earth, for the glo -- ry of the skies,
+  For the beau -- ty of our earth, for the glo -- ry of her skies,
   for the love which from our birth o -- ver and a -- round us lies:
   %% CHORUS
-  Mo -- ther Earth, to thee we raise this our hymn of grate -- ful praise.
+  Source of all, to thee we raise this our hymn of grate -- ful praise.
 }
 verseB = \lyricmode {
   For the beau -- ty of each hour of the day and of the night,

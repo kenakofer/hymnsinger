@@ -23,7 +23,7 @@ Ills have no weight, and tears no bitterness.
 Where is death’s sting? Where, grave, thy victory?
 I triumph still, if Thou abide with me.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/be_still_my_soul.html">Be Still My Soul</a></td><td class='lyric-box'>Be still, my soul; the Lord is on thy side;
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/evening.html">evening</a><a class="taglink" href="{{ site.baseurl }}/tags/death.html">death</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/be_still_my_soul.html">Be Still My Soul</a></td><td class='lyric-box'>Be still, my soul; the Lord is on thy side;
 bear patiently the cross of grief or pain;
 leave to thy God to order and provide;
 in every change he faithful will remain.
@@ -153,7 +153,8 @@ on thee alone for strength depend,
 nor have I power from thee to move.
 Thy nature, and thy name is Love!
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/accompanied.html">accompanied</a><a class="taglink" href="{{ site.baseurl }}/tags/11verse.html">11verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_ye_thankful_people.html">Come Ye Thankful People</a></td><td class='lyric-box'>Come, ye thankful people, come, raise a song of harvest home:
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/accompanied.html">accompanied</a><a class="taglink" href="{{ site.baseurl }}/tags/11verse.html">11verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_ye_thankful_people.html">Come Ye Thankful People</a></td><td class='lyric-box'>
+Come, ye thankful people, come, raise a song of harvest home:
 fruit and crops are gathered in, safe before the storms begin;
 God, our Maker, will provide for our needs to be supplied;
 come to God's own temple, come, raise a song of harvest home.
@@ -163,7 +164,7 @@ wheat and tares together sown, here for joy or sorrow grown:
 first the blade, and then the ear, then the full corn shall appear;
 God of harvest, grant that we wholesome grain and pure may be.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/great_is_thy_faithfulness.html">Great Is Thy Faithfulness</a></td><td class='lyric-box'>Great is thy faithfulness, O God my Maker.
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/autumn.html">autumn</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/great_is_thy_faithfulness.html">Great Is Thy Faithfulness</a></td><td class='lyric-box'>Great is thy faithfulness, O God my Maker.
 There is no shadow of turning with thee.
 Thou changest not, they comppassions, they fail not.
 As thou hast been thou forever wilt be.

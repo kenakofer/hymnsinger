@@ -55,7 +55,8 @@ Prone to wander, Lord, I feel it, prone to leave the God I love;
 Here’s my heart, O take and seal it, seal it for thy courts above.
 
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_ye_thankful_people.html">Come Ye Thankful People</a></td><td class='lyric-box'>Come, ye thankful people, come, raise a song of harvest home:
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_ye_thankful_people.html">Come Ye Thankful People</a></td><td class='lyric-box'>
+Come, ye thankful people, come, raise a song of harvest home:
 fruit and crops are gathered in, safe before the storms begin;
 God, our Maker, will provide for our needs to be supplied;
 come to God's own temple, come, raise a song of harvest home.
@@ -65,7 +66,7 @@ wheat and tares together sown, here for joy or sorrow grown:
 first the blade, and then the ear, then the full corn shall appear;
 God of harvest, grant that we wholesome grain and pure may be.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/comfort_comfort_o_my_people.html">Comfort Comfort O My People</a></td><td class='lyric-box'>Comfort, comfort, O my people,
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/autumn.html">autumn</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/comfort_comfort_o_my_people.html">Comfort Comfort O My People</a></td><td class='lyric-box'>Comfort, comfort, O my people,
 speak of peace, now says our God.
 Comfort those who sit in darkness,
 mourning 'neath their sorrows' load.
@@ -181,7 +182,7 @@ fifty springs are little room,
 about the woodlands I will go,
 see the cherry hung with snow.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/once_to_every_soul.html">Once To Every Soul</a></td><td class='lyric-box'>Once to ev’ry soul and nation
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/spring.html">spring</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/once_to_every_soul.html">Once To Every Soul</a></td><td class='lyric-box'>Once to ev’ry soul and nation
 comes the moment to decide,
 in the strife of truth with falsehood,
 for the good or evil side;
@@ -226,7 +227,7 @@ when life's great meaning breaketh in sunrise on our ways.
 Behold the radiant token of truth above all fear;
 night shall release its splendor that morning shall appear.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/we_shall_overcome.html">We Shall Overcome</a></td><td class='lyric-box'>We shall overcome,
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/morning.html">morning</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/we_shall_overcome.html">We Shall Overcome</a></td><td class='lyric-box'>We shall overcome,
 we shall overcome,
 we shall overcome someday!
 O deep in my heart

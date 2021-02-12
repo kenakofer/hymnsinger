@@ -6,7 +6,7 @@
 %\include "color_by_pitch.ly"
 
 %% See docs/all_tags.txt for the full list available
-tags = "christian 4part acapella 4verse musicbyother textbyother winter"
+tags = "christian 4part acapella 4verse musicbyother textbyother winter evening"
 \header {
   title = \titleText "O little town of Bethlehem"
   %subtitle = \smallText "Optional"
