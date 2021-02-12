@@ -70,6 +70,7 @@ songChords = \chords {
 
 %% LYRICS
 verseA = \lyricmode {
+
   Come, ye thank -- ful peo -- ple, come, raise a song of har -- vest home:
   fruit and crops are gath -- ered in, safe be -- fore the storms be -- gin;
   God, our Mak -- er, will pro -- vide for our needs to be sup -- plied;
