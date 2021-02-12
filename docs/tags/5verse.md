@@ -70,6 +70,31 @@ and feel with all akin;
 my heart expands; their fortitude
 and peace and joy flow in.
 
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/now_the_day_is_over.html">Now The Day Is Over</a></td><td class='lyric-box'>Now the day is over,
+night is drawing nigh,
+shadows of the evening
+steal across the sky.
+
+Now the leafless landscape
+settles in repose,
+waiting for the quiet
+of the winter snows.
+
+Now as twilight gathers
+let us pause and hear
+all the slowing pulsebeats
+of the waning year.
+
+May the season's rhythms,
+slow and strong and deep
+soothe the mind and spirit
+lulling us to sleep.
+
+Sleep until the rising
+of another spring
+keeps the the ancient promise
+fall and winter bring.
+
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/religion_fit_to_last.html">Religion Fit To Last</a></td><td class='lyric-box'>A voice within becomes distressed to see you taste the fruit,
 forbidden by your God and creed, respected since your youth:
 ''Prodigal, I'll fight in you, restore your faith to thrive.

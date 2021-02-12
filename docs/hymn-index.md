@@ -512,7 +512,32 @@ and happy slumbers send you,
 and ev'ry care attend you,
 as trusted souls watch o'er your beds.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textadaptedbykenan.html">textadaptedbykenan</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_come_all_ye_faithful.html">O Come All Ye Faithful</a></td><td class='lyric-box'>O come, all ye faithful, joyful and triumphant,
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textadaptedbykenan.html">textadaptedbykenan</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/now_the_day_is_over.html">Now The Day Is Over</a></td><td class='lyric-box'>Now the day is over,
+night is drawing nigh,
+shadows of the evening
+steal across the sky.
+
+Now the leafless landscape
+settles in repose,
+waiting for the quiet
+of the winter snows.
+
+Now as twilight gathers
+let us pause and hear
+all the slowing pulsebeats
+of the waning year.
+
+May the season's rhythms,
+slow and strong and deep
+soothe the mind and spirit
+lulling us to sleep.
+
+Sleep until the rising
+of another spring
+keeps the the ancient promise
+fall and winter bring.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_come_all_ye_faithful.html">O Come All Ye Faithful</a></td><td class='lyric-box'>O come, all ye faithful, joyful and triumphant,
 O come ye, O come ye to Bethlehem. Come and behold him,
 born the King of angels.
 
