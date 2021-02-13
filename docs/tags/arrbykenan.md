@@ -74,7 +74,42 @@ on thee alone for strength depend,
 nor have I power from thee to move.
 Thy nature, and thy name is Love!
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/accompanied.html">accompanied</a><a class="taglink" href="{{ site.baseurl }}/tags/11verse.html">11verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/religion_fit_to_last.html">Religion Fit To Last</a></td><td class='lyric-box'>A voice within becomes distressed to see you taste the fruit,
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/accompanied.html">accompanied</a><a class="taglink" href="{{ site.baseurl }}/tags/11verse.html">11verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/no_number_tallies_up_my_score.html">No Number Tallies Up My Score</a></td><td class='lyric-box'>No number tallies up my score,
+no tribe my house can fill;
+I sit beside the fount of life
+and pour the deluge still.
+And gathered by most fragile pow'rs
+along the centuries
+from race on race the rarest flow'rs
+my wreath shall nothing miss.
+
+I wrote the past in characters
+of rock and fire and scroll,
+the building in the coral sea, the planting of the coal.
+And thefts from satellites and rings
+and broken stars I drew,
+and out of spent and aged things
+I formed the world anew.
+
+Must time and tide forever run,
+nor winds sleep in the west?
+Will ne'er my wheels which whirl the sun
+and satellites have rest?
+Yet whirl the glowing wheels once more,
+and mix the bowl again;
+seethe, Fate, the ancient elements,
+heat, cold, and peace, and pain.
+
+Blend war and trade and creeds and song,
+as ripens human race,
+the sunburnt world that they shall breed,
+of all my countless days.
+No ray is dimmed, no atom worn,
+my oldest force is new,
+and fresh the rose on yonder thorn
+gives back the heav'ns in dew.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/religion_fit_to_last.html">Religion Fit To Last</a></td><td class='lyric-box'>A voice within becomes distressed to see you taste the fruit,
 forbidden by your God and creed, respected since your youth:
 ''Prodigal, I'll fight in you, restore your faith to thrive.
 I'll bring you back within the fold. Without you can't survive.
