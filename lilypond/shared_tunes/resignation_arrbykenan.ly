@@ -35,10 +35,10 @@ alto = {
 }
 tenor = {
   \globalParts
-  \relative a { g4 | c2 g4 | a2 b4 | g2 f8 g | g2 4 | e2 f4 | g2 g4 | e2.~ | 2 }
-  \relative a { g4 | c2 g4 | a2 b4 | g2 f8 g | g2 4 | e2 f4 | g2 g4 | e2.~ | 2 }
+  \relative a { g4 | c2 g4 | g2 g4 | g2 f8 g | g2 4 | e2 f4 | g2 g4 | e2.~ | 2 }
+  \relative a { g4 | c2 g4 | a2 g4 | g2 f8 g | g2 4 | e2 f4 | g2 g4 | e2.~ | 2 }
   \relative a { c4 | 2 b8 c | c2 a4 | a2 g8 c | b2 c4 | 2 b8 d | c2 a4 | a2.~ | 2 }
-  \relative a { g4 | c2 g4 | a2 b4 | g2 f8 g | g2 4 | e2 f4 | g2 g4 | e2.~ | 2 }
+  \relative a { g4 | c2 g4 | a2 g4 | g2 f8 g | g2 4 | e2 f4 | g2 g4 | e2.~ | 2 }
 }
 bass = {
   \globalParts
@@ -54,5 +54,5 @@ songChords = \chords {
 all_verses = { }
 
 %% UNCOMMENT to VERIFY, then RECOMMENT
-\book { \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }
-\score { << \soprano \alto \tenor \bass >> \midi { \tempo  4 = 100 } }
+%\book { \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }
+%\score { << \soprano \alto \tenor \bass >> \midi { \tempo  4 = 100 } }
