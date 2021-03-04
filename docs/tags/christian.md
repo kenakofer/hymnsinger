@@ -143,6 +143,18 @@ Gladly we surrender earth's deceitful treasures, pride of life, and sinful pleas
 God, we gladly offer thine to be forever, soul and life and each endeavor.
 Thou alone shalt be known Lord of all our being, life's true way decreeing.
 
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/gott_ist_gegenwartig.html">Gott Ist Gegenwartig</a></td><td class='lyric-box'>Gott ist gegenwärtig. Lasset uns anbeten und in Ehrfurcht vor ihn treten.
+Gott ist in der Mitte. Alles in uns schweige und sich innigst vor ihm beuge.
+Wer ihn kennt, wer ihn nennt, schlag die Augen nieder; kommt, ergebt euch wieder.
+
+Gott ist gegenwärtig, dem die Cherubinen Tag und Nacht gebücket dienen.
+''Heilig, heilig, heilig!'' singen ihm zur Ehre aller Engel hohe Chöre.
+Herr, vernimm unsre Stimm, da auch wir Geringen unsre Opfer bringen.
+
+Herr, komm in mir wohnen; lass mein Herz auf ERden dir ein Heiligtum noch werden.
+Komm, du nahes Wesen; dich in mir verkläre, dass ich dich stets lieb und ehre.
+Wo ich geh, sitz und steh, lass mich dich erblicken und vor dir mich bücken.
+
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/help_us_to_help_each_other_lord.html">Help Us To Help Each Other Lord</a></td><td class='lyric-box'>Help us to help each other, Lord,
 each other's cross to bear,
 let each his friendly aid afford,

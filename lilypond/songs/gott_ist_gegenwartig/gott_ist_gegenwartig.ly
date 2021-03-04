@@ -9,11 +9,11 @@
 %% See docs/all_tags.txt for the full list available
 tags = "christian 4part acapella 3verse musicbyother textbyother"
 \header {
-  title = \titleText "God is here among us"
-  subtitle = \smallText "See also in German: Gott ist gegenwärtig"
+  title = \titleText "Gott ist gegenwärtig"
+  subtitle = \smallText "See also in English: God is here among us"
   composer = \composer
   %arranger = \smallText "Arranged by (optional), year"
-  poet = \smallText "Text: Gerhard Tersteegen, 1729, trans. The Hymnal, 1940, alt."
+  poet = \smallText "Text: Gerhard Tersteegen, 1729"
   meter = \meter
   copyright = \public_domain_notice "Kenan Schaefkofer"
   tagline = \tagline
@@ -23,19 +23,19 @@ tags = "christian 4part acapella 3verse musicbyother textbyother"
 
 %% LYRICS
 verseA = \lyricmode {
-  God is here a -- mong us: come with a -- do -- ra -- tion, fer -- vent praise and ex -- pec -- ta -- tion.
-  God is here with -- in us: known be -- yond be -- liev -- ing, soul in si -- lent awe re -- ceiv -- ing.
-  God will name and will claim those be -- held as low -- ly, mak -- ing all things ho -- ly.
+  Gott ist ge -- gen -- wär -- tig. Las -- set uns an -- be -- ten und in Ehr -- furcht vor ihn tre -- ten.
+  Gott ist in der Mit -- te. Al -- les in uns schwei -- ge und sich in -- nigst vor ihm beu -- ge.
+  Wer ihn kennt, wer ihn nennt, schlag die Au -- gen nie -- der; kommt, er -- gebt euch wie -- der.
 }
 verseB = \lyricmode {
-  Come, a -- bide with -- in me; let my soul, like Ma -- ry, be thine earth -- ly sanc -- tu -- ar -- y.
-  Come, in -- dwell -- ing Spir -- it, with trans -- fig -- ured splen -- dor; love and hon -- or will I ren -- der.
-  Where I go here be -- low, let me bow be -- fore thee, know thee, and a -- dore thee.
+  Gott ist ge -- gen -- wär -- tig, dem die Che -- ru -- bi -- nen Tag und Nacht ge -- bü -- cket die -- nen.
+  ''Hei -- lig, hei -- lig, hei -- lig!'' sin -- gen ihm zur Eh -- re al -- ler En -- gel ho -- he Chö -- re.
+  Herr, ver -- nimm uns -- re Stimm, da auch wir Ge -- rin -- gen uns -- re Op -- fer brin -- gen.
 }
 verseC = \lyricmode {
-  Glad -- ly we sur -- ren -- der earth's de -- ceit -- ful trea -- sures, pride of life, and sin -- ful plea -- sures.
-  God, we glad -- ly of -- fer thine to be for -- ev -- er, soul and life and each en -- deav -- or.
-  Thou a -- lone shalt be known Lord of all our be -- ing, life's true way de -- cree -- ing.
+  Herr, komm in mir woh -- nen; lass mein Herz auf ER -- den dir ein Hei -- lig -- tum noch wer -- den.
+  Komm, du nahes Wesen; dich in mir ver -- kläre, dass ich dich stets lieb und ehre.
+  Wo ich geh, sitz und steh, lass mich dich er -- blick -- en und vor dir mich bü -- cken.
 }
 verseD = \lyricmode { }
 verseE = \lyricmode { }
