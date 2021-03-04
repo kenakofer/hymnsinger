@@ -8,7 +8,6 @@
 tags = "christian 4part acapella 2verse musicbyother textbyother"
 \header {
   title = \titleText "Come, thou long-expected Jesus"
-  %subtitle = \smallText "From Hymnal: A Worship Book #178"
   composer = \smallText "Music: Rowland H. Prichard ca. 1830"
   arranger = \smallText "Arranged by Ralph Vaughn Williams, 1906"
   poet = \smallText "Text: Charles Wesley, 1744"
@@ -16,8 +15,6 @@ tags = "christian 4part acapella 2verse musicbyother textbyother"
   copyright = \public_domain_notice "Kenan Schaefkofer"
   tagline = \tagline
 }
-
-
 
 %% NOTES
 %% See included tune
@@ -52,7 +49,7 @@ all_verses = <<
 >>
 
 %% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into 
+%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
 %% a lower staff.
 
 %% Traditional notation
