@@ -131,6 +131,18 @@ now o'er earth is shed abroad.
 And all flesh shall see the token
 that God's word is never broken.
 
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/god_is_here_among_us.html">God Is Here Among Us</a></td><td class='lyric-box'>God is here among us: come with adoration, fervent praise and expectation.
+God is here within us: known beyond believing, soul in silent awe receiving.
+God will name and will claim those beheld as lowly, making all things holy.
+
+Come, abide within me; let my soul, like Mary, be thine earthly sanctuary.
+Come, indwelling Spirit, with transfigured splendor; love and honor will I render.
+Where I go here below, let me bow before thee, know thee, and adore thee.
+
+Gladly we surrender earth's deceitful treasures, pride of life, and sinful pleasures.
+God, we gladly offer thine to be forever, soul and life and each endeavor.
+Thou alone shalt be known Lord of all our being, life's true way decreeing.
+
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/help_us_to_help_each_other_lord.html">Help Us To Help Each Other Lord</a></td><td class='lyric-box'>Help us to help each other, Lord,
 each other's cross to bear,
 let each his friendly aid afford,

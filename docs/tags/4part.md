@@ -238,7 +238,19 @@ friends we've lost and friends still here, for all selfless thoughts and mild:
 For thy Truth both harsh and kind, shadowed setter of our stage,
 patterns sought by human mind, guiding us from age to age,
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textadaptedbykenan.html">textadaptedbykenan</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/great_is_thy_faithfulness.html">Great Is Thy Faithfulness</a></td><td class='lyric-box'>Great is thy faithfulness, O God my Maker.
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textadaptedbykenan.html">textadaptedbykenan</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/god_is_here_among_us.html">God Is Here Among Us</a></td><td class='lyric-box'>God is here among us: come with adoration, fervent praise and expectation.
+God is here within us: known beyond believing, soul in silent awe receiving.
+God will name and will claim those beheld as lowly, making all things holy.
+
+Come, abide within me; let my soul, like Mary, be thine earthly sanctuary.
+Come, indwelling Spirit, with transfigured splendor; love and honor will I render.
+Where I go here below, let me bow before thee, know thee, and adore thee.
+
+Gladly we surrender earth's deceitful treasures, pride of life, and sinful pleasures.
+God, we gladly offer thine to be forever, soul and life and each endeavor.
+Thou alone shalt be known Lord of all our being, life's true way decreeing.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/great_is_thy_faithfulness.html">Great Is Thy Faithfulness</a></td><td class='lyric-box'>Great is thy faithfulness, O God my Maker.
 There is no shadow of turning with thee.
 Thou changest not, they comppassions, they fail not.
 As thou hast been thou forever wilt be.
