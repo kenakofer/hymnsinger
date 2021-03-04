@@ -2,9 +2,9 @@
 my_number: 5
 ---
 
-# Welcome to Hymn Hosting
+# Welcome to Hymn Singer
 
-Music can be more inviting and better presented, especially the *dusty old harmonies* in hymnals. One shouldn't need a music degree to learn and enjoy these musical works.
+Music can be more inviting and better presented, especially the *dusty old harmonies* in hymnals. One shouldn't need a music degree to learn and enjoy these musical works, nor should one need a law degree to feel safe performing, distributing, and modifying it.
 
 ### No ads, no catch, just 🎵 that wants to be free!
 
@@ -14,7 +14,7 @@ Check out the [Full Hymn Index]({{ site.baseurl }}/hymn-index.html).
 
 ### How it's done
 
-I "typeset" songs using [Lilypond](http://lilypond.org/). Lilypond turns a musical code file into PDF, PNG, and MIDI files which are all provided here for download. Of course, check out the [github project](https://github.com/kenanbit/hymn-hosting) to view the source files for the songs and make your own changes.
+I "typeset" songs using [Lilypond](http://lilypond.org/). Lilypond turns a musical code file into PDF, PNG, and MIDI files which are all provided here for download. Of course, check out the [github project](https://github.com/kenanbit/hymn-singer) to view the source files for the songs and make your own changes.
 
 
 Or, reach out to **request an added song**. Ensure that:
