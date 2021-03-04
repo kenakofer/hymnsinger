@@ -303,7 +303,17 @@ and feel with all akin;
 my heart expands; their fortitude
 and peace and joy flow in.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/autumn.html">autumn</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/joyful_joyful.html">Joyful Joyful</a></td><td class='lyric-box'>Joyful, joyful, we adore thee, God of glory, Lord of love.
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/autumn.html">autumn</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/jesu_joy_of_our_desiring.html">Jesu Joy Of Our Desiring</a></td><td class='lyric-box'>Jesu, joy of our desiring, holy wisdom, love most bright,
+drawn by thee, our souls aspiring soar to uncreated light.
+Word of God, our flesh that fashioned, with the fire of life impassioned,
+striving still to truth unknown, soaring, dying round thy throne.
+
+Through the way, where hope is guiding, hark, what peaceful music rings,
+where the flock, in thee confiding, drink of joy from deathless springs.
+Theirs is beauty's fairest pleasure. Theirs is wisdom's holiest treasure.
+Thou dost ever lead thine own in the love of joys unknown.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/2verse.html">2verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/joyful_joyful.html">Joyful Joyful</a></td><td class='lyric-box'>Joyful, joyful, we adore thee, God of glory, Lord of love.
 Hearts unfold like flow'rs before thee, praising thee their sun above.
 Melt the clouds of sin and sadness; drive the dark of doubt away.
 Giver of immortal gladness, fill us with the light of day!
