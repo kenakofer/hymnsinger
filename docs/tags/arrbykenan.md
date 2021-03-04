@@ -74,7 +74,22 @@ on thee alone for strength depend,
 nor have I power from thee to move.
 Thy nature, and thy name is Love!
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/accompanied.html">accompanied</a><a class="taglink" href="{{ site.baseurl }}/tags/11verse.html">11verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/no_number_tallies_up_my_score.html">No Number Tallies Up My Score</a></td><td class='lyric-box'>No number tallies up my score,
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/accompanied.html">accompanied</a><a class="taglink" href="{{ site.baseurl }}/tags/11verse.html">11verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/my_shepherd_will_supply_my_need.html">My Shepherd Will Supply My Need</a></td><td class='lyric-box'>My Shepherd will supply my need; most holy is your name.
+In pastures fresh you make me feed, beside the living stream.
+You bring my wand'ring spirit back, when I farsake your ways,
+and lead me for your mercy's sake, in paths of truth and grace.
+
+When I walk through the shades of death, your presence is my stay.
+One word of your supporting breath drives all my fears away.
+Your hand, in sight of all my foes, does still my table spread.
+My cup with blessings overflows, your oil anoints my head.
+
+The sure provisions of my God attend me all my days.
+Oh, may your house be my abode, and all my work be praise.
+There would I find a settled rest, while others go and come,
+no more a stranger, nor a guest, but like a child at home.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/no_number_tallies_up_my_score.html">No Number Tallies Up My Score</a></td><td class='lyric-box'>No number tallies up my score,
 no tribe my house can fill;
 I sit beside the fount of life
 and pour the deluge still.

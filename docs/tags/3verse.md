@@ -182,7 +182,22 @@ fifty springs are little room,
 about the woodlands I will go,
 see the cherry hung with snow.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/spring.html">spring</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/once_to_every_soul.html">Once To Every Soul</a></td><td class='lyric-box'>Once to ev’ry soul and nation
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/spring.html">spring</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/my_shepherd_will_supply_my_need.html">My Shepherd Will Supply My Need</a></td><td class='lyric-box'>My Shepherd will supply my need; most holy is your name.
+In pastures fresh you make me feed, beside the living stream.
+You bring my wand'ring spirit back, when I farsake your ways,
+and lead me for your mercy's sake, in paths of truth and grace.
+
+When I walk through the shades of death, your presence is my stay.
+One word of your supporting breath drives all my fears away.
+Your hand, in sight of all my foes, does still my table spread.
+My cup with blessings overflows, your oil anoints my head.
+
+The sure provisions of my God attend me all my days.
+Oh, may your house be my abode, and all my work be praise.
+There would I find a settled rest, while others go and come,
+no more a stranger, nor a guest, but like a child at home.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/once_to_every_soul.html">Once To Every Soul</a></td><td class='lyric-box'>Once to ev’ry soul and nation
 comes the moment to decide,
 in the strife of truth with falsehood,
 for the good or evil side;
