@@ -93,7 +93,11 @@ all_verses = <<
 \book { \bookOutputSuffix "shapenote" \score { \fillTradScore {\aikenHeads \soprano} {\aikenHeads \alto} {\aikenHeads \tenor} {\aikenHeads \bass} \songChords } }
 
 %% Clairnotes Notation
-\book { \bookOutputSuffix "clairnote" \score { \fillClairScore \soprano \alto \tenor \bass } }
+\book { \bookOutputSuffix "clairnote" \score {
+  \layout {
+    #(layout-set-staff-size 18)
+  } \fillClairScore \soprano \alto \tenor \bass
+}}
 
 %% MIDI output
 \score {
