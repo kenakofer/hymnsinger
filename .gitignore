@@ -1,4 +1,5 @@
 .*
+--*
 *.pdf
 *.png
 /lilypond/**/*.midi
