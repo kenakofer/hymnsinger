@@ -100,7 +100,7 @@ prescoreText =
       }
     #})
 
-\prescore_text = \markup { " " }
+prescore_text = \markup { " " }
 
 
  titleText =
