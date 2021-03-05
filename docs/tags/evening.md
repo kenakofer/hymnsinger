@@ -23,7 +23,16 @@ Ills have no weight, and tears no bitterness.
 Where is death’s sting? Where, grave, thy victory?
 I triumph still, if Thou abide with me.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/evening.html">evening</a><a class="taglink" href="{{ site.baseurl }}/tags/death.html">death</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/now_all_the_woods_are_sleeping.html">Now All The Woods Are Sleeping</a></td><td class='lyric-box'>Now all the woods are sleeping,
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/evening.html">evening</a><a class="taglink" href="{{ site.baseurl }}/tags/death.html">death</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/all_praise_to_thee_my_god.html">All Praise To Thee My God</a></td><td class='lyric-box'>All praise to thee, my God, this night, for all the blessings of the light.
+Keep me, O keep me, King of kings, beneath thine own almighty wings.
+
+O let my soul, on thee, repose, and with sweet sleep my eyelids close,
+sleep that will me more vig'rous make to serve my God when I awake.
+
+Praise God from whom all blessings flow, praise God all creatures here below,
+praise God above ye heav'nly host, praise Father, Son, and Holy Ghost.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/evening.html">evening</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/now_all_the_woods_are_sleeping.html">Now All The Woods Are Sleeping</a></td><td class='lyric-box'>Now all the woods are sleeping,
 the night and stillness creeping
 o'er city, field, and beast;
 but thou, my heart, awake be,

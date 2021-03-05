@@ -87,6 +87,22 @@ smallText =
       }
     #})
 
+prescoreText =
+  #(define-scheme-function
+    (parser location text)
+    (markup?)
+    #{
+      \markup {
+        \override #'(font-series . "regular")
+        \fontsize #0
+        \lower #12.5
+        #text
+      }
+    #})
+
+\prescore_text = \markup { " " }
+
+
  titleText =
   #(define-scheme-function
     (parser location text)

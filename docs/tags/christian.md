@@ -19,7 +19,16 @@ Oh, that with all the sacred throng we at his feet may fall!
 We’ll join the everlasting song and crown him Lord of all.
 We’ll join the everlasting song and crown him Lord of all!
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/amazing_grace.html">Amazing Grace</a></td><td class='lyric-box'>Amazing grace! how sweet the sound, that saved a wretch like me!
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/all_praise_to_thee_my_god.html">All Praise To Thee My God</a></td><td class='lyric-box'>All praise to thee, my God, this night, for all the blessings of the light.
+Keep me, O keep me, King of kings, beneath thine own almighty wings.
+
+O let my soul, on thee, repose, and with sweet sleep my eyelids close,
+sleep that will me more vig'rous make to serve my God when I awake.
+
+Praise God from whom all blessings flow, praise God all creatures here below,
+praise God above ye heav'nly host, praise Father, Son, and Holy Ghost.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/evening.html">evening</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/amazing_grace.html">Amazing Grace</a></td><td class='lyric-box'>Amazing grace! how sweet the sound, that saved a wretch like me!
 I once was lost, but now am found, was blind, but now I see.
 
 'Twas grace that taught my heart to fear, and grace my fears relieved.

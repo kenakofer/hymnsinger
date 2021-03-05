@@ -3,88 +3,38 @@
 \language "english"
 \include "../../lib/clairnote.ly"
 \include "../../lib/hymn_common.ly"
+\include "../../shared_tunes/tallis_canon.ly"
 %\include "color_by_pitch.ly"
 
 %% See docs/all_tags.txt for the full list available
-tags = "christian 4part acapella 3verse musicbyother textbyother"
+tags = "christian 4part acapella 3verse musicbyother textbyother evening"
 \header {
-  title = \titleText "Title goes here"
+  title = \titleText "All praise to thee, my God"
   %subtitle = \smallText "Optional"
-  composer = \smallText "Music: Where music from, year"
+  composer = \composer
   %arranger = \smallText "Arranged by (optional), year"
-  poet = \smallText "Text: Where text from, year"
-  meter = \smallText "TUNE NAME AND METER E.G 87.87 D"
+  poet = \smallText "Text: Thomas Ken, 1695"
+  meter = \meter
   copyright = \public_domain_notice "Kenan Schaefkofer"
   tagline = \tagline
 }
-%prescore_text = \prescoreText "Uncomment to add text up and left of the score"
-%postscore_text = \postscoreText "Uncomment to add text down and left of the score"
+prescore_text = \prescoreText "Unison when sung in canon"
 
-%% SETTINGS
-hymnKey = \key c \major
-hymnTime = \time 4/4
-%% Adjust these to fix beaming
-%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-%hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-%hymnBeatExceptions = \set Timing.beamExceptions = #'()
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
-
-%% NOTES
-soprano = {
-  \globalParts
-  \relative g' { c4 d e f} \break
-  \relative g' {} \break
-  \relative g' {} \break
-  \relative g' {}\break
-  \bar "|."
-}
-alto = {
-  \globalParts
-  \relative e' {}
-  \relative e' {}
-  \relative e' {}
-  \relative e' {}
-}
-tenor = {
-  \globalParts
-  \relative a { a4 b c d }
-  \relative a {}
-  \relative a {}
-  \relative a {}
-}
-bass = {
-  \globalParts
-  \relative d {}
-  \relative d {}
-  \relative d {}
-  \relative d {}
-}
-songChords = \chords {
-  \set chordChanges = ##t
-}
+% See shared_tune for music
 
 %% LYRICS
 verseA = \lyricmode {
-  Ly -- rics
+  All praise to thee, my God, this night, for all the bless -- ings of the light.
+  Keep me, O keep me, King of kings, be -- neath thine own al -- might -- y wings.
 }
 verseB = \lyricmode {
-  for each
+  O let my soul, on thee, re -- pose, and with sweet sleep my eye -- lids close,
+  sleep that will me more vig -- 'rous make to serve my God when I a -- wake.
 }
 verseC = \lyricmode {
- verse
+  Praise God from whom all bless -- ings flow, praise God all crea -- tures here be -- low,
+  praise God a -- bove ye heav -- 'nly host, praise Fa -- ther, Son, and Ho -- ly Ghost.
 }
-verseD = \lyricmode {
- go here.
-}
-verseE = \lyricmode { }
-verseF = \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano
@@ -92,9 +42,6 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
 
 %% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common

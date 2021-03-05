@@ -3,7 +3,16 @@ title: Hymns tagged 3verse
 layout: default
 ---
 <table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>
-<tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/be_still_my_soul.html">Be Still My Soul</a></td><td class='lyric-box'>Be still, my soul; the Lord is on thy side;
+<tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/all_praise_to_thee_my_god.html">All Praise To Thee My God</a></td><td class='lyric-box'>All praise to thee, my God, this night, for all the blessings of the light.
+Keep me, O keep me, King of kings, beneath thine own almighty wings.
+
+O let my soul, on thee, repose, and with sweet sleep my eyelids close,
+sleep that will me more vig'rous make to serve my God when I awake.
+
+Praise God from whom all blessings flow, praise God all creatures here below,
+praise God above ye heav'nly host, praise Father, Son, and Holy Ghost.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/evening.html">evening</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/be_still_my_soul.html">Be Still My Soul</a></td><td class='lyric-box'>Be still, my soul; the Lord is on thy side;
 bear patiently the cross of grief or pain;
 leave to thy God to order and provide;
 in every change he faithful will remain.
