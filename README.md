@@ -11,23 +11,27 @@ This is a project to make or take hymns with permissive copyright status, typese
  - I can add to the site by simply adding a new lilypond file
 
 ### Possible TODOs:
- - Differentiate fonts png versus pdf?
- - Email lilypond list regarding shape notes + partsCombine
-   Stem default directions down/up?
-   CSS tweaks:
+  - Differentiate fonts png versus pdf?
+  - Email lilypond list regarding shape notes + partsCombine
+  - Stem default directions down/up?
+  - CSS tweaks:
     - Fix large/small screen differences
-   Midiplayer tweaks:
-      Change stop to restart
-      Figure out if dragging through the file is possible
-      Fix play/pause indication
-      Loop play?
-      Add master volume slider
-      Add pitch change slider
-      Add Instrument change option
-      Add expandable advanced panel, place most things inside to avoid clutter
-      Make spacebar toggle the play button
-    Find in page doesn't work on mobile, maybe just suggest using find in page? Or use a better library
-    Play sample on the index page?
-    Screenshot on home page showing e.g. amazing grace old and new.
-    Sort index page somehow
-    Add tags for time of day and seasons
+  - Midiplayer tweaks:
+    - Change stop to restart
+    - Figure out if dragging through the file is possible
+    - Fix play/pause indication
+    - Loop play?
+    - Add master volume slider
+    - Add pitch change slider
+    - Add Instrument change option
+    - Add expandable advanced panel, place most things inside to avoid clutter
+    - Make spacebar toggle the play button
+  - Find in page doesn't work on mobile, maybe just suggest using find in page? Or use a better library
+  - Play sample on the index page?
+  - Screenshot on home page showing e.g. amazing grace old and new.
+  - Sort index page somehow
+  - Programatic key change? Would require either
+    - Generating all the desired key changes up front (+/- 3 half steps?)
+    - Using a custom lilybin setup on server or AWS lambda, or some other serverside way to re-parse lilypond files. This would be far more difficult, but also allow the user tons of flexibility down the line.
+
+
