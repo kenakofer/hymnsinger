@@ -26,6 +26,7 @@ var pause = function() {
 var stop = function() {
 	Player.stop();
 	document.getElementById('play-button').innerHTML = 'Play';
+    document.getElementById('play-bar').style.width = '2%';
 }
 var channel_to_velocity = {
     1: 150,
@@ -55,7 +56,7 @@ Soundfont.instrument(ac, 'https://raw.githubusercontent.com/gleitz/midi-js-sound
 			}
 
 			document.getElementById('tempo-display').innerHTML = Player.tempo;
-			document.getElementById('play-bar').style.width = 100 - Player.getSongPercentRemaining() + '%';
+			document.getElementById('play-bar').style.width = 100 - (.98 * Player.getSongPercentRemaining()) + '%';
 		});
 
 		Player.loadArrayBuffer(buffer);
