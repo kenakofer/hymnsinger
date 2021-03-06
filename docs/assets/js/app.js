@@ -25,8 +25,6 @@ var pause = function() {
 
 var stop = function() {
 	Player.stop();
-	document.getElementById('play-button').innerHTML = 'Play';
-    document.getElementById('play-bar').style.width = '2%';
 }
 var channel_to_velocity = {
     1: 150,

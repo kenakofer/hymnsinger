@@ -1014,6 +1014,11 @@ var MidiPlayer = (function () {
         this.startTick = 0;
         this.startTime = 0;
         this.resetTracks();
+
+        // UI update
+        document.getElementById('play-button').innerHTML = 'Play';
+        document.getElementById('play-bar').style.width = '2%';
+
         return this;
       }
       /**
