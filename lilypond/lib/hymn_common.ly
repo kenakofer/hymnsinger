@@ -87,6 +87,23 @@ smallText =
       }
     #})
 
+ twoLineSmallTextRight =
+  #(define-scheme-function
+    (parser location textA textB)
+    (markup? markup?)
+    #{
+      \markup{
+        \override #'(baseline-skip . 2)
+        \right-column {
+          %\override #'(font-name . "Linux Biolinum")
+          \fontsize #-2
+          \line { #textA }
+          \fontsize #-2
+          \line { #textB }
+        }
+      }
+    #})
+
 prescoreText =
   #(define-scheme-function
     (parser location text)
@@ -101,6 +118,21 @@ prescoreText =
     #})
 
 prescore_text = \markup { " " }
+
+postscoreText =
+  #(define-scheme-function
+    (parser location text)
+    (markup?)
+    #{
+      \markup {
+        \override #'(font-series . "regular")
+        \fontsize #-1
+        \raise #5
+        #text
+      }
+    #})
+
+postscore_text = \markup { " " }
 
 
  titleText =
