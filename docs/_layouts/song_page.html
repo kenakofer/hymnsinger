@@ -30,13 +30,13 @@
     <script src="{{ site.baseurl }}/assets/js/app.js"></script>
     <div class="wrapper">
       <header>
-          &larr; <a href="{{ site.baseurl }}/hymn-index.html" style="color: red;">Back to list</a>
+          &larr; <a href="{{ site.baseurl }}/hymn-index.html" style="color:#ff5555;">Back to list</a>
         <h1 class="header">Playback</h1>
-          <button class="button button-primary" id="play-button" onclick="Player.isPlaying() ? pause() : play();" disabled="disabled">Play</button>
-          <button class="button" onclick="stop()">Reset</button><br/>
+          <button class="button button-primary" id="play-button" onclick="Player.isPlaying() ? pause() : play();" disabled="disabled">Play</button><!--
+          --><button class="button button-primary" id="stop-button" onclick="stop()">Reset</button><br/>
 
-        <div style="border:1px solid #ccc;margin-bottom:12px;background:#f7f7f7;">
-            <div id="play-bar" style="height:20px;background:#33C3F0;width:2%;"></div>
+        <div id="play-bar-background">
+            <div id="play-bar"></div>
         </div>
         <div class="tempo-panel">
             Tempo: <span id="tempo-display"></span> bpm<br />

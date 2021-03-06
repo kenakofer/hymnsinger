@@ -40,6 +40,21 @@ input[type="radio"] {
 input[type="radio"]:checked + label {
     border: solid 2px black;
 }
+#play-button, #stop-button {
+    width: 50%;
+}
+#play-bar-background {
+    border:1px solid #ccc;
+    margin-bottom:12px;
+    background:#c7c7be;
+    border-radius: 2px;
+}
+#play-bar {
+    height:10px;
+    background:#c33333;
+    border-radius: 3px;
+    width:2%;
+}
 .tempo-panel {
     background: #ccc;
     margin-bottom: 10px;
@@ -72,9 +87,9 @@ img {
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted #C30000;
+  border-bottom: 1px dotted #c33333;
   padding: 0 2px;
-  color: #C30000;
+  color: #c33333;
   font-weight: 200;
   cursor: help;
 }
