@@ -13,6 +13,17 @@ var changeTempo = function(tempo) {
             Player.play();
 }
 
+window.addEventListener('keydown', function(e) {
+  if(e.keyCode == 32 && e.target == document.body) {
+    e.preventDefault();
+    click_play()
+  }
+});
+
+var click_play = function() {
+    Player.isPlaying() ? pause() : play();
+}
+
 var play = function() {
 	Player.play();
 	document.getElementById('play-button').innerHTML = 'Pause';
