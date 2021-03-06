@@ -7,7 +7,7 @@
 %\include "color_by_pitch.ly"
 
 %% See docs/all_tags.txt for the full list available
-tags = "theistic 4part acapella 5verse musicbyother textbyother"
+tags = "theist 4part acapella 5verse musicbyother textbyother"
 \header {
   title = \titleText "All creatures of the earth and sky"
   subtitle = \smallText "See also: All creatures worship God most high"

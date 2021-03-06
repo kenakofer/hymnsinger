@@ -6,7 +6,7 @@
 %\include "color_by_pitch.ly"
 
 %% See docs/all_tags.txt for the full list available
-tags = "theistic 4part acapella 3verse musicbyother textbyother"
+tags = "theist 4part acapella 3verse musicbyother textbyother"
 \header {
   title = \titleText "Lift every voice and sing"
   %subtitle = \smallText "Optional"
