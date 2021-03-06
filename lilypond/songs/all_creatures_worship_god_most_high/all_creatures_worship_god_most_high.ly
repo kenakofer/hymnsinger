@@ -151,6 +151,6 @@ all_verses = <<
   \midi {
     \context { \Staff \remove "Staff_performer" }
     \context { \Voice \consists "Staff_performer" }
-    \tempo  4 = 120
+    \tempo  4 = 140
   }
 }
