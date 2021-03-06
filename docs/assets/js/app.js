@@ -8,7 +8,7 @@ var changeTempo = function(tempo) {
         Player.pause();
 	Player.tempo = tempo;
         document.getElementById('tempo-input').value = tempo;
-        document.getElementById('tempo-display').innerHTML = tempo;
+        document.getElementById('tempo-display').innerHTML = tempo + ' BPM';
         if (was_playing)
             Player.play();
 }
@@ -53,7 +53,7 @@ Soundfont.instrument(ac, 'https://raw.githubusercontent.com/gleitz/midi-js-sound
                             }
 			}
 
-			document.getElementById('tempo-display').innerHTML = Player.tempo;
+			document.getElementById('tempo-display').innerHTML = Player.tempo + ' BPM';
 			document.getElementById('play-bar').style.width = 100 - (.98 * Player.getSongPercentRemaining()) + '%';
 		});
 

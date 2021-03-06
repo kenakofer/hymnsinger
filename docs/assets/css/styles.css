@@ -64,6 +64,17 @@ input[type="radio"]:checked + label {
 .tempo-panel input {
     width: 100%;
 }
+#tempo-display {
+    background: #232323;
+    border-radius: 4px;
+    padding: 2px 4px;
+    font-family: monospace;
+    color: #c33333;
+    font-weight: bold;
+    align-content: right;
+    align-self: right;
+    margin-left: 7px;
+}
 .part-volume {
     background: #ccc;
     margin: 0;
