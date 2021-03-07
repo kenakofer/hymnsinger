@@ -34,6 +34,7 @@ globalParts = {
   \hymnBeatStructure
   \hymnBeamExceptions
   \numericTimeSignature
+  \phrasingSlurDashed
 }
 
 %% NOTES

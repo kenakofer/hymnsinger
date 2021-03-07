@@ -166,7 +166,7 @@ postscore_text = \markup { " " }
       }
     #})
 
-  fillClairScore =
+fillClairScore =
   #(define-music-function
     (parser location topA topB bottomA bottomB)
     (ly:music? ly:music? ly:music? ly:music?)
@@ -192,7 +192,26 @@ postscore_text = \markup { " " }
       >>
     #})
 
-   fillTradScore =
+fillClairScoreSingleStaff =
+  #(define-music-function
+    (parser location topA topB bottomA bottomB)
+    (ly:music? ly:music? ly:music? ly:music?)
+    #{
+      <<
+        \new Staff = "top" \with {
+          \cnNoteheadStyle "funksol"
+          printPartCombineTexts = ##f
+        }
+        <<
+
+          \new Voice \with {
+          } << \partcombine #'(2 . 20) $topA $topB $bottomA $bottomB >>
+          \all_verses
+        >>
+      >>
+    #})
+
+fillTradScore =
   #(define-music-function
     (parser location topA topB bottomA bottomB songChords)
     (ly:music? ly:music? ly:music? ly:music? ly:music?)
@@ -214,6 +233,25 @@ postscore_text = \markup { " " }
           \new Voice \with {
 
           } { \clef bass << \partcombine #'(2 . 20) $bottomA $bottomB >> }
+        >>
+      >>
+    #})
+
+fillTradScoreSingleStaff =
+  #(define-music-function
+    (parser location topA topB bottomA bottomB songChords)
+    (ly:music? ly:music? ly:music? ly:music? ly:music?)
+    #{
+      <<
+        $songChords
+        \new TradStaff = "top" \with {
+          printPartCombineTexts = ##f
+        }
+        <<
+          \new Voice \with {
+
+          } << \partcombine #'(2 . 20) $topA $topB $bottomA $bottomB >>
+          \all_verses
         >>
       >>
     #})

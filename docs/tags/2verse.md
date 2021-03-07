@@ -23,4 +23,22 @@ where the flock, in thee confiding, drink of joy from deathless springs.
 Theirs is beauty's fairest pleasure. Theirs is wisdom's holiest treasure.
 Thou dost ever lead thine own in the love of joys unknown.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/2verse.html">2verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr>
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/2verse.html">2verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/wakantanka_many_and_great.html">Wakantanka (Many and Great)</a></td><td class='lyric-box'>Wakantanka taku nitawa tankaya qa ota;
+mahpiya kin eyahnake ça, maka kin he duowanca;
+mniowanca śbeya wanke cin, hena oyakihi.
+
+Woehdaku nitawa kin he minaġi kin qu wo;
+mahpiya kin iwankam yati, wicowaśte yuha nanka,
+wiconi kin he mayaqu nun, owihanke wanin.
+
+\override Lyrics.LyricText.font-shape = #'italic
+Many and great, O God, are your works, maker of earth and sky.
+Your hands have set the heavens with stars; your fingers spread the mountains and plains
+Lo, at your word the waters were formed; deep seas obey your voice.
+
+\override Lyrics.LyricText.font-shape = #'italic
+Grant unto us communion with you, O starabiding One.
+Come unto us and dwell with us; with you are found the gifts of life.
+Bless us with life that has no end, eternal life with you.
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/2verse.html">2verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr>
