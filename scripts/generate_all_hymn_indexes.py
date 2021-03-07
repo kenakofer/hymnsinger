@@ -10,6 +10,15 @@ def get_tags(all_lines):
             tags = tag_string.split()
             return tags
 
+def get_title(all_lines):
+    for line in all_lines:
+        search_for = "\\titleText"
+        if search_for in line:
+            index = line.index(search_for) + len(search_for) + 1
+            line = line[index:].strip()
+            return line[1:-1]
+
+
 def get_tag_html(tag):
     return '<a class="taglink" href="{{ site.baseurl }}/tags/'+tag+'.html">'+tag+'</a>'
 
@@ -41,7 +50,7 @@ def get_lyrics(all_lines):
             chorus_mode = False
             lyrics+="\n"
         elif current_verse:
-            prefix = "  " if chorus_mode else "" 
+            prefix = "  " if chorus_mode else ""
             lyrics+=prefix + join_verse_line(line, remove_quotes) + "\n"
     return lyrics
 
@@ -56,10 +65,9 @@ def join_verse_line(line, remove_quotes):
     return " ".join(words)
 
 
-def output_table_row(song_file_base, lyrics, tags, output_file):
+def output_table_row(song_file_base, song_title, lyrics, tags, output_file):
     with open(output_file, 'a') as f:
         f.write("<tr><td class='hymn-name-box'><a href=\"{{ site.baseurl }}/listing/"+song_file_base+".html\">")
-        song_title = " ".join(map(lambda w: w[0].upper() + w[1:], song_file_base.split("_")))
         f.write(song_title)
         f.write("</a></td><td class='lyric-box'>")
         f.write(lyrics)
@@ -78,8 +86,9 @@ if __name__ == "__main__":
         lines = f.readlines()
         all_lyrics = get_lyrics(lines)
         all_tags = get_tags(lines)
+        song_title = get_title(lines)
     for tag in all_tags:
         files_to_append_to.append("docs/tags/"+tag+".md")
     for output_file in files_to_append_to:
-        output_table_row(song_file_base, all_lyrics, all_tags, output_file)
+        output_table_row(song_file_base, song_title, all_lyrics, all_tags, output_file)
 

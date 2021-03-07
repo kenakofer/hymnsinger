@@ -3,7 +3,7 @@ title: Hymns tagged 5part
 layout: default
 ---
 <table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>
-<tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_my_way.html">Come My Way</a></td><td class='lyric-box'>Come, my Way, my Truth, my Life:
+<tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_my_way.html">Come, my Way, my Truth, my Light</a></td><td class='lyric-box'>Come, my Way, my Truth, my Life:
 such a way as gives me breath;
 such a truth as ends all strife;
 such a life as killeth death.
