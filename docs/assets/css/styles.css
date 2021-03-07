@@ -23,10 +23,13 @@ section {
     -filter: sepia(.5) brightness(.97);
     filter: sepia(.5) brightness(.97);
     -webkit-filter: sepia(.5) brightness(.97);
-    max-width: 900px;
+    max-width: 900px; /* To prevent awkward spacing while loading */
+    min-height: 550px;
 }
 body {
-    background-color: #F7F7EE /* Body should match music-image color after filters */
+    background-color: #F7F7EE; /* Body should match music-image color after filters */
+    width: 100%;
+    padding-right: 0px;
 }
 label {
     display: inline-block;
@@ -86,6 +89,24 @@ input[type="radio"]:checked + label {
 .part-volume input {
     /*max-width: 100px;*/
     width: 100%;
+}
+footer {
+    width: 100%;
+    background: #171717;
+    text-align: center;
+    left: 0px;
+    bottom: 0px;
+    margin:0px;
+    padding:0px;
+    color: gray;
+    font-weight: bold;
+    position: static;
+    font-size: smaller;
+}
+footer a {
+    color: #c33333;
+    font-weight: bold;
+    display: inline-block;
 }
 img {
     position: relative;
@@ -187,10 +208,17 @@ h1 {
 ul, ol{
     margin-top: -20px;
 }
+header nav {
+    margin-bottom: 30px;
+}
+header ul {
+    position: static;
+}
 @media print, screen and (max-width: 960px) {
     header {
     max-width: 400px;
     padding-right: 34px;
+    padding-bottom: 22px;
     }
 }
 @media print, screen and (max-width: 720px) {
