@@ -1,21 +1,9 @@
-\version "2.20.0"
-\include "../lib/hymn_common.ly"
-\language "english"
-
 composer = \smallText "Music: English Traditional, 15th c."
 arranger = \smallText "Arranged by Kenan Schaefkofer, 2017"
 meter = \smallText "DEO GRACIAS LM"
-
-%% SETTINGS
 hymnKey = \key d \minor
 hymnTime = \time 3/4
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
+\include "../lib/global_parts.ly"
 
 %% NOTES
 soprano = {
@@ -39,12 +27,3 @@ bass = {
   \relative d { d4 | d2 4 | d2 4 | a g2 | a bf4 | bf a2 | bf4 a2 | bf4 a2 | d2 | }
   \relative d { d4 | c2 4 | bf2 4 | a4 g2 | d'2 a4 | d2 d4 | g,2 bf4 | a4 2 | d2.~ | 2 }
 }
-songChords = \chords {
-  \set chordChanges = ##t
-}
-
-all_verses = { }
-
-%% UNCOMMENT to VERIFY, then RECOMMENT
-%\book { \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }
-%\score { << \soprano \alto \tenor \bass >> \midi { \tempo  4 = 100 } }

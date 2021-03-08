@@ -1,20 +1,8 @@
-\version "2.20.0"
-\include "../lib/hymn_common.ly"
-\language "english"
-
 composer = \smallText "Music: North American Traditional"
 meter = \smallText "RESIGNATION CMD"
-
-%% SETTINGS
 hymnKey = \key c \major
 hymnTime = \time 3/4
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
+\include "../lib/global_parts.ly"
 
 %% NOTES
 soprano = {
@@ -46,12 +34,3 @@ bass = {
   \relative d { c'4 | a2 g8 e | f2 8 e | d2 e8 f | g2 c4 | a2 e8 d | e2 f4 | c2.~ | 2 }
   \relative d { c4 | b2 g4 | c2 b4 | a2 c4 | e2 a,4 | b2 c4 | g2 4 | c2.~ | 2 }
 }
-songChords = \chords {
-  \set chordChanges = ##t
-}
-
-all_verses = { }
-
-%% UNCOMMENT to VERIFY, then RECOMMENT
-%\book { \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }
-%\score { << \soprano \alto \tenor \bass >> \midi { \tempo  4 = 120 } }

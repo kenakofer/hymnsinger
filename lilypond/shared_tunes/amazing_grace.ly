@@ -1,22 +1,8 @@
-\version "2.20.0"
-\include "../lib/hymn_common.ly"
-\language "english"
-
-%% SETTINGS
+composer = \smallText "Music: American folk melody, 1831"
+meter = \smallText "NEW BRITAIN (AMAZING GRACE) CM"
 hymnKey = \key g \major
 hymnTime = \time 3/4
-%% Adjust these to fix beaming
-%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-%hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-%hymnBeatExceptions = \set Timing.beamExceptions = #'()
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
+\include "../lib/global_parts.ly"
 
 %% NOTES
 soprano = {
@@ -45,9 +31,3 @@ songChords = \chords {
   s4 g g g g g d e2.:m g2. g g d2.:7 d2:7
   s4 g2. g:7 c g e:m g2:/d d4:7 g g g g g
 }
-
-all_verses = { }
-
-%% UNCOMMENT to VERIFY, then RECOMMENT
-%\book { \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }
-%\score { << \soprano \alto \tenor \bass >> \midi { \tempo  4 = 120 } }

@@ -1,22 +1,8 @@
-\version "2.20.0"
-\include "../lib/hymn_common.ly"
-\language "english"
-
-%% SETTINGS
+composer = \smallText "Music: Conrad Kocher, 1838"
+meter = \smallText "DIX 77.77.77"
 hymnKey = \key a \major
 hymnTime = \time 2/2
-%% Adjust these to fix beaming
-%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-%hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-%hymnBeatExceptions = \set Timing.beamExceptions = #'()
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
+\include "../lib/global_parts.ly"
 
 %% NOTES
 soprano = {
@@ -50,9 +36,3 @@ songChords = \chords {
     a4 a a a | d e a a | d d d d | a e a a |
     a4 e a a | e e a a | d d a d | a e a a |
 }
-
-all_verses = { }
-
-%% UNCOMMENT to VERIFY, then RECOMMENT
-%\book { \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }
-%\score { << \soprano \alto \tenor \bass >> \midi { \tempo  4 = 120 } }

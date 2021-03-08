@@ -1,21 +1,9 @@
-\version "2.20.0"
-\include "../lib/hymn_common.ly"
-\language "english"
-
 composer = \smallText "Music: North American Traditional"
 arranger = \smallText "Arranged by Kenan Schaefkofer, 2021"
 meter = \smallText "RESIGNATION CMD"
-
-%% SETTINGS
 hymnKey = \key c \major
 hymnTime = \time 3/4
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
+\include "../lib/global_parts.ly"
 
 %% NOTES
 soprano = {
@@ -50,9 +38,3 @@ bass = {
 songChords = \chords {
   \set chordChanges = ##t
 }
-
-all_verses = { }
-
-%% UNCOMMENT to VERIFY, then RECOMMENT
-%\book { \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }
-%\score { << \soprano \alto \tenor \bass >> \midi { \tempo  4 = 100 } }

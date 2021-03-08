@@ -1,22 +1,9 @@
-\version "2.20.0"
-\include "../lib/hymn_common.ly"
-\language "english"
-
-%% SETTINGS
+composer = \smallText "Music: Rowland H. Prichard ca. 1830"
+arranger = \smallText "Arranged by Ralph Vaughn Williams, 1906"
+meter = \smallText "HYFRYDOL 87.87 D"
 hymnKey = \key f \major
 hymnTime = \time 3/4
-%% Adjust these to fix beaming
-%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-%hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-%hymnBeatExceptions = \set Timing.beamExceptions = #'()
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
+\include "../lib/global_parts.ly"
 
 %% NOTES
 soprano = {
@@ -54,11 +41,4 @@ songChords = \chords {
     f2. f g:m7 c f f g2:m c4 f2.
     a:m d:m g:m c2 c4:7 f2. f g:m c2:sus c4
     f2. c:7 f c a:m bf f2 c4 f2.
-
 }
-
-all_verses = { }
-
-%% UNCOMMENT to VERIFY, then RECOMMENT
-%\book { \score { \fillTradScore \soprano \alto \tenor \bass } }
-%\score { << \soprano \alto \tenor \bass >> \midi { \tempo  4 = 120 } }

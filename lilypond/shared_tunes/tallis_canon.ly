@@ -1,20 +1,8 @@
-\version "2.20.0"
-\include "../lib/hymn_common.ly"
-\language "english"
-
 composer = \smallText "Music: Thomas Tallis, 1567"
 meter = \smallText "TALLIS' CANON LM"
-
-%% SETTINGS
 hymnKey = \key g \major
 hymnTime = \time 2/2
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
+\include "../lib/global_parts.ly"
 
 %% NOTES
 soprano = {
@@ -38,12 +26,3 @@ bass = {
   \relative d { g4 | d d e b | c d g, b | a a g g' | g fs g | }
   \relative d { g | a fs g g, | c d e b | c d e b | c d g, | }
 }
-songChords = \chords {
-  \set chordChanges = ##t
-}
-
-all_verses = { }
-
-%% UNCOMMENT to VERIFY, then RECOMMENT
-%\book { \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }
-%\score { << \soprano \alto \tenor \bass >> \midi { \tempo  4 = 100 } }

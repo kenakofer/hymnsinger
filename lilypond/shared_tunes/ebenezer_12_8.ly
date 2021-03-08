@@ -1,17 +1,8 @@
-\version "2.20.0"
-\include "../lib/hymn_common.ly"
-\language "english"
-
-%% SETTINGS
+composer = \smallText "Music: Thomas John Williams, 1890"
+meter = \smallText "EBENEZER 87.87.87.87"
 hymnKey = \key g \minor
 hymnTime = \time 12/8
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
+\include "../lib/global_parts.ly"
 
 %% NOTES
 soprano = {
@@ -46,9 +37,3 @@ bass = {
 songChords = \chords {
   \set chordChanges = ##t
 }
-
-all_verses = { }
-
-%% UNCOMMENT to VERIFY, then RECOMMENT
-%\book { \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }
-%\score { << \soprano \alto \tenor \bass >> \midi { \tempo  4 = 120 } }

@@ -1,20 +1,8 @@
-\version "2.20.0"
-\include "../lib/hymn_common.ly"
-\language "english"
-
 composer = \twoLineSmallTextRight "Music: Geistliche Kirchengesang, 1623" "Harmonized Ralph Vaughan Williams, 1906"
 meter = \smallText "LASST UNS ERFREUEN LM"
-
-%% SETTINGS
 hymnKey = \key d \major
 hymnTime = \time 3/2
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
+\include "../lib/global_parts.ly"
 
 %% NOTES
 soprano = {
@@ -53,9 +41,3 @@ songChords = \chords {
   d d d d a:sus a d d2. g d2 d
   g2 a d e:m a b:m b:m e a b:m e:m a e:m a:sus a:7 d
 }
-
-all_verses = { }
-
-%% UNCOMMENT to VERIFY, then RECOMMENT
-% \book { \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }
-% \score { << \soprano \alto \tenor \bass >> \midi { \tempo  4 = 100 } }
