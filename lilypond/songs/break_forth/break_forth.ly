@@ -1,7 +1,5 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\language "english"
-\include "../../lib/clairnote.ly"
 \include "../../lib/hymn_common.ly"
 
 tags = "christian 4part acapella 1verse musicbyother textbyother morning"

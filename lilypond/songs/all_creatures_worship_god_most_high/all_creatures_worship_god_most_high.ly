@@ -1,7 +1,5 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\language "english"
-\include "../../lib/clairnote.ly"
 \include "../../lib/hymn_common.ly"
 \include "../../shared_tunes/lasst_uns_erfreuen.ly"
 

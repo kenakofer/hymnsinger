@@ -1,3 +1,5 @@
+\language "english"
+\include "clairnote.ly"
 pa = \partcombineApart
 pt = \partcombineAutomatic
 
