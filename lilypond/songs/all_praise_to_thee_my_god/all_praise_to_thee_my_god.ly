@@ -1,24 +1,17 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
+
+%% TUNE INFO
 \include "../../shared_tunes/tallis_canon.ly"
 
-
-%% See docs/all_tags.txt for the full list available
+%% SONG INFO
+title = \titleText "All praise to thee, my God"
+poet = \smallText "Text: Thomas Ken, 1695"
+copyright = \public_domain_notice "Kenan Schaefkofer"
 tags = "christian 4part acapella 3verse musicbyother textbyother evening"
-\header {
-  title = \titleText "All praise to thee, my God"
-  %subtitle = \smallText "Optional"
-  composer = \composer
-  %arranger = \smallText "Arranged by (optional), year"
-  poet = \smallText "Text: Thomas Ken, 1695"
-  meter = \meter
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
 prescore_text = \prescoreText "Unison when sung in canon"
-
-% See shared_tune for music
+\include "../../lib/header.ly"
 
 %% LYRICS
 verseA = \lyricmode {
@@ -42,9 +35,6 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
 >>
 
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \prescore_text \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }

@@ -60,9 +60,7 @@ bass = {
   \relative d { f2 4. e8 | d8 d c c d4. c8 | f4 8 c f4 d8 d | c4 8 8 c4 | }
   \relative d { r8 c | bf8( c d e) f4. f8 | f4 c8 c d4 c8 8 | bf4 d4 4 c8 c | bf4 4 f4}
 }
-songChords = \chords {
-  \set chordChanges = ##t
-}
+
 
 %% LYRICS
 verseA = \lyricmode {
@@ -93,9 +91,6 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
 
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }

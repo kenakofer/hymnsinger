@@ -64,9 +64,7 @@ bass = {
   \relative d { r1 | gs2 a4 gs | e2. e4 | b2. 4 | }
   \relative d { e4 e e2~ | 4 r4 e2 | cs1 | b1 | e1 | }
 }
-songChords = \chords {
-  \set chordChanges = ##t
-}
+
 
 %% LYRICS
 verseA = \lyricmode {
@@ -94,9 +92,6 @@ bottom_verses = <<
   \new Lyrics  \lyricsto bass  { \globalLyrics "" "" \bottomA }
 >>
 
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
   fillClairScore =
   #(define-music-function
     (parser location topA topB bottomA bottomB)

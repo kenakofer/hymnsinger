@@ -1,21 +1,16 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
+
+%% TUNE INFO
 \include "../../shared_tunes/hyfrydol_public.ly"
 
+%% SONG INFO
+title = \titleText "Come, thou long-expected Jesus"
+poet = \smallText "Text: Charles Wesley, 1744"
+copyright = \public_domain_notice "Kenan Schaefkofer"
 tags = "christian 4part acapella 2verse musicbyother textbyother"
-\header {
-  title = \titleText "Come, thou long-expected Jesus"
-  composer = \smallText "Music: Rowland H. Prichard ca. 1830"
-  arranger = \smallText "Arranged by Ralph Vaughn Williams, 1906"
-  poet = \smallText "Text: Charles Wesley, 1744"
-  meter = \smallText "HYFRYDOL 87.87 D"
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-
-%% NOTES
-%% See included tune
+\include "../../lib/header.ly"
 
 %% LYRICS
 verseA = \lyricmode {
@@ -30,25 +25,13 @@ verseB = \lyricmode {
   By thine own e -- ter -- nal Spir -- it, rule in all our hearts a -- lone.
   By thine all -- suf -- fi -- cient mer -- it, raise us to thy glo -- rious throne.
 }
-verseC = \lyricmode { }
-verseD = \lyricmode { }
-verseE = \lyricmode { }
-verseF = \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano
   % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
   \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
-
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }

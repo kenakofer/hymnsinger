@@ -9,10 +9,8 @@ tags = "christian 4part acapella 6verse musicbyother textbyother"
 \header {
   title = \titleText "Amazing grace"
   %subtitle = \smallText "Optional"
-  composer = \smallText "Music: American folk melody, 1831"
   %arranger = \smallText "Arranged by Edwin O. Excell, 1900"
   poet = \smallText "Text: John Newton, 1779 (Sts. 1-5), 1790 (St. 6)"
-  meter = \smallText "NEW BRITAIN (AMAZING GRACE) CM"
   copyright = \public_domain_notice "Kenan Schaefkofer"
   tagline = \tagline
 }
@@ -54,9 +52,6 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
 
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }

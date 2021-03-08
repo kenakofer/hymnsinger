@@ -1,21 +1,17 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
+
+%% TUNE INFO
 \include "../../shared_tunes/deo_gracias_arrbykenan.ly"
 
 
-%% See docs/all_tags.txt for the full list available
+%% SONG INFO
+title = \titleText "O love, how deep, how broad"
+poet = \smallText "Text: Thomas a Kempis, 15th c. trans. Benjamin Webb 1851, alt."
+copyright = \public_domain_notice "Kenan Schaefkofer"
 tags = "christian 4part acapella 5verse arrbykenan textbyother"
-\header {
-  title = \titleText "O love, how deep, how broad"
-  %subtitle = \smallText "Optional"
-  composer = \composer
-  arranger = \arranger
-  poet = \smallText "Text: Thomas a Kempis, 15th c. trans. Benjamin Webb 1851, alt."
-  meter = \meter
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
+\include "../../lib/header.ly"
 
 %% LYRICS
 verseA = \lyricmode {
@@ -49,9 +45,6 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "" \verseE }
 >>
 
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }

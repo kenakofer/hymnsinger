@@ -1,22 +1,18 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
+
+%% TUNE INFO
 \include "../../shared_tunes/lasst_uns_erfreuen.ly"
 
-
-%% See docs/all_tags.txt for the full list available
+%% SONG INFO
+title = \titleText "All creatures worship God most high"
+subtitle = \smallText "Alt. title: All creatures of our God and King"
+poet = \twoLineSmallText "Text: Saint Francis of Assisi, 1225;" "Translated William H. Draper, 1926; alt."
+copyright = \public_domain_notice "Kenan Schaefkofer"
 tags = "christian 4part acapella 7verse musicbyother textbyother"
-\header {
-  title = \titleText "All creatures worship God most high"
-  subtitle = \smallText "Alt. title: All creatures of our God and King"
-  composer = \composer
-  poet = \twoLineSmallText "Text: Saint Francis of Assisi, 1225;" "Translated William H. Draper, 1926; alt."
-  meter = \meter
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-%prescore_text = \prescoreText "Uncomment to add text up and left of the score"
 postscore_text = \postscoreText "*Or, ''All creatures of our God and King, / lift up your voice and with us sing''"
+\include "../../lib/header.ly"
 
 %% LYRICS
 verseA = \lyricmode {
@@ -111,12 +107,9 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "4" \verseD }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "" \verseE }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "" \verseG }
+  \new Lyrics  \lyricsto soprano  { \globalLyrics "7" "" \verseG }
 >>
 
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book {

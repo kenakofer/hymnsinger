@@ -2,35 +2,20 @@
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
 
-
-%% See docs/all_tags.txt for the full list available
-tags = "theist 1part accompanied 11verse arrbykenan textbyother"
-\header {
-  title = \titleText "Come, O thou Traveler unknown"
-  %subtitle = \smallText "Optional"
-  composer = \smallText "Music: American folk melody, 1805"
-  arranger = \smallText "Arranged by Kenan Schaefkofer, 2018"
-  poet = \smallText "Text: Charles Wesley, 1742"
-  meter = \smallText "VERNON 88.88.88"
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-
-%% SETTINGS
+%% TUNE INFO
+composer = \smallText "Music: American folk melody, 1805"
+arranger = \smallText "Arranged by Kenan Schaefkofer, 2018"
+meter = \smallText "VERNON 88.88.88"
 hymnKey = \key d \minor
 hymnTime = \time 4/4
-%% Adjust these to fix beaming
-%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-hymnBeatStructure = \set Timing.beatStructure = 2,2
-%hymnBeatExceptions = \set Timing.beamExceptions = #'()
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
+\include "../../lib/global_parts.ly"
+
+%% SONG INFO
+title = \titleText "Come, O thou Traveler unknown"
+poet = \smallText "Text: Charles Wesley, 1742"
+copyright = \public_domain_notice "Kenan Schaefkofer"
+tags = "theist 1part accompanied 11verse arrbykenan textbyother"
+\include "../../lib/header.ly"
 
 %% NOTES
 soprano = {
@@ -59,10 +44,6 @@ bass = {
   \relative d { r4 | d,1 | d1 | c1 | d2~ d2. |}
   \relative d { r4 | f,2 f2 | d1 | f1 | d'4 a4 d, | }
 }
-songChords = \chords {
-
-  \set chordChanges = ##t
-}
 
 %% LYRICS
 verseA = \lyricmode {
@@ -75,10 +56,6 @@ verseB = \lyricmode {
   Thy -- self has called me by my name, look on thy hands and read it there.
   But who, I ask thee, who art thou? Tell me thy name and tell me now.
 }
-verseC = \lyricmode { }
-verseD = \lyricmode { }
-verseE = \lyricmode { }
-verseF = \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano
@@ -196,9 +173,6 @@ extra_verses = \markup {
   }
 }
 
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } \extra_verses }

@@ -2,35 +2,19 @@
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
 
-
-%% See docs/all_tags.txt for the full list available
-tags = "christian 4part acapella 3verse musicbyother textbyother"
-\header {
-  title = \titleText "Come, thou fount"
-  %subtitle = \smallText "Optional"
-  composer = \smallText "Music: American folk melody, 1813"
-  %arranger = \smallText "Arranged by (optional), year"
-  poet = \smallText "Text: Robert Robinson, 1759"
-  meter = \smallText "NETTLETON 87.87 D"
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-
-%% SETTINGS
+%% TUNE INFO
+composer = \smallText "Music: American folk melody, 1813"
+meter = \smallText "NETTLETON 87.87 D"
 hymnKey = \key d \major
 hymnTime = \time 3/4
-%% Adjust these to fix beaming
-%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-%hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-%hymnBeatExceptions = \set Timing.beamExceptions = #'()
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
+\include "../../lib/global_parts.ly"
+
+%% SONG INFO
+title = \titleText "Come, thou fount"
+poet = \smallText "Text: Robert Robinson, 1759"
+copyright = \public_domain_notice "Kenan Schaefkofer"
+tags = "christian 4part acapella 3verse musicbyother textbyother"
+\include "../../lib/header.ly"
 
 %% NOTES
 soprano = {
@@ -62,9 +46,6 @@ bass = {
   \relative d { fs8 e | d4 fs g8 d | d4 d fs8 e | d4 fs g8 d | d2 \bar"" }
   \relative d { d8 a | d4 d d8 fs, | a4 a d8 fs | g4 d a8 a | d2 }
 }
-songChords = \chords {
-  \set chordChanges = ##t
-}
 
 %% LYRICS
 verseA = \lyricmode {
@@ -84,10 +65,6 @@ verseC = \lyricmode {
   Prone to wan -- der, Lord, I feel it, prone to leave the God I love;
   Here’s my heart, O take and seal it, seal it for thy courts a -- bove.
 }
-verseD = \lyricmode {
-}
-verseE = \lyricmode { }
-verseF = \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano
@@ -95,14 +72,7 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
-
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }

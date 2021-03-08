@@ -2,35 +2,19 @@
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
 
-
-%% See docs/all_tags.txt for the full list available
-tags = "christian 4part acapella 2verse musicbyother textbyother"
-\header {
-  title = \titleText "Jesu, joy of our desiring"
-  %subtitle = \smallText "Optional"
-  composer = \smallText "Music: Johann Schopp, 1642, harm. J. S. Bach, 1716"
-  %arranger = \smallText "Arranged by (optional), year"
-  poet = \smallText "Text: Martin Janus, 1665, trans. Robert Bridges, 1927"
-  meter = \smallText "WERDE MUNTER 87.87.88.77"
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-
-%% SETTINGS
+%% TUNE INFO
+composer = \smallText "Music: Johann Schopp, 1642, harm. J. S. Bach, 1716"
+meter = \smallText "WERDE MUNTER 87.87.88.77"
 hymnKey = \key g \major
 hymnTime = \time 3/4
-%% Adjust these to fix beaming
-%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-%hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-%hymnBeatExceptions = \set Timing.beamExceptions = #'()
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
+\include "../../lib/global_parts.ly"
+
+%% SONG INFO
+title = \titleText "Jesu, joy of our desiring"
+poet = \smallText "Text: Martin Janus, 1665, trans. Robert Bridges, 1927"
+copyright = \public_domain_notice "Kenan Schaefkofer"
+tags = "christian 4part acapella 2verse musicbyother textbyother"
+\include "../../lib/header.ly"
 
 %% NOTES
 soprano = {
@@ -63,10 +47,6 @@ bass = {
   \relative d { g2 e4 | b'( e,) e | a,( b) c | d2 r4 | g4( fs) e | b'( b,) e | c( d) d | g,2. | }
 }
 
-songChords = \chords {
-  \set chordChanges = ##t
-}
-
 %% LYRICS
 verseA = \lyricmode {
   Je -- su, joy of our de -- sir -- ing, ho -- ly wis -- dom, love most bright,
@@ -80,25 +60,14 @@ verseB = \lyricmode {
   Theirs is beau -- ty's fair -- est pleas -- ure. Theirs is wis -- dom's ho -- liest treas -- ure.
   Thou dost ev -- er lead thine own in the love of joys un -- known.
 }
-verseC = \lyricmode { }
-verseD = \lyricmode { }
-verseE = \lyricmode { }
-verseF = \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano
   % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
   \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
 
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }

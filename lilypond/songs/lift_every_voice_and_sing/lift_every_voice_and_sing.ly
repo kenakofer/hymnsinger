@@ -2,29 +2,21 @@
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
 
-
-%% See docs/all_tags.txt for the full list available
-tags = "theist 4part acapella 3verse musicbyother textbyother"
-\header {
-  title = \titleText "Lift every voice and sing"
-  %subtitle = \smallText "Optional"
-  composer = \smallText "Music: J. Rosamond Johnson, 1899"
-  %arranger = \smallText "Arranged by (optional), year"
-  poet = \smallText "Text: J. Rosamond Johnson, 1899"
-  meter = \smallText "ANTHEM 66 10.66 10.14 14 66 10"
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-
-%% SETTINGS
+%% TUNE INFO
+composer = \smallText "Music: J. Rosamond Johnson, 1899"
+meter = \smallText "ANTHEM 66 10.66 10.14 14 66 10"
 hymnKey = \key g \major
 hymnTime = \time 6/8
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \override NonMusicalPaperColumn.page-break-permission = ##f
-  \numericTimeSignature
-}
+hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/8)
+hymnBeatStructure = \set Timing.beatStructure = 3,3
+\include "../../lib/global_parts.ly"
+
+%% SONG INFO
+title = \titleText "Lift every voice and sing"
+poet = \smallText "Text: J. Rosamond Johnson, 1899"
+copyright = \public_domain_notice "Kenan Schaefkofer"
+tags = "theist 4part acapella 3verse musicbyother textbyother"
+\include "../../lib/header.ly"
 
 %% NOTES
 soprano = {
@@ -80,9 +72,6 @@ bass = {
   \relative d { d8 e fs | g4. fs | e e8 gs8 gs | a4. b4( b,8) | c4.}
   \relative d { cs8 8 8 | d4. d8 ds e16 ds | d4.~ 4 g,8 | g4.~ g }
 }
-songChords = \chords {
-  \set chordChanges = ##t
-}
 
 %% LYRICS
 verseA = \lyricmode {
@@ -120,12 +109,7 @@ verseC = \lyricmode {
 
   shad -- owed be -- neath thy hand, may we for -- ev -- er stand,
   true to our God, true to our na -- tive land.
-
 }
-verseD = \lyricmode {
-}
-verseE = \lyricmode { }
-verseF = \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano
@@ -133,14 +117,8 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
 
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }
