@@ -18,16 +18,6 @@ tags = "secular 4part acapella 4verse arrbykenan textbyother"
   tagline = \tagline
 }
 
-%% SETTINGS
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
-
 %% LYRICS
 verseA = \lyricmode {
   No num -- ber tal -- lies up my score,
