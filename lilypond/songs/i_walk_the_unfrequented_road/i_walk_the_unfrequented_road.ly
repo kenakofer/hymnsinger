@@ -2,35 +2,19 @@
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
 
-
-%% See docs/all_tags.txt for the full list available
-tags = "secular 4part acapella 5verse musicbyother textbyother autumn"
-\header {
-  title = \titleText "I walk the unfrequented road"
-  %subtitle = \smallText "Optional"
-  composer = \smallText "Music: John Wyeth, 1813"
-  %arranger = \smallText "Arranged by (optional), year"
-  poet = \smallText "Text: Frederick Lucian Hosmer, 1913"
-  meter = \smallText "CONSOLATION CM"
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-
-%% SETTINGS
+%% TUNE INFO
+composer = \smallText "Music: John Wyeth, 1813"
+meter = \smallText "CONSOLATION CM"
 hymnKey = \key f \minor
 hymnTime = \time 4/4
-%% Adjust these to fix beaming
-%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-%hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-%hymnBeatExceptions = \set Timing.beamExceptions = #'()
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
+\include "../../lib/global_parts.ly"
+
+%% SONG INFO
+title = \titleText "I walk the unfrequented road"
+poet = \smallText "Text: Frederick Lucian Hosmer, 1913"
+copyright = \public_domain_notice "Kenan Schaefkofer"
+tags = "secular 4part acapella 5verse musicbyother textbyother autumn"
+\include "../../lib/header.ly"
 
 %% NOTES
 soprano = {
@@ -57,9 +41,7 @@ bass = {
   \relative d { c4 | af'4 g f bf, | c c f ef | df c f ef | af,2. | }
   \relative d { c8( bf) | af4 bf8( c) df4 bf | ef c f f8( g) af4 ef af, c | f,2. |}
 }
-songChords = \chords {
-  \set chordChanges = ##t
-}
+
 
 %% LYRICS
 verseA = \lyricmode {
@@ -117,9 +99,6 @@ extra_verses = \markup {
   }
 }
 
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } \extra_verses }

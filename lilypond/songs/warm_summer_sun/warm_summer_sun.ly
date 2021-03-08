@@ -2,35 +2,19 @@
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
 
-
-%% See docs/all_tags.txt for the full list available
-tags = "secular 4part acapella 1verse musicbykenan textbyother summer death"
-\header {
-  title = \titleText "Warm summer sun"
-  %subtitle = \smallText "Optional"
-  composer = \smallText "Music: Kenan Schaefkofer, 2021"
-  %arranger = \smallText "Arranged by (optional), year"
-  poet = \smallText "Text: Robert Richardson, alt. Mark Twain, 1896"
-  meter = \smallText "LIE LIGHT 88.88"
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-
-%% SETTINGS
+%% TUNE INFO
+composer = \smallText "Music: Kenan Schaefkofer, 2021"
+meter = \smallText "LIE LIGHT 88.88"
 hymnKey = \key e \major
 hymnTime = \time 4/4
-%% Adjust these to fix beaming
-%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-%hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-%hymnBeatExceptions = \set Timing.beamExceptions = #'()
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
+\include "../../lib/global_parts.ly"
+
+%% SONG INFO
+title = \titleText "Warm summer sun"
+poet = \smallText "Text: Robert Richardson, alt. Mark Twain, 1896"
+copyright = \public_domain_notice "Kenan Schaefkofer"
+tags = "secular 4part acapella 1verse musicbykenan textbyother summer death"
+\include "../../lib/header.ly"
 
 %% NOTES
 soprano = {
@@ -64,9 +48,7 @@ bass = {
   \relative d { r1 | gs2 a4 gs | e2. e4 | b2. 4 | }
   \relative d { e4 e e2~ | 4 r4 e2 | cs1 | b1 | e1 | }
 }
-songChords = \chords {
-  \set chordChanges = ##t
-}
+
 
 %% LYRICS
 verseA = \lyricmode {
@@ -94,9 +76,6 @@ bottom_verses = <<
   \new Lyrics  \lyricsto bass  { \globalLyrics "" "" \bottomA }
 >>
 
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
   fillClairScore =
   #(define-music-function
     (parser location topA topB bottomA bottomB)

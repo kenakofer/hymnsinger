@@ -1,19 +1,16 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
+
+%% TUNE INFO
 \include "../../shared_tunes/dix.ly"
 
+%% SONG INFO
+title = \titleText "For the beauty of our earth"
+poet = \twoLineSmallText "Text: Folliott S. Pierpoint, 1864" "Adapted by Kenan Schaefkofer, 2021"
+copyright = \public_domain_notice "Kenan Schaefkofer"
 tags = "secular 4part acapella 5verse musicbyother textadaptedbykenan"
-\header {
-  title = \titleText "For the beauty of our earth"
-  %subtitle = \smallText "Optional"
-  composer = \smallText "Music: Conrad Kocher, 1838"
-  %arranger = \smallText "Arranged by William H. Monk, 1861"
-  poet = \twoLineSmallText "Text: Folliott S. Pierpoint, 1864" "Adapted by Kenan Schaefkofer, 2021"
-  meter = \smallText "DIX 77.77.77"
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
+\include "../../lib/header.ly"
 
 %% LYRICS
 verseA = \lyricmode {
@@ -51,9 +48,6 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "" \verseF }
 >>
 
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }

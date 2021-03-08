@@ -2,34 +2,20 @@
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
 
-
-%% See docs/all_tags.txt for the full list available
-tags = "theist 4part acapella 5verse musicbyother textbyother"
-\header {
-  title = \titleText "Be thou my vision"
-  %subtitle = \smallText "Optional"
-  composer = \smallText "Music: Irish melody, 1909"
-  arranger = \smallText "Arranged by Martin Shaw, 1931"
-  poet = \smallText "Text: Ancient Irish, tr. Mary Elizabeth Byrne, 1905"
-  meter = \smallText "SLANE 10.10.9.10"
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-
-%% SETTINGS
+%% TUNE INFO
+composer = \smallText "Music: Irish melody, 1909"
+arranger = \smallText "Arranged by Martin Shaw, 1931"
+meter = \smallText "SLANE 10.10.9.10"
 hymnKey = \key ef \major
 hymnTime = \time 3/4
-%% Adjust these to fix beaming
-%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-%hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-%hymnBeatExceptions = \set Timing.beamExceptions = #'()
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-}
+\include "../../lib/global_parts.ly"
+
+%% SONG INFO
+title = \titleText "Be thou my vision"
+poet = \smallText "Text: Ancient Irish, tr. Mary Elizabeth Byrne, 1905"
+copyright = \public_domain_notice "Kenan Schaefkofer"
+tags = "theist 4part acapella 5verse musicbyother textbyother"
+\include "../../lib/header.ly"
 
 %% NOTES
 soprano = {
@@ -60,9 +46,6 @@ bass = {
   \relative d { bf4 4 f' | bf, ef d | c d ef | bf2. |}
   \relative d { af'4 4 4 | ef2 4 | g,4 c bf | af2( bf4) | }
   \relative d { ef4 c bf | g g c | af af c | ef2. }
-}
-songChords = \chords {
-  \set chordChanges = ##t
 }
 
 %% LYRICS
@@ -107,9 +90,6 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
 >>
 
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }

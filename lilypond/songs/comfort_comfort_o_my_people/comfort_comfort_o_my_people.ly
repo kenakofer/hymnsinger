@@ -2,36 +2,19 @@
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
 
-
-%% See docs/all_tags.txt for the full list available
-tags = "christian 4part acapella 3verse musicbyother textbyother"
-\header {
-  title = \titleText "Comfort, comfort, O my people"
-  %subtitle = \smallText "Optional"
-  composer = \twoLineSmallText "Music: Louis Bourgeois, 1551" "Harmonized Claude Goudimel, 1565"
-  %arranger = \smallText "Arranged by (optional), year"
-  poet = \twoLineSmallText "Text: Johannes Olearius, 1671" "Translated Catherine Winkworth, 1863"
-  meter = \smallText "GENEVA 42 (FREU DICH SEHR) 87.87.77.88"
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-
-%% SETTINGS
+%% TUNE INFO
+composer = \twoLineSmallText "Music: Louis Bourgeois, 1551" "Harmonized Claude Goudimel, 1565"
+meter = \smallText "GENEVA 42 (FREU DICH SEHR) 87.87.77.88"
 hymnKey = \key f \major
 hymnTime = \time 12/4
-%% Adjust these to fix beaming
-%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-%hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-%hymnBeatExceptions = \set Timing.beamExceptions = #'()
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-  \numericTimeSignature
-  \override Staff.TimeSignature.transparent = ##t
-}
+\include "../../lib/global_parts.ly"
+
+%% SONG INFO
+title = \titleText "Comfort, comfort, O my people"
+poet = \twoLineSmallText "Text: Johannes Olearius, 1671" "Translated Catherine Winkworth, 1863"
+copyright = \public_domain_notice "Kenan Schaefkofer"
+tags = "christian 4part acapella 3verse musicbyother textbyother"
+\include "../../lib/header.ly"
 
 %% NOTES
 soprano = {
@@ -64,9 +47,7 @@ bass = {
   \relative d { f2 4 2 bf,4 f'4 c f1 | f2 4 bf,2 f'4 bf, f' c1 | }
   \relative d { f2 c4 g'2 d4 d c f2 bf, | f'2 4 bf,2 f4 c' d c2 f,1 | }
 }
-songChords = \chords {
-  \set chordChanges = ##t
-}
+
 
 %% LYRICS
 verseA = \lyricmode {
@@ -117,9 +98,6 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
 
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }

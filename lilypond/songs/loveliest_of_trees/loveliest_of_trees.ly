@@ -2,35 +2,19 @@
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
 
-
-%% See docs/all_tags.txt for the full list available
-tags = "secular 4part acapella 3verse musicbyother textbyother spring"
-\header {
-  title = \titleText "Lovelist of trees"
-  %subtitle = \smallText "Optional"
-  composer = \smallText "Music: Pierre de Corbeil, harmonized Richard Redhead, 1853"
-  %arranger = \smallText "Arranged by (optional), year"
-  poet = \smallText "Text: A. E. Housman, 1896"
-  meter = \smallText "ORIENTIS PARTIBUS 87.87"
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-
-%% SETTINGS
+%% TUNE INFO
+composer = \smallText "Music: Pierre de Corbeil, harmonized Richard Redhead, 1853"
+meter = \smallText "ORIENTIS PARTIBUS 87.87"
 hymnKey = \key ef \major
 hymnTime = \time 3/4
-%% Adjust these to fix beaming
-%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-%hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-%hymnBeatExceptions = \set Timing.beamExceptions = #'()
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
+\include "../../lib/global_parts.ly"
+
+%% SONG INFO
+tags = "secular 4part acapella 3verse musicbyother textbyother spring"
+title = \titleText "Lovelist of trees"
+poet = \smallText "Text: A. E. Housman, 1896"
+copyright = \public_domain_notice "Kenan Schaefkofer"
+\include "../../lib/header.ly"
 
 %% NOTES
 soprano = {
@@ -62,9 +46,6 @@ bass = {
   \relative d { ef4 | ef2 d4 | c2 bf4 | af2 4 | g2. | }
   \relative d { g,2 af4 | bf2 c4 | af2 bf4 | ef2. | }
 }
-songChords = \chords {
-  \set chordChanges = ##t
-}
 
 %% LYRICS
 verseA = \lyricmode {
@@ -85,9 +66,6 @@ verseC = \lyricmode {
   a -- bout the wood -- lands I will go,
   see the cher -- ry hung with snow.
 }
-verseD = \lyricmode { }
-verseE = \lyricmode { }
-verseF = \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano
@@ -95,14 +73,7 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
-
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }

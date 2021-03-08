@@ -1,23 +1,17 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
+
+%% TUNE INFO
 \include "../../shared_tunes/wunderbarer_konig.ly"
 
-
-%% See docs/all_tags.txt for the full list available
+%% SONG INFO
+title = \titleText "Gott ist gegenwärtig"
+subtitle = \smallText "See also in English: God is here among us"
+poet = \smallText "Text: Gerhard Tersteegen, 1729"
+copyright = \public_domain_notice "Kenan Schaefkofer"
 tags = "christian 4part acapella 3verse musicbyother textbyother"
-\header {
-  title = \titleText "Gott ist gegenwärtig"
-  subtitle = \smallText "See also in English: God is here among us"
-  composer = \composer
-  %arranger = \smallText "Arranged by (optional), year"
-  poet = \smallText "Text: Gerhard Tersteegen, 1729"
-  meter = \meter
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-
-%% See included shared_tune for the notes/chords
+\include "../../lib/header.ly"
 
 %% LYRICS
 verseA = \lyricmode {
@@ -35,9 +29,6 @@ verseC = \lyricmode {
   Komm, du nahes Wesen; dich in mir ver -- kläre, dass ich dich stets lieb und ehre.
   Wo ich geh, sitz und steh, lass mich dich er -- blick -- en und vor dir mich bü -- cken.
 }
-verseD = \lyricmode { }
-verseE = \lyricmode { }
-verseF = \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano
@@ -45,14 +36,7 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
-
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }

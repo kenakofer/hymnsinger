@@ -1,20 +1,16 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
+
+%% TUNE INFO
 \include "../../shared_tunes/resignation_arrbykenan.ly"
 
-
-%% See docs/all_tags.txt for the full list available
+%% SONG INFO
+title = \titleText "No number tallies up my score"
+poet = \smallText "Text: Ralph Waldo Emerson (1803-1882), rev."
+copyright = \public_domain_notice "Kenan Schaefkofer"
 tags = "secular 4part acapella 4verse arrbykenan textbyother"
-\header {
-  title = \titleText "No number tallies up my score"
-  composer = \composer
-  arranger = \arranger
-  poet = \smallText "Text: Ralph Waldo Emerson (1803-1882), rev."
-  meter = \meter
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
+\include "../../lib/header.ly"
 
 %% LYRICS
 verseA = \lyricmode {
@@ -56,8 +52,6 @@ verseD = \lyricmode {
   and fresh the rose on yon -- der thorn
   gives back the heav'ns in dew.
  }
-verseE = \lyricmode { }
-verseF = \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano
@@ -66,13 +60,7 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
-
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }

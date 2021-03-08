@@ -2,35 +2,19 @@
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
 
-
-%% See docs/all_tags.txt for the full list available
-tags = "secular 4part acapella 4verse musicbyother textbyother"
-\header {
-  title = \titleText "May nothing evil cross this door"
-  %subtitle = \smallText "Optional"
-  composer = \smallText "Music: Robert N. Quaile, b. 1867"
-  %arranger = \smallText "Arranged by (optional), year"
-  poet = \smallText "Text: Louis Untermeyer, 1923"
-  meter = \smallText "OLDBRIDGE 88.84"
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-
-%% SETTINGS
+%% TUNE INFO
+composer = \smallText "Music: Robert N. Quaile, b. 1867"
+meter = \smallText "OLDBRIDGE 88.84"
 hymnKey = \key f \major
 hymnTime = \time 3/4
-%% Adjust these to fix beaming
-%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-%hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-%hymnBeatExceptions = \set Timing.beamExceptions = #'()
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
+\include "../../lib/global_parts.ly"
+
+%% SONG INFO
+title = \titleText "May nothing evil cross this door"
+poet = \smallText "Text: Louis Untermeyer, 1923"
+copyright = \public_domain_notice "Kenan Schaefkofer"
+tags = "secular 4part acapella 4verse musicbyother textbyother"
+\include "../../lib/header.ly"
 
 %% NOTES
 soprano = {
@@ -60,9 +44,6 @@ bass = {
   \relative d { f4 f f | f2 4 | c2 a4 | d2. | }
   \relative d { a'4 4 4 | g2 c,4 | f2 a,4 | c2 | }
   \relative d { c4 | bf( a) g | f2 4 | a2 d4 | bf2 f'4 | d2. | c2. | f,2. | }
-}
-songChords = \chords {
-  \set chordChanges = ##t
 }
 
 %% LYRICS
@@ -99,10 +80,6 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
 >>
-
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }

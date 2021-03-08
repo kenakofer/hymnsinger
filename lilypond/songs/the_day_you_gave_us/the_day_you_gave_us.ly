@@ -2,35 +2,19 @@
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
 
-
-%% See docs/all_tags.txt for the full list available
-tags = "christian 4part acapella 4verse musicbyother textbyother evening"
-\header {
-  title = \titleText "The day you gave us, Lord"
-  %subtitle = \smallText "Optional"
-  composer = \smallText "Music: Clement C. Scholefield, 1874"
-  %arranger = \smallText "Arranged by (optional), year"
-  poet = \smallText "Text: John Ellerton, 1870"
-  meter = \smallText "ST. CLEMENT 98.98"
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-
-%% SETTINGS
+%% TUNE INFO
+composer = \smallText "Music: Clement C. Scholefield, 1874"
+meter = \smallText "ST. CLEMENT 98.98"
 hymnKey = \key g \major
 hymnTime = \time 3/4
-%% Adjust these to fix beaming
-%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-%hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-%hymnBeatExceptions = \set Timing.beamExceptions = #'()
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
+\include "../../lib/global_parts.ly"
+
+%% SONG INFO
+title = \titleText "The day you gave us, Lord"
+poet = \smallText "Text: John Ellerton, 1870"
+copyright = \public_domain_notice "Kenan Schaefkofer"
+tags = "christian 4part acapella 4verse musicbyother textbyother evening"
+\include "../../lib/header.ly"
 
 %% NOTES
 soprano = {
@@ -61,9 +45,7 @@ bass = {
   \relative d { fs4 | g2 g4 | d2 4 | e4( a,) c | d d }
   \relative d { c4 | b2 d4 | e( b) c | a2 d4 | g,2 }
 }
-songChords = \chords {
-  \set chordChanges = ##t
-}
+
 
 %% LYRICS
 verseA = \lyricmode {
@@ -104,9 +86,6 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
 
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }

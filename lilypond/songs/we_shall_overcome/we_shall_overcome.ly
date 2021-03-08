@@ -2,35 +2,20 @@
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
 
-
-%% See docs/all_tags.txt for the full list available
-tags = "secular 4part acapella 3verse arrbykenan textbyother"
-\header {
-  title = \titleText "We shall overcome"
-  %subtitle = \smallText "Optional"
-  composer = \smallText "Music: African-American Spiritual"
-  arranger = \smallText "Arranged by Kenan Schaefkofer, 2021"
-  poet = \smallText "Text: African-American Spiritual"
-  meter = \smallText "WE SHALL OVERCOME (irregular)"
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-
-%% SETTINGS
+%% TUNE INFO
+composer = \smallText "Music: African-American Spiritual"
+arranger = \smallText "Arranged by Kenan Schaefkofer, 2021"
+meter = \smallText "WE SHALL OVERCOME (irregular)"
 hymnKey = \key c \major
 hymnTime = \time 4/4
-%% Adjust these to fix beaming
-%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-%hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-%hymnBeatExceptions = \set Timing.beamExceptions = #'()
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
+\include "../../lib/global_parts.ly"
+
+%% SONG INFO
+title = \titleText "We shall overcome"
+poet = \smallText "Text: African-American Spiritual"
+copyright = \public_domain_notice "Kenan Schaefkofer"
+tags = "secular 4part acapella 3verse arrbykenan textbyother"
+\include "../../lib/header.ly"
 
 %% NOTES
 soprano = {
@@ -44,7 +29,7 @@ alto = {
   \globalParts
   \relative e' { e4 e f f | e4.( d8 c2) | e4 e f f | e4.( d8 c2) |}
   \relative e' { e4 e e gs | a4( g) fs2 | g4( d e2 | d2) f2 | }
-  \relative e' { e2 g4 f | e1 | f2 d4 d | c1 |}
+  \relative e' { e2 e4 f | e1 | f2 d4 d | c1 |}
   \relative e' { c4 c c d | c2 b | c1~ | 4 r r2 | }
 }
 tenor = {
@@ -58,7 +43,7 @@ bass = {
   \globalParts
   \relative d { c4 c f f | c1 | c4 c f, f | c'1 |}
   \relative d { c4 c c e | a,2 d | g1~ | g2 f4( g) }
-  \relative d { c2 e4 c | c1 | f,2 g4 g | a1 | g'4 g f f | g2 g, | c1~ | 4 r r2 }
+  \relative d { c2 4 4 | c1 | f,2 g4 g | a1 | g'4 g f f | g2 g, | c1~ | 4 r r2 }
   \relative d {}
 }
 songChords = \chords {
@@ -77,24 +62,11 @@ verseA = \lyricmode {
   I do be -- lieve
   we shall o -- ver -- come, some -- day!
 }
-verseB = \lyricmode {
-}
-verseC = \lyricmode {
-}
-verseD = \lyricmode {
-}
-verseE = \lyricmode { }
-verseF = \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano
   % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
   \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
 
 extra_verses = \markup {
@@ -134,9 +106,6 @@ extra_verses = \markup {
 }
 
 
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } \extra_verses }

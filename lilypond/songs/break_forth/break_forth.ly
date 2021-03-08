@@ -2,32 +2,20 @@
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
 
-tags = "christian 4part acapella 1verse musicbyother textbyother morning"
-\header {
-  title = \titleText "Break forth, O beauteous heavenly light"
-  %subtitle = \smallText "Optional"
-  composer = \smallText "Music: Johann Schop, 1641"
-  arranger = \smallText "Harmonized by J. S. Bach, 1734"
-  poet = \smallText "Text: Johann Rist, 1641, tr. John Troutbeck ca. 1885"
-  meter = \smallText "ERMUNTRE DICH 87.87.88.77"
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-
-%% SETTINGS
+%% TUNE INFO
+composer = \smallText "Music: Johann Schop, 1641"
+arranger = \smallText "Harmonized by J. S. Bach, 1734"
+meter = \smallText "ERMUNTRE DICH 87.87.88.77"
 hymnKey = \key f \major
 hymnTime = \time 4/4
-%% Adjust these to fix beaming
-%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-%hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-%hymnBeatExceptions = \set Timing.beamExceptions = #'()
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-}
+\include "../../lib/global_parts.ly"
+
+%% SONG INFO
+title = \titleText "Break forth, O beauteous heavenly light"
+poet = \smallText "Text: Johann Rist, 1641, tr. John Troutbeck ca. 1885"
+copyright = \public_domain_notice "Kenan Schaefkofer"
+tags = "christian 4part acapella 1verse musicbyother textbyother morning"
+\include "../../lib/header.ly"
 
 %% NOTES
 soprano = {
@@ -59,9 +47,6 @@ bass = {
   \relative d { c4 | c'8 bf a4 g cs, | d d g, d'8 e | f4 fs g gs | a a, d | }
   \relative d { c'8 bf | a g f e d e f d | b a b g c4 a | bf c d8 e f4 | bf,( c) f, | }
 }
-songChords = \chords {
-  \set chordChanges = ##t
-}
 
 %% LYRICS
 verseA = \lyricmode {
@@ -70,26 +55,13 @@ verseA = \lyricmode {
     This child, now weak in in -- _ fan -- cy, our con -- fi -- dence _ and joy shall be,
     the power of Sa -- tan break -- ing, our peace e -- ter -- nal _ mak -- ing.
 }
-verseB = \lyricmode { }
-verseC = \lyricmode { }
-verseD = \lyricmode { }
-verseE = \lyricmode { }
-verseF = \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano
   % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
+  \new Lyrics  \lyricsto soprano  { \globalLyrics "" "" \verseA }
 >>
 
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }

@@ -2,21 +2,21 @@
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
 
-
-%% See docs/all_tags.txt for the full list available
-tags = "christian 4part acapella 4verse musicbyother textbyother"
-\header {
-  title = \titleText "All hail the power of Jesus' name"
-  composer = \smallText "Music: Oliver Holden, 1792"
-  poet = \smallText "Text: Edward Perronet, 1780, revised by John Rippon, 1787"
-  meter = \smallText "CORONATION CM extended"
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-
-%% SETTINGS
+%% TUNE INFO
+composer = \smallText "Music: Oliver Holden, 1792"
+meter = \smallText "CORONATION CM extended"
 hymnKey = \key g \major
 hymnTime = \time 2/2
+\include "../../lib/global_parts.ly"
+
+%% SONG INFO
+title = \titleText "All hail the power of Jesus' name"
+poet = \smallText "Text: Edward Perronet, 1780, revised by John Rippon, 1787"
+copyright = \public_domain_notice "Kenan Schaefkofer"
+tags = "christian 4part acapella 4verse musicbyother textbyother"
+\include "../../lib/header.ly"
+
+%% SETTINGS
 globalParts = {
   \hymnKey
   \hymnTime
@@ -52,9 +52,7 @@ bass = {
   \relative d { d4 | g d b g' | b8[ a] g[ fs] g4 d | g2 fs | e a | d,2. }
   \relative d { g4 | g g b g | d d d e | b2 c | d2. d4 | g,2 }
 }
-songChords = \chords {
-  \set chordChanges = ##t
-}
+
 
 %% LYRICS
 verseA = \lyricmode {
@@ -91,9 +89,6 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
 
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }

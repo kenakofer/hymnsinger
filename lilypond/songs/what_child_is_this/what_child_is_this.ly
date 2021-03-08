@@ -2,33 +2,21 @@
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
 
-
-%% See docs/all_tags.txt for the full list available
-tags = "christian 4part acapella 3verse musicbyother textbyother winter"
-\header {
-  title = \titleText "What Child is this"
-  composer = \smallText "Music: traditional English melody"
-  poet = \smallText "Text: William C. Dix, ca. 1865"
-  meter = \smallText "GREENSLEEVES 87.87.68.67"
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-
-%% SETTINGS
+%% TUNE INFO
+composer = \smallText "Music: traditional English melody"
+meter = \smallText "GREENSLEEVES 87.87.68.67"
 hymnKey = \key e \minor
 hymnTime = \time 6/8
-%% Adjust these to fix beaming
-%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-%hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-%hymnBeatExceptions = \set Timing.beamExceptions = #'()
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  %\hymnBeatStructure
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
+hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/8)
+hymnBeatStructure = \set Timing.beatStructure = 3,3
+\include "../../lib/global_parts.ly"
+
+%% SONG INFO
+title = \titleText "What Child is this"
+poet = \smallText "Text: William C. Dix, ca. 1865"
+copyright = \public_domain_notice "Kenan Schaefkofer"
+tags = "christian 4part acapella 3verse musicbyother textbyother winter"
+\include "../../lib/header.ly"
 
 %% NOTES
 soprano = {
@@ -60,9 +48,7 @@ bass = {
   \relative d { b'4. g4 8 | d4 8 d4 8 | e4 8 c4 8 | b4 8 4. |}
   \relative d { b'4. g4 8 | d4 8 d4 8 | e4 a,8 b4 8 | e4. 4 |}
 }
-songChords = \chords {
-  \set chordChanges = ##t
-}
+
 
 %% LYRICS
 verseA = \lyricmode {
@@ -83,9 +69,6 @@ verseC = \lyricmode {
  Raise, raise the song on high; the vir -- gin sings her lul -- la -- by.
  Joy, joy for Christ is born, the babe, the son of Ma -- ry!
 }
-verseD = \lyricmode { }
-verseE = \lyricmode { }
-verseF = \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano
@@ -93,14 +76,8 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
 
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }

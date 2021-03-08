@@ -2,35 +2,19 @@
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
 
-
-%% See docs/all_tags.txt for the full list available
-tags = "secular 4part acapella 5verse musicbyother textbyother evening autumn"
-\header {
-  title = \titleText "Now the day is over"
-  %subtitle = \smallText "Optional"
-  composer = \smallText "Music: Friedrich Filitz, 1847"
-  %arranger = \smallText "Arranged by (optional), year"
-  poet = \twoLineSmallText "Text: v.1 Sabine Baring Gould, 1865" "v.2-5 Marye B. Bonney (1910-1992)"
-  meter = \smallText "WEM IN LEIDENSTAGEN 65.65"
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-
-%% SETTINGS
+%% TUNE INFO
+composer = \smallText "Music: Friedrich Filitz, 1847"
+meter = \smallText "WEM IN LEIDENSTAGEN 65.65"
 hymnKey = \key f \major
 hymnTime = \time 4/4
-%% Adjust these to fix beaming
-%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-%hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-%hymnBeatExceptions = \set Timing.beamExceptions = #'()
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
+\include "../../lib/global_parts.ly"
+
+%% SONG INFO
+title = \titleText "Now the day is over"
+poet = \twoLineSmallText "Text: v.1 Sabine Baring Gould, 1865" "v.2-5 Marye B. Bonney (1910-1992)"
+copyright = \public_domain_notice "Kenan Schaefkofer"
+tags = "secular 4part acapella 5verse musicbyother textbyother evening autumn"
+\include "../../lib/header.ly"
 
 %% NOTES
 soprano = {
@@ -54,9 +38,7 @@ bass = {
   \relative d { f4 f c c | d2 a | d4 d c c | f2. r4 | }
   \relative d { a'4 f g e | f2 c | f4 a, bf c | f1 | }
 }
-songChords = \chords {
-  \set chordChanges = ##t
-}
+
 
 %% LYRICS
 verseA = \lyricmode {
@@ -116,9 +98,6 @@ extra_verses = \markup {
 }
 
 
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } \extra_verses }

@@ -1,30 +1,16 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
+
+%% TUNE INFO
 \include "../../shared_tunes/resignation_arrbykenan.ly"
 
-
-%% See docs/all_tags.txt for the full list available
+%% SONG INFO
+title = \titleText "My Shepherd will supply my need;"
+poet = \smallText "Text: Isaac Watts, 1719, alt."
+copyright = \public_domain_notice "Kenan Schaefkofer"
 tags = "christian 4part acapella 3verse arrbykenan textbyother"
-\header {
-  title = \titleText "My Shepherd will supply my need;"
-  composer = \composer
-  arranger = \arranger
-  poet = \smallText "Text: Isaac Watts, 1719, alt."
-  meter = \meter
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-
-%% SETTINGS
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
+\include "../../lib/header.ly"
 
 %% LYRICS
 verseA = \lyricmode {
@@ -45,9 +31,6 @@ verseC = \lyricmode {
   There would I find a set -- tled rest, while oth -- ers go and come,
   no more a stran -- ger, nor a guest, but like a child at home.
 }
-verseD = \lyricmode { }
-verseE = \lyricmode { }
-verseF = \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano
@@ -55,14 +38,8 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
 
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }

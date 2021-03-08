@@ -2,34 +2,17 @@
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
 
-
-%% See docs/all_tags.txt for the full list available
-tags = "theist 4part acapella 4verse musicbyother textbyother evening death"
-\header {
-  title = \titleText "Abide with me"
-  %subtitle = \smallText "Optional"
-  composer = \smallText "Music: William H. Monk, 1861"
-  %arranger = \smallText "Arranged by (optional), year"
-  poet = \smallText "Text: Henry F. Lyte, 1847"
-  meter = \smallText "EVENTIDE 10 10.10 10"
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-
-%% SETTINGS
+composer = \smallText "Music: William H. Monk, 1861"
+meter = \smallText "EVENTIDE 10 10.10 10"
 hymnKey = \key ef \major
 hymnTime = \time 2/2
-%% Adjust these to fix beaming
-%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-%hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-%hymnBeatExceptions = \set Timing.beamExceptions = #'()
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-}
+\include "../../lib/global_parts.ly"
+
+title = \titleText "Abide with me"
+poet = \smallText "Text: Henry F. Lyte, 1847"
+tags = "theist 4part acapella 4verse musicbyother textbyother evening death"
+copyright = \public_domain_notice "Kenan Schaefkofer"
+\include "../../lib/header.ly"
 
 %% NOTES
 soprano = {
@@ -61,9 +44,7 @@ bass = {
   \relative d { ef2 bf4 bf | c2 g | af4. bf8 c4 c | f1 | }
   \relative d { af'2 g4 f | ef bf c af | bf2 bf | ef1 }
 }
-songChords = \chords {
-  \set chordChanges = ##t
-}
+
 
 %% LYRICS
 verseA = \lyricmode {
@@ -104,9 +85,6 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
 
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }

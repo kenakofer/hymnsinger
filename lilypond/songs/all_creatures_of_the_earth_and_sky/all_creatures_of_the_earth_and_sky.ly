@@ -1,20 +1,17 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
+
+%% TUNE INFO
 \include "../../shared_tunes/lasst_uns_erfreuen.ly"
 
-
-%% See docs/all_tags.txt for the full list available
+%% SONG INFO
+title = \titleText "All creatures of the earth and sky"
+subtitle = \smallText "See also: All creatures worship God most high"
+poet = \smallText "Text: Saint Francis of Assisi, 1225; alt."
+copyright = \public_domain_notice "Kenan Schaefkofer"
 tags = "theist 4part acapella 5verse musicbyother textbyother"
-\header {
-  title = \titleText "All creatures of the earth and sky"
-  subtitle = \smallText "See also: All creatures worship God most high"
-  composer = \composer
-  poet = \smallText "Text: Saint Francis of Assisi, 1225; alt."
-  meter = \meter
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
+\include "../../lib/header.ly"
 
 %% LYRICS
 verseA = \lyricmode {
@@ -106,9 +103,6 @@ extra_verses = \markup {
   }
 }
 
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book {

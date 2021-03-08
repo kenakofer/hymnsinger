@@ -2,35 +2,19 @@
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
 
-
-%% See docs/all_tags.txt for the full list available
-tags = "secular 4part acapella 3verse musicbyother textbyother morning"
-\header {
-  title = \titleText "The morning hangs a signal"
-  %subtitle = \smallText "Optional"
-  composer = \smallText "Music: William Lloyd, 1840"
-  %arranger = \smallText "Arranged by (optional), year"
-  poet = \smallText "Text: William Channing Gannett (1768-1852), rev."
-  meter = \smallText "MEIRIONYDD 76.76 D"
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-
-%% SETTINGS
+%% TUNE INFO
+composer = \smallText "Music: William Lloyd, 1840"
+meter = \smallText "MEIRIONYDD 76.76 D"
 hymnKey = \key d \major
 hymnTime = \time 4/4
-%% Adjust these to fix beaming
-%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-%hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-%hymnBeatExceptions = \set Timing.beamExceptions = #'()
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
+\include "../../lib/global_parts.ly"
+
+%% SONG INFO
+title = \titleText "The morning hangs a signal"
+poet = \smallText "Text: William Channing Gannett (1768-1852), rev."
+copyright = \public_domain_notice "Kenan Schaefkofer"
+tags = "secular 4part acapella 3verse musicbyother textbyother morning"
+\include "../../lib/header.ly"
 
 %% NOTES
 soprano = {
@@ -62,9 +46,6 @@ bass = {
   \relative d { d4 | g fs e a, | b2 cs4 d | fs4 g fs d | a2. }
   \relative d { a4 | b b8 a d4 8 cs | d4( b) a d | b fs g a | d2. }
 }
-songChords = \chords {
-  \set chordChanges = ##t
-}
 
 %% LYRICS
 verseA = \lyricmode {
@@ -93,10 +74,6 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
 >>
-
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }

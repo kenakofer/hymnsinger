@@ -2,35 +2,19 @@
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
 
-
-%% See docs/all_tags.txt for the full list available
-tags = "christian 4part acapella 4verse musicbyother textbyother winter"
-\header {
-  title = \titleText "O come, all ye faithful"
-  %subtitle = \smallText "Optional"
-  composer = \smallText "Music: John F. Wade, 1782"
-  %arranger = \smallText "Arranged by (optional), year"
-  poet = \smallText "Text: John F. Wade, 1743, tr. Frederick Oakeley, 1841, William Mercer 1854, and others"
-  meter = \smallText "ADESTE FIDELES Irregular"
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-
-%% SETTINGS
+%% TUNE INFO
+composer = \smallText "Music: John F. Wade, 1782"
+meter = \smallText "ADESTE FIDELES Irregular"
 hymnKey = \key a \major
 hymnTime = \time 4/4
-%% Adjust these to fix beaming
-%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-%hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-%hymnBeatExceptions = \set Timing.beamExceptions = #'()
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
+\include "../../lib/global_parts.ly"
+
+%% SONG INFO
+title = \titleText "O come, all ye faithful"
+poet = \smallText "Text: John F. Wade, 1743, tr. Frederick Oakeley, 1841, William Mercer 1854, and others"
+copyright = \public_domain_notice "Kenan Schaefkofer"
+tags = "christian 4part acapella 4verse musicbyother textbyother winter"
+\include "../../lib/header.ly"
 
 %% NOTES
 soprano = \relative g' {
@@ -156,9 +140,7 @@ bass = \relative d {
     e2( e4.) a,8 |
     a2. \skip 4
 }
-songChords = \chords {
-  \set chordChanges = ##t
-}
+
 
 %% LYRICS
 verseA = \lyricmode {
@@ -186,8 +168,6 @@ verseD = \lyricmode {
   _ Je -- sus, to thee be all glo -- _ ry giv'n;
   Word of the Fa -- ther, now in flesh ap -- pear -- ing.
 }
-verseE = \lyricmode { }
-verseF = \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano
@@ -196,13 +176,7 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
-
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }

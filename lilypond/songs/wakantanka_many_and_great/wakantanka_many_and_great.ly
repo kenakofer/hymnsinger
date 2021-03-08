@@ -1,23 +1,16 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
+
+%% TUNE INFO
 \include "../../shared_tunes/lacquiparle_melody.ly"
 
-
-%% See docs/all_tags.txt for the full list available
+%% SONG INFO
+title = \titleText "Wakantanka (Many and Great)"
+poet = \smallText "Text: Dakota; Joseph R. Renville, 1846; paraphr. Philip Frazier, 1929, alt."
+copyright = \public_domain_notice "Kenan Schaefkofer"
 tags = "theist 1part acapella 2verse musicbyother textbyother"
-\header {
-  title = \titleText "Wakantanka (Many and Great)"
-  %subtitle = \smallText "Optional"
-  composer = \composer
-  %arranger = \smallText "Arranged by (optional), year"
-  poet = \smallText "Text: Dakota; Joseph R. Renville, 1846; paraphr. Philip Frazier, 1929, alt."
-  meter = \meter
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-%prescore_text = \prescoreText "Uncomment to add text up and left of the score"
-%postscore_text = \postscoreText "Uncomment to add text down and left of the score"
+\include "../../lib/header.ly"
 
 %% LYRICS
 verseA = \lyricmode {
@@ -52,9 +45,6 @@ all_verses = <<
   \new Lyrics \with \dropLyricsSmall \lyricsto soprano  { \globalLyrics "2" "" \verseD }
 >>
 
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \prescore_text \bookOutputSuffix "trad" \score { \fillTradScoreSingleStaff \soprano \alto \tenor \bass \songChords } }

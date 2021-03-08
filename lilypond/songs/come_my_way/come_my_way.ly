@@ -2,35 +2,19 @@
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
 
-
-%% See docs/all_tags.txt for the full list available
-tags = "secular 5part acapella 3verse musicbyother textbyother"
-\header {
-  title = \titleText "Come, my Way, my Truth, my Light"
-  %subtitle = \smallText "Optional"
-  composer = \smallText "Music: Ralph Vaughan Williams, 1911"
-  %arranger = \smallText "Arranged by (optional), year"
-  poet = \smallText "Text: George Herbert, 1633"
-  meter = \smallText "THE CALL 77.77"
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-
-%% SETTINGS
+%% TUNE INFO
+composer = \smallText "Music: Ralph Vaughan Williams, 1911"
+meter = \smallText "THE CALL 77.77"
 hymnKey = \key ef \major
 hymnTime = \time 6/4
-%% Adjust these to fix beaming
-%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-%hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-%hymnBeatExceptions = \set Timing.beamExceptions = #'()
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
+\include "../../lib/global_parts.ly"
+
+%% SONG INFO
+title = \titleText "Come, my Way, my Truth, my Light"
+poet = \smallText "Text: George Herbert, 1633"
+copyright = \public_domain_notice "Kenan Schaefkofer"
+tags = "secular 5part acapella 3verse musicbyother textbyother"
+\include "../../lib/header.ly"
 
 %% NOTES
 soprano = {
@@ -63,9 +47,7 @@ bass = {
   \relative d { df2 4 | ef2 4 f2.~( | 2. bf,2) 4 | ef1. }
   \relative d {}
 }
-songChords = \chords {
-  \set chordChanges = ##t
-}
+
 
 %% LYRICS
 verseA = \lyricmode {
@@ -101,9 +83,6 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
 
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }

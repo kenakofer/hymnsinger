@@ -2,31 +2,19 @@
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
 
-tags = "christian 4part acapella 4verse musicbyother textbyother"
-\header {
-  title = \titleText "Brethren, we have met to worship"
-  composer = \smallText "Music: The Columbian Harmony, 1825"
-  poet = \smallText "Text: The Columbian Harmony, 1825"
-  meter = \smallText "HOLY MANNA 87.87 D"
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-
-%% SETTINGS
+%% TUNE INFO
+composer = \smallText "Music: The Columbian Harmony, 1825"
+meter = \smallText "HOLY MANNA 87.87 D"
 hymnKey = \key a \major
 hymnTime = \time 2/2
-%% Adjust these to fix beaming
-%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-%hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-%hymnBeatExceptions = \set Timing.beamExceptions = #'()
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
+\include "../../lib/global_parts.ly"
+
+%% SONG INFO
+title = \titleText "Brethren, we have met to worship"
+poet = \smallText "Text: The Columbian Harmony, 1825"
+copyright = \public_domain_notice "Kenan Schaefkofer"
+tags = "christian 4part acapella 4verse musicbyother textbyother"
+\include "../../lib/header.ly"
 
 %% NOTES
 soprano = {
@@ -84,8 +72,6 @@ verseD = \lyricmode {
   Christ will call us home to _ heav -- en. At his ta -- ble we'll sit _ down.
   Christ will _ gird him -- self and _ serve _ us _ with sweet _ man -- na all a -- round.
 }
-verseE = \lyricmode { }
-verseF = \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano
@@ -94,13 +80,8 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
 
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }

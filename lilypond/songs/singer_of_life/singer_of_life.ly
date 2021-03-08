@@ -1,21 +1,16 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
+
+%% TUNE INFO
 \include "../../shared_tunes/lacquiparle_melody.ly"
 
-
-%% See docs/all_tags.txt for the full list available
+%% SONG INFO
+title = \titleText "Singer of Life"
+poet = \smallText "Text: From a Texcoco Nahuatl poem"
+copyright = \public_domain_notice "Kenan Schaefkofer"
 tags = "theist 1part acapella 2verse musicbyother textbyother"
-\header {
-  title = \titleText "Singer of Life"
-  %subtitle = \smallText "Optional"
-  composer = \composer
-  %arranger = \smallText "Arranged by (optional), year"
-  poet = \smallText "Text: From a Texcoco Nahuatl poem"
-  meter = \meter
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
+\include "../../lib/header.ly"
 
 %% LYRICS
 verseA = \lyricmode {
@@ -35,10 +30,6 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
 >>
-
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \prescore_text \bookOutputSuffix "trad" \score { \fillTradScoreSingleStaff \soprano \alto \tenor \bass \songChords } }

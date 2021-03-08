@@ -2,32 +2,19 @@
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
 
-
-%% See docs/all_tags.txt for the full list available
-tags = "christian 4part acapella 4verse musicbyother textbyother winter"
-\header {
-  title = \titleText "Angels we have heard on high"
-  composer = \smallText "Music: Traditional French carol, 1855"
-  poet = \smallText "Text: tr. anonymous, altered by Earl Marlatt, 1937"
-  meter = \smallText "GLORIA 77.77 with refrain"
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-
-%% SETTINGS
+%% TUNE INFO
+composer = \smallText "Music: Traditional French carol, 1855"
+meter = \smallText "GLORIA 77.77 with refrain"
 hymnKey = \key f \major
 hymnTime = \time 2/2
-%% Adjust these to fix beaming
-%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-%hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-%hymnBeatExceptions = \set Timing.beamExceptions = #'()
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-}
+\include "../../lib/global_parts.ly"
+
+%% SONG INFO
+title = \titleText "Angels we have heard on high"
+poet = \smallText "Text: tr. anonymous, altered by Earl Marlatt, 1937"
+copyright = \public_domain_notice "Kenan Schaefkofer"
+tags = "christian 4part acapella 4verse musicbyother textbyother winter"
+\include "../../lib/header.ly"
 
 %% NOTES
 soprano = {
@@ -67,9 +54,6 @@ bass = {
   \relative d { f2( d4 f | g2 c,4 e | f2 bf,4 d | e) d c( bf) |}
   \relative d { a4 c f bf, | c1 | f1 | }
 }
-songChords = \chords {
-  \set chordChanges = ##t
-}
 
 %% LYRICS
 verseA = \lyricmode {
@@ -104,9 +88,6 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
 
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }

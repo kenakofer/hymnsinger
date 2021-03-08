@@ -2,35 +2,19 @@
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
 
-
-%% See docs/all_tags.txt for the full list available
-tags = "theist 4part acapella 3verse musicbyother textbyother"
-\header {
-  title = \titleText "Be still my soul"
-  %subtitle = \smallText "Optional"
-  composer = \smallText "Music: Jean Sibelius, 1899"
-  %arranger = \smallText "Arranged by (optional), year"
-  poet = \smallText "Text: Kathrina von Schlegel, tr. Jane Borthwick (1855)"
-  meter = \smallText "FINLANDIA 10.10.10"
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-
-%% SETTINGS
+%% TUNE INFO
+composer = \smallText "Music: Jean Sibelius, 1899"
+meter = \smallText "FINLANDIA 10.10.10"
 hymnKey = \key f \major
 hymnTime = \time 4/4
-%% Adjust these to fix beaming
-%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-%hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-%hymnBeatExceptions = \set Timing.beamExceptions = #'()
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
+\include "../../lib/global_parts.ly"
+
+%% SONG INFO
+title = \titleText "Be still my soul"
+poet = \smallText "Text: Kathrina von Schlegel, tr. Jane Borthwick (1855)"
+copyright = \public_domain_notice "Kenan Schaefkofer"
+tags = "theist 4part acapella 3verse musicbyother textbyother"
+\include "../../lib/header.ly"
 
 %% NOTES
 soprano = {
@@ -63,9 +47,6 @@ bass = {
   \relative d { f4 f f e | d2. d4 | d a a4. c8 | c4( g2.)~ | g4 g a bf | a2. c'4 | bf bf bf4. a8 | a1~ | }
   \relative d { a'4 f f e | d2. d4 | d a' a4. c8 | c4( g2.)~ | g4 g, a bf | c2. c4 | c c c4. f8 | f1~ | f4  }
 }
-songChords = \chords {
-  \set chordChanges = ##t
-}
 
 %% LYRICS
 verseA = \lyricmode {
@@ -92,10 +73,6 @@ verseC = \lyricmode {
   Be still, my soul; when change and tears are past,
   all safe and bless -- ed we shall meet at last.
 }
-verseD = \lyricmode {
-}
-verseE = \lyricmode { }
-verseF = \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano
@@ -103,14 +80,8 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
 
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }

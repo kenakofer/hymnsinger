@@ -2,33 +2,20 @@
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
 
-tags = "secular 4part acapella 1verse arrbykenan textbyother"
-\header {
-  title = \titleText "'Tis a gift to be simple"
-  %subtitle = \smallText "Optional"
-  composer = \smallText "Music: Joseph Bracket, 1848"
-  arranger = \smallText "Arranged by Kenan Schaefkofer, 2021"
-  poet = \smallText "Text: Joseph Bracket, 1848"
-  meter = \smallText "SIMPLE GIFTS IRREGULAR"
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-
-%% SETTINGS
+%% TUNE INFO
+composer = \smallText "Music: Joseph Bracket, 1848"
+arranger = \smallText "Arranged by Kenan Schaefkofer, 2021"
+meter = \smallText "SIMPLE GIFTS IRREGULAR"
 hymnKey = \key f \major
 hymnTime = \time 4/4
-%% Adjust these to fix beaming
-%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-%hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-%hymnBeatExceptions = \set Timing.beamExceptions = #'()
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
+\include "../../lib/global_parts.ly"
+
+%% SONG INFO
+title = \titleText "'Tis a gift to be simple"
+poet = \smallText "Text: Joseph Bracket, 1848"
+copyright = \public_domain_notice "Kenan Schaefkofer"
+tags = "secular 4part acapella 1verse arrbykenan textbyother"
+\include "../../lib/header.ly"
 
 %% NOTES
 soprano = {
@@ -60,9 +47,6 @@ bass = {
   \relative d { f2 4. e8 | d8 d c c d4. c8 | f4 8 c f4 d8 d | c4 8 8 c4 | }
   \relative d { r8 c | bf8( c d e) f4. f8 | f4 c8 c d4 c8 8 | bf4 d4 4 c8 c | bf4 4 f4}
 }
-songChords = \chords {
-  \set chordChanges = ##t
-}
 
 %% LYRICS
 verseA = \lyricmode {
@@ -76,26 +60,12 @@ verseA = \lyricmode {
   to turn, turn, will be our de -- light,
   till by turn -- ing, turn -- ing we come round right.
 }
-verseB = \lyricmode { }
-verseC = \lyricmode { }
-verseD = \lyricmode { }
-verseE = \lyricmode { }
-verseF = \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano
   % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
   \new Lyrics  \lyricsto soprano  { \globalLyrics "" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
-
-%% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
-%% a lower staff.
 
 %% Traditional notation
 \book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }
