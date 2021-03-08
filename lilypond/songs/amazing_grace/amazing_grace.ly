@@ -4,7 +4,7 @@
 \include "../../lib/clairnote.ly"
 \include "../../lib/hymn_common.ly"
 \include "../../shared_tunes/amazing_grace.ly"
-%\include "color_by_pitch.ly"
+
 
 %% See docs/all_tags.txt for the full list available
 tags = "christian 4part acapella 6verse musicbyother textbyother"
@@ -57,7 +57,7 @@ all_verses = <<
 >>
 
 %% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into 
+%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
 %% a lower staff.
 
 %% Traditional notation

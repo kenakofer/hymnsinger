@@ -3,7 +3,7 @@
 \language "english"
 \include "../../lib/clairnote.ly"
 \include "../../lib/hymn_common.ly"
-%\include "color_by_pitch.ly"
+
 tags = "theist 4part acapella 4verse musicbyother textbyother"
 \header {
   title = \titleText "Breath on me, breath of God"
@@ -87,7 +87,7 @@ all_verses = <<
 >>
 
 %% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into 
+%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
 %% a lower staff.
 
 %% Traditional notation

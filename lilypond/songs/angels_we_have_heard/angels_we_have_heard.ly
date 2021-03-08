@@ -3,7 +3,7 @@
 \language "english"
 \include "../../lib/clairnote.ly"
 \include "../../lib/hymn_common.ly"
-%\include "color_by_pitch.ly"
+
 
 %% See docs/all_tags.txt for the full list available
 tags = "christian 4part acapella 4verse musicbyother textbyother winter"
@@ -107,7 +107,7 @@ all_verses = <<
 >>
 
 %% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
-%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into 
+%% The default fillscore combines the first two arguments into an upper staff and the last two arguments into
 %% a lower staff.
 
 %% Traditional notation
@@ -117,10 +117,10 @@ all_verses = <<
 \book { \bookOutputSuffix "shapenote" \score { \fillTradScore {\aikenHeads \soprano} {\aikenHeads \alto} {\aikenHeads \tenor} {\aikenHeads \bass} \songChords } }
 
 %% Clairnotes Notation
-\book { \bookOutputSuffix "clairnote" \score { 
+\book { \bookOutputSuffix "clairnote" \score {
   \layout {
     #(layout-set-staff-size 18)
-  } \fillClairScore \soprano \alto \tenor \bass 
+  } \fillClairScore \soprano \alto \tenor \bass
 } }
 
 %% MIDI output

@@ -4,7 +4,7 @@
 \include "../../lib/clairnote.ly"
 \include "../../lib/hymn_common.ly"
 \include "../../shared_tunes/ebenezer_12_8.ly"
-%\include "color_by_pitch.ly"
+
 
 %% See docs/all_tags.txt for the full list available
 tags = "secular 4part acapella 3verse musicbyother textbyother"

@@ -3,7 +3,7 @@
 \language "english"
 \include "../../lib/clairnote.ly"
 \include "../../lib/hymn_common.ly"
-%\include "color_by_pitch.ly"
+
 tags = "secular 4part acapella 1verse arrbykenan textbyother"
 \header {
   title = \titleText "'Tis a gift to be simple"
