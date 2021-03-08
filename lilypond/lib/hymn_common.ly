@@ -3,22 +3,7 @@
 pa = \partcombineApart
 pt = \partcombineAutomatic
 
-hymnKey = \key c \major
-hymnTime = \time 4/4
-hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-hymnBeamExceptions = \set Timing.beamExceptions = #'()
-
 songChords = { }
-
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
 
 globalLyrics =
 #(define-music-function
@@ -311,3 +296,22 @@ fillTradScoreSingleStaff =
     \override Stem #'neutral-direction = #'()
   }
 }
+
+%% Defaults for tune variables
+composer = \smallText "Music: Who wrote the music, year"
+meter = \smallText "TUNE NAME meter"
+hymnKey = \key c \major
+hymnTime = \time 4/4
+
+%% Defaults for song variables
+title = \titleText "You have not set a title"
+subtitle = ""
+arranger = ""
+poet = \smallText "Text: Who wrote the text, year"
+tags = "christian 4part acapella 2verse musicbyother textbyother"
+
+%% These defaults usually don't need to be changed
+copyright = \public_domain_notice "Kenan Schaefkofer"
+hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
+hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
+hymnBeamExceptions = \set Timing.beamExceptions = #'()
