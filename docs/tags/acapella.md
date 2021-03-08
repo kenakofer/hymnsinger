@@ -434,7 +434,42 @@ thine own dear presence to cheer and to guide,
 strength for today and bright hope for tomorrow;
 blessings all mine, with ten thousand beside!
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/help_us_to_help_each_other_lord.html">Help us to help each other, Lord</a></td><td class='lyric-box'>Help us to help each other, Lord,
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/heilig_heilig_heilig_sanctus.html">Heilig, Heilig, Heilig (Holy, Holy, Holy)</a></td><td class='lyric-box'>
+  Heilig, heilig, heilig, heilig ist der Herr!
+  Heilig, heilig, heilig, heilig ist nur er!
+
+\showVerseNumberAtLineStart "1" #4.5
+Er, der nie begonnen, or, der immer war,
+\hideVerseNumberAtLineStart
+ewig ist und waltet, sein wird immerdar.
+
+
+
+\showVerseNumberAtLineStart "2" #4.5
+Allmacht, Wunder, Liebe, alles ringsumher!
+\hideVerseNumberAtLineStart
+Heilig, heilig, heilig, heilig ist der Herr!
+
+\override Lyrics.LyricText.font-shape = #'italic
+
+  Holy, holy, holy, holy is the Lord!
+  Holy, holy, holy, holy God alone!
+
+\showVerseNumberAtLineStart "1" #4.5
+God, without beginning, God, who always was,
+\hideVerseNumberAtLineStart
+ever be exalted, reign forevermore.
+
+
+\override Lyrics.LyricText.font-shape = #'italic
+
+
+\showVerseNumberAtLineStart "2" #4.5
+Mighty, wondrous, loving, omnipresent God,
+\hideVerseNumberAtLineStart
+holy, holy, holy, holy is the Lord!
+
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/2verse.html">2verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/help_us_to_help_each_other_lord.html">Help us to help each other, Lord</a></td><td class='lyric-box'>Help us to help each other, Lord,
 each other's cross to bear,
 let each his friendly aid afford,
 and feel another's care.

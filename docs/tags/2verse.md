@@ -13,6 +13,41 @@ born to reign in us forever, now thy gracious kingdom bring.
 By thine own eternal Spirit, rule in all our hearts alone.
 By thine allsufficient merit, raise us to thy glorious throne.
 
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/2verse.html">2verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/heilig_heilig_heilig_sanctus.html">Heilig, Heilig, Heilig (Holy, Holy, Holy)</a></td><td class='lyric-box'>
+  Heilig, heilig, heilig, heilig ist der Herr!
+  Heilig, heilig, heilig, heilig ist nur er!
+
+\showVerseNumberAtLineStart "1" #4.5
+Er, der nie begonnen, or, der immer war,
+\hideVerseNumberAtLineStart
+ewig ist und waltet, sein wird immerdar.
+
+
+
+\showVerseNumberAtLineStart "2" #4.5
+Allmacht, Wunder, Liebe, alles ringsumher!
+\hideVerseNumberAtLineStart
+Heilig, heilig, heilig, heilig ist der Herr!
+
+\override Lyrics.LyricText.font-shape = #'italic
+
+  Holy, holy, holy, holy is the Lord!
+  Holy, holy, holy, holy God alone!
+
+\showVerseNumberAtLineStart "1" #4.5
+God, without beginning, God, who always was,
+\hideVerseNumberAtLineStart
+ever be exalted, reign forevermore.
+
+
+\override Lyrics.LyricText.font-shape = #'italic
+
+
+\showVerseNumberAtLineStart "2" #4.5
+Mighty, wondrous, loving, omnipresent God,
+\hideVerseNumberAtLineStart
+holy, holy, holy, holy is the Lord!
+
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/2verse.html">2verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/jesu_joy_of_our_desiring.html">Jesu, joy of our desiring</a></td><td class='lyric-box'>Jesu, joy of our desiring, holy wisdom, love most bright,
 drawn by thee, our souls aspiring soar to uncreated light.
 Word of God, our flesh that fashioned, with the fire of life impassioned,

@@ -59,7 +59,6 @@ Here are a list of common Lilypond tasks that are easy to forget, and an example
 | ----------- | ----------- |
 | Italic lyrics | Wakantanka |
 | Single staff | Wakantanka |
-| Two languages in the staff lyrics | Wakantanka |
 | Dotted slur (lyrics ignore) | Wakantanka |
 | Shared tune between several songs | All praise to thee, my God, using the shared tune Tallis Canon |
 | Canon / Round | Tallis Canon |
@@ -70,6 +69,8 @@ Here are a list of common Lilypond tasks that are easy to forget, and an example
 | Fermatas (up and down facing) | All creatures worship God most high |
 | Alternate title | All creatures worship God most high |
 | Score zoomed to fit on one page (both traditional notation and clairscore) | All creatures worship God most high |
-| Different lyrics for each staff | Warm Summer Sun |
+| Two lyrics languages in the staff | Heilig, Heilig, Heilig |
+| Custom lyric labels on certain lines | Heilig, Heilig, Heilig |
+| Different lyrics for each of 2 staffs | Warm Summer Sun |
 | Different lyrics for the same staff (e.g. soprano v. alto) | TODO |
 | Double staff switch to single staff in same song | TODO |

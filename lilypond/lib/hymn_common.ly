@@ -39,6 +39,22 @@ globalLyrics =
 }
   #})
 
+showVerseNumberAtLineStart =
+#(define-music-function
+  (parser location label xoffset)
+  (string? number?)
+  #{
+    {
+      \override InstrumentName #'X-offset = #xoffset
+      \set shortVocalName = #label
+    }
+  #})
+
+hideVerseNumberAtLineStart = {
+  \override InstrumentName #'X-offset = #2.5
+  \set shortVocalName = ""
+}
+
 public_domain_notice =
   #(define-scheme-function
     (parser location text)
@@ -165,6 +181,24 @@ postscore_text = \markup { " " }
         }
       }
     #})
+
+dropLyricsSmall = {
+  \override LyricText.extra-offset = #'(0 . -0.5)
+  \override LyricHyphen.extra-offset = #'(0 . -0.5)
+  \override LyricExtender.extra-offset = #'(0 . -0.5)
+  \override StanzaNumber.extra-offset = #'(0 . -0.5)
+  \override InstrumentName.extra-offset = #'(0 . -0.5)
+  \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+}
+
+dropLyricsReset = {
+  \revert LyricText.extra-offset
+  \revert LyricHyphen.extra-offset
+  \revert LyricExtender.extra-offset
+  \revert StanzaNumber.extra-offset
+  \revert InstrumentName.extra-offset
+  \revert VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding
+}
 
 fillClairScore =
   #(define-music-function

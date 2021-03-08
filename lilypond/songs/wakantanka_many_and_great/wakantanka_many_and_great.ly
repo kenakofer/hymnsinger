@@ -50,8 +50,8 @@ all_verses = <<
   % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
   \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseD }
+  \new Lyrics \with \dropLyricsSmall \lyricsto soprano  { \globalLyrics "1" "" \verseC }
+  \new Lyrics \with \dropLyricsSmall \lyricsto soprano  { \globalLyrics "2" "" \verseD }
 >>
 
 %% If fillScore needs to be modified (usually for non-SATB standard songs), copy it here from hymn_common
