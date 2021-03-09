@@ -1,7 +1,8 @@
 ---
-title: Hymns tagged 4verse
+title: Songs tagged 4verse
 layout: default
 ---
+# Tag: 4verse
 <table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>
 <tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/abide_with_me.html">Abide with me</a></td><td class='lyric-box'>Abide with me; Fast falls the eventide,
 The darkness deepens; Lord, with me abide!
@@ -49,7 +50,7 @@ Come to Bethlehem and see him whose birth the angels sing.
 Come, adore on bended knee Christ, the Lord, the newborn King.
 
 See him in a manger laid whom the angels praise above.
-Mary, Joseph, lend your aid, while we rais our hearts in love.
+Mary, Joseph, lend your aid, while we raise our hearts in love.
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/winter.html">winter</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/breath_on_me_breath_of_god.html">Breath on me, breath of God</a></td><td class='lyric-box'>Breathe on me, breath of God. Fill me with life anew
 that I may love what thou dost love, and do what thou wouldst do.
 

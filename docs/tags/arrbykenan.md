@@ -1,7 +1,8 @@
 ---
-title: Hymns tagged arrbykenan
+title: Songs tagged arrbykenan
 layout: default
 ---
+# Tag: arrbykenan
 <table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>
 <tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_o_thou_traveller.html">Come, O thou Traveler unknown</a></td><td class='lyric-box'>Come, O thou Traveler unknown, whom still, I hold, but cannot see!
 My company before is gone, and I am left alone with thee.

@@ -1,7 +1,8 @@
 ---
-title: Hymns tagged 3verse
+title: Songs tagged 3verse
 layout: default
 ---
+# Tag: 3verse
 <table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>
 <tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/all_praise_to_thee_my_god.html">All praise to thee, my God</a></td><td class='lyric-box'>All praise to thee, my God, this night, for all the blessings of the light.
 Keep me, O keep me, King of kings, beneath thine own almighty wings.

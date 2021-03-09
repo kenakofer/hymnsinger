@@ -1,7 +1,8 @@
 ---
-title: Hymns tagged autumn
+title: Songs tagged autumn
 layout: default
 ---
+# Tag: autumn
 <table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>
 <tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_ye_thankful_people.html">Come, ye thankful people</a></td><td class='lyric-box'>Come, ye thankful people, come, raise a song of harvest home:
 fruit and crops are gathered in, safe before the storms begin;

@@ -1,7 +1,8 @@
 ---
-title: Hymns tagged spring
+title: Songs tagged spring
 layout: default
 ---
+# Tag: spring
 <table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>
 <tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/loveliest_of_trees.html">Lovelist of trees</a></td><td class='lyric-box'>Loveliest of trees, the cherry now,
 hung with bloom along the bough,

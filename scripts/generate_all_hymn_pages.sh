@@ -6,9 +6,10 @@ while read line; do
     for tag in $line; do
         TAGFILE="$SCRIPT_DIR/../docs/tags/$tag.md"
         echo "---" > $TAGFILE
-        echo "title: Hymns tagged $tag" >> $TAGFILE
+        echo "title: Songs tagged $tag" >> $TAGFILE
         echo "layout: default" >> $TAGFILE
         echo "---" >> $TAGFILE
+        echo "# Tag: $tag" >> $TAGFILE
         echo "<table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>" >> $TAGFILE
     done
 done < "$SCRIPT_DIR/../docs/all_tags.txt"
@@ -20,6 +21,7 @@ echo "---" > $LISTFILE
 echo "title: Hymn Host Index" >> $LISTFILE
 echo "layout: default" >> $LISTFILE
 echo "---" >> $LISTFILE
+echo "# Complete Index" >> $LISTFILE
 echo "<table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>" >> $LISTFILE
 
 

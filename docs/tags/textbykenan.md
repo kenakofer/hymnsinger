@@ -1,7 +1,8 @@
 ---
-title: Hymns tagged textbykenan
+title: Songs tagged textbykenan
 layout: default
 ---
+# Tag: textbykenan
 <table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>
 <tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/religion_fit_to_last.html">Religion fit to last</a></td><td class='lyric-box'>A voice within becomes distressed to see you taste the fruit,
 forbidden by your God and creed, respected since your youth:

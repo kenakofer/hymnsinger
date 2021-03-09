@@ -1,7 +1,8 @@
 ---
-title: Hymns tagged 7verse
+title: Songs tagged 7verse
 layout: default
 ---
+# Tag: 7verse
 <table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>
 <tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/all_creatures_worship_god_most_high.html">All creatures worship God most high</a></td><td class='lyric-box'>All creatures, worship God most high, lift up your voice in earth and sky,
 

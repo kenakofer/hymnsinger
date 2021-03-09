@@ -1,7 +1,8 @@
 ---
-title: Hymns tagged 2verse
+title: Songs tagged 2verse
 layout: default
 ---
+# Tag: 2verse
 <table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>
 <tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_thou_long_expected_jesus.html">Come, thou long-expected Jesus</a></td><td class='lyric-box'>Come, thou longexpected Jesus! born to set thy people free,
 from our fears and sins release us, let us find our rest in thee.
