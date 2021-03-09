@@ -30,11 +30,11 @@ This is a project to make or take hymns with permissive copyright status, typese
   - Programatic key change? Would require either
     - Generating all the desired key changes up front (+/- 3 half steps?)
     - Using a custom lilybin setup on server or AWS lambda, or some other serverside way to re-parse lilypond files. This would be far more difficult, but also allow the user tons of flexibility down the line.
-  - Add date added and updated fields to footer
   - Change names: tune variables, copyright, tags to form: "text:site arranged:other winter"
   - Add vscode configuration section/page
   - Fix footer on short pages like death
   - Add title to Tag pages.
   - Add count to index and tag pages
+  - Fix lyric extraction on Heilig Heilieg Heilig, All creatures worship God most high
 
 
