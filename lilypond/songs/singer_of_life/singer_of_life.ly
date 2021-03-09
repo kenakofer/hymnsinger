@@ -10,6 +10,7 @@ title = \titleText "Singer of Life"
 poet = \smallText "Text: From a Texcoco Nahuatl poem"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 tags = "theist 1part acapella 2verse musicbyother textbyother"
+dateAdded = "2021-03-08"
 \include "../../lib/header.ly"
 
 %% LYRICS

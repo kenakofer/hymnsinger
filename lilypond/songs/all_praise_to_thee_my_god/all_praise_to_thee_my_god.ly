@@ -11,6 +11,7 @@ poet = \smallText "Text: Thomas Ken, 1695"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 tags = "christian 4part acapella 3verse musicbyother textbyother evening"
 prescore_text = \prescoreText "Unison when sung in canon"
+dateAdded = "2021-03-05"
 \include "../../lib/header.ly"
 
 %% LYRICS

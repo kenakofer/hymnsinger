@@ -14,6 +14,7 @@ tags = "secular 4part acapella 3verse musicbyother textbyother spring"
 title = \titleText "Lovelist of trees"
 poet = \smallText "Text: A. E. Housman, 1896"
 copyright = \public_domain_notice "Kenan Schaefkofer"
+dateAdded = "2021-02-07"
 \include "../../lib/header.ly"
 
 %% NOTES

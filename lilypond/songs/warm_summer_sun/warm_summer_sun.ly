@@ -14,6 +14,7 @@ title = \titleText "Warm summer sun"
 poet = \smallText "Text: Robert Richardson, alt. Mark Twain, 1896"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 tags = "secular 4part acapella 1verse musicbykenan textbyother summer death"
+dateAdded = "2021-01-30"
 \include "../../lib/header.ly"
 
 %% NOTES

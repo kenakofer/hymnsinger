@@ -50,6 +50,7 @@ public_domain_notice =
       \markup{
         %\override #'(font-name . "Linux Biolinum")
         \override #'(font-series . "regular")
+        \lower #1
         \fontsize #-4 {
         "The typesetter"
         \bold #text
@@ -150,18 +151,27 @@ postscore_text = \markup { " " }
       }
     #})
 
+date = #(strftime "%Y-%m-%d" (localtime (current-time)))
+
   tagline =
   #(define-scheme-function
     (parser location) ()
     #{
-      \smallText \markup {
+      \markup {
+        \override #'(font-series . "regular")
+        \fontsize #-4
         \with-url
-        #"http://lilypond.org"
+        #"https://https://hymn.singer.ga/"
         \line {
-          "Engraved using LilyPond"
+          "Engraver: LilyPond"
           $(lilypond-version)
           \char ##x2014
-          "http://lilypond.org"
+          "Added to"
+          \bold "https://hymn.singer.ga"
+          "on"
+          \dateAdded
+          ", updated"
+          \date
           \char ##x2014
           "Tags:"
           \tags

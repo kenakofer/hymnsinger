@@ -2,38 +2,28 @@
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
 
+%% TUNE INFO
+%% If you have a shared tune file, use this form:
+\include "../../shared_tunes/lasst_uns_erfreuen.ly"
 
-%% See docs/all_tags.txt for the full list available
-tags = "christian 4part acapella 3verse musicbyother textbyother"
-\header {
-  title = \titleText "Title goes here"
-  %subtitle = \smallText "Optional"
-  composer = \smallText "Music: Where music from, year"
-  %arranger = \smallText "Arranged by (optional), year"
-  poet = \smallText "Text: Where text from, year"
-  meter = \smallText "TUNE NAME AND METER E.G 87.87 D"
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
-%prescore_text = \prescoreText "Uncomment to add text up and left of the score"
-%postscore_text = \postscoreText "Uncomment to add text down and left of the score"
-
-%% SETTINGS
+%% Otherwise set up tune info here:
+composer = \smallText "Music: Composer, year"
+%arranger = \smallText "Arranged by (optional), year"
+meter = \smallText "TUNE NAME METER"
 hymnKey = \key c \major
 hymnTime = \time 4/4
-%% Adjust these to fix beaming
-%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-%hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-%hymnBeatExceptions = \set Timing.beamExceptions = #'()
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-  \numericTimeSignature
-  \phrasingSlurDashed
-}
+\include "../../lib/global_parts.ly"
+
+%% SONG INFO
+title = \titleText "Title of the song"
+%subtitle = \smallText "Optional"
+poet = \smallText "Text: Author, year"
+copyright = \public_domain_notice "Kenan Schaefkofer"
+%prescore_text = \prescoreText "Uncomment to add text up and left of the score"
+%postscore_text = \postscoreText "Uncomment to add text down and left of the score"
+tags = "theist 4part acapella 4verse musicbyother textbyother"
+dateAdded = %YYYY-MM-DD%
+\include "../../lib/header.ly"
 
 %% NOTES
 soprano = {
@@ -41,7 +31,7 @@ soprano = {
   \relative g' { c4 d e f} \break
   \relative g' {} \break
   \relative g' {} \break
-  \relative g' {}\break
+  \relative g' {} \break
   \bar "|."
 }
 alto = {
@@ -67,6 +57,7 @@ bass = {
 }
 songChords = \chords {
   \set chordChanges = ##t
+  c2:7 g4:sus g:m
 }
 
 %% LYRICS
@@ -77,10 +68,10 @@ verseB = \lyricmode {
   for each
 }
 verseC = \lyricmode {
- verse
+  verse
 }
 verseD = \lyricmode {
- go here.
+  go here.
 }
 verseE = \lyricmode { }
 verseF = \lyricmode { }
@@ -96,15 +87,14 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
 
-
 %% Traditional notation
-\book { \prescore_text \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }
+\book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } \postscore_text }
 
 %% Traditional with shaped noteheads (broken on non-combined chords)
-\book { \prescore_text \bookOutputSuffix "shapenote" \score { \fillTradScore {\aikenHeads \soprano} {\aikenHeads \alto} {\aikenHeads \tenor} {\aikenHeads \bass} \songChords } }
+\book { \bookOutputSuffix "shapenote" \score { \fillTradScore {\aikenHeads \soprano} {\aikenHeads \alto} {\aikenHeads \tenor} {\aikenHeads \bass} \songChords } \postscore_text }
 
 %% Clairnotes Notation
-\book { \prescore_text \bookOutputSuffix "clairnote" \score { \fillClairScore \soprano \alto \tenor \bass } }
+\book { \bookOutputSuffix "clairnote" \score { \fillClairScore \soprano \alto \tenor \bass } \postscore_text }
 
 %% MIDI output
 \score {

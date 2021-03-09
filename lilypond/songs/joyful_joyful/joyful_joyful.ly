@@ -14,6 +14,7 @@ title = \titleText "Joyful, joyful, we adore thee"
 poet = \smallText "Text: Henry van Dyke, 1907"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 tags = "christian 4part acapella 4verse musicbyother textbyother"
+dateAdded = "2021-01-13"
 \include "../../lib/header.ly"
 
 %% NOTES

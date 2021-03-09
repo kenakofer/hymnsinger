@@ -14,6 +14,7 @@ title = \titleText "Come, ye thankful people"
 poet = \smallText "Text: Henry Alford, 1844"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 tags = "theist 4part acapella 3verse musicbyother textbyother autumn"
+dateAdded = "2021-02-12"
 \include "../../lib/header.ly"
 
 %% NOTES

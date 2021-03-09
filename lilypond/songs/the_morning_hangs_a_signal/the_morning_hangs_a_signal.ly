@@ -14,6 +14,7 @@ title = \titleText "The morning hangs a signal"
 poet = \smallText "Text: William Channing Gannett (1768-1852), rev."
 copyright = \public_domain_notice "Kenan Schaefkofer"
 tags = "secular 4part acapella 3verse musicbyother textbyother morning"
+dateAdded = "2021-02-11"
 \include "../../lib/header.ly"
 
 %% NOTES

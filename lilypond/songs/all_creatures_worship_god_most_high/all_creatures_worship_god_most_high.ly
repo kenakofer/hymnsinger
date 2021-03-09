@@ -12,6 +12,7 @@ poet = \twoLineSmallText "Text: Saint Francis of Assisi, 1225;" "Translated Will
 copyright = \public_domain_notice "Kenan Schaefkofer"
 tags = "christian 4part acapella 7verse musicbyother textbyother"
 postscore_text = \postscoreText "*Or, ''All creatures of our God and King, / lift up your voice and with us sing''"
+dateAdded = "2021-03-05"
 \include "../../lib/header.ly"
 
 %% LYRICS

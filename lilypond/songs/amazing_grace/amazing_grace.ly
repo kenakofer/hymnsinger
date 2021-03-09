@@ -1,19 +1,17 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn_common.ly"
+
+%% TUNE INFO
 \include "../../shared_tunes/amazing_grace.ly"
 
-
-%% See docs/all_tags.txt for the full list available
+%% SONG INFO
+title = \titleText "Amazing grace"
+poet = \smallText "Text: John Newton, 1779 (Sts. 1-5), 1790 (St. 6)"
+copyright = \public_domain_notice "Kenan Schaefkofer"
 tags = "christian 4part acapella 6verse musicbyother textbyother"
-\header {
-  title = \titleText "Amazing grace"
-  %subtitle = \smallText "Optional"
-  %arranger = \smallText "Arranged by Edwin O. Excell, 1900"
-  poet = \smallText "Text: John Newton, 1779 (Sts. 1-5), 1790 (St. 6)"
-  copyright = \public_domain_notice "Kenan Schaefkofer"
-  tagline = \tagline
-}
+dateAdded = "2021-01-11"
+\include "../../lib/header.ly"
 
 %% LYRICS
 verseA = \lyricmode {

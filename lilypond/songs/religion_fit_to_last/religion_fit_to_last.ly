@@ -13,8 +13,9 @@ hymnTime = \time 4/4
 title = \titleText "Religion fit to last"
 arranger = \smallText "Arranged by Kenan Schaefkofer, 2021"
 poet = \smallText "Text: Kenan Schaefkofer, 2021"
-tags = "secular 1part accompanied 5verse arrbykenan textbykenan"
 copyright = \public_domain_notice "Kenan Schaefkofer"
+tags = "secular 1part accompanied 5verse arrbykenan textbykenan"
+dateAdded = "2021-01-12"
 \include "../../lib/header.ly"
 
 %% NOTES
@@ -67,10 +68,13 @@ extra_verses = \markup {
   \fill-line {
     \hspace #-25.0 % moves the column off the left margin;
      % can be removed if space on the page is tight
-     \vspace #1
+     \vspace #0
 
      \column {
-      \line { \bold "2."
+      \line {
+        \raise #3
+        \bold "2."
+        \raise #3
         \column { % LYRICS-START
 "\"You'd loose the bond of family!\" your instinct diatribes."
 "Decide: Be shunned to wilderness, or rest in harmless lies."
@@ -92,7 +96,10 @@ extra_verses = \markup {
     }
     \hspace #0.1 % adds horizontal spacing between columns;
     \column {
-      \line { \bold "4."
+      \line {
+        \raise #3
+        \bold "4."
+        \raise #3
         \column { % LYRICS-START
 "Step one: believe, O wretch, your life is worthless, justly lost,"
 "and second: faith's your only hope, at seemingly no cost!"

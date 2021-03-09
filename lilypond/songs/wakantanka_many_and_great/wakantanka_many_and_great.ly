@@ -10,6 +10,7 @@ title = \titleText "Wakantanka (Many and Great)"
 poet = \smallText "Text: Dakota; Joseph R. Renville, 1846; paraphr. Philip Frazier, 1929, alt."
 copyright = \public_domain_notice "Kenan Schaefkofer"
 tags = "theist 1part acapella 2verse musicbyother textbyother"
+dateAdded = "2021-03-07"
 \include "../../lib/header.ly"
 
 %% LYRICS
