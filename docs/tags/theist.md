@@ -138,7 +138,16 @@ till all this earthly part of me glows with thy fire divine.
 
 Breath on me, breath of God, so shall I never die,
 but live with thee the perfect life of thine eternity.
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_o_thou_traveller.html">Come, O thou Traveler unknown</a></td><td class='lyric-box'>Come, O thou Traveler unknown, whom still, I hold, but cannot see!
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/calm_soul_of_all_things.html">Calm soul of all things</a></td><td class='lyric-box'>Calm soul of all things, make it mine
+to feel amid the city's jar,
+that there abides a peace of thine
+I did not make, and cannot mar.
+
+The will to neither strive nor cry,
+the pow'r to feel with other's, give.
+Calm, calm me more, nor let me die
+before I have begun to live.
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/2verse.html">2verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_o_thou_traveller.html">Come, O thou Traveler unknown</a></td><td class='lyric-box'>Come, O thou Traveler unknown, whom still, I hold, but cannot see!
 My company before is gone, and I am left alone with thee.
 With thee all night I mean to stay, and wrestle till the break of day.
 
