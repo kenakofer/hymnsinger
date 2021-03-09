@@ -26,8 +26,8 @@ verseB = \lyricmode {
   Herr, ver -- nimm uns -- re Stimm, da auch wir Ge -- rin -- gen uns -- re Op -- fer brin -- gen.
 }
 verseC = \lyricmode {
-  Herr, komm in mir woh -- nen; lass mein Herz auf ER -- den dir ein Hei -- lig -- tum noch wer -- den.
-  Komm, du nahes Wesen; dich in mir ver -- kläre, dass ich dich stets lieb und ehre.
+  Herr, komm in mir woh -- nen; lass mein Herz auf Er -- den dir ein Hei -- lig -- tum noch wer -- den.
+  Komm, du na -- hes Wes -- en; dich in mir ver -- klä -- re, dass ich dich stets lieb und eh -- re.
   Wo ich geh, sitz und steh, lass mich dich er -- blick -- en und vor dir mich bü -- cken.
 }
 
