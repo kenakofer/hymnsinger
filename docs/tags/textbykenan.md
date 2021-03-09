@@ -31,6 +31,5 @@ Mere reason of one mind can't win; the test of time is passed.
 Religions of today are the religions fit to last.
 Members true through power, fear, or friendly company
 instill again in children's minds, "Eat not from yonder tree."
-"Eat not from yonder tree!"
-
+Eat not from yonder tree!
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/accompanied.html">accompanied</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbykenan.html">textbykenan</a></td></tr>

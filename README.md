@@ -35,6 +35,10 @@ This is a project to make or take hymns with permissive copyright status, typese
   - Fix footer on short pages like death
   - Add title to Tag pages.
   - Add count to index and tag pages
-  - Fix lyric extraction on Heilig Heilieg Heilig, All creatures worship God most high
+  - Add stats page:
+    - Total number of songs
+    - Total number of tunes used
+  - Consider reaching out to people
+
 
 

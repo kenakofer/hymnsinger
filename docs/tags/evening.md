@@ -22,7 +22,6 @@ I fear no foe, with Thee at hand to bless;
 Ills have no weight, and tears no bitterness.
 Where is death’s sting? Where, grave, thy victory?
 I triumph still, if Thou abide with me.
-
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/evening.html">evening</a><a class="taglink" href="{{ site.baseurl }}/tags/death.html">death</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/all_praise_to_thee_my_god.html">All praise to thee, my God</a></td><td class='lyric-box'>All praise to thee, my God, this night, for all the blessings of the light.
 Keep me, O keep me, King of kings, beneath thine own almighty wings.
 
@@ -31,7 +30,6 @@ sleep that will me more vig'rous make to serve my God when I awake.
 
 Praise God from whom all blessings flow, praise God all creatures here below,
 praise God above ye heav'nly host, praise Father, Son, and Holy Ghost.
-
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/evening.html">evening</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/now_all_the_woods_are_sleeping.html">Now all the woods are sleeping</a></td><td class='lyric-box'>Now all the woods are sleeping,
 the night and stillness creeping
 o'er city, field, and beast;
@@ -59,7 +57,6 @@ protected be your heads;
 and happy slumbers send you,
 and ev'ry care attend you,
 as trusted souls watch o'er your beds.
-
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textadaptedbykenan.html">textadaptedbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/evening.html">evening</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/now_the_day_is_over.html">Now the day is over</a></td><td class='lyric-box'>Now the day is over,
 night is drawing nigh,
 shadows of the evening
@@ -84,7 +81,6 @@ Sleep until the rising
 of another spring
 keeps the the ancient promise
 fall and winter bring.
-
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/evening.html">evening</a><a class="taglink" href="{{ site.baseurl }}/tags/autumn.html">autumn</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_little_town.html">O little town of Bethlehem</a></td><td class='lyric-box'>O little town of Bethlehem, how still we see thee lie!
 Above thy deep and dreamless sleep the silent stars go by.
 Yet in thy dark streets shineth the everlasting light;
@@ -104,7 +100,6 @@ O holy Child of Bethlehem, descend to us we pray,
 cast out our sin, and enter in, be born in us today!
 We hear the Christmas angels the great glad tidings tell.
 O come to us, abide with us, our Lord Immanuel!
-
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/winter.html">winter</a><a class="taglink" href="{{ site.baseurl }}/tags/evening.html">evening</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_day_you_gave_us.html">The day you gave us, Lord</a></td><td class='lyric-box'>The day you gave us, Lord, is ended;
 the darkness falls at your request.
 To you our morning hymns ascended;
@@ -124,5 +119,4 @@ So be it, Lord, your throne shall never,
 like earth's proud kingdoms pass away.
 Your kinddom stands and grows forever,
 until there dawns your glorious day.
-
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/evening.html">evening</a></td></tr>

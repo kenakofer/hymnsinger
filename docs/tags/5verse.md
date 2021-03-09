@@ -11,28 +11,21 @@ Bright burning sun with golden beam, soft shining moon with silver gleam,
 
   O sing ye, O sing ye, alleluia, alleluia, alleluia!
 
-
 Swift rushing wind so wild and strong, white clouds that sail in heav'n along,
 
-  %% alleluia, alleluia!
-  
+  alleluia, alleluia!
 
 Fair rising morn in praise rejoice, high stars of evening find a voice,
 
-  %% O sing ye, O sing ye, alleluia, alleluia, alleluia!
-  
-
+  O sing ye, O sing ye, alleluia, alleluia, alleluia!
 
 Cool flowing water pure and clear, make music for all life to hear,
 
-  %% alleluia, alleluia!
-  
+  alleluia, alleluia!
 
 Dance, flame of fire, so strong and bright, and bless us with your warmth and light,
 
-  %% O sing ye, O sing ye, alleluia, alleluia, alleluia!
-  
-
+  O sing ye, O sing ye, alleluia, alleluia, alleluia!
 
 Embracing earth, you, day by day,
 bring forth your blessings on our way,
@@ -44,7 +37,6 @@ let them the glory also show,
 
   O sing ye, O sing ye, alleluia, alleluia, alleluia!
 
-
 All you of understanding heart,
 forgiving others, take your part
 
@@ -54,8 +46,6 @@ Let all things now the good possess,
 and search out truth in humbleness
 
   O sing ye, O sing ye, alleluia, alleluia, alleluia!
-
-
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/be_thou_my_vision.html">Be thou my vision</a></td><td class='lyric-box'>Be thou my vision, O Lord of my heart;
 naught be all else to me save that thou art.
 Thou my best thought, by day or by night,
@@ -80,7 +70,6 @@ High King of heaven, when vict'ry is won
 may I reach heaven's joys, O bright heav'n's Sun!
 Heart of my heart, whatever befall,
 still be my vision, O Ruler of all.
-
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/for_the_beauty_of_our_earth.html">For the beauty of our earth</a></td><td class='lyric-box'>For the beauty of our earth, for the glory of her skies,
 for the love which from our birth over and around us lies:
 
@@ -97,7 +86,6 @@ friends we've lost and friends still here, for all selfless thoughts and mild:
 
 For thy Truth both harsh and kind, shadowed setter of our stage,
 patterns sought by human mind, guiding us from age to age,
-
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textadaptedbykenan.html">textadaptedbykenan</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/i_walk_the_unfrequented_road.html">I walk the unfrequented road</a></td><td class='lyric-box'>I walk the unfrequented road
 with open eye and ear;
 I watch afield the farmer load
@@ -122,7 +110,6 @@ I face the hills, the streams, the wood,
 and feel with all akin;
 my heart expands; their fortitude
 and peace and joy flow in.
-
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/autumn.html">autumn</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/now_the_day_is_over.html">Now the day is over</a></td><td class='lyric-box'>Now the day is over,
 night is drawing nigh,
 shadows of the evening
@@ -147,7 +134,6 @@ Sleep until the rising
 of another spring
 keeps the the ancient promise
 fall and winter bring.
-
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/evening.html">evening</a><a class="taglink" href="{{ site.baseurl }}/tags/autumn.html">autumn</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_love_how_deep_how_broad.html">O love, how deep, how broad</a></td><td class='lyric-box'>O love, how deep, how broad, how high! It fills the heart with ecstasy,
 that God, the Son of God, should take our mortal form for mortals' sake.
 
@@ -162,7 +148,6 @@ he bore the shameful cross and death, for us at length gave up his breath.
 
 Eternal glory to our God for love so deep, so high, so broad;
 the Trinity whom we adore forever and forevermore.
-
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/religion_fit_to_last.html">Religion fit to last</a></td><td class='lyric-box'>A voice within becomes distressed to see you taste the fruit,
 forbidden by your God and creed, respected since your youth:
 ''Prodigal, I'll fight in you, restore your faith to thrive.
@@ -191,8 +176,7 @@ Mere reason of one mind can't win; the test of time is passed.
 Religions of today are the religions fit to last.
 Members true through power, fear, or friendly company
 instill again in children's minds, "Eat not from yonder tree."
-"Eat not from yonder tree!"
-
+Eat not from yonder tree!
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/accompanied.html">accompanied</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbykenan.html">textbykenan</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/when_israel_was_in_egypts_land.html">When Israel was in Egypt's land</a></td><td class='lyric-box'>When Israel was in Egypt's land,
 let my people go,
 oppressed so hard they could not stand,
@@ -220,5 +204,4 @@ Lord, help us all from bondage flee,
 let my people go,
 and let us all in Christ be free,
 let my people go.
-
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr>

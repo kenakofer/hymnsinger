@@ -7,7 +7,6 @@ layout: default
 O shepherds, shrink not with affright, but hear the angel's warning.
 This child, now weak in infancy, our confidence and joy shall be,
 the power of Satan breaking, our peace eternal making.
-
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/1verse.html">1verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/morning.html">morning</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_morning_hangs_a_signal.html">The morning hangs a signal</a></td><td class='lyric-box'>The morning hangs a signal upon the mountain crest,
 while all the sleeping valleys in silent darkness rest.
 From peak to peak it flashes, it laughs along the sky,
@@ -22,5 +21,4 @@ The soul has lifted moments, above the drift of days,
 when life's great meaning breaketh in sunrise on our ways.
 Behold the radiant token of truth above all fear;
 night shall release its splendor that morning shall appear.
-
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/morning.html">morning</a></td></tr>

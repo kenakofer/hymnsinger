@@ -73,7 +73,7 @@ verseC = \lyricmode {
 }
 verseD = \lyricmode {
   See him in a man -- ger laid whom the an -- gels praise a -- bove.
-  Ma -- ry, Jo -- seph, lend your aid, while we rais our hearts in love.
+  Ma -- ry, Jo -- seph, lend your aid, while we raise our hearts in love.
 }
 verseE = \lyricmode { }
 verseF = \lyricmode { }

@@ -73,7 +73,6 @@ All helplessness, all weakness I
 on thee alone for strength depend,
 nor have I power from thee to move.
 Thy nature, and thy name is Love!
-
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/accompanied.html">accompanied</a><a class="taglink" href="{{ site.baseurl }}/tags/11verse.html">11verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/my_shepherd_will_supply_my_need.html">My Shepherd will supply my need;</a></td><td class='lyric-box'>My Shepherd will supply my need; most holy is your name.
 In pastures fresh you make me feed, beside the living stream.
 You bring my wand'ring spirit back, when I farsake your ways,
@@ -88,7 +87,6 @@ The sure provisions of my God attend me all my days.
 Oh, may your house be my abode, and all my work be praise.
 There would I find a settled rest, while others go and come,
 no more a stranger, nor a guest, but like a child at home.
-
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/no_number_tallies_up_my_score.html">No number tallies up my score</a></td><td class='lyric-box'>No number tallies up my score,
 no tribe my house can fill;
 I sit beside the fount of life
@@ -123,7 +121,6 @@ No ray is dimmed, no atom worn,
 my oldest force is new,
 and fresh the rose on yonder thorn
 gives back the heav'ns in dew.
-
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_love_how_deep_how_broad.html">O love, how deep, how broad</a></td><td class='lyric-box'>O love, how deep, how broad, how high! It fills the heart with ecstasy,
 that God, the Son of God, should take our mortal form for mortals' sake.
 
@@ -138,7 +135,6 @@ he bore the shameful cross and death, for us at length gave up his breath.
 
 Eternal glory to our God for love so deep, so high, so broad;
 the Trinity whom we adore forever and forevermore.
-
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/religion_fit_to_last.html">Religion fit to last</a></td><td class='lyric-box'>A voice within becomes distressed to see you taste the fruit,
 forbidden by your God and creed, respected since your youth:
 ''Prodigal, I'll fight in you, restore your faith to thrive.
@@ -167,8 +163,7 @@ Mere reason of one mind can't win; the test of time is passed.
 Religions of today are the religions fit to last.
 Members true through power, fear, or friendly company
 instill again in children's minds, "Eat not from yonder tree."
-"Eat not from yonder tree!"
-
+Eat not from yonder tree!
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/accompanied.html">accompanied</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbykenan.html">textbykenan</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/tis_a_gift_to_be_simple.html">'Tis a gift to be simple</a></td><td class='lyric-box'>'Tis a gift to be simple, 'tis a gift to be free,
 'tis a gift to come down where we ought to be.
 And when we find ourselves in the place just right
@@ -178,7 +173,6 @@ When true simplicity is gained,
 to bow and to bend we will not be ashamed;
 to turn, turn, will be our delight,
 till by turning, turning we come round right.
-
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/1verse.html">1verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/we_shall_overcome.html">We shall overcome</a></td><td class='lyric-box'>We shall overcome,
 we shall overcome,
 we shall overcome someday!
@@ -193,5 +187,4 @@ We shall live in peace … some day!
 We are not afraid … today!
 
 God will see us through ... some day!
-
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr>

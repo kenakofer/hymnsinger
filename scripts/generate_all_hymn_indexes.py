@@ -31,7 +31,7 @@ def get_lyrics(all_lines):
     chorus_mode = False
     remove_quotes = False
     lyrics = ""
-    for i, line in enumerate(all_lines):
+    for line in all_lines:
         line = line.strip()
         if line.startswith("verse") and not line.endswith("}"):
             current_verse = True
@@ -39,6 +39,8 @@ def get_lyrics(all_lines):
         elif line.endswith("LYRICS-START"):
             current_verse = True
             remove_quotes = True
+        elif line.startswith("\\"):
+            pass
         elif line.startswith('%% CHORUS'):
             chorus_mode = True
             lyrics+="\n"
@@ -51,14 +53,26 @@ def get_lyrics(all_lines):
             lyrics+="\n"
         elif current_verse:
             prefix = "  " if chorus_mode else ""
-            lyrics+=prefix + join_verse_line(line, remove_quotes) + "\n"
-    return lyrics
+            line = prefix + join_verse_line(line, remove_quotes)
+            if not line.isspace():
+                lyrics+=prefix + join_verse_line(line, remove_quotes) + "\n"
+    while "\n\n\n" in lyrics:
+        lyrics = lyrics.replace("\n\n\n", "\n\n")
+    return lyrics.strip() + "\n"
 
 def join_verse_line(line, remove_quotes):
-    stripped = line.strip()
-    if remove_quotes:
+    stripped = line.strip().replace('*', '')
+    if remove_quotes and stripped.startswith('"') and stripped.endswith('"'):
         stripped = stripped[1:-1].replace('\\"','"')
+
     words = stripped.replace("_","").split()
+    if "%%" in words:
+        words.remove("%%")
+    # Remove quotes and asterisks on individual words
+    for i in range(len(words)):
+        if words[i][0] == '"' and words[i][-1] == '"':
+            words[i] = words[i][1:-1]
+
     while "--" in words:
         index = words.index("--")
         words[index-1:index+2] = [words[index-1] + words[index+1]]
