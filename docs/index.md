@@ -20,6 +20,6 @@ Or, use this form to [request an added song](https://forms.gle/Qp4bG7xFFih38bsW7
  1. The copyright is permissive or it is in public domain
  1. You can provide a link or quality photo for the sheet music
 
-Or, [Typeset a hymn yourself]({{ site.baseurl }}{% link contributing.md %}), and get it added here. Collaborators are great!
+Or, [typeset a hymn yourself]({{ site.baseurl }}{% link contributing.md %}), and get it added here. Collaborators are great!
 
-**Regarding copyright**, the hymns hosted here have, to the best of my knowledge, no copyright restriction. Please reach out if I have erred and included a restricted work.
+**Regarding copyright**, the hymns hosted here have, to the best of my knowledge, no copyright restriction. Please reach out using [this form](https://forms.gle/5KbHAhX4nenMB4sC6) if I have erred and included a restricted work.
