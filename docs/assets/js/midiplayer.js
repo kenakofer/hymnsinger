@@ -1030,12 +1030,16 @@ var MidiPlayer = (function () {
     }, {
       key: "skipToTick",
       value: function skipToTick(tick) {
-        this.stop();
+        var p = this.isPlaying();
+        this.pause();
         this.startTick = tick; // Need to set track event indexes to the nearest possible event to the specified tick.
 
         this.tracks.forEach(function (track) {
           track.setEventIndexByTick(tick);
         });
+        if (p)
+          this.play()
+
         return this;
       }
       /**
@@ -1049,6 +1053,7 @@ var MidiPlayer = (function () {
       value: function skipToPercent(percent) {
         if (percent < 0 || percent > 100) throw "Percent must be number between 1 and 100.";
         this.skipToTick(Math.round(percent / 100 * this.totalTicks));
+        document.getElementById('play-bar').style.width = percent + '%';
         return this;
       }
       /**
