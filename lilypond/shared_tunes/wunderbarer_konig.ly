@@ -1,25 +1,8 @@
-\version "2.20.0"
-\include "../lib/hymn_common.ly"
-\language "english"
-
 composer = \smallText "Music: Joachim Neander, 1680"
 meter = \smallText "WUNDERBARER KÖNIG 66.86.66.86.666"
-
-%% SETTINGS
 hymnKey = \key g \major
 hymnTime = \time 2/2
-%% Adjust these to fix beaming
-%hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-%hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-%hymnBeatExceptions = \set Timing.beamExceptions = #'()
-globalParts = {
-  \hymnKey
-  \hymnTime
-  \hymnBaseMoment
-  \hymnBeatStructure
-  \hymnBeamExceptions
-  \numericTimeSignature
-}
+\include "../lib/global_parts.ly"
 
 %% NOTES
 soprano = {
@@ -53,10 +36,3 @@ songChords = \chords {
     g1 d e:m b:7 c2 g d1 g
     g2 c d g g c4 g d2 g g a:m d g
 }
-
-
-all_verses = { }
-
-%% UNCOMMENT to VERIFY, then RECOMMENT
-%\book { \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }
-%\score { << \soprano \alto \tenor \bass >> \midi { \tempo  4 = 100 } }
