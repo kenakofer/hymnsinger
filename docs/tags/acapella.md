@@ -229,7 +229,6 @@ sorrow forgot, love’s purest joys restored.
 Be still, my soul; when change and tears are past,
 all safe and blessed we shall meet at last.
 
-
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/be_thou_my_vision.html">Be thou my vision</a></td><td class='lyric-box'>Be thou my vision, O Lord of my heart;
 naught be all else to me save that thou art.
 Thou my best thought, by day or by night,
@@ -321,7 +320,6 @@ Let that grace now, like a fetter, bind my wand’ring heart to thee.
 Prone to wander, Lord, I feel it, prone to leave the God I love;
 Here’s my heart, O take and seal it, seal it for thy courts above.
 
-
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_thou_long_expected_jesus.html">Come, thou long-expected Jesus</a></td><td class='lyric-box'>Come, thou longexpected Jesus! born to set thy people free,
 from our fears and sins release us, let us find our rest in thee.
 Israel's strength and consolation, hope of all the earth thou art,
@@ -332,8 +330,7 @@ born to reign in us forever, now thy gracious kingdom bring.
 By thine own eternal Spirit, rule in all our hearts alone.
 By thine allsufficient merit, raise us to thy glorious throne.
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/2verse.html">2verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_ye_thankful_people.html">Come, ye thankful people</a></td><td class='lyric-box'>
-Come, ye thankful people, come, raise a song of harvest home:
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/2verse.html">2verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_ye_thankful_people.html">Come, ye thankful people</a></td><td class='lyric-box'>Come, ye thankful people, come, raise a song of harvest home:
 fruit and crops are gathered in, safe before the storms begin;
 God, our Maker, will provide for our needs to be supplied;
 come to God's own temple, come, raise a song of harvest home.
@@ -576,8 +573,6 @@ lest, our hearts drunk with the wine of the world, we forget thee,
 
 shadowed beneath thy hand, may we forever stand,
 true to our God, true to our native land.
-
-
 
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/lo_how_a_rose.html">Lo, how a Rose e'er blooming</a></td><td class='lyric-box'>Lo, how a Rose e'er blooming from tender stem has sprung!
 Of Jesse's lineage coming as saints of old have sung.
@@ -901,9 +896,6 @@ we shall overcome someday!
 O deep in my heart
 I do believe
 we shall overcome, someday!
-
-
-
 
 We'll walk hand in hand ... some day!
 

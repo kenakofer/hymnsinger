@@ -280,9 +280,6 @@ O deep in my heart
 I do believe
 we shall overcome, someday!
 
-
-
-
 We'll walk hand in hand ... some day!
 
 We shall live in peace … some day!

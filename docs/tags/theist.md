@@ -97,7 +97,6 @@ sorrow forgot, love’s purest joys restored.
 Be still, my soul; when change and tears are past,
 all safe and blessed we shall meet at last.
 
-
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/be_thou_my_vision.html">Be thou my vision</a></td><td class='lyric-box'>Be thou my vision, O Lord of my heart;
 naught be all else to me save that thou art.
 Thou my best thought, by day or by night,
@@ -206,8 +205,7 @@ on thee alone for strength depend,
 nor have I power from thee to move.
 Thy nature, and thy name is Love!
 
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/accompanied.html">accompanied</a><a class="taglink" href="{{ site.baseurl }}/tags/11verse.html">11verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_ye_thankful_people.html">Come, ye thankful people</a></td><td class='lyric-box'>
-Come, ye thankful people, come, raise a song of harvest home:
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/accompanied.html">accompanied</a><a class="taglink" href="{{ site.baseurl }}/tags/11verse.html">11verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_ye_thankful_people.html">Come, ye thankful people</a></td><td class='lyric-box'>Come, ye thankful people, come, raise a song of harvest home:
 fruit and crops are gathered in, safe before the storms begin;
 God, our Maker, will provide for our needs to be supplied;
 come to God's own temple, come, raise a song of harvest home.
@@ -269,8 +267,6 @@ lest, our hearts drunk with the wine of the world, we forget thee,
 
 shadowed beneath thy hand, may we forever stand,
 true to our God, true to our native land.
-
-
 
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/singer_of_life.html">Singer of Life</a></td><td class='lyric-box'>Singer of Life, all flowers are songs, with petals do you write.
 Singer of Life, you color the earth, dazzling the eye with birds red and bright.

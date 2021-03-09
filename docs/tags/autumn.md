@@ -3,8 +3,7 @@ title: Hymns tagged autumn
 layout: default
 ---
 <table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>
-<tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_ye_thankful_people.html">Come, ye thankful people</a></td><td class='lyric-box'>
-Come, ye thankful people, come, raise a song of harvest home:
+<tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_ye_thankful_people.html">Come, ye thankful people</a></td><td class='lyric-box'>Come, ye thankful people, come, raise a song of harvest home:
 fruit and crops are gathered in, safe before the storms begin;
 God, our Maker, will provide for our needs to be supplied;
 come to God's own temple, come, raise a song of harvest home.
