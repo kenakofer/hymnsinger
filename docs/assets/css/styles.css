@@ -153,7 +153,7 @@ img {
   z-index: 1;
 }
 .tooltip .tooltiptext-rightside {
-  right: 0px;
+  right: 9px;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
