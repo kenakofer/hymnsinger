@@ -20,6 +20,13 @@ window.addEventListener('keydown', function(e) {
   }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('play-bar-background').addEventListener("click", function(event){
+        var percentage = (event.clientX-this.offsetLeft) / this.offsetWidth * 100;
+        Player.skipToPercent(percentage);
+    });
+}, false);
+
 var click_play = function() {
     Player.isPlaying() ? pause() : play();
 }
