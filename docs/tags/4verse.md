@@ -51,7 +51,18 @@ Come, adore on bended knee Christ, the Lord, the newborn King.
 
 See him in a manger laid whom the angels praise above.
 Mary, Joseph, lend your aid, while we raise our hearts in love.
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/winter.html">winter</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/breath_on_me_breath_of_god.html">Breath on me, breath of God</a></td><td class='lyric-box'>Breathe on me, breath of God. Fill me with life anew
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/winter.html">winter</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/blest_be_the_tie_that_binds.html">Blest be the tie that binds</a></td><td class='lyric-box'>Blest be the tie that binds our hearts in Christian love.
+The fellowship of kindred minds is like to that above.
+
+We share each other's woes, each other's burdens bear,
+and often for each other flows the sympathizing tear.
+
+When we asunder part, it gives us inward pain,
+but we shall still be joined in heart, and hope to meet again.
+
+From sorrow, toil, and pain, and sin we shall be free,
+and perfect love and friendship reign through all eternity.
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/breath_on_me_breath_of_god.html">Breath on me, breath of God</a></td><td class='lyric-box'>Breathe on me, breath of God. Fill me with life anew
 that I may love what thou dost love, and do what thou wouldst do.
 
 Breath on me, breath of God, un-til my heart is pure,

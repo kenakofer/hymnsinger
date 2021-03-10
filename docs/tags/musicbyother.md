@@ -235,7 +235,18 @@ High King of heaven, when vict'ry is won
 may I reach heaven's joys, O bright heav'n's Sun!
 Heart of my heart, whatever befall,
 still be my vision, O Ruler of all.
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/break_forth.html">Break forth, O beauteous heavenly light</a></td><td class='lyric-box'>Break forth, O beauteous heav'nly light, and usher in the morning.
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/blest_be_the_tie_that_binds.html">Blest be the tie that binds</a></td><td class='lyric-box'>Blest be the tie that binds our hearts in Christian love.
+The fellowship of kindred minds is like to that above.
+
+We share each other's woes, each other's burdens bear,
+and often for each other flows the sympathizing tear.
+
+When we asunder part, it gives us inward pain,
+but we shall still be joined in heart, and hope to meet again.
+
+From sorrow, toil, and pain, and sin we shall be free,
+and perfect love and friendship reign through all eternity.
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/break_forth.html">Break forth, O beauteous heavenly light</a></td><td class='lyric-box'>Break forth, O beauteous heav'nly light, and usher in the morning.
 O shepherds, shrink not with affright, but hear the angel's warning.
 This child, now weak in infancy, our confidence and joy shall be,
 the power of Satan breaking, our peace eternal making.
