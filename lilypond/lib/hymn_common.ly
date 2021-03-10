@@ -206,6 +206,7 @@ fillClairScore =
         \new Staff = "top" \with {
           \cnNoteheadStyle "funksol"
           printPartCombineTexts = ##f
+          \RemoveAllEmptyStaves
         }
         <<
 
@@ -216,6 +217,7 @@ fillClairScore =
         \new Staff = "bottom" \with {
           \cnNoteheadStyle "funksol"
           printPartCombineTexts = ##f
+          \RemoveAllEmptyStaves
         }<<
           \new Voice \with {
           } { \clef bass << \partcombine #'(2 . 20) $bottomA $bottomB >> }
@@ -232,6 +234,7 @@ fillClairScoreSingleStaff =
         \new Staff = "top" \with {
           \cnNoteheadStyle "funksol"
           printPartCombineTexts = ##f
+          \RemoveAllEmptyStaves
         }
         <<
 
@@ -251,6 +254,7 @@ fillTradScore =
         $songChords
         \new TradStaff = "top" \with {
           printPartCombineTexts = ##f
+          \RemoveAllEmptyStaves
         }
         <<
           \new Voice \with {
@@ -260,6 +264,7 @@ fillTradScore =
         >>
         \new TradStaff = "bottom" \with {
           printPartCombineTexts = ##f
+          \RemoveAllEmptyStaves
         } <<
           \new Voice \with {
 
@@ -277,6 +282,7 @@ fillTradScoreSingleStaff =
         $songChords
         \new TradStaff = "top" \with {
           printPartCombineTexts = ##f
+          \RemoveAllEmptyStaves
         }
         <<
           \new Voice \with {
