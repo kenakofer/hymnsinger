@@ -81,8 +81,8 @@ all_verses = <<
 \score {
   <<
     \new Staff \with { midiMaximumVolume = #0.9 } \soprano
-    \new Staff \with { midiMaximumVolume = #0.7  } \alto
-    \new Staff \with { midiMaximumVolume = #0.8  } \tenor
+    \new Staff \with { midiMaximumVolume = #0.1 } \soprano
+    \new Staff \with { midiMaximumVolume = #0.8 } \tenor
     \new Staff \with { midiMaximumVolume = #0.9 } \bass
   >>
   \midi {
