@@ -702,7 +702,26 @@ Joy is for us! The flowers are spread! Singing is our delight!
 Mortal are we, with all living things, with eagles in the sky.
 Even all gold and jade will not last; singing alone, I know, cannot die.
 Here in this house of springtime bestow songs that like birds can fly.
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/2verse.html">2verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_day_you_gave_us.html">The day you gave us, Lord</a></td><td class='lyric-box'>The day you gave us, Lord, is ended;
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/2verse.html">2verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/take_my_life_and_let_it_be.html">Take my life, and let it be</a></td><td class='lyric-box'>Take my life, and let it be consecrated, Lord, to thee.
+Take my moments and my days; let them flow in ceaseless praise,
+let them flow in ceaseless praise.
+
+Take my hands, and let them move at the impulse of thy love.
+Take my feet, and let them be swift and beautiful for thee,
+swift and beautiful for thee.
+
+Take my intellect and use ev'ry pow'r as thou shalt choose.
+Take my lips, and let them be filled with messages from thee,
+filled with messages from thee,
+
+Take my silver and my gold; not a mite would I withhold.
+Take my will and make it thine; it shall be no longer mine,
+it shall be no longer mine.
+
+Take my love; my Lord, I pour at thy feet its treasure store.
+Take myself, and I will be ever, only, all for thee,
+ever, only, all for thee.
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_day_you_gave_us.html">The day you gave us, Lord</a></td><td class='lyric-box'>The day you gave us, Lord, is ended;
 the darkness falls at your request.
 To you our morning hymns ascended;
 your praise shall sanctify our rest.
