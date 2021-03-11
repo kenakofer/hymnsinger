@@ -121,8 +121,6 @@ prescoreText =
       }
     #})
 
-prescore_text = \markup { " " }
-
 postscoreText =
   #(define-scheme-function
     (parser location text)
@@ -135,9 +133,6 @@ postscoreText =
         #text
       }
     #})
-
-postscore_text = \markup { " " }
-
 
  titleText =
   #(define-scheme-function
@@ -206,6 +201,8 @@ fillClairScore =
         \new Staff = "top" \with {
           \cnNoteheadStyle "funksol"
           printPartCombineTexts = ##f
+          \magnifyStaff \clairStaffZoom
+          \RemoveAllEmptyStaves
         }
         <<
 
@@ -216,9 +213,12 @@ fillClairScore =
         \new Staff = "bottom" \with {
           \cnNoteheadStyle "funksol"
           printPartCombineTexts = ##f
+          \magnifyStaff \clairStaffZoom
+          \RemoveAllEmptyStaves
         }<<
           \new Voice \with {
           } { \clef bass << \partcombine #'(2 . 20) $bottomA $bottomB >> }
+          \bottom_verses
         >>
       >>
     #})
@@ -232,6 +232,8 @@ fillClairScoreSingleStaff =
         \new Staff = "top" \with {
           \cnNoteheadStyle "funksol"
           printPartCombineTexts = ##f
+          \magnifyStaff \clairStaffZoom
+          \RemoveAllEmptyStaves
         }
         <<
 
@@ -251,6 +253,8 @@ fillTradScore =
         $songChords
         \new TradStaff = "top" \with {
           printPartCombineTexts = ##f
+          \magnifyStaff \tradStaffZoom
+          \RemoveAllEmptyStaves
         }
         <<
           \new Voice \with {
@@ -260,10 +264,13 @@ fillTradScore =
         >>
         \new TradStaff = "bottom" \with {
           printPartCombineTexts = ##f
+          \magnifyStaff \tradStaffZoom
+          \RemoveAllEmptyStaves
         } <<
           \new Voice \with {
 
           } { \clef bass << \partcombine #'(2 . 20) $bottomA $bottomB >> }
+          \bottom_verses
         >>
       >>
     #})
@@ -277,6 +284,8 @@ fillTradScoreSingleStaff =
         $songChords
         \new TradStaff = "top" \with {
           printPartCombineTexts = ##f
+          \magnifyStaff \tradStaffZoom
+          \RemoveAllEmptyStaves
         }
         <<
           \new Voice \with {
@@ -287,12 +296,9 @@ fillTradScoreSingleStaff =
       >>
     #})
 
-
-
 \paper {
   indent = 0
 }
-
 
 \layout {
   \context {
@@ -312,6 +318,11 @@ composer = \smallText "Music: Who wrote the music, year"
 meter = \smallText "TUNE NAME meter"
 hymnKey = \key c \major
 hymnTime = \time 4/4
+quarternoteTempo = 120
+%% These usually don't need to be changed
+hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
+hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
+hymnBeamExceptions = \set Timing.beamExceptions = #'()
 
 %% Defaults for song variables
 title = \titleText "You have not set a title"
@@ -319,9 +330,11 @@ subtitle = ""
 arranger = ""
 poet = \smallText "Text: Who wrote the text, year"
 tags = "christian 4part acapella 2verse musicbyother textbyother"
-
-%% These defaults usually don't need to be changed
+%% These usually don't need to be changed
+prescore_text = {}
+postscore_text = {}
+extra_verses = {}
+bottom_verses = {}
+tradStaffZoom = #1
+clairStaffZoom = #1
 copyright = \public_domain_notice "Kenan Schaefkofer"
-hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
-hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
-hymnBeamExceptions = \set Timing.beamExceptions = #'()
