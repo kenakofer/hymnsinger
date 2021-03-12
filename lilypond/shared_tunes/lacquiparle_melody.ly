@@ -2,6 +2,7 @@ composer = \smallText "Music: Plains Indian traditional, 1879"
 meter = \smallText "LACQUIPARLE Irregular"
 hymnKey = \key c \minor
 hymnTime = \time 2/2
+quarternoteTempo = 165
 \include "../lib/global_parts.ly"
 
 %% NOTES

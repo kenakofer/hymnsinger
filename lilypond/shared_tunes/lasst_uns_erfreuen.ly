@@ -2,6 +2,7 @@ composer = \twoLineSmallTextRight "Music: Geistliche Kirchengesang, 1623" "Harmo
 meter = \smallText "LASST UNS ERFREUEN LM"
 hymnKey = \key d \major
 hymnTime = \time 3/2
+quarternoteTempo = 130
 \include "../lib/global_parts.ly"
 
 %% NOTES

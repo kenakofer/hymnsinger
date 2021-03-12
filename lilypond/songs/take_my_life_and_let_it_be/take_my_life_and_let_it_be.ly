@@ -8,6 +8,7 @@ arranger = \smallText "Harmonized by Lowell Mason, 1841"
 meter = \smallText "HENDON 77.77 extended"
 hymnKey = \key g \major
 hymnTime = \time 4/4
+quarternoteTempo = 110
 \include "../../lib/global_parts.ly"
 
 %% SONG INFO
@@ -90,26 +91,7 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "" \verseE }
 >>
 
-%% Traditional notation
-\book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } \postscore_text }
-
-%% Traditional with shaped noteheads (broken on non-combined chords)
-\book { \bookOutputSuffix "shapenote" \score { \fillTradScore {\aikenHeads \soprano} {\aikenHeads \alto} {\aikenHeads \tenor} {\aikenHeads \bass} \songChords } \postscore_text }
-
-%% Clairnotes Notation
-\book { \bookOutputSuffix "clairnote" \score { \fillClairScore \soprano \alto \tenor \bass } \postscore_text }
-
+%% All sheet music outputs
+\include "../../lib/all_notation_outputs.ly"
 %% MIDI output
-\score {
-  <<
-    \new Staff \with { midiMaximumVolume = #0.9 } \soprano
-    \new Staff \with { midiMaximumVolume = #0.7  } \alto
-    \new Staff \with { midiMaximumVolume = #0.8  } \tenor
-    \new Staff \with { midiMaximumVolume = #0.9 } \bass
-  >>
-  \midi {
-    \context { \Staff \remove "Staff_performer" }
-    \context { \Voice \consists "Staff_performer" }
-    \tempo  4 = 110
-  }
-}
+\include "../../lib/midi_output.ly"

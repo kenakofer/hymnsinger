@@ -7,6 +7,7 @@ composer = \smallText "Music: Traditional French carol, 1855"
 meter = \smallText "GLORIA 77.77 with refrain"
 hymnKey = \key f \major
 hymnTime = \time 2/2
+quarternoteTempo = 120
 \include "../../lib/global_parts.ly"
 
 %% SONG INFO
@@ -89,31 +90,10 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
 
-
-%% Traditional notation
-\book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }
-
-%% Traditional with shaped noteheads (broken on non-combined chords)
-\book { \bookOutputSuffix "shapenote" \score { \fillTradScore {\aikenHeads \soprano} {\aikenHeads \alto} {\aikenHeads \tenor} {\aikenHeads \bass} \songChords } }
-
-%% Clairnotes Notation
-\book { \bookOutputSuffix "clairnote" \score {
-  \layout {
-    #(layout-set-staff-size 18)
-  } \fillClairScore \soprano \alto \tenor \bass
-} }
-
+%% All sheet music outputs
+clairStaffZoom = #.9
+\include "../../lib/all_notation_outputs.ly"
 %% MIDI output
-\score {
-  <<
-    \new Staff \with { midiMaximumVolume = #0.9 } \soprano
-    \new Staff \with { midiMaximumVolume = #0.7  } \alto
-    \new Staff \with { midiMaximumVolume = #0.8  } \tenor
-    \new Staff \with { midiMaximumVolume = #0.9 } \bass
-  >>
-  \midi {
-    \context { \Staff \remove "Staff_performer" }
-    \context { \Voice \consists "Staff_performer" }
-    \tempo  4 = 120
-  }
-}
+\include "../../lib/midi_output.ly"
+
+

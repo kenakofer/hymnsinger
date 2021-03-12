@@ -32,23 +32,7 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
 >>
 
-%% Traditional notation
-\book { \prescore_text \bookOutputSuffix "trad" \score { \fillTradScoreSingleStaff \soprano \alto \tenor \bass \songChords } }
-
-%% Traditional with shaped noteheads (broken on non-combined chords)
-\book { \prescore_text \bookOutputSuffix "shapenote" \score { \fillTradScoreSingleStaff {\aikenHeads \soprano} {\aikenHeads \alto} {\aikenHeads \tenor} {\aikenHeads \bass} \songChords } }
-
-%% Clairnotes Notation
-\book { \prescore_text \bookOutputSuffix "clairnote" \score { \fillClairScoreSingleStaff \soprano \alto \tenor \bass } }
-
+%% All sheet music outputs
+\include "../../lib/all_notation_outputs.ly"
 %% MIDI output
-\score {
-  <<
-    \new Staff \with { midiMaximumVolume = #0.9 } \soprano
-  >>
-  \midi {
-    \context { \Staff \remove "Staff_performer" }
-    \context { \Voice \consists "Staff_performer" }
-    \tempo  4 = 165
-  }
-}
+\include "../../lib/midi_output.ly"

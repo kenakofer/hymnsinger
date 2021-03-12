@@ -7,6 +7,7 @@ composer = \smallText "Music: Friedrich Filitz, 1847"
 meter = \smallText "WEM IN LEIDENSTAGEN 65.65"
 hymnKey = \key f \major
 hymnTime = \time 4/4
+quarternoteTempo = 100
 \include "../../lib/global_parts.ly"
 
 %% SONG INFO
@@ -98,28 +99,7 @@ extra_verses = \markup {
   }
 }
 
-
-
-%% Traditional notation
-\book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } \extra_verses }
-
-%% Traditional with shaped noteheads (broken on non-combined chords)
-\book { \bookOutputSuffix "shapenote" \score { \fillTradScore {\aikenHeads \soprano} {\aikenHeads \alto} {\aikenHeads \tenor} {\aikenHeads \bass} \songChords } \extra_verses }
-
-%% Clairnotes Notation
-\book { \bookOutputSuffix "clairnote" \score { \fillClairScore \soprano \alto \tenor \bass } \extra_verses }
-
-%% MIDI output
-\score {
-  <<
-    \new Staff \with { midiMaximumVolume = #0.9 } \soprano
-    \new Staff \with { midiMaximumVolume = #0.7  } \alto
-    \new Staff \with { midiMaximumVolume = #0.8  } \tenor
-    \new Staff \with { midiMaximumVolume = #0.9 } \bass
-  >>
-  \midi {
-    \context { \Staff \remove "Staff_performer" }
-    \context { \Voice \consists "Staff_performer" }
-    \tempo  4 = 100
-  }
-}
+%% All sheet music outputs
+\include "../../lib/all_notation_outputs.ly"
+%% midi output
+\include "../../lib/midi_output.ly"

@@ -2,6 +2,7 @@ composer = \smallText "Music: Joachim Neander, 1680"
 meter = \smallText "WUNDERBARER KÖNIG 66.86.66.86.666"
 hymnKey = \key g \major
 hymnTime = \time 2/2
+quarternoteTempo = 120
 \include "../lib/global_parts.ly"
 
 %% NOTES

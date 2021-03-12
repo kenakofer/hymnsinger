@@ -7,6 +7,7 @@ composer = \smallText "Music: American folk melody, 1813"
 meter = \smallText "NETTLETON 87.87 D"
 hymnKey = \key d \major
 hymnTime = \time 3/4
+quarternoteTempo = 90
 \include "../../lib/global_parts.ly"
 
 %% SONG INFO
@@ -20,9 +21,9 @@ dateAdded = "2021-01-13"
 %% NOTES
 soprano = {
   \globalParts
-  \relative g' { \partial 4 fs8 e | d4 d fs8 a | e4 e fs8 a | b4 a fs8 e | d2 \bar"" }
-  \relative g' { \partial 4 fs8 e | d4 d fs8 a | e4 e fs8 a | b4 a fs8 e | d2 \bar"" }
-  \relative g' { \partial 4 a8 b16( cs) | d4 cs b8 a | b( a) fs4 a8 b16( cs) | d4 cs b8 a | d2 \bar "" }
+  \relative g' { \partial 4 fs8 e | d4 d fs8 a | e4 e fs8 a | b4 a fs8 e | d2 \bar"" } \break
+  \relative g' { \partial 4 fs8 e | d4 d fs8 a | e4 e fs8 a | b4 a fs8 e | d2 \bar"" } \break
+  \relative g' { \partial 4 a8 b16( cs) | d4 cs b8 a | b( a) fs4 a8 b16( cs) | d4 cs b8 a | d2 \bar "" } \break
   \relative g' { \partial 4 fs8 e | d4 d fs8 a | e4 e fs8 a | b4 a fs8 e | \partial 2 d2 | }
   \bar "|."
 }
@@ -75,26 +76,7 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
 >>
 
-%% Traditional notation
-\book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }
-
-%% Traditional with shaped noteheads (broken on non-combined chords)
-\book { \bookOutputSuffix "shapenote" \score { \fillTradScore {\aikenHeads \soprano} {\aikenHeads \alto} {\aikenHeads \tenor} {\aikenHeads \bass} \songChords } }
-
-%% Clairnotes Notation
-\book { \bookOutputSuffix "clairnote" \score { \fillClairScore \soprano \alto \tenor \bass } }
-
+%% All sheet music outputs
+\include "../../lib/all_notation_outputs.ly"
 %% MIDI output
-\score {
-  <<
-    \new Staff \with { midiMaximumVolume = #0.9 } \soprano
-    \new Staff \with { midiMaximumVolume = #0.7  } \alto
-    \new Staff \with { midiMaximumVolume = #0.8  } \tenor
-    \new Staff \with { midiMaximumVolume = #0.9 } \bass
-  >>
-  \midi {
-    \context { \Staff \remove "Staff_performer" }
-    \context { \Voice \consists "Staff_performer" }
-    \tempo  4 = 90
-  }
-}
+\include "../../lib/midi_output.ly"
