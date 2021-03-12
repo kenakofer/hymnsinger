@@ -7,6 +7,7 @@ composer = \smallText "Music: Oliver Holden, 1792"
 meter = \smallText "CORONATION CM extended"
 hymnKey = \key g \major
 hymnTime = \time 2/2
+quarternoteTempo = 120
 \include "../../lib/global_parts.ly"
 
 %% SONG INFO
@@ -38,7 +39,7 @@ soprano = {
 alto = {
   \globalParts
   \relative e' { b4 | d4 d g g | fs e fs g | fs g d c | b2. }
-  \relative e' { d4 | g d b g' | b8[ a] g[ fs] g4 fs4 | g2 a | g fs4( e) | fs2. }
+  \relative e' { d4 | g d b g' | b8( a) g( fs) g4 fs4 | g2 a | g fs4( e) | fs2. }
   \relative e' { g4 | g g g d | d d fs g | g2 e | d2. c4 | b2 }
 }
 tenor = {
@@ -89,28 +90,7 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
-
-
-%% Traditional notation
-\book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }
-
-%% Traditional with shaped noteheads (broken on non-combined chords)
-\book { \bookOutputSuffix "shapenote" \score { \fillTradScore {\aikenHeads \soprano} {\aikenHeads \alto} {\aikenHeads \tenor} {\aikenHeads \bass} \songChords } }
-
-%% Clairnotes Notation
-\book { \bookOutputSuffix "clairnote" \score { \fillClairScore \soprano \alto \tenor \bass } }
-
+%% All sheet music outputs
+\include "../../lib/all_notation_outputs.ly"
 %% MIDI output
-\score {
-  <<
-    \new Staff \with { midiMaximumVolume = #0.9 } \soprano
-    \new Staff \with { midiMaximumVolume = #0.7  } \alto
-    \new Staff \with { midiMaximumVolume = #0.8  } \tenor
-    \new Staff \with { midiMaximumVolume = #0.9 } \bass
-  >>
-  \midi {
-    \context { \Staff \remove "Staff_performer" }
-    \context { \Voice \consists "Staff_performer" }
-    \tempo  4 = 120
-  }
-}
+\include "../../lib/midi_output.ly"

@@ -2,6 +2,7 @@ composer = \smallText "Music: American folk melody, 1831"
 meter = \smallText "NEW BRITAIN (AMAZING GRACE) CM"
 hymnKey = \key g \major
 hymnTime = \time 3/4
+quarternoteTempo = 120
 \include "../lib/global_parts.ly"
 
 %% NOTES

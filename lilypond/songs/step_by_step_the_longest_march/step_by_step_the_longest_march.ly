@@ -9,6 +9,7 @@ arranger = \smallText "Arranged by Kenan Schaefkofer, 2021"
 meter = \smallText "SOLIDARITY 76.76 D"
 hymnKey = \key e \minor
 hymnTime = \time 4/4
+quarternoteTempo = 110
 \include "../../lib/global_parts.ly"
 
 %% SONG INFO
@@ -68,26 +69,7 @@ all_verses = <<
   \new Lyrics \with \dropLyricsSmall \lyricsto soprano  { \globalLyrics "" "" \verseA }
 >>
 
-%% Traditional notation
-\book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } \postscore_text }
-
-%% Traditional with shaped noteheads (broken on non-combined chords)
-\book { \bookOutputSuffix "shapenote" \score { \fillTradScore {\aikenHeads \soprano} {\aikenHeads \alto} {\aikenHeads \tenor} {\aikenHeads \bass} \songChords } \postscore_text }
-
-%% Clairnotes Notation
-\book { \bookOutputSuffix "clairnote" \score { \fillClairScore \soprano \alto \tenor \bass } \postscore_text }
-
+%% All sheet music outputs
+\include "../../lib/all_notation_outputs.ly"
 %% MIDI output
-\score {
-  <<
-    \new Staff \with { midiMaximumVolume = #0.9 } \soprano
-    \new Staff \with { midiMaximumVolume = #0.1 } \soprano
-    \new Staff \with { midiMaximumVolume = #0.8 } \tenor
-    \new Staff \with { midiMaximumVolume = #0.9 } \bass
-  >>
-  \midi {
-    \context { \Staff \remove "Staff_performer" }
-    \context { \Voice \consists "Staff_performer" }
-    \tempo  4 = 120
-  }
-}
+\include "../../lib/midi_output.ly"

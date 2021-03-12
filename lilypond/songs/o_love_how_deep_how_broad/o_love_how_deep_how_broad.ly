@@ -5,7 +5,6 @@
 %% TUNE INFO
 \include "../../shared_tunes/deo_gracias_arrbykenan.ly"
 
-
 %% SONG INFO
 title = \titleText "O love, how deep, how broad"
 poet = \smallText "Text: Thomas a Kempis, 15th c. trans. Benjamin Webb 1851, alt."
@@ -46,27 +45,7 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "" \verseE }
 >>
 
-
-%% Traditional notation
-\book { \bookOutputSuffix "trad" \score { \fillTradScore \soprano \alto \tenor \bass \songChords } }
-
-%% Traditional with shaped noteheads (broken on non-combined chords)
-\book { \bookOutputSuffix "shapenote" \score { \fillTradScore {\aikenHeads \soprano} {\aikenHeads \alto} {\aikenHeads \tenor} {\aikenHeads \bass} \songChords } }
-
-%% Clairnotes Notation
-\book { \bookOutputSuffix "clairnote" \score { \fillClairScore \soprano \alto \tenor \bass } }
-
+%% All sheet music outputs
+\include "../../lib/all_notation_outputs.ly"
 %% MIDI output
-\score {
-  <<
-    \new Staff \with { midiMaximumVolume = #0.9 } \soprano
-    \new Staff \with { midiMaximumVolume = #0.7  } \alto
-    \new Staff \with { midiMaximumVolume = #0.8  } \tenor
-    \new Staff \with { midiMaximumVolume = #0.9 } \bass
-  >>
-  \midi {
-    \context { \Staff \remove "Staff_performer" }
-    \context { \Voice \consists "Staff_performer" }
-    \tempo  4 = 120
-  }
-}
+\include "../../lib/midi_output.ly"

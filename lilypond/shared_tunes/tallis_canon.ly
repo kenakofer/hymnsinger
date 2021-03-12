@@ -2,6 +2,7 @@ composer = \smallText "Music: Thomas Tallis, 1567"
 meter = \smallText "TALLIS' CANON LM"
 hymnKey = \key g \major
 hymnTime = \time 2/2
+quarternoteTempo = 120
 \include "../lib/global_parts.ly"
 
 %% NOTES

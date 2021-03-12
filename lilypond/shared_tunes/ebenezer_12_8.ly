@@ -4,6 +4,7 @@ hymnKey = \key g \minor
 hymnTime = \time 12/8
 hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/8)
 hymnBeatStructure = \set Timing.beatStructure = 3,3
+quarternoteTempo = 120
 \include "../lib/global_parts.ly"
 
 %% NOTES
