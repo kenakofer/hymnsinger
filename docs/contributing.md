@@ -73,5 +73,5 @@ Here are a list of common Lilypond tasks that are easy to forget, and an example
 | Custom lyric labels on certain lines | Heilig, Heilig, Heilig |
 | Different lyrics for each of 2 staffs | Warm Summer Sun |
 | One part in a staff resting while the other sings | O come all ye faithful |
-| Different lyrics for the same staff (e.g. soprano v. alto) | TODO |
-| Double staff switch to single staff in same song | TODO |
+| Different lyrics for the same staff (e.g. soprano v. alto) | When peace like a river |
+| Double staff switch to single staff in same song | La paz de la tierra |
