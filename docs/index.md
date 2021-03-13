@@ -6,11 +6,11 @@ my_number: 5
 
 Music can be more inviting and better presented, especially the *dusty old harmonies* in hymnals. One shouldn't need a music degree to learn and enjoy these musical works, nor should one need a law degree to feel safe performing, distributing, and modifying it.
 
-### No ads, no catch, just 🎵 that wants to be free!
+### No cost, no accounts, no catch, just 🎵 that wants to be free!
 
 This site provides **full sheet music** and **in-browser playback** on every song's page. If you'd like to learn one of the voice parts to a song, you can **adjust individual volume levels** to hear certain part more loudly.
 
-Check out the [Full Hymn Index]({{ site.baseurl }}/hymn-index.html).
+Check out the [Full Index]({{ site.baseurl }}/hymn-index.html).
 
 ### How it's done
 
@@ -20,6 +20,6 @@ Or, use this form to [request an added song](https://forms.gle/Qp4bG7xFFih38bsW7
  1. The copyright is permissive or it is in public domain
  1. You can provide a link or quality photo for the sheet music
 
-Or, [typeset a hymn yourself]({{ site.baseurl }}{% link contributing.md %}), and get it added here. Collaborators are great!
+Or, [typeset a song yourself]({{ site.baseurl }}{% link contributing.md %}), and get it added here. Collaborators are great!
 
-**Regarding copyright**, the hymns hosted here have, to the best of my knowledge, no copyright restriction. Please reach out using [this form](https://forms.gle/5KbHAhX4nenMB4sC6) if I have erred and included a restricted work.
+**Regarding copyright**, the songs hosted here have, to the best of my research, no copyright restriction. Please reach out using [this form](https://forms.gle/5KbHAhX4nenMB4sC6) if I have erred and included a restricted work.

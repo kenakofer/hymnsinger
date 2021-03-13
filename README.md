@@ -3,8 +3,8 @@
 This is a project to make or take hymns with permissive copyright status, typeset them with lilypond in a variety of formats, and serve them online in a friendly and usable github pages site. It has a long ways to go yet.
 
 ### Features of the site include:
- - Easy browsing of the full hymn selection, including lyrics
- - An interface for simultaneously viewing and playing the hymn
+ - Easy browsing of the full song selection, including lyrics
+ - An interface for simultaneously viewing and playing the song
      - Ability to change volume on a per-part basis
  - Multiple formats available
  - Full mobile support (issues with android firefox at the moment)
@@ -35,6 +35,4 @@ This is a project to make or take hymns with permissive copyright status, typese
   - Less space between two staves in clairnotes
   - More space below lyrics
   - Figure out how to understand/clean up extra_lyrics columns
-
-
-
+  - Correct tags on song page markdown
