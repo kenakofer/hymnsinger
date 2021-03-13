@@ -8,7 +8,7 @@ composer = \smallText "Music: W. Warren Bentley, 1879"
 meter = \smallText "RIFTED ROCK 87.87 with refrain"
 hymnKey = \key e \major
 hymnTime = \time 3/2
-quarternoteTempo = 140
+quarternoteTempo = 150
 \include "../../lib/global_parts.ly"
 
 %% SONG INFO
