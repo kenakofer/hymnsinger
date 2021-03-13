@@ -1,5 +1,6 @@
 ---
-title: Hymn Host Index
+title: Complete Index
+description: An list of every hymn song music resource on the site
 layout: default
 ---
 # Complete Index

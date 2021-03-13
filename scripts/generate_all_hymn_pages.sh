@@ -39,10 +39,6 @@ find lilypond/songs -type f -iname "*.ly" -print0 | sort -z | while IFS= read -r
     # Make the hymn page
     echo "-->Generating $OUTPUT from $INPUT"
     cp $INPUT $OUTPUT
-    # Replace all instances of REPLACE_WITH_FILENAME_BASE with the file's basename
-    sed -i '' 's/REPLACE_WITH_FILENAME_BASE/'$BASE'/g' $OUTPUT
-    # Replace all instances of [SPACE_NAME] with the file's spaced basename
-    #sed -i -e 's/\[SPACE_NAME\]/'"$SPACE_BASE"'/g' $OUTPUT
 
     # Add to every relevant index
     $SCRIPT_DIR/generate_all_hymn_indexes.py $file

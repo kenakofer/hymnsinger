@@ -90,19 +90,39 @@ def output_table_row(song_file_base, song_title, lyrics, tags, output_file):
             f.write(get_tag_html(tag))
         f.write("</td></tr>")
 
+def output_header_info(song_file_base, song_title, lyrics, tags, output_file):
+    with open(output_file, 'a') as f:
+        f.write("song_file: "+song_file_base)
+        f.write("\n")
+        f.write("title: "+song_title)
+        f.write("\n")
+        tag_string = " ".join(tags)
+        lyrics_string = lyrics[:150].replace("\n", " ")
+        f.write("description: "+lyrics_string+"... "+tag_string+" ")
+        f.write("\n")
+        f.write("image: https://github.com/kenanbit/hymn-singer/releases/latest/download/"+song_file_base+"-trad.png")
+        f.write("\n")
+        f.write("---")
+        f.write("\n\n")
+        f.write("{% include choice_and_music.html %}")
 
 if __name__ == "__main__":
     file_path = sys.argv[1]
     song_file_base = os.path.basename(file_path)
     song_file_base = song_file_base[:song_file_base.index(".")]
-    files_to_append_to = ["docs/hymn-index.md"]
+    index_files_to_append_to = ["docs/hymn-index.md"]
     with open(file_path, 'r') as f:
         lines = f.readlines()
         all_lyrics = get_lyrics(lines)
         all_tags = get_tags(lines)
         song_title = get_title(lines)
     for tag in all_tags:
-        files_to_append_to.append("docs/tags/"+tag+".md")
-    for output_file in files_to_append_to:
+        index_files_to_append_to.append("docs/tags/"+tag+".md")
+    for output_file in index_files_to_append_to:
         output_table_row(song_file_base, song_title, all_lyrics, all_tags, output_file)
+
+    song_markdown_file = "docs/listing/"+song_file_base+".md"
+    output_header_info(song_file_base, song_title, all_lyrics, all_tags, song_markdown_file)
+
+
 
