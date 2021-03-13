@@ -126,7 +126,7 @@ extra_verses = \markup {
       \line {
         \raise #3
         \italic
-        \bold "4."
+        \bold "3."
         \italic
         \raise #3
         \column { % LYRICS-START
@@ -138,7 +138,7 @@ extra_verses = \markup {
       }
       \combine \null \vspace #0.1 % adds vertical spacing between verses
       \italic
-      \line { \bold "5."
+      \line { \bold "4."
         \column { % LYRICS-START
 "Kommt dann meine letzte Stunde,"
 "geh' ich ein zur ew'gen Ruh';"
