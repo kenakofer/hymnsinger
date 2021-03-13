@@ -18,7 +18,8 @@ done < "$SCRIPT_DIR/../docs/all_tags.txt"
 # Set up the listing index
 LISTFILE="docs/hymn-index.md"
 echo "---" > $LISTFILE
-echo "title: Hymn Host Index" >> $LISTFILE
+echo "title: Complete Index" >> $LISTFILE
+echo "description: An list of every hymn song music resource on the site" >> $LISTFILE
 echo "layout: default" >> $LISTFILE
 echo "---" >> $LISTFILE
 echo "# Complete Index" >> $LISTFILE
