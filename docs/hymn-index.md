@@ -1059,4 +1059,17 @@ Lord, help us all from bondage flee,
 let my people go,
 and let us all in Christ be free,
 let my people go.
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr></table>
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/when_peace_like_a_river.html">When Peace like a River</a></td><td class='lyric-box'>When peace like a river attendeth my way, when sorrows like sea billows roll,
+whatever my lot, thou hast taught me to say, ''It is well, it is well with my soul.''
+
+  It is well with my soul, it is well, it is well with my soul.
+
+Though Satan should buffet, though trials should come, let this blest assurance control,
+that Christ hath regarded my helpless estate, and hath shed his own blood for my soul.
+
+Redeemed! Oh, the bliss of this glorious thought: My sin– not in part, but the whole–
+is nailed to his cross, and I bear it no more, praise the Lord, praise the Lord, O my soul!
+
+And, Lord, haste the day when my faith shall be sight, the clouds be rolled back as a scroll,
+the trumpet shall sound, and the Lord shall descend, even so, it is well with my soul.
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr></table>
