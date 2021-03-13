@@ -121,6 +121,14 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
 >>
 
+songChords = \chords {
+  \set chordChanges = ##t
+  d4. g b:7 e:m e:m g b:7 e:m e:m a:m b:7 c c g/d g/d d
+  d g b:7 e e a:m b:7 c cs:dim7 g/d g/d d:7 d:7 g g g
+  g e:m e:m e:m e:m d d g g c:m c:m c:m c:m g g d:7 d:7 d:7
+  d:7 g b:7 e e a:m b:7 c cs:dim7 g/d g/d d:7 d:7 g
+}
+
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"
 %% MIDI output
