@@ -550,7 +550,44 @@ I face the hills, the streams, the wood,
 and feel with all akin;
 my heart expands; their fortitude
 and peace and joy flow in.
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/autumn.html">autumn</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/jesu_joy_of_our_desiring.html">Jesu, joy of our desiring</a></td><td class='lyric-box'>Jesu, joy of our desiring, holy wisdom, love most bright,
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/autumn.html">autumn</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/in_the_rifted_rock.html">In the Rifted Rock (Wehrlos und verlassen)</a></td><td class='lyric-box'>In the rifted Rock I'm resting, safely sheltered, I abide.
+There no foes nor storms assail me, while within the cleft I hide.
+
+  Now I'm resting, sweetly resting, in the cleft once made for me.
+  Jesus, blessed Rock of ages, I will hide myself in thee.
+
+Long pursued by sin and Satan, weary, sad, I longed for rest.
+Then I found this heav'nly shelter, opened in my Savior's breast.
+
+Wehrlos und verlassen sehnt sich oft mein Herz nach stiller Ruh';
+doch du deckest mit dem Fittich deiner Liebe sanft mich zu.
+
+  Unter deinem sanften Fittich find' ich Frieden, Trost und Ruh';
+  denn du schirmest mich so freundlich, schützest mich und deckst mich zu.
+
+Drückt mich Kummer, Müh' und Sorge, meine Zuflucht bist nur du,
+rettest mich aus allen Ängsten, tröstest mich und deckst mich zu.
+
+Peace which passeth understanding,
+joy the world can never give,
+now in Jesus, I am finding;
+in his smiles of love I live.
+
+In the rifted Rock I'll hide me,
+till the storms of life are past
+all secure in this blest refuge,
+heeding not the fiercest blast.
+
+Sicher bin ich und geborgen,
+denn bei dir ist süße Ruh';
+mag es auch im Leben stürmen,
+Herr, dein Fittich deckt mich zu.
+
+Kommt dann meine letzte Stunde,
+geh' ich ein zur ew'gen Ruh';
+und du deckst mit deinen Flügeln
+ewiglich dein Kindlein zu.
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/jesu_joy_of_our_desiring.html">Jesu, joy of our desiring</a></td><td class='lyric-box'>Jesu, joy of our desiring, holy wisdom, love most bright,
 drawn by thee, our souls aspiring soar to uncreated light.
 Word of God, our flesh that fashioned, with the fire of life impassioned,
 striving still to truth unknown, soaring, dying round thy throne.
