@@ -12,12 +12,8 @@ This is a project to make or take hymns with permissive copyright status, typese
 
 ### Possible TODOs:
   - Differentiate fonts png versus pdf?
-  - Email lilypond list regarding shape notes + partsCombine
   - Stem default directions down/up?
-  - CSS tweaks:
-    - Fix large/small screen differences
   - Midiplayer tweaks:
-    - Loop play?
     - Add master volume slider
     - Add pitch change slider
     - Add Instrument change option
@@ -35,6 +31,10 @@ This is a project to make or take hymns with permissive copyright status, typese
     - Total number of songs
     - Total number of tunes used
   - Consider reaching out to people
+  - Make shape notes bigger
+  - Less space between two staves in clairnotes
+  - More space below lyrics
+  - Figure out how to understand/clean up extra_lyrics columns
 
 
 
