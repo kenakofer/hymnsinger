@@ -52,7 +52,13 @@ input[type="radio"]:checked + label {
     border: solid 2px black;
 }
 #play-button, #stop-button {
-    width: 50%;
+    width: 30%;
+    padding: 0;
+}
+#loop-span {
+    width: 40%;
+    text-align: center;
+    display: inline-block;
 }
 #play-bar-background {
     border:1px solid #ccc;

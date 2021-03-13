@@ -890,15 +890,15 @@ var MidiPlayer = (function () {
         if (!this.inLoop) {
           this.inLoop = true;
           this.tick = this.getCurrentTick();
-          var stop_flag = false;
+          var end_flag = false;
           this.tracks.forEach(function (track, index) {
-            if (stop_flag)
+            if (end_flag)
                 return;
             // Handle next event
             if (!dryRun && this.endOfFile()) {
               this.triggerPlayerEvent('endOfFile');
               this.stop();
-              stop_flag = true;
+              end_flag = true;
             } else {
               var event = track.handleEvent(this.tick, dryRun);
 
@@ -934,6 +934,8 @@ var MidiPlayer = (function () {
             tick: this.tick
           });
           this.inLoop = false;
+          if (end_flag)
+            this.end();
         }
       }
       /**
@@ -1019,6 +1021,16 @@ var MidiPlayer = (function () {
         document.getElementById('play-button').innerHTML = 'Play';
         document.getElementById('play-bar').style.width = '2%';
 
+        return this;
+      }
+    }, {
+      key: "end",
+      value: function end() {
+        if (document.getElementById('loop-checkbox').checked == true) {
+          this.stop();
+          this.play();
+          document.getElementById('play-button').innerHTML = 'Pause';
+        }
         return this;
       }
       /**
