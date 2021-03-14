@@ -510,6 +510,17 @@ This is the bond of perfectness,
 thy spotless charity.
 O let us still, we pray, possess
 the mind that was in thee.
+</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/i_to_the_hills.html">I to the hills will lift my eyes</a></td><td class='lyric-box'>I to the hills will lift my eyes. From whence shall come my aid?
+My help is from the Lord alone, who heav'n and earth has made.
+
+God will not let your foot be moved, your guardian never sleeps.
+God's watchful and unslumb'ring care protects and safely keeps.
+
+Your faithful keeper is the Lord, your shelter and your shade.
+'Neath sun or moon, by day or night, you shall not be afraid.
+
+From evil God will keep you safe, provide for all you need.
+Your going out, your coming in, God will forever lead.
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/i_walk_the_unfrequented_road.html">I walk the unfrequented road</a></td><td class='lyric-box'>I walk the unfrequented road
 with open eye and ear;
 I watch afield the farmer load
