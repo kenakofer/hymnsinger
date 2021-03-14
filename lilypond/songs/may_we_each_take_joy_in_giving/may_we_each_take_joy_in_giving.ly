@@ -6,18 +6,18 @@
 \include "../../shared_tunes/stuttgart.ly"
 
 %% SONG INFO
-title = \titleText "Grant us, God, the grace of giving"
+title = \titleText "May we each take joy in giving"
 %subtitle = \smallText "Optional"
-poet = \smallText "Text: Robert Murray, 1880, alt."
+poet = \smallText "Text: Robert Murray, 1880, alt. Kenan Schaefkofer, 2021"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "theist 4part acapella 1verse musicbyother textbyother"
+tags = "secular 4part acapella 1verse musicbyother textbyother"
 dateAdded = "2021-03-14"
 \include "../../lib/header.ly"
 
 %% LYRICS
 verseA = \lyricmode {
-  Grant us, God, the grace of giv -- ing with a spir -- it large and free
-  that our -- selves and all our liv -- ing we may of -- fer un -- to thee.
+  May we each take joy in giv -- ing with a spir -- it large and free
+  to our neigh -- bors and the stran -- gers, fost -- er -- ing com -- mun -- i -- ty.
 }
 
 all_verses = <<
