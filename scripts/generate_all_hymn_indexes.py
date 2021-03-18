@@ -98,7 +98,7 @@ def output_header_info(song_file_base, song_title, lyrics, tags, output_file):
         f.write("\n")
         tag_string = " ".join(tags)
         lyrics_string = lyrics[:150].replace("\n", " ")
-        f.write("description: "+lyrics_string+"... "+tag_string+" ")
+        f.write('description: "'+lyrics_string+'... '+tag_string+'"')
         f.write("\n")
         f.write("image: https://github.com/kenanbit/hymn-singer/releases/latest/download/"+song_file_base+"-trad.png")
         f.write("\n")
