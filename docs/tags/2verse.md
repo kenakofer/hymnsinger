@@ -10,7 +10,7 @@ so my soul with ardor burning
 longs for God, its heav'nly source.
 When shall I behold God's face?
 When shall I receive God's grace?
-Whal shall I, God's praises voicing,
+When shall I, God's praises voicing,
 come before our God rejoicing?
 
 Day and night in grief and anguish
@@ -33,7 +33,7 @@ before I have begun to live.
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/2verse.html">2verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_thou_long_expected_jesus.html">Come, thou long-expected Jesus</a></td><td class='lyric-box'>Come, thou longexpected Jesus! born to set thy people free,
 from our fears and sins release us, let us find our rest in thee.
 Israel's strength and consolation, hope of all the earth thou art,
-dear desire of evry nation, joy of ev'ry longing heart.
+dear desire of ev'ry nation, joy of ev'ry longing heart.
 
 Born thy people to deliver, born a child, and yet a King,
 born to reign in us forever, now thy gracious kingdom bring.

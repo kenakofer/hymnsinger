@@ -71,7 +71,7 @@ verseC = \lyricmode {
 verseD = \lyricmode {
   So be it, Lord, your throne shall nev -- er,
   like earth's proud king -- doms pass a -- way.
-  Your kind -- dom stands and grows for -- ev -- er,
+  Your king -- dom stands and grows for -- ev -- er,
   un -- til there dawns your glo -- rious day.
 }
 verseE = \lyricmode { }

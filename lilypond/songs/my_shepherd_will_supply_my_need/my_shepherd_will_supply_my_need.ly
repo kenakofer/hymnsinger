@@ -17,7 +17,7 @@ dateAdded = "2021-03-04"
 verseA = \lyricmode {
   My Shep -- herd will sup -- ply my need; most ho -- ly is your name.
   In pas -- tures fresh you make me feed, be -- side the liv -- ing stream.
-  You bring my wan -- d'ring spir -- it back, when I far -- sake your ways,
+  You bring my wan -- d'ring spir -- it back, when I for -- sake your ways,
   and lead me for your mer -- cy's sake, in paths of truth and grace.
 }
 verseB = \lyricmode {

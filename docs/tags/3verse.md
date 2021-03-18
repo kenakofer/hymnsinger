@@ -121,7 +121,7 @@ Komm, du nahes Wesen; dich in mir verkläre, dass ich dich stets lieb und ehre.
 Wo ich geh, sitz und steh, lass mich dich erblicken und vor dir mich bücken.
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/great_is_thy_faithfulness.html">Great is thy faithfulness</a></td><td class='lyric-box'>Great is thy faithfulness, O God my Maker.
 There is no shadow of turning with thee.
-Thou changest not, they comppassions, they fail not.
+Thou changest not, thy compassions, they fail not.
 As thou hast been thou forever wilt be.
 
   Great is thy faithfulness! Great is thy faithfulness!
@@ -200,7 +200,7 @@ about the woodlands I will go,
 see the cherry hung with snow.
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/spring.html">spring</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/my_shepherd_will_supply_my_need.html">My Shepherd will supply my need;</a></td><td class='lyric-box'>My Shepherd will supply my need; most holy is your name.
 In pastures fresh you make me feed, beside the living stream.
-You bring my wand'ring spirit back, when I farsake your ways,
+You bring my wand'ring spirit back, when I forsake your ways,
 and lead me for your mercy's sake, in paths of truth and grace.
 
 When I walk through the shades of death, your presence is my stay.

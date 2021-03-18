@@ -65,7 +65,7 @@ verseA = \lyricmode {
   Glo -- ri -- a in ex -- cel -- sis De -- o, glo -- ri -- a in ex -- cel -- sis De -- o.
 }
 verseB = \lyricmode {
-  Shep -- herds, why this je -- bi -- lee? Why these songs of hap -- py cheer?
+  Shep -- herds, why this ju -- bi -- lee? Why these songs of hap -- py cheer?
   What great bright -- ness did you see? What glad tid -- ings did you hear?
 }
 verseC = \lyricmode {

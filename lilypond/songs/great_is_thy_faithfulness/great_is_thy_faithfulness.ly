@@ -75,7 +75,7 @@ bass = {
 verseA = \lyricmode {
   Great is thy faith -- ful -- ness, O God my Ma -- ker.
   There is no shad -- ow of turn -- ing with thee.
-  Thou chang -- est not, they comp -- pas -- sions, they fail not.
+  Thou chang -- est not, thy com -- pas -- sions, they fail not.
   As thou hast been thou for -- ev -- er wilt be.
   %% CHORUS
   Great is thy faith -- ful -- ness! Great is thy faith -- ful -- ness!

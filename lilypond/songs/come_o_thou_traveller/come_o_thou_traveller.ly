@@ -85,7 +85,7 @@ extra_verses = \markup {
       \line { \bold "4"
         \column { % LYRICS-START
 "Wilt thou not yet to me reveal"
-"thy new, unuerable name?"
+"thy new, unutterable name?"
 "Tell me, I still beseech thee, tell,"
 "to know it now resolved I am."
 "Wrestling, I will not let thee go,"

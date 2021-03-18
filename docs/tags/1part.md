@@ -20,7 +20,7 @@ Wrestling, I will not let thee go,
 till I thy name, thy nature know.
 
 Wilt thou not yet to me reveal
-thy new, unuerable name?
+thy new, unutterable name?
 Tell me, I still beseech thee, tell,
 to know it now resolved I am.
 Wrestling, I will not let thee go,
@@ -101,7 +101,7 @@ Your God is watching you!
 Mere reason of one mind can't win; the test of time is passed.
 Religions of today are the religions fit to last.
 Members true through power, fear, or friendly company
-instill again in children's minds, "Eat not from yonder tree."
+rebuke again their wayward young, "Eat not from yonder tree."
 Eat not from yonder tree!
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/accompanied.html">accompanied</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbykenan.html">textbykenan</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/singer_of_life.html">Singer of Life</a></td><td class='lyric-box'>Singer of Life, all flowers are songs, with petals do you write.
 Singer of Life, you color the earth, dazzling the eye with birds red and bright.

@@ -24,7 +24,7 @@ verseA = \lyricmode {
   longs for God, its heav'n -- ly source.
   When shall I be -- hold God's face?
   When shall I re -- ceive God's grace?
-  Whal shall I, God's prais -- es voic -- ing,
+  When shall I, God's prais -- es voic -- ing,
   come be -- fore our God re -- joic -- ing?
 }
 verseB = \lyricmode {

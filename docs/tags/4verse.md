@@ -43,7 +43,7 @@ and the mountains in reply echoing their brave delight.
 
   Gloria in excelsis Deo, gloria in excelsis Deo.
 
-Shepherds, why this jebilee? Why these songs of happy cheer?
+Shepherds, why this jubilee? Why these songs of happy cheer?
 What great brightness did you see? What glad tidings did you hear?
 
 Come to Bethlehem and see him whose birth the angels sing.
@@ -314,7 +314,7 @@ nor do the praises die away.
 
 So be it, Lord, your throne shall never,
 like earth's proud kingdoms pass away.
-Your kinddom stands and grows forever,
+Your kingdom stands and grows forever,
 until there dawns your glorious day.
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/evening.html">evening</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/when_peace_like_a_river.html">When Peace like a River</a></td><td class='lyric-box'>When peace like a river attendeth my way, when sorrows like sea billows roll,
 whatever my lot, thou hast taught me to say, ''It is well, it is well with my soul.''

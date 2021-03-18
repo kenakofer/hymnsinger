@@ -20,7 +20,7 @@ Wrestling, I will not let thee go,
 till I thy name, thy nature know.
 
 Wilt thou not yet to me reveal
-thy new, unuerable name?
+thy new, unutterable name?
 Tell me, I still beseech thee, tell,
 to know it now resolved I am.
 Wrestling, I will not let thee go,
@@ -76,7 +76,7 @@ nor have I power from thee to move.
 Thy nature, and thy name is Love!
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/accompanied.html">accompanied</a><a class="taglink" href="{{ site.baseurl }}/tags/11verse.html">11verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/my_shepherd_will_supply_my_need.html">My Shepherd will supply my need;</a></td><td class='lyric-box'>My Shepherd will supply my need; most holy is your name.
 In pastures fresh you make me feed, beside the living stream.
-You bring my wand'ring spirit back, when I farsake your ways,
+You bring my wand'ring spirit back, when I forsake your ways,
 and lead me for your mercy's sake, in paths of truth and grace.
 
 When I walk through the shades of death, your presence is my stay.
@@ -163,7 +163,7 @@ Your God is watching you!
 Mere reason of one mind can't win; the test of time is passed.
 Religions of today are the religions fit to last.
 Members true through power, fear, or friendly company
-instill again in children's minds, "Eat not from yonder tree."
+rebuke again their wayward young, "Eat not from yonder tree."
 Eat not from yonder tree!
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/accompanied.html">accompanied</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbykenan.html">textbykenan</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/step_by_step_the_longest_march.html">Step by step the longest march</a></td><td class='lyric-box'>Step by step the longest march can be won, can be won,
 Many stones can form an arch, singly none, singly none.

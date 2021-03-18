@@ -12,7 +12,7 @@ Thou burning sun with golden beam, thou silver moon with softer gleam,
 
   O sing ye, O sing ye, alleluia, alleluia, alleluia!
 
-Thou rushish wind that art so strong, ye clouds that sail in heav'n along,
+Thou rushing wind that art so strong, ye clouds that sail in heav'n along,
 
   alleluia, alleluia!
 

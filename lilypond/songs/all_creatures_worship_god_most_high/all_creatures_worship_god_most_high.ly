@@ -27,7 +27,7 @@ verseA = \lyricmode {
   %% END CHORUS
 }
 verseB = \lyricmode {
-  Thou rush -- ish wind that art so strong, ye clouds that sail in heav'n a -- long,
+  Thou rush -- ing wind that art so strong, ye clouds that sail in heav'n a -- long,
   %% CHORUS
   %% al -- le -- lu -- ia, al -- le -- lu -- ia!
   _ _ _ _ _ _ _ _

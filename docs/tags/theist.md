@@ -72,7 +72,7 @@ so my soul with ardor burning
 longs for God, its heav'nly source.
 When shall I behold God's face?
 When shall I receive God's grace?
-Whal shall I, God's praises voicing,
+When shall I, God's praises voicing,
 come before our God rejoicing?
 
 Day and night in grief and anguish
@@ -163,7 +163,7 @@ Wrestling, I will not let thee go,
 till I thy name, thy nature know.
 
 Wilt thou not yet to me reveal
-thy new, unuerable name?
+thy new, unutterable name?
 Tell me, I still beseech thee, tell,
 to know it now resolved I am.
 Wrestling, I will not let thee go,
@@ -230,7 +230,7 @@ God of harvest, grant that we wholesome grain and pure may be.
 that ourselves and all our living we may offer unto thee.
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/1verse.html">1verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/great_is_thy_faithfulness.html">Great is thy faithfulness</a></td><td class='lyric-box'>Great is thy faithfulness, O God my Maker.
 There is no shadow of turning with thee.
-Thou changest not, they comppassions, they fail not.
+Thou changest not, thy compassions, they fail not.
 As thou hast been thou forever wilt be.
 
   Great is thy faithfulness! Great is thy faithfulness!

@@ -9,7 +9,7 @@ and the mountains in reply echoing their brave delight.
 
   Gloria in excelsis Deo, gloria in excelsis Deo.
 
-Shepherds, why this jebilee? Why these songs of happy cheer?
+Shepherds, why this jubilee? Why these songs of happy cheer?
 What great brightness did you see? What glad tidings did you hear?
 
 Come to Bethlehem and see him whose birth the angels sing.

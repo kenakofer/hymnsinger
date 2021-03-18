@@ -74,7 +74,7 @@ Thou burning sun with golden beam, thou silver moon with softer gleam,
 
   O sing ye, O sing ye, alleluia, alleluia, alleluia!
 
-Thou rushish wind that art so strong, ye clouds that sail in heav'n along,
+Thou rushing wind that art so strong, ye clouds that sail in heav'n along,
 
   alleluia, alleluia!
 
@@ -166,7 +166,7 @@ and the mountains in reply echoing their brave delight.
 
   Gloria in excelsis Deo, gloria in excelsis Deo.
 
-Shepherds, why this jebilee? Why these songs of happy cheer?
+Shepherds, why this jubilee? Why these songs of happy cheer?
 What great brightness did you see? What glad tidings did you hear?
 
 Come to Bethlehem and see him whose birth the angels sing.
@@ -180,7 +180,7 @@ so my soul with ardor burning
 longs for God, its heav'nly source.
 When shall I behold God's face?
 When shall I receive God's grace?
-Whal shall I, God's praises voicing,
+When shall I, God's praises voicing,
 come before our God rejoicing?
 
 Day and night in grief and anguish
@@ -319,7 +319,7 @@ Wrestling, I will not let thee go,
 till I thy name, thy nature know.
 
 Wilt thou not yet to me reveal
-thy new, unuerable name?
+thy new, unutterable name?
 Tell me, I still beseech thee, tell,
 to know it now resolved I am.
 Wrestling, I will not let thee go,
@@ -389,7 +389,7 @@ Here’s my heart, O take and seal it, seal it for thy courts above.
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_thou_long_expected_jesus.html">Come, thou long-expected Jesus</a></td><td class='lyric-box'>Come, thou longexpected Jesus! born to set thy people free,
 from our fears and sins release us, let us find our rest in thee.
 Israel's strength and consolation, hope of all the earth thou art,
-dear desire of evry nation, joy of ev'ry longing heart.
+dear desire of ev'ry nation, joy of ev'ry longing heart.
 
 Born thy people to deliver, born a child, and yet a King,
 born to reign in us forever, now thy gracious kingdom bring.
@@ -459,7 +459,7 @@ Wo ich geh, sitz und steh, lass mich dich erblicken und vor dir mich bücken.
 that ourselves and all our living we may offer unto thee.
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/1verse.html">1verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/great_is_thy_faithfulness.html">Great is thy faithfulness</a></td><td class='lyric-box'>Great is thy faithfulness, O God my Maker.
 There is no shadow of turning with thee.
-Thou changest not, they comppassions, they fail not.
+Thou changest not, thy compassions, they fail not.
 As thou hast been thou forever wilt be.
 
   Great is thy faithfulness! Great is thy faithfulness!
@@ -704,7 +704,7 @@ and hold love in.
 to our neighbors and the strangers, fostering community.
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/1verse.html">1verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/my_shepherd_will_supply_my_need.html">My Shepherd will supply my need;</a></td><td class='lyric-box'>My Shepherd will supply my need; most holy is your name.
 In pastures fresh you make me feed, beside the living stream.
-You bring my wand'ring spirit back, when I farsake your ways,
+You bring my wand'ring spirit back, when I forsake your ways,
 and lead me for your mercy's sake, in paths of truth and grace.
 
 When I walk through the shades of death, your presence is my stay.
@@ -903,7 +903,7 @@ nor do the praises die away.
 
 So be it, Lord, your throne shall never,
 like earth's proud kingdoms pass away.
-Your kinddom stands and grows forever,
+Your kingdom stands and grows forever,
 until there dawns your glorious day.
 </td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/evening.html">evening</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_morning_hangs_a_signal.html">The morning hangs a signal</a></td><td class='lyric-box'>The morning hangs a signal upon the mountain crest,
 while all the sleeping valleys in silent darkness rest.
