@@ -2,8 +2,9 @@
 title: Songs tagged 6verse
 layout: default
 ---
+{% include data_table.html %}
 # Tag: 6verse
-<table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>
+<table id='song-table'><thead><th>Song</th><th>Lyrics</th><th>Tags</th></thead>
 <tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/amazing_grace.html">Amazing grace</a></td><td class='lyric-box'>Amazing grace! how sweet the sound, that saved a wretch like me!
 I once was lost, but now am found, was blind, but now I see.
 

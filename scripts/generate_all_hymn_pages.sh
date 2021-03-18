@@ -9,8 +9,9 @@ while read line; do
         echo "title: Songs tagged $tag" >> $TAGFILE
         echo "layout: default" >> $TAGFILE
         echo "---" >> $TAGFILE
+        echo "{% include data_table.html %}" >> $TAGFILE
         echo "# Tag: $tag" >> $TAGFILE
-        echo "<table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>" >> $TAGFILE
+        echo "<table id='song-table'><thead><th>Song</th><th>Lyrics</th><th>Tags</th></thead>" >> $TAGFILE
     done
 done < "$SCRIPT_DIR/../docs/all_tags.txt"
 
@@ -22,8 +23,9 @@ echo "title: Complete Index" >> $LISTFILE
 echo "description: An list of every hymn song music resource on the site" >> $LISTFILE
 echo "layout: default" >> $LISTFILE
 echo "---" >> $LISTFILE
+echo "{% include data_table.html %}" >> $LISTFILE
 echo "# Complete Index" >> $LISTFILE
-echo "<table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>" >> $LISTFILE
+echo "<table id='song-table'><thead><th>Song</th><th>Lyrics</th><th>Tags</th></thead>" >> $LISTFILE
 
 
 find lilypond/songs -type f -iname "*.ly" -print0 | sort -z | while IFS= read -r -d $'\0' file; do

@@ -2,8 +2,9 @@
 title: Songs tagged 5verse
 layout: default
 ---
+{% include data_table.html %}
 # Tag: 5verse
-<table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>
+<table id='song-table'><thead><th>Song</th><th>Lyrics</th><th>Tags</th></thead>
 <tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/all_creatures_of_the_earth_and_sky.html">All creatures of the earth and sky</a></td><td class='lyric-box'>All creatures of the earth and sky, come, kindred, lift your voices high,
 
   alleluia, alleluia!

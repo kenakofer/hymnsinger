@@ -2,8 +2,9 @@
 title: Songs tagged summer
 layout: default
 ---
+{% include data_table.html %}
 # Tag: summer
-<table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>
+<table id='song-table'><thead><th>Song</th><th>Lyrics</th><th>Tags</th></thead>
 <tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/warm_summer_sun.html">Warm summer sun</a></td><td class='lyric-box'>Warm summer sun, shine kindly here,
 Warm southern wind, blow softly here,
 Green sod above, lie light, lie light.

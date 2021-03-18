@@ -2,8 +2,9 @@
 title: Songs tagged textbykenan
 layout: default
 ---
+{% include data_table.html %}
 # Tag: textbykenan
-<table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>
+<table id='song-table'><thead><th>Song</th><th>Lyrics</th><th>Tags</th></thead>
 <tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/religion_fit_to_last.html">Religion fit to last</a></td><td class='lyric-box'>A voice within becomes distressed to see you taste the fruit,
 forbidden by your God and creed, respected since your youth:
 ''Prodigal, I'll fight in you, restore your faith to thrive.

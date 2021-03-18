@@ -2,8 +2,9 @@
 title: Songs tagged textadaptedbykenan
 layout: default
 ---
+{% include data_table.html %}
 # Tag: textadaptedbykenan
-<table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>
+<table id='song-table'><thead><th>Song</th><th>Lyrics</th><th>Tags</th></thead>
 <tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/for_the_beauty_of_our_earth.html">For the beauty of our earth</a></td><td class='lyric-box'>For the beauty of our earth, for the glory of her skies,
 for the love which from our birth over and around us lies:
 

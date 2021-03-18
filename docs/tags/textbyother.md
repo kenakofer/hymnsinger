@@ -2,8 +2,9 @@
 title: Songs tagged textbyother
 layout: default
 ---
+{% include data_table.html %}
 # Tag: textbyother
-<table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>
+<table id='song-table'><thead><th>Song</th><th>Lyrics</th><th>Tags</th></thead>
 <tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/abide_with_me.html">Abide with me</a></td><td class='lyric-box'>Abide with me; Fast falls the eventide,
 The darkness deepens; Lord, with me abide!
 When other helpers fail, and comforts flee,

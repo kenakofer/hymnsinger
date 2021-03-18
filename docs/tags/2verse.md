@@ -2,8 +2,9 @@
 title: Songs tagged 2verse
 layout: default
 ---
+{% include data_table.html %}
 # Tag: 2verse
-<table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>
+<table id='song-table'><thead><th>Song</th><th>Lyrics</th><th>Tags</th></thead>
 <tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/as_the_deer_with_eager_yearning.html">As the deer with eager yearning</a></td><td class='lyric-box'>As the deer with eager yearning
 seeks the cooling watercourse,
 so my soul with ardor burning

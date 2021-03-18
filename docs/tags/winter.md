@@ -2,8 +2,9 @@
 title: Songs tagged winter
 layout: default
 ---
+{% include data_table.html %}
 # Tag: winter
-<table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>
+<table id='song-table'><thead><th>Song</th><th>Lyrics</th><th>Tags</th></thead>
 <tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/angels_we_have_heard.html">Angels we have heard on high</a></td><td class='lyric-box'>Angels we have heard on high, singing sweetly through the night,
 and the mountains in reply echoing their brave delight.
 

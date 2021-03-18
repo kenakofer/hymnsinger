@@ -2,5 +2,6 @@
 title: Songs tagged nolyrics
 layout: default
 ---
+{% include data_table.html %}
 # Tag: nolyrics
-<table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>
+<table id='song-table'><thead><th>Song</th><th>Lyrics</th><th>Tags</th></thead>

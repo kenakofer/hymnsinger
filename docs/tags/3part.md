@@ -2,8 +2,9 @@
 title: Songs tagged 3part
 layout: default
 ---
+{% include data_table.html %}
 # Tag: 3part
-<table><tr><th>Song</th><th>Lyrics</th><th>Tags</th></tr>
+<table id='song-table'><thead><th>Song</th><th>Lyrics</th><th>Tags</th></thead>
 <tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/step_by_step_the_longest_march.html">Step by step the longest march</a></td><td class='lyric-box'>Step by step the longest march can be won, can be won,
 Many stones can form an arch, singly none, singly none.
 And by union what we will can be accomplished still,
