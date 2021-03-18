@@ -115,7 +115,7 @@ extra_verses = \markup {
 "Mere reason of one mind can't win; the test of time is passed."
 "Religions of today are the religions fit to last."
 "Members true through power, fear, or friendly company"
-"instill again in children's minds, \"Eat not from yonder tree.\""
+"rebuke again their wayward young, \"Eat not from yonder tree.\""
 "\"Eat not from yonder tree!\""
         }
       }
