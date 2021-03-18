@@ -2,7 +2,7 @@
 layout: song_page
 song_file: o_come_all_ye_faithful
 title: O come, all ye faithful
-description: O come, all ye faithful, joyful and triumphant, O come ye, O come ye to Bethlehem. Come and behold him, born the King of angels.    O come, let us ado... christian 4part acapella 4verse musicbyother textbyother winter 
+description: "O come, all ye faithful, joyful and triumphant, O come ye, O come ye to Bethlehem. Come and behold him, born the King of angels.    O come, let us ado... christian 4part acapella 4verse musicbyother textbyother winter"
 image: https://github.com/kenanbit/hymn-singer/releases/latest/download/o_come_all_ye_faithful-trad.png
 ---
 
