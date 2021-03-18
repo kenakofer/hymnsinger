@@ -6,7 +6,18 @@
 <script>
 $(document).ready( function () {
     $('#song-table').DataTable({
-        "paging": false
+        "paging": false,
+        "dom": "ifrt",
+        "language": {
+            "info": "_TOTAL_ songs",
+            "infoEmpty": "None found",
+            "infoFiltered": "(filtered from _MAX_)"
+        },
+        "columns": [
+            null,
+            { "orderable": false },
+            { "orderable": false }
+        ]
     });
 } );
 </script>
