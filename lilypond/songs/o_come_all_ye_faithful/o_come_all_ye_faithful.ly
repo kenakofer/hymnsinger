@@ -4,7 +4,7 @@
 
 %% TUNE INFO
 composer = \smallText "Music: John F. Wade, 1782"
-meter = \smallText "ADESTE FIDELES Irregular"
+meter = \smallText "ADESTE FIDELES irregular"
 hymnKey = \key a \major
 hymnTime = \time 4/4
 quarternoteTempo = 120

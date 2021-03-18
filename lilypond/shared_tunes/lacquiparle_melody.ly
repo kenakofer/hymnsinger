@@ -1,5 +1,5 @@
 composer = \smallText "Music: Plains Indian traditional, 1879"
-meter = \smallText "LACQUIPARLE Irregular"
+meter = \smallText "LACQUIPARLE irregular"
 hymnKey = \key c \minor
 hymnTime = \time 2/2
 quarternoteTempo = 165

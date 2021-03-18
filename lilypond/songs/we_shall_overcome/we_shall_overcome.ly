@@ -5,7 +5,7 @@
 %% TUNE INFO
 composer = \smallText "Music: African-American Spiritual"
 arranger = \smallText "Arranged by Kenan Schaefkofer, 2021"
-meter = \smallText "WE SHALL OVERCOME (irregular)"
+meter = \smallText "WE SHALL OVERCOME irregular"
 hymnKey = \key c \major
 hymnTime = \time 4/4
 quarternoteTempo = 100
