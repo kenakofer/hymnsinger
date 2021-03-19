@@ -185,8 +185,6 @@ if __name__ == "__main__":
         all_tags = get_tags(lines)
         song_title = get_title(lines)
         tune, meter = get_tune_and_meter(lines)
-    for tag in all_tags:
-        index_files_to_append_to.append("docs/tags/"+tag+".md")
     date_added = get_date_added(lines)
     for output_file in index_files_to_append_to:
         output_table_row(song_file_base, song_title, all_lyrics, tune, meter, all_tags, date_added, output_file)
