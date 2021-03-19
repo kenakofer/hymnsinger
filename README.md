@@ -36,3 +36,9 @@ This is a project to make or take hymns with permissive copyright status, typese
   - More space below lyrics
   - Figure out how to understand/clean up extra_lyrics columns
   - Correct tags on song page markdown
+  - Include song index data in pages somehow (js?) then DRY on indexes
+  - try to use JS to pull out search params?
+  - Store full index in JSON?
+  - Remove "~" from lyrics extraction
+  - ' versus ’ in lyrics extraction
+  - Extract TUNE, music, text data
