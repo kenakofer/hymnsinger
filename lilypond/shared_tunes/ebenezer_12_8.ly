@@ -39,4 +39,8 @@ bass = {
 }
 songChords = \chords {
   \set chordChanges = ##t
+  e4.:m e:m b c b b e:m e:m g d e:m e:m b:7 b:7 e:m e:m
+  e4.:m e:m b c b b e:m e:m g d e:m e:m b:7 b:7 e:m e:m
+  g g d d e:m e:m b b e:m e:m d d e:m d g g
+  e4.:m e:m b c b b e:m e:m g d e:m e:m b:7 b:7 e:m e:m
 }
