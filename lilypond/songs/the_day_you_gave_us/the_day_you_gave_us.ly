@@ -14,7 +14,8 @@ quarternoteTempo = 110
 title = \titleText "The day you gave us, Lord"
 poet = \smallText "Text: John Ellerton, 1870"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "christian 4part 4verse musicbyother textbyother evening"
+verseCount = 4
+tags = "christian 4part musicbyother textbyother evening"
 dateAdded = "2021-01-16"
 \include "../../lib/header.ly"
 

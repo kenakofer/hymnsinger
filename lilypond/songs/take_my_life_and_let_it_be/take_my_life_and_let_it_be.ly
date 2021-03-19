@@ -17,7 +17,8 @@ poet = \smallText "Text: Frances R. Havergal, 1874"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 %prescore_text = \prescoreText "Uncomment to add text up and left of the score"
 %postscore_text = \postscoreText "Uncomment to add text down and left of the score"
-tags = "theist 4part 5verse musicbyother textbyother"
+verseCount = 5
+tags = "theist 4part musicbyother textbyother"
 dateAdded = "2021-03-09"
 \include "../../lib/header.ly"
 

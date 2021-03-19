@@ -14,7 +14,8 @@ quarternoteTempo = 120
 title = \titleText "Lo, how a Rose e'er blooming"
 poet = \smallText "Tr. Theodore Baker (Sts. 1-2), 1894, Harriet Spaeth (St. 3), 1875"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "christian 4part 3verse musicbyother textbyother winter"
+verseCount = 3
+tags = "christian 4part musicbyother textbyother winter"
 dateAdded = "2021-01-12"
 \include "../../lib/header.ly"
 

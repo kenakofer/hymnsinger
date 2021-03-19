@@ -14,7 +14,8 @@ quarternoteTempo = 90
 title = \titleText "Come, thou fount"
 poet = \smallText "Text: Robert Robinson, 1759"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "christian 4part 3verse musicbyother textbyother"
+verseCount = 3
+tags = "christian 4part musicbyother textbyother"
 dateAdded = "2021-01-13"
 \include "../../lib/header.ly"
 

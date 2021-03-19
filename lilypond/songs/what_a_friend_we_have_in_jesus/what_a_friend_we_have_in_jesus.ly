@@ -16,7 +16,8 @@ poet = \smallText "Text: Joseph M. Scriven, 1855, alt."
 copyright = \public_domain_notice "Kenan Schaefkofer"
 %prescore_text = \prescoreText "Uncomment to add text up and left of the score"
 %postscore_text = \postscoreText "Uncomment to add text down and left of the score"
-tags = "christian 4part 3verse musicbyother textbyother"
+verseCount = 3
+tags = "christian 4part musicbyother textbyother"
 dateAdded = "2021-03-19"
 \include "../../lib/header.ly"
 

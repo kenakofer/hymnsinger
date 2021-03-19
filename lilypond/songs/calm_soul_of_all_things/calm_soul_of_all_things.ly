@@ -10,7 +10,8 @@ quarternoteTempo = 100
 title = \titleText "Calm soul of all things"
 poet = \smallText "Text: Matthew Arnold (1822-1888)"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "theist 4part 2verse musicbyother textbyother"
+verseCount = 2
+tags = "theist 4part musicbyother textbyother"
 prescore_text = \prescoreText "Unison when sung in canon"
 dateAdded = "2021-03-09"
 \include "../../lib/header.ly"

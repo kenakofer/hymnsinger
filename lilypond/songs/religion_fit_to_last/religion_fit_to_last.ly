@@ -15,7 +15,8 @@ title = \titleText "Religion fit to last"
 arranger = \smallText "Arranged by Kenan Schaefkofer, 2021"
 poet = \smallText "Text: Kenan Schaefkofer, 2021"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "secular 1part accompanied 5verse arrbykenan textbykenan"
+verseCount = 5
+tags = "secular 1part accompanied arrbykenan textbykenan"
 dateAdded = "2021-01-12"
 \include "../../lib/header.ly"
 

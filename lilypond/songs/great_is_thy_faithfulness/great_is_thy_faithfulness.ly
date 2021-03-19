@@ -14,7 +14,8 @@ quarternoteTempo = 120
 title = \titleText "Great is thy faithfulness"
 poet = \smallText "Text: Thomas O. Chisholm, 1923"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "theist 4part 3verse musicbyother textbyother"
+verseCount = 3
+tags = "theist 4part musicbyother textbyother"
 dateAdded = "2021-01-24"
 \include "../../lib/header.ly"
 

@@ -16,7 +16,8 @@ quarternoteTempo = 120
 title = \titleText "Lift every voice and sing"
 poet = \smallText "Text: J. Rosamond Johnson, 1899"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "theist 4part 3verse musicbyother textbyother"
+verseCount = 3
+tags = "theist 4part musicbyother textbyother"
 dateAdded = "2021-01-16"
 \include "../../lib/header.ly"
 

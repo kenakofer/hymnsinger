@@ -16,7 +16,8 @@ quarternoteTempo = 65
 title = \titleText "What Child is this"
 poet = \smallText "Text: William C. Dix, ca. 1865"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "christian 4part 3verse musicbyother textbyother winter"
+verseCount = 3
+tags = "christian 4part musicbyother textbyother winter"
 dateAdded = "2021-01-12"
 \include "../../lib/header.ly"
 

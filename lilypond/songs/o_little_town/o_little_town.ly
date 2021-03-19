@@ -14,7 +14,8 @@ quarternoteTempo = 110
 title = \titleText "O little town of Bethlehem"
 poet = \smallText "Text: Phillips Brooks, 1874"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "christian 4part 4verse musicbyother textbyother winter evening"
+verseCount = 4
+tags = "christian 4part musicbyother textbyother winter evening"
 dateAdded = "2021-01-12"
 \include "../../lib/header.ly"
 

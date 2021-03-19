@@ -9,7 +9,8 @@
 title = \titleText "Amazing grace"
 poet = \smallText "Text: John Newton, 1779 (Sts. 1-5), 1790 (St. 6)"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "christian 4part 6verse musicbyother textbyother"
+verseCount = 6
+tags = "christian 4part musicbyother textbyother"
 dateAdded = "2021-01-11"
 \include "../../lib/header.ly"
 

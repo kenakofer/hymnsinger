@@ -9,7 +9,8 @@
 title = \titleText "My Shepherd will supply my need"
 poet = \smallText "Text: Isaac Watts, 1719, alt."
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "christian 4part 3verse arrbykenan textbyother"
+verseCount = 3
+tags = "christian 4part arrbykenan textbyother"
 dateAdded = "2021-03-04"
 \include "../../lib/header.ly"
 

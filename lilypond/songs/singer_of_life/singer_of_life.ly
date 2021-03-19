@@ -9,7 +9,8 @@
 title = \titleText "Singer of Life"
 poet = \smallText "Text: From a Texcoco Nahuatl poem"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "theist 1part 2verse musicbyother textbyother"
+verseCount = 2
+tags = "theist 1part musicbyother textbyother"
 dateAdded = "2021-03-08"
 \include "../../lib/header.ly"
 

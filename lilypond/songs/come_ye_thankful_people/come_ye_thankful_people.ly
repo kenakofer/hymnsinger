@@ -14,7 +14,8 @@ quarternoteTempo = 120
 title = \titleText "Come, ye thankful people"
 poet = \smallText "Text: Henry Alford, 1844"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "theist 4part 3verse musicbyother textbyother autumn"
+verseCount = 3
+tags = "theist 4part musicbyother textbyother autumn"
 dateAdded = "2021-02-12"
 \include "../../lib/header.ly"
 

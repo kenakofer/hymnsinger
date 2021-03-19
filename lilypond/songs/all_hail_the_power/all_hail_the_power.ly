@@ -14,7 +14,8 @@ quarternoteTempo = 120
 title = \titleText "All hail the power of Jesus' name"
 poet = \smallText "Text: Edward Perronet, 1780, revised by John Rippon, 1787"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "christian 4part 4verse musicbyother textbyother"
+verseCount = 4
+tags = "christian 4part musicbyother textbyother"
 dateAdded = "2021-01-14"
 \include "../../lib/header.ly"
 

@@ -14,7 +14,8 @@ quarternoteTempo = 130
 title = \titleText "Brethren, we have met to worship"
 poet = \smallText "Text: The Columbian Harmony, 1825"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "christian 4part 4verse musicbyother textbyother"
+verseCount = 4
+tags = "christian 4part musicbyother textbyother"
 dateAdded = "2021-01-07"
 \include "../../lib/header.ly"
 

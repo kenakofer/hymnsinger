@@ -11,7 +11,8 @@ quarternoteTempo = 120
 \include "../../lib/global_parts.ly"
 
 %% SONG INFO
-tags = "secular 4part 3verse musicbyother textbyother spring"
+verseCount = 3
+tags = "secular 4part musicbyother textbyother spring"
 title = \titleText "Lovelist of trees"
 poet = \smallText "Text: A. E. Housman, 1896"
 copyright = \public_domain_notice "Kenan Schaefkofer"

@@ -15,7 +15,8 @@ quarternoteTempo = 120
 title = \titleText "Be thou my vision"
 poet = \smallText "Text: Ancient Irish, tr. Mary Elizabeth Byrne, 1905"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "theist 4part 5verse musicbyother textbyother"
+verseCount = 5
+tags = "theist 4part musicbyother textbyother"
 dateAdded = "2021-01-13"
 \include "../../lib/header.ly"
 

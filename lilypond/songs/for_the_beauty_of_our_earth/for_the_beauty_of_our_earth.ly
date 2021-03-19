@@ -10,7 +10,8 @@ quarternoteTempo = 120
 title = \titleText "For the beauty of our earth"
 poet = \twoLineSmallText "Text: Folliott S. Pierpoint, 1864" "Adapted by Kenan Schaefkofer, 2021"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "secular 4part 5verse musicbyother textadaptedbykenan"
+verseCount = 5
+tags = "secular 4part musicbyother textadaptedbykenan"
 dateAdded = "2021-01-05"
 \include "../../lib/header.ly"
 

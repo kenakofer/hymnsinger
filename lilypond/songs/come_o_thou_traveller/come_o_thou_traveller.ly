@@ -15,7 +15,8 @@ quarternoteTempo = 120
 title = \titleText "Come, O thou Traveler unknown"
 poet = \smallText "Text: Charles Wesley, 1742"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "theist 1part accompanied 11verse arrbykenan textbyother"
+verseCount = 11
+tags = "theist 1part accompanied arrbykenan textbyother"
 dateAdded = "2021-01-11"
 \include "../../lib/header.ly"
 

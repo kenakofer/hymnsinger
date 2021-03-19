@@ -15,7 +15,8 @@ quarternoteTempo = 70
 title = \titleText "Break forth, O beauteous heavenly light"
 poet = \smallText "Text: Johann Rist, 1641, tr. John Troutbeck ca. 1885"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "christian 4part 1verse musicbyother textbyother morning"
+verseCount = 1
+tags = "christian 4part musicbyother textbyother morning"
 dateAdded = "2021-01-08"
 \include "../../lib/header.ly"
 

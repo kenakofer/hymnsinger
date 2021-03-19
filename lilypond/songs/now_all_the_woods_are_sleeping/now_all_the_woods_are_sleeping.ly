@@ -14,7 +14,8 @@ quarternoteTempo = 140
 title = \titleText "Now all the woods are sleeping"
 poet = \smallText "Text: Paul Gerhardt, 1648, tr. and alt. Kenan Schaefkofer, 2021"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "secular 4part 4verse musicbyother textadaptedbykenan evening"
+verseCount = 4
+tags = "secular 4part musicbyother textadaptedbykenan evening"
 dateAdded = "2021-01-16"
 \include "../../lib/header.ly"
 

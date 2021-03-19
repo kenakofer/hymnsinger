@@ -12,7 +12,8 @@ poet = \smallText "Text: Based on Psalm 42, Christine T. Curtis, 1939, alt."
 copyright = \public_domain_notice "Kenan Schaefkofer"
 %prescore_text = \prescoreText "Uncomment to add text up and left of the score"
 %postscore_text = \postscoreText "Uncomment to add text down and left of the score"
-tags = "theist 4part 2verse musicbyother textbyother"
+verseCount = 2
+tags = "theist 4part musicbyother textbyother"
 dateAdded = "2021-03-09"
 \include "../../lib/header.ly"
 
