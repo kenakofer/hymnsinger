@@ -156,7 +156,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \override #'(font-series . "regular")
         \fontsize #-4
         \with-url
-        #"https://https://hymn.singer.ga/"
+        #"https://hymn.singer.ga/"
         \line {
           "Engraver: LilyPond"
           $(lilypond-version)
@@ -167,9 +167,6 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
           \dateAdded
           ", updated"
           \date
-          \char ##x2014
-          "Tags:"
-          \tags
         }
       }
     #})
