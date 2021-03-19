@@ -1,7 +1,7 @@
 ---
 layout: song_page
 song_file: now_the_day_is_over
-title: Now the day is over
+title: "Now the day is over"
 description: "Now the day is over, night is drawing nigh, shadows of the evening steal across the sky.  Now the leafless landscape settles in repose, waiting for th... secular 4part acapella 5verse musicbyother textbyother evening autumn"
 image: https://github.com/kenanbit/hymn-singer/releases/latest/download/now_the_day_is_over-trad.png
 ---

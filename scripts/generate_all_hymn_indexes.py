@@ -141,7 +141,7 @@ def output_header_info(song_file_base, song_title, lyrics, tags, output_file):
     with open(output_file, 'a') as f:
         f.write("song_file: "+song_file_base)
         f.write("\n")
-        f.write("title: "+song_title)
+        f.write('title: "'+song_title+'"')
         f.write("\n")
         tag_string = " ".join(tags)
         lyrics_string = lyrics[:150].replace("\n", " ")
