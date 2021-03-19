@@ -19,4 +19,4 @@ And since to look at things in bloom
 fifty springs are little room,
 about the woodlands I will go,
 see the cherry hung with snow.
-</div></td><td class='tags-box'><div><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/spring.html">spring</a></div></td><td class='date-added-box'>2021/02/07</td></tr>
+</div></td><td class='tags-box'><div><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">acapella</a><a class="taglink" href="#">3verse</a><a class="taglink" href="#">musicbyother</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">spring</a></div></td><td class='date-added-box'>2021/02/07</td></tr>

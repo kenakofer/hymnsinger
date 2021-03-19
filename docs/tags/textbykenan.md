@@ -34,4 +34,4 @@ Religions of today are the religions fit to last.
 Members true through power, fear, or friendly company
 rebuke again their wayward young, "Eat not from yonder tree."
 Eat not from yonder tree!
-</div></td><td class='tags-box'><div><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/accompanied.html">accompanied</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbykenan.html">textbykenan</a></div></td><td class='date-added-box'>2021/01/12</td></tr>
+</div></td><td class='tags-box'><div><a class="taglink" href="#">secular</a><a class="taglink" href="#">1part</a><a class="taglink" href="#">accompanied</a><a class="taglink" href="#">5verse</a><a class="taglink" href="#">arrbykenan</a><a class="taglink" href="#">textbykenan</a></div></td><td class='date-added-box'>2021/01/12</td></tr>

@@ -75,4 +75,4 @@ All helplessness, all weakness I
 on thee alone for strength depend,
 nor have I power from thee to move.
 Thy nature, and thy name is Love!
-</div></td><td class='tags-box'><div><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/accompanied.html">accompanied</a><a class="taglink" href="{{ site.baseurl }}/tags/11verse.html">11verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></div></td><td class='date-added-box'>2021/01/11</td></tr>
+</div></td><td class='tags-box'><div><a class="taglink" href="#">theist</a><a class="taglink" href="#">1part</a><a class="taglink" href="#">accompanied</a><a class="taglink" href="#">11verse</a><a class="taglink" href="#">arrbykenan</a><a class="taglink" href="#">textbyother</a></div></td><td class='date-added-box'>2021/01/11</td></tr>

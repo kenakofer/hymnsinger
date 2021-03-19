@@ -75,7 +75,7 @@ All helplessness, all weakness I
 on thee alone for strength depend,
 nor have I power from thee to move.
 Thy nature, and thy name is Love!
-</div></td><td class='tags-box'><div><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/accompanied.html">accompanied</a><a class="taglink" href="{{ site.baseurl }}/tags/11verse.html">11verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></div></td><td class='date-added-box'>2021/01/11</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/religion_fit_to_last.html">Religion fit to last</a></td><td class='tune-box'>JESOUS AHATONHIA (adapted)</td><td class='meter-box'>86.86.76.86</td><td class='lyric-box'><div>A voice within becomes distressed to see you taste the fruit,
+</div></td><td class='tags-box'><div><a class="taglink" href="#">theist</a><a class="taglink" href="#">1part</a><a class="taglink" href="#">accompanied</a><a class="taglink" href="#">11verse</a><a class="taglink" href="#">arrbykenan</a><a class="taglink" href="#">textbyother</a></div></td><td class='date-added-box'>2021/01/11</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/religion_fit_to_last.html">Religion fit to last</a></td><td class='tune-box'>JESOUS AHATONHIA (adapted)</td><td class='meter-box'>86.86.76.86</td><td class='lyric-box'><div>A voice within becomes distressed to see you taste the fruit,
 forbidden by your God and creed, respected since your youth:
 ''Prodigal, I'll fight in you, restore your faith to thrive.
 I'll bring you back within the fold. Without you can't survive.
@@ -104,4 +104,4 @@ Religions of today are the religions fit to last.
 Members true through power, fear, or friendly company
 rebuke again their wayward young, "Eat not from yonder tree."
 Eat not from yonder tree!
-</div></td><td class='tags-box'><div><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/accompanied.html">accompanied</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbykenan.html">textbykenan</a></div></td><td class='date-added-box'>2021/01/12</td></tr>
+</div></td><td class='tags-box'><div><a class="taglink" href="#">secular</a><a class="taglink" href="#">1part</a><a class="taglink" href="#">accompanied</a><a class="taglink" href="#">5verse</a><a class="taglink" href="#">arrbykenan</a><a class="taglink" href="#">textbykenan</a></div></td><td class='date-added-box'>2021/01/12</td></tr>

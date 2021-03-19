@@ -72,7 +72,7 @@ def get_date_added(all_lines):
             return datestring
 
 def get_tag_html(tag):
-    return '<a class="taglink" href="{{ site.baseurl }}/tags/'+tag+'.html">'+tag+'</a>'
+    return '<a class="taglink" href="#">'+tag+'</a>'
 
 if __name__ == "__main__":
     with open(sys.argv[1], 'r') as f:
