@@ -24,10 +24,10 @@ alto = {
 }
 tenor = {
   \globalParts
-  \relative a { g4 | c2 g4 | g2 g4 | g2 f8( g) | g2 4 | e2 f4 | g2 g4 | e2.~ | 2 }
-  \relative a { g4 | c2 g4 | g2 g4 | g2 f8( g) | g2 4 | e2 f4 | g2 g4 | e2.~ | 2 }
+  \relative a { g4 | c2 g4 | g2 g4 | a2 f8( g) | g2 4 | e2 f4 | g2 g4 | e2.~ | 2 }
+  \relative a { g4 | c2 g4 | g2 g4 | a2 f8( g) | g2 4 | e2 f4 | g2 g4 | e2.~ | 2 }
   \relative a { c4 | 2 b8( c) | c2 a4 | a2 g8( c) | b2 c4 | 2 b8( d) | c2 a4 | a2.~ | 2 }
-  \relative a { g4 | c2 g4 | g2 g4 | g2 f8( g) | g2 4 | e2 f4 | g2 g4 | e2.~ | 2 }
+  \relative a { g4 | c2 g4 | g2 g4 | a2 f8( g) | g2 4 | e2 f4 | g2 g4 | e2.~ | 2 }
 }
 bass = {
   \globalParts
@@ -38,4 +38,8 @@ bass = {
 }
 songChords = \chords {
   \set chordChanges = ##t
+  c4 | c c c c c c a:m a:m a:m c c c a:m a:m a:m c/g c/g g c c c c c
+  c4 | c c c c c c a:m a:m a:m c c c a:m a:m a:m c/g c/g g c c c c c
+  c | a2.:m f d:m c a:m c2 d4:m a2.:m a2:m
+  c4 | c c c c c c a:m a:m a:m c c c a:m a:m a:m c/g c/g g c c c c c
 }

@@ -6,7 +6,7 @@
 \include "../../shared_tunes/resignation_arrbykenan.ly"
 
 %% SONG INFO
-title = \titleText "My Shepherd will supply my need;"
+title = \titleText "My Shepherd will supply my need"
 poet = \smallText "Text: Isaac Watts, 1719, alt."
 copyright = \public_domain_notice "Kenan Schaefkofer"
 tags = "christian 4part acapella 3verse arrbykenan textbyother"
