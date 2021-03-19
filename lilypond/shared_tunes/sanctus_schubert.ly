@@ -35,6 +35,3 @@ bass = {
   \relative d { ef2 4 | df2 4 | c2. | f | d2 4 | ef2 g,4 | bf2.~ | 4 r r | }
   \relative d { ef2 4 | 2 4 | af,2. | ef'2. | af,2 4 | bf2 4 | ef2.~ | 4 r r |}
 }
-songChords = \chords {
-  \set chordChanges = ##t
-}
