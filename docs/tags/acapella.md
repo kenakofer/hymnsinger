@@ -879,7 +879,31 @@ So be it, Lord, your throne shall never,
 like earth's proud kingdoms pass away.
 Your kingdom stands and grows forever,
 until there dawns your glorious day.
-</div></td><td class='tags-box'><div><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/evening.html">evening</a></div></td><td class='date-added-box'>2021/01/16</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_morning_hangs_a_signal.html">The morning hangs a signal</a></td><td class='tune-box'>MEIRIONYDD</td><td class='meter-box'>76.76 D</td><td class='lyric-box'><div>The morning hangs a signal upon the mountain crest,
+</div></td><td class='tags-box'><div><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/evening.html">evening</a></div></td><td class='date-added-box'>2021/01/16</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_lords_my_shepherd.html">The Lord's my shepherd</a></td><td class='tune-box'>CRIMOND</td><td class='meter-box'>CM</td><td class='lyric-box'><div>The Lord's my shepherd, I'll not want.
+He makes me down to lie
+in pastures green; he leadeth me
+the quiet waters by.
+
+My soul he doth restore again,
+and me to walk doth make
+within the paths of righteousness,
+e'en for his own name's sake.
+
+Yea, though I walk in death's dark vale,
+yet will I fear none ill,
+for thou art with me and thy rod
+and staff me comfort still.
+
+My table thou hast furnished
+in presence of my foes.
+My head thou dost with oil anoint
+and my cup overflows.
+
+Goodness and mercy all my life
+shall surely follow me,
+and in God's house forevermore
+my dwelling place shall be.
+</div></td><td class='tags-box'><div><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></div></td><td class='date-added-box'>2021/03/19</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_morning_hangs_a_signal.html">The morning hangs a signal</a></td><td class='tune-box'>MEIRIONYDD</td><td class='meter-box'>76.76 D</td><td class='lyric-box'><div>The morning hangs a signal upon the mountain crest,
 while all the sleeping valleys in silent darkness rest.
 From peak to peak it flashes, it laughs along the sky,
 till glory of the sunlight on all the land shall lie.

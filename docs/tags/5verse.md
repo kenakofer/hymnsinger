@@ -198,7 +198,31 @@ it shall be no longer mine.
 Take my love; my Lord, I pour at thy feet its treasure store.
 Take myself, and I will be ever, only, all for thee,
 ever, only, all for thee.
-</div></td><td class='tags-box'><div><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></div></td><td class='date-added-box'>2021/03/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/when_israel_was_in_egypts_land.html">When Israel was in Egypt's land</a></td><td class='tune-box'>GO DOWN MOSES</td><td class='meter-box'>85.85 with refrain</td><td class='lyric-box'><div>When Israel was in Egypt's land,
+</div></td><td class='tags-box'><div><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></div></td><td class='date-added-box'>2021/03/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_lords_my_shepherd.html">The Lord's my shepherd</a></td><td class='tune-box'>CRIMOND</td><td class='meter-box'>CM</td><td class='lyric-box'><div>The Lord's my shepherd, I'll not want.
+He makes me down to lie
+in pastures green; he leadeth me
+the quiet waters by.
+
+My soul he doth restore again,
+and me to walk doth make
+within the paths of righteousness,
+e'en for his own name's sake.
+
+Yea, though I walk in death's dark vale,
+yet will I fear none ill,
+for thou art with me and thy rod
+and staff me comfort still.
+
+My table thou hast furnished
+in presence of my foes.
+My head thou dost with oil anoint
+and my cup overflows.
+
+Goodness and mercy all my life
+shall surely follow me,
+and in God's house forevermore
+my dwelling place shall be.
+</div></td><td class='tags-box'><div><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></div></td><td class='date-added-box'>2021/03/19</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/when_israel_was_in_egypts_land.html">When Israel was in Egypt's land</a></td><td class='tune-box'>GO DOWN MOSES</td><td class='meter-box'>85.85 with refrain</td><td class='lyric-box'><div>When Israel was in Egypt's land,
 let my people go,
 oppressed so hard they could not stand,
 let my people go.
