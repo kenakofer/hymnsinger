@@ -432,7 +432,21 @@ So be it, Lord, your throne shall never,
 like earth's proud kingdoms pass away.
 Your kingdom stands and grows forever,
 until there dawns your glorious day.
-</div></td><td class='tags-box'><div><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/evening.html">evening</a></div></td><td class='date-added-box'>2021/01/16</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/what_child_is_this.html">What Child is this</a></td><td class='tune-box'>GREENSLEEVES</td><td class='meter-box'>87.87.68.67</td><td class='lyric-box'><div>What Child is this, who, laid to rest, on Mary's lap is sleeping,
+</div></td><td class='tags-box'><div><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/evening.html">evening</a></div></td><td class='date-added-box'>2021/01/16</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/what_a_friend_we_have_in_jesus.html">What a friend we have in Jesus</a></td><td class='tune-box'>CONVERSE</td><td class='meter-box'>87.87 D</td><td class='lyric-box'><div>What a friend we have in Jesus, all our sins and griefs to bear!
+What a privilege to carry ev'rything to God in prayer!
+Oh, what peace we often forfeit, oh, what needless pain we bear,
+all because we do not carry ev'rything to God in prayer!
+
+Have we trials and temptations? Is there trouble anywhere?
+We should never be discouraged– take it to the Lord in prayer!
+Can we find a friend so faithful, who will all our sorrows share?
+Jesus knows our ev'ry weakness– take it to the Lord in prayer!
+
+Are we weak and heavy laden, 'cumbered with a load of care?
+Precious Savior, still our refuge, take it to the Lord in prayer!
+Do thy friends despise, forsake thee? Take it to the Lord in prayer!
+Jesus' arms will take and shield thee– thou wilt find a solace there.
+</div></td><td class='tags-box'><div><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/3verse.html">3verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></div></td><td class='date-added-box'>2021/03/19</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/what_child_is_this.html">What Child is this</a></td><td class='tune-box'>GREENSLEEVES</td><td class='meter-box'>87.87.68.67</td><td class='lyric-box'><div>What Child is this, who, laid to rest, on Mary's lap is sleeping,
 whom angels greet with anthems sweet, while shepherds watch are keeping?
 This, this is Christ the King, whom shepherds guard and angels sing.
 Haste, haste to bring him laud, the babe, the son of Mary!
