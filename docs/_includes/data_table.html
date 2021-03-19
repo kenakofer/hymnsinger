@@ -9,13 +9,12 @@
 search = function(value) {
     $('#song-table').DataTable().search(value).draw()
 }
+$(document).on("click", ".taglink", function(e) {
+    search(this.text);
+    e.preventDefault();
+});
 
 $(document).ready( function () {
-    $('.taglink').on("click", function(e) {
-        search(this.text);
-        e.preventDefault();
-    });
-
     $('#song-table').DataTable({
         "paging": false,
         "dom": "ifrt",
