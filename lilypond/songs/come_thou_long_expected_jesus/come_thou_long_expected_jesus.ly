@@ -10,7 +10,7 @@ quarternoteTempo = 120
 title = \titleText "Come, thou long-expected Jesus"
 poet = \smallText "Text: Charles Wesley, 1744"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "christian 4part acapella 2verse musicbyother textbyother"
+tags = "christian 4part 2verse musicbyother textbyother"
 dateAdded = "2021-01-07"
 \include "../../lib/header.ly"
 

@@ -329,7 +329,7 @@ title = \titleText "You have not set a title"
 subtitle = ""
 arranger = ""
 poet = \smallText "Text: Who wrote the text, year"
-tags = "christian 4part acapella 2verse musicbyother textbyother"
+tags = "christian 4part 2verse musicbyother textbyother"
 %% These usually don't need to be changed
 prescore_text = {}
 postscore_text = {}

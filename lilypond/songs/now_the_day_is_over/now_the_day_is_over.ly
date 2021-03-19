@@ -14,7 +14,7 @@ quarternoteTempo = 100
 title = \titleText "Now the day is over"
 poet = \twoLineSmallText "Text: v.1 Sabine Baring Gould, 1865" "v.2-5 Marye B. Bonney (1910-1992)"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "secular 4part acapella 5verse musicbyother textbyother evening autumn"
+tags = "secular 4part 5verse musicbyother textbyother evening autumn"
 dateAdded = "2021-02-11"
 \include "../../lib/header.ly"
 

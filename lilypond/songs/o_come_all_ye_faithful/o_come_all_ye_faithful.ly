@@ -14,7 +14,7 @@ quarternoteTempo = 120
 title = \titleText "O come, all ye faithful"
 poet = \smallText "Text: John F. Wade, 1743, tr. Frederick Oakeley, 1841, William Mercer 1854, and others"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "christian 4part acapella 4verse musicbyother textbyother winter"
+tags = "christian 4part 4verse musicbyother textbyother winter"
 dateAdded = "2021-01-19"
 \include "../../lib/header.ly"
 

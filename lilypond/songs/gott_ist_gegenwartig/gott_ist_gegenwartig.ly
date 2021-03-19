@@ -10,7 +10,7 @@ title = \titleText "Gott ist gegenwärtig"
 subtitle = \smallText "See also in English: God is here among us"
 poet = \smallText "Text: Gerhard Tersteegen, 1729"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "christian 4part acapella 3verse musicbyother textbyother"
+tags = "christian 4part 3verse musicbyother textbyother"
 dateAdded = "2021-03-04"
 \include "../../lib/header.ly"
 

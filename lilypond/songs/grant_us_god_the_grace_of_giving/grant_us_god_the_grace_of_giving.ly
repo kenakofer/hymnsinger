@@ -10,7 +10,7 @@ title = \titleText "Grant us, God, the grace of giving"
 %subtitle = \smallText "Optional"
 poet = \smallText "Text: Robert Murray, 1880, alt."
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "theist 4part acapella 1verse musicbyother textbyother"
+tags = "theist 4part 1verse musicbyother textbyother"
 dateAdded = "2021-03-14"
 \include "../../lib/header.ly"
 

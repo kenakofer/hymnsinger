@@ -19,7 +19,7 @@ poet = \smallText "Text: Preamble to United Mine Workers of America Constitution
 copyright = \public_domain_notice "Kenan Schaefkofer"
 %prescore_text = \prescoreText "Uncomment to add text up and left of the score"
 %postscore_text = \postscoreText "Uncomment to add text down and left of the score"
-tags = "secular 3part acapella 1verse arrbykenan textbyother"
+tags = "secular 3part 1verse arrbykenan textbyother"
 dateAdded = "2021-03-09"
 \include "../../lib/header.ly"
 

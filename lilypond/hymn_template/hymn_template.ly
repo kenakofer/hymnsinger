@@ -22,7 +22,7 @@ poet = \smallText "Text: Author, year"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 %prescore_text = \prescoreText "Uncomment to add text up and left of the score"
 %postscore_text = \postscoreText "Uncomment to add text down and left of the score"
-tags = "theist 4part acapella 4verse musicbyother textbyother"
+tags = "theist 4part 4verse musicbyother textbyother"
 dateAdded = %YYYY-MM-DD%
 \include "../../lib/header.ly"
 

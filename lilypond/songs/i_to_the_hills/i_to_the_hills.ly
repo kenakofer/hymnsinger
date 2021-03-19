@@ -18,7 +18,7 @@ poet = \smallText "Text: The New Metrical Version of the Psalms, 1912, alt."
 copyright = \public_domain_notice "Kenan Schaefkofer"
 %prescore_text = \prescoreText "Uncomment to add text up and left of the score"
 %postscore_text = \postscoreText "Uncomment to add text down and left of the score"
-tags = "christian 4part acapella 4verse musicbyother textbyother"
+tags = "christian 4part 4verse musicbyother textbyother"
 dateAdded = "2021-03-13"
 \include "../../lib/header.ly"
 

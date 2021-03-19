@@ -10,7 +10,7 @@ title = \titleText "May we each take joy in giving"
 %subtitle = \smallText "Optional"
 poet = \smallText "Text: Robert Murray, 1880, alt. Kenan Schaefkofer, 2021"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "secular 4part acapella 1verse musicbyother textbyother"
+tags = "secular 4part 1verse musicbyother textbyother"
 dateAdded = "2021-03-14"
 \include "../../lib/header.ly"
 

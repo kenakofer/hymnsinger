@@ -14,7 +14,7 @@ quarternoteTempo = 100
 title = \titleText "Jesu, joy of our desiring"
 poet = \smallText "Text: Martin Janus, 1665, trans. Robert Bridges, 1927"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "christian 4part acapella 2verse musicbyother textbyother"
+tags = "christian 4part 2verse musicbyother textbyother"
 dateAdded = "2021-03-04"
 \include "../../lib/header.ly"
 

@@ -14,7 +14,7 @@ quarternoteTempo = 120
 title = \titleText "Breath on me, breath of God"
 poet = \smallText "Text: Robert Jackson, 1888"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "theist 4part acapella 4verse musicbyother textbyother"
+tags = "theist 4part 4verse musicbyother textbyother"
 dateAdded = "2021-01-09"
 \include "../../lib/header.ly"
 

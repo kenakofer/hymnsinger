@@ -8,7 +8,7 @@
 %% SONG INFO
 title = \titleText "Heilig, Heilig, Heilig (Holy, Holy, Holy)"
 poet = \smallText "Text: German; Johann P. Neumann, 1826; trans. Kenan Schaefkofer, 2021"
-tags = "christian 4part acapella 2verse musicbyother textbyother"
+tags = "christian 4part 2verse musicbyother textbyother"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 dateAdded = "2021-03-08"
 \include "../../lib/header.ly"

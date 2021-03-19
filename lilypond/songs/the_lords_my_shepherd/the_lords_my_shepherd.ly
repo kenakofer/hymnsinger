@@ -15,7 +15,7 @@ quarternoteTempo = 110
 title = \titleText "The Lord's my shepherd"
 poet = \smallText "Text: The Psalms in Meeter, 1650"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "theist 4part acapella 5verse musicbyother textbyother"
+tags = "theist 4part 5verse musicbyother textbyother"
 dateAdded = "2021-03-19"
 \include "../../lib/header.ly"
 

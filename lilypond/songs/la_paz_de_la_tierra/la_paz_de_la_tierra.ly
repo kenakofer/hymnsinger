@@ -14,7 +14,7 @@ quarternoteTempo = 110
 title = \titleText "La paz de la tierra (The peace of the earth)"
 poet = \smallText "Text: Spanish; Guatemalan traditional; trans. Kenan Schaefkofer, 2021"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "secular 4part acapella 1verse musicbyother textbyother"
+tags = "secular 4part 1verse musicbyother textbyother"
 dateAdded = "2021-03-09"
 \include "../../lib/header.ly"
 

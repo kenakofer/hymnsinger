@@ -9,7 +9,7 @@
 title = \titleText "Once to every soul and nation"
 poet = \smallText "Text: James Russell Lowell, 1845"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "secular 4part acapella 3verse musicbyother textbyother"
+tags = "secular 4part 3verse musicbyother textbyother"
 dateAdded = "2021-01-14"
 \include "../../lib/header.ly"
 

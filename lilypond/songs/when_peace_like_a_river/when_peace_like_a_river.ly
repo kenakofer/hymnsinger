@@ -16,7 +16,7 @@ title = \titleText "When Peace like a River"
 %subtitle = \smallText "Optional"
 poet = \smallText "Text: Horatio G. Spafford, 1876"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "christian 4part acapella 4verse musicbyother textbyother"
+tags = "christian 4part 4verse musicbyother textbyother"
 dateAdded = "2021-03-12"
 \include "../../lib/header.ly"
 

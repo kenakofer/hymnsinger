@@ -14,7 +14,7 @@ quarternoteTempo = 100
 title = \titleText "When Israel was in Egypt's land"
 poet = \smallText "Text: African American spiritual"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "christian 4part acapella 5verse musicbyother textbyother"
+tags = "christian 4part 5verse musicbyother textbyother"
 dateAdded = "2021-02-07"
 \include "../../lib/header.ly"
 

@@ -16,7 +16,7 @@ title = \titleText "In the Rifted Rock (Wehrlos und verlassen)"
 %subtitle = \smallText "Optional"
 poet = \smallText "Text: English; Mary Dagworthy James, 1878; German; Carl Röhl, 1895"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "christian 4part acapella 4verse musicbyother textbyother"
+tags = "christian 4part 4verse musicbyother textbyother"
 dateAdded = "2021-03-12"
 \include "../../lib/header.ly"
 

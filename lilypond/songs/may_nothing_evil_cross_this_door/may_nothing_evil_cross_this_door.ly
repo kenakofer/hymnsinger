@@ -14,7 +14,7 @@ quarternoteTempo = 120
 title = \titleText "May nothing evil cross this door"
 poet = \smallText "Text: Louis Untermeyer, 1923"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "secular 4part acapella 4verse musicbyother textbyother"
+tags = "secular 4part 4verse musicbyother textbyother"
 dateAdded = "2021-01-31"
 \include "../../lib/header.ly"
 

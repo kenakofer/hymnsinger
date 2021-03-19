@@ -15,7 +15,7 @@ quarternoteTempo = 100
 title = \titleText "We shall overcome"
 poet = \smallText "Text: African-American Spiritual"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "secular 4part acapella 3verse arrbykenan textbyother"
+tags = "secular 4part 3verse arrbykenan textbyother"
 dateAdded = "2021-01-12"
 \include "../../lib/header.ly"
 

@@ -14,7 +14,7 @@ quarternoteTempo = 130
 title = \titleText "Come, my Way, my Truth, my Light"
 poet = \smallText "Text: George Herbert, 1633"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "secular 5part acapella 3verse musicbyother textbyother"
+tags = "secular 5part 3verse musicbyother textbyother"
 dateAdded = "2021-01-16"
 \include "../../lib/header.ly"
 

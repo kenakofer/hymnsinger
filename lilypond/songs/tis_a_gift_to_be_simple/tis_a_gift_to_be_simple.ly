@@ -15,7 +15,7 @@ quarternoteTempo = 70
 title = \titleText "'Tis a gift to be simple"
 poet = \smallText "Text: Joseph Bracket, 1848"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "secular 4part acapella 1verse arrbykenan textbyother"
+tags = "secular 4part 1verse arrbykenan textbyother"
 dateAdded = "2021-01-10"
 \include "../../lib/header.ly"
 

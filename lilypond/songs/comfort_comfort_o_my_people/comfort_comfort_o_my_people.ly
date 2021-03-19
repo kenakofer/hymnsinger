@@ -9,7 +9,7 @@
 title = \titleText "Comfort, comfort, O my people"
 poet = \twoLineSmallText "Text: Johannes Olearius, 1671" "Translated Catherine Winkworth, 1863"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "christian 4part acapella 3verse musicbyother textbyother"
+tags = "christian 4part 3verse musicbyother textbyother"
 dateAdded = "2021-02-07"
 \include "../../lib/header.ly"
 

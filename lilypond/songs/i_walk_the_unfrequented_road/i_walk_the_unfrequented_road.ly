@@ -14,7 +14,7 @@ quarternoteTempo = 100
 title = \titleText "I walk the unfrequented road"
 poet = \smallText "Text: Frederick Lucian Hosmer, 1913"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "secular 4part acapella 5verse musicbyother textbyother autumn"
+tags = "secular 4part 5verse musicbyother textbyother autumn"
 dateAdded = "2021-01-31"
 \include "../../lib/header.ly"
 

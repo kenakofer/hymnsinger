@@ -14,7 +14,7 @@ quarternoteTempo = 120
 title = \titleText "Help us to help each other, Lord"
 poet = \smallText "Text: Charles Wesley, 1742"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-tags = "christian 4part acapella 4verse musicbyother textbyother"
+tags = "christian 4part 4verse musicbyother textbyother"
 dateAdded = "2021-01-09"
 \include "../../lib/header.ly"
 
