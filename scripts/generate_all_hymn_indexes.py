@@ -17,10 +17,24 @@ meter_words = [
 def get_tags(all_lines):
     for i, line in enumerate(all_lines):
         line = line.strip()
+        listed_tags = []
         if line.replace(" ", "").startswith('tags="'):
             tag_string = line[line.index('"')+1:-1]
-            tags = tag_string.split()
-            return tags
+            listed_tags = tag_string.split()
+            break
+    return listed_tags + get_computed_tags(all_lines)
+
+def get_computed_tags(all_lines):
+    computed_tags = []
+    if has_chord_symbols(all_lines):
+        computed_tags.append("chords")
+    return computed_tags
+
+def has_chord_symbols(all_lines):
+    for line in all_lines:
+        if line.strip().replace(" ","").startswith("songChords=\chords"):
+            return True
+    return False
 
 def get_title(all_lines):
     for line in all_lines:
