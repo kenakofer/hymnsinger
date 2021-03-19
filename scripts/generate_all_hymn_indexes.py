@@ -48,6 +48,15 @@ def ismeterword(word):
         return True
     return any(char.isdigit() for char in word)
 
+def get_date_added(all_lines):
+    for line in all_lines:
+        search_for = "dateAdded ="
+        if search_for in line:
+            index = line.index(search_for) + len(search_for) + 1
+            line = line[index:].strip()
+            datestring = line[1:-1].replace("-","/") # Strip quotes
+            return datestring
+
 def get_tag_html(tag):
     return '<a class="taglink" href="{{ site.baseurl }}/tags/'+tag+'.html">'+tag+'</a>'
 
@@ -108,7 +117,7 @@ def join_verse_line(line, remove_quotes):
     return " ".join(words)
 
 
-def output_table_row(song_file_base, song_title, lyrics, tune, meter, tags, output_file):
+def output_table_row(song_file_base, song_title, lyrics, tune, meter, tags, date_added, output_file):
     with open(output_file, 'a') as f:
         f.write("<tr><td class='hymn-name-box'><a href=\"{{ site.baseurl }}/listing/"+song_file_base+".html\">")
         f.write(song_title)
@@ -122,7 +131,11 @@ def output_table_row(song_file_base, song_title, lyrics, tune, meter, tags, outp
         f.write("</div></td><td class='tags-box'><div>")
         for tag in tags:
             f.write(get_tag_html(tag))
-        f.write("</div></td></tr>")
+        f.write("</div></td>")
+        f.write("<td class='date-added-box'>")
+        f.write(date_added)
+        f.write("</td>")
+        f.write("</tr>")
 
 def output_header_info(song_file_base, song_title, lyrics, tags, output_file):
     with open(output_file, 'a') as f:
@@ -160,8 +173,9 @@ if __name__ == "__main__":
         tune, meter = get_tune_and_meter(lines)
     for tag in all_tags:
         index_files_to_append_to.append("docs/tags/"+tag+".md")
+    date_added = get_date_added(lines)
     for output_file in index_files_to_append_to:
-        output_table_row(song_file_base, song_title, all_lyrics, tune, meter, all_tags, output_file)
+        output_table_row(song_file_base, song_title, all_lyrics, tune, meter, all_tags, date_added, output_file)
 
     song_markdown_file = "docs/listing/"+song_file_base+".md"
     output_header_info(song_file_base, song_title, all_lyrics, all_tags, song_markdown_file)

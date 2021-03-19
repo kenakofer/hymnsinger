@@ -4,7 +4,7 @@ layout: default
 ---
 {% include data_table.html %}
 # Tag: textadaptedbykenan
-<table id='song-table' cellspacing='0' width='100%'><thead><th>Song</th><th>Tune</th><th>Meter</th><th>Lyrics</th><th>Tags</th></thead>
+<table id='song-table' cellspacing='0' width='100%'><thead><th>Song</th><th>Tune</th><th>Meter</th><th>Lyrics</th><th>Tags</th><th>Added</th></thead>
 <tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/for_the_beauty_of_our_earth.html">For the beauty of our earth</a></td><td class='tune-box'>DIX</td><td class='meter-box'>77.77.77</td><td class='lyric-box'><div>For the beauty of our earth, for the glory of her skies,
 for the love which from our birth over and around us lies:
 
@@ -21,7 +21,7 @@ friends we've lost and friends still here, for all selfless thoughts and mild:
 
 For thy Truth both harsh and kind, shadowed setter of our stage,
 patterns sought by human mind, guiding us from age to age,
-</div></td><td class='tags-box'><div><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textadaptedbykenan.html">textadaptedbykenan</a></div></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/now_all_the_woods_are_sleeping.html">Now all the woods are sleeping</a></td><td class='tune-box'>O WELT, ICH MUSS DICH LASSEN</td><td class='meter-box'>776.778</td><td class='lyric-box'><div>Now all the woods are sleeping,
+</div></td><td class='tags-box'><div><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textadaptedbykenan.html">textadaptedbykenan</a></div></td><td class='date-added-box'>2021/01/05</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/now_all_the_woods_are_sleeping.html">Now all the woods are sleeping</a></td><td class='tune-box'>O WELT, ICH MUSS DICH LASSEN</td><td class='meter-box'>776.778</td><td class='lyric-box'><div>Now all the woods are sleeping,
 the night and stillness creeping
 o'er city, field, and beast;
 but thou, my heart, awake be,
@@ -48,4 +48,4 @@ protected be your heads;
 and happy slumbers send you,
 and ev'ry care attend you,
 as trusted souls watch o'er your beds.
-</div></td><td class='tags-box'><div><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textadaptedbykenan.html">textadaptedbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/evening.html">evening</a></div></td></tr>
+</div></td><td class='tags-box'><div><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/4verse.html">4verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textadaptedbykenan.html">textadaptedbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/evening.html">evening</a></div></td><td class='date-added-box'>2021/01/16</td></tr>

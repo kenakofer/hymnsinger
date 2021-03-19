@@ -4,7 +4,7 @@ layout: default
 ---
 {% include data_table.html %}
 # Tag: 6verse
-<table id='song-table' cellspacing='0' width='100%'><thead><th>Song</th><th>Tune</th><th>Meter</th><th>Lyrics</th><th>Tags</th></thead>
+<table id='song-table' cellspacing='0' width='100%'><thead><th>Song</th><th>Tune</th><th>Meter</th><th>Lyrics</th><th>Tags</th><th>Added</th></thead>
 <tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/amazing_grace.html">Amazing grace</a></td><td class='tune-box'>NEW BRITAIN (AMAZING GRACE)</td><td class='meter-box'>CM</td><td class='lyric-box'><div>Amazing grace! how sweet the sound, that saved a wretch like me!
 I once was lost, but now am found, was blind, but now I see.
 
@@ -22,4 +22,4 @@ but God, who called me here below, will be forever mine.
 
 When we've been there ten thousand years, bright shining as the sun,
 we've no less days to sing God's praise than when we'd first begun.
-</div></td><td class='tags-box'><div><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/6verse.html">6verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></div></td></tr>
+</div></td><td class='tags-box'><div><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/6verse.html">6verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></div></td><td class='date-added-box'>2021/01/11</td></tr>

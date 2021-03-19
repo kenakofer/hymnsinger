@@ -218,7 +218,9 @@ img {
     overflow: auto;
     padding: 6px 8px;
 }
-
+.date-added-box {
+    text-align: center;
+}
 .hymn-name-box {
     background: #e7e3df;
     line-height: 1.3;
