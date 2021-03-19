@@ -4,8 +4,8 @@ layout: default
 ---
 {% include data_table.html %}
 # Tag: 7verse
-<table id='song-table'><thead><th>Song</th><th>Lyrics</th><th>Tags</th></thead>
-<tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/all_creatures_worship_god_most_high.html">All creatures worship God most high</a></td><td class='lyric-box'>All creatures, worship God most high, lift up your voice in earth and sky,
+<table id='song-table'><thead><th>Song</th><th>Tune</th><th>Meter</th><th>Lyrics</th><th>Tags</th></thead>
+<tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/all_creatures_worship_god_most_high.html">All creatures worship God most high</a></td><td class='tune-box'>LASST UNS ERFREUEN</td><td class='meter-box'>LM</td><td class='lyric-box'><div>All creatures, worship God most high, lift up your voice in earth and sky,
 
   alleluia, alleluia!
 
@@ -60,4 +60,4 @@ Let all things their Creator bless, and worship God in humbleness,
 To God all thanks and praise belong! Join in the everlasting song:
 
   O sing ye, O sing ye, alleluia, alleluia, alleluia!
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/7verse.html">7verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr>
+</div></td><td class='tags-box'><div><a class="taglink" href="{{ site.baseurl }}/tags/christian.html">christian</a><a class="taglink" href="{{ site.baseurl }}/tags/4part.html">4part</a><a class="taglink" href="{{ site.baseurl }}/tags/acapella.html">acapella</a><a class="taglink" href="{{ site.baseurl }}/tags/7verse.html">7verse</a><a class="taglink" href="{{ site.baseurl }}/tags/musicbyother.html">musicbyother</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></div></td></tr>

@@ -2,6 +2,18 @@
 import sys
 import os
 
+meter_words = [
+    "CM",
+    "CMD"
+    "D",
+    "LM",
+    "SM",
+    "extended",
+    "irregular",
+    "with",
+    "refrain"
+]
+
 def get_tags(all_lines):
     for i, line in enumerate(all_lines):
         line = line.strip()
@@ -18,6 +30,23 @@ def get_title(all_lines):
             line = line[index:].strip()
             return line[1:-1]
 
+def get_tune_and_meter(all_lines):
+    for line in all_lines:
+        search_for = "meter = \\smallText"
+        if search_for in line:
+            index = line.index(search_for) + len(search_for) + 1
+            line = line[index:].strip()
+            tune_and_meter = line[1:-1] # Strip quotes
+            tune_words = tune_and_meter.split()
+            meter_words = [tune_words.pop()]
+            while ismeterword(tune_words[-1]):
+                meter_words.insert(0, tune_words.pop())
+            return (" ".join(tune_words), " ".join(meter_words))
+
+def ismeterword(word):
+    if word in meter_words:
+        return True
+    return any(char.isdigit() for char in word)
 
 def get_tag_html(tag):
     return '<a class="taglink" href="{{ site.baseurl }}/tags/'+tag+'.html">'+tag+'</a>'
@@ -79,16 +108,21 @@ def join_verse_line(line, remove_quotes):
     return " ".join(words)
 
 
-def output_table_row(song_file_base, song_title, lyrics, tags, output_file):
+def output_table_row(song_file_base, song_title, lyrics, tune, meter, tags, output_file):
     with open(output_file, 'a') as f:
         f.write("<tr><td class='hymn-name-box'><a href=\"{{ site.baseurl }}/listing/"+song_file_base+".html\">")
         f.write(song_title)
-        f.write("</a></td><td class='lyric-box'>")
+        f.write("</a>")
+        f.write("</td><td class='tune-box'>")
+        f.write(tune)
+        f.write("</td><td class='meter-box'>")
+        f.write(meter)
+        f.write("</td><td class='lyric-box'><div>")
         f.write(lyrics)
-        f.write("</td><td class='tags-box'>")
+        f.write("</div></td><td class='tags-box'><div>")
         for tag in tags:
             f.write(get_tag_html(tag))
-        f.write("</td></tr>")
+        f.write("</div></td></tr>")
 
 def output_header_info(song_file_base, song_title, lyrics, tags, output_file):
     with open(output_file, 'a') as f:
@@ -113,13 +147,21 @@ if __name__ == "__main__":
     index_files_to_append_to = ["docs/hymn-index.md"]
     with open(file_path, 'r') as f:
         lines = f.readlines()
+        for l in lines:
+            search = '\include "../../shared_tunes/'
+            if l.startswith(search):
+                included_path = "lilypond/shared_tunes/" + l[len(search):].strip()[:-1]
+                include_lines = open(included_path, 'r').readlines()
+                lines = include_lines + lines
+                break
         all_lyrics = get_lyrics(lines)
         all_tags = get_tags(lines)
         song_title = get_title(lines)
+        tune, meter = get_tune_and_meter(lines)
     for tag in all_tags:
         index_files_to_append_to.append("docs/tags/"+tag+".md")
     for output_file in index_files_to_append_to:
-        output_table_row(song_file_base, song_title, all_lyrics, all_tags, output_file)
+        output_table_row(song_file_base, song_title, all_lyrics, tune, meter, all_tags, output_file)
 
     song_markdown_file = "docs/listing/"+song_file_base+".md"
     output_header_info(song_file_base, song_title, all_lyrics, all_tags, song_markdown_file)

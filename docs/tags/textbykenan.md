@@ -4,8 +4,8 @@ layout: default
 ---
 {% include data_table.html %}
 # Tag: textbykenan
-<table id='song-table'><thead><th>Song</th><th>Lyrics</th><th>Tags</th></thead>
-<tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/religion_fit_to_last.html">Religion fit to last</a></td><td class='lyric-box'>A voice within becomes distressed to see you taste the fruit,
+<table id='song-table'><thead><th>Song</th><th>Tune</th><th>Meter</th><th>Lyrics</th><th>Tags</th></thead>
+<tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/religion_fit_to_last.html">Religion fit to last</a></td><td class='tune-box'>JESOUS AHATONHIA (adapted)</td><td class='meter-box'>86.86.76.86</td><td class='lyric-box'><div>A voice within becomes distressed to see you taste the fruit,
 forbidden by your God and creed, respected since your youth:
 ''Prodigal, I'll fight in you, restore your faith to thrive.
 I'll bring you back within the fold. Without you can't survive.
@@ -34,4 +34,4 @@ Religions of today are the religions fit to last.
 Members true through power, fear, or friendly company
 rebuke again their wayward young, "Eat not from yonder tree."
 Eat not from yonder tree!
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/accompanied.html">accompanied</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbykenan.html">textbykenan</a></td></tr>
+</div></td><td class='tags-box'><div><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/accompanied.html">accompanied</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbykenan.html">textbykenan</a></div></td></tr>

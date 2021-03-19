@@ -167,6 +167,19 @@ img {
   visibility: visible;
 }
 
+.odd td {
+    background: #ccc;
+}
+.even td {
+    background: #c5c5c5;
+}
+.odd td.sorting_1 {
+    background: #cbb;
+}
+.even td.sorting_1 {
+    background: #c0b0b0;
+}
+
 .lyric-box {
     font-size: 12px;
     overflow-y: scroll;
@@ -187,6 +200,9 @@ img {
   font-size: 18px;
   font-family: Arvo, sans-serif;
 }
+.tags-box {
+    line-height: 1.4;
+}
 
 .hymn-name-box {
     background: #e7e3df;
@@ -202,7 +218,7 @@ img {
     padding: 0px 2px;
     display: inline-block;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 10px;
     line-height: 1.6;
 }
 

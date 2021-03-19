@@ -4,8 +4,8 @@ layout: default
 ---
 {% include data_table.html %}
 # Tag: accompanied
-<table id='song-table'><thead><th>Song</th><th>Lyrics</th><th>Tags</th></thead>
-<tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_o_thou_traveller.html">Come, O thou Traveler unknown</a></td><td class='lyric-box'>Come, O thou Traveler unknown, whom still, I hold, but cannot see!
+<table id='song-table'><thead><th>Song</th><th>Tune</th><th>Meter</th><th>Lyrics</th><th>Tags</th></thead>
+<tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_o_thou_traveller.html">Come, O thou Traveler unknown</a></td><td class='tune-box'>VERNON</td><td class='meter-box'>88.88.88</td><td class='lyric-box'><div>Come, O thou Traveler unknown, whom still, I hold, but cannot see!
 My company before is gone, and I am left alone with thee.
 With thee all night I mean to stay, and wrestle till the break of day.
 
@@ -75,7 +75,7 @@ All helplessness, all weakness I
 on thee alone for strength depend,
 nor have I power from thee to move.
 Thy nature, and thy name is Love!
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/accompanied.html">accompanied</a><a class="taglink" href="{{ site.baseurl }}/tags/11verse.html">11verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/religion_fit_to_last.html">Religion fit to last</a></td><td class='lyric-box'>A voice within becomes distressed to see you taste the fruit,
+</div></td><td class='tags-box'><div><a class="taglink" href="{{ site.baseurl }}/tags/theist.html">theist</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/accompanied.html">accompanied</a><a class="taglink" href="{{ site.baseurl }}/tags/11verse.html">11verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbyother.html">textbyother</a></div></td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/religion_fit_to_last.html">Religion fit to last</a></td><td class='tune-box'>JESOUS AHATONHIA (adapted)</td><td class='meter-box'>86.86.76.86</td><td class='lyric-box'><div>A voice within becomes distressed to see you taste the fruit,
 forbidden by your God and creed, respected since your youth:
 ''Prodigal, I'll fight in you, restore your faith to thrive.
 I'll bring you back within the fold. Without you can't survive.
@@ -104,4 +104,4 @@ Religions of today are the religions fit to last.
 Members true through power, fear, or friendly company
 rebuke again their wayward young, "Eat not from yonder tree."
 Eat not from yonder tree!
-</td><td class='tags-box'><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/accompanied.html">accompanied</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbykenan.html">textbykenan</a></td></tr>
+</div></td><td class='tags-box'><div><a class="taglink" href="{{ site.baseurl }}/tags/secular.html">secular</a><a class="taglink" href="{{ site.baseurl }}/tags/1part.html">1part</a><a class="taglink" href="{{ site.baseurl }}/tags/accompanied.html">accompanied</a><a class="taglink" href="{{ site.baseurl }}/tags/5verse.html">5verse</a><a class="taglink" href="{{ site.baseurl }}/tags/arrbykenan.html">arrbykenan</a><a class="taglink" href="{{ site.baseurl }}/tags/textbykenan.html">textbykenan</a></div></td></tr>
