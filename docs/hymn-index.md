@@ -5,7 +5,7 @@ layout: default
 ---
 {% include data_table.html %}
 # Complete Index
-<table id='song-table'><thead><th>Song</th><th>Tune</th><th>Meter</th><th>Lyrics</th><th>Tags</th></thead>
+<table id='song-table' cellspacing='0' width='100%'><thead><th>Song</th><th>Tune</th><th>Meter</th><th>Lyrics</th><th>Tags</th></thead>
 <tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/abide_with_me.html">Abide with me</a></td><td class='tune-box'>EVENTIDE</td><td class='meter-box'>10 10.10 10</td><td class='lyric-box'><div>Abide with me; Fast falls the eventide,
 The darkness deepens; Lord, with me abide!
 When other helpers fail, and comforts flee,

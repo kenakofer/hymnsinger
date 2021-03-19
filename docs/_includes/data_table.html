@@ -2,23 +2,46 @@
 
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
 <script src="//cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.2.7/js/dataTables.responsive.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.7/css/responsive.dataTables.min.css">
 
 <script>
 $(document).ready( function () {
     $('#song-table').DataTable({
         "paging": false,
         "dom": "ifrt",
+        "responsive": true,
         "language": {
             "info": "_TOTAL_ songs",
             "infoEmpty": "None found",
             "infoFiltered": "(filtered from _MAX_)"
         },
         "columns": [
-            null,
-            null,
-            null,
-            { "orderable": false },
-            { "orderable": false },
+            {
+                "visible": true,
+                "orderable": true,
+                "responsivePriority": 0
+            },
+            {
+                "visible": true,
+                "orderable": true,
+                "responsivePriority": 3
+            },
+            {
+                "visible": true,
+                "orderable": true,
+                "responsivePriority": 4
+            },
+            {
+                "visible": true,
+                "orderable": false,
+                "responsivePriority": 1
+            },
+            {
+                "visible": true,
+                "orderable": false,
+                "responsivePriority": 2
+            },
         ]
     });
 } );

@@ -4,7 +4,7 @@ layout: default
 ---
 {% include data_table.html %}
 # Tag: 7verse
-<table id='song-table'><thead><th>Song</th><th>Tune</th><th>Meter</th><th>Lyrics</th><th>Tags</th></thead>
+<table id='song-table' cellspacing='0' width='100%'><thead><th>Song</th><th>Tune</th><th>Meter</th><th>Lyrics</th><th>Tags</th></thead>
 <tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/all_creatures_worship_god_most_high.html">All creatures worship God most high</a></td><td class='tune-box'>LASST UNS ERFREUEN</td><td class='meter-box'>LM</td><td class='lyric-box'><div>All creatures, worship God most high, lift up your voice in earth and sky,
 
   alleluia, alleluia!

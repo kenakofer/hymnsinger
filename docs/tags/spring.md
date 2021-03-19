@@ -4,7 +4,7 @@ layout: default
 ---
 {% include data_table.html %}
 # Tag: spring
-<table id='song-table'><thead><th>Song</th><th>Tune</th><th>Meter</th><th>Lyrics</th><th>Tags</th></thead>
+<table id='song-table' cellspacing='0' width='100%'><thead><th>Song</th><th>Tune</th><th>Meter</th><th>Lyrics</th><th>Tags</th></thead>
 <tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/loveliest_of_trees.html">Lovelist of trees</a></td><td class='tune-box'>ORIENTIS PARTIBUS</td><td class='meter-box'>87.87</td><td class='lyric-box'><div>Loveliest of trees, the cherry now,
 hung with bloom along the bough,
 it stands about the woodland ride

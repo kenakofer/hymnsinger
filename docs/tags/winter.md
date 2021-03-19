@@ -4,7 +4,7 @@ layout: default
 ---
 {% include data_table.html %}
 # Tag: winter
-<table id='song-table'><thead><th>Song</th><th>Tune</th><th>Meter</th><th>Lyrics</th><th>Tags</th></thead>
+<table id='song-table' cellspacing='0' width='100%'><thead><th>Song</th><th>Tune</th><th>Meter</th><th>Lyrics</th><th>Tags</th></thead>
 <tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/angels_we_have_heard.html">Angels we have heard on high</a></td><td class='tune-box'>GLORIA</td><td class='meter-box'>77.77 with refrain</td><td class='lyric-box'><div>Angels we have heard on high, singing sweetly through the night,
 and the mountains in reply echoing their brave delight.
 

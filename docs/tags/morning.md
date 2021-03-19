@@ -4,7 +4,7 @@ layout: default
 ---
 {% include data_table.html %}
 # Tag: morning
-<table id='song-table'><thead><th>Song</th><th>Tune</th><th>Meter</th><th>Lyrics</th><th>Tags</th></thead>
+<table id='song-table' cellspacing='0' width='100%'><thead><th>Song</th><th>Tune</th><th>Meter</th><th>Lyrics</th><th>Tags</th></thead>
 <tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/break_forth.html">Break forth, O beauteous heavenly light</a></td><td class='tune-box'>ERMUNTRE DICH</td><td class='meter-box'>87.87.88.77</td><td class='lyric-box'><div>Break forth, O beauteous heav'nly light, and usher in the morning.
 O shepherds, shrink not with affright, but hear the angel's warning.
 This child, now weak in infancy, our confidence and joy shall be,

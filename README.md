@@ -42,3 +42,5 @@ This is a project to make or take hymns with permissive copyright status, typese
   - Remove "~" from lyrics extraction
   - ' versus ’ in lyrics extraction
   - Extract TUNE, music, text data
+  - Figure out what the meters mean for consistency
+  - Fix tis a gift

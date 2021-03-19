@@ -4,7 +4,7 @@ layout: default
 ---
 {% include data_table.html %}
 # Tag: 2verse
-<table id='song-table'><thead><th>Song</th><th>Tune</th><th>Meter</th><th>Lyrics</th><th>Tags</th></thead>
+<table id='song-table' cellspacing='0' width='100%'><thead><th>Song</th><th>Tune</th><th>Meter</th><th>Lyrics</th><th>Tags</th></thead>
 <tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/as_the_deer_with_eager_yearning.html">As the deer with eager yearning</a></td><td class='tune-box'>GENEVA 42 (FREU DICH SEHR)</td><td class='meter-box'>87.87.77.88</td><td class='lyric-box'><div>As the deer with eager yearning
 seeks the cooling watercourse,
 so my soul with ardor burning

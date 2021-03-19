@@ -4,7 +4,7 @@ layout: default
 ---
 {% include data_table.html %}
 # Tag: musicbykenan
-<table id='song-table'><thead><th>Song</th><th>Tune</th><th>Meter</th><th>Lyrics</th><th>Tags</th></thead>
+<table id='song-table' cellspacing='0' width='100%'><thead><th>Song</th><th>Tune</th><th>Meter</th><th>Lyrics</th><th>Tags</th></thead>
 <tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/warm_summer_sun.html">Warm summer sun</a></td><td class='tune-box'>LIE LIGHT</td><td class='meter-box'>88.88</td><td class='lyric-box'><div>Warm summer sun, shine kindly here,
 Warm southern wind, blow softly here,
 Green sod above, lie light, lie light.
