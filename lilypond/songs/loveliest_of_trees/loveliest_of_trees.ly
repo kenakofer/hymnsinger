@@ -12,7 +12,7 @@ quarternoteTempo = 120
 
 %% SONG INFO
 verseCount = 3
-tags = "english secular 4part musicbyother textbyother spring"
+tags = "english secular 4part textbyother spring"
 title = \titleText "Lovelist of trees"
 poet = \smallText "Text: A. E. Housman, 1896"
 copyright = \public_domain_notice "Kenan Schaefkofer"

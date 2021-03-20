@@ -16,7 +16,7 @@ title = \titleText "We shall overcome"
 poet = \smallText "Text: African-American Spiritual"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 3
-tags = "english secular 4part arrbykenan textbyother"
+tags = "english secular 4part textbyother"
 dateAdded = "2021-01-12"
 \include "../../lib/header.ly"
 

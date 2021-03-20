@@ -15,7 +15,7 @@ title = \titleText "Jesu, joy of our desiring"
 poet = \smallText "Text: Martin Janus, 1665, trans. Robert Bridges, 1927"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 2
-tags = "english christian 4part musicbyother textbyother"
+tags = "english christian 4part textbyother"
 dateAdded = "2021-03-04"
 \include "../../lib/header.ly"
 

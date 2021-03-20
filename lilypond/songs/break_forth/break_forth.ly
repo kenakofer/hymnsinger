@@ -16,7 +16,7 @@ title = \titleText "Break forth, O beauteous heavenly light"
 poet = \smallText "Text: Johann Rist, 1641, tr. John Troutbeck ca. 1885"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 1
-tags = "english christian 4part musicbyother textbyother morning"
+tags = "english christian 4part textbyother morning"
 dateAdded = "2021-01-08"
 \include "../../lib/header.ly"
 

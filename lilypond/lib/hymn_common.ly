@@ -327,7 +327,7 @@ subtitle = ""
 arranger = ""
 poet = \smallText "Text: Who wrote the text, year"
 verseCount = 2
-tags = "english christian 4part musicbyother textbyother"
+tags = "english christian 4part textbyother"
 %% These usually don't need to be changed
 prescore_text = {}
 postscore_text = {}

@@ -10,7 +10,7 @@ title = \titleText "No number tallies up my score"
 poet = \smallText "Text: Ralph Waldo Emerson (1803-1882), rev."
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 4
-tags = "english secular 4part arrbykenan textbyother"
+tags = "english secular 4part textbyother"
 dateAdded = "2021-02-14"
 \include "../../lib/header.ly"
 

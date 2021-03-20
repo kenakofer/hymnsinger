@@ -16,7 +16,7 @@ arranger = \smallText "arr. Kenan Schaefkofer, 2021"
 poet = \smallText "Text: Kenan Schaefkofer, 2021"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 5
-tags = "english secular 1part accompanied arrbykenan textbykenan"
+tags = "english secular 1part accompanied textbykenan"
 dateAdded = "2021-01-12"
 \include "../../lib/header.ly"
 

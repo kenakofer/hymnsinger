@@ -11,7 +11,7 @@ title = \titleText "For the beauty of our earth"
 poet = \twoLineSmallText "Text: Folliott S. Pierpoint, 1864" "Adapted by Kenan Schaefkofer, 2021"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 5
-tags = "english secular 4part musicbyother textadaptedbykenan"
+tags = "english secular 4part textadaptedbykenan"
 dateAdded = "2021-01-05"
 \include "../../lib/header.ly"
 

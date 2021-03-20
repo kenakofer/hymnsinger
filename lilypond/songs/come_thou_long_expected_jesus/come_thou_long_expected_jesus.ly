@@ -11,7 +11,7 @@ title = \titleText "Come, thou long-expected Jesus"
 poet = \smallText "Text: Charles Wesley, 1744"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 2
-tags = "english christian 4part musicbyother textbyother"
+tags = "english christian 4part textbyother"
 dateAdded = "2021-01-07"
 \include "../../lib/header.ly"
 

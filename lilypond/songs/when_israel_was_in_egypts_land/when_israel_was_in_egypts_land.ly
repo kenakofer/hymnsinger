@@ -16,7 +16,7 @@ title = \titleText "When Israel was in Egypt's land"
 poet = \smallText "Text: African American spiritual"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 5
-tags = "english christian 4part musicbyother textbyother"
+tags = "english christian 4part textbyother"
 dateAdded = "2021-02-07"
 \include "../../lib/header.ly"
 

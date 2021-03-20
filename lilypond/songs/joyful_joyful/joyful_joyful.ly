@@ -16,7 +16,7 @@ poet = \smallText "Text: Henry van Dyke, 1907"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 4
 verseCount = 4
-tags = "english christian 4part musicbyother textbyother"
+tags = "english christian 4part textbyother"
 dateAdded = "2021-01-13"
 \include "../../lib/header.ly"
 

@@ -15,7 +15,7 @@ title = \titleText "Angels we have heard on high"
 poet = \smallText "Text: tr. anonymous, altered by Earl Marlatt, 1937"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 4
-tags = "english christian 4part musicbyother textbyother winter"
+tags = "english christian 4part textbyother winter"
 dateAdded = "2021-01-11"
 \include "../../lib/header.ly"
 

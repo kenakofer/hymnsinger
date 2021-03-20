@@ -15,7 +15,7 @@ title = \titleText "Lo, how a Rose e'er blooming"
 poet = \smallText "Tr. Theodore Baker (Sts. 1-2), 1894, Harriet Spaeth (St. 3), 1875"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 3
-tags = "english christian 4part musicbyother textbyother winter"
+tags = "english christian 4part textbyother winter"
 dateAdded = "2021-01-12"
 \include "../../lib/header.ly"
 

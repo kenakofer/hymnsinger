@@ -2,7 +2,7 @@
 layout: song_page
 song_file: now_all_the_woods_are_sleeping
 title: "Now all the woods are sleeping"
-description: "Now all the woods are sleeping, the night and stillness creeping o'er city, field, and beast; but thou, my heart, awake be, with pray'rful thanks, att... english secular 4part musicbyother textadaptedbykenan evening"
+description: "Now all the woods are sleeping, the night and stillness creeping o'er city, field, and beast; but thou, my heart, awake be, with pray'rful thanks, att... english secular 4part textadaptedbykenan evening"
 image: https://github.com/kenanbit/hymn-singer/releases/latest/download/now_all_the_woods_are_sleeping-trad.png
 ---
 
