@@ -8,7 +8,7 @@ quarternoteTempo = 120
 
 %% SONG INFO
 title = \titleText "For the beauty of our earth"
-poet = \twoLineSmallText "Text: Folliott S. Pierpoint, 1864" "Adapted by Kenan Schaefkofer, 2021"
+poet = \twoLineSmallText "Text: Folliott S. Pierpoint, 1864, alt." "v.5 Kenan Schaefkofer, 2021"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 5
 tags = "english secular 4part textadaptedbykenan"
@@ -38,7 +38,6 @@ verseE = \lyricmode {
   For thy Truth both harsh and kind, sha -- dowed set -- ter of our stage,
   pat -- terns sought by hu -- man mind, guid -- ing us from age to age,
 }
-verseF = \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano
@@ -48,7 +47,6 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "" \verseE }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "" \verseF }
 >>
 
 %% All sheet music outputs
