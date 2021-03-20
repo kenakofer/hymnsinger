@@ -662,8 +662,8 @@ Mortals join the mighty chorus which the morning stars began.
 Love divine is reigning o'er us, leading us with mercy's hand.
 Ever singing, march we onward, victors in the midst of strife.
 Joyful music lifts us sunward in the triumph song of life!
-</div></td><td class='stanzas-box'>4.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a></div></td><td class='date-added-box'>2021/01/13</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/la_paz_de_la_tierra.html">La paz de la tierra (The peace of the earth)</a></td><td class='tune-box'>LA PAZ DE LA TIERRA</td><td class='meter-box'>87.97.76</td><td class='composer-box'>Guatemalan traditional</td><td class='lyric-box'><div>La paz de la tierra esté contigo,~la paz de los cielos también.
-La paz de los ríos esté contigo,~la paz de los mares también.
+</div></td><td class='stanzas-box'>4.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a></div></td><td class='date-added-box'>2021/01/13</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/la_paz_de_la_tierra.html">La paz de la tierra (The peace of the earth)</a></td><td class='tune-box'>LA PAZ DE LA TIERRA</td><td class='meter-box'>87.97.76</td><td class='composer-box'>Guatemalan traditional</td><td class='lyric-box'><div>La paz de la tierra esté contigo, la paz de los cielos también.
+La paz de los ríos esté contigo, la paz de los mares también.
 Paz profunda cayendo sobre ti.
 Paz profunda creciendo en ti.
 

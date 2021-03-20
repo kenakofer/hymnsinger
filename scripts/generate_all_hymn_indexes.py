@@ -144,7 +144,7 @@ def join_verse_line(line, remove_quotes):
     if remove_quotes and stripped.startswith('"') and stripped.endswith('"'):
         stripped = stripped[1:-1].replace('\\"','"')
 
-    words = stripped.replace("_","").split()
+    words = stripped.replace("_","").replace("~"," ").split()
     if "%%" in words:
         words.remove("%%")
     # Remove quotes and asterisks on individual words
