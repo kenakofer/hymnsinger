@@ -26,7 +26,7 @@ soprano = {
   \relative g' { e2~ 8 g4 e8 | g4. e8~ 2 | e4 8 8 8 4 b8 | ds4. e8~ 2 \mark "Fine" \bar "|."  } \break
   \relative g' { g4^\markup { \italic Leader } e g e | b'8( a) g8 8( e2) | e4^\markup { \italic All } 8 8 8 4 b8 | \partial 2.. ds4. e8~ 4 r8 \bar "" }
   \relative g' { \partial 8 g8 | b4^\markup { \italic Leader } g b g8 g | b8( a) g8 8( e2) | e4^\markup { \italic All } 8 8 8 4 b8 | ds4. e8~ 2 \mark "D.C." |} \break
-  \bar "|."
+  \bar "||"
 }
 alto = {
   \globalParts
@@ -104,32 +104,18 @@ extra_verses = \markup {
      \column {
       \line { \bold "2."
         \column { % LYRICS-START
-"See that host all dressed in white…"
-"The leader looks like the Israelite..."
+"See that band all dressed in red…"
+"Looks like the band that Moses led…"
         }
       }
       \combine \null \vspace #0.4 % adds vertical spacing between verses
       \line { \bold "3."
         \column { % LYRICS-START
-"See that host all dressed in white…"
-"The leader looks like the Israelite..."
+"If you don't believe I've been redeemed…"
+"Just follow me down to Jordan's stream…"
         }
       }
-      \combine \null \vspace #0.4 % adds vertical spacing between verses
-      \line { \bold "4."
-        \column { % LYRICS-START
-"See that host all dressed in white…"
-"The leader looks like the Israelite..."
-        }
-      }
-      \combine \null \vspace #0.4 % adds vertical spacing between verses
-      \line { \bold "5."
-        \column { % LYRICS-START
-"See that host all dressed in white…"
-"The leader looks like the Israelite..."
-        }
-      }
-     }
+    }
   }
 }
 
