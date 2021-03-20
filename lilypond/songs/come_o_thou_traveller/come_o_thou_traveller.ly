@@ -4,7 +4,7 @@
 
 %% TUNE INFO
 composer = \smallText "Music: American folk melody, 1805"
-arranger = \smallText "Arranged by Kenan Schaefkofer, 2018"
+arranger = \smallText "arr. Kenan Schaefkofer, 2018"
 meter = \smallText "VERNON 88.88.88"
 hymnKey = \key d \minor
 hymnTime = \time 4/4

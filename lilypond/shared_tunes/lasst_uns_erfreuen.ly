@@ -1,4 +1,5 @@
-composer = \twoLineSmallTextRight "Music: Geistliche Kirchengesang, 1623" "Harmonized Ralph Vaughan Williams, 1906"
+composer = \smallText "Music: Geistliche Kirchengesang, 1623"
+arranger = \smallText "arr. Ralph Vaughan Williams, 1906"
 meter = \smallText "LASST UNS ERFREUEN LM"
 hymnKey = \key d \major
 hymnTime = \time 3/2

@@ -4,7 +4,7 @@
 
 %% TUNE INFO
 composer = \smallText "Music: Henri Abraham César Malan, 1827"
-arranger = \smallText "Harmonized by Lowell Mason, 1841"
+arranger = \smallText "arr. Lowell Mason, 1841"
 meter = \smallText "HENDON 77.77 extended"
 hymnKey = \key g \major
 hymnTime = \time 4/4

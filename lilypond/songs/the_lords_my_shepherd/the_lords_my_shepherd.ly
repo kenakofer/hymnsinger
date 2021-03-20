@@ -4,7 +4,7 @@
 
 %% TUNE INFO
 composer = \smallText "Music: Jessie S. Irvine, 1872"
-arranger = \smallText "Harmonized David Grant, 1872"
+arranger = \smallText "arr. David Grant, 1872"
 meter = \smallText "CRIMOND CM"
 hymnKey = \key f \major
 hymnTime = \time 3/4

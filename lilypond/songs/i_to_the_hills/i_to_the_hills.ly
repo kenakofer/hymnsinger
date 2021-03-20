@@ -4,7 +4,7 @@
 
 %% TUNE INFO
 composer = \smallText "Music: The CL. Psalmes of David, 1615"
-%arranger = \smallText "Arranged by (optional), year"
+%arranger = \smallText "arr. (optional), year"
 meter = \smallText "DUNDEE CM"
 hymnKey = \key d \major
 hymnTime = \time 4/4

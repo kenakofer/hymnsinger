@@ -12,7 +12,7 @@ quarternoteTempo = 120
 
 %% SONG INFO
 title = \titleText "Religion fit to last"
-arranger = \smallText "Arranged by Kenan Schaefkofer, 2021"
+arranger = \smallText "arr. Kenan Schaefkofer, 2021"
 poet = \smallText "Text: Kenan Schaefkofer, 2021"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 5

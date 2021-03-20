@@ -4,7 +4,7 @@
 
 %% TUNE INFO
 composer = \smallText "Music: Johann Schop, 1641"
-arranger = \smallText "Harmonized by J. S. Bach, 1734"
+arranger = \smallText "arr. J. S. Bach, 1734"
 meter = \smallText "ERMUNTRE DICH 87.87.88.77"
 hymnKey = \key f \major
 hymnTime = \time 4/4

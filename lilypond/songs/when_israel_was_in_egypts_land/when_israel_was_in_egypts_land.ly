@@ -3,7 +3,8 @@
 \include "../../lib/hymn_common.ly"
 
 %% TUNE INFO
-composer = \twoLineSmallText "Music: African American spiritual" "Harmonized John W. Work (1871-1925)"
+composer = \smallText "Music: African American spiritual"
+arranger = \smallText "arr. John W. Work (1871-1925)"
 meter = \smallText "GO DOWN MOSES 85.85 with refrain"
 hymnKey = \key g \minor
 hymnTime = \time 4/4

@@ -5,7 +5,7 @@
 %% TUNE INFO
 %% Otherwise set up tune info here:
 composer = \smallText "Music: Irish folk song"
-arranger = \smallText "Arranged by Kenan Schaefkofer, 2021"
+arranger = \smallText "arr. Kenan Schaefkofer, 2021"
 meter = \smallText "SOLIDARITY 76.76 D"
 hymnKey = \key e \minor
 hymnTime = \time 4/4

@@ -1,5 +1,5 @@
 composer = \smallText "Music: Rowland H. Prichard ca. 1830"
-arranger = \smallText "Arranged by Ralph Vaughn Williams, 1906"
+arranger = \smallText "arr. Ralph Vaughn Williams, 1906"
 meter = \smallText "HYFRYDOL 87.87 D"
 hymnKey = \key f \major
 hymnTime = \time 3/4

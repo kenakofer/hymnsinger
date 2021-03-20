@@ -4,7 +4,7 @@
 
 %% TUNE INFO
 composer = \smallText "Music: Philip P. Bliss, 1876"
-%arranger = \smallText "Arranged by (optional), year"
+%arranger = \smallText "arr. (optional), year"
 meter = \smallText "VILLE DU HAVRE 11.8.11.9 with refrain"
 hymnKey = \key c \major
 hymnTime = \time 4/4

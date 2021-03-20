@@ -4,7 +4,7 @@
 
 %% TUNE INFO
 composer = \smallText "Music: Joseph Bracket, 1848"
-arranger = \smallText "Arranged by Kenan Schaefkofer, 2021"
+arranger = \smallText "arr. Kenan Schaefkofer, 2021"
 meter = \smallText "SIMPLE GIFTS irregular"
 hymnKey = \key f \major
 hymnTime = \time 4/4

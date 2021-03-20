@@ -1,4 +1,5 @@
-composer = \twoLineSmallText "Music: Louis Bourgeois, 1551" "Harmonized Claude Goudimel, 1565"
+composer = \smallText "Music: Louis Bourgeois, 1551"
+arranger = \smallText "arr. Claude Goudimel, 1565"
 meter = \smallText "GENEVA 42 (FREU DICH SEHR) 87.87.77.88"
 hymnKey = \key f \major
 hymnTime = \time 12/4

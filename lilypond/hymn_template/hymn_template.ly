@@ -8,7 +8,7 @@
 
 %% Otherwise set up tune info here:
 composer = \smallText "Music: Composer, year"
-%arranger = \smallText "Arranged by (optional), year"
+%arranger = \smallText "arr. Name, year"
 meter = \smallText "TUNE NAME METER"
 hymnKey = \key c \major
 hymnTime = \time 4/4

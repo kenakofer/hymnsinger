@@ -1,5 +1,5 @@
 composer = \smallText "Music: English Traditional, 15th c."
-arranger = \smallText "Arranged by Kenan Schaefkofer, 2017"
+arranger = \smallText "arr. Kenan Schaefkofer, 2017"
 meter = \smallText "DEO GRACIAS LM"
 hymnKey = \key d \minor
 hymnTime = \time 3/4

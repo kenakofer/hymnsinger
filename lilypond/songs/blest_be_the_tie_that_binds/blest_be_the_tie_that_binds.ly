@@ -4,7 +4,7 @@
 
 %% TUNE INFO
 composer = \smallText "Music: Johann G. Nägeli, 1828; arr. Lowell Mason, 1845"
-%arranger = \smallText "Arranged by (optional), year"
+%arranger = \smallText "arr. (optional), year"
 meter = \smallText "DENNIS SM"
 hymnKey = \key f \major
 hymnTime = \time 3/4

@@ -1,5 +1,5 @@
 composer = \smallText "Music: North American Traditional"
-arranger = \smallText "Arranged by Kenan Schaefkofer, 2021"
+arranger = \smallText "arr. Kenan Schaefkofer, 2021"
 meter = \smallText "RESIGNATION CMD"
 hymnKey = \key c \major
 hymnTime = \time 3/4

@@ -4,7 +4,7 @@
 
 %% TUNE INFO
 composer = \smallText "Music: W. Warren Bentley, 1879"
-%arranger = \smallText "Arranged by (optional), year"
+%arranger = \smallText "arr. (optional), year"
 meter = \smallText "RIFTED ROCK 87.87 with refrain"
 hymnKey = \key e \major
 hymnTime = \time 3/2

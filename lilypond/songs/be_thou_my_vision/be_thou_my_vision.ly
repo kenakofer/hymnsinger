@@ -4,7 +4,7 @@
 
 %% TUNE INFO
 composer = \smallText "Music: Irish melody, 1909"
-arranger = \smallText "Arranged by Martin Shaw, 1931"
+arranger = \smallText "arr. Martin Shaw, 1931"
 meter = \smallText "SLANE 10.10.9.10"
 hymnKey = \key ef \major
 hymnTime = \time 3/4
