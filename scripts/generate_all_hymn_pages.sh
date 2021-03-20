@@ -19,16 +19,18 @@ Toggle:
 <a class="toggle-vis" data-column="0" href="#">Song</a> |
 <a class="toggle-vis" data-column="1" href="#">Tune</a> |
 <a class="toggle-vis off" data-column="2" href="#">Meter</a> |
-<a class="toggle-vis" data-column="3" href="#">Stanzas</a> |
-<a class="toggle-vis off" data-column="4" href="#">#</a> |
-<a class="toggle-vis" data-column="5" href="#">Tags</a> |
-<a class="toggle-vis" data-column="6" href="#">Added</a>
+<a class="toggle-vis off" data-column="3" href="#">Composer</a> |
+<a class="toggle-vis" data-column="4" href="#">Stanzas</a> |
+<a class="toggle-vis off" data-column="5" href="#">#</a> |
+<a class="toggle-vis" data-column="6" href="#">Tags</a> |
+<a class="toggle-vis" data-column="7" href="#">Added</a>
 </div>
 
 <table id='song-table' cellspacing='0' width='100%'><thead>
 <th>Song</th>
 <th>Tune</th>
 <th>Meter</th>
+<th>Composer</th>
 <th>Stanzas</th>
 <th>#</th>
 <th>Tags</th>

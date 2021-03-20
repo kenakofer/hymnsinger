@@ -208,6 +208,9 @@ img {
   font-size: 18px;
   font-family: Arvo, sans-serif;
 }
+.composer-box {
+    white-space: pre-wrap
+}
 #song-table td.tags-box {
     padding: 0;
 }
