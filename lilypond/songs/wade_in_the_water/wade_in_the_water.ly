@@ -12,11 +12,8 @@ quarternoteTempo = 106
 
 %% SONG INFO
 title = \titleText "Wade in the water"
-%subtitle = \smallText "Optional"
 poet = \smallText "Text: African American Spiritual"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-%prescore_text = \prescoreText "Uncomment to add text up and left of the score"
-%postscore_text = \postscoreText "Uncomment to add text down and left of the score"
 verseCount = 4
 tags = "english christian 4part"
 dateAdded = "2021-03-20"
@@ -50,7 +47,7 @@ bass = {
   \relative d { e2~ 8 e4 e8 | e4 e g,( a) | b2~ 8 b4 8 | e4 4 b4 4 | }
   \relative d { e2~ 8 b4 b8 | b4 a a( c) | e4 8 8 8 4 8 | b4. e8~ 2 | }
   \relative d { r1 r1 | e4 8 8 8 4 8 | b4. e8~ 4 r8 r8 }
-  \relative d { r1 r1 | e4 8 8 8 4 8 | b4. e8~ 2 r4}
+  \relative d { r1 r1 | e4 8 8 8 4 8 | b4. e8~ 2 }
 }
 songChords = \chords {
   \set chordChanges = ##t
@@ -74,10 +71,29 @@ verseA = \lyricmode {
   God's gon -- na trou -- ble the wa -- ter.
 }
 
+bottomA = \lyricmode {
+  _ _ _ _ _ oh, _ _ _ _ _ _ _
+  _ _ _ _ _ oh,
+
+}
+
+spacingVerse = \lyricmode {
+  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  "\t" _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  "\t" _ _
+}
+
 all_verses = <<
   \new NullVoice = "soprano" \soprano
   % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "" "" \verseA }
+  \new Lyrics \lyricsto soprano  { \globalLyrics "" "" \verseA }
+  \new Lyrics \lyricsto soprano  { \globalLyrics "" "" \spacingVerse }
+>>
+
+bottom_verses = <<
+  \new NullVoice = "bass" \bass
+  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
+  \new Lyrics  \lyricsto bass  { \globalLyrics "" "" \bottomA }
 >>
 
 extra_verses = \markup {
