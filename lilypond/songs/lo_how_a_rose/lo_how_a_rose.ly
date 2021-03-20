@@ -15,7 +15,7 @@ title = \titleText "Lo, how a Rose e'er blooming"
 poet = \twoLineSmallText "Text: v.1-2 anonymous, 1599; v.3 Friedrich Layritz, 1599" "tr. v.1-2 Theodore Baker, 1894; v.3 Harriet Spaeth, 1875; alt."
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 3
-tags = "english christian 4part textbyother winter"
+tags = "english christian 4part winter"
 dateAdded = "2021-01-12"
 \include "../../lib/header.ly"
 

@@ -16,7 +16,7 @@ title = \titleText "Be thou my vision"
 poet = \smallText "Text: Ancient Irish, tr. Mary Elizabeth Byrne, 1905"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 5
-tags = "english theist 4part textbyother"
+tags = "english theist 4part"
 dateAdded = "2021-01-13"
 \include "../../lib/header.ly"
 

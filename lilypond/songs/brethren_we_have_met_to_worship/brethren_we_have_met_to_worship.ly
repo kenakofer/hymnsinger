@@ -15,7 +15,7 @@ title = \titleText "Brethren, we have met to worship"
 poet = \smallText "Text: The Columbian Harmony, 1825"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 4
-tags = "english christian 4part textbyother"
+tags = "english christian 4part"
 dateAdded = "2021-01-07"
 \include "../../lib/header.ly"
 

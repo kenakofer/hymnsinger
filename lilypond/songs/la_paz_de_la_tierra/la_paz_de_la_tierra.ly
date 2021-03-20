@@ -15,7 +15,7 @@ title = \titleText "La paz de la tierra (The peace of the earth)"
 poet = \smallText "Text: Spanish; Guatemalan traditional; trans. Kenan Schaefkofer, 2021"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 1
-tags = "spanish english secular 4part textbyother"
+tags = "spanish english secular 4part"
 dateAdded = "2021-03-09"
 \include "../../lib/header.ly"
 

@@ -11,7 +11,7 @@ title = \titleText "Grant us, God, the grace of giving"
 poet = \smallText "Text: Robert Murray, 1880, alt."
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 1
-tags = "english theist 4part textbyother"
+tags = "english theist 4part"
 dateAdded = "2021-03-14"
 \include "../../lib/header.ly"
 

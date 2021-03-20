@@ -51,7 +51,7 @@ I fear no foe, with Thee at hand to bless;
 Ills have no weight, and tears no bitterness.
 Where is death’s sting? Where, grave, thy victory?
 I triumph still, if Thou abide with me.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Henry F. Lyte, 1847</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">evening</a><a class="taglink" href="#">death</a></div></td><td class='date-added-box'>2021/01/16</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/all_creatures_of_the_earth_and_sky.html">All creatures of the earth and sky</a></td><td class='tune-box'>LASST UNS ERFREUEN</td><td class='meter-box'>LM</td><td class='composer-box'>Geistliche Kirchengesang, 1623;
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Henry F. Lyte, 1847</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">evening</a><a class="taglink" href="#">death</a></div></td><td class='date-added-box'>2021/01/16</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/all_creatures_of_the_earth_and_sky.html">All creatures of the earth and sky</a></td><td class='tune-box'>LASST UNS ERFREUEN</td><td class='meter-box'>LM</td><td class='composer-box'>Geistliche Kirchengesang, 1623;
 arr. Ralph Vaughan Williams, 1906</td><td class='lyric-box'><div>All creatures of the earth and sky, come, kindred, lift your voices high,
 
   alleluia, alleluia!
@@ -95,7 +95,7 @@ Let all things now the good possess,
 and search out truth in humbleness
 
   O sing ye, O sing ye, alleluia, alleluia, alleluia!
-</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Saint Francis of Assisi, 1225; alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/05</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/all_creatures_worship_god_most_high.html">All creatures worship God most high</a></td><td class='tune-box'>LASST UNS ERFREUEN</td><td class='meter-box'>LM</td><td class='composer-box'>Geistliche Kirchengesang, 1623;
+</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Saint Francis of Assisi, 1225; alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/05</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/all_creatures_worship_god_most_high.html">All creatures worship God most high</a></td><td class='tune-box'>LASST UNS ERFREUEN</td><td class='meter-box'>LM</td><td class='composer-box'>Geistliche Kirchengesang, 1623;
 arr. Ralph Vaughan Williams, 1906</td><td class='lyric-box'><div>All creatures, worship God most high, lift up your voice in earth and sky,
 
   alleluia, alleluia!
@@ -151,7 +151,7 @@ Let all things their Creator bless, and worship God in humbleness,
 To God all thanks and praise belong! Join in the everlasting song:
 
   O sing ye, O sing ye, alleluia, alleluia, alleluia!
-</div></td><td class='stanzas-box'>7.</td><td class='poet-box'>Text: Saint Francis of Assisi, 1225; tr. William H. Draper, 1926; alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/05</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/all_hail_the_power.html">All hail the power of Jesus' name</a></td><td class='tune-box'>CORONATION</td><td class='meter-box'>CM extended</td><td class='composer-box'>Oliver Holden, 1792</td><td class='lyric-box'><div>All hail the pow’r of Jesus’ name! Let angels prostrate fall.
+</div></td><td class='stanzas-box'>7.</td><td class='poet-box'>Text: Saint Francis of Assisi, 1225; tr. William H. Draper, 1926; alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/05</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/all_hail_the_power.html">All hail the power of Jesus' name</a></td><td class='tune-box'>CORONATION</td><td class='meter-box'>CM extended</td><td class='composer-box'>Oliver Holden, 1792</td><td class='lyric-box'><div>All hail the pow’r of Jesus’ name! Let angels prostrate fall.
 Bring forth the royal diadem, and crown him Lord of all.
 Bring forth the royal diadem, and crown him Lord of all!
 
@@ -166,7 +166,7 @@ To him all majesty ascribe, and crown him Lord of all!
 Oh, that with all the sacred throng we at his feet may fall!
 We’ll join the everlasting song and crown him Lord of all.
 We’ll join the everlasting song and crown him Lord of all!
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Edward Perronet, 1780, revised by John Rippon, 1787</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a></div></td><td class='date-added-box'>2021/01/14</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/all_praise_to_thee_my_god.html">All praise to thee, my God</a></td><td class='tune-box'>TALLIS' CANON</td><td class='meter-box'>LM</td><td class='composer-box'>Thomas Tallis, 1567</td><td class='lyric-box'><div>All praise to thee, my God, this night, for all the blessings of the light.
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Edward Perronet, 1780, revised by John Rippon, 1787</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/01/14</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/all_praise_to_thee_my_god.html">All praise to thee, my God</a></td><td class='tune-box'>TALLIS' CANON</td><td class='meter-box'>LM</td><td class='composer-box'>Thomas Tallis, 1567</td><td class='lyric-box'><div>All praise to thee, my God, this night, for all the blessings of the light.
 Keep me, O keep me, King of kings, beneath thine own almighty wings.
 
 O let my soul, on thee, repose, and with sweet sleep my eyelids close,
@@ -174,7 +174,7 @@ sleep that will me more vig'rous make to serve my God when I awake.
 
 Praise God from whom all blessings flow, praise God all creatures here below,
 praise God above ye heav'nly host, praise Father, Son, and Holy Ghost.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Thomas Ken, 1695</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">evening</a></div></td><td class='date-added-box'>2021/03/05</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/amazing_grace.html">Amazing grace</a></td><td class='tune-box'>NEW BRITAIN (AMAZING GRACE)</td><td class='meter-box'>CM</td><td class='composer-box'>American folk melody, 1831</td><td class='lyric-box'><div>Amazing grace! how sweet the sound, that saved a wretch like me!
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Thomas Ken, 1695</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">evening</a></div></td><td class='date-added-box'>2021/03/05</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/amazing_grace.html">Amazing grace</a></td><td class='tune-box'>NEW BRITAIN (AMAZING GRACE)</td><td class='meter-box'>CM</td><td class='composer-box'>American folk melody, 1831</td><td class='lyric-box'><div>Amazing grace! how sweet the sound, that saved a wretch like me!
 I once was lost, but now am found, was blind, but now I see.
 
 'Twas grace that taught my heart to fear, and grace my fears relieved.
@@ -191,7 +191,7 @@ but God, who called me here below, will be forever mine.
 
 When we've been there ten thousand years, bright shining as the sun,
 we've no less days to sing God's praise than when we'd first begun.
-</div></td><td class='stanzas-box'>6.</td><td class='poet-box'>John Newton, 1779 (Sts. 1-5), 1790 (St. 6)</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/11</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/angels_we_have_heard.html">Angels we have heard on high</a></td><td class='tune-box'>GLORIA</td><td class='meter-box'>77.77 with refrain</td><td class='composer-box'>Traditional French carol, 1855</td><td class='lyric-box'><div>Angels we have heard on high, singing sweetly through the night,
+</div></td><td class='stanzas-box'>6.</td><td class='poet-box'>John Newton, 1779 (Sts. 1-5), 1790 (St. 6)</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/11</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/angels_we_have_heard.html">Angels we have heard on high</a></td><td class='tune-box'>GLORIA</td><td class='meter-box'>77.77 with refrain</td><td class='composer-box'>Traditional French carol, 1855</td><td class='lyric-box'><div>Angels we have heard on high, singing sweetly through the night,
 and the mountains in reply echoing their brave delight.
 
   Gloria in excelsis Deo, gloria in excelsis Deo.
@@ -204,7 +204,7 @@ Come, adore on bended knee Christ, the Lord, the newborn King.
 
 See him in a manger laid whom the angels praise above.
 Mary, Joseph, lend your aid, while we raise our hearts in love.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Text: Nouveau Recueil de Cantiques, 1855 tr. anonymous, alt. Earl Marlatt, 1937</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">winter</a></div></td><td class='date-added-box'>2021/01/11</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/as_the_deer_with_eager_yearning.html">As the deer with eager yearning</a></td><td class='tune-box'>GENEVA 42 (FREU DICH SEHR)</td><td class='meter-box'>87.87.77.88</td><td class='composer-box'>Louis Bourgeois, 1551;
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Text: Nouveau Recueil de Cantiques, 1855 tr. anonymous, alt. Earl Marlatt, 1937</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">winter</a></div></td><td class='date-added-box'>2021/01/11</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/as_the_deer_with_eager_yearning.html">As the deer with eager yearning</a></td><td class='tune-box'>GENEVA 42 (FREU DICH SEHR)</td><td class='meter-box'>87.87.77.88</td><td class='composer-box'>Louis Bourgeois, 1551;
 arr. Claude Goudimel, 1565</td><td class='lyric-box'><div>As the deer with eager yearning
 seeks the cooling watercourse,
 so my soul with ardor burning
@@ -222,7 +222,7 @@ O my soul, be not dismayed.
 Trust in God, who is our aid.
 Hope and joy God's love provides you,
 'tis God's hand alone that guides you.
-</div></td><td class='stanzas-box'>2.</td><td class='poet-box'>Based on Psalm 42, Christine T. Curtis, 1939, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a></div></td><td class='date-added-box'>2021/03/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/be_still_my_soul.html">Be still my soul</a></td><td class='tune-box'>FINLANDIA</td><td class='meter-box'>10.10.10</td><td class='composer-box'>Jean Sibelius, 1899</td><td class='lyric-box'><div>Be still, my soul; the Lord is on thy side;
+</div></td><td class='stanzas-box'>2.</td><td class='poet-box'>Based on Psalm 42, Christine T. Curtis, 1939, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/be_still_my_soul.html">Be still my soul</a></td><td class='tune-box'>FINLANDIA</td><td class='meter-box'>10.10.10</td><td class='composer-box'>Jean Sibelius, 1899</td><td class='lyric-box'><div>Be still, my soul; the Lord is on thy side;
 bear patiently the cross of grief or pain;
 leave to thy God to order and provide;
 in every change he faithful will remain.
@@ -242,7 +242,7 @@ when disappointment, grief, and fear are gone,
 sorrow forgot, love’s purest joys restored.
 Be still, my soul; when change and tears are past,
 all safe and blessed we shall meet at last.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Kathrina von Schlegel, tr. Jane Borthwick (1855)</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a></div></td><td class='date-added-box'>2021/01/14</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/be_thou_my_vision.html">Be thou my vision</a></td><td class='tune-box'>SLANE</td><td class='meter-box'>10.10.9.10</td><td class='composer-box'>Irish melody, 1909;
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Kathrina von Schlegel, tr. Jane Borthwick (1855)</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/01/14</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/be_thou_my_vision.html">Be thou my vision</a></td><td class='tune-box'>SLANE</td><td class='meter-box'>10.10.9.10</td><td class='composer-box'>Irish melody, 1909;
 arr. Martin Shaw, 1931</td><td class='lyric-box'><div>Be thou my vision, O Lord of my heart;
 naught be all else to me save that thou art.
 Thou my best thought, by day or by night,
@@ -267,7 +267,7 @@ High King of heaven, when vict'ry is won
 may I reach heaven's joys, O bright heav'n's Sun!
 Heart of my heart, whatever befall,
 still be my vision, O Ruler of all.
-</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Ancient Irish, tr. Mary Elizabeth Byrne, 1905</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a></div></td><td class='date-added-box'>2021/01/13</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/blest_be_the_tie_that_binds.html">Blest be the tie that binds</a></td><td class='tune-box'>DENNIS</td><td class='meter-box'>SM</td><td class='composer-box'>Johann G. Nägeli, 1828; arr. Lowell Mason, 1845</td><td class='lyric-box'><div>Blest be the tie that binds our hearts in Christian love.
+</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Ancient Irish, tr. Mary Elizabeth Byrne, 1905</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/01/13</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/blest_be_the_tie_that_binds.html">Blest be the tie that binds</a></td><td class='tune-box'>DENNIS</td><td class='meter-box'>SM</td><td class='composer-box'>Johann G. Nägeli, 1828; arr. Lowell Mason, 1845</td><td class='lyric-box'><div>Blest be the tie that binds our hearts in Christian love.
 The fellowship of kindred minds is like to that above.
 
 We share each other's woes, each other's burdens bear,
@@ -278,12 +278,12 @@ but we shall still be joined in heart, and hope to meet again.
 
 From sorrow, toil, and pain, and sin we shall be free,
 and perfect love and friendship reign through all eternity.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>John Fawcett, 1782, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/break_forth.html">Break forth, O beauteous heavenly light</a></td><td class='tune-box'>ERMUNTRE DICH</td><td class='meter-box'>87.87.88.77</td><td class='composer-box'>Johann Schop, 1641;
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>John Fawcett, 1782, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/break_forth.html">Break forth, O beauteous heavenly light</a></td><td class='tune-box'>ERMUNTRE DICH</td><td class='meter-box'>87.87.88.77</td><td class='composer-box'>Johann Schop, 1641;
 arr. J. S. Bach, 1734</td><td class='lyric-box'><div>Break forth, O beauteous heav'nly light, and usher in the morning.
 O shepherds, shrink not with affright, but hear the angel's warning.
 This child, now weak in infancy, our confidence and joy shall be,
 the power of Satan breaking, our peace eternal making.
-</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Johann Rist, 1641, tr. John Troutbeck ca. 1885</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">morning</a></div></td><td class='date-added-box'>2021/01/08</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/breath_on_me_breath_of_god.html">Breath on me, breath of God</a></td><td class='tune-box'>TRENTHAM</td><td class='meter-box'>SM</td><td class='composer-box'>Edwin Hatch, 1878</td><td class='lyric-box'><div>Breathe on me, breath of God. Fill me with life anew
+</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Johann Rist, 1641, tr. John Troutbeck ca. 1885</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">morning</a></div></td><td class='date-added-box'>2021/01/08</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/breath_on_me_breath_of_god.html">Breath on me, breath of God</a></td><td class='tune-box'>TRENTHAM</td><td class='meter-box'>SM</td><td class='composer-box'>Edwin Hatch, 1878</td><td class='lyric-box'><div>Breathe on me, breath of God. Fill me with life anew
 that I may love what thou dost love, and do what thou wouldst do.
 
 Breath on me, breath of God, un-til my heart is pure,
@@ -294,7 +294,7 @@ till all this earthly part of me glows with thy fire divine.
 
 Breath on me, breath of God, so shall I never die,
 but live with thee the perfect life of thine eternity.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Robert Jackson, 1888</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a></div></td><td class='date-added-box'>2021/01/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/brethren_we_have_met_to_worship.html">Brethren, we have met to worship</a></td><td class='tune-box'>HOLY MANNA</td><td class='meter-box'>87.87 D</td><td class='composer-box'>The Columbian Harmony, 1825</td><td class='lyric-box'><div>Brethren we have met to worship and adore the Lord our God.
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Robert Jackson, 1888</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/01/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/brethren_we_have_met_to_worship.html">Brethren, we have met to worship</a></td><td class='tune-box'>HOLY MANNA</td><td class='meter-box'>87.87 D</td><td class='composer-box'>The Columbian Harmony, 1825</td><td class='lyric-box'><div>Brethren we have met to worship and adore the Lord our God.
 Will you pray with all your power while we try to preach the word?
 All is vain unless the Spirit of the holy One comes down.
 Brethren pray, and holy manna will be showered all around.
@@ -313,7 +313,7 @@ Let us love our God supremely, let us love each other too.
 Let us love and pray for sinners till our God makes all things new.
 Christ will call us home to heaven. At his table we'll sit down.
 Christ will gird himself and serve us with sweet manna all around.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>The Columbian Harmony, 1825</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a></div></td><td class='date-added-box'>2021/01/07</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/calm_soul_of_all_things.html">Calm soul of all things</a></td><td class='tune-box'>TALLIS' CANON</td><td class='meter-box'>LM</td><td class='composer-box'>Thomas Tallis, 1567</td><td class='lyric-box'><div>Calm soul of all things, make it mine
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>The Columbian Harmony, 1825</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/01/07</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/calm_soul_of_all_things.html">Calm soul of all things</a></td><td class='tune-box'>TALLIS' CANON</td><td class='meter-box'>LM</td><td class='composer-box'>Thomas Tallis, 1567</td><td class='lyric-box'><div>Calm soul of all things, make it mine
 to feel amid the city's jar,
 that there abides a peace of thine
 I did not make, and cannot mar.
@@ -322,7 +322,7 @@ The will to neither strive nor cry,
 the pow'r to feel with other's, give.
 Calm, calm me more, nor let me die
 before I have begun to live.
-</div></td><td class='stanzas-box'>2.</td><td class='poet-box'>Matthew Arnold (1822-1888)</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a></div></td><td class='date-added-box'>2021/03/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_my_way.html">Come, my Way, my Truth, my Light</a></td><td class='tune-box'>THE CALL</td><td class='meter-box'>77.77</td><td class='composer-box'>Ralph Vaughan Williams, 1911</td><td class='lyric-box'><div>Come, my Way, my Truth, my Life:
+</div></td><td class='stanzas-box'>2.</td><td class='poet-box'>Matthew Arnold (1822-1888)</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_my_way.html">Come, my Way, my Truth, my Light</a></td><td class='tune-box'>THE CALL</td><td class='meter-box'>77.77</td><td class='composer-box'>Ralph Vaughan Williams, 1911</td><td class='lyric-box'><div>Come, my Way, my Truth, my Life:
 such a way as gives me breath;
 such a truth as ends all strife;
 such a life as killeth death.
@@ -336,7 +336,7 @@ Come my Joy, my Love, my Heart:
 such a joy as none can move;
 such a love as none can part;
 such a heart as joys in love.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>George Herbert, 1633</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">5part</a><a class="taglink" href="#">textbyother</a></div></td><td class='date-added-box'>2021/01/16</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_o_thou_traveller.html">Come, O thou Traveler unknown</a></td><td class='tune-box'>VERNON</td><td class='meter-box'>88.88.88</td><td class='composer-box'>American folk melody, 1805;
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>George Herbert, 1633</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">5part</a></div></td><td class='date-added-box'>2021/01/16</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_o_thou_traveller.html">Come, O thou Traveler unknown</a></td><td class='tune-box'>VERNON</td><td class='meter-box'>88.88.88</td><td class='composer-box'>American folk melody, 1805;
 arr. Kenan Schaefkofer, 2018</td><td class='lyric-box'><div>Come, O thou Traveler unknown, whom still, I hold, but cannot see!
 My company before is gone, and I am left alone with thee.
 With thee all night I mean to stay, and wrestle till the break of day.
@@ -407,7 +407,7 @@ All helplessness, all weakness I
 on thee alone for strength depend,
 nor have I power from thee to move.
 Thy nature, and thy name is Love!
-</div></td><td class='stanzas-box'>11.</td><td class='poet-box'>Charles Wesley, 1742</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">1part</a><a class="taglink" href="#">accompanied</a><a class="taglink" href="#">textbyother</a></div></td><td class='date-added-box'>2021/01/11</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_thou_fount.html">Come, thou fount</a></td><td class='tune-box'>NETTLETON</td><td class='meter-box'>87.87 D</td><td class='composer-box'>American folk melody, 1813</td><td class='lyric-box'><div>Come, Thou Fount of ev'ry blessing, tune my heart to sing thy grace;
+</div></td><td class='stanzas-box'>11.</td><td class='poet-box'>Charles Wesley, 1742</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">1part</a><a class="taglink" href="#">accompanied</a></div></td><td class='date-added-box'>2021/01/11</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_thou_fount.html">Come, thou fount</a></td><td class='tune-box'>NETTLETON</td><td class='meter-box'>87.87 D</td><td class='composer-box'>American folk melody, 1813</td><td class='lyric-box'><div>Come, Thou Fount of ev'ry blessing, tune my heart to sing thy grace;
 Streams of mercy, never ceasing, call for songs of loudest praise.
 Teach me some melodious sonnet, sung by flaming tongues above.
 Praise the mount! I’m fixed upon it, mount of God’s unchanging love.
@@ -420,7 +420,7 @@ O to grace how great a debtor daily I’m constrained to be!
 Let that grace now, like a fetter, bind my wand’ring heart to thee.
 Prone to wander, Lord, I feel it, prone to leave the God I love;
 Here’s my heart, O take and seal it, seal it for thy courts above.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Robert Robinson, 1759</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a></div></td><td class='date-added-box'>2021/01/13</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_thou_long_expected_jesus.html">Come, thou long-expected Jesus</a></td><td class='tune-box'>HYFRYDOL</td><td class='meter-box'>87.87 D</td><td class='composer-box'>Rowland H. Prichard ca. 1830;
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Robert Robinson, 1759</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/01/13</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_thou_long_expected_jesus.html">Come, thou long-expected Jesus</a></td><td class='tune-box'>HYFRYDOL</td><td class='meter-box'>87.87 D</td><td class='composer-box'>Rowland H. Prichard ca. 1830;
 arr. Ralph Vaughn Williams, 1906</td><td class='lyric-box'><div>Come, thou longexpected Jesus! born to set thy people free,
 from our fears and sins release us, let us find our rest in thee.
 Israel's strength and consolation, hope of all the earth thou art,
@@ -430,7 +430,7 @@ Born thy people to deliver, born a child, and yet a King,
 born to reign in us forever, now thy gracious kingdom bring.
 By thine own eternal Spirit, rule in all our hearts alone.
 By thine allsufficient merit, raise us to thy glorious throne.
-</div></td><td class='stanzas-box'>2.</td><td class='poet-box'>Charles Wesley, 1744</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/07</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_ye_thankful_people.html">Come, ye thankful people</a></td><td class='tune-box'>ST. GEORGE'S WINDSOR</td><td class='meter-box'>77.77 D</td><td class='composer-box'>George J. Elvey, 1858</td><td class='lyric-box'><div>Come, ye thankful people, come, raise a song of harvest home:
+</div></td><td class='stanzas-box'>2.</td><td class='poet-box'>Charles Wesley, 1744</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/07</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_ye_thankful_people.html">Come, ye thankful people</a></td><td class='tune-box'>ST. GEORGE'S WINDSOR</td><td class='meter-box'>77.77 D</td><td class='composer-box'>George J. Elvey, 1858</td><td class='lyric-box'><div>Come, ye thankful people, come, raise a song of harvest home:
 fruit and crops are gathered in, safe before the storms begin;
 God, our Maker, will provide for our needs to be supplied;
 come to God's own temple, come, raise a song of harvest home.
@@ -439,7 +439,7 @@ All the world is but a field, given for a fruitful yield;
 wheat and tares together sown, here for joy or sorrow grown:
 first the blade, and then the ear, then the full corn shall appear;
 God of harvest, grant that we wholesome grain and pure may be.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Henry Alford, 1844</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">autumn</a></div></td><td class='date-added-box'>2021/02/12</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/comfort_comfort_o_my_people.html">Comfort, comfort, O my people</a></td><td class='tune-box'>GENEVA 42 (FREU DICH SEHR)</td><td class='meter-box'>87.87.77.88</td><td class='composer-box'>Louis Bourgeois, 1551;
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Henry Alford, 1844</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">autumn</a></div></td><td class='date-added-box'>2021/02/12</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/comfort_comfort_o_my_people.html">Comfort, comfort, O my people</a></td><td class='tune-box'>GENEVA 42 (FREU DICH SEHR)</td><td class='meter-box'>87.87.77.88</td><td class='composer-box'>Louis Bourgeois, 1551;
 arr. Claude Goudimel, 1565</td><td class='lyric-box'><div>Comfort, comfort, O my people,
 speak of peace, now says our God.
 Comfort those who sit in darkness,
@@ -469,7 +469,7 @@ For the glory of the Lord
 now o'er earth is shed abroad.
 And all flesh shall see the token
 that God's word is never broken.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Text: Johannes Olearius, 1671 tr. Catherine Winkworth, 1863</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a></div></td><td class='date-added-box'>2021/02/07</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/for_the_beauty_of_our_earth.html">For the beauty of our earth</a></td><td class='tune-box'>DIX</td><td class='meter-box'>77.77.77</td><td class='composer-box'>Conrad Kocher, 1838</td><td class='lyric-box'><div>For the beauty of our earth, for the glory of her skies,
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Text: Johannes Olearius, 1671 tr. Catherine Winkworth, 1863</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/02/07</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/for_the_beauty_of_our_earth.html">For the beauty of our earth</a></td><td class='tune-box'>DIX</td><td class='meter-box'>77.77.77</td><td class='composer-box'>Conrad Kocher, 1838</td><td class='lyric-box'><div>For the beauty of our earth, for the glory of her skies,
 for the love which from our birth over and around us lies:
 
   Source of all, to thee we raise this our hymn of grateful praise.
@@ -496,7 +496,7 @@ Where I go here below, let me bow before thee, know thee, and adore thee.
 Gladly we surrender earth's deceitful treasures, pride of life, and sinful pleasures.
 God, we gladly offer thine to be forever, soul and life and each endeavor.
 Thou alone shalt be known Lord of all our being, life's true way decreeing.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Gerhard Tersteegen, 1729, trans. The Hymnal, 1940, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/04</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/gott_ist_gegenwartig.html">Gott ist gegenwärtig</a></td><td class='tune-box'>WUNDERBARER KÖNIG</td><td class='meter-box'>66.86.66.86.666</td><td class='composer-box'>Joachim Neander, 1680</td><td class='lyric-box'><div>Gott ist gegenwärtig. Lasset uns anbeten und in Ehrfurcht vor ihn treten.
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Gerhard Tersteegen, 1729, trans. The Hymnal, 1940, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/04</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/gott_ist_gegenwartig.html">Gott ist gegenwärtig</a></td><td class='tune-box'>WUNDERBARER KÖNIG</td><td class='meter-box'>66.86.66.86.666</td><td class='composer-box'>Joachim Neander, 1680</td><td class='lyric-box'><div>Gott ist gegenwärtig. Lasset uns anbeten und in Ehrfurcht vor ihn treten.
 Gott ist in der Mitte. Alles in uns schweige und sich innigst vor ihm beuge.
 Wer ihn kennt, wer ihn nennt, schlag die Augen nieder; kommt, ergebt euch wieder.
 
@@ -507,9 +507,9 @@ Herr, vernimm unsre Stimm, da auch wir Geringen unsre Opfer bringen.
 Herr, komm in mir wohnen; lass mein Herz auf Erden dir ein Heiligtum noch werden.
 Komm, du nahes Wesen; dich in mir verkläre, dass ich dich stets lieb und ehre.
 Wo ich geh, sitz und steh, lass mich dich erblicken und vor dir mich bücken.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Gerhard Tersteegen, 1729</td><td class='tags-box'><div><a class="taglink" href="#">german</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/04</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/grant_us_god_the_grace_of_giving.html">Grant us, God, the grace of giving</a></td><td class='tune-box'>STUTTGART</td><td class='meter-box'>87.87</td><td class='composer-box'>Henry J. Gauntlett, 1861</td><td class='lyric-box'><div>Grant us, God, the grace of giving with a spirit large and free
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Gerhard Tersteegen, 1729</td><td class='tags-box'><div><a class="taglink" href="#">german</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/04</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/grant_us_god_the_grace_of_giving.html">Grant us, God, the grace of giving</a></td><td class='tune-box'>STUTTGART</td><td class='meter-box'>87.87</td><td class='composer-box'>Henry J. Gauntlett, 1861</td><td class='lyric-box'><div>Grant us, God, the grace of giving with a spirit large and free
 that ourselves and all our living we may offer unto thee.
-</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Robert Murray, 1880, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/14</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/great_is_thy_faithfulness.html">Great is thy faithfulness</a></td><td class='tune-box'>FAITHFULNESS</td><td class='meter-box'>11 10.11 10 with refrain</td><td class='composer-box'>William M. Runyan, 1923</td><td class='lyric-box'><div>Great is thy faithfulness, O God my Maker.
+</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Robert Murray, 1880, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/14</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/great_is_thy_faithfulness.html">Great is thy faithfulness</a></td><td class='tune-box'>FAITHFULNESS</td><td class='meter-box'>11 10.11 10 with refrain</td><td class='composer-box'>William M. Runyan, 1923</td><td class='lyric-box'><div>Great is thy faithfulness, O God my Maker.
 There is no shadow of turning with thee.
 Thou changest not, thy compassions, they fail not.
 As thou hast been thou forever wilt be.
@@ -528,7 +528,7 @@ Pardon for sin and a peace that endureth,
 thine own dear presence to cheer and to guide,
 strength for today and bright hope for tomorrow;
 blessings all mine, with ten thousand beside!
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Thomas O. Chisholm, 1923</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a></div></td><td class='date-added-box'>2021/01/24</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/heilig_heilig_heilig_sanctus.html">Heilig, Heilig, Heilig (Holy, Holy, Holy)</a></td><td class='tune-box'>SANCTUS (Schubert)</td><td class='meter-box'>65.65 D</td><td class='composer-box'>Franz Schubert, 1826</td><td class='lyric-box'><div>Heilig, heilig, heilig, heilig ist der Herr!
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Thomas O. Chisholm, 1923</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/01/24</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/heilig_heilig_heilig_sanctus.html">Heilig, Heilig, Heilig (Holy, Holy, Holy)</a></td><td class='tune-box'>SANCTUS (Schubert)</td><td class='meter-box'>65.65 D</td><td class='composer-box'>Franz Schubert, 1826</td><td class='lyric-box'><div>Heilig, heilig, heilig, heilig ist der Herr!
   Heilig, heilig, heilig, heilig ist nur er!
 
 Er, der nie begonnen, or, der immer war,
@@ -545,7 +545,7 @@ ever be exalted, reign forevermore.
 
 Mighty, wondrous, loving, omnipresent God,
 holy, holy, holy, holy is the Lord!
-</div></td><td class='stanzas-box'>2.</td><td class='poet-box'>German; Johann P. Neumann, 1826; trans. Kenan Schaefkofer, 2021</td><td class='tags-box'><div><a class="taglink" href="#">german</a><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a></div></td><td class='date-added-box'>2021/03/08</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/help_us_to_help_each_other_lord.html">Help us to help each other, Lord</a></td><td class='tune-box'>BALERMA</td><td class='meter-box'>CM</td><td class='composer-box'>François H. Barthélémon,  1833</td><td class='lyric-box'><div>Help us to help each other, Lord,
+</div></td><td class='stanzas-box'>2.</td><td class='poet-box'>German; Johann P. Neumann, 1826; trans. Kenan Schaefkofer, 2021</td><td class='tags-box'><div><a class="taglink" href="#">german</a><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/08</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/help_us_to_help_each_other_lord.html">Help us to help each other, Lord</a></td><td class='tune-box'>BALERMA</td><td class='meter-box'>CM</td><td class='composer-box'>François H. Barthélémon,  1833</td><td class='lyric-box'><div>Help us to help each other, Lord,
 each other's cross to bear,
 let each his friendly aid afford,
 and feel another's care.
@@ -564,7 +564,7 @@ This is the bond of perfectness,
 thy spotless charity.
 O let us still, we pray, possess
 the mind that was in thee.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Charles Wesley, 1742</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a></div></td><td class='date-added-box'>2021/01/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/i_to_the_hills.html">I to the hills will lift my eyes</a></td><td class='tune-box'>DUNDEE</td><td class='meter-box'>CM</td><td class='composer-box'>The CL. Psalmes of David, 1615</td><td class='lyric-box'><div>I to the hills will lift my eyes. From whence shall come my aid?
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Charles Wesley, 1742</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/01/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/i_to_the_hills.html">I to the hills will lift my eyes</a></td><td class='tune-box'>DUNDEE</td><td class='meter-box'>CM</td><td class='composer-box'>The CL. Psalmes of David, 1615</td><td class='lyric-box'><div>I to the hills will lift my eyes. From whence shall come my aid?
 My help is from the Lord alone, who heav'n and earth has made.
 
 God will not let your foot be moved, your guardian never sleeps.
@@ -575,7 +575,7 @@ Your faithful keeper is the Lord, your shelter and your shade.
 
 From evil God will keep you safe, provide for all you need.
 Your going out, your coming in, God will forever lead.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>The New Metrical Version of the Psalms, 1912, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/13</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/i_walk_the_unfrequented_road.html">I walk the unfrequented road</a></td><td class='tune-box'>CONSOLATION</td><td class='meter-box'>CM</td><td class='composer-box'>John Wyeth, 1813</td><td class='lyric-box'><div>I walk the unfrequented road
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>The New Metrical Version of the Psalms, 1912, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/13</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/i_walk_the_unfrequented_road.html">I walk the unfrequented road</a></td><td class='tune-box'>CONSOLATION</td><td class='meter-box'>CM</td><td class='composer-box'>John Wyeth, 1813</td><td class='lyric-box'><div>I walk the unfrequented road
 with open eye and ear;
 I watch afield the farmer load
 the bounty of the year.
@@ -599,7 +599,7 @@ I face the hills, the streams, the wood,
 and feel with all akin;
 my heart expands; their fortitude
 and peace and joy flow in.
-</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Frederick Lucian Hosmer, 1913</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">autumn</a></div></td><td class='date-added-box'>2021/01/31</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/in_the_rifted_rock.html">In the Rifted Rock (Wehrlos und verlassen)</a></td><td class='tune-box'>RIFTED ROCK</td><td class='meter-box'>87.87 with refrain</td><td class='composer-box'>W. Warren Bentley, 1879</td><td class='lyric-box'><div>In the rifted Rock I'm resting, safely sheltered, I abide.
+</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Frederick Lucian Hosmer, 1913</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">autumn</a></div></td><td class='date-added-box'>2021/01/31</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/in_the_rifted_rock.html">In the Rifted Rock (Wehrlos und verlassen)</a></td><td class='tune-box'>RIFTED ROCK</td><td class='meter-box'>87.87 with refrain</td><td class='composer-box'>W. Warren Bentley, 1879</td><td class='lyric-box'><div>In the rifted Rock I'm resting, safely sheltered, I abide.
 There no foes nor storms assail me, while within the cleft I hide.
 
   Now I'm resting, sweetly resting, in the cleft once made for me.
@@ -636,7 +636,7 @@ Kommt dann meine letzte Stunde,
 geh' ich ein zur ew'gen Ruh';
 und du deckst mit deinen Flügeln
 ewiglich dein Kindlein zu.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>English; Mary Dagworthy James, 1878; German; Carl Röhl, 1895</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">german</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/12</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/jesu_joy_of_our_desiring.html">Jesu, joy of our desiring</a></td><td class='tune-box'>WERDE MUNTER</td><td class='meter-box'>87.87.88.77</td><td class='composer-box'>Johann Schopp, 1642, harm. J. S. Bach, 1716</td><td class='lyric-box'><div>Jesu, joy of our desiring, holy wisdom, love most bright,
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>English; Mary Dagworthy James, 1878; German; Carl Röhl, 1895</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">german</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/12</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/jesu_joy_of_our_desiring.html">Jesu, joy of our desiring</a></td><td class='tune-box'>WERDE MUNTER</td><td class='meter-box'>87.87.88.77</td><td class='composer-box'>Johann Schopp, 1642, harm. J. S. Bach, 1716</td><td class='lyric-box'><div>Jesu, joy of our desiring, holy wisdom, love most bright,
 drawn by thee, our souls aspiring soar to uncreated light.
 Word of God, our flesh that fashioned, with the fire of life impassioned,
 striving still to truth unknown, soaring, dying round thy throne.
@@ -645,7 +645,7 @@ Through the way, where hope is guiding, hark, what peaceful music rings,
 where the flock, in thee confiding, drink of joy from deathless springs.
 Theirs is beauty's fairest pleasure. Theirs is wisdom's holiest treasure.
 Thou dost ever lead thine own in the love of joys unknown.
-</div></td><td class='stanzas-box'>2.</td><td class='poet-box'>Martin Janus, 1665, trans. Robert Bridges, 1927</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a></div></td><td class='date-added-box'>2021/03/04</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/joyful_joyful.html">Joyful, joyful, we adore thee</a></td><td class='tune-box'>HYMN TO JOY</td><td class='meter-box'>87.87 D</td><td class='composer-box'>Ludwig van Beethoven, 1823</td><td class='lyric-box'><div>Joyful, joyful, we adore thee, God of glory, Lord of love.
+</div></td><td class='stanzas-box'>2.</td><td class='poet-box'>Martin Janus, 1665, trans. Robert Bridges, 1927</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/04</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/joyful_joyful.html">Joyful, joyful, we adore thee</a></td><td class='tune-box'>HYMN TO JOY</td><td class='meter-box'>87.87 D</td><td class='composer-box'>Ludwig van Beethoven, 1823</td><td class='lyric-box'><div>Joyful, joyful, we adore thee, God of glory, Lord of love.
 Hearts unfold like flow'rs before thee, praising thee their sun above.
 Melt the clouds of sin and sadness; drive the dark of doubt away.
 Giver of immortal gladness, fill us with the light of day!
@@ -664,7 +664,7 @@ Mortals join the mighty chorus which the morning stars began.
 Love divine is reigning o'er us, leading us with mercy's hand.
 Ever singing, march we onward, victors in the midst of strife.
 Joyful music lifts us sunward in the triumph song of life!
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Henry van Dyke, 1907</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a></div></td><td class='date-added-box'>2021/01/13</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/la_paz_de_la_tierra.html">La paz de la tierra (The peace of the earth)</a></td><td class='tune-box'>LA PAZ DE LA TIERRA</td><td class='meter-box'>87.97.76</td><td class='composer-box'>Guatemalan traditional</td><td class='lyric-box'><div>La paz de la tierra esté contigo, la paz de los cielos también.
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Henry van Dyke, 1907</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/01/13</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/la_paz_de_la_tierra.html">La paz de la tierra (The peace of the earth)</a></td><td class='tune-box'>LA PAZ DE LA TIERRA</td><td class='meter-box'>87.97.76</td><td class='composer-box'>Guatemalan traditional</td><td class='lyric-box'><div>La paz de la tierra esté contigo, la paz de los cielos también.
 La paz de los ríos esté contigo, la paz de los mares también.
 Paz profunda cayendo sobre ti.
 Paz profunda creciendo en ti.
@@ -673,7 +673,7 @@ The peace of the earth be with you, the peace of the heavens too;
 The peace of the rivers be with you, the peace of the oceans too.
 Deep peace falling over you.
 Deep peace growing in you.
-</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Spanish; Guatemalan traditional; trans. Kenan Schaefkofer, 2021</td><td class='tags-box'><div><a class="taglink" href="#">spanish</a><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/lift_every_voice_and_sing.html">Lift every voice and sing</a></td><td class='tune-box'>ANTHEM</td><td class='meter-box'>66 10.66 10.14 14 66 10</td><td class='composer-box'>J. Rosamond Johnson, 1899</td><td class='lyric-box'><div>Lift ev'ry voice and sing, till earth and heaven ring,
+</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Spanish; Guatemalan traditional; trans. Kenan Schaefkofer, 2021</td><td class='tags-box'><div><a class="taglink" href="#">spanish</a><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/lift_every_voice_and_sing.html">Lift every voice and sing</a></td><td class='tune-box'>ANTHEM</td><td class='meter-box'>66 10.66 10.14 14 66 10</td><td class='composer-box'>J. Rosamond Johnson, 1899</td><td class='lyric-box'><div>Lift ev'ry voice and sing, till earth and heaven ring,
 ring with the harmonies of liberty.
 Let our rejoicing rise high as the list'ning skies,
 let it resound loud as the rolling sea.
@@ -705,7 +705,7 @@ lest, our hearts drunk with the wine of the world, we forget thee,
 
 shadowed beneath thy hand, may we forever stand,
 true to our God, true to our native land.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>J. Rosamond Johnson, 1899</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/16</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/lo_how_a_rose.html">Lo, how a Rose e'er blooming</a></td><td class='tune-box'>ES IST EIN ROS'</td><td class='meter-box'>76.76.676</td><td class='composer-box'>Michael Praetorius, 1609</td><td class='lyric-box'><div>Lo, how a Rose e'er blooming from tender stem has sprung!
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>J. Rosamond Johnson, 1899</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/16</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/lo_how_a_rose.html">Lo, how a Rose e'er blooming</a></td><td class='tune-box'>ES IST EIN ROS'</td><td class='meter-box'>76.76.676</td><td class='composer-box'>Michael Praetorius, 1609</td><td class='lyric-box'><div>Lo, how a Rose e'er blooming from tender stem has sprung!
 Of Jesse's lineage coming as saints of old have sung.
 It came a flow'ret bright, amid the cold of winter,
 when halfspent was the night.
@@ -719,7 +719,7 @@ Flower, whose fragrance tender with sweetness fills the air,
 dispel in glorious splendor the darkness ev'rywhere.
 Human, yet very God, from sin and death he saves us,
 and lightens ev'ry load.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Text: v.1-2 anonymous, 1599; v.3 Friedrich Layritz, 1599 tr. v.1-2 Theodore Baker, 1894; v.3 Harriet Spaeth, 1875; alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">winter</a></div></td><td class='date-added-box'>2021/01/12</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/loveliest_of_trees.html">Lovelist of trees</a></td><td class='tune-box'>ORIENTIS PARTIBUS</td><td class='meter-box'>87.87</td><td class='composer-box'>Pierre de Corbeil, harmonized Richard Redhead, 1853</td><td class='lyric-box'><div>Loveliest of trees, the cherry now,
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Text: v.1-2 anonymous, 1599; v.3 Friedrich Layritz, 1599 tr. v.1-2 Theodore Baker, 1894; v.3 Harriet Spaeth, 1875; alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">winter</a></div></td><td class='date-added-box'>2021/01/12</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/loveliest_of_trees.html">Lovelist of trees</a></td><td class='tune-box'>ORIENTIS PARTIBUS</td><td class='meter-box'>87.87</td><td class='composer-box'>Pierre de Corbeil, harmonized Richard Redhead, 1853</td><td class='lyric-box'><div>Loveliest of trees, the cherry now,
 hung with bloom along the bough,
 it stands about the woodland ride
 wearing white for Eastertide.
@@ -733,7 +733,7 @@ And since to look at things in bloom
 fifty springs are little room,
 about the woodlands I will go,
 see the cherry hung with snow.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>A. E. Housman, 1896</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">spring</a></div></td><td class='date-added-box'>2021/02/07</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/may_nothing_evil_cross_this_door.html">May nothing evil cross this door</a></td><td class='tune-box'>OLDBRIDGE</td><td class='meter-box'>88.84</td><td class='composer-box'>Robert N. Quaile, b. 1867</td><td class='lyric-box'><div>May nothing evil cross this door,
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>A. E. Housman, 1896</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">spring</a></div></td><td class='date-added-box'>2021/02/07</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/may_nothing_evil_cross_this_door.html">May nothing evil cross this door</a></td><td class='tune-box'>OLDBRIDGE</td><td class='meter-box'>88.84</td><td class='composer-box'>Robert N. Quaile, b. 1867</td><td class='lyric-box'><div>May nothing evil cross this door,
 and may ill fortune never pry
 about these windows; may the roar
 and rain go by.
@@ -752,9 +752,9 @@ With laughter drown the raucous shout,
 and, though these sheltering walls are thin,
 may they be strong to keep hate out
 and hold love in.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Louis Untermeyer, 1923</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a></div></td><td class='date-added-box'>2021/01/31</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/may_we_each_take_joy_in_giving.html">May we each take joy in giving</a></td><td class='tune-box'>STUTTGART</td><td class='meter-box'>87.87</td><td class='composer-box'>Henry J. Gauntlett, 1861</td><td class='lyric-box'><div>May we each take joy in giving with a spirit large and free
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Louis Untermeyer, 1923</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/01/31</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/may_we_each_take_joy_in_giving.html">May we each take joy in giving</a></td><td class='tune-box'>STUTTGART</td><td class='meter-box'>87.87</td><td class='composer-box'>Henry J. Gauntlett, 1861</td><td class='lyric-box'><div>May we each take joy in giving with a spirit large and free
 to our neighbors and the strangers, fostering community.
-</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Robert Murray, 1880, alt. Kenan Schaefkofer, 2021</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/14</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/my_shepherd_will_supply_my_need.html">My Shepherd will supply my need</a></td><td class='tune-box'>RESIGNATION</td><td class='meter-box'>CMD</td><td class='composer-box'>North American Traditional;
+</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Robert Murray, 1880, alt. Kenan Schaefkofer, 2021</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/14</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/my_shepherd_will_supply_my_need.html">My Shepherd will supply my need</a></td><td class='tune-box'>RESIGNATION</td><td class='meter-box'>CMD</td><td class='composer-box'>North American Traditional;
 arr. Kenan Schaefkofer, 2021</td><td class='lyric-box'><div>My Shepherd will supply my need; most holy is your name.
 In pastures fresh you make me feed, beside the living stream.
 You bring my wand'ring spirit back, when I forsake your ways,
@@ -769,7 +769,7 @@ The sure provisions of my God attend me all my days.
 Oh, may your house be my abode, and all my work be praise.
 There would I find a settled rest, while others go and come,
 no more a stranger, nor a guest, but like a child at home.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Isaac Watts, 1719, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/04</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/no_number_tallies_up_my_score.html">No number tallies up my score</a></td><td class='tune-box'>RESIGNATION</td><td class='meter-box'>CMD</td><td class='composer-box'>North American Traditional;
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Isaac Watts, 1719, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/04</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/no_number_tallies_up_my_score.html">No number tallies up my score</a></td><td class='tune-box'>RESIGNATION</td><td class='meter-box'>CMD</td><td class='composer-box'>North American Traditional;
 arr. Kenan Schaefkofer, 2021</td><td class='lyric-box'><div>No number tallies up my score,
 no tribe my house can fill;
 I sit beside the fount of life
@@ -804,7 +804,7 @@ No ray is dimmed, no atom worn,
 my oldest force is new,
 and fresh the rose on yonder thorn
 gives back the heav'ns in dew.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Ralph Waldo Emerson (1803-1882), rev.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/02/14</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/now_all_the_woods_are_sleeping.html">Now all the woods are sleeping</a></td><td class='tune-box'>O WELT, ICH MUSS DICH LASSEN</td><td class='meter-box'>776.778</td><td class='composer-box'>Heinrich Isaac, 1539</td><td class='lyric-box'><div>Now all the woods are sleeping,
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Ralph Waldo Emerson (1803-1882), rev.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/02/14</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/now_all_the_woods_are_sleeping.html">Now all the woods are sleeping</a></td><td class='tune-box'>O WELT, ICH MUSS DICH LASSEN</td><td class='meter-box'>776.778</td><td class='composer-box'>Heinrich Isaac, 1539</td><td class='lyric-box'><div>Now all the woods are sleeping,
 the night and stillness creeping
 o'er city, field, and beast;
 but thou, my heart, awake be,
@@ -855,7 +855,7 @@ Sleep until the rising
 of another spring
 keeps the the ancient promise
 fall and winter bring.
-</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Text: v.1 Sabine Baring Gould, 1865 v.2-5 Marye B. Bonney (1910-1992)</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">evening</a><a class="taglink" href="#">autumn</a></div></td><td class='date-added-box'>2021/02/11</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_come_all_ye_faithful.html">O come, all ye faithful</a></td><td class='tune-box'>ADESTE FIDELES</td><td class='meter-box'>irregular</td><td class='composer-box'>John F. Wade, 1782</td><td class='lyric-box'><div>O come, all ye faithful, joyful and triumphant,
+</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Text: v.1 Sabine Baring Gould, 1865 v.2-5 Marye B. Bonney (1910-1992)</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">evening</a><a class="taglink" href="#">autumn</a></div></td><td class='date-added-box'>2021/02/11</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_come_all_ye_faithful.html">O come, all ye faithful</a></td><td class='tune-box'>ADESTE FIDELES</td><td class='meter-box'>irregular</td><td class='composer-box'>John F. Wade, 1782</td><td class='lyric-box'><div>O come, all ye faithful, joyful and triumphant,
 O come ye, O come ye to Bethlehem. Come and behold him,
 born the King of angels.
 
@@ -875,7 +875,7 @@ glory to God, all glory in the highest.
 Yea, Lord, we greet thee, born this happy morning,
 Jesus, to thee be all glory giv'n;
 Word of the Father, now in flesh appearing.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>John F. Wade, 1743, tr. Frederick Oakeley, 1841, William Mercer 1854, and others</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">winter</a></div></td><td class='date-added-box'>2021/01/19</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_little_town.html">O little town of Bethlehem</a></td><td class='tune-box'>ST. LOUIS</td><td class='meter-box'>86.86.76.86</td><td class='composer-box'>Lewis H. Redner, 1874</td><td class='lyric-box'><div>O little town of Bethlehem, how still we see thee lie!
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>John F. Wade, 1743, tr. Frederick Oakeley, 1841, William Mercer 1854, and others</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">winter</a></div></td><td class='date-added-box'>2021/01/19</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_little_town.html">O little town of Bethlehem</a></td><td class='tune-box'>ST. LOUIS</td><td class='meter-box'>86.86.76.86</td><td class='composer-box'>Lewis H. Redner, 1874</td><td class='lyric-box'><div>O little town of Bethlehem, how still we see thee lie!
 Above thy deep and dreamless sleep the silent stars go by.
 Yet in thy dark streets shineth the everlasting light;
 the hopes and fears of all the years are met in thee tonight.
@@ -894,7 +894,7 @@ O holy Child of Bethlehem, descend to us we pray,
 cast out our sin, and enter in, be born in us today!
 We hear the Christmas angels the great glad tidings tell.
 O come to us, abide with us, our Lord Immanuel!
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Phillips Brooks, 1874</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">winter</a><a class="taglink" href="#">evening</a></div></td><td class='date-added-box'>2021/01/12</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_love_how_deep_how_broad.html">O love, how deep, how broad</a></td><td class='tune-box'>DEO GRACIAS</td><td class='meter-box'>LM</td><td class='composer-box'>English Traditional, 15th c.;
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Phillips Brooks, 1874</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">winter</a><a class="taglink" href="#">evening</a></div></td><td class='date-added-box'>2021/01/12</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_love_how_deep_how_broad.html">O love, how deep, how broad</a></td><td class='tune-box'>DEO GRACIAS</td><td class='meter-box'>LM</td><td class='composer-box'>English Traditional, 15th c.;
 arr. Kenan Schaefkofer, 2017</td><td class='lyric-box'><div>O love, how deep, how broad, how high! It fills the heart with ecstasy,
 that God, the Son of God, should take our mortal form for mortals' sake.
 
@@ -909,7 +909,7 @@ he bore the shameful cross and death, for us at length gave up his breath.
 
 Eternal glory to our God for love so deep, so high, so broad;
 the Trinity whom we adore forever and forevermore.
-</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Thomas a Kempis, 15th c. trans. Benjamin Webb 1851, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a></div></td><td class='date-added-box'>2021/03/04</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/once_to_every_soul.html">Once to every soul and nation</a></td><td class='tune-box'>EBENEZER</td><td class='meter-box'>87.87.87.87</td><td class='composer-box'>Thomas John Williams, 1890</td><td class='lyric-box'><div>Once to ev’ry soul and nation
+</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Thomas a Kempis, 15th c. trans. Benjamin Webb 1851, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/04</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/once_to_every_soul.html">Once to every soul and nation</a></td><td class='tune-box'>EBENEZER</td><td class='meter-box'>87.87.87.87</td><td class='composer-box'>Thomas John Williams, 1890</td><td class='lyric-box'><div>Once to ev’ry soul and nation
 comes the moment to decide,
 in the strife of truth with falsehood,
 for the good or evil side;
@@ -938,7 +938,7 @@ Then it is the brave one chooses,
 while the coward stands aside
 till the multitude make virtue
 of the faith they had denied.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>James Russell Lowell, 1845</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/14</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/religion_fit_to_last.html">Religion fit to last</a></td><td class='tune-box'>JESOUS AHATONHIA (adapted)</td><td class='meter-box'>86.86.76.86</td><td class='composer-box'>French folk melody;
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>James Russell Lowell, 1845</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/14</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/religion_fit_to_last.html">Religion fit to last</a></td><td class='tune-box'>JESOUS AHATONHIA (adapted)</td><td class='meter-box'>86.86.76.86</td><td class='composer-box'>French folk melody;
 arr. Kenan Schaefkofer, 2021</td><td class='lyric-box'><div>A voice within becomes distressed to see you taste the fruit,
 forbidden by your God and creed, respected since your youth:
 ''Prodigal, I'll fight in you, restore your faith to thrive.
@@ -968,19 +968,19 @@ Religions of today are the religions fit to last.
 Members true through power, fear, or friendly company
 rebuke again their wayward young, "Eat not from yonder tree."
 Eat not from yonder tree!
-</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Kenan Schaefkofer, 2021</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">1part</a><a class="taglink" href="#">accompanied</a><a class="taglink" href="#">textbykenan</a></div></td><td class='date-added-box'>2021/01/12</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/singer_of_life.html">Singer of Life</a></td><td class='tune-box'>LACQUIPARLE</td><td class='meter-box'>irregular</td><td class='composer-box'>Plains Indian traditional, 1879</td><td class='lyric-box'><div>Singer of Life, all flowers are songs, with petals do you write.
+</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Kenan Schaefkofer, 2021</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">1part</a><a class="taglink" href="#">accompanied</a></div></td><td class='date-added-box'>2021/01/12</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/singer_of_life.html">Singer of Life</a></td><td class='tune-box'>LACQUIPARLE</td><td class='meter-box'>irregular</td><td class='composer-box'>Plains Indian traditional, 1879</td><td class='lyric-box'><div>Singer of Life, all flowers are songs, with petals do you write.
 Singer of Life, you color the earth, dazzling the eye with birds red and bright.
 Joy is for us! The flowers are spread! Singing is our delight!
 
 Mortal are we, with all living things, with eagles in the sky.
 Even all gold and jade will not last; singing alone, I know, cannot die.
 Here in this house of springtime bestow songs that like birds can fly.
-</div></td><td class='stanzas-box'>2.</td><td class='poet-box'>From a Texcoco Nahuatl poem</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">1part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/08</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/step_by_step_the_longest_march.html">Step by step the longest march</a></td><td class='tune-box'>SOLIDARITY</td><td class='meter-box'>76.76 D</td><td class='composer-box'>Irish folk song;
+</div></td><td class='stanzas-box'>2.</td><td class='poet-box'>From a Texcoco Nahuatl poem</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">1part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/08</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/step_by_step_the_longest_march.html">Step by step the longest march</a></td><td class='tune-box'>SOLIDARITY</td><td class='meter-box'>76.76 D</td><td class='composer-box'>Irish folk song;
 arr. Kenan Schaefkofer, 2021</td><td class='lyric-box'><div>Step by step the longest march can be won, can be won,
 Many stones can form an arch, singly none, singly none.
 And by union what we will can be accomplished still,
 drops of water turn a mill, singly none, singly none.
-</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Preamble to United Mine Workers of America Constitution</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">3part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/take_my_life_and_let_it_be.html">Take my life, and let it be</a></td><td class='tune-box'>HENDON</td><td class='meter-box'>77.77 extended</td><td class='composer-box'>Henri Abraham César Malan, 1827;
+</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Preamble to United Mine Workers of America Constitution</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">3part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/take_my_life_and_let_it_be.html">Take my life, and let it be</a></td><td class='tune-box'>HENDON</td><td class='meter-box'>77.77 extended</td><td class='composer-box'>Henri Abraham César Malan, 1827;
 arr. Lowell Mason, 1841</td><td class='lyric-box'><div>Take my life, and let it be consecrated, Lord, to thee.
 Take my moments and my days; let them flow in ceaseless praise,
 let them flow in ceaseless praise.
@@ -1000,7 +1000,7 @@ it shall be no longer mine.
 Take my love; my Lord, I pour at thy feet its treasure store.
 Take myself, and I will be ever, only, all for thee,
 ever, only, all for thee.
-</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Frances R. Havergal, 1874</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_day_you_gave_us.html">The day you gave us, Lord</a></td><td class='tune-box'>ST. CLEMENT</td><td class='meter-box'>98.98</td><td class='composer-box'>Clement C. Scholefield, 1874</td><td class='lyric-box'><div>The day you gave us, Lord, is ended;
+</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Frances R. Havergal, 1874</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_day_you_gave_us.html">The day you gave us, Lord</a></td><td class='tune-box'>ST. CLEMENT</td><td class='meter-box'>98.98</td><td class='composer-box'>Clement C. Scholefield, 1874</td><td class='lyric-box'><div>The day you gave us, Lord, is ended;
 the darkness falls at your request.
 To you our morning hymns ascended;
 your praise shall sanctify our rest.
@@ -1019,7 +1019,7 @@ So be it, Lord, your throne shall never,
 like earth's proud kingdoms pass away.
 Your kingdom stands and grows forever,
 until there dawns your glorious day.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>John Ellerton, 1870</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">evening</a></div></td><td class='date-added-box'>2021/01/16</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_lords_my_shepherd.html">The Lord's my shepherd</a></td><td class='tune-box'>CRIMOND</td><td class='meter-box'>CM</td><td class='composer-box'>Jessie S. Irvine, 1872;
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>John Ellerton, 1870</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">evening</a></div></td><td class='date-added-box'>2021/01/16</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_lords_my_shepherd.html">The Lord's my shepherd</a></td><td class='tune-box'>CRIMOND</td><td class='meter-box'>CM</td><td class='composer-box'>Jessie S. Irvine, 1872;
 arr. David Grant, 1872</td><td class='lyric-box'><div>The Lord's my shepherd, I'll not want.
 He makes me down to lie
 in pastures green; he leadeth me
@@ -1044,7 +1044,7 @@ Goodness and mercy all my life
 shall surely follow me,
 and in God's house forevermore
 my dwelling place shall be.
-</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>The Psalms in Meeter, 1650</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/19</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_morning_hangs_a_signal.html">The morning hangs a signal</a></td><td class='tune-box'>MEIRIONYDD</td><td class='meter-box'>76.76 D</td><td class='composer-box'>William Lloyd, 1840</td><td class='lyric-box'><div>The morning hangs a signal upon the mountain crest,
+</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>The Psalms in Meeter, 1650</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/19</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_morning_hangs_a_signal.html">The morning hangs a signal</a></td><td class='tune-box'>MEIRIONYDD</td><td class='meter-box'>76.76 D</td><td class='composer-box'>William Lloyd, 1840</td><td class='lyric-box'><div>The morning hangs a signal upon the mountain crest,
 while all the sleeping valleys in silent darkness rest.
 From peak to peak it flashes, it laughs along the sky,
 till glory of the sunlight on all the land shall lie.
@@ -1058,7 +1058,7 @@ The soul has lifted moments, above the drift of days,
 when life's great meaning breaketh in sunrise on our ways.
 Behold the radiant token of truth above all fear;
 night shall release its splendor that morning shall appear.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>William Channing Gannett (1768-1852), rev.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">morning</a></div></td><td class='date-added-box'>2021/02/11</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/tis_a_gift_to_be_simple.html">'Tis a gift to be simple</a></td><td class='tune-box'>SIMPLE GIFTS</td><td class='meter-box'>irregular</td><td class='composer-box'>Joseph Bracket, 1848;
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>William Channing Gannett (1768-1852), rev.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">morning</a></div></td><td class='date-added-box'>2021/02/11</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/tis_a_gift_to_be_simple.html">'Tis a gift to be simple</a></td><td class='tune-box'>SIMPLE GIFTS</td><td class='meter-box'>irregular</td><td class='composer-box'>Joseph Bracket, 1848;
 arr. Kenan Schaefkofer, 2021</td><td class='lyric-box'><div>'Tis a gift to be simple, 'tis a gift to be free,
 'tis a gift to come down where we ought to be.
 And when we find ourselves in the place just right
@@ -1068,7 +1068,7 @@ When true simplicity is gained,
 to bow and to bend we will not be ashamed;
 to turn, turn, will be our delight,
 till by turning, turning we come round right.
-</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Joseph Bracket, 1848</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a></div></td><td class='date-added-box'>2021/01/10</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/wakantanka_many_and_great.html">Wakantanka (Many and Great)</a></td><td class='tune-box'>LACQUIPARLE</td><td class='meter-box'>irregular</td><td class='composer-box'>Plains Indian traditional, 1879</td><td class='lyric-box'><div>Wakantanka taku nitawa tankaya qa ota;
+</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Joseph Bracket, 1848</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/01/10</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/wakantanka_many_and_great.html">Wakantanka (Many and Great)</a></td><td class='tune-box'>LACQUIPARLE</td><td class='meter-box'>irregular</td><td class='composer-box'>Plains Indian traditional, 1879</td><td class='lyric-box'><div>Wakantanka taku nitawa tankaya qa ota;
 mahpiya kin eyahnake ça, maka kin he duowanca;
 mniowanca śbeya wanke cin, hena oyakihi.
 
@@ -1083,11 +1083,11 @@ Lo, at your word the waters were formed; deep seas obey your voice.
 Grant unto us communion with you, O starabiding One.
 Come unto us and dwell with us; with you are found the gifts of life.
 Bless us with life that has no end, eternal life with you.
-</div></td><td class='stanzas-box'>2.</td><td class='poet-box'>Dakota; Joseph R. Renville, 1846; paraphr. Philip Frazier, 1929, alt.</td><td class='tags-box'><div><a class="taglink" href="#">dakota</a><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">1part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/07</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/warm_summer_sun.html">Warm summer sun</a></td><td class='tune-box'>LIE LIGHT</td><td class='meter-box'>88.88</td><td class='composer-box'>Kenan Schaefkofer, 2021</td><td class='lyric-box'><div>Warm summer sun, shine kindly here,
+</div></td><td class='stanzas-box'>2.</td><td class='poet-box'>Dakota; Joseph R. Renville, 1846; paraphr. Philip Frazier, 1929, alt.</td><td class='tags-box'><div><a class="taglink" href="#">dakota</a><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">1part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/07</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/warm_summer_sun.html">Warm summer sun</a></td><td class='tune-box'>LIE LIGHT</td><td class='meter-box'>88.88</td><td class='composer-box'>Kenan Schaefkofer, 2021</td><td class='lyric-box'><div>Warm summer sun, shine kindly here,
 Warm southern wind, blow softly here,
 Green sod above, lie light, lie light.
 Good night, dear heart, good night, good night.
-</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Robert Richardson, alt. Mark Twain, 1896</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">summer</a><a class="taglink" href="#">death</a></div></td><td class='date-added-box'>2021/01/30</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/we_shall_overcome.html">We shall overcome</a></td><td class='tune-box'>WE SHALL OVERCOME</td><td class='meter-box'>irregular</td><td class='composer-box'>African-American Spiritual;
+</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Robert Richardson, alt. Mark Twain, 1896</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">summer</a><a class="taglink" href="#">death</a></div></td><td class='date-added-box'>2021/01/30</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/we_shall_overcome.html">We shall overcome</a></td><td class='tune-box'>WE SHALL OVERCOME</td><td class='meter-box'>irregular</td><td class='composer-box'>African-American Spiritual;
 arr. Kenan Schaefkofer, 2021</td><td class='lyric-box'><div>We shall overcome,
 we shall overcome,
 we shall overcome someday!
@@ -1102,7 +1102,7 @@ We shall live in peace … some day!
 We are not afraid … today!
 
 God will see us through ... some day!
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>African-American Spiritual</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/12</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/what_a_friend_we_have_in_jesus.html">What a friend we have in Jesus</a></td><td class='tune-box'>CONVERSE</td><td class='meter-box'>87.87 D</td><td class='composer-box'>Charles C. Converse, 1868</td><td class='lyric-box'><div>What a friend we have in Jesus, all our sins and griefs to bear!
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>African-American Spiritual</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/12</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/what_a_friend_we_have_in_jesus.html">What a friend we have in Jesus</a></td><td class='tune-box'>CONVERSE</td><td class='meter-box'>87.87 D</td><td class='composer-box'>Charles C. Converse, 1868</td><td class='lyric-box'><div>What a friend we have in Jesus, all our sins and griefs to bear!
 What a privilege to carry ev'rything to God in prayer!
 Oh, what peace we often forfeit, oh, what needless pain we bear,
 all because we do not carry ev'rything to God in prayer!
@@ -1116,7 +1116,7 @@ Are we weak and heavy laden, 'cumbered with a load of care?
 Precious Savior, still our refuge, take it to the Lord in prayer!
 Do thy friends despise, forsake thee? Take it to the Lord in prayer!
 Jesus' arms will take and shield thee– thou wilt find a solace there.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Joseph M. Scriven, 1855, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/19</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/what_child_is_this.html">What Child is this</a></td><td class='tune-box'>GREENSLEEVES</td><td class='meter-box'>87.87.68.67</td><td class='composer-box'>traditional English melody</td><td class='lyric-box'><div>What Child is this, who, laid to rest, on Mary's lap is sleeping,
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Joseph M. Scriven, 1855, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/19</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/what_child_is_this.html">What Child is this</a></td><td class='tune-box'>GREENSLEEVES</td><td class='meter-box'>87.87.68.67</td><td class='composer-box'>traditional English melody</td><td class='lyric-box'><div>What Child is this, who, laid to rest, on Mary's lap is sleeping,
 whom angels greet with anthems sweet, while shepherds watch are keeping?
 This, this is Christ the King, whom shepherds guard and angels sing.
 Haste, haste to bring him laud, the babe, the son of Mary!
@@ -1130,7 +1130,7 @@ So bring him incense, gold, and myrrh, come, peasant, king, to own him.
 The King of kings salvation brings, let loving hearts enthrone him.
 Raise, raise the song on high; the virgin sings her lullaby.
 Joy, joy for Christ is born, the babe, the son of Mary!
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>William C. Dix, ca. 1865</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">winter</a></div></td><td class='date-added-box'>2021/01/12</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/when_israel_was_in_egypts_land.html">When Israel was in Egypt's land</a></td><td class='tune-box'>GO DOWN MOSES</td><td class='meter-box'>85.85 with refrain</td><td class='composer-box'>African American spiritual;
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>William C. Dix, ca. 1865</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">winter</a></div></td><td class='date-added-box'>2021/01/12</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/when_israel_was_in_egypts_land.html">When Israel was in Egypt's land</a></td><td class='tune-box'>GO DOWN MOSES</td><td class='meter-box'>85.85 with refrain</td><td class='composer-box'>African American spiritual;
 arr. John W. Work (1871-1925)</td><td class='lyric-box'><div>When Israel was in Egypt's land,
 let my people go,
 oppressed so hard they could not stand,
@@ -1158,7 +1158,7 @@ Lord, help us all from bondage flee,
 let my people go,
 and let us all in Christ be free,
 let my people go.
-</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>African American spiritual</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/02/07</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/when_peace_like_a_river.html">When Peace like a River</a></td><td class='tune-box'>VILLE DU HAVRE</td><td class='meter-box'>11.8.11.9 with refrain</td><td class='composer-box'>Philip P. Bliss, 1876</td><td class='lyric-box'><div>When peace like a river attendeth my way, when sorrows like sea billows roll,
+</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>African American spiritual</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/02/07</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/when_peace_like_a_river.html">When Peace like a River</a></td><td class='tune-box'>VILLE DU HAVRE</td><td class='meter-box'>11.8.11.9 with refrain</td><td class='composer-box'>Philip P. Bliss, 1876</td><td class='lyric-box'><div>When peace like a river attendeth my way, when sorrows like sea billows roll,
 whatever my lot, thou hast taught me to say, ''It is well, it is well with my soul.''
 
   It is well with my soul, it is well, it is well with my soul.
@@ -1171,4 +1171,4 @@ is nailed to his cross, and I bear it no more, praise the Lord, praise the Lord,
 
 And, Lord, haste the day when my faith shall be sight, the clouds be rolled back as a scroll,
 the trumpet shall sound, and the Lord shall descend, even so, it is well with my soul.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Horatio G. Spafford, 1876</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textbyother</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/12</td></tr></table>
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Horatio G. Spafford, 1876</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/12</td></tr></table>

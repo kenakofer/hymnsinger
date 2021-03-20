@@ -20,7 +20,7 @@ copyright = \public_domain_notice "Kenan Schaefkofer"
 %prescore_text = \prescoreText "Uncomment to add text up and left of the score"
 %postscore_text = \postscoreText "Uncomment to add text down and left of the score"
 verseCount = 1
-tags = "english secular 3part textbyother"
+tags = "english secular 3part"
 dateAdded = "2021-03-09"
 \include "../../lib/header.ly"
 

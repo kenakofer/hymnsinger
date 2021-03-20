@@ -15,7 +15,7 @@ title = \titleText "All hail the power of Jesus' name"
 poet = \smallText "Text: Edward Perronet, 1780, revised by John Rippon, 1787"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 4
-tags = "english christian 4part textbyother"
+tags = "english christian 4part"
 dateAdded = "2021-01-14"
 \include "../../lib/header.ly"
 

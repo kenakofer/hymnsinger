@@ -11,7 +11,7 @@ title = \titleText "May we each take joy in giving"
 poet = \smallText "Text: Robert Murray, 1880, alt. Kenan Schaefkofer, 2021"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 1
-tags = "english secular 4part textbyother"
+tags = "english secular 4part"
 dateAdded = "2021-03-14"
 \include "../../lib/header.ly"
 

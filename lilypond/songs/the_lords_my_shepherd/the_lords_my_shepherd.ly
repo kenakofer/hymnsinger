@@ -16,7 +16,7 @@ title = \titleText "The Lord's my shepherd"
 poet = \smallText "Text: The Psalms in Meeter, 1650"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 5
-tags = "english theist 4part textbyother"
+tags = "english theist 4part"
 dateAdded = "2021-03-19"
 \include "../../lib/header.ly"
 

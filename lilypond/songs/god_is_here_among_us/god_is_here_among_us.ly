@@ -11,7 +11,7 @@ subtitle = \smallText "See also in German: Gott ist gegenwärtig"
 poet = \smallText "Text: Gerhard Tersteegen, 1729, trans. The Hymnal, 1940, alt."
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 3
-tags = "english christian 4part textbyother"
+tags = "english christian 4part"
 dateAdded = "2021-03-04"
 \include "../../lib/header.ly"
 

@@ -15,7 +15,7 @@ title = \titleText "Come, thou fount"
 poet = \smallText "Text: Robert Robinson, 1759"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 3
-tags = "english christian 4part textbyother"
+tags = "english christian 4part"
 dateAdded = "2021-01-13"
 \include "../../lib/header.ly"
 

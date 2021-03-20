@@ -11,7 +11,7 @@ subtitle = \smallText "See also in English: God is here among us"
 poet = \smallText "Text: Gerhard Tersteegen, 1729"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 3
-tags = "german christian 4part textbyother"
+tags = "german christian 4part"
 dateAdded = "2021-03-04"
 \include "../../lib/header.ly"
 
