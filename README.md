@@ -28,11 +28,12 @@ This is a project to make or take hymns with permissive copyright status, typese
   - Consider reaching out to people
   - Make shape notes bigger
   - Less space between two staves in clairnotes
-  - More space below lyrics
+  - Configurable space around lyrics
   - Figure out how to understand/clean up extra_lyrics columns
   - Include song index data in pages somehow (js?) then DRY on indexes
-  - try to use JS to pull out search params?
   - Store full index in JSON?
-  - Remove "~" from lyrics extraction
   - ' versus ’ in lyrics extraction
   - Figure out what the meters mean for consistency
+  - Song versus Tune columns
+  - Add key signature column or tag
+  - Add poet info column
