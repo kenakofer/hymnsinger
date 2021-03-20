@@ -469,7 +469,22 @@ For the glory of the Lord
 now o'er earth is shed abroad.
 And all flesh shall see the token
 that God's word is never broken.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Text: Johannes Olearius, 1671 tr. Catherine Winkworth, 1863</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/02/07</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/for_the_beauty_of_our_earth.html">For the beauty of our earth</a></td><td class='tune-box'>DIX</td><td class='meter-box'>77.77.77</td><td class='composer-box'>Conrad Kocher, 1838</td><td class='lyric-box'><div>For the beauty of our earth, for the glory of her skies,
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Text: Johannes Olearius, 1671 tr. Catherine Winkworth, 1863</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/02/07</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/down_to_the_river_to_pray.html">As I went down to the river to pray</a></td><td class='tune-box'>AS I WENT DOWN TO THE RIVER TO PRAY</td><td class='meter-box'>irregular</td><td class='composer-box'>African American Spiritual</td><td class='lyric-box'><div>As I went down to the river to pray,
+studyin' about that good old way,
+and who shall wear the starry crown,
+good Lord, show me the way.
+
+Oh, sisters, let's go down,
+let's go down, come on down.
+Oh, sisters, let's go down,
+down to the river to pray.
+
+Oh, brothers, …
+
+Oh, children, …
+
+Oh, sinners, …
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>African American Spiritual</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/20</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/for_the_beauty_of_our_earth.html">For the beauty of our earth</a></td><td class='tune-box'>DIX</td><td class='meter-box'>77.77.77</td><td class='composer-box'>Conrad Kocher, 1838</td><td class='lyric-box'><div>For the beauty of our earth, for the glory of her skies,
 for the love which from our birth over and around us lies:
 
   Source of all, to thee we raise this our hymn of grateful praise.
