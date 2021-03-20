@@ -11,7 +11,7 @@ subtitle = \smallText "See also: All creatures worship God most high"
 poet = \smallText "Text: Saint Francis of Assisi, 1225; alt."
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 5
-tags = "theist 4part musicbyother textbyother"
+tags = "english theist 4part musicbyother textbyother"
 dateAdded = "2021-03-05"
 \include "../../lib/header.ly"
 

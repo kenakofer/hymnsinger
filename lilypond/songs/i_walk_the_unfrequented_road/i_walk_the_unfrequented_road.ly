@@ -15,7 +15,7 @@ title = \titleText "I walk the unfrequented road"
 poet = \smallText "Text: Frederick Lucian Hosmer, 1913"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 5
-tags = "secular 4part musicbyother textbyother autumn"
+tags = "english secular 4part musicbyother textbyother autumn"
 dateAdded = "2021-01-31"
 \include "../../lib/header.ly"
 

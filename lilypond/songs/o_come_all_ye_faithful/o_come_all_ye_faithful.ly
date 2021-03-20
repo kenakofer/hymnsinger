@@ -15,7 +15,7 @@ title = \titleText "O come, all ye faithful"
 poet = \smallText "Text: John F. Wade, 1743, tr. Frederick Oakeley, 1841, William Mercer 1854, and others"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 4
-tags = "christian 4part musicbyother textbyother winter"
+tags = "english christian 4part musicbyother textbyother winter"
 dateAdded = "2021-01-19"
 \include "../../lib/header.ly"
 

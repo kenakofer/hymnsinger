@@ -44,6 +44,14 @@ def get_title(all_lines):
             line = line[index:].strip()
             return line[1:-1]
 
+def get_stanza_count(all_lines):
+    for line in all_lines:
+        search_for = "verseCount ="
+        if search_for in line:
+            index = line.index(search_for) + len(search_for) + 1
+            line = line[index:].strip()
+            return line
+
 def get_tune_and_meter(all_lines):
     for line in all_lines:
         search_for = "meter = \\smallText"
@@ -85,7 +93,9 @@ def get_lyrics(all_lines):
     lyrics = ""
     for line in all_lines:
         line = line.strip()
-        if line.startswith("verse") and not line.endswith("}"):
+        if line.startswith("verseCount"):
+            pass
+        elif line.startswith("verse") and not line.endswith("}"):
             current_verse = True
             remove_quotes = False
         elif line.endswith("LYRICS-START"):
@@ -131,7 +141,7 @@ def join_verse_line(line, remove_quotes):
     return " ".join(words)
 
 
-def output_table_row(song_file_base, song_title, lyrics, tune, meter, tags, date_added, output_file):
+def output_table_row(song_file_base, song_title, lyrics, tune, meter, stanza_count, tags, date_added, output_file):
     with open(output_file, 'a') as f:
         f.write("<tr><td class='hymn-name-box'><a href=\"{{ site.baseurl }}/listing/"+song_file_base+".html\">")
         f.write(song_title)
@@ -142,7 +152,9 @@ def output_table_row(song_file_base, song_title, lyrics, tune, meter, tags, date
         f.write(meter)
         f.write("</td><td class='lyric-box'><div>")
         f.write(lyrics)
-        f.write("</div></td><td class='tags-box'><div>")
+        f.write("</div></td><td class='stanzas-box'>")
+        f.write(stanza_count)
+        f.write("</td><td class='tags-box'><div>")
         for tag in tags:
             f.write(get_tag_html(tag))
         f.write("</div></td>")
@@ -185,9 +197,10 @@ if __name__ == "__main__":
         all_tags = get_tags(lines)
         song_title = get_title(lines)
         tune, meter = get_tune_and_meter(lines)
+        stanza_count = get_stanza_count(lines)
     date_added = get_date_added(lines)
     for output_file in index_files_to_append_to:
-        output_table_row(song_file_base, song_title, all_lyrics, tune, meter, all_tags, date_added, output_file)
+        output_table_row(song_file_base, song_title, all_lyrics, tune, meter, stanza_count, all_tags, date_added, output_file)
 
     song_markdown_file = "docs/listing/"+song_file_base+".md"
     output_header_info(song_file_base, song_title, all_lyrics, all_tags, song_markdown_file)

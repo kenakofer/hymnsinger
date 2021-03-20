@@ -17,7 +17,7 @@ title = \titleText "When Peace like a River"
 poet = \smallText "Text: Horatio G. Spafford, 1876"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 4
-tags = "christian 4part musicbyother textbyother"
+tags = "english christian 4part musicbyother textbyother"
 dateAdded = "2021-03-12"
 \include "../../lib/header.ly"
 

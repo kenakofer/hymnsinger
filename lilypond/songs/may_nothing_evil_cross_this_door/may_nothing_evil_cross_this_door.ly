@@ -15,7 +15,7 @@ title = \titleText "May nothing evil cross this door"
 poet = \smallText "Text: Louis Untermeyer, 1923"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 4
-tags = "secular 4part musicbyother textbyother"
+tags = "english secular 4part musicbyother textbyother"
 dateAdded = "2021-01-31"
 \include "../../lib/header.ly"
 

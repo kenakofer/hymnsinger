@@ -15,7 +15,7 @@ title = \titleText "Be still my soul"
 poet = \smallText "Text: Kathrina von Schlegel, tr. Jane Borthwick (1855)"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 3
-tags = "theist 4part musicbyother textbyother"
+tags = "english theist 4part musicbyother textbyother"
 dateAdded = "2021-01-14"
 \include "../../lib/header.ly"
 

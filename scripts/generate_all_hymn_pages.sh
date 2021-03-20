@@ -10,7 +10,7 @@ echo "layout: default" >> $LISTFILE
 echo "---" >> $LISTFILE
 echo "{% include data_table.html %}" >> $LISTFILE
 echo "# Complete Index" >> $LISTFILE
-echo "<table id='song-table' cellspacing='0' width='100%'><thead><th>Song</th><th>Tune</th><th>Meter</th><th>Lyrics</th><th>Tags</th><th>Added</th></thead>" >> $LISTFILE
+echo "<table id='song-table' cellspacing='0' width='100%'><thead><th>Song</th><th>Tune</th><th>Meter</th><th>Lyrics</th><th># Vs</th><th>Tags</th><th>Added</th></thead>" >> $LISTFILE
 
 
 find lilypond/songs -type f -iname "*.ly" -print0 | sort -z | while IFS= read -r -d $'\0' file; do

@@ -11,7 +11,7 @@ subtitle = \smallText "Alt. title: All creatures of our God and King"
 poet = \twoLineSmallText "Text: Saint Francis of Assisi, 1225;" "Translated William H. Draper, 1926; alt."
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 7
-tags = "christian 4part musicbyother textbyother"
+tags = "english christian 4part musicbyother textbyother"
 postscore_text = \postscoreText "*Or, ''All creatures of our God and King, / lift up your voice and with us sing''"
 dateAdded = "2021-03-05"
 \include "../../lib/header.ly"

@@ -15,7 +15,7 @@ title = \titleText "Now the day is over"
 poet = \twoLineSmallText "Text: v.1 Sabine Baring Gould, 1865" "v.2-5 Marye B. Bonney (1910-1992)"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 5
-tags = "secular 4part musicbyother textbyother evening autumn"
+tags = "english secular 4part musicbyother textbyother evening autumn"
 dateAdded = "2021-02-11"
 \include "../../lib/header.ly"
 

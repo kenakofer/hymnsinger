@@ -11,7 +11,7 @@ title = \titleText "Calm soul of all things"
 poet = \smallText "Text: Matthew Arnold (1822-1888)"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 2
-tags = "theist 4part musicbyother textbyother"
+tags = "english theist 4part musicbyother textbyother"
 prescore_text = \prescoreText "Unison when sung in canon"
 dateAdded = "2021-03-09"
 \include "../../lib/header.ly"

@@ -15,7 +15,7 @@ title = \titleText "Great is thy faithfulness"
 poet = \smallText "Text: Thomas O. Chisholm, 1923"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 3
-tags = "theist 4part musicbyother textbyother"
+tags = "english theist 4part musicbyother textbyother"
 dateAdded = "2021-01-24"
 \include "../../lib/header.ly"
 

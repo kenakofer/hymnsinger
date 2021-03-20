@@ -15,7 +15,7 @@ title = \titleText "Help us to help each other, Lord"
 poet = \smallText "Text: Charles Wesley, 1742"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 4
-tags = "christian 4part musicbyother textbyother"
+tags = "english christian 4part musicbyother textbyother"
 dateAdded = "2021-01-09"
 \include "../../lib/header.ly"
 

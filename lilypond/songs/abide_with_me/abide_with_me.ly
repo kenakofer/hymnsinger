@@ -12,7 +12,7 @@ quarternoteTempo = 110
 title = \titleText "Abide with me"
 poet = \smallText "Text: Henry F. Lyte, 1847"
 verseCount = 4
-tags = "theist 4part musicbyother textbyother evening death"
+tags = "english theist 4part musicbyother textbyother evening death"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 dateAdded = "2021-01-16"
 \include "../../lib/header.ly"

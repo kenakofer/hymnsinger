@@ -10,7 +10,7 @@ title = \titleText "O love, how deep, how broad"
 poet = \smallText "Text: Thomas a Kempis, 15th c. trans. Benjamin Webb 1851, alt."
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 5
-tags = "christian 4part arrbykenan textbyother"
+tags = "english christian 4part arrbykenan textbyother"
 dateAdded = "2021-03-04"
 \include "../../lib/header.ly"
 
