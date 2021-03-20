@@ -485,7 +485,7 @@ friends we've lost and friends still here, for all selfless thoughts and mild:
 
 For thy Truth both harsh and kind, shadowed setter of our stage,
 patterns sought by human mind, guiding us from age to age,
-</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Text: Folliott S. Pierpoint, 1864, alt. v.5 Kenan Schaefkofer, 2021</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textadaptedbykenan</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/05</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/god_is_here_among_us.html">God is here among us</a></td><td class='tune-box'>WUNDERBARER KÖNIG</td><td class='meter-box'>66.86.66.86.666</td><td class='composer-box'>Joachim Neander, 1680</td><td class='lyric-box'><div>God is here among us: come with adoration, fervent praise and expectation.
+</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Text: Folliott S. Pierpoint, 1864, alt. v.5 Kenan Schaefkofer, 2021</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/05</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/god_is_here_among_us.html">God is here among us</a></td><td class='tune-box'>WUNDERBARER KÖNIG</td><td class='meter-box'>66.86.66.86.666</td><td class='composer-box'>Joachim Neander, 1680</td><td class='lyric-box'><div>God is here among us: come with adoration, fervent praise and expectation.
 God is here within us: known beyond believing, soul in silent awe receiving.
 God will name and will claim those beheld as lowly, making all things holy.
 
@@ -831,7 +831,7 @@ protected be your heads;
 and happy slumbers send you,
 and ev'ry care attend you,
 as trusted souls watch o'er your beds.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Paul Gerhardt, 1648, tr. and alt. Kenan Schaefkofer, 2021</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">textadaptedbykenan</a><a class="taglink" href="#">evening</a></div></td><td class='date-added-box'>2021/01/16</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/now_the_day_is_over.html">Now the day is over</a></td><td class='tune-box'>WEM IN LEIDENSTAGEN</td><td class='meter-box'>65.65</td><td class='composer-box'>Friedrich Filitz, 1847</td><td class='lyric-box'><div>Now the day is over,
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Paul Gerhardt, 1648, tr. and alt. Kenan Schaefkofer, 2021</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">evening</a></div></td><td class='date-added-box'>2021/01/16</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/now_the_day_is_over.html">Now the day is over</a></td><td class='tune-box'>WEM IN LEIDENSTAGEN</td><td class='meter-box'>65.65</td><td class='composer-box'>Friedrich Filitz, 1847</td><td class='lyric-box'><div>Now the day is over,
 night is drawing nigh,
 shadows of the evening
 steal across the sky.
@@ -1068,7 +1068,28 @@ When true simplicity is gained,
 to bow and to bend we will not be ashamed;
 to turn, turn, will be our delight,
 till by turning, turning we come round right.
-</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Joseph Bracket, 1848</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/01/10</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/wakantanka_many_and_great.html">Wakantanka (Many and Great)</a></td><td class='tune-box'>LACQUIPARLE</td><td class='meter-box'>irregular</td><td class='composer-box'>Plains Indian traditional, 1879</td><td class='lyric-box'><div>Wakantanka taku nitawa tankaya qa ota;
+</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Joseph Bracket, 1848</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/01/10</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/wade_in_the_water.html">Wade in the water</a></td><td class='tune-box'>WADE IN THE WATER</td><td class='meter-box'>irregular with refrain</td><td class='composer-box'>African American Spiritual</td><td class='lyric-box'><div>Wade in the water,
+wade in the water, children,
+wade in the water.
+God's gonna trouble the water.
+
+See that host all dressed in white,
+God's gonna trouble the water.
+The leader looks like the Israelite.
+God's gonna trouble the water.
+
+See that host all dressed in white…
+The leader looks like the Israelite...
+
+See that host all dressed in white…
+The leader looks like the Israelite...
+
+See that host all dressed in white…
+The leader looks like the Israelite...
+
+See that host all dressed in white…
+The leader looks like the Israelite...
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>African American Spiritual</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/20</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/wakantanka_many_and_great.html">Wakantanka (Many and Great)</a></td><td class='tune-box'>LACQUIPARLE</td><td class='meter-box'>irregular</td><td class='composer-box'>Plains Indian traditional, 1879</td><td class='lyric-box'><div>Wakantanka taku nitawa tankaya qa ota;
 mahpiya kin eyahnake ça, maka kin he duowanca;
 mniowanca śbeya wanke cin, hena oyakihi.
 

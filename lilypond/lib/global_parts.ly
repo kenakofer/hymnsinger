@@ -7,4 +7,6 @@ globalParts = {
   \hymnBeamExceptions
   \numericTimeSignature
   \phrasingSlurDashed
+  \override Score.RehearsalMark.break-visibility = #end-of-line-visible
+  \override Score.RehearsalMark.self-alignment-X = #RIGHT
 }
