@@ -14,7 +14,7 @@ quarternoteTempo = 106
 title = \titleText "Wade in the water"
 poet = \smallText "Text: African American Spiritual"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-verseCount = 4
+verseCount = 3
 tags = "english christian 4part"
 dateAdded = "2021-03-20"
 \include "../../lib/header.ly"
