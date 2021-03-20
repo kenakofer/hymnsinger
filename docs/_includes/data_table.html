@@ -7,15 +7,31 @@
 
 <script>
 search = function(value) {
-    $('#song-table').DataTable().search(value).draw()
+    table.search(value).draw()
 }
 $(document).on("click", ".taglink", function(e) {
     search(this.text);
     e.preventDefault();
 });
+$(document).on("click", "a.toggle-vis", function (e) {
+    e.preventDefault();
+
+    // Get the column API object
+    var column = table.column( $(this).attr('data-column') );
+
+    // Toggle the visibility
+    column.visible(!column.visible());
+    table.columns.adjust().draw()
+    if (column.visible()) {
+        $(this).removeClass("off")
+    } else {
+        $(this).addClass("off")
+    }
+} );
+
 
 $(document).ready( function () {
-    $('#song-table').DataTable({
+    table = $('#song-table').DataTable({
         "paging": false,
         "dom": "ifrt",
         "responsive": true,
@@ -36,7 +52,7 @@ $(document).ready( function () {
                 "responsivePriority": 3
             },
             { // Meter
-                "visible": true,
+                "visible": false,
                 "orderable": true,
                 "responsivePriority": 6
             },
@@ -46,7 +62,7 @@ $(document).ready( function () {
                 "responsivePriority": 1
             },
             { // # Vs
-                "visible": true,
+                "visible": false,
                 "orderable": true,
                 "responsivePriority": 5
             },

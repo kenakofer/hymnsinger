@@ -153,7 +153,7 @@ def output_table_row(song_file_base, song_title, lyrics, tune, meter, stanza_cou
         f.write("</td><td class='lyric-box'><div>")
         f.write(lyrics)
         f.write("</div></td><td class='stanzas-box'>")
-        f.write(stanza_count)
+        f.write(stanza_count + ".")
         f.write("</td><td class='tags-box'><div>")
         for tag in tags:
             f.write(get_tag_html(tag))

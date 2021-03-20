@@ -218,12 +218,9 @@ img {
     overflow: auto;
     padding: 6px 8px;
 }
-.date-added-box {
-    text-align: center;
-}
 .hymn-name-box {
     background: #e7e3df;
-    line-height: 1.3;
+    line-height: 1.1;
 }
 .hymn-name-box a {
     font-weight: 500;
@@ -239,6 +236,17 @@ img {
     font-weight: 400;
     font-size: 10px;
     line-height: 1.6;
+}
+.stanzas-box, .date-added-box  {
+    font-size: 14px;
+    font-family: monospace;
+    text-align: center;
+}
+a.toggle-vis {
+    font-weight: bold;
+}
+a.toggle-vis.off{
+    font-weight: 100;
 }
 
 .search-div {

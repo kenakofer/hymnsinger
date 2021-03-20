@@ -3,14 +3,38 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 # Set up the listing index
 LISTFILE="docs/hymn-index.md"
-echo "---" > $LISTFILE
-echo "title: Complete Index" >> $LISTFILE
-echo "description: An list of every hymn song music resource on the site" >> $LISTFILE
-echo "layout: default" >> $LISTFILE
-echo "---" >> $LISTFILE
-echo "{% include data_table.html %}" >> $LISTFILE
-echo "# Complete Index" >> $LISTFILE
-echo "<table id='song-table' cellspacing='0' width='100%'><thead><th>Song</th><th>Tune</th><th>Meter</th><th>Lyrics</th><th># Vs</th><th>Tags</th><th>Added</th></thead>" >> $LISTFILE
+cat << EOF > $LISTFILE
+---
+title: Complete Index
+description: An list of every hymn song music resource on the site
+layout: default
+---
+
+{% include data_table.html %}
+
+# Complete Index
+
+<div id='toggle-vis-panel'>
+Toggle:
+<a class="toggle-vis" data-column="0" href="#">Song</a> |
+<a class="toggle-vis" data-column="1" href="#">Tune</a> |
+<a class="toggle-vis off" data-column="2" href="#">Meter</a> |
+<a class="toggle-vis" data-column="3" href="#">Stanzas</a> |
+<a class="toggle-vis off" data-column="4" href="#">#</a> |
+<a class="toggle-vis" data-column="5" href="#">Tags</a> |
+<a class="toggle-vis" data-column="6" href="#">Added</a>
+</div>
+
+<table id='song-table' cellspacing='0' width='100%'><thead>
+<th>Song</th>
+<th>Tune</th>
+<th>Meter</th>
+<th>Stanzas</th>
+<th>#</th>
+<th>Tags</th>
+<th>Added</th>
+</thead>
+EOF
 
 
 find lilypond/songs -type f -iname "*.ly" -print0 | sort -z | while IFS= read -r -d $'\0' file; do
