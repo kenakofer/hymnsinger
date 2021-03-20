@@ -22,8 +22,9 @@ Toggle:
 <a class="toggle-vis off" data-column="3" href="#">Composer</a> |
 <a class="toggle-vis" data-column="4" href="#">Lyrics</a> |
 <a class="toggle-vis off" data-column="5" href="#"># Stanzas</a> |
-<a class="toggle-vis" data-column="6" href="#">Tags</a> |
-<a class="toggle-vis" data-column="7" href="#">Date Added</a>
+<a class="toggle-vis off" data-column="6" href="#">Poet</a> |
+<a class="toggle-vis" data-column="7" href="#">Tags</a> |
+<a class="toggle-vis" data-column="8" href="#">Date Added</a>
 </div>
 
 <table id='song-table' cellspacing='0' width='100%'><thead>
@@ -33,6 +34,7 @@ Toggle:
 <th>Composer</th>
 <th>Lyrics</th>
 <th>#</th>
+<th>Poet</th>
 <th>Tags</th>
 <th>Added</th>
 </thead>

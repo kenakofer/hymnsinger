@@ -81,6 +81,19 @@ def get_composer_info(all_lines):
             arranger = ";\n" + line[1:-1] # Strip trailing quote
     return composer + arranger
 
+def get_poet_info(all_lines):
+    search_for = 'poet = \\smallText "Text:'
+    two_line_search_for = "poet = \\twoLineSmallText"
+    for line in all_lines:
+        if line.startswith(search_for):
+            index = line.index(search_for) + len(search_for) + 1
+            line = line[index:].strip()
+            return line[:-1] # Strip trailing quote
+        if line.startswith(two_line_search_for):
+            index = line.index(two_line_search_for) + len(two_line_search_for) + 1
+            line = line[index:].strip()
+            return line.replace('"', '')
+    raise Exception("Poet not found")
 
 def ismeterword(word):
     if word in meter_words:
@@ -158,7 +171,7 @@ def join_verse_line(line, remove_quotes):
     return " ".join(words)
 
 
-def output_table_row(song_file_base, song_title, lyrics, tune, meter, stanza_count, tags, composer, date_added, output_file):
+def output_table_row(song_file_base, song_title, lyrics, tune, meter, stanza_count, tags, composer, poet, date_added, output_file):
     with open(output_file, 'a') as f:
         f.write("<tr><td class='hymn-name-box'><a href=\"{{ site.baseurl }}/listing/"+song_file_base+".html\">")
         f.write(song_title)
@@ -173,6 +186,8 @@ def output_table_row(song_file_base, song_title, lyrics, tune, meter, stanza_cou
         f.write(lyrics)
         f.write("</div></td><td class='stanzas-box'>")
         f.write(stanza_count + ".")
+        f.write("</td><td class='poet-box'>")
+        f.write(poet)
         f.write("</td><td class='tags-box'><div>")
         for tag in tags:
             f.write(get_tag_html(tag))
@@ -218,9 +233,10 @@ if __name__ == "__main__":
         tune, meter = get_tune_and_meter(lines)
         stanza_count = get_stanza_count(lines)
         composer = get_composer_info(lines)
+        poet = get_poet_info(lines)
     date_added = get_date_added(lines)
     for output_file in index_files_to_append_to:
-        output_table_row(song_file_base, song_title, all_lyrics, tune, meter, stanza_count, all_tags, composer, date_added, output_file)
+        output_table_row(song_file_base, song_title, all_lyrics, tune, meter, stanza_count, all_tags, composer, poet, date_added, output_file)
 
     song_markdown_file = "docs/listing/"+song_file_base+".md"
     output_header_info(song_file_base, song_title, all_lyrics, all_tags, song_markdown_file)
