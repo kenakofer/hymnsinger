@@ -1194,7 +1194,37 @@ We shall live in peace … some day!
 We are not afraid … today!
 
 God will see us through ... some day!
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>African-American Spiritual</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/12</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/what_a_friend_we_have_in_jesus.html">What a friend we have in Jesus</a></td><td class='tune-box'>CONVERSE</td><td class='key-box'>F major
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>African-American Spiritual</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/12</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/we_three_kings.html">We three kings</a></td><td class='tune-box'>KINGS OF ORIENT</td><td class='key-box'>G major
+</td><td class='meter-box'>88.446 with refrain</td><td class='composer-box'>John H. Hopkins Jr., 1857</td><td class='lyric-box'><div>We three kings of Orient are;
+bearing gifts we traverse afar,
+field and fountain, moor and mountain,
+following yonder star.
+
+  O star of wonder, star of light,
+  star with royal beauty bright,
+  westward leading still proceeding,
+  guide us to thy perfect light.
+
+Born a King on Bethlehem's plain,
+gold I bring to crown him again,
+King forever, ceasing never,
+over us all to reign.
+
+Frankincense to offer have I;
+incense owns a deity nigh;
+prayer and praising, voices raising,
+worshiping God on high.
+
+Myrrh is mine; its bitter perfume
+breathes a life of gathering gloom;
+sorrowing, sighing, bleeding, dying,
+sealed in the stonecold tomb.
+
+Glorious now behold him arise;
+King and God and sacrifice:
+Alleluia, Alleluia,
+sounds through the earth and skies.
+</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>John H. Hopkins Jr., 1857</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">winter</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/20</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/what_a_friend_we_have_in_jesus.html">What a friend we have in Jesus</a></td><td class='tune-box'>CONVERSE</td><td class='key-box'>F major
 </td><td class='meter-box'>87.87 D</td><td class='composer-box'>Charles C. Converse, 1868</td><td class='lyric-box'><div>What a friend we have in Jesus, all our sins and griefs to bear!
 What a privilege to carry ev'rything to God in prayer!
 Oh, what peace we often forfeit, oh, what needless pain we bear,
