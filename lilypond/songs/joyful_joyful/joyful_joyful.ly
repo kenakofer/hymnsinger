@@ -55,10 +55,10 @@ bass = {
 
 %% LYRICS
 verseA = \lyricmode {
-  Joy -- ful, joy -- ful, we a -- dore thee, God of glo -- ry, Lord of love.
-  Hearts un -- fold like flow'rs be -- fore thee, prais -- ing thee their sun a -- bove.
-  Melt the clouds of sin and sad -- ness; drive the dark of doubt a -- way.
-  Giv -- er of im -- mor -- tal glad -- ness, fill us with the light of day!
+  \l Joy -- ful, joy -- ful, we a -- dore thee, God of glo -- ry, Lord of love.
+  \l Hearts un -- fold like flow'rs be -- fore thee, prais -- ing thee their sun a -- bove.
+  \l Melt the clouds of sin and sad -- ness; drive the dark of doubt a -- way.
+  \l Giv -- er of im -- mor -- tal glad -- ness, fill us with the light of day!
 }
 verseB = \lyricmode {
   All thy works with joy sur -- round thee, earth and heav'n re -- flect thy rays,

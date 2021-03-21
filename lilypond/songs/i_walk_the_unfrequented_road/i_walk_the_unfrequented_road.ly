@@ -48,10 +48,10 @@ bass = {
 
 %% LYRICS
 verseA = \lyricmode {
-  I walk the un -- fre -- quent -- ed road
-  with o -- pen eye and ear;
-  I watch a -- field the farm -- er load
-  the boun -- ty of the year.
+  \l I walk the un -- fre -- quent -- ed road
+  \l with o -- pen eye and ear;
+  \l I watch a -- field the farm -- er load
+  \l the boun -- ty of the year.
 }
 verseB = \lyricmode {
   I filch the fruit of no one's toil—

@@ -16,14 +16,14 @@ dateAdded = "2021-02-07"
 
 %% LYRICS
 verseA = \lyricmode {
-  Com -- fort, com -- fort, O my peo -- ple,
+  \l Com -- fort, com -- fort, O my peo -- ple,
   speak of peace, now says our God.
-  Com -- fort those who sit in dark -- ness,
+  \l Com -- fort those who sit in dark -- ness,
   mourn -- ing 'neath their sor -- rows' load.
 
-  Speak un -- to Je -- ru -- sa -- lem
+  \l Speak un -- to Je -- ru -- sa -- lem
   of the peace that waits for them.
-  Tell of all the sins I cov -- er,
+  \l Tell of all the sins I cov -- er,
   and that war -- fare now is o -- ver.
 }
 verseB = \lyricmode {

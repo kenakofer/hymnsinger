@@ -16,8 +16,8 @@ dateAdded = "2021-03-04"
 
 %% LYRICS
 verseA = \lyricmode {
-  O love, how deep, how broad, how high! It fills the heart with ec -- sta -- sy,
-  that God, the Son of God, should take our mor -- tal form for mor -- tals' sake.
+  \l O love, how deep, how broad, how high! It fills the heart with ec -- sta -- sy,
+  \l that God, the Son of God, should take our mor -- tal form for mor -- tals' sake.
 }
 verseB = \lyricmode {
   For us he was bap -- tized and bore his ho -- ly fast, and hun -- gered sore.

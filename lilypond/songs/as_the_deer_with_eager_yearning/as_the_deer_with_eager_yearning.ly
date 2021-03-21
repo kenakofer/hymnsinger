@@ -19,13 +19,13 @@ dateAdded = "2021-03-09"
 
 %% LYRICS
 verseA = \lyricmode {
-  As the deer with ea -- ger yearn -- ing
+  \l As the deer with ea -- ger yearn -- ing
   seeks the cool -- ing wa -- ter -- course,
-  so my soul with ar -- dor burn -- ing
+  \l so my soul with ar -- dor burn -- ing
   longs for God, its heav'n -- ly source.
-  When shall I be -- hold God's face?
+  \l When shall I be -- hold God's face?
   When shall I re -- ceive God's grace?
-  When shall I, God's prais -- es voic -- ing,
+  \l When shall I, God's prais -- es voic -- ing,
   come be -- fore our God re -- joic -- ing?
 }
 verseB = \lyricmode {

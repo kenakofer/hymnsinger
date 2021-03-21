@@ -16,8 +16,8 @@ dateAdded = "2021-01-11"
 
 %% LYRICS
 verseA = \lyricmode {
-  A -- maz -- ing grace! how sweet the sound, that saved a wretch like me!
-  I once was lost, but now am found, was blind, but now I see.
+  \l A -- maz -- ing grace! how sweet the sound, that saved a wretch like me!
+  \l I once was lost, but now am found, was blind, but now I see.
 }
 verseB = \lyricmode {
   'Twas grace that taught my heart to fear, and grace my fears re -- lieved.

@@ -51,8 +51,8 @@ bass = {
 %% LYRICS
 verseA = \lyricmode {
   Come, O thou Trav -- el -- er un -- known, whom still, I hold, but can -- not see!
-  My com -- pa -- ny be -- fore is gone, and I am left a -- lone with thee.
-  With thee all night I mean to stay, and wres -- tle till the break of day.
+  \l My com -- pa -- ny be -- fore is gone, and I am left a -- lone with thee.
+  \l With thee all night I mean to stay, and wres -- tle till the break of day.
 }
 verseB = \lyricmode {
   I need not tell thee who I am, my mis -- er -- y and sin de -- clare.

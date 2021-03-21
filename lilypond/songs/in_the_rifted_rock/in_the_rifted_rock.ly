@@ -61,11 +61,11 @@ songChords = \chords {
 
 %% LYRICS
 verseA = \lyricmode {
-  In the rift -- ed Rock I'm rest -- ing, safe -- ly shel -- tered, I a -- bide.
-  There no foes nor storms as -- sail me, while with -- in the cleft I hide.
+  \l In the rift -- ed Rock I'm rest -- ing, safe -- ly shel -- tered, I a -- bide.
+  \l There no foes nor storms as -- sail me, while with -- in the cleft I hide.
   %% CHORUS
-  Now I'm rest -- ing, sweet -- ly rest -- ing, in the cleft once made for me.
-  Je -- sus, bless -- ed Rock of ag -- es, I will hide my -- self in thee.
+  \l Now I'm rest -- ing, sweet -- ly rest -- ing, in the cleft once made for me.
+  \l Je -- sus, bless -- ed Rock of ag -- es, I will hide my -- self in thee.
 }
 verseB = \lyricmode {
   Long pur -- sued by sin and Sa -- tan, wea -- ry, sad, I longed for rest.

@@ -52,10 +52,10 @@ bass = {
 
 %% LYRICS
 verseA = \lyricmode {
-  Come, ye thank -- ful peo -- ple, come, raise a song of har -- vest home:
-  fruit and crops are gath -- ered in, safe be -- fore the storms be -- gin;
-  God, our Mak -- er, will pro -- vide for our needs to be sup -- plied;
-  come to God's own tem -- ple, come, raise a song of har -- vest home.
+  \l Come, ye thank -- ful peo -- ple, come, raise a song of har -- vest home:
+  \l fruit and crops are gath -- ered in, safe be -- fore the storms be -- gin;
+  \l God, our Mak -- er, will pro -- vide for our needs to be sup -- plied;
+  \l come to God's own tem -- ple, come, raise a song of har -- vest home.
 }
 verseB = \lyricmode {
   All the world is but a field, giv -- en for a fruit -- ful yield;

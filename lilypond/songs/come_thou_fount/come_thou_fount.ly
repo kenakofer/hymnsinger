@@ -52,10 +52,10 @@ bass = {
 
 %% LYRICS
 verseA = \lyricmode {
-  Come, Thou Fount of ev -- 'ry bless -- ing, tune my heart to sing thy grace;
-  Streams of mer -- cy, nev -- er ceas -- ing, call for songs of loud -- est praise.
-  Teach me some mel -- o -- dious son -- net, sung by flam -- ing tongues a -- bove.
-  Praise the mount! I’m fixed up -- on it, mount of God’s un -- chang -- ing love.
+  \l Come, Thou Fount of ev -- 'ry bless -- ing, tune my heart to sing thy grace;
+  \l Streams of mer -- cy, nev -- er ceas -- ing, call for songs of loud -- est praise.
+  \l Teach me some mel -- o -- dious son -- net, sung by flam -- ing tongues a -- bove.
+  \l Praise the mount! I’m fixed up -- on it, mount of God’s un -- chang -- ing love.
 }
 verseB = \lyricmode {
   Here I raise my Eb -- e -- ne -- zer; here by Thy great help I’ve come;

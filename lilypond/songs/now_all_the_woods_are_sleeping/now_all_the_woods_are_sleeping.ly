@@ -53,11 +53,11 @@ bass = {
 
 %% LYRICS
 verseA = \lyricmode {
-  Now all the woods are sleep -- ing,
+  \l Now all the woods are sleep -- ing,
   the night and still -- ness creep -- ing
-  o'er ci -- ty, field, and beast;
+  \l o'er ci -- ty, field, and beast;
   but thou, my heart, a -- wake be,
-  with pray'r -- ful thanks, at -- tend thee,
+  \l with pray'r -- ful thanks, at -- tend thee,
   to dear -- est Trea -- sures ere thou rest.
 }
 verseB = \lyricmode {

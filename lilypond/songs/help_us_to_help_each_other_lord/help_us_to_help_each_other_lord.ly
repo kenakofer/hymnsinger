@@ -44,9 +44,9 @@ bass = {
 
 %% LYRICS
 verseA = \lyricmode {
-  Help us to help each oth -- er, Lord,
+  \l Help us to help each oth -- er, Lord,
   each oth -- er's cross to bear,
-  let each his friend -- ly aid af -- ford,
+  \l let all their friend -- ly aid af -- ford,
   and feel a -- noth -- er's care.
 }
 verseB = \lyricmode {

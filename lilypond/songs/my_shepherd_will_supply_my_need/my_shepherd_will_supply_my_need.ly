@@ -16,10 +16,10 @@ dateAdded = "2021-03-04"
 
 %% LYRICS
 verseA = \lyricmode {
-  My Shep -- herd will sup -- ply my need; most ho -- ly is your name.
-  In pas -- tures fresh you make me feed, be -- side the liv -- ing stream.
-  You bring my wan -- d'ring spir -- it back, when I for -- sake your ways,
-  and lead me for your mer -- cy's sake, in paths of truth and grace.
+  \l My Shep -- herd will sup -- ply my need; most ho -- ly is your name.
+  \l In pas -- tures fresh you make me feed, be -- side the liv -- ing stream.
+  \l You bring my wan -- d'ring spir -- it back, when I for -- sake your ways,
+  \l and lead me for your mer -- cy's sake, in paths of truth and grace.
 }
 verseB = \lyricmode {
   When I walk through the shades of death, your pres -- ence is my stay.

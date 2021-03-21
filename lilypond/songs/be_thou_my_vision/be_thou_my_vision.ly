@@ -53,10 +53,10 @@ bass = {
 
 %% LYRICS
 verseA = \lyricmode {
-  Be thou my vi -- sion, O Lord of my heart;
-  naught be all else to me save that thou art.
-  Thou my best thought, by day or by night,
-  wak -- ing or sleep -- ing thy pres -- ence my light.
+  \l Be thou my vi -- sion, O Lord of my heart;
+  \l naught be all else to me save that thou art.
+  \l Thou my best thought, by day or by night,
+  \l wak -- ing or sleep -- ing thy pres -- ence my light.
 }
 verseB = \lyricmode {
   Be thou my wis -- dom, be thou my true word;

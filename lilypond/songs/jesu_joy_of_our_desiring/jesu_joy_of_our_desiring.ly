@@ -52,10 +52,10 @@ bass = {
 
 %% LYRICS
 verseA = \lyricmode {
-  Je -- su, joy of our de -- sir -- ing, ho -- ly wis -- dom, love most bright,
-  drawn by thee, our souls as -- pir -- ing soar to un -- cre -- at -- ed light.
-  Word of God, our flesh that fash -- ioned, with the fire of life im -- pas -- sioned,
-  striv -- ing still to truth un -- known, soar -- ing, dy -- ing round thy throne.
+  \l Je -- su, joy of our de -- sir -- ing, ho -- ly wis -- dom, love most bright,
+  \l drawn by thee, our souls as -- pir -- ing soar to un -- cre -- at -- ed light.
+  \l Word of God, our flesh that fash -- ioned, with the fire of life im -- pas -- sioned,
+  \l striv -- ing still to truth un -- known, soar -- ing, dy -- ing round thy throne.
 }
 verseB = \lyricmode {
   Through the way, where hope is guid -- ing, hark, what peace -- ful mu -- sic rings,

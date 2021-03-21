@@ -17,13 +17,13 @@ dateAdded = "2021-03-08"
 %% LYRICS
 verseA = \lyricmode {
   %% CHORUS
-  Hei -- lig, hei -- lig, hei -- lig, hei -- lig ist der Herr!
-  Hei -- lig, hei -- lig, hei -- lig, hei -- lig ist nur er!
+  \l Hei -- lig, hei -- lig, hei -- lig, hei -- lig ist der Herr!
+  \l Hei -- lig, hei -- lig, hei -- lig, hei -- lig ist nur er!
   %% END CHORUS
   \showVerseNumberAtLineStart "1" #4.5
-  Er, der nie be -- gon -- nen, or, der im -- mer war,
+  \l Er, der nie be -- gon -- nen, or, der im -- mer war,
   \hideVerseNumberAtLineStart
-  e -- wig ist und wal -- tet, sein wird im -- mer -- dar.
+  \l e -- wig ist und wal -- tet, sein wird im -- mer -- dar.
 }
 verseB = \lyricmode {
   _ _ _ _ _ _ _ _ _ _ _

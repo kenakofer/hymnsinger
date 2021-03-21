@@ -60,9 +60,9 @@ songChords = \chords {
 
 %% LYRICS
 verseA = \lyricmode {
-  When Is -- rael was in E -- gypt's land,
+  \l When Is -- rael was in E -- gypt's land,
   let my peo -- ple go,
-  op -- pressed so hard they could not stand,
+  \l op -- pressed so hard they could not stand,
   let my peo -- ple go.
   %% CHORUS
   Go down, Mo -- ses, way down in E -- gypt's land,

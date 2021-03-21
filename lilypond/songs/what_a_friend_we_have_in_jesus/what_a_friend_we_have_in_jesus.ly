@@ -61,10 +61,10 @@ songChords = \chords {
 
 %% LYRICS
 verseA = \lyricmode {
-  What a friend we have in Je -- sus, all our sins and griefs to bear!
-  What a priv -- i -- lege to car -- ry ev -- 'ry -- thing to God in prayer!
-  Oh, what peace we of -- ten for -- feit, oh, what need -- less pain we bear,
-  all be -- cause we do not car -- ry ev -- 'ry -- thing to God in prayer!
+  \l What a friend we have in Je -- sus, all our sins and griefs to bear!
+  \l What a priv -- i -- lege to car -- ry ev -- 'ry -- thing to God in prayer!
+  \l Oh, what peace we of -- ten for -- feit, oh, what need -- less pain we bear,
+  \l all be -- cause we do not car -- ry ev -- 'ry -- thing to God in prayer!
 }
 verseB = \lyricmode {
   Have we tri -- als and temp -- ta -- tions? Is there trou -- ble an -- y -- where?

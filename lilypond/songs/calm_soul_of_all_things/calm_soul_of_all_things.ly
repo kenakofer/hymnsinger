@@ -18,9 +18,9 @@ dateAdded = "2021-03-09"
 
 %% LYRICS
 verseA = \lyricmode {
-  Calm soul of all things, make it mine
+  \l Calm soul of all things, make it mine
   to feel a -- mid the cit -- y's jar,
-  that there a -- bides a peace of thine
+  \l that there a -- bides a peace of thine
   I did not make, and can -- not mar.
 }
 verseB = \lyricmode {

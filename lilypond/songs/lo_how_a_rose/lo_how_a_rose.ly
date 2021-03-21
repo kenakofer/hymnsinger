@@ -56,9 +56,9 @@ bass = {
 
 %% LYRICS
 verseA = \lyricmode {
-  Lo, how a Rose e'er bloom -- ing from ten -- der stem has sprung!
-  Of Jes -- se's lin -- eage com -- ing as saints of old have sung.
-  It came a flow'r -- et bright, a -- mid the cold of win -- ter,
+  \l Lo, how a Rose e'er bloom -- ing from ten -- der stem has sprung!
+  \l Of Jes -- se's lin -- eage com -- ing as saints of old have sung.
+  It came a flow'r -- et bright, a -- mid the \l cold of win -- ter,
   when half -- spent was the night.
 }
 verseB = \lyricmode {

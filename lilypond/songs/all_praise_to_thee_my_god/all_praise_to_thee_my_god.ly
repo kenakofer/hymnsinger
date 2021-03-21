@@ -9,7 +9,7 @@
 title = \titleText "All praise to thee, my God"
 poet = \smallText "Text: Thomas Ken, 1695"
 copyright = \public_domain_notice "Kenan Schaefkofer"
-verseCount = 3
+verseCount = 4
 tags = "english christian 4part evening"
 prescore_text = \prescoreText "Unison when sung in canon"
 dateAdded = "2021-03-05"
@@ -17,14 +17,18 @@ dateAdded = "2021-03-05"
 
 %% LYRICS
 verseA = \lyricmode {
-  All praise to thee, my God, this night, for all the bless -- ings of the light.
-  Keep me, O keep me, King of kings, be -- neath thine own al -- might -- y wings.
+  \l All praise to thee, my God, this night, for all the bless -- ings of the light.
+  \l Keep me, O keep me, King of kings, be -- neath thine own al -- might -- y wings.
 }
 verseB = \lyricmode {
+  For -- give me, Lord, for thy dear Son, the ill that I this day have done,
+  that with the world, my -- self, and thee, I, ere I sleep, at peace may be.
+}
+verseC = \lyricmode {
   O let my soul, on thee, re -- pose, and with sweet sleep my eye -- lids close,
   sleep that will me more vig -- 'rous make to serve my God when I a -- wake.
 }
-verseC = \lyricmode {
+verseD = \lyricmode {
   Praise God from whom all bless -- ings flow, praise God all crea -- tures here be -- low,
   praise God a -- bove ye heav -- 'nly host, praise Fa -- ther, Son, and Ho -- ly Ghost.
 }
@@ -35,6 +39,7 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
+  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
 >>
 
 %% All sheet music outputs

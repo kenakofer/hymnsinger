@@ -53,8 +53,8 @@ songChords = \chords {
 
 %% LYRICS
 verseA = \lyricmode {
-  I to the hills will lift my eyes. From whence shall come my aid?
-  My help is from the Lord a -- lone, who heav'n and earth has made.
+  \l I to the hills will lift my eyes. From whence shall come my aid?
+  \l My help is from the Lord a -- lone, who heav'n and earth has made.
 }
 verseB = \lyricmode {
   God will not let your foot be moved, your guar -- dian nev -- er sleeps.

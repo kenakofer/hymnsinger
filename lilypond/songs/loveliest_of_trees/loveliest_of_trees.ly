@@ -52,10 +52,10 @@ bass = {
 
 %% LYRICS
 verseA = \lyricmode {
-  Love -- liest of trees, the cher -- ry now,
-  hung with bloom a -- long the bough,
-  it stands a -- bout the wood -- land ride
-  wear -- ing white for Eas -- ter -- tide.
+  \l Love -- liest of trees, the cher -- ry now,
+  \l hung with bloom a -- long the bough,
+  \l it stands a -- bout the wood -- land ride
+  \l wear -- ing white for Eas -- ter -- tide.
 }
 verseB = \lyricmode {
   Now of my three -- score years and ten,

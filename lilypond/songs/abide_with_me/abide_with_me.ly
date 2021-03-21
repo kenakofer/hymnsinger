@@ -51,10 +51,10 @@ bass = {
 
 %% LYRICS
 verseA = \lyricmode {
-	A -- bide with me; Fast falls the e -- ven -- tide,
-  The dark -- ness deep -- ens; Lord, with me a -- bide!
-  When o -- ther help -- ers fail, and com -- forts flee,
-  Help of the help -- less, oh, a -- bide with me.
+	\l A -- bide with me; Fast falls the e -- ven -- tide,
+  \l The dark -- ness deep -- ens; Lord, with me a -- bide!
+  \l When o -- ther help -- ers fail, and com -- forts flee,
+  \l Help of the help -- less, oh, a -- bide with me.
 }
 verseB = \lyricmode {
   Swift to its close ebbs out life’s lit -- tle day;

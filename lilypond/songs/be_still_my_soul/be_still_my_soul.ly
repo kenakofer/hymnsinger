@@ -54,10 +54,10 @@ bass = {
 %% LYRICS
 verseA = \lyricmode {
   Be still, my soul; the Lord is on thy side;
-  bear pa -- tient -- ly the cross of grief or pain;
+  bear pa -- tient -- ly the \l cross of grief or pain;
   leave to thy God to or -- der and pro -- vide;
   in eve -- ry change he faith -- ful will re -- main.
-  Be still, my soul; thy best, thy heav’n -- ly friend
+  Be still, my soul; thy \l best, thy heav’n -- ly friend
   through thorn -- y ways leads to a joy -- ful end.
 }
 verseB = \lyricmode {

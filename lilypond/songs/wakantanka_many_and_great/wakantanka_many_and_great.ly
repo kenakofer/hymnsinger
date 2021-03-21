@@ -16,9 +16,9 @@ dateAdded = "2021-03-07"
 
 %% LYRICS
 verseA = \lyricmode {
-  Wa -- kan -- tan -- ka ta -- ku ni -- ta -- wa tan -- ka -- ya qa o -- ta;
-  ma -- hpi -- ya kin e -- ya -- hna -- ke ça, ma -- ka kin he du -- o -- wan -- _ ca;
-  mni -- o -- wan -- ca śbe -- ya wan -- ke cin, he -- na o -- ya -- ki -- hi.
+  \l Wa -- kan -- tan -- ka ta -- ku ni -- ta -- wa tan -- ka -- ya qa o -- ta;
+  \l ma -- hpi -- ya kin e -- ya -- hna -- ke ça, ma -- ka kin he du -- o -- wan -- _ ca;
+  \l mni -- o -- wan -- ca śbe -- ya wan -- ke cin, he -- na o -- ya -- ki -- hi.
 }
 verseB = \lyricmode {
   Wo -- eh -- da -- ku ni -- ta -- wa kin he mi -- na -- ġi kin qu wo;

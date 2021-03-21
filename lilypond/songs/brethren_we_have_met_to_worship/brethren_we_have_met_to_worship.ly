@@ -52,10 +52,10 @@ bass = {
 
 %% LYRICS
 verseA = \lyricmode {
-  Breth -- ren _  we have met to _ wor -- _ ship _ and a -- _ dore the Lord our God.
-  Will you _ pray with all your _ pow -- _ er _ while we _ try to preach the word?
-  All is vain un -- less the _ Spir -- it of the ho -- ly One comes _ down.
-  Breth -- ren _ pray, and ho -- ly _ man -- _ na _ will be _ show -- ered all a -- round.
+  \l Breth -- ren _  we have met to _ wor -- _ ship _ and a -- _ dore the Lord our God.
+  \l Will you _ pray with all your _ pow -- _ er _ while we _ try to preach the word?
+  \l All is vain un -- less the _ Spir -- it of the ho -- ly One comes _ down.
+  \l Breth -- ren _ pray, and ho -- ly _ man -- _ na _ will be _ show -- ered all a -- round.
 }
 verseB = \lyricmode {
   Sis -- ters, _ will you come and _ help  _ us? _ Mo -- ses' _ sis -- ters aid -- ed him.

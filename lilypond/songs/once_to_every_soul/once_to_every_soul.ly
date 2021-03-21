@@ -16,14 +16,14 @@ dateAdded = "2021-01-14"
 
 %% LYRICS
 verseA = \lyricmode {
-  Once to ev -- ’ry soul and na -- tion
+  \l Once to ev -- ’ry soul and na -- tion
   comes the mo -- ment to de -- cide,
-  in the strife of truth with false -- hood,
+  \l in the strife of truth with false -- hood,
   for the good or e -- vil side;
 
-  Then to side with truth is no -- ble,
+  \l Then to side with truth is no -- ble,
   when we share her wretch -- ed crust,
-  ere her cause bring fame and prof -- it,
+  \l ere her cause bring fame and prof -- it,
   and ’tis prosp -- ’rous to be just;
 }
 verseB = \lyricmode {

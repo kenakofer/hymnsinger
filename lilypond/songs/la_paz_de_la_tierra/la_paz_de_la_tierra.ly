@@ -72,10 +72,10 @@ songChords = \chords {
 
 %% LYRICS
 verseA = \lyricmode {
-  La paz de la tierra es -- té con -- ti -- go,~la paz de los cielos tam -- bién.
-  La paz de los ríos es -- té con -- ti -- go,~la paz de los mares tam -- bién.
-  Paz pro -- fun -- da ca -- yen -- do so -- bre ti.
-  Paz pro -- fun -- da cre -- cien -- do en ti.
+  \l La paz de la tierra es -- té con -- ti -- go,~la paz de los cielos tam -- bién.
+  \l La paz de los ríos es -- té con -- ti -- go,~la paz de los mares tam -- bién.
+  \l Paz pro -- fun -- da ca -- yen -- do so -- bre ti.
+  \l Paz pro -- fun -- da cre -- cien -- do en ti.
 }
 verseB = \lyricmode {
   \override Lyrics.LyricText.font-shape = #'italic

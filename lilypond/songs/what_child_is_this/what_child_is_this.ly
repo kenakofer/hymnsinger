@@ -55,10 +55,10 @@ bass = {
 
 %% LYRICS
 verseA = \lyricmode {
-  What Child is this, who, laid to rest, on Ma -- ry's lap is sleep -- ing,
-  whom an -- gels greet with an -- thems sweet, while shep -- herds watch are keep -- ing?
-  This, this is Christ the King, whom shep -- herds guard and an -- gels sing.
-  Haste, haste to bring him laud, the babe, the son of Ma -- ry!
+  \l What Child is this, who, laid to rest, on Ma -- ry's lap is sleep -- ing,
+  \l whom an -- gels greet with an -- thems sweet, while shep -- herds watch are keep -- ing?
+  \l This, this is Christ the King, whom shep -- herds guard and an -- gels sing.
+  \l Haste, haste to bring him laud, the babe, the son of Ma -- ry!
 }
 verseB = \lyricmode {
   Why lies he in such mean es -- tate where ox and ass are feed -- ing?

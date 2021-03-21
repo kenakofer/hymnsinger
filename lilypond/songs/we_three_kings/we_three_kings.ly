@@ -63,15 +63,15 @@ songChords = \chords {
 
 %% LYRICS
 verseA = \lyricmode {
-  We three kings of O -- ri -- ent are;
+  \l We three kings of O -- ri -- ent are;
   bear -- ing gifts we tra -- verse a -- far,
-  field and foun -- tain, moor and moun -- tain,
+  \l field and foun -- tain, moor and moun -- tain,
   fol -- low -- ing yon -- der star.
   %% CHORUS
   \hideVerseNumberAtLineStart
-  O star of won -- der, star of light,
+  \l O star of won -- der, star of light,
   star with roy -- al beau -- ty bright,
-  west -- ward lead -- ing still pro -- ceed -- ing,
+  \l west -- ward lead -- ing still pro -- ceed -- ing,
   guide us to thy per -- fect light.
 }
 verseB = \lyricmode {

@@ -45,9 +45,9 @@ bass = {
 
 %% LYRICS
 verseA = \lyricmode {
-  Now the day is o -- ver,
+  \l Now the day is o -- ver,
   night is draw -- ing nigh,
-  shad -- ows of the eve -- ning
+  \l shad -- ows of the eve -- ning
   steal a -- cross the sky.
 }
 verseB = \lyricmode {

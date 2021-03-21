@@ -148,7 +148,8 @@ bass = \relative d {
 %% LYRICS
 verseA = \lyricmode {
   O come, all ye faith -- ful, joy -- ful and tri -- um -- phant,
-  O come ye, O come ye to Beth -- _ le -- hem. Come and be -- hold him,
+  O come ye, O come ye to Beth -- _ le -- hem.
+  \l Come and be -- hold him,
   born the King of an -- gels.
   %% CHORUS
   O come, let us a -- dore him,

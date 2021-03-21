@@ -51,10 +51,10 @@ bass = {
 
 %% LYRICS
 verseA = \lyricmode {
-  May noth -- ing e -- vil cross this door,
-  and may ill for -- tune nev -- er pry
-  a -- bout these win -- dows; may the roar
-  and rain go by.
+  \l May noth -- ing e -- vil cross this door,
+  \l and may ill for -- tune nev -- er pry
+  \l a -- bout these win -- dows; may the roar
+  \l and rain go by.
 }
 verseB = \lyricmode {
   By faith made strong, the raft -- ers will

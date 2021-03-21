@@ -59,9 +59,9 @@ bass = {
 
 %% LYRICS
 verseA = \lyricmode {
-  All hail the pow’r of Je -- sus’ name! Let an -- gels pros -- trate fall.
-  Bring forth the roy -- al di -- a -- dem, and crown him Lord of all.
-  Bring forth the roy -- al di -- a -- dem, and crown him Lord of all!
+  \l All hail the pow’r of Je -- sus’ name! Let an -- gels pros -- trate fall.
+  \l Bring forth the roy -- al di -- a -- dem, and crown him Lord of all.
+  \l Bring forth the roy -- al di -- a -- dem, and crown him Lord of all!
 }
 verseB = \lyricmode {
   O seed of Is -- rael’s cho -- sen race now ran -- somed from the fall,

@@ -45,8 +45,8 @@ bass = {
 
 %% LYRICS
 verseA = \lyricmode {
-  Breathe on me, breath of God. Fill me with life a -- new
-  that I may love what thou dost love, and do what thou wouldst do.
+  \l Breathe on me, breath of God. Fill me with life a -- new
+  \l that I may love what thou dost love, and do what thou wouldst do.
 }
 verseB = \lyricmode {
   Breath on me, breath of God, un-til my heart is pure,
@@ -60,8 +60,6 @@ verseD = \lyricmode {
   Breath on me, breath of God, so shall I nev -- er die,
   but live with thee the per -- fect life of thine e -- ter -- ni -- ty.
 }
-verseE = \lyricmode { }
-verseF = \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano
@@ -70,8 +68,6 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
 
 %% All sheet music outputs

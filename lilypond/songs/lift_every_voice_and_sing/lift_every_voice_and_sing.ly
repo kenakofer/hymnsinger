@@ -78,16 +78,16 @@ bass = {
 
 %% LYRICS
 verseA = \lyricmode {
-  Lift ev -- 'ry voice and sing, till earth and heav -- en ring,
-  ring with the har -- mo -- nies of lib -- er -- ty.
-  Let our re -- joic -- ing rise high as the lis -- t'ning skies,
-  let it re -- sound loud as the roll -- ing sea.
+  \l Lift ev -- 'ry voice and sing, till earth and heav -- en ring,
+  \l ring with the har -- mo -- nies of lib -- er -- ty.
+  \l Let our re -- joic -- ing rise high as the lis -- t'ning skies,
+  \l let it re -- sound loud as the roll -- ing sea.
 
-  Sing a song full of the faith that the dark past has taught us.
-  Sing a song full of the hope that the pres -- ent has brought us.
+  \l Sing a song full of the faith that the dark past has taught us.
+  \l Sing a song full of the hope that the pres -- ent has brought us.
 
-  Fac -- ing the ris -- ing sun of our new day be -- gun,
-  let us march on till vic -- to -- ry is won.
+  \l Fac -- ing the ris -- ing sun of our new day be -- gun,
+  \l let us march on till vic -- to -- ry is won.
 }
 verseB = \lyricmode {
   Ston -- y the road we trod, bit -- ter the chas -- t'ning rod,

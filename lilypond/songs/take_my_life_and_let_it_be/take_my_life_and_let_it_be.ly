@@ -57,8 +57,10 @@ songChords = \chords {
 
 %% LYRICS
 verseA = \lyricmode {
-  Take my life, and let it be con -- se -- crat -- ed, Lord, to thee.
-  Take my mo -- ments and my days; let them flow in cease -- less praise,
+  \l Take my life, and let it be
+  con -- se -- crat -- ed, \l Lord, to thee.
+  Take my mo -- ments and my days;
+  let them \l flow in cease -- less praise,
   let them flow in cease -- less praise.
 }
 verseB = \lyricmode {

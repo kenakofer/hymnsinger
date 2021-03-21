@@ -18,11 +18,11 @@ dateAdded = "2021-03-05"
 
 %% LYRICS
 verseA = \lyricmode {
-  "*All" crea -- tures, wor -- ship God most high, lift up your voice in earth and sky,
+  \l "*All" crea -- tures, wor -- ship God most high, lift up your voice in earth and sky,
   %% CHORUS
   al -- le -- lu -- ia, al -- le -- lu -- ia!
   %% END CHORUS
-  Thou burn -- ing sun with gold -- en beam, thou sil -- ver moon with soft -- er gleam,
+  \l Thou burn -- ing sun with gold -- en beam, thou sil -- ver moon with soft -- er gleam,
   %% CHORUS
   O sing ye, O sing ye, al -- le -- lu -- ia, al -- le -- lu -- ia, al -- le -- lu -- ia!
   %% END CHORUS

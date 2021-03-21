@@ -16,9 +16,9 @@ dateAdded = "2021-03-08"
 
 %% LYRICS
 verseA = \lyricmode {
-  Sing -- er of Life, all flow -- ers are songs, with pet -- als do you write.
-  Sing -- er of Life, you col -- or the earth, daz -- zling the eye with birds red and bright.
-  Joy is for us! The flow -- ers are spread! Sing -- ing is our de -- light!
+  \l Sing -- er of Life, all flow -- ers are songs, with pet -- als do you write.
+  \l Sing -- er of Life, you col -- or the earth, daz -- zling the eye with birds red and bright.
+  \l Joy is for us! The flow -- ers are spread! Sing -- ing is our de -- light!
 }
 verseB = \lyricmode {
   Mor -- tal are we, with all liv -- ing things, with ea -- gles in the sky.

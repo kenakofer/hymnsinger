@@ -60,8 +60,8 @@ bass = {
 
 %% LYRICS
 verseA = \lyricmode {
-  An -- gels we have heard on high, sing -- ing sweet -- ly through the night,
-  and the moun -- tains in re -- ply ech -- o -- ing their brave de -- light.
+  \l An -- gels we have heard on high, sing -- ing sweet -- ly through the night,
+  \l and the moun -- tains in re -- ply ech -- o -- ing their brave de -- light.
   %% CHORUS
   Glo -- ri -- a in ex -- cel -- sis De -- o, glo -- ri -- a in ex -- cel -- sis De -- o.
 }
@@ -77,8 +77,6 @@ verseD = \lyricmode {
   See him in a man -- ger laid whom the an -- gels praise a -- bove.
   Ma -- ry, Jo -- seph, lend your aid, while we raise our hearts in love.
 }
-verseE = \lyricmode { }
-verseF = \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano
@@ -87,8 +85,6 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
 
 %% All sheet music outputs

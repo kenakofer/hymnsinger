@@ -52,10 +52,10 @@ songChords = \chords {
 
 %% LYRICS
 verseA = \lyricmode {
-  The Lord's my shep -- herd, I'll not want.
-  He makes me down to lie
-  in pas -- tures green; he lead -- eth me
-  the qui -- et wa -- ters by.
+  \l The Lord's my shep -- herd, I'll not want.
+  \l He makes me down to lie
+  \l in pas -- tures green; he lead -- eth me
+  \l the qui -- et wa -- ters by.
 }
 verseB = \lyricmode {
   My soul he doth re -- store a -- gain,

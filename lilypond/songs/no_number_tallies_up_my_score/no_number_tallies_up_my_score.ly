@@ -7,7 +7,7 @@
 
 %% SONG INFO
 title = \titleText "No number tallies up my score"
-poet = \smallText "Text: Ralph Waldo Emerson (1803-1882), rev."
+poet = \smallText "Text: Ralph Waldo Emerson (1803-1882), alt."
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 4
 tags = "english secular 4part"
@@ -16,13 +16,13 @@ dateAdded = "2021-02-14"
 
 %% LYRICS
 verseA = \lyricmode {
-  No num -- ber tal -- lies up my score,
+  \l No num -- ber tal -- lies up my score,
   no tribe my house can fill;
-  I sit be -- side the fount of life
+  \l I sit be -- side the fount of life
   and pour the del -- uge still.
-  And gath -- ered by most fra -- gile pow'rs
+  \l And gath -- ered by most fra -- gile pow'rs
   a -- long the cen -- tur -- ies
-  from race on race the rar -- est flow'rs
+  \l from race on race the rar -- est flow'rs
   my wreath shall noth -- ing miss.
 }
 verseB = \lyricmode {

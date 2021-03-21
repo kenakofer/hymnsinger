@@ -53,8 +53,8 @@ songChords = \chords {
 
 %% LYRICS
 verseA = \lyricmode {
-  Blest be the tie that binds our hearts in Chris -- tian love.
-  The fel -- low -- ship of kin -- dred minds is like to that a -- bove.
+  \l Blest be the tie that binds our hearts in Chris -- tian love.
+  \l The fel -- low -- ship of kin -- dred minds is like to that a -- bove.
 }
 verseB = \lyricmode {
   We share each oth -- er's woes, each oth -- er's bur -- dens bear,

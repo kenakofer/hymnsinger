@@ -52,10 +52,10 @@ bass = {
 
 %% LYRICS
 verseA = \lyricmode {
-  The morn -- ing hangs a sig -- nal up -- on the moun -- tain crest,
-  while all the sleep -- ing val -- leys in si -- lent dark -- ness rest.
-  From peak to peak it flash -- es, it laughs a -- long the sky,
-  till glo -- ry of the sun -- light on all the land shall lie.
+  \l The morn -- ing hangs a sig -- nal up -- on the moun -- tain crest,
+  \l while all the sleep -- ing val -- leys in si -- lent dark -- ness rest.
+  \l From peak to peak it flash -- es, it laughs a -- long the sky,
+  \l till glo -- ry of the sun -- light on all the land shall lie.
 }
 verseB = \lyricmode {
   A -- bove the gen -- er -- a -- tions the lone -- ly proph -- ets rise,

@@ -17,9 +17,9 @@ dateAdded = "2021-03-04"
 
 %% LYRICS
 verseA = \lyricmode {
-  God is here a -- mong us: come with a -- do -- ra -- tion, fer -- vent praise and ex -- pec -- ta -- tion.
-  God is here with -- in us: known be -- yond be -- liev -- ing, soul in si -- lent awe re -- ceiv -- ing.
-  God will name and will claim those be -- held as low -- ly, mak -- ing all things ho -- ly.
+  \l God is here a -- mong us: come with a -- do -- ra -- tion, fer -- vent praise and ex -- pec -- ta -- tion.
+  \l God is here with -- in us: known be -- yond be -- liev -- ing, soul in si -- lent awe re -- ceiv -- ing.
+  \l God will name and will claim those be -- held as low -- ly, mak -- ing all things ho -- ly.
 }
 verseB = \lyricmode {
   Come, a -- bide with -- in me; let my soul, like Ma -- ry, be thine earth -- ly sanc -- tu -- ar -- y.

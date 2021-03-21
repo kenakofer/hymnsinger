@@ -17,11 +17,11 @@ dateAdded = "2021-03-05"
 
 %% LYRICS
 verseA = \lyricmode {
-  All crea -- tures of the earth and sky, come, kin -- dred, lift your voic -- es high,
+  \l All crea -- tures of the earth and sky, come, kin -- dred, lift your voic -- es high,
   %% CHORUS
   al -- le -- lu -- ia, al -- le -- lu -- ia!
   %% END CHORUS
-  Bright burn -- ing sun with gold -- en beam, soft shin -- ing moon with sil -- ver gleam,
+  \l Bright burn -- ing sun with gold -- en beam, soft shin -- ing moon with sil -- ver gleam,
   %% CHORUS
   O sing ye, O sing ye, al -- le -- lu -- ia, al -- le -- lu -- ia, al -- le -- lu -- ia!
   %% END CHORUS

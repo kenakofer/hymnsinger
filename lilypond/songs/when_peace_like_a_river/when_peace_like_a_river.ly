@@ -59,22 +59,30 @@ songChords = \chords {
 
 %% LYRICS
 verseA = \lyricmode {
-  When peace like a riv -- er at -- tend -- eth my way, when sor -- rows like sea bil -- lows roll,
-  what -- ev -- er my lot, thou hast taught me to say, ''It is well, it is well with my soul.''
+  \l When peace like a riv -- er at -- tend -- eth my way,
+  \l when sor -- rows like sea bil -- lows roll,
+  \l what -- ev -- er my lot, thou hast taught me to say,
+  \l ''It is well, it is well with my soul.''
   %% CHORUS
   It is well __ with my soul, __ it is well, it is well with my soul.
 }
 verseB = \lyricmode {
-  Though Sa -- tan should buf -- fet, though tri -- als should come, let this blest as -- sur -- ance con -- trol,
-  that Christ hath re -- gard -- ed my help -- less es -- tate, and hath shed his own blood for my soul.
+  Though Sa -- tan should buf -- fet, though tri -- als should come,
+  let this blest as -- sur -- ance con -- trol,
+  that Christ hath re -- gard -- ed my help -- less es -- tate,
+  and hath shed his own blood for my soul.
 }
 verseC = \lyricmode {
-  Re -- deemed! Oh, the bliss of this glo -- ri -- ous thought: My sin– not in part, but the whole–
-  is nailed to his cross, and I bear it no more, praise the Lord, praise the Lord, O my soul!
+  Re -- deemed! Oh, the bliss of this glo -- ri -- ous thought:
+  My sin– not in part, but the whole–
+  is nailed to his cross, and I bear it no more,
+  praise the Lord, praise the Lord, O my soul!
 }
 verseD = \lyricmode {
-  And, Lord, haste the day when my faith shall be sight, the clouds be rolled back as a scroll,
-  the trum -- pet shall sound, and the Lord shall de -- scend, e -- ven so, it is well with my soul.
+  And, Lord, haste the day when my faith shall be sight,
+  the clouds be rolled back as a scroll,
+  the trum -- pet shall sound, and the Lord shall de -- scend,
+  e -- ven so, it is well with my soul.
 }
 altoRefrain = \lyricmode {
   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
@@ -95,6 +103,7 @@ all_verses = <<
 
 %% All sheet music outputs
 tradStaffZoom = #.9
+shapeStaffZoom = #1
 clairStaffZoom = #.85
 \include "../../lib/all_notation_outputs.ly"
 %% MIDI output

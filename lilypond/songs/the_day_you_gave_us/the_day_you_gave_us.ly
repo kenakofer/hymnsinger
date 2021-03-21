@@ -52,10 +52,10 @@ bass = {
 
 %% LYRICS
 verseA = \lyricmode {
-  The day you gave us, Lord, is end -- ed;
-  the dark -- ness falls at your re -- quest.
-  To you our morn -- ing hymns as -- cend -- ed;
-  your praise shall sanc -- ti -- fy our rest.
+  \l The day you gave us, Lord, is end -- ed;
+  \l the dark -- ness falls at your re -- quest.
+  \l To you our morn -- ing hymns as -- cend -- ed;
+  \l your praise shall sanc -- ti -- fy our rest.
 }
 verseB = \lyricmode {
   We thank you that your church, un -- sleep -- ing

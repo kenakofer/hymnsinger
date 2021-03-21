@@ -53,10 +53,10 @@ bass = {
 
 %% LYRICS
 verseA = \lyricmode {
-  O lit -- tle town of Beth -- le -- hem, how still we see thee lie!
-  A -- bove thy deep and dream -- less sleep the si -- lent stars go by.
-  Yet in thy dark streets shin -- eth the ev -- er -- last -- ing light;
-  the hopes and fears of all the years are met in thee to -- night.
+  \l O lit -- tle town of Beth -- le -- hem, how still we see thee lie!
+  \l A -- bove thy deep and dream -- less sleep the si -- lent stars go by.
+  \l Yet in thy dark streets shin -- eth the ev -- er -- last -- ing light;
+  \l the hopes and fears of all the years are met in thee to -- night.
 }
 verseB = \lyricmode {
   For Christ is born of Ma -- _ ry, and gath -- ered all a -- bove,

@@ -17,8 +17,8 @@ dateAdded = "2021-01-05"
 
 %% LYRICS
 verseA = \lyricmode {
-  For the beau -- ty of our earth, for the glo -- ry of her skies,
-  for the love which from our birth o -- ver and a -- round us lies:
+  \l For the beau -- ty of our earth, for the glo -- ry of her skies,
+  \l for the love which from our birth o -- ver and a -- round us lies:
   %% CHORUS
   Source of all, to thee we raise this our hymn of grate -- ful praise.
 }

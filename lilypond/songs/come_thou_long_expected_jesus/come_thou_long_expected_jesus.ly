@@ -17,10 +17,10 @@ dateAdded = "2021-01-07"
 
 %% LYRICS
 verseA = \lyricmode {
-  Come, thou long -- ex -- pect -- ed Je -- sus! born to set thy peo -- ple free,
-  from our fears and sins re -- lease us, let us find our rest in thee.
-  Is -- rael's strength and con -- so -- la -- tion, hope of all the earth thou art,
-  dear de -- sire of ev -- 'ry na -- tion, joy of ev -- 'ry long -- ing heart.
+  \l Come, thou long -- ex -- pect -- ed Je -- sus! born to set thy peo -- ple free,
+  \l from our fears and sins re -- lease us, let us find our rest in thee.
+  \l Is -- rael's strength and con -- so -- la -- tion, hope of all the earth thou art,
+  \l dear de -- sire of ev -- 'ry na -- tion, joy of ev -- 'ry long -- ing heart.
 }
 verseB = \lyricmode {
   Born thy peo -- ple to de -- liv -- er, born a child, and yet a King,
