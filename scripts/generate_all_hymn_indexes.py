@@ -146,7 +146,7 @@ def get_lyrics(all_lines):
         elif line.endswith("LYRICS-START"):
             current_verse = True
             remove_quotes = True
-        elif line.startswith("\\"):
+        elif line.startswith("\\") and not line.startswith("\\l "):
             pass
         elif line.startswith('%% CHORUS'):
             chorus_mode = True
@@ -175,6 +175,8 @@ def join_verse_line(line, remove_quotes):
     words = stripped.replace("_","").replace("~"," ").split()
     if "%%" in words:
         words.remove("%%")
+    if "\\l" in words:
+        words.remove("\\l")
     # Remove quotes and asterisks on individual words
     for i in range(len(words)):
         if words[i][0] == '"' and words[i][-1] == '"':

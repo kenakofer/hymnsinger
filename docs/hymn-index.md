@@ -176,12 +176,15 @@ We’ll join the everlasting song and crown him Lord of all!
 </td><td class='meter-box'>LM</td><td class='composer-box'>Thomas Tallis, 1567</td><td class='lyric-box'><div>All praise to thee, my God, this night, for all the blessings of the light.
 Keep me, O keep me, King of kings, beneath thine own almighty wings.
 
+Forgive me, Lord, for thy dear Son, the ill that I this day have done,
+that with the world, myself, and thee, I, ere I sleep, at peace may be.
+
 O let my soul, on thee, repose, and with sweet sleep my eyelids close,
 sleep that will me more vig'rous make to serve my God when I awake.
 
 Praise God from whom all blessings flow, praise God all creatures here below,
 praise God above ye heav'nly host, praise Father, Son, and Holy Ghost.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Thomas Ken, 1695</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">evening</a></div></td><td class='date-added-box'>2021/03/05</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/amazing_grace.html">Amazing grace</a></td><td class='tune-box'>NEW BRITAIN (AMAZING GRACE)</td><td class='key-box'>G major
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Thomas Ken, 1695</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">evening</a></div></td><td class='date-added-box'>2021/03/05</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/amazing_grace.html">Amazing grace</a></td><td class='tune-box'>NEW BRITAIN (AMAZING GRACE)</td><td class='key-box'>G major
 </td><td class='meter-box'>CM</td><td class='composer-box'>American folk melody, 1831</td><td class='lyric-box'><div>Amazing grace! how sweet the sound, that saved a wretch like me!
 I once was lost, but now am found, was blind, but now I see.
 
@@ -593,7 +596,7 @@ holy, holy, holy, holy is the Lord!
 </div></td><td class='stanzas-box'>2.</td><td class='poet-box'>German; Johann P. Neumann, 1826; trans. Kenan Schaefkofer, 2021</td><td class='tags-box'><div><a class="taglink" href="#">german</a><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/08</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/help_us_to_help_each_other_lord.html">Help us to help each other, Lord</a></td><td class='tune-box'>BALERMA</td><td class='key-box'>A-flat major
 </td><td class='meter-box'>CM</td><td class='composer-box'>François H. Barthélémon,  1833</td><td class='lyric-box'><div>Help us to help each other, Lord,
 each other's cross to bear,
-let each his friendly aid afford,
+let all their friendly aid afford,
 and feel another's care.
 
 Up into thee, our living head,
@@ -863,7 +866,7 @@ No ray is dimmed, no atom worn,
 my oldest force is new,
 and fresh the rose on yonder thorn
 gives back the heav'ns in dew.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Ralph Waldo Emerson (1803-1882), rev.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/02/14</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/now_all_the_woods_are_sleeping.html">Now all the woods are sleeping</a></td><td class='tune-box'>O WELT, ICH MUSS DICH LASSEN</td><td class='key-box'>G major
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Ralph Waldo Emerson (1803-1882), alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/02/14</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/now_all_the_woods_are_sleeping.html">Now all the woods are sleeping</a></td><td class='tune-box'>O WELT, ICH MUSS DICH LASSEN</td><td class='key-box'>G major
 </td><td class='meter-box'>776.778</td><td class='composer-box'>Heinrich Isaac, 1539</td><td class='lyric-box'><div>Now all the woods are sleeping,
 the night and stillness creeping
 o'er city, field, and beast;
@@ -918,7 +921,8 @@ keeps the the ancient promise
 fall and winter bring.
 </div></td><td class='stanzas-box'>5.</td><td class='poet-box'>v.1 Sabine Baring Gould, 1865 v.2-5 Marye B. Bonney (1910-1992)</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">evening</a><a class="taglink" href="#">autumn</a></div></td><td class='date-added-box'>2021/02/11</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_come_all_ye_faithful.html">O come, all ye faithful</a></td><td class='tune-box'>ADESTE FIDELES</td><td class='key-box'>A major
 </td><td class='meter-box'>irregular</td><td class='composer-box'>John F. Wade, 1782</td><td class='lyric-box'><div>O come, all ye faithful, joyful and triumphant,
-O come ye, O come ye to Bethlehem. Come and behold him,
+O come ye, O come ye to Bethlehem.
+Come and behold him,
 born the King of angels.
 
   O come, let us adore him,
@@ -940,6 +944,7 @@ Word of the Father, now in flesh appearing.
 </div></td><td class='stanzas-box'>4.</td><td class='poet-box'>John F. Wade, 1743, tr. Frederick Oakeley, 1841, William Mercer 1854, and others</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">winter</a></div></td><td class='date-added-box'>2021/01/19</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_come_o_come_immanuel.html">O come, O come, Immanuel</a></td><td class='tune-box'>VENI EMMANUEL</td><td class='key-box'>E minor
 </td><td class='meter-box'>LM with refrain</td><td class='composer-box'>trope melody, 15th c.</td><td class='lyric-box'><div>O come, O come, Immanuel,
 and ransom captive Israel,
+that mourns in lonely exile here,
 until the Son of God appear.
 
   Rejoice! Rejoice!
@@ -1012,8 +1017,11 @@ Eternal glory to our God for love so deep, so high, so broad;
 the Trinity whom we adore forever and forevermore.
 </div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Thomas a Kempis, 15th c. trans. Benjamin Webb 1851, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/04</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/once_in_royal_davids_city.html">Once in royal David's city</a></td><td class='tune-box'>IRBY</td><td class='key-box'>F major
 </td><td class='meter-box'>87.87.77</td><td class='composer-box'>Henry John Gauntlett, 1849;
-arr. Arthur Henry Mann, 1919</td><td class='lyric-box'><div>stood a lowly cattle shed,
+arr. Arthur Henry Mann, 1919</td><td class='lyric-box'><div>Once in royal David's city
+stood a lowly cattle shed,
+where a mother laid her baby
 in a manger for his bed:
+Mary was that mother mild;
 Jesus Christ, her little child.
 
 He came down to earth from heaven
@@ -1113,8 +1121,10 @@ And by union what we will can be accomplished still,
 drops of water turn a mill, singly none, singly none.
 </div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Preamble to United Mine Workers of America Constitution</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">3part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/take_my_life_and_let_it_be.html">Take my life, and let it be</a></td><td class='tune-box'>HENDON</td><td class='key-box'>G major
 </td><td class='meter-box'>77.77 extended</td><td class='composer-box'>Henri Abraham César Malan, 1827;
-arr. Lowell Mason, 1841</td><td class='lyric-box'><div>Take my life, and let it be consecrated, Lord, to thee.
-Take my moments and my days; let them flow in ceaseless praise,
+arr. Lowell Mason, 1841</td><td class='lyric-box'><div>Take my life, and let it be
+consecrated, Lord, to thee.
+Take my moments and my days;
+let them flow in ceaseless praise,
 let them flow in ceaseless praise.
 
 Take my hands, and let them move at the impulse of thy love.
@@ -1347,17 +1357,25 @@ let my people go,
 and let us all in Christ be free,
 let my people go.
 </div></td><td class='stanzas-box'>5.</td><td class='poet-box'>African American spiritual</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/02/07</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/when_peace_like_a_river.html">When Peace like a River</a></td><td class='tune-box'>VILLE DU HAVRE</td><td class='key-box'>C major
-</td><td class='meter-box'>11.8.11.9 with refrain</td><td class='composer-box'>Philip P. Bliss, 1876</td><td class='lyric-box'><div>When peace like a river attendeth my way, when sorrows like sea billows roll,
-whatever my lot, thou hast taught me to say, ''It is well, it is well with my soul.''
+</td><td class='meter-box'>11.8.11.9 with refrain</td><td class='composer-box'>Philip P. Bliss, 1876</td><td class='lyric-box'><div>When peace like a river attendeth my way,
+when sorrows like sea billows roll,
+whatever my lot, thou hast taught me to say,
+''It is well, it is well with my soul.''
 
   It is well with my soul, it is well, it is well with my soul.
 
-Though Satan should buffet, though trials should come, let this blest assurance control,
-that Christ hath regarded my helpless estate, and hath shed his own blood for my soul.
+Though Satan should buffet, though trials should come,
+let this blest assurance control,
+that Christ hath regarded my helpless estate,
+and hath shed his own blood for my soul.
 
-Redeemed! Oh, the bliss of this glorious thought: My sin– not in part, but the whole–
-is nailed to his cross, and I bear it no more, praise the Lord, praise the Lord, O my soul!
+Redeemed! Oh, the bliss of this glorious thought:
+My sin– not in part, but the whole–
+is nailed to his cross, and I bear it no more,
+praise the Lord, praise the Lord, O my soul!
 
-And, Lord, haste the day when my faith shall be sight, the clouds be rolled back as a scroll,
-the trumpet shall sound, and the Lord shall descend, even so, it is well with my soul.
+And, Lord, haste the day when my faith shall be sight,
+the clouds be rolled back as a scroll,
+the trumpet shall sound, and the Lord shall descend,
+even so, it is well with my soul.
 </div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Horatio G. Spafford, 1876</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/12</td></tr></table>
