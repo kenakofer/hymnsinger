@@ -156,7 +156,7 @@ Let all things their Creator bless, and worship God in humbleness,
 To God all thanks and praise belong! Join in the everlasting song:
 
   O sing ye, O sing ye, alleluia, alleluia, alleluia!
-</div></td><td class='stanzas-box'>7.</td><td class='poet-box'>Text: Saint Francis of Assisi, 1225; tr. William H. Draper, 1926; alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/05</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/all_hail_the_power.html">All hail the power of Jesus' name</a></td><td class='tune-box'>CORONATION</td><td class='key-box'>G major
+</div></td><td class='stanzas-box'>7.</td><td class='poet-box'>Saint Francis of Assisi, 1225; tr. William H. Draper, 1926; alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/05</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/all_hail_the_power.html">All hail the power of Jesus' name</a></td><td class='tune-box'>CORONATION</td><td class='key-box'>G major
 </td><td class='meter-box'>CM extended</td><td class='composer-box'>Oliver Holden, 1792</td><td class='lyric-box'><div>All hail the pow’r of Jesus’ name! Let angels prostrate fall.
 Bring forth the royal diadem, and crown him Lord of all.
 Bring forth the royal diadem, and crown him Lord of all!
@@ -213,7 +213,7 @@ Come, adore on bended knee Christ, the Lord, the newborn King.
 
 See him in a manger laid whom the angels praise above.
 Mary, Joseph, lend your aid, while we raise our hearts in love.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Text: Nouveau Recueil de Cantiques, 1855 tr. anonymous, alt. Earl Marlatt, 1937</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">winter</a></div></td><td class='date-added-box'>2021/01/11</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/as_the_deer_with_eager_yearning.html">As the deer with eager yearning</a></td><td class='tune-box'>GENEVA 42 (FREU DICH SEHR)</td><td class='key-box'>F major
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Nouveau Recueil de Cantiques, 1855 tr. anonymous, alt. Earl Marlatt, 1937</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">winter</a></div></td><td class='date-added-box'>2021/01/11</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/as_the_deer_with_eager_yearning.html">As the deer with eager yearning</a></td><td class='tune-box'>GENEVA 42 (FREU DICH SEHR)</td><td class='key-box'>F major
 </td><td class='meter-box'>87.87.77.88</td><td class='composer-box'>Louis Bourgeois, 1551;
 arr. Claude Goudimel, 1565</td><td class='lyric-box'><div>As the deer with eager yearning
 seeks the cooling watercourse,
@@ -492,7 +492,7 @@ For the glory of the Lord
 now o'er earth is shed abroad.
 And all flesh shall see the token
 that God's word is never broken.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Text: Johannes Olearius, 1671 tr. Catherine Winkworth, 1863</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/02/07</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/down_to_the_river_to_pray.html">As I went down to the river to pray</a></td><td class='tune-box'>AS I WENT DOWN TO THE RIVER TO PRAY</td><td class='key-box'>F major
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Johannes Olearius, 1671 tr. Catherine Winkworth, 1863</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/02/07</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/down_to_the_river_to_pray.html">As I went down to the river to pray</a></td><td class='tune-box'>AS I WENT DOWN TO THE RIVER TO PRAY</td><td class='key-box'>F major
 </td><td class='meter-box'>irregular</td><td class='composer-box'>African American Spiritual</td><td class='lyric-box'><div>As I went down to the river to pray,
 studyin' about that good old way,
 and who shall wear the starry crown,
@@ -525,7 +525,7 @@ friends we've lost and friends still here, for all selfless thoughts and mild:
 
 For thy Truth both harsh and kind, shadowed setter of our stage,
 patterns sought by human mind, guiding us from age to age,
-</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Text: Folliott S. Pierpoint, 1864, alt. v.5 Kenan Schaefkofer, 2021</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/05</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/god_is_here_among_us.html">God is here among us</a></td><td class='tune-box'>WUNDERBARER KÖNIG</td><td class='key-box'>G major
+</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Folliott S. Pierpoint, 1864, alt. v.5 Kenan Schaefkofer, 2021</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/05</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/god_is_here_among_us.html">God is here among us</a></td><td class='tune-box'>WUNDERBARER KÖNIG</td><td class='key-box'>G major
 </td><td class='meter-box'>66.86.66.86.666</td><td class='composer-box'>Joachim Neander, 1680</td><td class='lyric-box'><div>God is here among us: come with adoration, fervent praise and expectation.
 God is here within us: known beyond believing, soul in silent awe receiving.
 God will name and will claim those beheld as lowly, making all things holy.
@@ -773,7 +773,7 @@ Flower, whose fragrance tender with sweetness fills the air,
 dispel in glorious splendor the darkness ev'rywhere.
 Human, yet very God, from sin and death he saves us,
 and lightens ev'ry load.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Text: v.1-2 anonymous, 1599; v.3 Friedrich Layritz, 1599 tr. v.1-2 Theodore Baker, 1894; v.3 Harriet Spaeth, 1875; alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">winter</a></div></td><td class='date-added-box'>2021/01/12</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/loveliest_of_trees.html">Lovelist of trees</a></td><td class='tune-box'>ORIENTIS PARTIBUS</td><td class='key-box'>E-flat major
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>v.1-2 anonymous, 1599; v.3 Friedrich Layritz, 1599 tr. v.1-2 Theodore Baker, 1894; v.3 Harriet Spaeth, 1875; alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">winter</a></div></td><td class='date-added-box'>2021/01/12</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/loveliest_of_trees.html">Lovelist of trees</a></td><td class='tune-box'>ORIENTIS PARTIBUS</td><td class='key-box'>E-flat major
 </td><td class='meter-box'>87.87</td><td class='composer-box'>Pierre de Corbeil, harmonized Richard Redhead, 1853</td><td class='lyric-box'><div>Loveliest of trees, the cherry now,
 hung with bloom along the bough,
 it stands about the woodland ride
@@ -916,7 +916,7 @@ Sleep until the rising
 of another spring
 keeps the the ancient promise
 fall and winter bring.
-</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Text: v.1 Sabine Baring Gould, 1865 v.2-5 Marye B. Bonney (1910-1992)</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">evening</a><a class="taglink" href="#">autumn</a></div></td><td class='date-added-box'>2021/02/11</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_come_all_ye_faithful.html">O come, all ye faithful</a></td><td class='tune-box'>ADESTE FIDELES</td><td class='key-box'>A major
+</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>v.1 Sabine Baring Gould, 1865 v.2-5 Marye B. Bonney (1910-1992)</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">evening</a><a class="taglink" href="#">autumn</a></div></td><td class='date-added-box'>2021/02/11</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_come_all_ye_faithful.html">O come, all ye faithful</a></td><td class='tune-box'>ADESTE FIDELES</td><td class='key-box'>A major
 </td><td class='meter-box'>irregular</td><td class='composer-box'>John F. Wade, 1782</td><td class='lyric-box'><div>O come, all ye faithful, joyful and triumphant,
 O come ye, O come ye to Bethlehem. Come and behold him,
 born the King of angels.
@@ -974,7 +974,7 @@ O come, Desire of nations, bind
 all peoples in one heart and mind.
 Bid envy, strife and quarrels cease,
 and fill the world with heaven's peace.
-</div></td><td class='stanzas-box'>7.</td><td class='poet-box'>Text: anon., O Antiphons, 8th-9th c.; Veni, veni Emmanuel, 12th c. tr. v.1-5 John M. Neale, 1851, alt.; v.6-7 Henry Sloane Coffin, 1916</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">winter</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/21</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_little_town.html">O little town of Bethlehem</a></td><td class='tune-box'>ST. LOUIS</td><td class='key-box'>F major
+</div></td><td class='stanzas-box'>7.</td><td class='poet-box'>anon., O Antiphons, 8th-9th c.; Veni, veni Emmanuel, 12th c. tr. v.1-5 John M. Neale, 1851, alt.; v.6-7 Henry Sloane Coffin, 1916</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">winter</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/21</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_little_town.html">O little town of Bethlehem</a></td><td class='tune-box'>ST. LOUIS</td><td class='key-box'>F major
 </td><td class='meter-box'>86.86.76.86</td><td class='composer-box'>Lewis H. Redner, 1874</td><td class='lyric-box'><div>O little town of Bethlehem, how still we see thee lie!
 Above thy deep and dreamless sleep the silent stars go by.
 Yet in thy dark streets shineth the everlasting light;

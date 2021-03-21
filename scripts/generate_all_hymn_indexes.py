@@ -98,7 +98,7 @@ def get_composer_info(all_lines):
 
 def get_poet_info(all_lines):
     search_for = 'poet = \\smallText "Text:'
-    two_line_search_for = "poet = \\twoLineSmallText"
+    two_line_search_for = 'poet = \\twoLineSmallText "Text:'
     for line in all_lines:
         if line.startswith(search_for):
             index = line.index(search_for) + len(search_for) + 1
