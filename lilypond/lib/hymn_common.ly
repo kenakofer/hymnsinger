@@ -1,10 +1,9 @@
 \language "english"
 \include "clairnote.ly"
 \include "left_align_lyrics.ly"
+\include "global_chord_symbols.ly"
 pa = \partcombineApart
 pt = \partcombineAutomatic
-
-songChords = { }
 
 globalLyrics =
 #(define-music-function
@@ -344,10 +343,12 @@ meter = \smallText "TUNE NAME meter"
 hymnKey = \key c \major
 hymnTime = \time 4/4
 quarternoteTempo = 120
+songChords = { }
 %% These usually don't need to be changed
 hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
 hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1
 hymnBeamExceptions = \set Timing.beamExceptions = #'()
+
 
 %% Defaults for song variables
 title = \titleText "You have not set a title"

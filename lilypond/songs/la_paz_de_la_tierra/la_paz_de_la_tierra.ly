@@ -60,8 +60,9 @@ bass = {
   \relative d { c1 | g'1 | a4 a e e | a2. r4 } \break
   \relative d { c1 | g'1 | a2 e4 e | a,2. } \break
 }
+
 songChords = \chords {
-  \set chordChanges = ##t
+  \globalChordSymbols
   s4 | a1:m f g e2:sus e2 |
   a1:m f g e2:sus e2 |
   c1 g a2:m e2:m a1:m |
