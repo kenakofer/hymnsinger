@@ -973,7 +973,33 @@ he bore the shameful cross and death, for us at length gave up his breath.
 
 Eternal glory to our God for love so deep, so high, so broad;
 the Trinity whom we adore forever and forevermore.
-</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Thomas a Kempis, 15th c. trans. Benjamin Webb 1851, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/04</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/once_to_every_soul.html">Once to every soul and nation</a></td><td class='tune-box'>EBENEZER</td><td class='key-box'>G minor
+</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Thomas a Kempis, 15th c. trans. Benjamin Webb 1851, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/04</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/once_in_royal_davids_city.html">Once in royal David's city</a></td><td class='tune-box'>IRBY</td><td class='key-box'>F major
+</td><td class='meter-box'>87.87.77</td><td class='composer-box'>Henry John Gauntlett, 1849;
+arr. Arthur Henry Mann, 1919</td><td class='lyric-box'><div>stood a lowly cattle shed,
+in a manger for his bed:
+Jesus Christ, her little child.
+
+He came down to earth from heaven
+who is God and Lord of all,
+and his shelter was a stable,
+and his cradle was a stall;
+with the poor and meek and lowly,
+lived on earth our Savior holy.
+
+And our eyes at last shall see him,
+through his own redeeming love;
+for that child so dear and gentle
+is our Lord in heav'n above;
+and he leads his children on
+to the place where he is gone.
+
+Not in that poor lowly stable
+with the oxen standing by,
+we shall see him, but in heaven
+set at God's right hand on high;
+when like stars, his children crowned
+all in white, shall wait around.
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Cecil Frances Alexander, 1848, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">winter</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/21</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/once_to_every_soul.html">Once to every soul and nation</a></td><td class='tune-box'>EBENEZER</td><td class='key-box'>G minor
 </td><td class='meter-box'>87.87.87.87</td><td class='composer-box'>Thomas John Williams, 1890</td><td class='lyric-box'><div>Once to ev’ry soul and nation
 comes the moment to decide,
 in the strife of truth with falsehood,
