@@ -974,7 +974,7 @@ O come, Desire of nations, bind
 all peoples in one heart and mind.
 Bid envy, strife and quarrels cease,
 and fill the world with heaven's peace.
-</div></td><td class='stanzas-box'>7.</td><td class='poet-box'>anon., O Antiphons, 8th-9th c.; Veni, veni Emmanuel, 12th c. tr. v.1-5 John M. Neale, 1851, alt.; v.6-7 Henry Sloane Coffin, 1916</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">winter</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/21</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_little_town.html">O little town of Bethlehem</a></td><td class='tune-box'>ST. LOUIS</td><td class='key-box'>F major
+</div></td><td class='stanzas-box'>7.</td><td class='poet-box'>anon., O Antiphons, 8th-9th c.; Veni, veni Emmanuel, 12th c. tr. v.1-5 John M. Neale, 1851, alt.; v.6-7 Henry Sloane Coffin, 1916</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">winter</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/21</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_little_town.html">O little town of Bethlehem</a></td><td class='tune-box'>ST. LOUIS</td><td class='key-box'>F major
 </td><td class='meter-box'>86.86.76.86</td><td class='composer-box'>Lewis H. Redner, 1874</td><td class='lyric-box'><div>O little town of Bethlehem, how still we see thee lie!
 Above thy deep and dreamless sleep the silent stars go by.
 Yet in thy dark streets shineth the everlasting light;

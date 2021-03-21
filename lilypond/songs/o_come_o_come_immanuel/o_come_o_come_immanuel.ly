@@ -51,10 +51,6 @@ bass = {
   \relative d { s8 s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s }
   \relative d { g8 d4. e8 b4. e8 c[( a b]) d e fs g[ b,] c[ b] c[( a b]) b e2 }
 }
-songChords = \chords {
-  \set chordChanges = ##t
-  c2:7 g4:sus g:m
-}
 
 %% LYRICS
 verseA = \lyricmode {
