@@ -98,7 +98,6 @@ all_verses = <<
 >>
 
 %% All sheet music outputs
-shapeStaffZoom = #1.15
 \include "../../lib/all_notation_outputs.ly"
 %% MIDI output
 \include "../../lib/midi_output.ly"

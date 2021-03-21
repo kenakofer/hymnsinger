@@ -364,5 +364,5 @@ extra_verses = {}
 bottom_verses = {}
 tradStaffZoom = #1
 clairStaffZoom = #1
-shapeStaffZoom = #1
+shapeStaffZoom = #1.1 %% A bit larger by default to help see the shapes
 copyright = \public_domain_notice "Kenan Schaefkofer"
