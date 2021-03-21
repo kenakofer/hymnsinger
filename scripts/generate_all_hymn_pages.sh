@@ -18,18 +18,20 @@ layout: default
 Toggle:
 <a class="toggle-vis" data-column="0" href="#">Song</a> |
 <a class="toggle-vis" data-column="1" href="#">Tune</a> |
-<a class="toggle-vis off" data-column="2" href="#">Meter</a> |
-<a class="toggle-vis off" data-column="3" href="#">Composer</a> |
-<a class="toggle-vis" data-column="4" href="#">Lyrics</a> |
-<a class="toggle-vis off" data-column="5" href="#"># Stanzas</a> |
-<a class="toggle-vis off" data-column="6" href="#">Poet</a> |
-<a class="toggle-vis" data-column="7" href="#">Tags</a> |
-<a class="toggle-vis" data-column="8" href="#">Date Added</a>
+<a class="toggle-vis off" data-column="2" href="#">Key</a> |
+<a class="toggle-vis off" data-column="3" href="#">Meter</a> |
+<a class="toggle-vis off" data-column="4" href="#">Composer</a> |
+<a class="toggle-vis" data-column="5" href="#">Lyrics</a> |
+<a class="toggle-vis off" data-column="6" href="#"># Stanzas</a> |
+<a class="toggle-vis off" data-column="7" href="#">Poet</a> |
+<a class="toggle-vis" data-column="8" href="#">Tags</a> |
+<a class="toggle-vis" data-column="9" href="#">Date Added</a>
 </div>
 
 <table id='song-table' cellspacing='0' width='100%'><thead>
 <th>Song</th>
 <th>Tune</th>
+<th>Key</th>
 <th>Meter</th>
 <th>Composer</th>
 <th>Lyrics</th>

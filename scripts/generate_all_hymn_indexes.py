@@ -36,6 +36,21 @@ def has_chord_symbols(all_lines):
             return True
     return False
 
+def get_key(all_lines):
+    search_for = "hymnKey=\key"
+    for line in all_lines:
+        line = line.replace(" ", "")
+        if line.startswith(search_for):
+            index = line.index(search_for) + len(search_for)
+            line = line[index:].replace("\\", " ")
+            line = line[0].upper() + line[1:]
+            if line[1] == "f":
+                line = line[0] + "-flat" + line[2:]
+            if line[1] == "s":
+                line = line[0] + "-sharp" + line[2:]
+            return line
+    return "C major"
+
 def get_title(all_lines):
     for line in all_lines:
         search_for = "\\titleText"
@@ -171,13 +186,15 @@ def join_verse_line(line, remove_quotes):
     return " ".join(words)
 
 
-def output_table_row(song_file_base, song_title, lyrics, tune, meter, stanza_count, tags, composer, poet, date_added, output_file):
+def output_table_row(song_file_base, song_title, lyrics, tune, key, meter, stanza_count, tags, composer, poet, date_added, output_file):
     with open(output_file, 'a') as f:
         f.write("<tr><td class='hymn-name-box'><a href=\"{{ site.baseurl }}/listing/"+song_file_base+".html\">")
         f.write(song_title)
         f.write("</a>")
         f.write("</td><td class='tune-box'>")
         f.write(tune)
+        f.write("</td><td class='key-box'>")
+        f.write(key)
         f.write("</td><td class='meter-box'>")
         f.write(meter)
         f.write("</td><td class='composer-box'>")
@@ -234,9 +251,10 @@ if __name__ == "__main__":
         stanza_count = get_stanza_count(lines)
         composer = get_composer_info(lines)
         poet = get_poet_info(lines)
+        key = get_key(lines)
     date_added = get_date_added(lines)
     for output_file in index_files_to_append_to:
-        output_table_row(song_file_base, song_title, all_lyrics, tune, meter, stanza_count, all_tags, composer, poet, date_added, output_file)
+        output_table_row(song_file_base, song_title, all_lyrics, tune, key, meter, stanza_count, all_tags, composer, poet, date_added, output_file)
 
     song_markdown_file = "docs/listing/"+song_file_base+".md"
     output_header_info(song_file_base, song_title, all_lyrics, all_tags, song_markdown_file)
