@@ -1,5 +1,6 @@
 \language "english"
 \include "clairnote.ly"
+\include "left_align_lyrics.ly"
 pa = \partcombineApart
 pt = \partcombineAutomatic
 
@@ -307,6 +308,15 @@ fillTradScoreSingleStaff =
     \Voice
     \consists "Melody_engraver"
     \override Stem #'neutral-direction = #'()
+  }
+  ragged-right = ##f
+  \context {
+    \Lyrics
+    \override LyricText.X-offset = #X-offset-callback
+  }
+  \context {
+    \Score
+    \consists #Lyric_text_align_engraver
   }
 }
 
