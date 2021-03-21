@@ -243,14 +243,14 @@ fillClairScoreSingleStaff =
 
 fillTradScore =
   #(define-music-function
-    (parser location topA topB bottomA bottomB songChords)
-    (ly:music? ly:music? ly:music? ly:music? ly:music?)
+    (parser location topA topB bottomA bottomB songChords zoomLevel)
+    (ly:music? ly:music? ly:music? ly:music? ly:music? number?)
     #{
       <<
         $songChords
         \new TradStaff = "top" \with {
           printPartCombineTexts = ##f
-          \magnifyStaff \tradStaffZoom
+          \magnifyStaff $zoomLevel
           \RemoveAllEmptyStaves
         }
         <<
@@ -261,7 +261,7 @@ fillTradScore =
         >>
         \new TradStaff = "bottom" \with {
           printPartCombineTexts = ##f
-          \magnifyStaff \tradStaffZoom
+          \magnifyStaff $zoomLevel
           \RemoveAllEmptyStaves
         } <<
           \new Voice \with {
@@ -335,4 +335,5 @@ extra_verses = {}
 bottom_verses = {}
 tradStaffZoom = #1
 clairStaffZoom = #1
+shapeStaffZoom = #1
 copyright = \public_domain_notice "Kenan Schaefkofer"
