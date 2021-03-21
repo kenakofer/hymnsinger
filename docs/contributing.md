@@ -75,3 +75,5 @@ Here are a list of common Lilypond tasks that are easy to forget, and an example
 | One part in a staff resting while the other sings | O come all ye faithful |
 | Different lyrics for the same staff (e.g. soprano v. alto) | When peace like a river |
 | Double staff switch to single staff in same song | La paz de la tierra |
+| Lyrics skip note without using slurs | Once in royal David's city |
+| Chant style (half bars, hidden note flags, tweaks noteheads/beaming) | O come, O come Immanuel |

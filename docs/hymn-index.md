@@ -937,7 +937,44 @@ glory to God, all glory in the highest.
 Yea, Lord, we greet thee, born this happy morning,
 Jesus, to thee be all glory giv'n;
 Word of the Father, now in flesh appearing.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>John F. Wade, 1743, tr. Frederick Oakeley, 1841, William Mercer 1854, and others</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">winter</a></div></td><td class='date-added-box'>2021/01/19</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_little_town.html">O little town of Bethlehem</a></td><td class='tune-box'>ST. LOUIS</td><td class='key-box'>F major
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>John F. Wade, 1743, tr. Frederick Oakeley, 1841, William Mercer 1854, and others</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">winter</a></div></td><td class='date-added-box'>2021/01/19</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_come_o_come_immanuel.html">O come, O come, Immanuel</a></td><td class='tune-box'>VENI EMMANUEL</td><td class='key-box'>E minor
+</td><td class='meter-box'>LM with refrain</td><td class='composer-box'>trope melody, 15th c.</td><td class='lyric-box'><div>O come, O come, Immanuel,
+and ransom captive Israel,
+until the Son of God appear.
+
+  Rejoice! Rejoice!
+  Immanuel shall come to thee, O Israel.
+
+O come, O come, thou God of law,
+in cloud and majesty and awe.
+Thy precepts, taught on Sinai's height,
+call us to lives both just and right.
+
+O come, thou Rod of Jesse, free
+thine own from Satan's tyranny.
+From depths of hell thy people save,
+and give them vict'ry o'er the grave.
+
+O come, thou Dayspring, come and cheer
+our spirits by thine advent here.
+Disperse the gloomy clouds of night,
+and death's dark shadow put to flight.
+
+O come, thou Key of David come
+and open wide our heav'nly home.
+Make safe the way that leads to thee
+and close the path to misery.
+
+O come, thou Wisdom from on high,
+and order all things far and nigh.
+To us the path of knowledge show,
+and cause us in thy ways to go.
+
+O come, Desire of nations, bind
+all peoples in one heart and mind.
+Bid envy, strife and quarrels cease,
+and fill the world with heaven's peace.
+</div></td><td class='stanzas-box'>7.</td><td class='poet-box'>Text: anon., O Antiphons, 8th-9th c.; Veni, veni Emmanuel, 12th c. tr. v.1-5 John M. Neale, 1851, alt.; v.6-7 Henry Sloane Coffin, 1916</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">winter</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/21</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_little_town.html">O little town of Bethlehem</a></td><td class='tune-box'>ST. LOUIS</td><td class='key-box'>F major
 </td><td class='meter-box'>86.86.76.86</td><td class='composer-box'>Lewis H. Redner, 1874</td><td class='lyric-box'><div>O little town of Bethlehem, how still we see thee lie!
 Above thy deep and dreamless sleep the silent stars go by.
 Yet in thy dark streets shineth the everlasting light;

@@ -181,6 +181,24 @@ dropLyricsSmall = {
   \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
 }
 
+dropLyricsMedium = {
+  \override LyricText.extra-offset = #'(0 . -1)
+  \override LyricHyphen.extra-offset = #'(0 . -1)
+  \override LyricExtender.extra-offset = #'(0 . -1)
+  \override StanzaNumber.extra-offset = #'(0 . -1)
+  \override InstrumentName.extra-offset = #'(0 . -1)
+  \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+}
+
+dropLyricsLarge = {
+  \override LyricText.extra-offset = #'(0 . -2)
+  \override LyricHyphen.extra-offset = #'(0 . -2)
+  \override LyricExtender.extra-offset = #'(0 . -2)
+  \override StanzaNumber.extra-offset = #'(0 . -2)
+  \override InstrumentName.extra-offset = #'(0 . -2)
+  \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+}
+
 dropLyricsReset = {
   \revert LyricText.extra-offset
   \revert LyricHyphen.extra-offset
