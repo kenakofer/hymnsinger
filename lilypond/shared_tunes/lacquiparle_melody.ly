@@ -17,7 +17,7 @@ alto = { }
 tenor = { }
 bass = { }
 songChords = \chords {
-  \set chordChanges = ##t
+  \globalChordSymbols
   c1:m c:m  c:m c:m
   f:m f:m c:m c:m
   c:m c:m c:m c:m

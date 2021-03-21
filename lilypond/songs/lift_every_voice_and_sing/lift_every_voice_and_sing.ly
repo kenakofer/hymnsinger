@@ -123,7 +123,7 @@ all_verses = <<
 >>
 
 songChords = \chords {
-  \set chordChanges = ##t
+  \globalChordSymbols
   d4. g b:7 e:m e:m g b:7 e:m e:m a:m b:7 c c g/d g/d d
   d g b:7 e e a:m b:7 c cs:dim7 g/d g/d d:7 d:7 g g g
   g e:m e:m e:m e:m d d g g c:m c:m c:m c:m g g d:7 d:7 d:7

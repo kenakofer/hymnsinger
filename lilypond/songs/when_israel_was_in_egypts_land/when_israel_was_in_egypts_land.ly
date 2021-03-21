@@ -51,7 +51,7 @@ bass = {
   \relative d { ef2 c | bf4.( c8) d2 | d4 4 8 4. | g,2. | }
 }
 songChords = \chords {
-  \set chordChanges = ##t
+  \globalChordSymbols
   s4 g2:m c:m g:m g:m g:m d:7 g:m g:m
   g2:m c:m g:m g:m g:m d:7 g:m g:m
   g2:m g:m c:m c:m g:m d:7 g:m g:m
