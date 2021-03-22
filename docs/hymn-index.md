@@ -511,7 +511,18 @@ Oh, brothers, …
 Oh, children, …
 
 Oh, sinners, …
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>African American Spiritual</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/20</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/for_the_beauty_of_our_earth.html">For the beauty of our earth</a></td><td class='tune-box'>DIX</td><td class='key-box'>A major
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>African American Spiritual</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/20</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/epitaph_of_seikilos.html">Epitaph of Seikilos</a></td><td class='tune-box'>EPITAPH OF SEIKILOS</td><td class='key-box'>A mixolydian
+</td><td class='meter-box'>irregular</td><td class='composer-box'>Seikilos, ca. 1st-2nd c.</td><td class='lyric-box'><div>Hóson zêis, phaínou
+mēdèn hólōs sù lupoû
+pròs olígon ésti tò zên
+tò télos ho khrónos apaiteî.
+
+While you live, shine bright.
+Don't let grief sour your guest, Life,
+staying with you, just for a while.
+Soon will come due all demands of Time.
+Soon all Time's demands are coming due.
+</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Greek: Seikilos, ca. 1st-2nd c. tr. Kenan Schaefkofer, 2021</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">greek</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">1part</a><a class="taglink" href="#">death</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/21</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/for_the_beauty_of_our_earth.html">For the beauty of our earth</a></td><td class='tune-box'>DIX</td><td class='key-box'>A major
 </td><td class='meter-box'>77.77.77</td><td class='composer-box'>Conrad Kocher, 1838</td><td class='lyric-box'><div>For the beauty of our earth, for the glory of her skies,
 for the love which from our birth over and around us lies:
 
