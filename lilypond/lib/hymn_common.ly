@@ -213,6 +213,10 @@ fillClairScore =
     (ly:music? ly:music? ly:music? ly:music?)
     #{
       <<
+        \new Lyrics = "topVerse" \with {
+          % lyrics above a staff should have this override
+          \override VerticalAxisGroup.staff-affinity = #DOWN
+        }
         \new Staff = "top" \with {
           \cnNoteheadStyle "funksol"
           printPartCombineTexts = ##f
@@ -220,7 +224,6 @@ fillClairScore =
           \RemoveAllEmptyStaves
         }
         <<
-
           \new Voice \with {
           } << \partcombine #'(2 . 20) $topA $topB >>
           \all_verses
@@ -234,6 +237,7 @@ fillClairScore =
           \new Voice \with {
           } { \clef bass << \partcombine #'(2 . 20) $bottomA $bottomB >> }
           \bottom_verses
+          \top_verse
         >>
       >>
     #})
@@ -266,6 +270,10 @@ fillTradScore =
     #{
       <<
         $songChords
+        \new Lyrics = "topVerse" \with {
+          % lyrics above a staff should have this override
+          \override VerticalAxisGroup.staff-affinity = #DOWN
+        }
         \new TradStaff = "top" \with {
           printPartCombineTexts = ##f
           \magnifyStaff $zoomLevel
@@ -286,6 +294,7 @@ fillTradScore =
 
           } { \clef bass << \partcombine #'(2 . 20) $bottomA $bottomB >> }
           \bottom_verses
+          \top_verse
         >>
       >>
     #})
@@ -361,6 +370,7 @@ tags = "english christian 4part"
 prescore_text = {}
 postscore_text = {}
 extra_verses = {}
+top_verse = {}
 bottom_verses = {}
 tradStaffZoom = #1
 clairStaffZoom = #1

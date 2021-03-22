@@ -1172,7 +1172,16 @@ So be it, Lord, your throne shall never,
 like earth's proud kingdoms pass away.
 Your kingdom stands and grows forever,
 until there dawns your glorious day.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>John Ellerton, 1870</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">evening</a></div></td><td class='date-added-box'>2021/01/16</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_lords_my_shepherd.html">The Lord's my shepherd</a></td><td class='tune-box'>CRIMOND</td><td class='key-box'>F major
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>John Ellerton, 1870</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">evening</a></div></td><td class='date-added-box'>2021/01/16</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_lord_bless_you_and_keep_you.html">The Lord bless you and keep you</a></td><td class='tune-box'>FAREWELL ANTHEM</td><td class='key-box'>C major
+</td><td class='meter-box'>irregular</td><td class='composer-box'>Peter C. Lutkin, 1900</td><td class='lyric-box'><div>The Lord bless you and keep you;
+the Lord lift his countenance upon you,
+and give you peace, and give you peace;
+the Lord make his face to shine upon you,
+and be gracious, and be gracious,
+the Lord be gracious, gracious unto you.
+
+Amen, amen, amen, amen, amen.
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>based on Numbers 6:24-26, Peter C. Lutkin, 1900</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/22</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_lords_my_shepherd.html">The Lord's my shepherd</a></td><td class='tune-box'>CRIMOND</td><td class='key-box'>F major
 </td><td class='meter-box'>CM</td><td class='composer-box'>Jessie S. Irvine, 1872;
 arr. David Grant, 1872</td><td class='lyric-box'><div>The Lord's my shepherd, I'll not want.
 He makes me down to lie

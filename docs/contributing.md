@@ -77,3 +77,5 @@ Here are a list of common Lilypond tasks that are easy to forget, and an example
 | Double staff switch to single staff in same song | La paz de la tierra |
 | Lyrics skip note without using slurs | Once in royal David's city |
 | Chant style (half bars, hidden note flags, tweaks noteheads/beaming) | O come, O come Immanuel |
+| Add symmetrical padding to verses | The Lord Bless you and keep you |
+| Line Lyrics Stanza above the soprano staff | The Lord Bless you and keep you |
