@@ -67,7 +67,6 @@ verseB = \lyricmode {
   Don't let grief sour your guest, Life,
   stay -- ing with you, just for a while.
   Soon will come due all de -- mands of Time.
-  Soon all Time's de -- mands are com -- ing due.
 }
 spacingVerse = \lyricmode {
   "\t" "\t" "\t" "\t" "\t" "\t"
