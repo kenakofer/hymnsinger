@@ -332,7 +332,21 @@ Let us love our God supremely, let us love each other too.
 Let us love and pray for sinners till our God makes all things new.
 Christ will call us home to heaven. At his table we'll sit down.
 Christ will gird himself and serve us with sweet manna all around.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>The Columbian Harmony, 1825</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/01/07</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/calm_soul_of_all_things.html">Calm soul of all things</a></td><td class='tune-box'>TALLIS' CANON</td><td class='key-box'>G major
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>The Columbian Harmony, 1825</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/01/07</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/bright_those_jewels.html">Bright those jewels</a></td><td class='tune-box'>ORIENTIS PARTIBUS</td><td class='key-box'>F major
+</td><td class='meter-box'>87.87</td><td class='composer-box'>Pierre de Corbeil, harmonized Richard Redhead, 1853</td><td class='lyric-box'><div>Bright those jewels of the skies
+which in sable darkness glow.
+Brighter in compassion's eyes
+are the silent tears which flow.
+
+Sweet the fragrance from the fields where abundant spices grow.
+Sweeter far is that which yields
+succor to the sick and low.
+
+Grateful are those gentle dews
+on the greening grass which fall.
+Far more grateful what renews
+comforts to the poor who call
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Hosea Ballou II, 1849</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/22</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/calm_soul_of_all_things.html">Calm soul of all things</a></td><td class='tune-box'>TALLIS' CANON</td><td class='key-box'>G major
 </td><td class='meter-box'>LM</td><td class='composer-box'>Thomas Tallis, 1567</td><td class='lyric-box'><div>Calm soul of all things, make it mine
 to feel amid the city's jar,
 that there abides a peace of thine
@@ -787,7 +801,7 @@ dispel in glorious splendor the darkness ev'rywhere.
 Human, yet very God, from sin and death he saves us,
 and lightens ev'ry load.
 </div></td><td class='stanzas-box'>3.</td><td class='poet-box'>v.1-2 anonymous, 1599; v.3 Friedrich Layritz, 1599 tr. v.1-2 Theodore Baker, 1894; v.3 Harriet Spaeth, 1875; alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">winter</a></div></td><td class='date-added-box'>2021/01/12</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/loveliest_of_trees.html">Loveliest of trees</a></td><td class='tune-box'>ORIENTIS PARTIBUS</td><td class='key-box'>E-flat major
-</td><td class='meter-box'>87.87</td><td class='composer-box'>Pierre de Corbeil, harmonized Richard Redhead, 1853</td><td class='lyric-box'><div>Loveliest of trees, the cherry now,
+</td><td class='meter-box'>77.77</td><td class='composer-box'>Pierre de Corbeil, harmonized Richard Redhead, 1853</td><td class='lyric-box'><div>Loveliest of trees, the cherry now,
 hung with bloom along the bough,
 it stands about the woodland ride
 wearing white for Eastertide.
