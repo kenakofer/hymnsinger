@@ -1025,7 +1025,44 @@ he bore the shameful cross and death, for us at length gave up his breath.
 
 Eternal glory to our God for love so deep, so high, so broad;
 the Trinity whom we adore forever and forevermore.
-</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Thomas a Kempis, 15th c. trans. Benjamin Webb 1851, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/04</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/once_in_royal_davids_city.html">Once in royal David's city</a></td><td class='tune-box'>IRBY</td><td class='key-box'>F major
+</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Thomas a Kempis, 15th c. trans. Benjamin Webb 1851, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/04</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_sacred_head_now_wounded.html">O sacred Head, now wounded</a></td><td class='tune-box'>HERZLICH TUT MICH VERLANGEN</td><td class='key-box'>D major
+</td><td class='meter-box'>76.76 D</td><td class='composer-box'>Hans L. Hassler, 1601;
+arr. J. S. Bach, 1729</td><td class='lyric-box'><div>O sacred Head, now wounded,
+with grief and shame weighed down,
+now scornfully surrounded
+with thorns, thine only crown!
+O sacred Head, what glory,
+what bliss till now was thine!
+Yet, though despised and gory,
+I joy to call thee mine.
+
+What thou, my Lord, hast suffered
+was all for sinners' gain.
+Mine, mine was the transgression,
+but thine the deadly pain.
+Lo, here I fall, my Savior!
+'Tis I deserve thy place.
+Look on me with thy favor,
+and grant to me thy grace.
+
+What language shall I borrow
+to thank thee, dearest Friend,
+for this, thy dying sorrow,
+thy pity without end?
+Oh, make me thine forever,
+and should I fainting be,
+Lord, let me never, never
+outlive my love to thee.
+
+Be near when I am dying,
+oh, show thy cross to me,
+and for my rescue, flying,
+come, Lord, and set me free!
+These eyes, new faith receiving,
+from Jesus shall not move,
+for one who dies believing
+dies safely, through thy love.
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Paul Gerhardt, 1656; tr. James W. Alexander, 1861</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/22</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/once_in_royal_davids_city.html">Once in royal David's city</a></td><td class='tune-box'>IRBY</td><td class='key-box'>F major
 </td><td class='meter-box'>87.87.77</td><td class='composer-box'>Henry John Gauntlett, 1849;
 arr. Arthur Henry Mann, 1919</td><td class='lyric-box'><div>Once in royal David's city
 stood a lowly cattle shed,
@@ -1181,7 +1218,7 @@ and be gracious, and be gracious,
 the Lord be gracious, gracious unto you.
 
 Amen, amen, amen, amen, amen.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>based on Numbers 6:24-26, Peter C. Lutkin, 1900</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/22</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_lords_my_shepherd.html">The Lord's my shepherd</a></td><td class='tune-box'>CRIMOND</td><td class='key-box'>F major
+</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>based on Numbers 6:24-26, Peter C. Lutkin, 1900</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/22</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_lords_my_shepherd.html">The Lord's my shepherd</a></td><td class='tune-box'>CRIMOND</td><td class='key-box'>F major
 </td><td class='meter-box'>CM</td><td class='composer-box'>Jessie S. Irvine, 1872;
 arr. David Grant, 1872</td><td class='lyric-box'><div>The Lord's my shepherd, I'll not want.
 He makes me down to lie
