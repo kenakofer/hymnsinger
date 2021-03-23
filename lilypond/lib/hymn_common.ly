@@ -207,6 +207,16 @@ dropLyricsReset = {
   \revert VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding
 }
 
+m =
+  #(define-music-function
+    (parser location play show)
+    (ly:music? ly:music?)
+    #{
+      \tag #'midionly { $play }
+      \tag #'printonly { $show }
+    #}
+  )
+
 fillClairScore =
   #(define-music-function
     (parser location topA topB bottomA bottomB)
@@ -269,6 +279,7 @@ fillTradScore =
     (ly:music? ly:music? ly:music? ly:music? ly:music? number?)
     #{
       <<
+        \removeWithTag #'midionly
         $songChords
         \new Lyrics = "topVerse" \with {
           % lyrics above a staff should have this override

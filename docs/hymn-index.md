@@ -854,7 +854,26 @@ The sure provisions of my God attend me all my days.
 Oh, may your house be my abode, and all my work be praise.
 There would I find a settled rest, while others go and come,
 no more a stranger, nor a guest, but like a child at home.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Isaac Watts, 1719, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/04</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/no_number_tallies_up_my_score.html">No number tallies up my score</a></td><td class='tune-box'>RESIGNATION</td><td class='key-box'>C major
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Isaac Watts, 1719, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/04</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/no_matter_if_you_live.html">No matter if you live now far or near</a></td><td class='tune-box'>INDIA</td><td class='key-box'>E minor
+</td><td class='meter-box'>10.10.10.10</td><td class='composer-box'>Old Indian song;
+arr. Frédéric Mathil, 1950</td><td class='lyric-box'><div>No matter if you live now far or near,
+no matter what your weakness or your strength,
+there is not one alive we count outside.
+May deeper joy for all now come at length,
+may deeper joy for all now come at length.
+
+Let none among us lie or selfdeceive;
+nor cultivate a hatred all or part,
+may never one of us live by our rage
+nor wish another injury of heart,
+nor wish another injury of heart.
+
+Just as the goodly mother will protect
+her children, e'en at risk of her own life,
+so may we nurture an old mindfulness,
+a boundless heart beyond all fear and strife,
+a boundless heart beyond all fear and strife.
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Metta Sutta, from Sutta Nipata, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/23</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/no_number_tallies_up_my_score.html">No number tallies up my score</a></td><td class='tune-box'>RESIGNATION</td><td class='key-box'>C major
 </td><td class='meter-box'>CMD</td><td class='composer-box'>North American Traditional;
 arr. Kenan Schaefkofer, 2021</td><td class='lyric-box'><div>No number tallies up my score,
 no tribe my house can fill;
@@ -918,7 +937,32 @@ protected be your heads;
 and happy slumbers send you,
 and ev'ry care attend you,
 as trusted souls watch o'er your beds.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Paul Gerhardt, 1648, tr. and alt. Kenan Schaefkofer, 2021</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">evening</a></div></td><td class='date-added-box'>2021/01/16</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/now_the_day_is_over.html">Now the day is over</a></td><td class='tune-box'>WEM IN LEIDENSTAGEN</td><td class='key-box'>F major
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Paul Gerhardt, 1648, tr. and alt. Kenan Schaefkofer, 2021</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">evening</a></div></td><td class='date-added-box'>2021/01/16</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/now_is_the_time_approaching.html">Now is the time approaching</a></td><td class='tune-box'>WEBB</td><td class='key-box'>A major
+</td><td class='meter-box'>76.76</td><td class='composer-box'>George James Webb, 1837</td><td class='lyric-box'><div>Now is the time approaching,
+by prophets long foretold,
+when all shall dwell together,
+secure and manifold.
+Let war be learned no longer,
+let strife and tumult cease,
+all each a blessed garden,
+to please the god of peace.
+
+Let all that now divides us remove and pass away,
+like mists of early morning
+beneath the blaze of day.
+Let all that now unites us
+more sweet and lasting prove,
+a closer bond of union, in blessed lands of love.
+
+O longexpected dawning,
+come with your cheering ray!
+Yet shall the promise beckon
+and lead us not astray.
+O sweet anticipation!
+It cheers the watchers on
+to pray, and hope, and labor,
+till all our work is done.
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Jane Laurie Borthwick, 1859, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/23</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/now_the_day_is_over.html">Now the day is over</a></td><td class='tune-box'>WEM IN LEIDENSTAGEN</td><td class='key-box'>F major
 </td><td class='meter-box'>65.65</td><td class='composer-box'>Friedrich Filitz, 1847</td><td class='lyric-box'><div>Now the day is over,
 night is drawing nigh,
 shadows of the evening
@@ -1203,7 +1247,27 @@ it shall be no longer mine.
 Take my love; my Lord, I pour at thy feet its treasure store.
 Take myself, and I will be ever, only, all for thee,
 ever, only, all for thee.
-</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Frances R. Havergal, 1874</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_day_you_gave_us.html">The day you gave us, Lord</a></td><td class='tune-box'>ST. CLEMENT</td><td class='key-box'>G major
+</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Frances R. Havergal, 1874</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/teach_me_thy_truth.html">Teach me thy truth</a></td><td class='tune-box'>GOSHEN</td><td class='key-box'>F major
+</td><td class='meter-box'>CM</td><td class='composer-box'>Walter E. Yoder, 1938</td><td class='lyric-box'><div>Teach me thy truth, O mighty One,
+from sin, O set me free.
+Prepare my life to fill its place
+in service, God, for thee.
+
+Accept my talents, great or small,
+choose thou the path for me,
+where I shall labor joyously
+in service, God, for thee.
+
+Help me to show thy glorious way
+that leads in hope to thee,
+till other souls their joy shall find
+in service, God, for thee.
+
+Grant me thy grace for ev'ry task
+until thy face I see,
+then ever new shall be that joy
+in service, God, for thee.
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Edith Witmer, 1937, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/23</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_day_you_gave_us.html">The day you gave us, Lord</a></td><td class='tune-box'>ST. CLEMENT</td><td class='key-box'>G major
 </td><td class='meter-box'>98.98</td><td class='composer-box'>Clement C. Scholefield, 1874</td><td class='lyric-box'><div>The day you gave us, Lord, is ended;
 the darkness falls at your request.
 To you our morning hymns ascended;
