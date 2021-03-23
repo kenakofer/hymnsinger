@@ -786,7 +786,7 @@ Flower, whose fragrance tender with sweetness fills the air,
 dispel in glorious splendor the darkness ev'rywhere.
 Human, yet very God, from sin and death he saves us,
 and lightens ev'ry load.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>v.1-2 anonymous, 1599; v.3 Friedrich Layritz, 1599 tr. v.1-2 Theodore Baker, 1894; v.3 Harriet Spaeth, 1875; alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">winter</a></div></td><td class='date-added-box'>2021/01/12</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/loveliest_of_trees.html">Lovelist of trees</a></td><td class='tune-box'>ORIENTIS PARTIBUS</td><td class='key-box'>E-flat major
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>v.1-2 anonymous, 1599; v.3 Friedrich Layritz, 1599 tr. v.1-2 Theodore Baker, 1894; v.3 Harriet Spaeth, 1875; alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">winter</a></div></td><td class='date-added-box'>2021/01/12</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/loveliest_of_trees.html">Loveliest of trees</a></td><td class='tune-box'>ORIENTIS PARTIBUS</td><td class='key-box'>E-flat major
 </td><td class='meter-box'>87.87</td><td class='composer-box'>Pierre de Corbeil, harmonized Richard Redhead, 1853</td><td class='lyric-box'><div>Loveliest of trees, the cherry now,
 hung with bloom along the bough,
 it stands about the woodland ride
@@ -801,7 +801,7 @@ And since to look at things in bloom
 fifty springs are little room,
 about the woodlands I will go,
 see the cherry hung with snow.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>A. E. Housman, 1896</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">spring</a></div></td><td class='date-added-box'>2021/02/07</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/may_nothing_evil_cross_this_door.html">May nothing evil cross this door</a></td><td class='tune-box'>OLDBRIDGE</td><td class='key-box'>F major
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>A. E. Housman, 1896</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">spring</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/02/07</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/may_nothing_evil_cross_this_door.html">May nothing evil cross this door</a></td><td class='tune-box'>OLDBRIDGE</td><td class='key-box'>F major
 </td><td class='meter-box'>88.84</td><td class='composer-box'>Robert N. Quaile, b. 1867</td><td class='lyric-box'><div>May nothing evil cross this door,
 and may ill fortune never pry
 about these windows; may the roar
@@ -1062,7 +1062,7 @@ These eyes, new faith receiving,
 from Jesus shall not move,
 for one who dies believing
 dies safely, through thy love.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Paul Gerhardt, 1656; tr. James W. Alexander, 1861</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/22</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/once_in_royal_davids_city.html">Once in royal David's city</a></td><td class='tune-box'>IRBY</td><td class='key-box'>F major
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Paul Gerhardt, 1656; tr. James W. Alexander, 1861</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">death</a></div></td><td class='date-added-box'>2021/03/22</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/once_in_royal_davids_city.html">Once in royal David's city</a></td><td class='tune-box'>IRBY</td><td class='key-box'>F major
 </td><td class='meter-box'>87.87.77</td><td class='composer-box'>Henry John Gauntlett, 1849;
 arr. Arthur Henry Mann, 1919</td><td class='lyric-box'><div>Once in royal David's city
 stood a lowly cattle shed,

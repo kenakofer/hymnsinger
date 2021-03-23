@@ -16,7 +16,7 @@ title = \titleText "The Lord bless you and keep you"
 poet = \smallText "Text: based on Numbers 6:24-26, Peter C. Lutkin, 1900"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 postscore_text = \postscoreText "*Or, ''May God bless you and keep you; / may God lift her countenance upon you,''"
-verseCount = 4
+verseCount = 1
 tags = "english theist 4part"
 dateAdded = "2021-03-22"
 \include "../../lib/header.ly"
