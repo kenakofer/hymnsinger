@@ -3,7 +3,7 @@
 \include "../../lib/hymn_common.ly"
 
 %% TUNE INFO
-\include "../../shared_tunes/orientis_partibus.ly"
+\include "../../shared_tunes/orientis_partibus_87_87.ly"
 
 %% SONG INFO
 verseCount = 3

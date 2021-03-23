@@ -1,5 +1,5 @@
 composer = \smallText "Music: Pierre de Corbeil, harmonized Richard Redhead, 1853"
-meter = \smallText "ORIENTIS PARTIBUS 87.87"
+meter = \smallText "ORIENTIS PARTIBUS 77.77"
 hymnKey = \key ef \major
 hymnTime = \time 3/4
 quarternoteTempo = 120
