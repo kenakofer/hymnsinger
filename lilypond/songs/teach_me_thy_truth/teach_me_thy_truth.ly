@@ -43,9 +43,9 @@ bass = {
 }
 %% LYRICS
 verseA = \lyricmode {
-  Teach me thy truth, O might -- y One,
+  \l Teach me thy truth, O might -- y One,
   from sin, O set me free.
-  Pre -- pare my life to fill its place
+  \l Pre -- pare my life to fill its place
   in ser -- vice, God, for thee.
 }
 verseB = \lyricmode {
