@@ -27,7 +27,7 @@ wholeBar = \override Staff.BarLine #'bar-extent = #'(-2 . 2)
 soprano = {
   \globalParts
   \hide Stem
-  \override Staff.TimeSignature.transparent = ##t
+  \override Staff.TimeSignature #'stencil = ##f
   \relative g' { e8 g b b b a( c b) a \tweak duration-log #1 g4 \halfBar | a8 b g e g a( fs e) d \tweak duration-log #1 e4 | } \break
   \relative g' { a8 a e e fs g( fs) e \partial 4 \tweak duration-log #1 d4 | g8 a b b b a( c b) \partial 2 a \tweak duration-log #1 g4 s8 \wholeBar} \break
   \undo \hide Stem
@@ -42,7 +42,7 @@ alto = {
 }
 tenor = {
   \globalParts
-  \override Staff.TimeSignature.transparent = ##t
+  \override Staff.TimeSignature #'stencil = ##f
   \relative a { s8 s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s s }
   \relative a { b8 a4. e'8 d4. e8 4( d8) d b a g[ g] g[ b] a4( g8) fs g2 }
 }
