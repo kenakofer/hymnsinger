@@ -22,7 +22,7 @@ dateAdded = "2021-01-12"
 %% NOTES
 soprano = {
   \globalParts
-  \override Staff.TimeSignature.transparent = ##t
+  \override Staff.TimeSignature #'stencil = ##f
   \relative g' { c2 4 4 d c c2 a | bf a4 g2 f e4 f2 | } \break
   \relative g' { c2 4 4 d c c2 a | bf a4 g2 f e4 f2 | } \break
   \relative g' { r4 a4 g e \partial 1 f4 d c2 | \partial 1 r4 c'4 c c \bar " " | } \break
@@ -38,7 +38,7 @@ alto = {
 }
 tenor = {
   \globalParts
-  \override Staff.TimeSignature.transparent = ##t
+  \override Staff.TimeSignature #'stencil = ##f
   \relative a { c2 c4 a bf a g2 f | f2 a4 c bf( a2) g4 a2 | }
   \relative a { c2 c4 a bf a g2 f | f2 a4 c bf( a2) g4 a2 | }
   \relative a { r4 c4 bf a a g g2 | r4 g4 g a | }

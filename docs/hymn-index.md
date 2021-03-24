@@ -1385,7 +1385,34 @@ Bless us with life that has no end, eternal life with you.
 Warm southern wind, blow softly here,
 Green sod above, lie light, lie light.
 Good night, dear heart, good night, good night.
-</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Robert Richardson, alt. Mark Twain, 1896</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">summer</a><a class="taglink" href="#">death</a></div></td><td class='date-added-box'>2021/01/30</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/we_shall_overcome.html">We shall overcome</a></td><td class='tune-box'>WE SHALL OVERCOME</td><td class='key-box'>C major
+</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Robert Richardson, alt. Mark Twain, 1896</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">summer</a><a class="taglink" href="#">death</a></div></td><td class='date-added-box'>2021/01/30</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/we_are_people_of_gods_peace.html">We are people of God's peace</a></td><td class='tune-box'>AVE VIRGO VIRGINUM (GAUDEAMUS PARITER)</td><td class='key-box'>G major
+</td><td class='meter-box'>76.76 D</td><td class='composer-box'>Johann Horn, 1544, alt. 1584</td><td class='lyric-box'><div>We are people of God's peace
+as a new creation.
+Love unites and strengthens us
+at this celebration.
+Sons and daughters of the Lord,
+serving one another,
+a new covenant of peace
+binds us all together.
+
+We are children of God's peace
+in this new creation,
+spreading joy and happiness
+through God's great salvation.
+Hope we bring in spirit meek,
+in our daily living.
+Peace with ev'ryone we seek,
+good for evil giving.
+
+We are servants of God's peace,
+of the new creation.
+Choosing peace, we faithfully
+serve with heart's devotion.
+Jesus Christ, the Prince of Peace,
+confidence will give us.
+Christ the Lord is our defense;
+Christ will never leave us.
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>based on Menno Simons, alt. David Augsburger, 1978</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/24</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/we_shall_overcome.html">We shall overcome</a></td><td class='tune-box'>WE SHALL OVERCOME</td><td class='key-box'>C major
 </td><td class='meter-box'>irregular</td><td class='composer-box'>African-American Spiritual;
 arr. Kenan Schaefkofer, 2021</td><td class='lyric-box'><div>We shall overcome,
 we shall overcome,
