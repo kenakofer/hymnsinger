@@ -53,10 +53,10 @@ bass = {
 
 %% LYRICS
 verseA = \lyricmode {
-  No mat -- ter if you live now far or near,
-  no mat -- ter what your weak -- ness or your strength,
-  there is not one a -- live we count out -- side.
-  May deep -- er joy for all now come at length,
+  \l No mat -- ter if you live now far or near,
+  no \l mat -- ter what your weak -- ness or your strength,
+  there is not \l one a -- live we count out -- side.
+  May deep -- er joy for all now \l come at length,
   may deep -- er joy for all now come at length.
 }
 verseB = \lyricmode {
