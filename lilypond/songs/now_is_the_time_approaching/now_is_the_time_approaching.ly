@@ -52,13 +52,13 @@ bass = {
 
 %% LYRICS
 verseA = \lyricmode {
-  Now is the time ap -- proach -- ing,
+  \l Now is the time ap -- proach -- ing,
   by proph -- ets long fore -- told,
-  when all shall dwell to -- geth -- er,
+  \l when all shall dwell to -- geth -- er,
   se -- cure and man -- i -- fold.
-  Let war be learned no long -- er,
+  \l Let war be learned no long -- er,
   let strife and tu -- mult cease,
-  all each a bless -- ed gard -- en,
+  \l all each a bless -- ed gard -- en,
   to please the god of peace.
 }
 verseB = \lyricmode {
