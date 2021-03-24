@@ -4,8 +4,13 @@
     \layout { \context { \Voice {
       \set shapeNoteStyles = ##(doThin reThin miThin faThin sol laThin tiThin)
     } } }
-    \removeWithTag #'midionly
-    \fillTradScore \soprano \alto \tenor \bass {} \shapeStaffZoom
+    \fillTradScore
+      { \removeWithTag #'midionly \soprano }
+      { \removeWithTag #'midionly \alto }
+      { \removeWithTag #'midionly \tenor }
+      { \removeWithTag #'midionly \bass }
+      {}
+      \shapeStaffZoom
   }
   \postscore_text
   \extra_verses
