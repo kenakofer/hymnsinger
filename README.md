@@ -23,11 +23,8 @@ This is a project to make or take hymns with permissive copyright status, typese
   - Programatic key change? Would require either
     - Generating all the desired key changes up front (+/- 3 half steps?)
     - Using a custom lilybin setup on server or AWS lambda, or some other serverside way to re-parse lilypond files. This would be far more difficult, but also allow the user tons of flexibility down the line.
-  - Change names: tune variables, copyright, tags to form: "text:site arranged:other winter"
   - Add vscode configuration section/page
   - Consider reaching out to people
-  - Make shape notes bigger
-  - Less space between two staves in clairnotes
   - Configurable space around lyrics
   - Figure out how to understand/clean up extra_lyrics columns
   - Include song index data in pages somehow (js?) then DRY on indexes
@@ -35,5 +32,14 @@ This is a project to make or take hymns with permissive copyright status, typese
   - ' versus ’ in lyrics extraction
   - Figure out what the meters mean for consistency
   - Song versus Tune columns
-  - Add key signature column or tag
-  - Add poet info column
+  - Upgrade to lilypond 2.21
+    - Swing added (Wade in the water
+  - Less space between two staves in clairnotes
+  - More compact spacing in general?
+  - \paper {
+      system-system-spacing = #'((basic-distance . 0.1) (padding . 0))
+      ragged-last-bottom = ##f
+      ragged-bottom = ##f
+    }
+  - Phrasing slurs \( \) are not dashed after partcombine
+  - Enter multiple lines of lyrics above staff
