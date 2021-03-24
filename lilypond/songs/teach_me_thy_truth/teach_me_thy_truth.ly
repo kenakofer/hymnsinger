@@ -22,8 +22,7 @@ dateAdded = "2021-03-23"
 %% NOTES
 soprano = {
   \globalParts
-  \relative g' { \partial 2 f2 | 4 bf a g | f2 g | a1 | 2 bf4 d | c2 b | \m c1 c2\fermata}
-  \bar "" \break
+  \relative g' { \partial 2 f2 | 4 bf a g | f2 g | a1 | 2 bf4 d | c2 b | \m c1 c2\fermata} \bar "" \break
   \relative g' { \partial 2 a2 | bf4 c d e | f2 c | 1 | bf2 a4 f | 2 e | \m f1 f2\fermata } \break
   \bar "|."
 }
@@ -69,7 +68,7 @@ verseD = \lyricmode {
 }
 
 all_verses = <<
-  \new NullVoice = "soprano" \soprano
+  \new NullVoice = "soprano" {\removeWithTag #'midionly \soprano}
   % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
   \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }

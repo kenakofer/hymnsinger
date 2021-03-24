@@ -101,7 +101,7 @@ verseG = \lyricmode {
 }
 
 all_verses = <<
-  \new NullVoice = "soprano" \soprano
+  \new NullVoice = "soprano" {\removeWithTag #'midionly \soprano}
   % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
   \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "2" \verseB }
