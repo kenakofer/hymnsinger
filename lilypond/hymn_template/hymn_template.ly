@@ -30,32 +30,28 @@ dateAdded = %YYYY-MM-DD%
 %% NOTES
 soprano = {
   \globalParts
-  \relative g' { c4 d e f} \break
-  \relative g' {} \break
-  \relative g' {} \break
-  \relative g' {} \break
-  \bar "|."
+  \relative g' {
+    c4 d e f \break
+    \bar "|."
+  }
 }
 alto = {
   \globalParts
-  \relative e' {}
-  \relative e' {}
-  \relative e' {}
-  \relative e' {}
+  \relative e' {
+
+  }
 }
 tenor = {
   \globalParts
-  \relative a { a4 b c d }
-  \relative a {}
-  \relative a {}
-  \relative a {}
+  \relative a {
+    a4 b c d
+  }
 }
 bass = {
   \globalParts
-  \relative d {}
-  \relative d {}
-  \relative d {}
-  \relative d {}
+  \relative d {
+
+  }
 }
 songChords = \chords {
   \globalChordSymbols
@@ -64,10 +60,10 @@ songChords = \chords {
 
 %% LYRICS
 verseA = \lyricmode {
-  Ly -- rics
+  \l Ly -- rics
 }
 verseB = \lyricmode {
-  for each
+  for _ each
 }
 verseC = \lyricmode {
   verse
@@ -89,8 +85,10 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
 
+%% Use this, or the tradStaffZoom and shapeStaffZoom equivalents, if space is tight.
+%clairStaffZoom = #.9
+
 %% All sheet music outputs
-clairStaffZoom = #.9
 \include "../../lib/all_notation_outputs.ly"
 %% MIDI output
 \include "../../lib/midi_output.ly"

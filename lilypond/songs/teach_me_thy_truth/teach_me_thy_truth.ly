@@ -22,24 +22,32 @@ dateAdded = "2021-03-23"
 %% NOTES
 soprano = {
   \globalParts
-  \relative g' { \partial 2 f2 | 4 bf a g | f2 g | a1 | 2 bf4 d | c2 b | \m c1 c2\fermata} \bar "" \break
-  \relative g' { \partial 2 a2 | bf4 c d e | f2 c | 1 | bf2 a4 f | 2 e | \m f1 f2\fermata } \break
+  \relative g' {
+    \partial 2 f2 | 4 bf a g | f2 g | a1 | 2 bf4 d | c2 b | \m c1 c2\fermata \bar "" \break
+    \partial 2 a2 | bf4 c d e | f2 c | 1 | bf2 a4 f | 2 e | \m f1 f2\fermata \break
+  }
   \bar "|."
 }
 alto = {
   \globalParts
-  \relative e' { c2 | d4 f f d | c2 e | f1 | 2 4 4 | a2 f | \m e1 e2 }
-  \relative e' { a | g4 f f g | f2 bf | a1 | f2 4 d | 2 c | \m c1 c2 }
+  \relative e' {
+    c2 | d4 f f d | c2 e | f1 | 2 4 4 | a2 f | \m e1 e2
+    a | g4 f f g | f2 bf | a1 | f2 4 d | 2 c | \m c1 c2
+  }
 }
 tenor = {
   \globalParts
-  \relative a { a2 | 4 d c bf | a2 c | 1 | 2 bf4 f' | 2 d | \m c1 c2 }
-  \relative a { c2 | e4 c bf c | 2 e | f1 | d2 c4 a | b2 bf | \m a1 a2 }
+  \relative a {
+    a2 | 4 d c bf | a2 c | 1 | 2 bf4 f' | 2 d | \m c1 c2
+    c2 | e4 c bf c | 2 e | f1 | d2 c4 a | b2 bf | \m a1 a2
+  }
 }
 bass = {
   \globalParts
-  \relative d { f2 | d4 bf f bf | c2 2 | f1 | 2 d4 bf | f'2 g | \m c,1 c2_\fermata }
-  \relative d { f2 | g4 a bf4 4 | a2 g | f1 | bf,2 c4 d | g,2 c | \m f1 f2_\fermata }
+  \relative d {
+    f2 | d4 bf f bf | c2 2 | f1 | 2 d4 bf | f'2 g | \m c,1 c2_\fermata
+    f2 | g4 a bf4 4 | a2 g | f1 | bf,2 c4 d | g,2 c | \m f1 f2_\fermata
+  }
 }
 %% LYRICS
 verseA = \lyricmode {
