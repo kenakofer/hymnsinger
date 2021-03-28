@@ -13,6 +13,4 @@ sass-cache/
 *.swp
 .ruby-version
 .sass-cache/
-Gemfile
-Gemfile.lock
 vendor/
