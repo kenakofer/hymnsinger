@@ -1215,7 +1215,17 @@ Then it is the brave one chooses,
 while the coward stands aside
 till the multitude make virtue
 of the faith they had denied.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>James Russell Lowell, 1845</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/14</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/religion_fit_to_last.html">Religion fit to last</a></td><td class='tune-box'>JESOUS AHATONHIA (adapted)</td><td class='key-box'>G minor
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>James Russell Lowell, 1845</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/14</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/receive_our_thanks.html">Receive our thanks</a></td><td class='tune-box'>BE STILL AND KNOW</td><td class='key-box'>C major
+</td><td class='meter-box'>8.8.8</td><td class='composer-box'>Anonymous;
+arr. Anja and Kenan Schaefkofer, 2021</td><td class='lyric-box'><div>Receive our thanks
+for night and day,
+for food and shelter,
+rest and play,
+be here our guest,
+and with us stay.
+
+Amen.
+</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Refugee Blessing, anon.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/28</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/religion_fit_to_last.html">Religion fit to last</a></td><td class='tune-box'>JESOUS AHATONHIA (adapted)</td><td class='key-box'>G minor
 </td><td class='meter-box'>86.86.76.86</td><td class='composer-box'>French folk melody;
 arr. Kenan Schaefkofer, 2021</td><td class='lyric-box'><div>A voice within becomes distressed to see you taste the fruit,
 forbidden by your God and creed, respected since your youth:
