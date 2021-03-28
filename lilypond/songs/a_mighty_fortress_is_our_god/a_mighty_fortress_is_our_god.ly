@@ -15,7 +15,7 @@ title = \titleText "A mighty fortress is our God"
 poet = \twoLineSmallText "Text: Martin Luther, 1529, 1531" "tr. Frederick H. Hedge, 1852"
 copyright = \public_domain_notice "Kenan Schaefkofer"
 verseCount = 4
-tags = "english theist 4part"
+tags = "english christian 4part"
 dateAdded = "2021-03-28"
 \include "../../lib/header.ly"
 

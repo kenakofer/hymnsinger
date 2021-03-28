@@ -70,7 +70,7 @@ through him who with us sideth.
 Let goods and kindred go, this mortal life also.
 The body they may kill, God's truth abideth still.
 His kingdom is forever.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Martin Luther, 1529, 1531 tr. Frederick H. Hedge, 1852</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/28</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/abide_with_me.html">Abide with me</a></td><td class='tune-box'>EVENTIDE</td><td class='key-box'>E-flat major
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Martin Luther, 1529, 1531 tr. Frederick H. Hedge, 1852</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/28</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/abide_with_me.html">Abide with me</a></td><td class='tune-box'>EVENTIDE</td><td class='key-box'>E-flat major
 </td><td class='meter-box'>10 10.10 10</td><td class='composer-box'>William H. Monk, 1861</td><td class='lyric-box'><div>Abide with me; Fast falls the eventide,
 The darkness deepens; Lord, with me abide!
 When other helpers fail, and comforts flee,
