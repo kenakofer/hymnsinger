@@ -38,12 +38,4 @@ To set up Visual Studio Code for Lilypond development:
 
 ### Creating a new song
 
-To create a song called "My Song", run the script `scripts/new_song_from_template.sh my_song`. This just copies the a template file into a new file at `lilypond/songs/my_song/my_song.ly`.
-
-TODO: add more details.
-
-### Adding your new song to the website
-
-Email it to me or use a Github PR.
-
-TODO: add more details.
+Now that you have everything set up, read about [Creating a new song](how-to-new-song)
