@@ -129,7 +129,7 @@ postscoreText =
       \markup {
         \override #'(font-series . "regular")
         \fontsize #-1
-        \raise #5
+        \raise #0
         #text
       }
     #})

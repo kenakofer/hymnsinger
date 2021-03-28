@@ -1421,7 +1421,11 @@ Bless us with life that has no end, eternal life with you.
 Warm southern wind, blow softly here,
 Green sod above, lie light, lie light.
 Good night, dear heart, good night, good night.
-</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Robert Richardson, alt. Mark Twain, 1896</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">summer</a><a class="taglink" href="#">death</a></div></td><td class='date-added-box'>2021/01/30</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/we_are_people_of_gods_peace.html">We are people of God's peace</a></td><td class='tune-box'>AVE VIRGO VIRGINUM (GAUDEAMUS PARITER)</td><td class='key-box'>G major
+</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Robert Richardson, alt. Mark Twain, 1896</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">summer</a><a class="taglink" href="#">death</a></div></td><td class='date-added-box'>2021/01/30</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/way_way_way.html">Way way way</a></td><td class='tune-box'>WAY WAY WAY</td><td class='key-box'>E major
+</td><td class='meter-box'>irregular</td><td class='composer-box'>traditional Ojibwe lullaby; transcr. Frences Densmore, 1913</td><td class='lyric-box'><div>Way way way way way.
+Way way way way way.
+Way way way way way.
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Ojibwe traditional, 1913; Additional phrases suggested by Mark MacDonald</td><td class='tags-box'><div><a class="taglink" href="#">ojibwe</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/28</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/we_are_people_of_gods_peace.html">We are people of God's peace</a></td><td class='tune-box'>AVE VIRGO VIRGINUM (GAUDEAMUS PARITER)</td><td class='key-box'>G major
 </td><td class='meter-box'>76.76 D</td><td class='composer-box'>Johann Horn, 1544, alt. 1584</td><td class='lyric-box'><div>We are people of God's peace
 as a new creation.
 Love unites and strengthens us
