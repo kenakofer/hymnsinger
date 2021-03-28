@@ -34,7 +34,43 @@ Toggle:
 <th>Tags</th>
 <th>Added</th>
 </thead>
-<tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/abide_with_me.html">Abide with me</a></td><td class='tune-box'>EVENTIDE</td><td class='key-box'>E-flat major
+<tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/a_mighty_fortress_is_our_god.html">A mighty fortress is our God</a></td><td class='tune-box'>EIN FESTE BURG (rhythmic)</td><td class='key-box'>C major
+</td><td class='meter-box'>87.87.66.66.7</td><td class='composer-box'>Martin Luther, 1529, 1531</td><td class='lyric-box'><div>A mighty fortress is our God,
+a bulwark never failing.
+Our helper he amid the flood
+of mortal ills prevailing,
+
+for still our ancient foe doth seek to work us woe.
+His craft and pow'r are great, and arm'd with cruel hate,
+on earth is not his equal.
+
+Did we in our own strength confide,
+our striving would be losing,
+were not the right one on our side,
+the one of God's own choosing.
+
+Dost ask who that may be? Christ Jesus, it is he!
+Lord Sabaoth, his name, from age to age the same,
+and he must win the battle.
+
+And though this world, with devils filled,
+should threaten to undo us,
+wo will not fear, for God hath willed
+his truth to triumph through us.
+
+The prince of darkness grim, we tremble not for him.
+His rage we can endure, for lo, his doom is sure.
+One little word shall fell him.
+
+That word above all earthly pow'rs,
+no thanks to them, abideth.
+The Spirit and the gifts are ours,
+through him who with us sideth.
+
+Let goods and kindred go, this mortal life also.
+The body they may kill, God's truth abideth still.
+His kingdom is forever.
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Martin Luther, 1529, 1531 tr. Frederick H. Hedge, 1852</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/28</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/abide_with_me.html">Abide with me</a></td><td class='tune-box'>EVENTIDE</td><td class='key-box'>E-flat major
 </td><td class='meter-box'>10 10.10 10</td><td class='composer-box'>William H. Monk, 1861</td><td class='lyric-box'><div>Abide with me; Fast falls the eventide,
 The darkness deepens; Lord, with me abide!
 When other helpers fail, and comforts flee,
