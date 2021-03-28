@@ -14,7 +14,7 @@ Check out the [Full Index]({{ site.baseurl }}/hymn-index.html).
 
 ### How it's done
 
-I "typeset" songs using [Lilypond](http://lilypond.org/). Lilypond turns a musical code file into PDF, PNG, and MIDI files which are all provided here for download. Of course, check out the [github project](https://github.com/kenanbit/hymn-singer) to view the source files for the songs and make your own changes.
+We "typeset" songs using [Lilypond](http://lilypond.org/). Lilypond turns a musical code file into PDF, PNG, and MIDI files which are all provided here for download. Of course, check out the [github project](https://github.com/kenanbit/hymn-singer) to view the source files for the songs and make your own changes.
 
 Or, use this form to [request an added song](https://forms.gle/Qp4bG7xFFih38bsW7). Ensure that:
  1. The copyright is permissive or it is in public domain
@@ -22,4 +22,4 @@ Or, use this form to [request an added song](https://forms.gle/Qp4bG7xFFih38bsW7
 
 Or, [typeset a song yourself]({{ site.baseurl }}{% link contributing.md %}), and get it added here. Collaborators are great!
 
-**Regarding copyright**, the songs hosted here have, to the best of my research, no copyright restriction. Please reach out using [this form](https://forms.gle/5KbHAhX4nenMB4sC6) if I have erred and included a restricted work.
+**Regarding copyright**, the songs hosted here have, to the best of our research, no copyright restriction. Please reach out using [this form](https://forms.gle/5KbHAhX4nenMB4sC6) if we have erred and included a restricted work.

@@ -27,9 +27,9 @@ The `\include` files do a lot of setup and formatting, such that song file can s
 
 ### Adding your new song to the website
 
-Email it to me or use a Github PR.
+[Email it](mailto:kbitikofer@gmail.com) or use a Github pull request.
 
-### Appendix: Ok, but what if I want to do [weird special-case thing?]
+### Appendix: How do I do [weird special-case thing?]
 
 Here are a list of common Lilypond tasks that are easy to forget, and an example song that does it well:
 

@@ -23,7 +23,7 @@ To set up Visual Studio Code for Lilypond development:
 1. Click on the Extensions icon tab on the left side of the screen (Ctrl+Shift+X)
 1. Install the `Lilypond` extension. This adds syntax highlighting to .ly files.
 1. Install the `vscode-pdf` extension. This extension allows you to open PDFs for viewing, so you can check your work without leaving vscode.
-1. Install the `VSLilyPond` extension (This will automatically install two other lilypond extensions). These extensions: run lilypond whenever a .ly file is saved; generate PDF and MIDI outputs in the same directory; provide error highlighting, autocomplete, code formatting, and midi input for note entry (I have not tried using this yet).
+1. Install the `VSLilyPond` extension (This will automatically install two other lilypond extensions). These extensions: run lilypond whenever a .ly file is saved; generate PDF and MIDI outputs in the same directory; provide error highlighting, autocomplete, code formatting, and midi input for note entry (haven't tried using this yet).
 1. The installed extensions look like this:
 ![VSCode Extensions screenshot](assets/img/vscode-extensions.png)
 1. Exit and restart VSCode for extensions to take full effect

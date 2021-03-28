@@ -8,7 +8,13 @@ This is a project to make or take hymns with permissive copyright status, typese
      - Ability to change volume on a per-part basis
  - Multiple formats available
  - Full mobile support (issues with android firefox at the moment)
- - I can add to the site by simply adding a new lilypond file
+ - One can add to the site by simply adding a new lilypond file
+
+### Running the website locally:
+ - See github pages documentation on [running a site locally](https://docs.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll)
+ - Before you run `bundle install`, navigate into `hymn-singer/docs`, because the Gemfile is there.
+ - If `bundle install` complains about `Gemfile.lock` in the same directory, delete it.
+ - After you `bundle exec jekyll serve` successfully, you can see the site at <http://127.0.0.1:4000> or something similar.
 
 ### Possible TODOs:
   - Differentiate fonts png versus pdf?
@@ -43,3 +49,9 @@ This is a project to make or take hymns with permissive copyright status, typese
     }
   - Phrasing slurs \( \) are not dashed after partcombine
   - Enter multiple lines of lyrics above staff
+  - Need to fix linux css on song page:
+    - Button text too large?
+    - Maybe allow larger center column?
+    - Contrast on sliders is bad
+  - Autofocus the index page search bar
+
