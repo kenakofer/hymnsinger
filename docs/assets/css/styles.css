@@ -296,6 +296,18 @@ header ul {
         padding: 0;
     }
 }
+@media print, screen and (min-width: 961px) {
+    section {
+        float: left;
+        margin-left: 290px;
+        width: initial;
+        padding-right: 20px;
+    }
+    .wrapper {
+        width: 100%;
+        max-width: 1190px;
+    }
+}
 
 thead, tbody, tfoot { vertical-align: middle } /* add this rule*/
 td, th, tr { vertical-align: inherit } /* add this rule */
