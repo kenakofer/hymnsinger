@@ -34,43 +34,7 @@ Toggle:
 <th>Tags</th>
 <th>Added</th>
 </thead>
-<tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/a_mighty_fortress_is_our_god.html">A mighty fortress is our God</a></td><td class='tune-box'>EIN FESTE BURG (rhythmic)</td><td class='key-box'>C major
-</td><td class='meter-box'>87.87.66.66.7</td><td class='composer-box'>Martin Luther, 1529, 1531</td><td class='lyric-box'><div>A mighty fortress is our God,
-a bulwark never failing.
-Our helper he amid the flood
-of mortal ills prevailing,
-
-for still our ancient foe doth seek to work us woe.
-His craft and pow'r are great, and arm'd with cruel hate,
-on earth is not his equal.
-
-Did we in our own strength confide,
-our striving would be losing,
-were not the right one on our side,
-the one of God's own choosing.
-
-Dost ask who that may be? Christ Jesus, it is he!
-Lord Sabaoth, his name, from age to age the same,
-and he must win the battle.
-
-And though this world, with devils filled,
-should threaten to undo us,
-wo will not fear, for God hath willed
-his truth to triumph through us.
-
-The prince of darkness grim, we tremble not for him.
-His rage we can endure, for lo, his doom is sure.
-One little word shall fell him.
-
-That word above all earthly pow'rs,
-no thanks to them, abideth.
-The Spirit and the gifts are ours,
-through him who with us sideth.
-
-Let goods and kindred go, this mortal life also.
-The body they may kill, God's truth abideth still.
-His kingdom is forever.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Martin Luther, 1529, 1531 tr. Frederick H. Hedge, 1852</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/28</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/abide_with_me.html">Abide with me</a></td><td class='tune-box'>EVENTIDE</td><td class='key-box'>E-flat major
+<tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/abide_with_me.html">Abide with me</a></td><td class='tune-box'>EVENTIDE</td><td class='key-box'>E-flat major
 </td><td class='meter-box'>10 10.10 10</td><td class='composer-box'>William H. Monk, 1861</td><td class='lyric-box'><div>Abide with me; Fast falls the eventide,
 The darkness deepens; Lord, with me abide!
 When other helpers fail, and comforts flee,
@@ -238,7 +202,43 @@ but God, who called me here below, will be forever mine.
 
 When we've been there ten thousand years, bright shining as the sun,
 we've no less days to sing God's praise than when we'd first begun.
-</div></td><td class='stanzas-box'>6.</td><td class='poet-box'>John Newton, 1779 (Sts. 1-5), 1790 (St. 6)</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/11</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/angels_we_have_heard.html">Angels we have heard on high</a></td><td class='tune-box'>GLORIA</td><td class='key-box'>F major
+</div></td><td class='stanzas-box'>6.</td><td class='poet-box'>John Newton, 1779 (Sts. 1-5), 1790 (St. 6)</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/11</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/a_mighty_fortress_is_our_god.html">A mighty fortress is our God</a></td><td class='tune-box'>EIN FESTE BURG (rhythmic)</td><td class='key-box'>C major
+</td><td class='meter-box'>87.87.66.66.7</td><td class='composer-box'>Martin Luther, 1529, 1531</td><td class='lyric-box'><div>A mighty fortress is our God,
+a bulwark never failing.
+Our helper he amid the flood
+of mortal ills prevailing,
+
+for still our ancient foe doth seek to work us woe.
+His craft and pow'r are great, and arm'd with cruel hate,
+on earth is not his equal.
+
+Did we in our own strength confide,
+our striving would be losing,
+were not the right one on our side,
+the one of God's own choosing.
+
+Dost ask who that may be? Christ Jesus, it is he!
+Lord Sabaoth, his name, from age to age the same,
+and he must win the battle.
+
+And though this world, with devils filled,
+should threaten to undo us,
+wo will not fear, for God hath willed
+his truth to triumph through us.
+
+The prince of darkness grim, we tremble not for him.
+His rage we can endure, for lo, his doom is sure.
+One little word shall fell him.
+
+That word above all earthly pow'rs,
+no thanks to them, abideth.
+The Spirit and the gifts are ours,
+through him who with us sideth.
+
+Let goods and kindred go, this mortal life also.
+The body they may kill, God's truth abideth still.
+His kingdom is forever.
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Martin Luther, 1529, 1531 tr. Frederick H. Hedge, 1852</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/28</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/angels_we_have_heard.html">Angels we have heard on high</a></td><td class='tune-box'>GLORIA</td><td class='key-box'>F major
 </td><td class='meter-box'>77.77 with refrain</td><td class='composer-box'>Traditional French carol, 1855</td><td class='lyric-box'><div>Angels we have heard on high, singing sweetly through the night,
 and the mountains in reply echoing their brave delight.
 
@@ -673,44 +673,7 @@ This is the bond of perfectness,
 thy spotless charity.
 O let us still, we pray, possess
 the mind that was in thee.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Charles Wesley, 1742</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/01/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/i_to_the_hills.html">I to the hills will lift my eyes</a></td><td class='tune-box'>DUNDEE</td><td class='key-box'>D major
-</td><td class='meter-box'>CM</td><td class='composer-box'>The CL. Psalmes of David, 1615</td><td class='lyric-box'><div>I to the hills will lift my eyes. From whence shall come my aid?
-My help is from the Lord alone, who heav'n and earth has made.
-
-God will not let your foot be moved, your guardian never sleeps.
-God's watchful and unslumb'ring care protects and safely keeps.
-
-Your faithful keeper is the Lord, your shelter and your shade.
-'Neath sun or moon, by day or night, you shall not be afraid.
-
-From evil God will keep you safe, provide for all you need.
-Your going out, your coming in, God will forever lead.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>The New Metrical Version of the Psalms, 1912, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/13</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/i_walk_the_unfrequented_road.html">I walk the unfrequented road</a></td><td class='tune-box'>CONSOLATION</td><td class='key-box'>F minor
-</td><td class='meter-box'>CM</td><td class='composer-box'>John Wyeth, 1813</td><td class='lyric-box'><div>I walk the unfrequented road
-with open eye and ear;
-I watch afield the farmer load
-the bounty of the year.
-
-I filch the fruit of no one's toil—
-no trespasser am I—
-and yet I reap from every soil
-and from the boundless sky
-
-I gather where I did not sow,
-and bind the mystic sheaf,
-the amber air, the river's flow,
-the rustle of the leaf.
-
-A beauty springtime never knew
-haunts all the quiet ways,
-and sweeter shines the landscape through
-its veil of autumn haze.
-
-I face the hills, the streams, the wood,
-and feel with all akin;
-my heart expands; their fortitude
-and peace and joy flow in.
-</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Frederick Lucian Hosmer, 1913</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">autumn</a></div></td><td class='date-added-box'>2021/01/31</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/in_the_rifted_rock.html">In the Rifted Rock (Wehrlos und verlassen)</a></td><td class='tune-box'>RIFTED ROCK</td><td class='key-box'>E major
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Charles Wesley, 1742</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/01/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/in_the_rifted_rock.html">In the Rifted Rock (Wehrlos und verlassen)</a></td><td class='tune-box'>RIFTED ROCK</td><td class='key-box'>E major
 </td><td class='meter-box'>87.87 with refrain</td><td class='composer-box'>W. Warren Bentley, 1879</td><td class='lyric-box'><div>In the rifted Rock I'm resting, safely sheltered, I abide.
 There no foes nor storms assail me, while within the cleft I hide.
 
@@ -748,7 +711,72 @@ Kommt dann meine letzte Stunde,
 geh' ich ein zur ew'gen Ruh';
 und du deckst mit deinen Flügeln
 ewiglich dein Kindlein zu.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>English; Mary Dagworthy James, 1878; German; Carl Röhl, 1895</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">german</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/12</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/jesu_joy_of_our_desiring.html">Jesu, joy of our desiring</a></td><td class='tune-box'>WERDE MUNTER</td><td class='key-box'>G major
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>English; Mary Dagworthy James, 1878; German; Carl Röhl, 1895</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">german</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/12</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/i_sing_the_mighty_power.html">I sing the mighty power of God</a></td><td class='tune-box'>ELLACOMBE</td><td class='key-box'>B-flat major
+</td><td class='meter-box'>CMD</td><td class='composer-box'>Gesangbuch der Herzogl, 1784;
+arr. Willliam H. Monk, 1868</td><td class='lyric-box'><div>I sing the mighty pow'r of God,
+that made the mountains rise,
+that spread the flowing seas abroad
+and built the lofty skies.
+I sing the wisdom that ordained
+the sun to rule the day.
+The moon shines full at God's command
+and all the stars obey.
+
+I sing the goodness of the Lord,
+that filled the earth with food.
+God formed the creatures with a word,
+and then pronounced them good.
+Lord, how thy wonders are displayed,
+where'er I turn my eye,
+if I survey the ground I tread,
+or gaze upon the sky!
+
+There's not a plant or flow'r below,
+but makes thy glories known,
+and clouds arise, and tempests blow,
+by order from thy throne.
+While all that borrows life from thee
+is ever in thy care,
+there's not a place where we can flee
+but God is present there.
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Isaac Watts, 1715, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/29</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/i_to_the_hills.html">I to the hills will lift my eyes</a></td><td class='tune-box'>DUNDEE</td><td class='key-box'>D major
+</td><td class='meter-box'>CM</td><td class='composer-box'>The CL. Psalmes of David, 1615</td><td class='lyric-box'><div>I to the hills will lift my eyes. From whence shall come my aid?
+My help is from the Lord alone, who heav'n and earth has made.
+
+God will not let your foot be moved, your guardian never sleeps.
+God's watchful and unslumb'ring care protects and safely keeps.
+
+Your faithful keeper is the Lord, your shelter and your shade.
+'Neath sun or moon, by day or night, you shall not be afraid.
+
+From evil God will keep you safe, provide for all you need.
+Your going out, your coming in, God will forever lead.
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>The New Metrical Version of the Psalms, 1912, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/13</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/i_walk_the_unfrequented_road.html">I walk the unfrequented road</a></td><td class='tune-box'>CONSOLATION</td><td class='key-box'>F minor
+</td><td class='meter-box'>CM</td><td class='composer-box'>John Wyeth, 1813</td><td class='lyric-box'><div>I walk the unfrequented road
+with open eye and ear;
+I watch afield the farmer load
+the bounty of the year.
+
+I filch the fruit of no one's toil—
+no trespasser am I—
+and yet I reap from every soil
+and from the boundless sky
+
+I gather where I did not sow,
+and bind the mystic sheaf,
+the amber air, the river's flow,
+the rustle of the leaf.
+
+A beauty springtime never knew
+haunts all the quiet ways,
+and sweeter shines the landscape through
+its veil of autumn haze.
+
+I face the hills, the streams, the wood,
+and feel with all akin;
+my heart expands; their fortitude
+and peace and joy flow in.
+</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Frederick Lucian Hosmer, 1913</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">autumn</a></div></td><td class='date-added-box'>2021/01/31</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/jesu_joy_of_our_desiring.html">Jesu, joy of our desiring</a></td><td class='tune-box'>WERDE MUNTER</td><td class='key-box'>G major
 </td><td class='meter-box'>87.87.88.77</td><td class='composer-box'>Johann Schopp, 1642, harm. J. S. Bach, 1716</td><td class='lyric-box'><div>Jesu, joy of our desiring, holy wisdom, love most bright,
 drawn by thee, our souls aspiring soar to uncreated light.
 Word of God, our flesh that fashioned, with the fire of life impassioned,
@@ -1119,44 +1147,7 @@ he bore the shameful cross and death, for us at length gave up his breath.
 
 Eternal glory to our God for love so deep, so high, so broad;
 the Trinity whom we adore forever and forevermore.
-</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Thomas a Kempis, 15th c. trans. Benjamin Webb 1851, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/04</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_sacred_head_now_wounded.html">O sacred Head, now wounded</a></td><td class='tune-box'>HERZLICH TUT MICH VERLANGEN</td><td class='key-box'>D major
-</td><td class='meter-box'>76.76 D</td><td class='composer-box'>Hans L. Hassler, 1601;
-arr. J. S. Bach, 1729</td><td class='lyric-box'><div>O sacred Head, now wounded,
-with grief and shame weighed down,
-now scornfully surrounded
-with thorns, thine only crown!
-O sacred Head, what glory,
-what bliss till now was thine!
-Yet, though despised and gory,
-I joy to call thee mine.
-
-What thou, my Lord, hast suffered
-was all for sinners' gain.
-Mine, mine was the transgression,
-but thine the deadly pain.
-Lo, here I fall, my Savior!
-'Tis I deserve thy place.
-Look on me with thy favor,
-and grant to me thy grace.
-
-What language shall I borrow
-to thank thee, dearest Friend,
-for this, thy dying sorrow,
-thy pity without end?
-Oh, make me thine forever,
-and should I fainting be,
-Lord, let me never, never
-outlive my love to thee.
-
-Be near when I am dying,
-oh, show thy cross to me,
-and for my rescue, flying,
-come, Lord, and set me free!
-These eyes, new faith receiving,
-from Jesus shall not move,
-for one who dies believing
-dies safely, through thy love.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Paul Gerhardt, 1656; tr. James W. Alexander, 1861</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">death</a></div></td><td class='date-added-box'>2021/03/22</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/once_in_royal_davids_city.html">Once in royal David's city</a></td><td class='tune-box'>IRBY</td><td class='key-box'>F major
+</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Thomas a Kempis, 15th c. trans. Benjamin Webb 1851, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/04</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/once_in_royal_davids_city.html">Once in royal David's city</a></td><td class='tune-box'>IRBY</td><td class='key-box'>F major
 </td><td class='meter-box'>87.87.77</td><td class='composer-box'>Henry John Gauntlett, 1849;
 arr. Arthur Henry Mann, 1919</td><td class='lyric-box'><div>Once in royal David's city
 stood a lowly cattle shed,
@@ -1215,7 +1206,44 @@ Then it is the brave one chooses,
 while the coward stands aside
 till the multitude make virtue
 of the faith they had denied.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>James Russell Lowell, 1845</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/14</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/receive_our_thanks.html">Receive our thanks</a></td><td class='tune-box'>BE STILL AND KNOW</td><td class='key-box'>C major
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>James Russell Lowell, 1845</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/14</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_sacred_head_now_wounded.html">O sacred Head, now wounded</a></td><td class='tune-box'>HERZLICH TUT MICH VERLANGEN</td><td class='key-box'>D major
+</td><td class='meter-box'>76.76 D</td><td class='composer-box'>Hans L. Hassler, 1601;
+arr. J. S. Bach, 1729</td><td class='lyric-box'><div>O sacred Head, now wounded,
+with grief and shame weighed down,
+now scornfully surrounded
+with thorns, thine only crown!
+O sacred Head, what glory,
+what bliss till now was thine!
+Yet, though despised and gory,
+I joy to call thee mine.
+
+What thou, my Lord, hast suffered
+was all for sinners' gain.
+Mine, mine was the transgression,
+but thine the deadly pain.
+Lo, here I fall, my Savior!
+'Tis I deserve thy place.
+Look on me with thy favor,
+and grant to me thy grace.
+
+What language shall I borrow
+to thank thee, dearest Friend,
+for this, thy dying sorrow,
+thy pity without end?
+Oh, make me thine forever,
+and should I fainting be,
+Lord, let me never, never
+outlive my love to thee.
+
+Be near when I am dying,
+oh, show thy cross to me,
+and for my rescue, flying,
+come, Lord, and set me free!
+These eyes, new faith receiving,
+from Jesus shall not move,
+for one who dies believing
+dies safely, through thy love.
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Paul Gerhardt, 1656; tr. James W. Alexander, 1861</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">death</a></div></td><td class='date-added-box'>2021/03/22</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/receive_our_thanks.html">Receive our thanks</a></td><td class='tune-box'>BE STILL AND KNOW</td><td class='key-box'>C major
 </td><td class='meter-box'>8.8.8</td><td class='composer-box'>Anonymous;
 arr. Anja and Kenan Schaefkofer, 2021</td><td class='lyric-box'><div>Receive our thanks
 for night and day,
