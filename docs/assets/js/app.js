@@ -32,6 +32,7 @@ var click_play = function() {
 }
 
 var play = function() {
+    ac.resume(); // Needed for safari, which doesn't allow audio to play on page load, only on UI events
 	Player.play();
 	document.getElementById('play-button').innerHTML = 'Pause';
 }
@@ -55,9 +56,12 @@ var note_playing_on_channel = {
 }
 
 //Soundfont.instrument(ac, 'https://raw.githubusercontent.com/gleitz/midi-js-soundfonts/gh-pages/MusyngKite/acoustic_guitar_nylon-mp3.js').then(function (instrument) {
-Soundfont.instrument(ac, 'https://raw.githubusercontent.com/gleitz/midi-js-soundfonts/gh-pages/FluidR3_GM/acoustic_grand_piano-ogg.js').then(function (instrument) {
 
-	loadArrayBuffer = function(buffer) {
+// Ogg does not work in safari for some reason, so we'll stick with mp3 for now.
+//Soundfont.instrument(ac, 'https://raw.githubusercontent.com/gleitz/midi-js-soundfonts/gh-pages/FluidR3_GM/acoustic_grand_piano-ogg.js').then(function (instrument) {
+Soundfont.instrument(ac, 'https://raw.githubusercontent.com/gleitz/midi-js-soundfonts/gh-pages/FluidR3_GM/acoustic_grand_piano-mp3.js').then(function (instrument) {
+
+	setUpPlayer = function(buffer) {
 		Player = new MidiPlayer.Player(function(event) {
                         //console.log(event);
 			if (event.name == 'Note on') {
@@ -89,7 +93,7 @@ Soundfont.instrument(ac, 'https://raw.githubusercontent.com/gleitz/midi-js-sound
     oReq.responseType = "arraybuffer";
     oReq.onload = function(oEvent) {
       window.midi_buffer = oReq.response;
-      loadArrayBuffer(window.midi_buffer);
+      setUpPlayer(window.midi_buffer);
       changeTempo(Player.tempo);
     };
     oReq.send();
