@@ -14,7 +14,6 @@ git add "lilypond/songs/$BASE_NAME"
 git add docs/local_lilypond_outputs/$BASE_NAME*
 git add docs/listing/$BASE_NAME*
 git add docs/hymn-index*
-git add docs/tags
 
 # Commit and push
 git commit -e -m "Add new song \"$BASE_NAME\""
