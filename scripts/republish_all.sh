@@ -14,6 +14,7 @@ git add "lilypond/songs/"
 git add docs/local_lilypond_outputs/
 git add docs/listing/
 git add docs/hymn-index*
+git add docs/data*
 
 # Commit and push
 git commit -e -m "Republish all songs"
