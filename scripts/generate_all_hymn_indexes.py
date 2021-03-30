@@ -235,11 +235,15 @@ def output_header_info(song_file_base, song_title, lyrics, tags, output_file):
         f.write("\n\n")
         f.write("{% include choice_and_music.html %}")
 
-def add_tune_text_pair(tune, song_title):
-    data = json.load(open(TUNE_TEXT_FILEPATH, "r"))
+def add_tune_text_pair(tune, song_title, song_file_base):
+    record = [tune, song_title, song_file_base]
+    incomplete_record = [tune, song_title]
 
-    if data and not [tune, song_title] in data:
-        data.append([tune, song_title])
+    data = json.load(open(TUNE_TEXT_FILEPATH, "r"))
+    if data and not record in data:
+        if incomplete_record in data:
+            data.remove(incomplete_record)
+        data.append(record)
         data.sort(key=lambda l: l[0])
         write_out_tune_text_json(data)
 
@@ -281,4 +285,4 @@ if __name__ == "__main__":
 
     song_markdown_file = "docs/listing/"+song_file_base+".md"
     output_header_info(song_file_base, song_title, all_lyrics, all_tags, song_markdown_file)
-    add_tune_text_pair(tune, song_title)
+    add_tune_text_pair(tune, song_title, song_file_base)
