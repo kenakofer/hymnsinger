@@ -54,4 +54,5 @@ This is a project to make or take hymns with permissive copyright status, typese
     - Maybe allow larger center column?
     - Contrast on sliders is bad
   - Autofocus the index page search bar
-
+  - Add "Alternate Lyrics" column
+    - Tricky, because it's a many-to-many relationship.

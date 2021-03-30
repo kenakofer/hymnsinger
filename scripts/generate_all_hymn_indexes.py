@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import sys
 import os
+import json
 
 meter_words = [
     "CM",
@@ -13,6 +14,8 @@ meter_words = [
     "with",
     "refrain"
 ]
+
+TUNE_TEXT_FILEPATH = "docs/data/tune_text_pairs.json"
 
 def get_tags(all_lines):
     for i, line in enumerate(all_lines):
@@ -232,6 +235,24 @@ def output_header_info(song_file_base, song_title, lyrics, tags, output_file):
         f.write("\n\n")
         f.write("{% include choice_and_music.html %}")
 
+def add_tune_text_pair(tune, song_title):
+    data = json.load(open(TUNE_TEXT_FILEPATH, "r"))
+
+    if data and not [tune, song_title] in data:
+        data.append([tune, song_title])
+        data.sort(key=lambda l: l[0])
+        write_out_tune_text_json(data)
+
+def write_out_tune_text_json(data):
+    with open(TUNE_TEXT_FILEPATH, "w") as f:
+        f.write("[\n")
+        for i, d in enumerate(data):
+            f.write(json.dumps(d))
+            if i < len(data) - 1:
+                f.write(",")
+            f.write("\n")
+        f.write("]")
+
 if __name__ == "__main__":
     file_path = sys.argv[1]
     song_file_base = os.path.basename(file_path)
@@ -260,6 +281,4 @@ if __name__ == "__main__":
 
     song_markdown_file = "docs/listing/"+song_file_base+".md"
     output_header_info(song_file_base, song_title, all_lyrics, all_tags, song_markdown_file)
-
-
-
+    add_tune_text_pair(tune, song_title)
