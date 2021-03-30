@@ -1314,7 +1314,35 @@ Oh, the deep, deep love of Jesus,
 'tis a heav'n of heav'ns to me;
 and it lifts me up to glory,
 for it lifts me up to thee!
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>S. Trevor Francis, 1890</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/30</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/receive_our_thanks.html">Receive our thanks</a></td><td class='tune-box'>BE STILL AND KNOW</td><td class='key-box'>C major
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>S. Trevor Francis, 1890</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/30</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/praise_god_old_hundredth.html">Praise God (Doxology)</a></td><td class='tune-box'>OLD HUNDREDTH</td><td class='key-box'>G major
+</td><td class='meter-box'>LM</td><td class='composer-box'>Louis Bourgeois, Genevan Psalter, 1551</td><td class='lyric-box'><div>Praise God from whom all blessings flow;
+praise God all creatures here below;
+praise God above, ye heav'nly host;
+praise Father, Son, and Holy Ghost.
+
+  Amen
+
+Gloire à Dieu, notre Créateur;
+Gloire à Christ, notre Rédempteur;
+Gloire à l'Esprit, Consolateur!
+Louange et gloire à Dieu Sauveur.
+
+  Amen
+
+A la Divina Trinidad,
+todo unidos alabad,
+con alegria, y gratitud,
+su amor y gracia celebrad.
+
+  Amen
+
+Ehr sei dem Vater und dem Sohn
+dem Heil'gen Geist in einem Thron,
+der heiligen Dreieinigkeit,
+sei Lob und Preis in Ewigkeit.
+
+  Amen
+</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Thomas Ken, A Manual of Prayers, 1695, alt. Spanish tr. anon.; French tr. anon.; German tr. anon.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">french</a><a class="taglink" href="#">spanish</a><a class="taglink" href="#">german</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/30</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/receive_our_thanks.html">Receive our thanks</a></td><td class='tune-box'>BE STILL AND KNOW</td><td class='key-box'>C major
 </td><td class='meter-box'>8.8.8</td><td class='composer-box'>Anonymous;
 arr. Anja and Kenan Schaefkofer, 2021</td><td class='lyric-box'><div>Receive our thanks
 for night and day,
