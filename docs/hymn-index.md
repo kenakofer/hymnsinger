@@ -673,7 +673,43 @@ This is the bond of perfectness,
 thy spotless charity.
 O let us still, we pray, possess
 the mind that was in thee.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Charles Wesley, 1742</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/01/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/in_the_rifted_rock.html">In the Rifted Rock (Wehrlos und verlassen)</a></td><td class='tune-box'>RIFTED ROCK</td><td class='key-box'>E major
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Charles Wesley, 1742</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/01/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/in_our_day_of_thanksgiving.html">In our day of thanksgiving</a></td><td class='tune-box'>ST. CATHERINE'S COURT</td><td class='key-box'>D major
+</td><td class='meter-box'>13.12.13.11</td><td class='composer-box'>Richard Strutt, 1925</td><td class='lyric-box'><div>In our day of thanksgiving
+one psalm let us offer
+for the saints who before us
+have found the reward;
+when the shadow of death
+fell upon them, we sorrowed,
+but now we rejoice
+that they rest in the Lord
+
+In the morning of life,
+and at noon, and at evening,
+they were gathered to heav'n
+from our worship below;
+but not before God's love
+at the font and the altar,
+had clothed them with grace
+for the way they should go.
+
+Common stones that have echoed
+their praises are holy,
+and the dust of the ground
+where their feet have once trod;
+yet in this place confessed
+they were stargers and pilgrims,
+and still they were seeking
+the city of God.
+
+Sing praise, then, and thanks
+that God's love here has found them
+whose journey is ended,
+whose perils are past;
+they believed in the light;
+and its glory is round them,
+where the clouds of earth’s
+sorrows are lifted at last.
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>William H. Draper, 1916</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">death</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/29</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/in_the_rifted_rock.html">In the Rifted Rock (Wehrlos und verlassen)</a></td><td class='tune-box'>RIFTED ROCK</td><td class='key-box'>E major
 </td><td class='meter-box'>87.87 with refrain</td><td class='composer-box'>W. Warren Bentley, 1879</td><td class='lyric-box'><div>In the rifted Rock I'm resting, safely sheltered, I abide.
 There no foes nor storms assail me, while within the cleft I hide.
 
