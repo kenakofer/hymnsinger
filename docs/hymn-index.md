@@ -271,7 +271,12 @@ O my soul, be not dismayed.
 Trust in God, who is our aid.
 Hope and joy God's love provides you,
 'tis God's hand alone that guides you.
-</div></td><td class='stanzas-box'>2.</td><td class='poet-box'>Based on Psalm 42, Christine T. Curtis, 1939, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/be_still_my_soul.html">Be still my soul</a></td><td class='tune-box'>FINLANDIA</td><td class='key-box'>F major
+</div></td><td class='stanzas-box'>2.</td><td class='poet-box'>Based on Psalm 42, Christine T. Curtis, 1939, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/be_still_and_know.html">Be still and know</a></td><td class='tune-box'>BE STILL AND KNOW</td><td class='key-box'>C major
+</td><td class='meter-box'>8.8.8</td><td class='composer-box'>Anonymous;
+arr. Anja and Kenan Schaefkofer, 2021</td><td class='lyric-box'><div>Be still and know that I am God.
+Be still and know that I am God.
+Be still and know that I am God.
+</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Psalm 46:10</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/30</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/be_still_my_soul.html">Be still my soul</a></td><td class='tune-box'>FINLANDIA</td><td class='key-box'>F major
 </td><td class='meter-box'>10.10.10</td><td class='composer-box'>Jean Sibelius, 1899</td><td class='lyric-box'><div>Be still, my soul; the Lord is on thy side;
 bear patiently the cross of grief or pain;
 leave to thy God to order and provide;
