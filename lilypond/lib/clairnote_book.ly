@@ -2,6 +2,7 @@ system-system-spacing.padding = #16
 \book {
   \prescore_text
   \bookOutputSuffix "clairnote" \score {
+    \removeWithTag #'midionly
     \fillClairScore
       { \removeWithTag #'midionly \soprano }
       { \removeWithTag #'midionly \alto }

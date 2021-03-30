@@ -4,6 +4,7 @@
     \layout { \context { \Voice {
       \set shapeNoteStyles = ##(doThin reThin miThin faThin sol laThin tiThin)
     } } }
+    \removeWithTag #'midionly
     \fillTradScore
       { \removeWithTag #'midionly \soprano }
       { \removeWithTag #'midionly \alto }
