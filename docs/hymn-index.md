@@ -787,7 +787,7 @@ Your faithful keeper is the Lord, your shelter and your shade.
 
 From evil God will keep you safe, provide for all you need.
 Your going out, your coming in, God will forever lead.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>The New Metrical Version of the Psalms, 1912, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/13</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/i_walk_the_unfrequented_road.html">I walk the unfrequented road</a></td><td class='tune-box'>CONSOLATION</td><td class='key-box'>F minor
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>The New Metrical Version of the Psalms, 1912, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/13</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/i_walk_the_unfrequented_road.html">I walk the unfrequented road</a></td><td class='tune-box'>CONSOLATION (MORNING SONG)</td><td class='key-box'>F minor
 </td><td class='meter-box'>CM</td><td class='composer-box'>John Wyeth, 1813</td><td class='lyric-box'><div>I walk the unfrequented road
 with open eye and ear;
 I watch afield the farmer load
@@ -1279,7 +1279,37 @@ These eyes, new faith receiving,
 from Jesus shall not move,
 for one who dies believing
 dies safely, through thy love.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Paul Gerhardt, 1656; tr. James W. Alexander, 1861</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">death</a></div></td><td class='date-added-box'>2021/03/22</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/receive_our_thanks.html">Receive our thanks</a></td><td class='tune-box'>BE STILL AND KNOW</td><td class='key-box'>C major
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Paul Gerhardt, 1656; tr. James W. Alexander, 1861</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">death</a></div></td><td class='date-added-box'>2021/03/22</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_the_deep_deep_love.html">O the deep, deep love of Jesus</a></td><td class='tune-box'>EBENEZER</td><td class='key-box'>G minor
+</td><td class='meter-box'>87.87.87.87</td><td class='composer-box'>Thomas John Williams, 1890</td><td class='lyric-box'><div>O the deep, deep love of Jesus!
+Vast, unmeasured, boundless, free!
+Rolling as a mighty ocean
+in its fullness over me!
+
+Underneath me, all aroundme,
+is the current of thy love;
+leading onward, leading homeward,
+to thy glorious rest above.
+
+O the deep, deep love of Jesus!
+Spread his praise from shore to shore!
+How he loves us, ever loves us,
+changes never, nevermore!
+
+How he watches o'er his loved ones,
+died to call them all his own;
+how for them he's interceding,
+watching o'er them from the throne!
+
+O the deep, deep love of Jesus,
+love of ev'ry love the best!
+'Tis an ocean vast of blessing,
+'tis a haven sweet of rest!
+
+Oh, the deep, deep love of Jesus,
+'tis a heav'n of heav'ns to me;
+and it lifts me up to glory,
+for it lifts me up to thee!
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>S. Trevor Francis, 1890</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/30</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/receive_our_thanks.html">Receive our thanks</a></td><td class='tune-box'>BE STILL AND KNOW</td><td class='key-box'>C major
 </td><td class='meter-box'>8.8.8</td><td class='composer-box'>Anonymous;
 arr. Anja and Kenan Schaefkofer, 2021</td><td class='lyric-box'><div>Receive our thanks
 for night and day,
