@@ -4,7 +4,7 @@
 
 %% TUNE INFO
 composer = \smallText "Music: John Wyeth, 1813"
-meter = \smallText "CONSOLATION CM"
+meter = \smallText "CONSOLATION (MORNING SONG) CM"
 hymnKey = \key f \minor
 hymnTime = \time 4/4
 quarternoteTempo = 100
