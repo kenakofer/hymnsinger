@@ -9,7 +9,7 @@
 title = \titleText "Grant us, God, the grace of giving"
 %subtitle = \smallText "Optional"
 poet = \smallText "Text: Robert Murray, 1880, alt."
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 1
 tags = "english theist 4part"
 dateAdded = "2021-03-14"

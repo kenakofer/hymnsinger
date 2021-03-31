@@ -9,7 +9,7 @@
 %% SONG INFO
 title = \titleText "Be still and know"
 poet = \smallText "Text: Psalm 46:10"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 1
 tags = "english theist 4part"
 dateAdded = "2021-03-30"

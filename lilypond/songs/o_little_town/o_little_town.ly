@@ -13,7 +13,7 @@ quarternoteTempo = 110
 %% SONG INFO
 title = \titleText "O little town of Bethlehem"
 poet = \smallText "Text: Phillips Brooks, 1874"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 4
 tags = "english christian 4part winter evening"
 dateAdded = "2021-01-12"

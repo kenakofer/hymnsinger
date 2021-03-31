@@ -13,7 +13,7 @@ quarternoteTempo = 100
 %% SONG INFO
 title = \titleText "I walk the unfrequented road"
 poet = \smallText "Text: Frederick Lucian Hosmer, 1913"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 5
 tags = "english secular 4part autumn"
 dateAdded = "2021-01-31"

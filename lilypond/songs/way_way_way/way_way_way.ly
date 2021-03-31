@@ -13,7 +13,7 @@ quarternoteTempo = 120
 %% SONG INFO
 title = \titleText "Way way way"
 poet = \twoLineSmallText "Text: Ojibwe traditional, 1913;" "Additional phrases suggested by Mark MacDonald"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 postscore_text = \postscoreText "Other lyrics from traditional prayers may be used: ''Alleluia,'' ''Christ have mercy,'' ''Kyrie eleison,'' ''Holy Spirit, Come''"
 verseCount = 4
 tags = "ojibwe secular 4part"

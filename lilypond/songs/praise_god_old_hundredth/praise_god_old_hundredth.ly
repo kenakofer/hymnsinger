@@ -13,7 +13,7 @@ quarternoteTempo = 100
 %% SONG INFO
 title = \titleText "Praise God (Doxology)"
 poet = \twoLineSmallText "Text: Thomas Ken, A Manual of Prayers, 1695, alt." "Spanish tr. anon.; French tr. anon.; German tr. anon."
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 1
 tags = "english french spanish german christian 4part"
 dateAdded = "2021-03-30"

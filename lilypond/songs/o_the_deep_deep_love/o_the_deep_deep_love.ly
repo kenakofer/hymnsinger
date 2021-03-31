@@ -9,7 +9,7 @@
 %% SONG INFO
 title = \titleText "O the deep, deep love of Jesus"
 poet = \smallText "Text: S. Trevor Francis, 1890"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 3
 tags = "english christian 4part"
 dateAdded = "2021-03-30"

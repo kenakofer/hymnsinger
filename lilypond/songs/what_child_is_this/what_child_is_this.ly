@@ -15,7 +15,7 @@ quarternoteTempo = 65
 %% SONG INFO
 title = \titleText "What Child is this"
 poet = \smallText "Text: William C. Dix, ca. 1865"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 3
 tags = "english christian 4part winter"
 dateAdded = "2021-01-12"

@@ -13,7 +13,7 @@ quarternoteTempo = 110
 %% SONG INFO
 title = \titleText "La paz de la tierra (The peace of the earth)"
 poet = \smallText "Text: Spanish; Guatemalan traditional; trans. Kenan Schaefkofer, 2021"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 1
 tags = "spanish english secular 4part"
 dateAdded = "2021-03-09"

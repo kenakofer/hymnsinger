@@ -8,7 +8,7 @@
 %% SONG INFO
 title = \titleText "No number tallies up my score"
 poet = \smallText "Text: Ralph Waldo Emerson (1803-1882), alt."
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 4
 tags = "english secular 4part"
 dateAdded = "2021-02-14"

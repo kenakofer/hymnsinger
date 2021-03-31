@@ -9,7 +9,7 @@
 %% SONG INFO
 title = \titleText "As the deer with eager yearning"
 poet = \smallText "Text: Based on Psalm 42, Christine T. Curtis, 1939, alt."
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 %prescore_text = \prescoreText "Uncomment to add text up and left of the score"
 %postscore_text = \postscoreText "Uncomment to add text down and left of the score"
 verseCount = 2

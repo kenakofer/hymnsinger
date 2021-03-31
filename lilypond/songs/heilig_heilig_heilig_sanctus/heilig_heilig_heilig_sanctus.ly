@@ -10,7 +10,7 @@ title = \titleText "Heilig, Heilig, Heilig (Holy, Holy, Holy)"
 poet = \smallText "Text: German; Johann P. Neumann, 1826; trans. Kenan Schaefkofer, 2021"
 verseCount = 2
 tags = "german english christian 4part"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 dateAdded = "2021-03-08"
 \include "../../lib/header.ly"
 

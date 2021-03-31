@@ -14,7 +14,7 @@ quarternoteTempo = 70
 %% SONG INFO
 title = \titleText "'Tis a gift to be simple"
 poet = \smallText "Text: Joseph Bracket, 1848"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 1
 tags = "english secular 4part"
 dateAdded = "2021-01-10"

@@ -13,7 +13,7 @@ quarternoteTempo = 106
 %% SONG INFO
 title = \titleText "Wade in the water"
 poet = \smallText "Text: African American Spiritual"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 3
 tags = "english christian 4part"
 dateAdded = "2021-03-20"

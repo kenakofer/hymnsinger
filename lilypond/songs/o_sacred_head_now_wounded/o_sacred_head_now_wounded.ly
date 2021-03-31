@@ -14,7 +14,7 @@ quarternoteTempo = 100
 %% SONG INFO
 title = \titleText "O sacred Head, now wounded"
 poet = \smallText "Text: Paul Gerhardt, 1656; tr. James W. Alexander, 1861"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 4
 tags = "english christian 4part death"
 dateAdded = "2021-03-22"

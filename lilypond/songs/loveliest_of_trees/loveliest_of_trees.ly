@@ -10,7 +10,7 @@ verseCount = 3
 tags = "english secular 4part spring"
 title = \titleText "Loveliest of trees"
 poet = \smallText "Text: A. E. Housman, 1896"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 dateAdded = "2021-02-07"
 \include "../../lib/header.ly"
 

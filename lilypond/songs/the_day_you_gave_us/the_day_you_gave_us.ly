@@ -13,7 +13,7 @@ quarternoteTempo = 110
 %% SONG INFO
 title = \titleText "The day you gave us, Lord"
 poet = \smallText "Text: John Ellerton, 1870"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 4
 tags = "english christian 4part evening"
 dateAdded = "2021-01-16"

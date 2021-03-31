@@ -14,7 +14,7 @@ quarternoteTempo = 100
 %% SONG INFO
 title = \titleText "In our day of thanksgiving"
 poet = \smallText "Text: William H. Draper, 1916"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 4
 tags = "english theist 4part death"
 dateAdded = "2021-03-29"

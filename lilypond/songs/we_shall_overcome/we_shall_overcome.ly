@@ -14,7 +14,7 @@ quarternoteTempo = 100
 %% SONG INFO
 title = \titleText "We shall overcome"
 poet = \smallText "Text: African-American Spiritual"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 3
 tags = "english secular 4part"
 dateAdded = "2021-01-12"

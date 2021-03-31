@@ -9,7 +9,7 @@ quarternoteTempo = 100
 %% SONG INFO
 title = \titleText "Calm soul of all things"
 poet = \smallText "Text: Matthew Arnold (1822-1888)"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 2
 tags = "english theist 4part"
 prescore_text = \prescoreText "Unison when sung in canon"

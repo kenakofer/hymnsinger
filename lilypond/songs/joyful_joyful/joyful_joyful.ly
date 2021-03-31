@@ -13,7 +13,7 @@ quarternoteTempo = 120
 %% SONG INFO
 title = \titleText "Joyful, joyful, we adore thee"
 poet = \smallText "Text: Henry van Dyke, 1907"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 4
 verseCount = 4
 tags = "english christian 4part"

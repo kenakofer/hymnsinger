@@ -13,7 +13,7 @@ quarternoteTempo = 130
 %% SONG INFO
 title = \titleText "Teach me thy truth"
 poet = \smallText "Text: Edith Witmer, 1937, alt."
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 4
 tags = "english theist 4part"
 dateAdded = "2021-03-23"

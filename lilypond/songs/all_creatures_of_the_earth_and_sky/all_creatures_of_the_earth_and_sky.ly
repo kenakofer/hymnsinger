@@ -9,7 +9,7 @@
 title = \titleText "All creatures of the earth and sky"
 subtitle = \smallText "See also: All creatures worship God most high"
 poet = \smallText "Text: Saint Francis of Assisi, 1225; alt."
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 5
 tags = "english theist 4part"
 dateAdded = "2021-03-05"

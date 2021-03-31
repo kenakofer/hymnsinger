@@ -14,7 +14,7 @@ quarternoteTempo = 120
 %% SONG INFO
 title = \titleText "I sing the mighty power of God"
 poet = \smallText "Text: Isaac Watts, 1715, alt."
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 3
 tags = "english theist 4part"
 dateAdded = "2021-03-29"
@@ -60,9 +60,9 @@ bass = {
 }
 songChords = \chords {
   \globalChordSymbols
-  s4 | bf2 2 g:m bf ef f bf bf 
+  s4 | bf2 2 g:m bf ef f bf bf
        bf2 2 g:m bf ef f bf bf
-  bf bf f f bf bf f f 
+  bf bf f f bf bf f f
        bf2 2 g:m bf ef f bf bf
 }
 
@@ -74,7 +74,7 @@ verseA = \lyricmode {
   and built the loft -- y skies.
   \l I sing the wis -- dom that or -- dained
   the sun to rule the day.
-  \l The moon shines full at God's com -- mand 
+  \l The moon shines full at God's com -- mand
   and all the stars o -- bey.
 }
 verseB = \lyricmode {
@@ -94,7 +94,7 @@ verseC = \lyricmode {
   by or -- der from thy throne.
   While all that bor -- rows life from thee
   is ev -- er in thy care,
-  there's not a place where we can flee 
+  there's not a place where we can flee
   but God is pres -- ent there.
 }
 

@@ -13,7 +13,7 @@ quarternoteTempo = 120
 %% SONG INFO
 title = \titleText "Now is the time approaching"
 poet = \smallText "Text: Jane Laurie Borthwick, 1859, alt."
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 3
 tags = "english secular 4part"
 dateAdded = "2021-03-23"

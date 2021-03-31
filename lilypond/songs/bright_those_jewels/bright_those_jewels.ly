@@ -10,7 +10,7 @@
 title = \titleText "Bright those jewels"
 %subtitle = \smallText "Optional"
 poet = \smallText "Text: Hosea Ballou II, 1849"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 3
 tags = "english secular 4part"
 dateAdded = "2021-03-22"

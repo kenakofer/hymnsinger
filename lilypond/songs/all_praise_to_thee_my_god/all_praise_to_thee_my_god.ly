@@ -8,7 +8,7 @@
 %% SONG INFO
 title = \titleText "All praise to thee, my God"
 poet = \smallText "Text: Thomas Ken, 1695"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 4
 tags = "english christian 4part evening"
 prescore_text = \prescoreText "Unison when sung in canon"

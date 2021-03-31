@@ -9,7 +9,7 @@
 title = \titleText "All creatures worship God most high"
 subtitle = \smallText "Alt. title: All creatures of our God and King"
 poet = \twoLineSmallText "Text: Saint Francis of Assisi, 1225;" "tr. William H. Draper, 1926; alt."
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 7
 tags = "english christian 4part"
 postscore_text = \postscoreText "*Or, ''All creatures of our God and King, / lift up your voice and with us sing''"

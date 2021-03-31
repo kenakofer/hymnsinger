@@ -13,7 +13,7 @@ quarternoteTempo = 120
 %% SONG INFO
 title = \titleText "Breath on me, breath of God"
 poet = \smallText "Text: Robert Jackson, 1888"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 4
 tags = "english theist 4part"
 dateAdded = "2021-01-09"

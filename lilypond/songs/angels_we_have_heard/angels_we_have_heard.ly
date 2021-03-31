@@ -13,7 +13,7 @@ quarternoteTempo = 120
 %% SONG INFO
 title = \titleText "Angels we have heard on high"
 poet = \twoLineSmallText "Text: Nouveau Recueil de Cantiques, 1855" "tr. anonymous, alt. Earl Marlatt, 1937"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 4
 tags = "english christian 4part winter"
 dateAdded = "2021-01-11"

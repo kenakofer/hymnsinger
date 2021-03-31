@@ -14,7 +14,7 @@ quarternoteTempo = 160
 %% SONG INFO
 title = \titleText "No matter if you live now far or near"
 poet = \smallText "Text: Metta Sutta, from Sutta Nipata, alt."
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 4
 tags = "english secular 4part"
 dateAdded = "2021-03-23"

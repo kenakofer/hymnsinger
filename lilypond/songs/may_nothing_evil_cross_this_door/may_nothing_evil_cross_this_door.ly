@@ -13,7 +13,7 @@ quarternoteTempo = 120
 %% SONG INFO
 title = \titleText "May nothing evil cross this door"
 poet = \smallText "Text: Louis Untermeyer, 1923"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 4
 tags = "english secular 4part"
 dateAdded = "2021-01-31"

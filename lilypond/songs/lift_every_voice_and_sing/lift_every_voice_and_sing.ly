@@ -15,7 +15,7 @@ quarternoteTempo = 120
 %% SONG INFO
 title = \titleText "Lift every voice and sing"
 poet = \smallText "Text: J. Rosamond Johnson, 1899"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 3
 tags = "english theist 4part"
 dateAdded = "2021-01-16"

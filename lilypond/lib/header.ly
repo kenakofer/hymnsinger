@@ -5,7 +5,7 @@
   arranger = \arranger
   poet = \poet
   meter = \meter
-  copyright = \copyright
+  copyright = \public_domain_notice \typesetter
   tagline = \tagline
 }
 

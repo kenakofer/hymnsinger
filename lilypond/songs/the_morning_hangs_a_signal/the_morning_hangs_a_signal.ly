@@ -13,7 +13,7 @@ quarternoteTempo = 120
 %% SONG INFO
 title = \titleText "The morning hangs a signal"
 poet = \smallText "Text: William Channing Gannett (1768-1852), rev."
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 3
 tags = "english secular 4part morning"
 dateAdded = "2021-02-11"

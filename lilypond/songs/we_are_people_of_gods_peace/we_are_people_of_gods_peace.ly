@@ -13,7 +13,7 @@ quarternoteTempo = 120
 %% SONG INFO
 title = \titleText "We are people of God's peace"
 poet = \smallText "Text: based on Menno Simons, alt. David Augsburger, 1978"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 3
 tags = "english christian 4part"
 dateAdded = "2021-03-24"

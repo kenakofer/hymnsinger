@@ -13,7 +13,7 @@ quarternoteTempo = 120
 %% SONG INFO
 title = \titleText "Great is thy faithfulness"
 poet = \smallText "Text: Thomas O. Chisholm, 1923"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 3
 tags = "english theist 4part"
 dateAdded = "2021-01-24"

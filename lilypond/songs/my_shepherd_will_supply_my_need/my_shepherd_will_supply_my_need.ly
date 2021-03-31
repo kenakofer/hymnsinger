@@ -8,7 +8,7 @@
 %% SONG INFO
 title = \titleText "My Shepherd will supply my need"
 poet = \smallText "Text: Isaac Watts, 1719, alt."
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 3
 tags = "english christian 4part"
 dateAdded = "2021-03-04"

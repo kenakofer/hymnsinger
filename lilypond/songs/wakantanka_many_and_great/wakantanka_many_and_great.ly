@@ -8,7 +8,7 @@
 %% SONG INFO
 title = \titleText "Wakantanka (Many and Great)"
 poet = \smallText "Text: Dakota; Joseph R. Renville, 1846; paraphr. Philip Frazier, 1929, alt."
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 2
 tags = "dakota english theist 1part"
 dateAdded = "2021-03-07"

@@ -8,7 +8,7 @@
 %% SONG INFO
 title = \titleText "Singer of Life"
 poet = \smallText "Text: From a Texcoco Nahuatl poem"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 2
 tags = "english theist 1part"
 dateAdded = "2021-03-08"

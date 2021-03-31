@@ -14,7 +14,7 @@ quarternoteTempo = 65
 %% SONG INFO
 title = \titleText "O come, O come, Immanuel"
 poet = \twoLineSmallText "Text: anon., O Antiphons, 8th-9th c.; Veni, veni Emmanuel, 12th c." "tr. v.1-5 John M. Neale, 1851, alt.; v.6-7 Henry Sloane Coffin, 1916"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 7
 tags = "english christian winter 4part"
 dateAdded = "2021-03-21"

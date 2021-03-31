@@ -13,7 +13,7 @@ quarternoteTempo = 100
 %% SONG INFO
 title = \titleText "Be still my soul"
 poet = \smallText "Text: Kathrina von Schlegel, tr. Jane Borthwick (1855)"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 3
 tags = "english theist 4part"
 dateAdded = "2021-01-14"

@@ -8,7 +8,7 @@
 %% SONG INFO
 title = \titleText "Comfort, comfort, O my people"
 poet = \twoLineSmallText "Text: Johannes Olearius, 1671" "tr. Catherine Winkworth, 1863"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 3
 tags = "english christian 4part"
 dateAdded = "2021-02-07"

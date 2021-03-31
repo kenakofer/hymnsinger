@@ -13,7 +13,7 @@ quarternoteTempo = 100
 %% SONG INFO
 title = \titleText "Warm summer sun"
 poet = \smallText "Text: Robert Richardson, alt. Mark Twain, 1896"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 1
 tags = "english secular 4part summer death"
 dateAdded = "2021-01-30"

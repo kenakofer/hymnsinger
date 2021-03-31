@@ -14,7 +14,7 @@ quarternoteTempo = 90
 %% SONG INFO
 title = \titleText "Once in royal David's city"
 poet = \smallText "Text: Cecil Frances Alexander, 1848, alt."
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 4
 tags = "english christian winter 4part"
 dateAdded = "2021-03-21"

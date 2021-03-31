@@ -13,7 +13,7 @@ quarternoteTempo = 100
 %% SONG INFO
 title = \titleText "Now the day is over"
 poet = \twoLineSmallText "Text: v.1 Sabine Baring Gould, 1865" "v.2-5 Marye B. Bonney (1910-1992)"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 5
 tags = "english secular 4part evening autumn"
 dateAdded = "2021-02-11"

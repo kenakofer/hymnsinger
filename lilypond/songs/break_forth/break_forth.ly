@@ -14,7 +14,7 @@ quarternoteTempo = 70
 %% SONG INFO
 title = \titleText "Break forth, O beauteous heavenly light"
 poet = \smallText "Text: Johann Rist, 1641, tr. John Troutbeck ca. 1885"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 1
 tags = "english christian 4part morning"
 dateAdded = "2021-01-08"

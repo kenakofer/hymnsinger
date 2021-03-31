@@ -14,7 +14,7 @@ quarternoteTempo = 100
 %% SONG INFO
 title = \titleText "When Israel was in Egypt's land"
 poet = \smallText "Text: African American spiritual"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 5
 tags = "english christian 4part"
 dateAdded = "2021-02-07"

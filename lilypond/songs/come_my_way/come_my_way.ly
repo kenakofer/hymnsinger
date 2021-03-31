@@ -13,7 +13,7 @@ quarternoteTempo = 130
 %% SONG INFO
 title = \titleText "Come, my Way, my Truth, my Light"
 poet = \smallText "Text: George Herbert, 1633"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+typesetter = "Kenan Schaefkofer"
 verseCount = 3
 tags = "english secular 5part"
 dateAdded = "2021-01-16"
