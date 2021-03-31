@@ -61,6 +61,33 @@ public_domain_notice =
       }
     #})
 
+public_domain_notice_two_lines =
+  #(define-scheme-function
+    (parser location text)
+    (markup?)
+    #{
+      \markup{
+
+        %\override #'(font-name . "Linux Biolinum")
+        \override #'(font-series . "regular")
+        \lower #1
+        \fontsize #-4 {
+          \center-column {
+            \line {
+              "The typesetter"
+              \bold #text
+              "has waived all copyright and related rights to this work,"
+            }
+            \line {
+              "dedicating it to the"
+              \bold "public domain"
+              "to the extent possible under law."
+            }
+          }
+        }
+      }
+    #})
+
 smallText =
   #(define-scheme-function
     (parser location text)
@@ -236,7 +263,7 @@ fillClairScore =
         <<
           \new Voice \with {
           } << \partcombine #'(2 . 20) $topA $topB >>
-          \all_verses
+          \removeWithTag #'slidesOnly \all_verses
         >>
         \new Staff = "bottom" \with {
           \cnNoteheadStyle "funksol"
@@ -268,7 +295,7 @@ fillClairScoreSingleStaff =
 
           \new Voice \with {
           } << \partcombine #'(2 . 20) $topA $topB $bottomA $bottomB >>
-          \all_verses
+          \removeWithTag #'slidesOnly \all_verses
         >>
       >>
     #})
@@ -294,7 +321,7 @@ fillTradScore =
           \new Voice \with {
 
           } << \partcombine #'(2 . 20) $topA $topB >>
-          \all_verses
+          \removeWithTag #'slidesOnly \all_verses
         >>
         \new TradStaff = "bottom" \with {
           printPartCombineTexts = ##f
@@ -326,10 +353,67 @@ fillTradScoreSingleStaff =
           \new Voice \with {
 
           } << \partcombine #'(2 . 20) $topA $topB $bottomA $bottomB >>
-          \all_verses
+          \removeWithTag #'slidesOnly \all_verses
         >>
       >>
     #})
+
+fillSlidesScore =
+  #(define-music-function
+    (parser location topA topB bottomA bottomB songChords zoomLevel whichVerse)
+    (ly:music? ly:music? ly:music? ly:music? ly:music? number? symbol?)
+    #{
+      <<
+        \removeWithTag #'midionly
+        $songChords
+        \new Lyrics = "topVerse" \with {
+          % lyrics above a staff should have this override
+          \override VerticalAxisGroup.staff-affinity = #DOWN
+        }
+        \new TradStaff = "top" \with {
+          printPartCombineTexts = ##f
+          \magnifyStaff $zoomLevel
+          \RemoveAllEmptyStaves
+        }
+        <<
+          \new Voice \with {
+
+          } << \partcombine #'(2 . 20) $topA $topB >>
+          \keepWithTag $whichVerse \all_verses
+        >>
+        \new TradStaff = "bottom" \with {
+          printPartCombineTexts = ##f
+          \magnifyStaff $zoomLevel
+          \RemoveAllEmptyStaves
+        } <<
+          \new Voice \with {
+
+          } { \clef bass << \partcombine #'(2 . 20) $bottomA $bottomB >> }
+          \bottom_verses
+          \top_verse
+        >>
+      >>
+    #})
+
+scoreWithVerse =
+  #(define-music-function
+    (parser location whichVerse)
+    (symbol?)
+    #{
+      <<
+      \removeWithTag #'midionly
+      \fillSlidesScore
+        { \removeWithTag #'midionly \soprano }
+        { \removeWithTag #'midionly \alto }
+        { \removeWithTag #'midionly \tenor }
+        { \removeWithTag #'midionly \bass }
+        {}
+        #.6
+        $whichVerse
+        >>
+    #})
+
+
 
 \paper {
   indent = 0
@@ -355,6 +439,18 @@ fillTradScoreSingleStaff =
     \Score
     \consists #Lyric_text_align_engraver
   }
+}
+
+empty_header = \header {
+  title = ##f
+  subtitle = ##f
+  composer = ##f
+  arranger = ##f
+  poet = ##f
+  meter = ##f
+  tagline = ##f
+  piece = ##f
+  copyright = ##f
 }
 
 %% Defaults for tune variables
@@ -386,4 +482,3 @@ bottom_verses = {}
 tradStaffZoom = #1
 clairStaffZoom = #1
 shapeStaffZoom = #1.1 %% A bit larger by default to help see the shapes
-copyright = \public_domain_notice "Kenan Schaefkofer"

@@ -12,8 +12,8 @@ quarternoteTempo = 120
 
 %% SONG INFO
 title = \titleText "O come, all ye faithful"
-poet = \smallText "Text: John F. Wade, 1743, tr. Frederick Oakeley, 1841, William Mercer 1854, and others"
-copyright = \public_domain_notice "Kenan Schaefkofer"
+poet = \twoLineSmallText "Text: John F. Wade, 1743" "tr. William Mercer 1854, and others"
+typesetter = "Kenan Schaefkofer"
 verseCount = 4
 tags = "english christian 4part winter"
 dateAdded = "2021-01-19"
@@ -146,7 +146,7 @@ bass = \relative d {
 
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   O come, all ye faith -- ful, joy -- ful and tri -- um -- phant,
   O come ye, O come ye to Beth -- _ le -- hem.
   \l Come and be -- hold him,
@@ -157,20 +157,38 @@ verseA = \lyricmode {
   O come, let us a -- dore him,
   Christ the Lord.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
  _ True God of true God, Light of light e -- ter -- nal,
  _ our low -- ly na -- ture he hath not ab -- horred;
  Son of the Fa -- ther, be-got -- ten, not cre -- at -- ed.
+ \tag #'(slidesOnly verseB) {
+  O come, let us a -- dore him,
+  O come, let us a -- dore him,
+  O come, let us a -- dore him,
+  Christ the Lord.
+ }
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   _ Sing, choirs of an -- gels, sing in ex -- ul -- ta -- tion,
   _ sing, all ye cit -- i -- zens of heav'n a -- bove;
   glo -- ry to God, all glo -- ry in the high -- est.
+ \tag #'(slidesOnly verseC) {
+  O come, let us a -- dore him,
+  O come, let us a -- dore him,
+  O come, let us a -- dore him,
+  Christ the Lord.
+ }
 }
-verseD = \lyricmode {
+verseD = \tag #'verseD \lyricmode {
   _ Yea, Lord, we greet thee, born this hap -- py morn -- ing,
   _ Je -- sus, to thee be all glo -- _ ry giv'n;
   Word of the Fa -- ther, now in flesh ap -- pear -- ing.
+ \tag #'(slidesOnly verseD) {
+  O come, let us a -- dore him,
+  O come, let us a -- dore him,
+  O come, let us a -- dore him,
+  Christ the Lord.
+ }
 }
 
 all_verses = <<
@@ -185,5 +203,7 @@ all_verses = <<
 %% All sheet music outputs
 clairStaffZoom = #.9
 \include "../../lib/all_notation_outputs.ly"
+% Slides output
+\include "../../lib/slides_book_4verse.ly"
 %% midi output
 \include "../../lib/midi_output.ly"
