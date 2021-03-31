@@ -33,7 +33,7 @@ tenor = {}
 bass = {}
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l Way way way way way.
   Way way way way way.
   Way way way way way.

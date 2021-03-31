@@ -54,19 +54,19 @@ bass = {
 
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l What Child is this, who, laid to rest, on Ma -- ry's lap is sleep -- ing,
   \l whom an -- gels greet with an -- thems sweet, while shep -- herds watch are keep -- ing?
   \l This, this is Christ the King, whom shep -- herds guard and an -- gels sing.
   \l Haste, haste to bring him laud, the babe, the son of Ma -- ry!
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   Why lies he in such mean es -- tate where ox and ass are feed -- ing?
   Good Chris -- tian, fear, for sin -- ners here the si -- lent Word is plead -- ing.
   Nails, spear shall pierce him through, the cross be borne for me, for you.
   Hail, hail the Word -- made -- flesh, the babe, the son of Ma -- ry!
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
  So bring him in -- cense, gold, and myrrh, come, peas -- ant, king, to own him.
  The King of kings sal -- va -- tion brings, let lov -- ing hearts en -- throne him.
  Raise, raise the song on high; the vir -- gin sings her lul -- la -- by.

@@ -55,13 +55,13 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   Hó -- son zêis, phaí -- nou
   mē -- dèn hó -- lōs sù lu -- poû
   pròs ol -- í -- gon és -- ti tò zên
   tò té -- los ho khró -- nos a -- pai -- teî.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   \override Lyrics.LyricText.font-shape = #'italic
   While you live, shine bright.
   Don't let grief sour your guest, Life,

@@ -67,7 +67,7 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l In our day of thanks -- giv -- ing
   one psalm let us of -- fer
   \l for the saints who be -- fore us
@@ -77,7 +77,7 @@ verseA = \lyricmode {
   \l but now we re -- joice
   that they rest in the Lord
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   In the morn -- ing of life,
   and at noon, and at eve -- ning,
   they were gath -- ered to heav'n

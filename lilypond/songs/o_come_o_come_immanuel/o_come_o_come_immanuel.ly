@@ -53,7 +53,7 @@ bass = {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   O come, O come, Im -- man -- u -- el,
   and ran -- som cap -- tive Is -- ra -- el,
   \l that mourns in lone -- ly ex -- ile here,
@@ -62,37 +62,37 @@ verseA = \lyricmode {
   Re -- joice! Re -- joice!
   Im -- man -- u -- el shall come to thee, O Is -- ra -- el.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   O come, O come, thou God of law,
   in cloud and maj -- es -- ty and awe.
   Thy pre -- cepts, taught on Si -- nai's height,
   call us to lives both just and right.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   O come, thou Rod of Jes -- se, free
   thine own from Sa -- tan's tyr -- an -- ny.
   From depths of hell thy peo -- ple save,
   and give them vic -- t'ry o'er the grave.
 }
-verseD = \lyricmode {
+verseD = \tag #'verseD \lyricmode {
   O come, thou Day -- spring, come and cheer
   our spir -- its by thine ad -- vent here.
   Dis -- perse the gloom -- y clouds of night,
   and death's dark shad -- ow put to flight.
 }
-verseE = \lyricmode {
+verseE = \tag #'verseE \lyricmode {
   O come, thou Key of Da -- vid come
   and o -- pen wide our heav'n -- ly home.
   Make safe the way that leads to thee
   and close the path to mis -- er -- y.
 }
-verseF = \lyricmode {
+verseF = \tag #'verseF \lyricmode {
   O come, thou Wis -- dom from on high,
   and or -- der all things far and nigh.
   To us the path of knowl -- edge show,
   and cause us in thy ways to go.
 }
-verseG = \lyricmode {
+verseG = \tag #'verseG \lyricmode {
   O come, De -- sire of na -- tions, bind
   all peo -- ples in one heart and mind.
   Bid en -- vy, strife and quar -- rels cease,

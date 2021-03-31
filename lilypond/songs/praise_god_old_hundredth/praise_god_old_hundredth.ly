@@ -67,7 +67,7 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l Praise God from whom all bless -- ings flow;
   praise God all crea -- tures here be -- low;
   \l praise God a -- bove, ye heav'n -- ly host;
@@ -75,7 +75,7 @@ verseA = \lyricmode {
   %% CHORUS
   %% A -- men
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   \override Lyrics.LyricText.font-shape = #'italic
   Gloire à Dieu, no -- tre Cré -- a -- teur;
   Gloire à Christ, no -- tre Ré -- demp -- teur;
@@ -84,7 +84,7 @@ verseB = \lyricmode {
   %% CHORUS
   A -- men
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   \override Lyrics.LyricText.font-shape = #'italic
   A la Di -- vi -- na Tri -- ni -- dad,
   to -- do un -- i -- dos a -- la -- bad,
@@ -93,7 +93,7 @@ verseC = \lyricmode {
   %% CHORUS
   %% A -- men
 }
-verseD = \lyricmode {
+verseD = \tag #'verseD \lyricmode {
   \override Lyrics.LyricText.font-shape = #'italic
   Ehr sei dem Va -- ter und dem Sohn
   dem Heil -- 'gen Geist in ei -- nem Thron,

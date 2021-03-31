@@ -58,28 +58,28 @@ bass = {
 
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l All hail the pow’r of Je -- sus’ name! Let an -- gels pros -- trate fall.
   \l Bring forth the roy -- al di -- a -- dem, and crown him Lord of all.
   \l Bring forth the roy -- al di -- a -- dem, and crown him Lord of all!
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   O seed of Is -- rael’s cho -- sen race now ran -- somed from the fall,
   hail him who saves you by his grace, and crown him Lord of all.
   Hail him who saves you by his grace, and crown him Lord of all!
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   Let ev -- ’ry tongue and ev -- ’ry tribe re -- spon -- sive to his call,
   to him all maj -- es -- ty a -- scribe, and crown him Lord of all.
   To him all maj -- es -- ty a -- scribe, and crown him Lord of all!
 }
-verseD = \lyricmode {
+verseD = \tag #'verseD \lyricmode {
   Oh, that with all the sa -- cred throng we at his feet may fall!
   We’ll join the ev -- er -- last -- ing song and crown him Lord of all.
   We’ll join the ev -- er -- last -- ing song and crown him Lord of all!
 }
-verseE = \lyricmode { }
-verseF = \lyricmode { }
+verseE = \tag #'verseE \lyricmode { }
+verseF = \tag #'verseF \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano

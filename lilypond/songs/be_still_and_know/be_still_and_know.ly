@@ -16,7 +16,7 @@ dateAdded = "2021-03-30"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l Be still and know that I am God.
   Be still and know that I am God.
   Be still and know that I am God.

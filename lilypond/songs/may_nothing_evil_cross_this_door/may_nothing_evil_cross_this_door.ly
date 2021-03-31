@@ -50,25 +50,25 @@ bass = {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l May noth -- ing e -- vil cross this door,
   \l and may ill for -- tune nev -- er pry
   \l a -- bout these win -- dows; may the roar
   \l and rain go by.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   By faith made strong, the raft -- ers will
   with -- stand the bat -- tering of the storm.
   This hearth, though all the world grow chill,
   will keep you warm.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   Peace shall walk soft -- ly through these rooms,
   touch -- ing our lips with ho -- ly wine,
   till ev -- 'ry cas -- ual cor -- ner blooms
   in -- to a shrine.
 }
-verseD = \lyricmode {
+verseD = \tag #'verseD \lyricmode {
   With laugh -- ter drown the rau -- cous shout,
   and, though these shel -- tering walls are thin,
   may they be strong to keep hate out

@@ -57,7 +57,7 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   We shall o -- ver -- come,
   we shall o -- ver -- come,
   we shall o -- ver -- come some -- day!

@@ -16,19 +16,19 @@ dateAdded = "2021-03-05"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l All praise to thee, my God, this night, for all the bless -- ings of the light.
   \l Keep me, O keep me, King of kings, be -- neath thine own al -- might -- y wings.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   For -- give me, Lord, for thy dear Son, the ill that I this day have done,
   that with the world, my -- self, and thee, I, ere I sleep, at peace may be.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   O let my soul, on thee, re -- pose, and with sweet sleep my eye -- lids close,
   sleep that will me more vig -- 'rous make to serve my God when I a -- wake.
 }
-verseD = \lyricmode {
+verseD = \tag #'verseD \lyricmode {
   Praise God from whom all bless -- ings flow, praise God all crea -- tures here be -- low,
   praise God a -- bove ye heav -- 'nly host, praise Fa -- ther, Son, and Ho -- ly Ghost.
 }

@@ -58,7 +58,7 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l Re -- ceive our thanks
   for night and day,
   for food and shel -- ter,

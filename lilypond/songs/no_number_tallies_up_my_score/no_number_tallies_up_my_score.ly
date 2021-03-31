@@ -15,7 +15,7 @@ dateAdded = "2021-02-14"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l No num -- ber tal -- lies up my score,
   no tribe my house can fill;
   \l I sit be -- side the fount of life
@@ -25,7 +25,7 @@ verseA = \lyricmode {
   \l from race on race the rar -- est flow'rs
   my wreath shall noth -- ing miss.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   I wrote the past in char -- ac -- ters
   of rock and fire and scroll,
   the build -- ing in the cor -- al sea, the plant -- ing of the coal.
@@ -34,7 +34,7 @@ verseB = \lyricmode {
   and out of spent and ag -- ed things
   I formed the world a -- new.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   Must time and tide for -- ev -- er run,
   nor winds sleep in the west?
   Will ne'er my wheels which whirl the sun
@@ -44,7 +44,7 @@ verseC = \lyricmode {
   seethe, Fate, the an -- cient el -- e -- ments,
   heat, cold, and peace, and pain.
 }
-verseD = \lyricmode {
+verseD = \tag #'verseD \lyricmode {
   Blend war and trade and creeds and song,
   as rip -- ens hu -- man race,
   the sun -- burnt world that they shall breed,

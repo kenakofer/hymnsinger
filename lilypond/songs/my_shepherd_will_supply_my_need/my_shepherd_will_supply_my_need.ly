@@ -15,19 +15,19 @@ dateAdded = "2021-03-04"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l My Shep -- herd will sup -- ply my need; most ho -- ly is your name.
   \l In pas -- tures fresh you make me feed, be -- side the liv -- ing stream.
   \l You bring my wan -- d'ring spir -- it back, when I for -- sake your ways,
   \l and lead me for your mer -- cy's sake, in paths of truth and grace.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   When I walk through the shades of death, your pres -- ence is my stay.
   One word of your sup -- port -- ing breath drives all my fears a -- way.
   Your hand, in sight of all my foes, does still my ta -- ble spread.
   My cup with bless -- ings o -- ver -- flows, your oil a -- noints my head.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   The sure pro -- vi -- sions of my God at -- tend me all my days.
   Oh, may your house be my a -- bode, and all my work be praise.
   There would I find a set -- tled rest, while oth -- ers go and come,

@@ -15,12 +15,12 @@ dateAdded = "2021-03-08"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l Sing -- er of Life, all flow -- ers are songs, with pet -- als do you write.
   \l Sing -- er of Life, you col -- or the earth, daz -- zling the eye with birds red and bright.
   \l Joy is for us! The flow -- ers are spread! Sing -- ing is our de -- light!
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   Mor -- tal are we, with all liv -- ing things, with ea -- gles in the sky.
   E -- ven all gold and jade will not last; sing -- ing a -- lone, I know, can -- not die.
   Here in this house of spring -- time be -- stow songs that like birds can fly.

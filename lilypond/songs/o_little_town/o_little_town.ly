@@ -52,25 +52,25 @@ bass = {
 
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l O lit -- tle town of Beth -- le -- hem, how still we see thee lie!
   \l A -- bove thy deep and dream -- less sleep the si -- lent stars go by.
   \l Yet in thy dark streets shin -- eth the ev -- er -- last -- ing light;
   \l the hopes and fears of all the years are met in thee to -- night.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   For Christ is born of Ma -- _ ry, and gath -- ered all a -- bove,
   while mor -- tals sleep, the an -- gels keep their watch of won -- d'ring love.
   O morn -- ing stars, to -- geth -- er pro -- claim the ho -- ly birth!
   and prais -- es sing to God the King, and peace to all the earth!
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   How si -- lent -- ly, how si -- lent -- ly, the won -- drous gift is giv'n!
   So God im -- parts to hu -- man hearts the bless -- ings of the heav'ns.
   No ear may hear his com -- ing, but in this world of sin,
   where meek souls will re -- ceive him still the dear Christ en -- ters in.
 }
-verseD = \lyricmode {
+verseD = \tag #'verseD \lyricmode {
   O ho -- ly Child of Beth -- le -- hem, de -- scend to us we pray,
   cast out our sin, and en -- ter in, be born in us to -- day!
   We hear the Christ -- mas an -- gels the great glad tid -- ings tell.

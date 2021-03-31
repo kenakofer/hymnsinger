@@ -53,27 +53,27 @@ bass = {
 
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   Come, my Way, my Truth, my Life:
   such a way as gives me breath;
   such a truth as ends all strife;
   such a life as kill -- eth death.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   Come, my Light, my Feast, my Strength:
   such a light as shows a feast;
   such a feast as mends in length;
   such a strength as makes __ his guest.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   Come my Joy, my Love, my Heart:
   such a joy as none can move;
   such a love as none can part;
   such a heart as joys __ in love.
 }
-verseD = \lyricmode { }
-verseE = \lyricmode { }
-verseF = \lyricmode { }
+verseD = \tag #'verseD \lyricmode { }
+verseE = \tag #'verseE \lyricmode { }
+verseF = \tag #'verseF \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano

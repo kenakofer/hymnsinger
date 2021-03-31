@@ -18,7 +18,7 @@ dateAdded = "2021-03-09"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l As the deer with ea -- ger yearn -- ing
   seeks the cool -- ing wa -- ter -- course,
   \l so my soul with ar -- dor burn -- ing
@@ -28,7 +28,7 @@ verseA = \lyricmode {
   \l When shall I, God's prais -- es voic -- ing,
   come be -- fore our God re -- joic -- ing?
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   Day and night in grief and an -- guish
   bit -- ter tears have been my meat,
   while my long -- ing soul may lan -- guish

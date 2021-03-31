@@ -57,7 +57,7 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   Step by step the long -- est march can be won, can be won,
   Man -- y stones can form an arch, sin -- gly none, sin -- gly none.
   And by un -- ion what we will can be ac -- com -- plished still,

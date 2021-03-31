@@ -16,13 +16,13 @@ dateAdded = "2021-01-07"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l Come, thou long -- ex -- pect -- ed Je -- sus! born to set thy peo -- ple free,
   \l from our fears and sins re -- lease us, let us find our rest in thee.
   \l Is -- rael's strength and con -- so -- la -- tion, hope of all the earth thou art,
   \l dear de -- sire of ev -- 'ry na -- tion, joy of ev -- 'ry long -- ing heart.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   Born thy peo -- ple to de -- liv -- er, born a child, and yet a King,
   born to reign in us for -- ev -- er, now thy gra -- cious king -- dom bring.
   By thine own e -- ter -- nal Spir -- it, rule in all our hearts a -- lone.

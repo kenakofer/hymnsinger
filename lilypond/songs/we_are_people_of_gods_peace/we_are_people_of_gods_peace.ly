@@ -68,7 +68,7 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   We are peo -- ple of God's peace
   as a new cre -- a -- tion.
   \l Love u -- nites and strength -- ens us
@@ -78,7 +78,7 @@ verseA = \lyricmode {
   \l a new cov -- e -- nant of peace
   binds us all to -- geth -- er.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   We are chil -- dren of God's peace
   in this new cre -- a -- tion,
   spread -- ing joy and hap -- pi -- ness
@@ -88,7 +88,7 @@ verseB = \lyricmode {
   Peace with ev -- 'ry -- one we seek,
   good for e -- vil giv -- ing.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   We are ser -- vants of God's peace,
   of the new cre -- a -- tion.
   Choos -- ing peace, we faith -- ful -- ly

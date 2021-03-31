@@ -52,7 +52,7 @@ bass = {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   O sa -- cred Head, now wound -- ed,
   with grief and shame weighed down,
   now scorn -- ful -- ly sur -- round -- ed
@@ -62,7 +62,7 @@ verseA = \lyricmode {
   Yet, though de -- spised and gor -- y,
   I joy to call thee mine.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   What thou, my Lord, hast suf -- fered
   was all for sin -- ners' gain.
   Mine, mine was the trans -- gres -- sion,
@@ -72,7 +72,7 @@ verseB = \lyricmode {
   Look on me with thy fa -- vor,
   and grant to me thy grace.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   What lan -- guage shall I bor -- row
   to thank thee, dear -- est Friend,
   for this, thy dy -- ing sor -- row,
@@ -82,7 +82,7 @@ verseC = \lyricmode {
   Lord, let me nev -- er, nev -- er
   out -- live my love to thee.
 }
-verseD = \lyricmode {
+verseD = \tag #'verseD \lyricmode {
   Be near when I am dy -- ing,
   oh, show thy cross to me,
   and for my res -- cue, fly -- ing,

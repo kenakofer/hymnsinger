@@ -52,21 +52,21 @@ bass = {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l No mat -- ter if you live now far or near,
   no \l mat -- ter what your weak -- ness or your strength,
   there is not \l one a -- live we count out -- side.
   May deep -- er joy for all now \l come at length,
   may deep -- er joy for all now come at length.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   Let none a -- mong us lie or self -- de -- ceive;
   nor cul -- ti -- vate a ha -- tred all or part,
   may nev -- er one of us live by our rage
   nor wish an -- oth -- er in -- ju -- ry of heart,
   nor wish an -- oth -- er in -- ju -- ry of heart.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   Just as the good -- ly moth -- er will pro -- tect
   her child -- ren, e'en at risk of her own life,
   so may we nur -- ture an old mind -- ful -- ness,

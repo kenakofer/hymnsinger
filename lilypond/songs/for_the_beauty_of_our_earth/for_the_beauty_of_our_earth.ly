@@ -16,25 +16,25 @@ dateAdded = "2021-01-05"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l For the beau -- ty of our earth, for the glo -- ry of her skies,
   \l for the love which from our birth o -- ver and a -- round us lies:
   %% CHORUS
   Source of all, to thee we raise this our hymn of grate -- ful praise.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   For the beau -- ty of each hour of the day and of the night,
   hill and vale and tree and flow'r, sun and moon and stars of light:
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   For the joy of ear and eye, for the heart and mind's de -- light,
   For the 'me', 'my -- self', and 'I', con -- scious links to sound and sight:
 }
-verseD = \lyricmode {
+verseD = \tag #'verseD \lyricmode {
   For the joy of hu -- man care, sib -- ling, part -- ner, par -- ent, child,
   friends we've lost and friends still here, for all self -- less thoughts and mild:
 }
-verseE = \lyricmode {
+verseE = \tag #'verseE \lyricmode {
   For thy Truth both harsh and kind, sha -- dowed set -- ter of our stage,
   pat -- terns sought by hu -- man mind, guid -- ing us from age to age,
 }

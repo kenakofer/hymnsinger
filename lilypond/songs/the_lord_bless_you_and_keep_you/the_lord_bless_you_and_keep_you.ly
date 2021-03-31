@@ -55,7 +55,7 @@ bass = {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   "*The" Lord bless you and keep you;
   the Lord lift his coun -- te -- nance up -- on you,
   and give you peace, and give you peace;

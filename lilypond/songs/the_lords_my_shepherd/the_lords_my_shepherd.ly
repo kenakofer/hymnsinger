@@ -51,31 +51,31 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l The Lord's my shep -- herd, I'll not want.
   \l He makes me down to lie
   \l in pas -- tures green; he lead -- eth me
   \l the qui -- et wa -- ters by.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   My soul he doth re -- store a -- gain,
   and me to walk doth make
   with -- in the paths of right -- eous -- ness,
   e'en for his own name's sake.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   Yea, though I walk in death's dark vale,
   yet will I fear none ill,
   for thou art with me and thy rod
   and staff me com -- fort still.
 }
-verseD = \lyricmode {
+verseD = \tag #'verseD \lyricmode {
   My ta -- ble thou hast fur -- nish -- ed
   in pres -- ence of my foes.
   My head thou dost with oil a -- noint
   and my cup o -- ver -- flows.
 }
-verseE = \lyricmode {
+verseE = \tag #'verseE \lyricmode {
   Good -- ness and mer -- cy all my life
   shall sure -- ly fol -- low me,
   and in God's house for -- ev -- er -- more

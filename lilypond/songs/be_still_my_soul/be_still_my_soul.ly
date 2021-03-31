@@ -52,7 +52,7 @@ bass = {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   Be still, my soul; the Lord is on thy side;
   bear pa -- tient -- ly the \l cross of grief or pain;
   leave to thy God to or -- der and pro -- vide;
@@ -60,7 +60,7 @@ verseA = \lyricmode {
   Be still, my soul; thy \l best, thy heav’n -- ly friend
   through thorn -- y ways leads to a joy -- ful end.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   Be still, my soul; thy God doth un -- der -- take
   to guide the fu -- ture as he has the past.
   Thy hope, thy con -- fid -- ence, let no -- thing shake;
@@ -68,7 +68,7 @@ verseB = \lyricmode {
   Be still, my soul; the waves and winds still know
   his voice who ruled them while he dwelt be -- low.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   Be still, my soul; the hour is hast -- ’ning on
   when we shall be for -- ev -- er with the Lord,
   when dis -- ap -- point -- ment, grief, and fear are gone,

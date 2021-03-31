@@ -59,21 +59,21 @@ bass = {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l An -- gels we have heard on high, sing -- ing sweet -- ly through the night,
   \l and the moun -- tains in re -- ply ech -- o -- ing their brave de -- light.
   %% CHORUS
   Glo -- ri -- a in ex -- cel -- sis De -- o, glo -- ri -- a in ex -- cel -- sis De -- o.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   Shep -- herds, why this ju -- bi -- lee? Why these songs of hap -- py cheer?
   What great bright -- ness did you see? What glad tid -- ings did you hear?
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   Come to Beth -- le -- hem and see him whose birth the an -- gels sing.
   Come, a -- dore on bend -- ed knee Christ, the Lord, the new -- born King.
 }
-verseD = \lyricmode {
+verseD = \tag #'verseD \lyricmode {
   See him in a man -- ger laid whom the an -- gels praise a -- bove.
   Ma -- ry, Jo -- seph, lend your aid, while we raise our hearts in love.
 }

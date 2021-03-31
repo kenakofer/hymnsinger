@@ -71,13 +71,13 @@ songChords = \chords {
 
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l La paz de la tierra es -- té con -- ti -- go,~la paz de los cielos tam -- bién.
   \l La paz de los ríos es -- té con -- ti -- go,~la paz de los mares tam -- bién.
   \l Paz pro -- fun -- da ca -- yen -- do so -- bre ti.
   \l Paz pro -- fun -- da cre -- cien -- do en ti.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   \override Lyrics.LyricText.font-shape = #'italic
   The peace of the earth _ be with you, the peace of the heav -- ens too;
   The peace of the riv -- ers be with you, the peace of the o -- ceans too.

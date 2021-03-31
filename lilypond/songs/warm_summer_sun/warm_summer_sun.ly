@@ -54,7 +54,7 @@ bass = {
 
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   Warm sum -- mer sun, shine kind -- ly here,
   Warm south -- ern wind, blow soft -- ly here,
   Green sod a -- bove, lie light, lie light.

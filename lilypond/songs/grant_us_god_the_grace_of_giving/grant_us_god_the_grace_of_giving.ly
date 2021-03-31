@@ -16,7 +16,7 @@ dateAdded = "2021-03-14"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   Grant us, God, the grace of giv -- ing with a spir -- it large and free
   that our -- selves and all our liv -- ing we may of -- fer un -- to thee.
 }

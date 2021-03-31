@@ -62,7 +62,7 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l We three kings of O -- ri -- ent are;
   bear -- ing gifts we tra -- verse a -- far,
   \l field and foun -- tain, moor and moun -- tain,
@@ -74,25 +74,25 @@ verseA = \lyricmode {
   \l west -- ward lead -- ing still pro -- ceed -- ing,
   guide us to thy per -- fect light.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   Born a King on Beth -- le -- hem's plain,
   gold I bring to crown him a -- gain,
   King for -- ev -- er, ceas -- ing nev -- er,
   o -- ver us all to reign.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   Frank -- in -- cense to of -- fer have I;
   in -- cense owns a de -- i -- ty nigh;
   prayer and prais -- ing, voic -- es rais -- ing,
   wor -- ship -- ing God on high.
 }
-verseD = \lyricmode {
+verseD = \tag #'verseD \lyricmode {
   Myrrh is mine; its bit -- ter per -- fume
   breathes a life of gath -- er -- ing gloom;
   sor -- rowing, sigh -- ing, bleed -- ing, dy -- ing,
   sealed in the stone -- cold tomb.
 }
-verseE = \lyricmode {
+verseE = \tag #'verseE \lyricmode {
   Glo -- rious now be -- hold him a -- rise;
   King and God and sac -- _ ri -- fice:
   Al -- le -- lu -- ia, Al -- le -- lu -- ia,

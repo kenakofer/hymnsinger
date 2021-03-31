@@ -55,28 +55,28 @@ bass = {
 
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l Lo, how a Rose e'er bloom -- ing from ten -- der stem has sprung!
   \l Of Jes -- se's lin -- eage com -- ing as saints of old have sung.
   It came a flow'r -- et bright, a -- mid the \l cold of win -- ter,
   when half -- spent was the night.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   I -- sa -- iah 'twas fore -- told it, the Rose I have in mind.
   With Ma -- ry we be -- hold it, the vir -- gin moth -- er kind.
   To show God's love a -- right, she bore to us a Sav -- ior,
   when half -- spent was the night.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   Flow -- er, whose fra -- grance ten -- der with sweet -- ness fills the air,
   dis -- pel in glo -- rious splen -- dor the dark -- ness ev -- 'ry -- where.
   Hu -- man, yet ver -- y God, from sin and death he saves us,
   and light -- ens ev -- 'ry load.
 }
-verseD = \lyricmode {
+verseD = \tag #'verseD \lyricmode {
 }
-verseE = \lyricmode { }
-verseF = \lyricmode { }
+verseE = \tag #'verseE \lyricmode { }
+verseF = \tag #'verseF \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano

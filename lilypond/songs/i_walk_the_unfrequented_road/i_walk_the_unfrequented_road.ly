@@ -47,19 +47,19 @@ bass = {
 
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l I walk the un -- fre -- quent -- ed road
   \l with o -- pen eye and ear;
   \l I watch a -- field the farm -- er load
   \l the boun -- ty of the year.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   I filch the fruit of no one's toil—
   no tres -- pass -- er am I—
   and yet I reap from ev -- ery soil
   and from the bound -- less sky
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   I gath -- er where I did not sow,
   and bind the mys -- tic sheaf,
   the am -- ber air, the riv -- er's flow,

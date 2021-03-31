@@ -51,13 +51,13 @@ bass = {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l Je -- su, joy of our de -- sir -- ing, ho -- ly wis -- dom, love most bright,
   \l drawn by thee, our souls as -- pir -- ing soar to un -- cre -- at -- ed light.
   \l Word of God, our flesh that fash -- ioned, with the fire of life im -- pas -- sioned,
   \l striv -- ing still to truth un -- known, soar -- ing, dy -- ing round thy throne.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   Through the way, where hope is guid -- ing, hark, what peace -- ful mu -- sic rings,
   where the flock, in thee con -- fid -- ing, drink of joy from death -- less springs.
   Theirs is beau -- ty's fair -- est pleas -- ure. Theirs is wis -- dom's ho -- liest treas -- ure.

@@ -52,19 +52,19 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l I to the hills will lift my eyes. From whence shall come my aid?
   \l My help is from the Lord a -- lone, who heav'n and earth has made.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   God will not let your foot be moved, your guar -- dian nev -- er sleeps.
   God's watch -- ful and un -- slum -- b'ring care pro -- tects and safe -- ly keeps.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   Your faith -- ful keep -- er is the Lord, your shelt -- er and your shade.
   'Neath sun or moon, by day or night, you shall not be a -- fraid.
 }
-verseD = \lyricmode {
+verseD = \tag #'verseD \lyricmode {
   From e -- vil God will keep you safe, pro -- vide for all you need.
   Your go -- ing out, your com -- ing in, God will for -- ev -- er lead.
 }

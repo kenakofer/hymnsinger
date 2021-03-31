@@ -16,7 +16,7 @@ dateAdded = "2021-03-30"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l O the deep, deep love of Je -- sus!
   Vast, un -- mea -- sured, bound -- less, free!
   \l Roll -- ing as a might -- y o -- cean
@@ -27,7 +27,7 @@ verseA = \lyricmode {
   \l lead -- ing on -- ward, lead -- ing home -- ward,
   to thy glo -- rious rest a -- bove.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   O the deep, deep love of Je -- sus!
   Spread his praise from shore to shore!
   How he loves us, ev -- er loves us,
@@ -38,7 +38,7 @@ verseB = \lyricmode {
   how for them he's in -- ter -- ced -- ing,
   watch -- ing o'er them from the throne!
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   O the deep, deep love of Je -- sus,
   love of ev -- 'ry love the best!
   'Tis an o -- cean vast of bless -- ing,

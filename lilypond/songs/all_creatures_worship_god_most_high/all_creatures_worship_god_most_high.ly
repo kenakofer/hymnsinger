@@ -17,7 +17,7 @@ dateAdded = "2021-03-05"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l "*All" crea -- tures, wor -- ship God most high, lift up your voice in earth and sky,
   %% CHORUS
   al -- le -- lu -- ia, al -- le -- lu -- ia!
@@ -27,7 +27,7 @@ verseA = \lyricmode {
   O sing ye, O sing ye, al -- le -- lu -- ia, al -- le -- lu -- ia, al -- le -- lu -- ia!
   %% END CHORUS
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   Thou rush -- ing wind that art so strong, ye clouds that sail in heav'n a -- long,
   %% CHORUS
   %% al -- le -- lu -- ia, al -- le -- lu -- ia!
@@ -39,7 +39,7 @@ verseB = \lyricmode {
   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
   %% END CHORUS
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   Thou flow -- ing wa -- ter, pure and clear, make mu -- sic for thy God to hear,
   %% CHORUS
   %% al -- le -- lu -- ia, al -- le -- lu -- ia!
@@ -51,7 +51,7 @@ verseC = \lyricmode {
   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
   %% END CHORUS
 }
-verseD = \lyricmode {
+verseD = \tag #'verseD \lyricmode {
   Dear moth -- er earth, who day by day, un -- fold -- est bless -- ings on our way,
   %% CHORUS
   %% al -- le -- lu -- ia, al -- le -- lu -- ia!
@@ -63,7 +63,7 @@ verseD = \lyricmode {
   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
   %% END CHORUS
 }
-verseE = \lyricmode {
+verseE = \tag #'verseE \lyricmode {
   And ev -- 'ry -- one, with ten -- der heart, for -- giv -- ing oth -- ers, take your part,
   %% CHORUS
   %% al -- le -- lu -- ia, al -- le -- lu -- ia!
@@ -75,7 +75,7 @@ verseE = \lyricmode {
   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
   %% END CHORUS
 }
-verseF = \lyricmode {
+verseF = \tag #'verseF \lyricmode {
   And thou, most kind and gen -- tle death, wait -- ing to hush our fi -- nal breath,
   %% CHORUS
   %% al -- le -- lu -- ia, al -- le -- lu -- ia!
@@ -87,7 +87,7 @@ verseF = \lyricmode {
   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
   %% END CHORUS
 }
-verseG = \lyricmode {
+verseG = \tag #'verseG \lyricmode {
   Let all things their Cre -- a -- tor bless, and wor -- ship God in hum -- ble -- ness,
   %% CHORUS
   %% al -- le -- lu -- ia, al -- le -- lu -- ia!

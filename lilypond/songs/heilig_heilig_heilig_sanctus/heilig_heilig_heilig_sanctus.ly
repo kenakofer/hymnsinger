@@ -15,7 +15,7 @@ dateAdded = "2021-03-08"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   %% CHORUS
   \l Hei -- lig, hei -- lig, hei -- lig, hei -- lig ist der Herr!
   \l Hei -- lig, hei -- lig, hei -- lig, hei -- lig ist nur er!
@@ -25,7 +25,7 @@ verseA = \lyricmode {
   \hideVerseNumberAtLineStart
   \l e -- wig ist und wal -- tet, sein wird im -- mer -- dar.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   _ _ _ _ _ _ _ _ _ _ _
   _ _ _ _ _ _ _ _ _ _ _
   \showVerseNumberAtLineStart "2" #4.5
@@ -33,7 +33,7 @@ verseB = \lyricmode {
   \hideVerseNumberAtLineStart
   Hei -- lig, hei -- lig, hei -- lig, hei -- lig ist der Herr!
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   \override Lyrics.LyricText.font-shape = #'italic
   %% CHORUS
   Ho -- ly, ho -- ly, ho -- ly, ho -- ly is the Lord!
@@ -45,7 +45,7 @@ verseC = \lyricmode {
   ev -- er be ex -- alt -- ed, reign for -- ev -- er -- more.
 
 }
-verseD = \lyricmode {
+verseD = \tag #'verseD \lyricmode {
   \override Lyrics.LyricText.font-shape = #'italic
   _ _ _ _ _ _ _ _ _ _ _
   _ _ _ _ _ _ _ _ _ _ _

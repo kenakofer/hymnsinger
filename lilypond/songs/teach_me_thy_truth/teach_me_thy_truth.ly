@@ -50,25 +50,25 @@ bass = {
   }
 }
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l Teach me thy truth, O might -- y One,
   from sin, O set me free.
   \l Pre -- pare my life to fill its place
   in ser -- vice, God, for thee.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   Ac -- cept my tal -- ents, great or small,
   choose thou the path for me,
   where I shall la -- bor joy -- ous -- ly
   in ser -- vice, God, for thee.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   Help me to show thy glo -- rious way
   that leads in hope to thee,
   till oth -- er souls their joy shall find
   in ser -- vice, God, for thee.
 }
-verseD = \lyricmode {
+verseD = \tag #'verseD \lyricmode {
   Grant me thy grace for ev -- 'ry task
   un -- til thy face I see,
   then ev -- er new shall be that joy

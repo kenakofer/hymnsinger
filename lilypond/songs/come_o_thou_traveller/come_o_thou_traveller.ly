@@ -49,12 +49,12 @@ bass = {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   Come, O thou Trav -- el -- er un -- known, whom still, I hold, but can -- not see!
   \l My com -- pa -- ny be -- fore is gone, and I am left a -- lone with thee.
   \l With thee all night I mean to stay, and wres -- tle till the break of day.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   I need not tell thee who I am, my mis -- er -- y and sin de -- clare.
   Thy -- self has called me by my name, look on thy hands and read it there.
   But who, I ask thee, who art thou? Tell me thy name and tell me now.

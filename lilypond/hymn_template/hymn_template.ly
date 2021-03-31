@@ -59,20 +59,20 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l Ly -- rics
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   for _ each
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   verse
 }
-verseD = \lyricmode {
+verseD = \tag #'verseD \lyricmode {
   go here.
 }
-verseE = \lyricmode { }
-verseF = \lyricmode { }
+verseE = \tag #'verseE \lyricmode { }
+verseF = \tag #'verseF \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano

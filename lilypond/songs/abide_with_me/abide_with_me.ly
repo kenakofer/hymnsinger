@@ -50,32 +50,32 @@ bass = {
 
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
 	\l A -- bide with me; Fast falls the e -- ven -- tide,
   \l The dark -- ness deep -- ens; Lord, with me a -- bide!
   \l When o -- ther help -- ers fail, and com -- forts flee,
   \l Help of the help -- less, oh, a -- bide with me.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   Swift to its close ebbs out life’s lit -- tle day;
   Earth’s joys grow dim, its glo -- ries pass a -- way;
   Change and de -- cay in all a -- round I see;
   O Thou who chan -- gest not, a -- bide with me.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   Thou on my head in ear -- ly youth didst smile,
   And though re -- bel -- lious and per -- verse mean -- while,
   Thou hast not left me, oft as I left Thee.
   On to the close, O Lord, a -- bide with me.
 }
-verseD = \lyricmode {
+verseD = \tag #'verseD \lyricmode {
   I fear no foe, with Thee at hand to bless;
   Ills have no weight, and tears no bit -- ter -- ness.
   Where is death’s sting? Where, grave, thy vic -- to -- ry?
   I tri -- umph still, if Thou a -- bide with me.
 }
-verseE = \lyricmode { }
-verseF = \lyricmode { }
+verseE = \tag #'verseE \lyricmode { }
+verseF = \tag #'verseF \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano

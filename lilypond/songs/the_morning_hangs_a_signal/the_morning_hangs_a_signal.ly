@@ -51,19 +51,19 @@ bass = {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l The morn -- ing hangs a sig -- nal up -- on the moun -- tain crest,
   \l while all the sleep -- ing val -- leys in si -- lent dark -- ness rest.
   \l From peak to peak it flash -- es, it laughs a -- long the sky,
   \l till glo -- ry of the sun -- light on all the land shall lie.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   A -- bove the gen -- er -- a -- tions the lone -- ly proph -- ets rise,
   while truth flares as the day -- star with -- in their glow -- ing eyes,
   and oth -- er eyes, be -- hold -- ing, are kin -- dled from that flame;
   and dawn be -- comes the morn -- ing, when proph -- ets love pro -- claim.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   The soul has lift -- ed mo -- ments, a -- bove the drift of days,
   when life's great mean -- ing break -- eth in sun -- rise on our ways.
   Be -- hold the ra -- diant to -- ken of truth a -- bove all fear;

@@ -54,32 +54,32 @@ bass = {
 
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l Joy -- ful, joy -- ful, we a -- dore thee, God of glo -- ry, Lord of love.
   \l Hearts un -- fold like flow'rs be -- fore thee, prais -- ing thee their sun a -- bove.
   \l Melt the clouds of sin and sad -- ness; drive the dark of doubt a -- way.
   \l Giv -- er of im -- mor -- tal glad -- ness, fill us with the light of day!
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   All thy works with joy sur -- round thee, earth and heav'n re -- flect thy rays,
   stars and an -- gels sing a -- round thee, cen -- ter of un -- bro -- ken praise.
   Field and for -- est, vale and moun -- tain, bloom -- ing mead -- ow, flash -- ing sea,
   chart -- ing bird and flow -- ing foun -- tain call us to re -- joice in thee.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   Thou art giv -- ing and for -- giv -- ing, ev -- er bless -- ing, ev -- er bless'd,
   well -- spring of the joy of liv -- ing, o -- cean -- depth of hap -- py rest!
   Thou our Ma -- ker, Christ our broth -- er, all who live in love are thine.
   Teach us how to love each oth -- er, lift us to the joy di -- vine.
 }
-verseD = \lyricmode {
+verseD = \tag #'verseD \lyricmode {
   Mor -- tals join the might -- y cho -- rus which the morn -- ing stars be -- gan.
   Love di -- vine is reign -- ing o'er us, lead -- ing us with mer -- cy's hand.
   Ev -- er sing -- ing, march we on -- ward, vic -- tors in the midst of strife.
   Joy -- ful mu -- sic lifts us sun -- ward in the tri -- umph song of life!
 }
-verseE = \lyricmode { }
-verseF = \lyricmode { }
+verseE = \tag #'verseE \lyricmode { }
+verseF = \tag #'verseF \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano

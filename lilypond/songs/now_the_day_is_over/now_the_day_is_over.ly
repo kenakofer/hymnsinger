@@ -44,19 +44,19 @@ bass = {
 
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l Now the day is o -- ver,
   night is draw -- ing nigh,
   \l shad -- ows of the eve -- ning
   steal a -- cross the sky.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   Now the leaf -- less land -- scape
   set -- tles in re -- pose,
   wait -- ing for the qui -- et
   of the win -- ter snows.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   Now as twi -- light gath -- ers
   let us pause and hear
   all the slow -- ing pulse -- beats

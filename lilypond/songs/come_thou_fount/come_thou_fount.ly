@@ -51,18 +51,18 @@ bass = {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l Come, Thou Fount of ev -- 'ry bless -- ing, tune my heart to sing thy grace;
   \l Streams of mer -- cy, nev -- er ceas -- ing, call for songs of loud -- est praise.
   \l Teach me some mel -- o -- dious son -- net, sung by flam -- ing tongues a -- bove.
   \l Praise the mount! I’m fixed up -- on it, mount of God’s un -- chang -- ing love.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   Here I raise my Eb -- e -- ne -- zer; here by Thy great help I’ve come;
   And I hope, by thy good plea -- sure, safe -- ly to ar -- rive at home.
   Je -- sus sought me when a stran -- ger, wan -- d’ring from the fold of God;
   He, to res -- cue me from dan -- ger, in -- ter -- posed his pre -- cious blood; }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   O to grace how great a debt -- or dai -- ly I’m con -- strained to be!
   Let that grace now, like a fet -- ter, bind my wan -- d’ring heart to thee.
   Prone to wan -- der, Lord, I feel it, prone to leave the God I love;

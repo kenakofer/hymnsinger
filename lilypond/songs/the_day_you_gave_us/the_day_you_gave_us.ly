@@ -51,32 +51,32 @@ bass = {
 
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l The day you gave us, Lord, is end -- ed;
   \l the dark -- ness falls at your re -- quest.
   \l To you our morn -- ing hymns as -- cend -- ed;
   \l your praise shall sanc -- ti -- fy our rest.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   We thank you that your church, un -- sleep -- ing
   while earth rolls on -- ward in -- to light,
   through all the world its watch is keep -- ing,
   and nev -- er rests by day or night.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   As o -- ver con -- ti -- nent and is -- land
   each dawn leads on an -- oth -- er day,
   the voice of prayer is nev -- er si -- lent,
   nor do the prais -- es die a -- way.
 }
-verseD = \lyricmode {
+verseD = \tag #'verseD \lyricmode {
   So be it, Lord, your throne shall nev -- er,
   like earth's proud king -- doms pass a -- way.
   Your king -- dom stands and grows for -- ev -- er,
   un -- til there dawns your glo -- rious day.
 }
-verseE = \lyricmode { }
-verseF = \lyricmode { }
+verseE = \tag #'verseE \lyricmode { }
+verseF = \tag #'verseF \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano

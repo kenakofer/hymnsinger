@@ -52,19 +52,19 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l Blest be the tie that binds our hearts in Chris -- tian love.
   \l The fel -- low -- ship of kin -- dred minds is like to that a -- bove.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   We share each oth -- er's woes, each oth -- er's bur -- dens bear,
   and of -- ten for each oth -- er flows the sym -- pa -- thiz -- ing tear.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   When we a -- sun -- der part, it gives us in -- ward pain,
   but we shall still be joined in heart, and hope to meet a -- gain.
 }
-verseD = \lyricmode {
+verseD = \tag #'verseD \lyricmode {
   From sor -- row, toil, and pain, and sin we shall be free,
   and per -- fect love and friend -- ship reign through all e -- ter -- ni -- ty.
 }

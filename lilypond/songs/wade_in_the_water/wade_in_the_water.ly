@@ -57,7 +57,7 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   Wade in the wa -- ter,
   wade in the wa -- ter, chil -- dren,
   wade in the wa -- ter.

@@ -67,7 +67,7 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l I sing the might -- y pow'r of God,
   that made the moun -- tains rise,
   \l that spread the flow -- ing seas a -- broad
@@ -77,7 +77,7 @@ verseA = \lyricmode {
   \l The moon shines full at God's com -- mand
   and all the stars o -- bey.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   I sing the good -- ness of the Lord,
   that filled the earth with food.
   God formed the crea -- tures with a word,
@@ -87,7 +87,7 @@ verseB = \lyricmode {
   if I sur -- vey the ground I tread,
   or gaze up -- on the sky!
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   There's not a plant or flow'r be -- low,
   but makes thy glo -- ries known,
   and clouds a -- rise, and tem -- pests blow,

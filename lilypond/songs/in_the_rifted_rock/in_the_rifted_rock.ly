@@ -60,19 +60,19 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l In the rift -- ed Rock I'm rest -- ing, safe -- ly shel -- tered, I a -- bide.
   \l There no foes nor storms as -- sail me, while with -- in the cleft I hide.
   %% CHORUS
   \l Now I'm rest -- ing, sweet -- ly rest -- ing, in the cleft once made for me.
   \l Je -- sus, bless -- ed Rock of ag -- es, I will hide my -- self in thee.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   Long pur -- sued by sin and Sa -- tan, wea -- ry, sad, I longed for rest.
   Then I found this heav'n -- ly shel -- ter, o -- pened in my Sav -- ior's breast.
 
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   \override Lyrics.LyricText.font-shape = #'italic
   Wehr -- los und ver -- las -- sen sehnt sich oft mein Herz nach stil -- ler Ruh';
   doch du de -- ckest mit dem Fit -- tich dei -- ner Lie -- be sanft mich zu.
@@ -80,7 +80,7 @@ verseC = \lyricmode {
   Un -- ter dei -- nem sanf -- ten Fit -- tich find' ich Frie -- den, Trost und Ruh';
   denn du schir -- mest mich so freund -- lich, schü -- tzest mich und deckst mich zu.
 }
-verseD = \lyricmode {
+verseD = \tag #'verseD \lyricmode {
   \override Lyrics.LyricText.font-shape = #'italic
   Drückt mich Kum -- mer, Müh' und Sor -- ge, mei -- ne Zu -- flucht bist nur du,
   ret -- test mich aus al -- len Äng -- sten, trö -- stest mich und deckst mich zu.

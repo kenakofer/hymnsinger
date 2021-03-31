@@ -55,7 +55,7 @@ bass = {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l Once in roy -- al Da -- vid's cit -- y
   stood a low -- ly cat -- tle shed,
   \l where a moth -- er laid her ba -- by
@@ -63,7 +63,7 @@ verseA = \lyricmode {
   \l Ma -- ry was that moth -- er mild; _
   Je -- sus Christ, her lit -- tle child.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   He came down to earth from heav -- en
   who is God and Lord of all,
   and his shel -- ter was a sta -- ble,
@@ -71,7 +71,7 @@ verseB = \lyricmode {
   with the poor and meek and low -- ly,
   lived on earth our Sa -- vior ho -- ly.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   And our eyes at last shall see him,
   through his own re -- deem -- ing love;
   for that child so dear and gen -- tle
@@ -79,7 +79,7 @@ verseC = \lyricmode {
   and he leads his chil -- dren on _
   to the place where he is gone.
 }
-verseD = \lyricmode {
+verseD = \tag #'verseD \lyricmode {
   Not in that poor low -- ly sta -- ble
   with the ox -- en stand -- ing by,
   we shall see him, but in heav -- en

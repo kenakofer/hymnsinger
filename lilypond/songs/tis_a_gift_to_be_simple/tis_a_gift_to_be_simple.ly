@@ -52,7 +52,7 @@ bass = {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   'Tis a gift to be sim -- ple, 'tis a gift to be free,
   'tis a gift to come down where we ought to be.
   And when we find our -- selves in the place just right

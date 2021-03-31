@@ -56,7 +56,7 @@ bass = {
 
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   A voice with -- in be -- comes dis -- tressed to see you taste the fruit,
   for -- bid -- den by your God and creed, res -- pec -- ted since your youth:
   ''Pro -- di -- gal, I'll fight in you, re -- store your faith to thrive.

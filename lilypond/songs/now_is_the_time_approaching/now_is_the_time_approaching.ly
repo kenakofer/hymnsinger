@@ -51,7 +51,7 @@ bass = {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l Now is the time ap -- proach -- ing,
   by proph -- ets long fore -- told,
   \l when all shall dwell to -- geth -- er,
@@ -61,7 +61,7 @@ verseA = \lyricmode {
   \l all each a bless -- ed gard -- en,
   to please the god of peace.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   Let all that now di -- vides us re -- move and pass a -- way,
   like mists of ear -- ly morn -- ing
   be -- neath the blaze of day.
@@ -69,7 +69,7 @@ verseB = \lyricmode {
   more sweet and last -- ing prove,
   a clos -- er bond of un -- ion, in bless -- ed lands of love.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   O long -- ex -- pect -- ed dawn -- ing,
   come with your cheer -- ing ray!
   Yet shall the prom -- ise beck -- on

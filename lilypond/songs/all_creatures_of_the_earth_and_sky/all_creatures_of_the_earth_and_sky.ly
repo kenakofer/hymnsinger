@@ -16,7 +16,7 @@ dateAdded = "2021-03-05"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l All crea -- tures of the earth and sky, come, kin -- dred, lift your voic -- es high,
   %% CHORUS
   al -- le -- lu -- ia, al -- le -- lu -- ia!
@@ -26,7 +26,7 @@ verseA = \lyricmode {
   O sing ye, O sing ye, al -- le -- lu -- ia, al -- le -- lu -- ia, al -- le -- lu -- ia!
   %% END CHORUS
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   Swift rush -- ing wind so wild and strong, white clouds that sail in heav'n a -- long,
   %% CHORUS
   %% al -- le -- lu -- ia, al -- le -- lu -- ia!
@@ -38,7 +38,7 @@ verseB = \lyricmode {
   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
   %% END CHORUS
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   Cool flow -- ing wa -- ter pure and clear, make mu -- sic for all life to hear,
   %% CHORUS
   %% al -- le -- lu -- ia, al -- le -- lu -- ia!

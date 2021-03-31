@@ -44,19 +44,19 @@ bass = {
 
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l Breathe on me, breath of God. Fill me with life a -- new
   \l that I may love what thou dost love, and do what thou wouldst do.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   Breath on me, breath of God, un-til my heart is pure,
   un -- til with thee I will one will, to do and to en -- dure.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   Breathe on me, breath of God, till I am whol -- ly thine,
   till all this earth -- ly part of me glows with thy fire di -- vine.
 }
-verseD = \lyricmode {
+verseD = \tag #'verseD \lyricmode {
   Breath on me, breath of God, so shall I nev -- er die,
   but live with thee the per -- fect life of thine e -- ter -- ni -- ty.
 }

@@ -15,19 +15,19 @@ dateAdded = "2021-02-07"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l Love -- liest of trees, the cher -- ry now,
   \l hung with bloom a -- long the bough,
   \l it stands a -- bout the wood -- land ride
   \l wear -- ing white for Eas -- ter -- tide.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   Now of my three -- score years and ten,
   twen -- ty will not come a -- gain.
   And take from sev'n -- ty springs a score,
   leav -- ing me just fif -- ty more.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   And since to look at things in bloom
   fif -- ty springs are lit -- tle room,
   a -- bout the wood -- lands I will go,

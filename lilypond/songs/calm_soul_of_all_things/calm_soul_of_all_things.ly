@@ -17,13 +17,13 @@ dateAdded = "2021-03-09"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l Calm soul of all things, make it mine
   to feel a -- mid the cit -- y's jar,
   \l that there a -- bides a peace of thine
   I did not make, and can -- not mar.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   The will to nei -- ther strive nor cry,
   the pow'r to feel with oth -- er's, give.
   Calm, calm me more, nor let me die

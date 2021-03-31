@@ -51,13 +51,13 @@ bass = {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l Come, ye thank -- ful peo -- ple, come, raise a song of har -- vest home:
   \l fruit and crops are gath -- ered in, safe be -- fore the storms be -- gin;
   \l God, our Mak -- er, will pro -- vide for our needs to be sup -- plied;
   \l come to God's own tem -- ple, come, raise a song of har -- vest home.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   All the world is but a field, giv -- en for a fruit -- ful yield;
   wheat and tares to -- geth -- er sown, here for joy or sor -- row grown:
   first the blade, and then the ear, then the full corn shall ap -- pear;

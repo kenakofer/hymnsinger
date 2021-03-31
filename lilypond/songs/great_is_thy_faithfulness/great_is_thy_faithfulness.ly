@@ -73,7 +73,7 @@ bass = {
 
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l Great is thy faith -- ful -- ness, O God my Ma -- ker.
   \l There is no shad -- ow of turn -- ing with thee.
   \l Thou chang -- est not, thy com -- pas -- sions, they fail not.
@@ -84,13 +84,13 @@ verseA = \lyricmode {
   All I have need -- ed thy hand hath pro -- vid -- ed.
   Great is thy faith -- ful -- ness! Lord un -- to me!
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   Sum -- mer and win -- ter, and spring -- time and har -- vest,
   sun, moon, and stars in their cours -- es a -- bove,
   join with all na -- ture in man -- i -- fold wit -- ness
   to thy great faith -- ful -- ness, mer -- cy, and love.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   Par -- don for sin and a peace that en -- dur -- eth,
   thine own dear pres -- ence to cheer and to guide,
   strength for to -- day and bright hope for to -- mor -- row;

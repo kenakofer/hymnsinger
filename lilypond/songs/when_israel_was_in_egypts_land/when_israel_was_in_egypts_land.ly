@@ -59,7 +59,7 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l When Is -- rael was in E -- gypt's land,
   let my peo -- ple go,
   \l op -- pressed so hard they could not stand,
@@ -68,13 +68,13 @@ verseA = \lyricmode {
   Go down, Mo -- ses, way down in E -- gypt's land,
   tell old Pha -- raoh: let my peo -- ple go.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   The Lord told Mo -- ses what to do,
   let my peo -- ple go,
   to lead the He -- brew chil -- dren through,
   let my peo -- ple go.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   As Is -- rael stood by wa -- ter's side,
   let my peo -- ple go,
   at God's com -- mand it did di -- vide,

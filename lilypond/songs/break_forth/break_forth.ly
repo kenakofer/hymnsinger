@@ -52,7 +52,7 @@ bass = {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
     Break forth, O beau -- _ teous heav'n -- ly light, and ush -- er in the morn -- ing.
     O shep -- herds, shrink _ not with af -- fright, but hear the an -- gel's warn -- ing.
     This child, now weak in in -- _ fan -- cy, our con -- fi -- dence _ and joy shall be,

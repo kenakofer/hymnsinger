@@ -58,7 +58,7 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l When peace like a riv -- er at -- tend -- eth my way,
   \l when sor -- rows like sea bil -- lows roll,
   \l what -- ev -- er my lot, thou hast taught me to say,
@@ -66,19 +66,19 @@ verseA = \lyricmode {
   %% CHORUS
   It is well __ with my soul, __ it is well, it is well with my soul.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   Though Sa -- tan should buf -- fet, though tri -- als should come,
   let this blest as -- sur -- ance con -- trol,
   that Christ hath re -- gard -- ed my help -- less es -- tate,
   and hath shed his own blood for my soul.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   Re -- deemed! Oh, the bliss of this glo -- ri -- ous thought:
   My sin– not in part, but the whole–
   is nailed to his cross, and I bear it no more,
   praise the Lord, praise the Lord, O my soul!
 }
-verseD = \lyricmode {
+verseD = \tag #'verseD \lyricmode {
   And, Lord, haste the day when my faith shall be sight,
   the clouds be rolled back as a scroll,
   the trum -- pet shall sound, and the Lord shall de -- scend,

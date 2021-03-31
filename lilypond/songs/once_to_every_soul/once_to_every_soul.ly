@@ -15,7 +15,7 @@ dateAdded = "2021-01-14"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l Once to ev -- ’ry soul and na -- tion
   comes the mo -- ment to de -- cide,
   \l in the strife of truth with false -- hood,
@@ -26,7 +26,7 @@ verseA = \lyricmode {
   \l ere her cause bring fame and prof -- it,
   and ’tis prosp -- ’rous to be just;
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   New oc -- ca -- sions teach new du -- ties,
   time makes an -- cient good un -- couth;
   they must up -- ward still and on -- ward
@@ -37,7 +37,7 @@ verseB = \lyricmode {
   nor at -- tempt the fu -- ture's por -- tal
   with the past's blood -- rus -- ted key.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   Though the cause of e -- vil pros -- per,
   yet ’tis truth a -- lone is strong;
   though her por -- tion be the scaf -- fold,

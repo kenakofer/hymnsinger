@@ -16,17 +16,17 @@ dateAdded = "2021-03-04"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l God is here a -- mong us: come with a -- do -- ra -- tion, fer -- vent praise and ex -- pec -- ta -- tion.
   \l God is here with -- in us: known be -- yond be -- liev -- ing, soul in si -- lent awe re -- ceiv -- ing.
   \l God will name and will claim those be -- held as low -- ly, mak -- ing all things ho -- ly.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   Come, a -- bide with -- in me; let my soul, like Ma -- ry, be thine earth -- ly sanc -- tu -- ar -- y.
   Come, in -- dwell -- ing Spir -- it, with trans -- fig -- ured splen -- dor; love and hon -- or will I ren -- der.
   Where I go here be -- low, let me bow be -- fore thee, know thee, and a -- dore thee.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   Glad -- ly we sur -- ren -- der earth's de -- ceit -- ful trea -- sures, pride of life, and sin -- ful plea -- sures.
   God, we glad -- ly of -- fer thine to be for -- ev -- er, soul and life and each en -- deav -- or.
   Thou a -- lone shalt be known Lord of all our be -- ing, life's true way de -- cree -- ing.

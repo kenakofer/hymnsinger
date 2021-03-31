@@ -52,7 +52,7 @@ bass = {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l Now all the woods are sleep -- ing,
   the night and still -- ness creep -- ing
   \l o'er ci -- ty, field, and beast;
@@ -60,7 +60,7 @@ verseA = \lyricmode {
   \l with pray'r -- ful thanks, at -- tend thee,
   to dear -- est Trea -- sures ere thou rest.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   Why Sun, are you re -- treat -- ing?
   The Moon, in dance, now lead -- ing
   the anc -- ient bal -- lad, Night.
@@ -68,7 +68,7 @@ verseB = \lyricmode {
   does Truth in -- fuse our sto -- ry,
   when off -- ered soft as yon -- der light.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   Now ob -- li -- ga -- tion ceas -- es,
   this Night the tired re -- leas -- es
   and bids you sleep be -- gin:
@@ -76,7 +76,7 @@ verseC = \lyricmode {
   shall set thee free from sor -- row,
   and all the anx -- ious toil with -- in.
 }
-verseD = \lyricmode {
+verseD = \tag #'verseD \lyricmode {
   My loved ones, rest se -- cure -- ly,
   from ev -- 'ry per -- il sure -- ly
   pro -- tect -- ed be your heads;

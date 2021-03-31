@@ -60,19 +60,19 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l What a friend we have in Je -- sus, all our sins and griefs to bear!
   \l What a priv -- i -- lege to car -- ry ev -- 'ry -- thing to God in prayer!
   \l Oh, what peace we of -- ten for -- feit, oh, what need -- less pain we bear,
   \l all be -- cause we do not car -- ry ev -- 'ry -- thing to God in prayer!
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   Have we tri -- als and temp -- ta -- tions? Is there trou -- ble an -- y -- where?
   We should nev -- er be dis -- cour -- aged– take it to the Lord in prayer!
   Can we find a friend so faith -- ful, who will all our sor -- rows share?
   Je -- sus knows our ev -- 'ry weak -- ness– take it to the Lord in prayer!
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   Are we weak and heav -- y la -- den, 'cum -- bered with a load of care?
   Pre -- cious Sav -- ior, still our ref -- uge, take it to the Lord in prayer!
   Do thy friends de -- spise, for -- sake thee? Take it to the Lord in prayer!

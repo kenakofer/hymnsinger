@@ -43,25 +43,25 @@ bass = {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l Help us to help each oth -- er, Lord,
   each oth -- er's cross to bear,
   \l let all their friend -- ly aid af -- ford,
   and feel a -- noth -- er's care.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   Up in -- to thee, our liv -- ing head,
   let us in all things grow,
   and by thy sac -- ri -- fice be led
   the fruits of love to show.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
     Touched by the lode -- stone of thy love
     let all our hearts a -- gree;
     and ev -- er toward each oth -- er move,
     and ev -- er move toward thee.
 }
-verseD = \lyricmode {
+verseD = \tag #'verseD \lyricmode {
   This is the bond of per -- fect -- ness,
   thy spot -- less char -- i -- ty.
   O let us still, we pray, pos -- sess

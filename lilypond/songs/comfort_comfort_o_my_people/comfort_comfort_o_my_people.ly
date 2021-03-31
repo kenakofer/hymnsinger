@@ -15,7 +15,7 @@ dateAdded = "2021-02-07"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   \l Com -- fort, com -- fort, O my peo -- ple,
   speak of peace, now says our God.
   \l Com -- fort those who sit in dark -- ness,
@@ -26,7 +26,7 @@ verseA = \lyricmode {
   \l Tell of all the sins I cov -- er,
   and that war -- fare now is o -- ver.
 }
-verseB = \lyricmode {
+verseB = \tag #'verseB \lyricmode {
   Hark, the voice of one who's cry -- ing
   in the des -- ert far and near,
   bid -- ding all to full re -- pen -- tance
@@ -37,7 +37,7 @@ verseB = \lyricmode {
   Let the val -- leys rise to meet God
   and the hills bow down to greet God.
 }
-verseC = \lyricmode {
+verseC = \tag #'verseC \lyricmode {
   O make straight what long was crook -- ed,
   make the rough -- er plac -- es plain.
   Let your hearts be true and hum -- ble,

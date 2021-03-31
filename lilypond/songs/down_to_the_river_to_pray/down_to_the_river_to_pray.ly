@@ -57,7 +57,7 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \lyricmode {
+verseA = \tag #'verseA \lyricmode {
   As I went down to the riv -- er to pray,
   stud -- y -- in' a -- bout that good old way,
   and who shall wear the star -- ry crown,
