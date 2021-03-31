@@ -14,4 +14,3 @@
 \header{
   copyright = \public_domain_notice_two_lines \typesetter
 }
-\prescore_text
