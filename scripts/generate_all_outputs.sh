@@ -19,7 +19,7 @@ find ./lilypond/songs -type f -iname "*.ly" -print0 | sort -z | while IFS= read 
         # Point and click bloats the file size, makes every note into a "link",
         # and the file size larger. We disable for the pdfs
         lilypond -s -o $OUTPUT_DIR -dno-point-and-click $INPUT
-        lilypond -s -o $OUTPUT_DIR -fpng -dresolution=150 $INPUT
+        lilypond -s -o $OUTPUT_DIR -fpng -dresolution=350 $INPUT
 
         # If it was a multi-page score, the images should be vertically joined
         for TYPE in -trad -clairnote -shapenote; do
@@ -29,5 +29,9 @@ find ./lilypond/songs -type f -iname "*.ly" -print0 | sort -z | while IFS= read 
                 echo "Failed to merge images for $BASE"
             fi
         done
+
+        echo "     --> Reducing PNG filesize for $BASE"
+        echo "     -->"
+        mogrify -colorspace gray +dither -posterize 2 "$OUTPUT_DIR$BASE*.png"
     fi
 done;
