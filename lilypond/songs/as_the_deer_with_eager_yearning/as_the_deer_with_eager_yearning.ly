@@ -49,5 +49,7 @@ all_verses = <<
 %% All sheet music outputs
 clairStaffZoom = #.8
 \include "../../lib/all_notation_outputs.ly"
+% Slides output
+\include "../../lib/slides_book_2verse.ly"
 %% MIDI output
 \include "../../lib/midi_output.ly"

@@ -102,5 +102,7 @@ extra_verses = \markup {
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"
+% Slides output
+\include "../../lib/slides_book_3verse.ly"
 %% midi output
 \include "../../lib/midi_output.ly"

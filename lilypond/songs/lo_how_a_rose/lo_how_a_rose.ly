@@ -73,10 +73,6 @@ verseC = \tag #'verseC \lyricmode {
   Hu -- man, yet ver -- y God, from sin and death he saves us,
   and light -- ens ev -- 'ry load.
 }
-verseD = \tag #'verseD \lyricmode {
-}
-verseE = \tag #'verseE \lyricmode { }
-verseF = \tag #'verseF \lyricmode { }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano
@@ -84,12 +80,11 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
 >>
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"
+% Slides output
+\include "../../lib/slides_book_3verse.ly"
 %% MIDI output
 \include "../../lib/midi_output.ly"

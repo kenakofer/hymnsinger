@@ -105,5 +105,7 @@ all_verses = <<
 %% All sheet music outputs
 clairStaffZoom = #.9
 \include "../../lib/all_notation_outputs.ly"
+% Slides output
+\include "../../lib/slides_book_4verse.ly"
 %% MIDI output
 \include "../../lib/midi_output.ly"

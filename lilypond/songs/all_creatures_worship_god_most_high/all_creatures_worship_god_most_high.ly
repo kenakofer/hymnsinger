@@ -116,5 +116,7 @@ all_verses = <<
 clairStaffZoom = #.9
 tradStaffZoom = #.98
 \include "../../lib/all_notation_outputs.ly"
+% Slides output
+\include "../../lib/slides_book_7verse.ly"
 %% MIDI output
 \include "../../lib/midi_output.ly"

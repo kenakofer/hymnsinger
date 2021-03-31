@@ -84,7 +84,7 @@ verseB = \tag #'verseB \lyricmode {
 verseC = \tag #'verseC \lyricmode {
   And though this world, with dev -- ils filled,
   should threat -- en to un -- do us,
-  wo will not fear, for God hath willed
+  we will not fear, for God hath willed
   his truth to tri -- umph through us.
 
   The prince of dark -- ness grim, we trem -- ble not for him.
@@ -111,10 +111,9 @@ all_verses = <<
   \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
 >>
 
-%% Use this, or the tradStaffZoom and shapeStaffZoom equivalents, if space is tight.
-%clairStaffZoom = #.9
-
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"
+% Slides output
+\include "../../lib/slides_book_4verse.ly"
 %% MIDI output
 \include "../../lib/midi_output.ly"

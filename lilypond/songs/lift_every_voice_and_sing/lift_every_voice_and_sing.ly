@@ -132,6 +132,8 @@ songChords = \chords {
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"
+% Slides output
+\include "../../lib/slides_book_3verse.ly"
 %% MIDI output
 \include "../../lib/midi_output.ly"
 
