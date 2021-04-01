@@ -63,3 +63,4 @@ This is a project to make or take hymns with permissive copyright status, typese
     - Somehow only include 1 verse, in large font?
   - Add og: values to hymn.singer.ga index page for better sharability
     - Need to make a logo maybe?
+  - Add MP3 download

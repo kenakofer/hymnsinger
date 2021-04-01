@@ -173,6 +173,21 @@ img {
   visibility: visible;
 }
 
+#misc-downloads h4 {
+    color: #f7f7ee;
+}
+#misc-download-list a {
+    color: #f55;
+    font-weight: 500;
+    font-size: 13px;
+}
+#misc-download-list {
+    background: #232323;
+    border-radius: 4px;
+    padding: 2px 6px;
+    border: 2px solid #f7f7ee;
+}
+
 #song-table {
     table-layout: fixed;
     font-size: 12px;
