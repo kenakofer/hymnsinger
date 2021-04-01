@@ -62,3 +62,7 @@ This is a project to make or take hymns with permissive copyright status, typese
     - Need to make a logo maybe?
   - Add MP3 download
   - Fix caps/underscore variables
+  - Collapse misc downloads section on narrow screen
+  - Slides issues:
+    - First page often gets only one line (o come o come)
+    - Prevent dropLyricsSmall etc. (o come o come)
