@@ -54,32 +54,27 @@ bass = {
 
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l What Child is this, who, laid to rest, on Ma -- ry's lap is sleep -- ing,
   \l whom an -- gels greet with an -- thems sweet, while shep -- herds watch are keep -- ing?
   \l This, this is Christ the King, whom shep -- herds guard and an -- gels sing.
   \l Haste, haste to bring him laud, the babe, the son of Ma -- ry!
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   Why lies he in such mean es -- tate where ox and ass are feed -- ing?
   Good Chris -- tian, fear, for sin -- ners here the si -- lent Word is plead -- ing.
   Nails, spear shall pierce him through, the cross be borne for me, for you.
   Hail, hail the Word -- made -- flesh, the babe, the son of Ma -- ry!
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
  So bring him in -- cense, gold, and myrrh, come, peas -- ant, king, to own him.
  The King of kings sal -- va -- tion brings, let lov -- ing hearts en -- throne him.
  Raise, raise the song on high; the vir -- gin sings her lul -- la -- by.
  Joy, joy for Christ is born, the babe, the son of Ma -- ry!
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/3verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"

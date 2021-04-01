@@ -68,7 +68,7 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   We are peo -- ple of God's peace
   as a new cre -- a -- tion.
   \l Love u -- nites and strength -- ens us
@@ -78,7 +78,7 @@ verseA = \tag #'verseA \lyricmode {
   \l a new cov -- e -- nant of peace
   binds us all to -- geth -- er.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   We are chil -- dren of God's peace
   in this new cre -- a -- tion,
   spread -- ing joy and hap -- pi -- ness
@@ -88,7 +88,7 @@ verseB = \tag #'verseB \lyricmode {
   Peace with ev -- 'ry -- one we seek,
   good for e -- vil giv -- ing.
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   We are ser -- vants of God's peace,
   of the new cre -- a -- tion.
   Choos -- ing peace, we faith -- ful -- ly
@@ -99,13 +99,8 @@ verseC = \tag #'verseC \lyricmode {
   Christ will nev -- er leave us.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/3verse.ly"
 
 %% All sheet music outputs
 shapeStaffZoom = #1.1

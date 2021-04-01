@@ -55,7 +55,7 @@ bass = {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l Once in roy -- al Da -- vid's cit -- y
   stood a low -- ly cat -- tle shed,
   \l where a moth -- er laid her ba -- by
@@ -63,7 +63,7 @@ verseA = \tag #'verseA \lyricmode {
   \l Ma -- ry was that moth -- er mild; _
   Je -- sus Christ, her lit -- tle child.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   He came down to earth from heav -- en
   who is God and Lord of all,
   and his shel -- ter was a sta -- ble,
@@ -71,7 +71,7 @@ verseB = \tag #'verseB \lyricmode {
   with the poor and meek and low -- ly,
   lived on earth our Sa -- vior ho -- ly.
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   And our eyes at last shall see him,
   through his own re -- deem -- ing love;
   for that child so dear and gen -- tle
@@ -79,7 +79,7 @@ verseC = \tag #'verseC \lyricmode {
   and he leads his chil -- dren on _
   to the place where he is gone.
 }
-verseD = \tag #'verseD \lyricmode {
+verseD = \lyricmode {
   Not in that poor low -- ly sta -- ble
   with the ox -- en stand -- ing by,
   we shall see him, but in heav -- en
@@ -88,14 +88,8 @@ verseD = \tag #'verseD \lyricmode {
   all in white, shall wait a -- round.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/4verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"

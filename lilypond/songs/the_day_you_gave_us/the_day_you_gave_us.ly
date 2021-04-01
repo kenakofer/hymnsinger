@@ -51,39 +51,33 @@ bass = {
 
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l The day you gave us, Lord, is end -- ed;
   \l the dark -- ness falls at your re -- quest.
   \l To you our morn -- ing hymns as -- cend -- ed;
   \l your praise shall sanc -- ti -- fy our rest.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   We thank you that your church, un -- sleep -- ing
   while earth rolls on -- ward in -- to light,
   through all the world its watch is keep -- ing,
   and nev -- er rests by day or night.
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   As o -- ver con -- ti -- nent and is -- land
   each dawn leads on an -- oth -- er day,
   the voice of prayer is nev -- er si -- lent,
   nor do the prais -- es die a -- way.
 }
-verseD = \tag #'verseD \lyricmode {
+verseD = \lyricmode {
   So be it, Lord, your throne shall nev -- er,
   like earth's proud king -- doms pass a -- way.
   Your king -- dom stands and grows for -- ev -- er,
   un -- til there dawns your glo -- rious day.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/4verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"

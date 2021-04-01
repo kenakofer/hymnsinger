@@ -146,7 +146,7 @@ bass = \relative d {
 
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   O come, all ye faith -- ful, joy -- ful and tri -- um -- phant,
   O come ye, O come ye to Beth -- _ le -- hem.
   \l Come and be -- hold him,
@@ -157,7 +157,7 @@ verseA = \tag #'verseA \lyricmode {
   O come, let us a -- dore him,
   Christ the Lord.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
  _ True God of true God, Light of light e -- ter -- nal,
  _ our low -- ly na -- ture he hath not ab -- horred;
  Son of the Fa -- ther, be-got -- ten, not cre -- at -- ed.
@@ -168,7 +168,7 @@ verseB = \tag #'verseB \lyricmode {
   Christ the Lord.
  }
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   _ Sing, choirs of an -- gels, sing in ex -- ul -- ta -- tion,
   _ sing, all ye cit -- i -- zens of heav'n a -- bove;
   glo -- ry to God, all glo -- ry in the high -- est.
@@ -179,7 +179,7 @@ verseC = \tag #'verseC \lyricmode {
   Christ the Lord.
  }
 }
-verseD = \tag #'verseD \lyricmode {
+verseD = \lyricmode {
   _ Yea, Lord, we greet thee, born this hap -- py morn -- ing,
   _ Je -- sus, to thee be all glo -- _ ry giv'n;
   Word of the Fa -- ther, now in flesh ap -- pear -- ing.
@@ -191,14 +191,8 @@ verseD = \tag #'verseD \lyricmode {
  }
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/4verse.ly"
 
 %% All sheet music outputs
 clairStaffZoom = #.9

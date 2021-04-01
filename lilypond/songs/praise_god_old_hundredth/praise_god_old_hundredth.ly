@@ -67,15 +67,17 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l Praise God from whom all bless -- ings flow;
   praise God all crea -- tures here be -- low;
   \l praise God a -- bove, ye heav'n -- ly host;
   praise Fa -- ther, Son, and Ho -- ly Ghost.
   %% CHORUS
-  %% A -- men
+  \SA {
+    A -- men
+  }
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   \override Lyrics.LyricText.font-shape = #'italic
   Gloire à Dieu, no -- tre Cré -- a -- teur;
   Gloire à Christ, no -- tre Ré -- demp -- teur;
@@ -84,32 +86,36 @@ verseB = \tag #'verseB \lyricmode {
   %% CHORUS
   A -- men
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   \override Lyrics.LyricText.font-shape = #'italic
   A la Di -- vi -- na Tri -- ni -- dad,
   to -- do un -- i -- dos a -- la -- bad,
   con al -- e -- gri -- a,~y gra -- ti -- tud,
   su~a -- mor y gra -- cia cel -- e -- brad.
   %% CHORUS
-  %% A -- men
+  \SC {
+    A -- men
+  }
 }
-verseD = \tag #'verseD \lyricmode {
+verseD = \lyricmode {
   \override Lyrics.LyricText.font-shape = #'italic
   Ehr sei dem Va -- ter und dem Sohn
   dem Heil -- 'gen Geist in ei -- nem Thron,
   der hei -- li -- gen Drei -- ei -- nig -- keit,
   sei Lob und Preis in E -- wig -- keit.
   %% CHORUS
-  %% A -- men
+  \SD {
+    A -- men
+  }
 }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano
   % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "  English:" "" \verseA }
-  \new Lyrics \with \dropLyricsSmall \lyricsto soprano  { \globalLyrics "  French:" "" \verseB }
-  \new Lyrics \with \dropLyricsSmall \lyricsto soprano  { \globalLyrics "  Spanish:" "" \verseC }
-  \new Lyrics \with \dropLyricsSmall \lyricsto soprano  { \globalLyrics "  German:" "" \verseD }
+  \tag #'verseA { \new Lyrics  \lyricsto soprano  { \globalLyrics "  English:" "" \verseA } }
+  \tag #'verseB { \new Lyrics \with \dropLyricsSmall \lyricsto soprano  { \globalLyrics "  French:" "" \verseB } }
+  \tag #'verseC { \new Lyrics \with \dropLyricsSmall \lyricsto soprano  { \globalLyrics "  Spanish:" "" \verseC } }
+  \tag #'verseD { \new Lyrics \with \dropLyricsSmall \lyricsto soprano  { \globalLyrics "  German:" "" \verseD } }
 >>
 
 %% All sheet music outputs

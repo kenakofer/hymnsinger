@@ -15,7 +15,7 @@ dateAdded = "2021-01-14"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l Once to ev -- ’ry soul and na -- tion
   comes the mo -- ment to de -- cide,
   \l in the strife of truth with false -- hood,
@@ -26,7 +26,7 @@ verseA = \tag #'verseA \lyricmode {
   \l ere her cause bring fame and prof -- it,
   and ’tis prosp -- ’rous to be just;
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   New oc -- ca -- sions teach new du -- ties,
   time makes an -- cient good un -- couth;
   they must up -- ward still and on -- ward
@@ -37,7 +37,7 @@ verseB = \tag #'verseB \lyricmode {
   nor at -- tempt the fu -- ture's por -- tal
   with the past's blood -- rus -- ted key.
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   Though the cause of e -- vil pros -- per,
   yet ’tis truth a -- lone is strong;
   though her por -- tion be the scaf -- fold,
@@ -49,13 +49,8 @@ verseC = \tag #'verseC \lyricmode {
   of the faith they had de -- nied.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/3verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"

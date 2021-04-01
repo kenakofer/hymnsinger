@@ -60,32 +60,27 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l What a friend we have in Je -- sus, all our sins and griefs to bear!
   \l What a priv -- i -- lege to car -- ry ev -- 'ry -- thing to God in prayer!
   \l Oh, what peace we of -- ten for -- feit, oh, what need -- less pain we bear,
   \l all be -- cause we do not car -- ry ev -- 'ry -- thing to God in prayer!
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   Have we tri -- als and temp -- ta -- tions? Is there trou -- ble an -- y -- where?
   We should nev -- er be dis -- cour -- aged– take it to the Lord in prayer!
   Can we find a friend so faith -- ful, who will all our sor -- rows share?
   Je -- sus knows our ev -- 'ry weak -- ness– take it to the Lord in prayer!
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   Are we weak and heav -- y la -- den, 'cum -- bered with a load of care?
   Pre -- cious Sav -- ior, still our ref -- uge, take it to the Lord in prayer!
   Do thy friends de -- spise, for -- sake thee? Take it to the Lord in prayer!
   Je -- sus' arms will take and shield thee– thou wilt find a sol -- ace there.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/3verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"

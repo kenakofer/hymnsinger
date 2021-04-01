@@ -58,7 +58,7 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l When peace like a riv -- er at -- tend -- eth my way,
   \l when sor -- rows like sea bil -- lows roll,
   \l what -- ev -- er my lot, thou hast taught me to say,
@@ -66,23 +66,35 @@ verseA = \tag #'verseA \lyricmode {
   %% CHORUS
   It is well __ with my soul, __ it is well, it is well with my soul.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   Though Sa -- tan should buf -- fet, though tri -- als should come,
   let this blest as -- sur -- ance con -- trol,
   that Christ hath re -- gard -- ed my help -- less es -- tate,
   and hath shed his own blood for my soul.
+  %% CHORUS
+  \SB {
+    It is well __ with my soul, __ it is well, it is well with my soul.
+  }
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   Re -- deemed! Oh, the bliss of this glo -- ri -- ous thought:
   My sin– not in part, but the whole–
   is nailed to his cross, and I bear it no more,
   praise the Lord, praise the Lord, O my soul!
+  %% CHORUS
+  \SC {
+    It is well __ with my soul, __ it is well, it is well with my soul.
+  }
 }
-verseD = \tag #'verseD \lyricmode {
+verseD = \lyricmode {
   And, Lord, haste the day when my faith shall be sight,
   the clouds be rolled back as a scroll,
   the trum -- pet shall sound, and the Lord shall de -- scend,
   e -- ven so, it is well with my soul.
+  %% CHORUS
+  \SD {
+    It is well __ with my soul, __ it is well, it is well with my soul.
+  }
 }
 altoRefrain = \lyricmode {
   _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
@@ -94,10 +106,10 @@ all_verses = <<
   \new NullVoice = "soprano" \soprano
   \new NullVoice = "alto" \alto
   % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
+  \tag #'verseA { \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA } }
+  \tag #'verseB { \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB } }
+  \tag #'verseC { \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC } }
+  \tag #'verseD { \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD } }
   \new Lyrics  \lyricsto alto  { \globalLyrics "" "" \altoRefrain }
 >>
 

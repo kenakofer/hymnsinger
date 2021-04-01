@@ -52,7 +52,7 @@ bass = {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   O sa -- cred Head, now wound -- ed,
   with grief and shame weighed down,
   now scorn -- ful -- ly sur -- round -- ed
@@ -62,7 +62,7 @@ verseA = \tag #'verseA \lyricmode {
   Yet, though de -- spised and gor -- y,
   I joy to call thee mine.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   What thou, my Lord, hast suf -- fered
   was all for sin -- ners' gain.
   Mine, mine was the trans -- gres -- sion,
@@ -72,7 +72,7 @@ verseB = \tag #'verseB \lyricmode {
   Look on me with thy fa -- vor,
   and grant to me thy grace.
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   What lan -- guage shall I bor -- row
   to thank thee, dear -- est Friend,
   for this, thy dy -- ing sor -- row,
@@ -82,7 +82,7 @@ verseC = \tag #'verseC \lyricmode {
   Lord, let me nev -- er, nev -- er
   out -- live my love to thee.
 }
-verseD = \tag #'verseD \lyricmode {
+verseD = \lyricmode {
   Be near when I am dy -- ing,
   oh, show thy cross to me,
   and for my res -- cue, fly -- ing,
@@ -93,14 +93,8 @@ verseD = \tag #'verseD \lyricmode {
   dies safe -- ly, through thy love.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/4verse.ly"
 
 %% All sheet music outputs
 clairStaffZoom = #.9

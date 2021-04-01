@@ -8,7 +8,7 @@
 %% SONG INFO
 title = \titleText "May we each take joy in giving"
 %subtitle = \smallText "Optional"
-poet = \smallText "Text: Robert Murray, 1880, alt. Kenan Schaefkofer, 2021"
+poet = \twoLineSmallText "Text: Robert Murray, 1880" "alt. Kenan Schaefkofer, 2021"
 typesetter = "Kenan Schaefkofer"
 verseCount = 1
 tags = "english secular 4part"
@@ -16,16 +16,13 @@ dateAdded = "2021-03-14"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   May we each take joy in giv -- ing with a spir -- it large and free
   to our neigh -- bors and the stran -- gers, fost -- er -- ing com -- mun -- i -- ty.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "" "" \verseA }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/1verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"

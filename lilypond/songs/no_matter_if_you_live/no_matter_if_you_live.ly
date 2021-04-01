@@ -74,13 +74,8 @@ verseC = \tag #'verseC \lyricmode {
   a bound -- less heart be -- yond all fear and strife.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/3verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"

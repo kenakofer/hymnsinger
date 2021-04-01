@@ -52,7 +52,7 @@ bass = {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   'Tis a gift to be sim -- ple, 'tis a gift to be free,
   'tis a gift to come down where we ought to be.
   And when we find our -- selves in the place just right
@@ -64,11 +64,8 @@ verseA = \tag #'verseA \lyricmode {
   till by turn -- ing, turn -- ing we come round right.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "" "" \verseA }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/1verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"

@@ -59,7 +59,7 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l When Is -- rael was in E -- gypt's land,
   let my peo -- ple go,
   \l op -- pressed so hard they could not stand,
@@ -68,26 +68,31 @@ verseA = \tag #'verseA \lyricmode {
   Go down, Mo -- ses, way down in E -- gypt's land,
   tell old Pha -- raoh: let my peo -- ple go.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   The Lord told Mo -- ses what to do,
   let my peo -- ple go,
   to lead the He -- brew chil -- dren through,
   let my peo -- ple go.
+  %% CHORUS
+  \SB {
+    Go down, Mo -- ses, way down in E -- gypt's land,
+    tell old Pha -- raoh: let my peo -- ple go.
+  }
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   As Is -- rael stood by wa -- ter's side,
   let my peo -- ple go,
   at God's com -- mand it did di -- vide,
   let my peo -- ple go.
+  %% CHORUS
+  \SC {
+    Go down, Mo -- ses, way down in E -- gypt's land,
+    tell old Pha -- raoh: let my peo -- ple go.
+  }
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/3verse.ly"
 
 extra_verses = \markup {
   \fill-line {

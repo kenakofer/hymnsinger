@@ -58,8 +58,8 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
-  \l Re -- ceive our thanks
+verseA = \lyricmode {
+  Re -- ceive our thanks
   for night and day,
   for food and shel -- ter,
   rest and play,
@@ -69,20 +69,8 @@ verseA = \tag #'verseA \lyricmode {
   A -- men.
 }
 
-spacingVerse = \lyricmode {
-  "\t" "\t" "\t" "\t" "\t" "\t" "\t" "\t"
-  "\t" "\t" "\t" "\t" "\t" "\t" "\t" "\t"
-}
-
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "" "" \spacingVerse }
->>
-
-%% Use this, or the tradStaffZoom and shapeStaffZoom equivalents, if space is tight.
-%clairStaffZoom = #.9
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/1verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"

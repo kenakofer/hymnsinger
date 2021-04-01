@@ -50,39 +50,33 @@ bass = {
   }
 }
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l Teach me thy truth, O might -- y One,
   from sin, O set me free.
   \l Pre -- pare my life to fill its place
   in ser -- vice, God, for thee.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   Ac -- cept my tal -- ents, great or small,
   choose thou the path for me,
   where I shall la -- bor joy -- ous -- ly
   in ser -- vice, God, for thee.
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   Help me to show thy glo -- rious way
   that leads in hope to thee,
   till oth -- er souls their joy shall find
   in ser -- vice, God, for thee.
 }
-verseD = \tag #'verseD \lyricmode {
+verseD = \lyricmode {
   Grant me thy grace for ev -- 'ry task
   un -- til thy face I see,
   then ev -- er new shall be that joy
   in ser -- vice, God, for thee.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" {\removeWithTag #'midionly \soprano}
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/4verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"

@@ -52,39 +52,33 @@ bass = {
 
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l O lit -- tle town of Beth -- le -- hem, how still we see thee lie!
   \l A -- bove thy deep and dream -- less sleep the si -- lent stars go by.
   \l Yet in thy dark streets shin -- eth the ev -- er -- last -- ing light;
   \l the hopes and fears of all the years are met in thee to -- night.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   For Christ is born of Ma -- _ ry, and gath -- ered all a -- bove,
   while mor -- tals sleep, the an -- gels keep their watch of won -- d'ring love.
   O morn -- ing stars, to -- geth -- er pro -- claim the ho -- ly birth!
   and prais -- es sing to God the King, and peace to all the earth!
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   How si -- lent -- ly, how si -- lent -- ly, the won -- drous gift is giv'n!
   So God im -- parts to hu -- man hearts the bless -- ings of the heav'ns.
   No ear may hear his com -- ing, but in this world of sin,
   where meek souls will re -- ceive him still the dear Christ en -- ters in.
 }
-verseD = \tag #'verseD \lyricmode {
+verseD = \lyricmode {
   O ho -- ly Child of Beth -- le -- hem, de -- scend to us we pray,
   cast out our sin, and en -- ter in, be born in us to -- day!
   We hear the Christ -- mas an -- gels the great glad tid -- ings tell.
   O come to us, a -- bide with us, our Lord Im -- man -- u -- el!
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/4verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"

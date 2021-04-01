@@ -33,17 +33,14 @@ tenor = {}
 bass = {}
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l Way way way way way.
   Way way way way way.
   Way way way way way.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "" "" \verseA }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/1verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"

@@ -16,7 +16,7 @@ dateAdded = "2021-03-30"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l O the deep, deep love of Je -- sus!
   Vast, un -- mea -- sured, bound -- less, free!
   \l Roll -- ing as a might -- y o -- cean
@@ -27,7 +27,7 @@ verseA = \tag #'verseA \lyricmode {
   \l lead -- ing on -- ward, lead -- ing home -- ward,
   to thy glo -- rious rest a -- bove.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   O the deep, deep love of Je -- sus!
   Spread his praise from shore to shore!
   How he loves us, ev -- er loves us,
@@ -38,7 +38,7 @@ verseB = \tag #'verseB \lyricmode {
   how for them he's in -- ter -- ced -- ing,
   watch -- ing o'er them from the throne!
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   O the deep, deep love of Je -- sus,
   love of ev -- 'ry love the best!
   'Tis an o -- cean vast of bless -- ing,
@@ -50,13 +50,8 @@ verseC = \tag #'verseC \lyricmode {
   for it lifts me up to thee!
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/3verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"

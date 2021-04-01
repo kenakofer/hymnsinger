@@ -57,18 +57,15 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   Step by step the long -- est march can be won, can be won,
   Man -- y stones can form an arch, sin -- gly none, sin -- gly none.
   And by un -- ion what we will can be ac -- com -- plished still,
   drops of wa -- ter turn a mill, sin -- gly none, sin -- gly none.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics \with \dropLyricsSmall \lyricsto soprano  { \globalLyrics "" "" \verseA }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/1verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"

@@ -44,32 +44,27 @@ bass = {
 
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l Now the day is o -- ver,
   night is draw -- ing nigh,
   \l shad -- ows of the eve -- ning
   steal a -- cross the sky.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   Now the leaf -- less land -- scape
   set -- tles in re -- pose,
   wait -- ing for the qui -- et
   of the win -- ter snows.
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   Now as twi -- light gath -- ers
   let us pause and hear
   all the slow -- ing pulse -- beats
   of the wan -- ing year.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/3verse.ly"
 
 extra_verses = \markup {
   \fill-line {
