@@ -58,9 +58,7 @@ This is a project to make or take hymns with permissive copyright status, typese
     - Tricky, because it's a many-to-many relationship.
     - Json associations, both automatic for songs on the site, and manual
     - External links to copyrighted lyrics
-  - Powerpoint generation
-    - New book with reduced height paper to output many large landscape PNGs
-    - Somehow only include 1 verse, in large font?
   - Add og: values to hymn.singer.ga index page for better sharability
     - Need to make a logo maybe?
   - Add MP3 download
+  - Fix caps/underscore variables

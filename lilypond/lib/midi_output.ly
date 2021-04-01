@@ -1,5 +1,5 @@
 \score {
-  \removeWithTag #'(midionly printOnly)
+  \removeWithTag #'(slidesOnly printonly)
   <<
     \new Staff \with { midiMaximumVolume = #0.9 } \soprano
     \new Staff \with { midiMaximumVolume = #0.7  } \alto
