@@ -51,31 +51,31 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l The Lord's my shep -- herd, I'll not want.
   \l He makes me down to lie
   \l in pas -- tures green; he lead -- eth me
   \l the qui -- et wa -- ters by.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   My soul he doth re -- store a -- gain,
   and me to walk doth make
   with -- in the paths of right -- eous -- ness,
   e'en for his own name's sake.
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   Yea, though I walk in death's dark vale,
   yet will I fear none ill,
   for thou art with me and thy rod
   and staff me com -- fort still.
 }
-verseD = \tag #'verseD \lyricmode {
+verseD = \lyricmode {
   My ta -- ble thou hast fur -- nish -- ed
   in pres -- ence of my foes.
   My head thou dost with oil a -- noint
   and my cup o -- ver -- flows.
 }
-verseE = \tag #'verseE \lyricmode {
+verseE = \lyricmode {
   Good -- ness and mer -- cy all my life
   shall sure -- ly fol -- low me,
   and in God's house for -- ev -- er -- more
@@ -85,11 +85,11 @@ verseE = \tag #'verseE \lyricmode {
 all_verses = <<
   \new NullVoice = "soprano" \soprano
   % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "1" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "2" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "3" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "4" \verseD }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
+  \tag #'verseA { \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "1" \verseA } }
+  \tag #'verseB { \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "2" \verseB } }
+  \tag #'verseC { \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "3" \verseC } }
+  \tag #'verseD { \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "4" \verseD } }
+  \tag #'verseE { \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE } }
 >>
 
 %% All sheet music outputs
