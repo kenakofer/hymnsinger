@@ -17,7 +17,7 @@ dateAdded = "2021-03-05"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l "*All" crea -- tures, wor -- ship God most high, lift up your voice in earth and sky,
   %% CHORUS
   al -- le -- lu -- ia, al -- le -- lu -- ia!
@@ -27,7 +27,7 @@ verseA = \tag #'verseA \lyricmode {
   O sing ye, O sing ye, al -- le -- lu -- ia, al -- le -- lu -- ia, al -- le -- lu -- ia!
   %% END CHORUS
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   Thou rush -- ing wind that art so strong, ye clouds that sail in heav'n a -- long,
   %% CHORUS
   \SB {
@@ -45,7 +45,7 @@ verseB = \tag #'verseB \lyricmode {
   }
   %% END CHORUS
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   Thou flow -- ing wa -- ter, pure and clear, make mu -- sic for thy God to hear,
   %% CHORUS
   \SC {
@@ -63,7 +63,7 @@ verseC = \tag #'verseC \lyricmode {
   }
   %% END CHORUS
 }
-verseD = \tag #'verseD \lyricmode {
+verseD = \lyricmode {
   Dear moth -- er earth, who day by day, un -- fold -- est bless -- ings on our way,
   %% CHORUS
   \SD {
@@ -81,7 +81,7 @@ verseD = \tag #'verseD \lyricmode {
   }
   %% END CHORUS
 }
-verseE = \tag #'verseE \lyricmode {
+verseE = \lyricmode {
   And ev -- 'ry -- one, with ten -- der heart, for -- giv -- ing oth -- ers, take your part,
   %% CHORUS
   \SE {
@@ -99,7 +99,7 @@ verseE = \tag #'verseE \lyricmode {
   }
   %% END CHORUS
 }
-verseF = \tag #'verseF \lyricmode {
+verseF = \lyricmode {
   And thou, most kind and gen -- tle death, wait -- ing to hush our fi -- nal breath,
   %% CHORUS
   \SF {
@@ -117,7 +117,7 @@ verseF = \tag #'verseF \lyricmode {
   }
   %% END CHORUS
 }
-verseG = \tag #'verseG \lyricmode {
+verseG = \lyricmode {
   Let all things their Cre -- a -- tor bless, and wor -- ship God in hum -- ble -- ness,
   %% CHORUS
   \SG {
@@ -139,13 +139,13 @@ verseG = \tag #'verseG \lyricmode {
 all_verses = <<
   \new NullVoice = "soprano" {\removeWithTag #'midionly \soprano}
   % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "2" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "4" \verseD }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "" \verseE }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "7" "" \verseG }
+  \tag #'verseA { \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA } }
+  \tag #`verseB { \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "2" \verseB } }
+  \tag #`verseC { \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC } }
+  \tag #`verseD { \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "4" \verseD } }
+  \tag #`verseE { \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "" \verseE } }
+  \tag #`verseF { \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF } }
+  \tag #`verseG { \new Lyrics  \lyricsto soprano  { \globalLyrics "7" "" \verseG } }
 >>
 
 %% All sheet music outputs
