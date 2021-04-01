@@ -15,27 +15,27 @@ dateAdded = "2021-01-11"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l A -- maz -- ing grace! how sweet the sound, that saved a wretch like me!
   \l I once was lost, but now am found, was blind, but now I see.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   'Twas grace that taught my heart to fear, and grace my fears re -- lieved.
   How pre -- cious did that grace ap -- pear the hour I first be -- lieved.
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   Through man -- y dan -- gers, toils, and snares, I have al -- read -- y come.
   'Tis grace has brought me safe thus far, and grace will lead me home.
 }
-verseD = \tag #'verseD \lyricmode {
+verseD = \lyricmode {
   Yes, when this flesh and heart shall fail, and mor -- tal life shall cease,
   I shall pos -- sess, with -- in the vail, a life of joy and peace.
 }
-verseE = \tag #'verseE \lyricmode {
+verseE = \lyricmode {
   The earth shall soon dis -- solve like snow, the sun for -- bear to shine;
   but God, who called me here be -- low, will be for -- ev -- er mine.
 }
-verseF = \tag #'verseF \lyricmode {
+verseF = \lyricmode {
   When we've been there ten thou -- sand years, bright shin -- ing as the sun,
   we've no less days to sing God's praise than when we'd first be -- gun.
 }
@@ -43,12 +43,12 @@ verseF = \tag #'verseF \lyricmode {
 all_verses = <<
   \new NullVoice = "soprano" \soprano
   % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "1" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "2" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "3" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "4" \verseD }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
+  \tag #'verseA { \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "1" \verseA } }
+  \tag #'verseB { \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "2" \verseB } }
+  \tag #'verseC { \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "3" \verseC } }
+  \tag #'verseD { \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "4" \verseD } }
+  \tag #'verseE { \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE } }
+  \tag #'verseF { \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF } }
 >>
 
 %% All sheet music outputs

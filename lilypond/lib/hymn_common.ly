@@ -21,7 +21,7 @@ globalLyrics =
           \override StanzaNumber.font-family = #'roman
           \override StanzaNumber.font-series = #'bold
           \set stanza = #firstLabel
-          \set shortVocalName = #laterLabel
+          \SO { \set shortVocalName = #laterLabel }
           \override VerticalAxisGroup #'staff-affinity = #CENTER
 }
   #})
