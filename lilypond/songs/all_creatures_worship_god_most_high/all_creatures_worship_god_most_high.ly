@@ -30,73 +30,109 @@ verseA = \tag #'verseA \lyricmode {
 verseB = \tag #'verseB \lyricmode {
   Thou rush -- ing wind that art so strong, ye clouds that sail in heav'n a -- long,
   %% CHORUS
-  %% al -- le -- lu -- ia, al -- le -- lu -- ia!
-  _ _ _ _ _ _ _ _
+  \SB {
+    al -- le -- lu -- ia, al -- le -- lu -- ia!
+  } \SO {
+    _ _ _ _ _ _ _ _
+  }
   %% END CHORUS
   Thou ris -- ing morn in praise re -- joice, ye lights of eve -- ning find a voice,
   %% CHORUS
-  %% O sing ye, O sing ye, al -- le -- lu -- ia, al -- le -- lu -- ia, al -- le -- lu -- ia!
-  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  \SB {
+    O sing ye, O sing ye, al -- le -- lu -- ia, al -- le -- lu -- ia, al -- le -- lu -- ia!
+  } \SO {
+    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  }
   %% END CHORUS
 }
 verseC = \tag #'verseC \lyricmode {
   Thou flow -- ing wa -- ter, pure and clear, make mu -- sic for thy God to hear,
   %% CHORUS
-  %% al -- le -- lu -- ia, al -- le -- lu -- ia!
-  _ _ _ _ _ _ _ _
+  \SC {
+    al -- le -- lu -- ia, al -- le -- lu -- ia!
+  } \SO {
+    _ _ _ _ _ _ _ _
+  }
   %% END CHORUS
   Thou fire so mas -- ter -- ful and bright, that giv -- est all both warmth and light,
   %% CHORUS
-  %% O sing ye, O sing ye, al -- le -- lu -- ia, al -- le -- lu -- ia, al -- le -- lu -- ia!
-  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  \SC {
+    O sing ye, O sing ye, al -- le -- lu -- ia, al -- le -- lu -- ia, al -- le -- lu -- ia!
+  } \SO {
+    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  }
   %% END CHORUS
 }
 verseD = \tag #'verseD \lyricmode {
   Dear moth -- er earth, who day by day, un -- fold -- est bless -- ings on our way,
   %% CHORUS
-  %% al -- le -- lu -- ia, al -- le -- lu -- ia!
-  _ _ _ _ _ _ _ _
+  \SD {
+    al -- le -- lu -- ia, al -- le -- lu -- ia!
+  } \SO {
+    _ _ _ _ _ _ _ _
+  }
   %% END CHORUS
   The flow'rs and fruits that in thee grow, let them God's glo -- ry al -- so show,
   %% CHORUS
-  %% O sing ye, O sing ye, al -- le -- lu -- ia, al -- le -- lu -- ia, al -- le -- lu -- ia!
-  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  \SD {
+    O sing ye, O sing ye, al -- le -- lu -- ia, al -- le -- lu -- ia, al -- le -- lu -- ia!
+  } \SO {
+    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  }
   %% END CHORUS
 }
 verseE = \tag #'verseE \lyricmode {
   And ev -- 'ry -- one, with ten -- der heart, for -- giv -- ing oth -- ers, take your part,
   %% CHORUS
-  %% al -- le -- lu -- ia, al -- le -- lu -- ia!
-  _ _ _ _ _ _ _ _
+  \SE {
+    al -- le -- lu -- ia, al -- le -- lu -- ia!
+  } \SO {
+    _ _ _ _ _ _ _ _
+  }
   %% END CHORUS
   Ye who long pain and sor -- row bear, sing praise and cast on God your care,
   %% CHORUS
-  %% O sing ye, O sing ye, al -- le -- lu -- ia, al -- le -- lu -- ia, al -- le -- lu -- ia!
-  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  \SE {
+    O sing ye, O sing ye, al -- le -- lu -- ia, al -- le -- lu -- ia, al -- le -- lu -- ia!
+  } \SO {
+    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  }
   %% END CHORUS
 }
 verseF = \tag #'verseF \lyricmode {
   And thou, most kind and gen -- tle death, wait -- ing to hush our fi -- nal breath,
   %% CHORUS
-  %% al -- le -- lu -- ia, al -- le -- lu -- ia!
-  _ _ _ _ _ _ _ _
+  \SF {
+    al -- le -- lu -- ia, al -- le -- lu -- ia!
+  } \SO {
+    _ _ _ _ _ _ _ _
+  }
   %% END CHORUS
   Thou lead -- est home the child of God, as Christ be -- fore that way hath trod,
   %% CHORUS
-  %% O sing ye, O sing ye, al -- le -- lu -- ia, al -- le -- lu -- ia, al -- le -- lu -- ia!
-  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  \SF {
+    O sing ye, O sing ye, al -- le -- lu -- ia, al -- le -- lu -- ia, al -- le -- lu -- ia!
+  } \SO {
+    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  }
   %% END CHORUS
 }
 verseG = \tag #'verseG \lyricmode {
   Let all things their Cre -- a -- tor bless, and wor -- ship God in hum -- ble -- ness,
   %% CHORUS
-  %% al -- le -- lu -- ia, al -- le -- lu -- ia!
-  _ _ _ _ _ _ _ _
+  \SG {
+    al -- le -- lu -- ia, al -- le -- lu -- ia!
+  } \SO {
+    _ _ _ _ _ _ _ _
+  }
   %% END CHORUS
   To God all thanks and praise be -- long! Join in the ev -- er -- last -- ing song:
   %% CHORUS
-  %% O sing ye, O sing ye, al -- le -- lu -- ia, al -- le -- lu -- ia, al -- le -- lu -- ia!
-  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  \SG {
+    O sing ye, O sing ye, al -- le -- lu -- ia, al -- le -- lu -- ia, al -- le -- lu -- ia!
+  } \SO {
+    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  }
   %% END CHORUS
 }
 

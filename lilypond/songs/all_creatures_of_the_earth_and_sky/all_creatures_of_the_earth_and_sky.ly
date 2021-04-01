@@ -29,25 +29,37 @@ verseA = \tag #'verseA \lyricmode {
 verseB = \tag #'verseB \lyricmode {
   Swift rush -- ing wind so wild and strong, white clouds that sail in heav'n a -- long,
   %% CHORUS
-  %% al -- le -- lu -- ia, al -- le -- lu -- ia!
-  _ _ _ _ _ _ _ _
+  \SB {
+    al -- le -- lu -- ia, al -- le -- lu -- ia!
+  } \SO {
+    _ _ _ _ _ _ _ _
+  }
   %% END CHORUS
   Fair ris -- ing morn in praise re -- joice, high stars of eve -- ning find a voice,
   %% CHORUS
-  %% O sing ye, O sing ye, al -- le -- lu -- ia, al -- le -- lu -- ia, al -- le -- lu -- ia!
-  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  \SB {
+    O sing ye, O sing ye, al -- le -- lu -- ia, al -- le -- lu -- ia, al -- le -- lu -- ia!
+  } \SO {
+    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  }
   %% END CHORUS
 }
 verseC = \tag #'verseC \lyricmode {
   Cool flow -- ing wa -- ter pure and clear, make mu -- sic for all life to hear,
   %% CHORUS
-  %% al -- le -- lu -- ia, al -- le -- lu -- ia!
-  _ _ _ _ _ _ _ _
+  \SC {
+    al -- le -- lu -- ia, al -- le -- lu -- ia!
+  } \SO {
+    _ _ _ _ _ _ _ _
+  }
   %% END CHORUS
   Dance, flame of fire, so strong and bright, and bless us with your warmth and light,
   %% CHORUS
-  %% O sing ye, O sing ye, al -- le -- lu -- ia, al -- le -- lu -- ia, al -- le -- lu -- ia!
-  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  \SC {
+    O sing ye, O sing ye, al -- le -- lu -- ia, al -- le -- lu -- ia, al -- le -- lu -- ia!
+  } \SO {
+    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  }
   %% END CHORUS
 }
 

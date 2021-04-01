@@ -161,7 +161,7 @@ verseB = \tag #'verseB \lyricmode {
  _ True God of true God, Light of light e -- ter -- nal,
  _ our low -- ly na -- ture he hath not ab -- horred;
  Son of the Fa -- ther, be-got -- ten, not cre -- at -- ed.
- \tag #'(slidesOnly verseB) {
+ \SB {
   O come, let us a -- dore him,
   O come, let us a -- dore him,
   O come, let us a -- dore him,
@@ -172,7 +172,7 @@ verseC = \tag #'verseC \lyricmode {
   _ Sing, choirs of an -- gels, sing in ex -- ul -- ta -- tion,
   _ sing, all ye cit -- i -- zens of heav'n a -- bove;
   glo -- ry to God, all glo -- ry in the high -- est.
- \tag #'(slidesOnly verseC) {
+ \SC {
   O come, let us a -- dore him,
   O come, let us a -- dore him,
   O come, let us a -- dore him,
@@ -183,7 +183,7 @@ verseD = \tag #'verseD \lyricmode {
   _ Yea, Lord, we greet thee, born this hap -- py morn -- ing,
   _ Je -- sus, to thee be all glo -- _ ry giv'n;
   Word of the Fa -- ther, now in flesh ap -- pear -- ing.
- \tag #'(slidesOnly verseD) {
+ \SD {
   O come, let us a -- dore him,
   O come, let us a -- dore him,
   O come, let us a -- dore him,
