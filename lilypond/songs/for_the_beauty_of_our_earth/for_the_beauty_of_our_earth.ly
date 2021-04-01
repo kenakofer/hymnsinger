@@ -16,37 +16,53 @@ dateAdded = "2021-01-05"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l For the beau -- ty of our earth, for the glo -- ry of her skies,
   \l for the love which from our birth o -- ver and a -- round us lies:
   %% CHORUS
   Source of all, to thee we raise this our hymn of grate -- ful praise.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   For the beau -- ty of each hour of the day and of the night,
   hill and vale and tree and flow'r, sun and moon and stars of light:
+  %% CHORUS
+  \SB {
+    Source of all, to thee we raise this our hymn of grate -- ful praise.
+  }
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   For the joy of ear and eye, for the heart and mind's de -- light,
   For the 'me', 'my -- self', and 'I', con -- scious links to sound and sight:
+  %% CHORUS
+  \SC {
+    Source of all, to thee we raise this our hymn of grate -- ful praise.
+  }
 }
-verseD = \tag #'verseD \lyricmode {
+verseD = \lyricmode {
   For the joy of hu -- man care, sib -- ling, part -- ner, par -- ent, child,
   friends we've lost and friends still here, for all self -- less thoughts and mild:
+  %% CHORUS
+  \SD {
+    Source of all, to thee we raise this our hymn of grate -- ful praise.
+  }
 }
-verseE = \tag #'verseE \lyricmode {
+verseE = \lyricmode {
   For thy Truth both harsh and kind, sha -- dowed set -- ter of our stage,
   pat -- terns sought by hu -- man mind, guid -- ing us from age to age,
+  %% CHORUS
+  \SE {
+    Source of all, to thee we raise this our hymn of grate -- ful praise.
+  }
 }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano
   % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "" \verseE }
+  \tag #'verseA { \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA } }
+  \tag #'verseB { \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB } }
+  \tag #'verseC { \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC } }
+  \tag #'verseD { \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD } }
+  \tag #'verseE { \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "" \verseE } }
 >>
 
 %% All sheet music outputs

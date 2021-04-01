@@ -553,14 +553,22 @@ for the love which from our birth over and around us lies:
 For the beauty of each hour of the day and of the night,
 hill and vale and tree and flow'r, sun and moon and stars of light:
 
+  Source of all, to thee we raise this our hymn of grateful praise.
+
 For the joy of ear and eye, for the heart and mind's delight,
 For the 'me', 'myself', and 'I', conscious links to sound and sight:
+
+  Source of all, to thee we raise this our hymn of grateful praise.
 
 For the joy of human care, sibling, partner, parent, child,
 friends we've lost and friends still here, for all selfless thoughts and mild:
 
+  Source of all, to thee we raise this our hymn of grateful praise.
+
 For thy Truth both harsh and kind, shadowed setter of our stage,
 patterns sought by human mind, guiding us from age to age,
+
+  Source of all, to thee we raise this our hymn of grateful praise.
 </div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Folliott S. Pierpoint, 1864, alt. v.5 Kenan Schaefkofer, 2021</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/05</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/god_is_here_among_us.html">God is here among us</a></td><td class='tune-box'>WUNDERBARER KÖNIG</td><td class='key-box'>G major
 </td><td class='meter-box'>66.86.66.86.666</td><td class='composer-box'>Joachim Neander, 1680</td><td class='lyric-box'><div>God is here among us: come with adoration, fervent praise and expectation.
 God is here within us: known beyond believing, soul in silent awe receiving.
