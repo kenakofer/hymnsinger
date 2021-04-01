@@ -59,38 +59,30 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l Ly -- rics
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   for _ each
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   verse
 }
-verseD = \tag #'verseD \lyricmode {
+verseD = \lyricmode {
   go here.
 }
-verseE = \tag #'verseE \lyricmode { }
-verseF = \tag #'verseF \lyricmode { }
+verseE = \lyricmode { }
+verseF = \lyricmode { }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/4verse.ly"
 
 %% Use this, or the tradStaffZoom and shapeStaffZoom equivalents, if space is tight.
 %clairStaffZoom = #.9
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"
-% Slides output
+% Slides output. Change to the correct number
 \include "../../lib/slides_book_4verse.ly"
 %% MIDI output
 \include "../../lib/midi_output.ly"
