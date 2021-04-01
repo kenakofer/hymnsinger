@@ -21,7 +21,7 @@
     window.midi_url = "{{ site.baseurl }}/local_lilypond_outputs/{{ page.song_file }}.midi";
     function changeImage(variant) {
         var img = document.getElementById("music-image");
-        img.src="https://github.com/kenanbit/hymn-singer/releases/latest/download/{{ page.song_file }}-"+variant+".png";
+        img.src="https://github.com/kenanbit/hymn-singer/releases/download/{{ site.release_version }}/{{ page.song_file }}-"+variant+".png";
         return false;
     }
     </script>
