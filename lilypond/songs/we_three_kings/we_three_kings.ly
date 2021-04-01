@@ -62,7 +62,7 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l We three kings of O -- ri -- ent are;
   bear -- ing gifts we tra -- verse a -- far,
   \l field and foun -- tain, moor and moun -- tain,
@@ -74,29 +74,57 @@ verseA = \tag #'verseA \lyricmode {
   \l west -- ward lead -- ing still pro -- ceed -- ing,
   guide us to thy per -- fect light.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   Born a King on Beth -- le -- hem's plain,
   gold I bring to crown him a -- gain,
   King for -- ev -- er, ceas -- ing nev -- er,
   o -- ver us all to reign.
+  %% CHORUS
+  \SB {
+    O star of won -- der, star of light,
+    star with roy -- al beau -- ty bright,
+    west -- ward lead -- ing still pro -- ceed -- ing,
+    guide us to thy per -- fect light.
+  }
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   Frank -- in -- cense to of -- fer have I;
   in -- cense owns a de -- i -- ty nigh;
   prayer and prais -- ing, voic -- es rais -- ing,
   wor -- ship -- ing God on high.
+  %% CHORUS
+  \SC {
+    O star of won -- der, star of light,
+    star with roy -- al beau -- ty bright,
+    west -- ward lead -- ing still pro -- ceed -- ing,
+    guide us to thy per -- fect light.
+  }
 }
-verseD = \tag #'verseD \lyricmode {
+verseD = \lyricmode {
   Myrrh is mine; its bit -- ter per -- fume
   breathes a life of gath -- er -- ing gloom;
   sor -- rowing, sigh -- ing, bleed -- ing, dy -- ing,
   sealed in the stone -- cold tomb.
+  %% CHORUS
+  \SD {
+    O star of won -- der, star of light,
+    star with roy -- al beau -- ty bright,
+    west -- ward lead -- ing still pro -- ceed -- ing,
+    guide us to thy per -- fect light.
+  }
 }
-verseE = \tag #'verseE \lyricmode {
+verseE = \lyricmode {
   Glo -- rious now be -- hold him a -- rise;
   King and God and sac -- _ ri -- fice:
   Al -- le -- lu -- ia, Al -- le -- lu -- ia,
   sounds through the earth and skies.
+  %% CHORUS
+  \SE {
+    O star of won -- der, star of light,
+    star with roy -- al beau -- ty bright,
+    west -- ward lead -- ing still pro -- ceed -- ing,
+    guide us to thy per -- fect light.
+  }
 }
 spacingVerse = \lyricmode {
   "\t"
@@ -105,11 +133,11 @@ spacingVerse = \lyricmode {
 all_verses = <<
   \new NullVoice = "soprano" \soprano
   % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "1" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "2" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "3" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "4" \verseD }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
+  \tag #'verseA { \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "1" \verseA } }
+  \tag #'verseB { \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "2" \verseB } }
+  \tag #'verseC { \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "3" \verseC } }
+  \tag #'verseD { \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "4" \verseD } }
+  \tag #'verseE { \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE } }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "" "" \spacingVerse }
 >>
 
