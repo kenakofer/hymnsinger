@@ -6,7 +6,7 @@
   #(set-paper-size "my size")
   indent = 0
   ragged-bottom = ##t
-  top-margin = #10
+  top-margin = #12
   left-margin = #3
   right-margin = #3
   print-page-number = ##f
