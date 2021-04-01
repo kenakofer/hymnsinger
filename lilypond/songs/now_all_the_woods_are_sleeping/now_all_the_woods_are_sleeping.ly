@@ -12,7 +12,7 @@ quarternoteTempo = 140
 
 %% SONG INFO
 title = \titleText "Now all the woods are sleeping"
-poet = \smallText "Text: Paul Gerhardt, 1648, tr. and alt. Kenan Schaefkofer, 2021"
+poet = \twoLineSmallText "Text: Paul Gerhardt, 1648" "tr. and alt. Kenan Schaefkofer, 2021"
 typesetter = "Kenan Schaefkofer"
 verseCount = 4
 tags = "english secular 4part evening"
@@ -52,7 +52,7 @@ bass = {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l Now all the woods are sleep -- ing,
   the night and still -- ness creep -- ing
   \l o'er ci -- ty, field, and beast;
@@ -60,15 +60,15 @@ verseA = \tag #'verseA \lyricmode {
   \l with pray'r -- ful thanks, at -- tend thee,
   to dear -- est Trea -- sures ere thou rest.
 }
-verseB = \tag #'verseB \lyricmode {
-  Why Sun, are you re -- treat -- ing?
-  The Moon, in dance, now lead -- ing
-  the anc -- ient bal -- lad, Night.
-  Like -- wise, a bright -- er glo -- ry
-  does Truth in -- fuse our sto -- ry,
-  when off -- ered soft as yon -- der light.
+verseB = \lyricmode {
+  Why Sun, are you re -- treat -- ing,
+  and Moon, in dance, now lead -- ing
+  the anc -- ient bal -- lad, Night?
+  We set-tle down, we glist -- en,
+  we laugh, and talk, and list -- en,
+  re -- sound -- ing, gen -- tle notes of light.
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   Now ob -- li -- ga -- tion ceas -- es,
   this Night the tired re -- leas -- es
   and bids you sleep be -- gin:
@@ -76,7 +76,7 @@ verseC = \tag #'verseC \lyricmode {
   shall set thee free from sor -- row,
   and all the anx -- ious toil with -- in.
 }
-verseD = \tag #'verseD \lyricmode {
+verseD = \lyricmode {
   My loved ones, rest se -- cure -- ly,
   from ev -- 'ry per -- il sure -- ly
   pro -- tect -- ed be your heads;
@@ -85,14 +85,8 @@ verseD = \tag #'verseD \lyricmode {
   as trus -- ted souls watch o'er your beds.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/4verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"
