@@ -2,31 +2,31 @@
   \include "slides_book_common.ly"
   \bookpart {
     \score {
-      \scoreWithVerse #'verseA
+      \scoreWithVerse #'(verseA printonly)
       \header { breakbefore = ##t }
     }
   }
   \bookpart {
     \score {
-      \scoreWithVerse #'verseB
+      \scoreWithVerse #'(verseB printonly)
     }
     \empty_header
   }
   \bookpart {
     \score {
-      \scoreWithVerse #'verseC
+      \scoreWithVerse #'(verseC printonly)
     }
     \empty_header
   }
   \bookpart {
     \score {
-      \scoreWithVerse #'verseD
+      \scoreWithVerse #'(verseD printonly)
     }
     \empty_header
   }
   \bookpart {
     \score {
-      \scoreWithVerse #'verseE
+      \scoreWithVerse #'(verseE printonly)
     }
     \empty_header
   }

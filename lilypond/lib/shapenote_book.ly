@@ -4,12 +4,12 @@
     \layout { \context { \Voice {
       \set shapeNoteStyles = ##(doThin reThin miThin faThin sol laThin tiThin)
     } } }
-    \removeWithTag #'midionly
+    \removeWithTag #'(midionly slidesOnly)
     \fillTradScore
-      { \removeWithTag #'midionly \soprano }
-      { \removeWithTag #'midionly \alto }
-      { \removeWithTag #'midionly \tenor }
-      { \removeWithTag #'midionly \bass }
+      { \removeWithTag #'(midionly slidesOnly) \soprano }
+      { \removeWithTag #'(midionly slidesOnly) \alto }
+      { \removeWithTag #'(midionly slidesOnly) \tenor }
+      { \removeWithTag #'(midionly slidesOnly) \bass }
       {}
       \shapeStaffZoom
   }

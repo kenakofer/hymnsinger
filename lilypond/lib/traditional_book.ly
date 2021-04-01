@@ -1,12 +1,12 @@
 \book {
   \prescore_text
   \bookOutputSuffix "trad" \score {
-    \removeWithTag #'midionly
+    \removeWithTag #'(midionly slidesOnly)
     \fillTradScore
-      { \removeWithTag #'midionly \soprano }
-      { \removeWithTag #'midionly \alto }
-      { \removeWithTag #'midionly \tenor }
-      { \removeWithTag #'midionly \bass }
+      { \removeWithTag #'(midionly slidesOnly) \soprano }
+      { \removeWithTag #'(midionly slidesOnly) \alto }
+      { \removeWithTag #'(midionly slidesOnly) \tenor }
+      { \removeWithTag #'(midionly slidesOnly) \bass }
       \songChords
       \tradStaffZoom
   }

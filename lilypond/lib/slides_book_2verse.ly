@@ -2,13 +2,13 @@
   \include "slides_book_common.ly"
   \bookpart {
     \score {
-      \scoreWithVerse #'verseA
+      \scoreWithVerse #'(verseA printonly)
       \header { breakbefore = ##t }
     }
   }
   \bookpart {
     \score {
-      \scoreWithVerse #'verseB
+      \scoreWithVerse #'(verseB printonly)
     }
     \empty_header
   }
