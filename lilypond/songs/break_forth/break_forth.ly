@@ -52,18 +52,15 @@ bass = {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
     Break forth, O beau -- _ teous heav'n -- ly light, and ush -- er in the morn -- ing.
     O shep -- herds, shrink _ not with af -- fright, but hear the an -- gel's warn -- ing.
     This child, now weak in in -- _ fan -- cy, our con -- fi -- dence _ and joy shall be,
     the power of Sa -- tan break -- ing, our peace e -- ter -- nal _ mak -- ing.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" {\removeWithTag #'midionly \soprano}
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "" "" \verseA }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/1verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"

@@ -52,31 +52,25 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l Blest be the tie that binds our hearts in Chris -- tian love.
   \l The fel -- low -- ship of kin -- dred minds is like to that a -- bove.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   We share each oth -- er's woes, each oth -- er's bur -- dens bear,
   and of -- ten for each oth -- er flows the sym -- pa -- thiz -- ing tear.
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   When we a -- sun -- der part, it gives us in -- ward pain,
   but we shall still be joined in heart, and hope to meet a -- gain.
 }
-verseD = \tag #'verseD \lyricmode {
+verseD = \lyricmode {
   From sor -- row, toil, and pain, and sin we shall be free,
   and per -- fect love and friend -- ship reign through all e -- ter -- ni -- ty.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/4verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"

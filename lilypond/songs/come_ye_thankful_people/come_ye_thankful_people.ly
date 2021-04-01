@@ -51,25 +51,21 @@ bass = {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l Come, ye thank -- ful peo -- ple, come, raise a song of har -- vest home:
   \l fruit and crops are gath -- ered in, safe be -- fore the storms be -- gin;
   \l God, our Mak -- er, will pro -- vide for our needs to be sup -- plied;
   \l come to God's own tem -- ple, come, raise a song of har -- vest home.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   All the world is but a field, giv -- en for a fruit -- ful yield;
   wheat and tares to -- geth -- er sown, here for joy or sor -- row grown:
   first the blade, and then the ear, then the full corn shall ap -- pear;
   God of har -- vest, grant that we whole -- some grain and pure may be.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/2verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"

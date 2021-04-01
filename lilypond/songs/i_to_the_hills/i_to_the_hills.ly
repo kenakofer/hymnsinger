@@ -52,34 +52,27 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l I to the hills will lift my eyes. From whence shall come my aid?
   \l My help is from the Lord a -- lone, who heav'n and earth has made.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   God will not let your foot be moved, your guar -- dian nev -- er sleeps.
   God's watch -- ful and un -- slum -- b'ring care pro -- tects and safe -- ly keeps.
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   Your faith -- ful keep -- er is the Lord, your shelt -- er and your shade.
   'Neath sun or moon, by day or night, you shall not be a -- fraid.
 }
-verseD = \tag #'verseD \lyricmode {
+verseD = \lyricmode {
   From e -- vil God will keep you safe, pro -- vide for all you need.
   Your go -- ing out, your com -- ing in, God will for -- ev -- er lead.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/4verse.ly"
 
 %% All sheet music outputs
-clairStaffZoom = #.9
 \include "../../lib/all_notation_outputs.ly"
 % Slides output
 \include "../../lib/slides_book_4verse.ly"

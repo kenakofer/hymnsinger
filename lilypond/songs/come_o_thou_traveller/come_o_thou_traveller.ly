@@ -49,23 +49,19 @@ bass = {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   Come, O thou Trav -- el -- er un -- known, whom still, I hold, but can -- not see!
   \l My com -- pa -- ny be -- fore is gone, and I am left a -- lone with thee.
   \l With thee all night I mean to stay, and wres -- tle till the break of day.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   I need not tell thee who I am, my mis -- er -- y and sin de -- clare.
   Thy -- self has called me by my name, look on thy hands and read it there.
   But who, I ask thee, who art thou? Tell me thy name and tell me now.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/2verse.ly"
 
 extra_verses = \markup {
        \fontsize #-1.5

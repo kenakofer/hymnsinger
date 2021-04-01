@@ -29,11 +29,6 @@ soprano = {
 }
 alto = {
   \globalParts
-  \relative e' {}
-  \relative e' {}
-  \relative e' {}
-  \relative e' {}
-
   \relative e' { f4 e f | e2. f4 | e f d4. e8 | e4( f2.)~ | f4 f e f | e2. f4 | e f d4. e8 | f1~ | }
   \relative e' { f4 f f f | f2. f4 | f f f4. e8 | e4( g2.)~ | g4 g fs g | f?2. f4 | f f e4. e8 | e1~ | }
   \relative e' { e4 a f f | f2. f4 | f f f4. e8 | e4( g2.)~ | g4 g fs g | f?2. c4 | f f e4. f8 | f1~ | f4 }
@@ -52,7 +47,7 @@ bass = {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   Be still, my soul; the Lord is on thy side;
   bear pa -- tient -- ly the \l cross of grief or pain;
   leave to thy God to or -- der and pro -- vide;
@@ -60,7 +55,7 @@ verseA = \tag #'verseA \lyricmode {
   Be still, my soul; thy \l best, thy heav’n -- ly friend
   through thorn -- y ways leads to a joy -- ful end.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   Be still, my soul; thy God doth un -- der -- take
   to guide the fu -- ture as he has the past.
   Thy hope, thy con -- fid -- ence, let no -- thing shake;
@@ -68,7 +63,7 @@ verseB = \tag #'verseB \lyricmode {
   Be still, my soul; the waves and winds still know
   his voice who ruled them while he dwelt be -- low.
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   Be still, my soul; the hour is hast -- ’ning on
   when we shall be for -- ev -- er with the Lord,
   when dis -- ap -- point -- ment, grief, and fear are gone,
@@ -77,13 +72,8 @@ verseC = \tag #'verseC \lyricmode {
   all safe and bless -- ed we shall meet at last.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/3verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"

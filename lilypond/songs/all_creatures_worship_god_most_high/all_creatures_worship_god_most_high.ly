@@ -20,10 +20,13 @@ dateAdded = "2021-03-05"
 verseA = \lyricmode {
   \l "*All" crea -- tures, wor -- ship God most high, lift up your voice in earth and sky,
   %% CHORUS
+  \hideVerseNumberAtLineStart
   al -- le -- lu -- ia, al -- le -- lu -- ia!
+  \showVerseNumberAtLineStart "1" #2.5
   %% END CHORUS
   \l Thou burn -- ing sun with gold -- en beam, thou sil -- ver moon with soft -- er gleam,
   %% CHORUS
+  \hideVerseNumberAtLineStart
   O sing ye, O sing ye, al -- le -- lu -- ia, al -- le -- lu -- ia, al -- le -- lu -- ia!
   %% END CHORUS
 }
@@ -136,17 +139,8 @@ verseG = \lyricmode {
   %% END CHORUS
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" {\removeWithTag #'midionly \soprano}
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \tag #'verseA { \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA } }
-  \tag #`verseB { \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "2" \verseB } }
-  \tag #`verseC { \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC } }
-  \tag #`verseD { \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "4" \verseD } }
-  \tag #`verseE { \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "" \verseE } }
-  \tag #`verseF { \new Lyrics  \lyricsto soprano  { \globalLyrics "6" "6" \verseF } }
-  \tag #`verseG { \new Lyrics  \lyricsto soprano  { \globalLyrics "7" "" \verseG } }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/7verse.ly"
 
 %% All sheet music outputs
 clairStaffZoom = #.9

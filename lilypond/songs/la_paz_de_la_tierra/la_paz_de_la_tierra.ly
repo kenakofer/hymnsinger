@@ -71,26 +71,25 @@ songChords = \chords {
 
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l La paz de la tierra es -- té con -- ti -- go,~la paz de los cielos tam -- bién.
   \l La paz de los ríos es -- té con -- ti -- go,~la paz de los mares tam -- bién.
   \l Paz pro -- fun -- da ca -- yen -- do so -- bre ti.
   \l Paz pro -- fun -- da cre -- cien -- do en ti.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   \override Lyrics.LyricText.font-shape = #'italic
   The peace of the earth _ be with you, the peace of the heav -- ens too;
   The peace of the riv -- ers be with you, the peace of the o -- ceans too.
-  Deep  peace fall -- ing o -- ver you.
-  Deep  peace grow -- ing in you.
+  Deep peace fall -- ing o -- ver you.
+  Deep peace grow -- ing in you.
 }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano
   \new NullVoice = "soprano_spanish" \soprano_spanish
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics \lyricsto soprano_spanish  { \globalLyrics "" "" \verseA }
-  \new Lyrics \with \dropLyricsSmall \lyricsto soprano  { \globalLyrics "" "" \verseB }
+  \tag #'verseA { \new Lyrics \lyricsto soprano_spanish  { \globalLyrics "" "" \verseA } }
+  \tag #'verseB { \new Lyrics \with \dropLyricsSmall \lyricsto soprano  { \globalLyrics "" "" \verseB } }
 >>
 
 %% All sheet music outputs

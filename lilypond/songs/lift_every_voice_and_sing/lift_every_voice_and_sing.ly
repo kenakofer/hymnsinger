@@ -77,7 +77,7 @@ bass = {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l Lift ev -- 'ry voice and sing, till earth and heav -- en ring,
   \l ring with the har -- mo -- nies of lib -- er -- ty.
   \l Let our re -- joic -- ing rise high as the lis -- t'ning skies,
@@ -89,7 +89,7 @@ verseA = \tag #'verseA \lyricmode {
   \l Fac -- ing the ris -- ing sun of our new day be -- gun,
   \l let us march on till vic -- to -- ry is won.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   Ston -- y the road we trod, bit -- ter the chas -- t'ning rod,
   felt in the days when hope un -- born had died,
   yet with a stead -- y beat, have not our wea -- ry feet
@@ -101,7 +101,7 @@ verseB = \tag #'verseB \lyricmode {
   out of the gloom -- y past till now we stand at last
   where the bright gleam of our bright star is cast.
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   God of our wea -- ry years, God of our si -- lent tears,
   thou who hast brought us thus far on the way,
   thou who hast by thy might, led us in -- to the light,
@@ -114,13 +114,8 @@ verseC = \tag #'verseC \lyricmode {
   true to our God, true to our na -- tive land.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/3verse.ly"
 
 songChords = \chords {
   \globalChordSymbols

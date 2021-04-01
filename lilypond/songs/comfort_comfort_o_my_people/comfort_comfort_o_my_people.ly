@@ -15,7 +15,7 @@ dateAdded = "2021-02-07"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l Com -- fort, com -- fort, O my peo -- ple,
   speak of peace, now says our God.
   \l Com -- fort those who sit in dark -- ness,
@@ -26,7 +26,7 @@ verseA = \tag #'verseA \lyricmode {
   \l Tell of all the sins I cov -- er,
   and that war -- fare now is o -- ver.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   Hark, the voice of one who's cry -- ing
   in the des -- ert far and near,
   bid -- ding all to full re -- pen -- tance
@@ -37,7 +37,7 @@ verseB = \tag #'verseB \lyricmode {
   Let the val -- leys rise to meet God
   and the hills bow down to greet God.
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   O make straight what long was crook -- ed,
   make the rough -- er plac -- es plain.
   Let your hearts be true and hum -- ble,
@@ -49,13 +49,8 @@ verseC = \tag #'verseC \lyricmode {
   that God's word is nev -- er bro -- ken.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/3verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"

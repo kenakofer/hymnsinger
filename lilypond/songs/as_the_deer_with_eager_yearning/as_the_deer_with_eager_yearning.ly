@@ -18,7 +18,7 @@ dateAdded = "2021-03-09"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l As the deer with ea -- ger yearn -- ing
   seeks the cool -- ing wa -- ter -- course,
   \l so my soul with ar -- dor burn -- ing
@@ -28,7 +28,7 @@ verseA = \tag #'verseA \lyricmode {
   \l When shall I, God's prais -- es voic -- ing,
   come be -- fore our God re -- joic -- ing?
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   Day and night in grief and an -- guish
   bit -- ter tears have been my meat,
   while my long -- ing soul may lan -- guish
@@ -39,15 +39,10 @@ verseB = \tag #'verseB \lyricmode {
   'tis God's hand a -- lone that guides you.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/2verse.ly"
 
 %% All sheet music outputs
-clairStaffZoom = #.8
 \include "../../lib/all_notation_outputs.ly"
 % Slides output
 \include "../../lib/slides_book_2verse.ly"

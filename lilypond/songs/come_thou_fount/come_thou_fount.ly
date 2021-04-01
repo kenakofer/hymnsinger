@@ -51,31 +51,26 @@ bass = {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l Come, Thou Fount of ev -- 'ry bless -- ing, tune my heart to sing thy grace;
   \l Streams of mer -- cy, nev -- er ceas -- ing, call for songs of loud -- est praise.
   \l Teach me some mel -- o -- dious son -- net, sung by flam -- ing tongues a -- bove.
   \l Praise the mount! I’m fixed up -- on it, mount of God’s un -- chang -- ing love.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   Here I raise my Eb -- e -- ne -- zer; here by Thy great help I’ve come;
   And I hope, by thy good plea -- sure, safe -- ly to ar -- rive at home.
   Je -- sus sought me when a stran -- ger, wan -- d’ring from the fold of God;
   He, to res -- cue me from dan -- ger, in -- ter -- posed his pre -- cious blood; }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   O to grace how great a debt -- or dai -- ly I’m con -- strained to be!
   Let that grace now, like a fet -- ter, bind my wan -- d’ring heart to thee.
   Prone to wan -- der, Lord, I feel it, prone to leave the God I love;
   Here’s my heart, O take and seal it, seal it for thy courts a -- bove.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/3verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"

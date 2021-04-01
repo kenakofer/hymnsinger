@@ -60,19 +60,23 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l In the rift -- ed Rock I'm rest -- ing, safe -- ly shel -- tered, I a -- bide.
   \l There no foes nor storms as -- sail me, while with -- in the cleft I hide.
   %% CHORUS
   \l Now I'm rest -- ing, sweet -- ly rest -- ing, in the cleft once made for me.
   \l Je -- sus, bless -- ed Rock of ag -- es, I will hide my -- self in thee.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   Long pur -- sued by sin and Sa -- tan, wea -- ry, sad, I longed for rest.
   Then I found this heav'n -- ly shel -- ter, o -- pened in my Sav -- ior's breast.
-
+  %% CHORUS
+  \SB {
+    Now I'm rest -- ing, sweet -- ly rest -- ing, in the cleft once made for me.
+    Je -- sus, bless -- ed Rock of ag -- es, I will hide my -- self in thee.
+  }
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   \override Lyrics.LyricText.font-shape = #'italic
   Wehr -- los und ver -- las -- sen sehnt sich oft mein Herz nach stil -- ler Ruh';
   doch du de -- ckest mit dem Fit -- tich dei -- ner Lie -- be sanft mich zu.
@@ -80,19 +84,24 @@ verseC = \tag #'verseC \lyricmode {
   Un -- ter dei -- nem sanf -- ten Fit -- tich find' ich Frie -- den, Trost und Ruh';
   denn du schir -- mest mich so freund -- lich, schü -- tzest mich und deckst mich zu.
 }
-verseD = \tag #'verseD \lyricmode {
+verseD = \lyricmode {
   \override Lyrics.LyricText.font-shape = #'italic
   Drückt mich Kum -- mer, Müh' und Sor -- ge, mei -- ne Zu -- flucht bist nur du,
   ret -- test mich aus al -- len Äng -- sten, trö -- stest mich und deckst mich zu.
+  %% CHORUS
+  \SD {
+    Un -- ter dei -- nem sanf -- ten Fit -- tich find' ich Frie -- den, Trost und Ruh';
+    denn du schir -- mest mich so freund -- lich, schü -- tzest mich und deckst mich zu.
+  }
 }
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano
   % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics \with \dropLyricsSmall \lyricsto soprano  { \globalLyrics "1" "" \verseC }
-  \new Lyrics \with \dropLyricsSmall \lyricsto soprano  { \globalLyrics "2" "" \verseD }
+  \tag #'verseA { \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA } }
+  \tag #'verseB { \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB } }
+  \tag #'verseC { \new Lyrics \with \dropLyricsSmall \lyricsto soprano  { \globalLyrics "1" "" \verseC } }
+  \tag #'verseD { \new Lyrics \with \dropLyricsSmall \lyricsto soprano  { \globalLyrics "2" "" \verseD } }
 >>
 extra_verses = \markup {
   \fontsize #-1.5

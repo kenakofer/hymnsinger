@@ -73,7 +73,7 @@ bass = {
 
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l Great is thy faith -- ful -- ness, O God my Ma -- ker.
   \l There is no shad -- ow of turn -- ing with thee.
   \l Thou chang -- est not, thy com -- pas -- sions, they fail not.
@@ -84,30 +84,39 @@ verseA = \tag #'verseA \lyricmode {
   All I have need -- ed thy hand hath pro -- vid -- ed.
   Great is thy faith -- ful -- ness! Lord un -- to me!
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   Sum -- mer and win -- ter, and spring -- time and har -- vest,
   sun, moon, and stars in their cours -- es a -- bove,
   join with all na -- ture in man -- i -- fold wit -- ness
   to thy great faith -- ful -- ness, mer -- cy, and love.
+  %% CHORUS
+  \SB {
+    Great is thy faith -- ful -- ness! Great is thy faith -- ful -- ness!
+    Morn -- ing by morn -- ing new mer -- cies I see.
+    All I have need -- ed thy hand hath pro -- vid -- ed.
+    Great is thy faith -- ful -- ness! Lord un -- to me!
+  }
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   Par -- don for sin and a peace that en -- dur -- eth,
   thine own dear pres -- ence to cheer and to guide,
   strength for to -- day and bright hope for to -- mor -- row;
   bless -- ings all mine, with ten thou -- sand be -- side!
+  %% CHORUS
+  \SC {
+    Great is thy faith -- ful -- ness! Great is thy faith -- ful -- ness!
+    Morn -- ing by morn -- ing new mer -- cies I see.
+    All I have need -- ed thy hand hath pro -- vid -- ed.
+    Great is thy faith -- ful -- ness! Lord un -- to me!
+  }
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/3verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"
 % Slides output
-\include "../../lib/slides_book_1verse.ly"
+\include "../../lib/slides_book_3verse.ly"
 %% MIDI output
 \include "../../lib/midi_output.ly"

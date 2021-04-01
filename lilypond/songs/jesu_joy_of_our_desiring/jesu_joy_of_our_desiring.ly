@@ -51,25 +51,21 @@ bass = {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l Je -- su, joy of our de -- sir -- ing, ho -- ly wis -- dom, love most bright,
   \l drawn by thee, our souls as -- pir -- ing soar to un -- cre -- at -- ed light.
   \l Word of God, our flesh that fash -- ioned, with the fire of life im -- pas -- sioned,
   \l striv -- ing still to truth un -- known, soar -- ing, dy -- ing round thy throne.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   Through the way, where hope is guid -- ing, hark, what peace -- ful mu -- sic rings,
   where the flock, in thee con -- fid -- ing, drink of joy from death -- less springs.
   Theirs is beau -- ty's fair -- est pleas -- ure. Theirs is wis -- dom's ho -- liest treas -- ure.
   Thou dost ev -- er lead thine own in the love of joys un -- known.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/2verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"

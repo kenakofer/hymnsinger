@@ -59,33 +59,27 @@ bass = {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l An -- gels we have heard on high, sing -- ing sweet -- ly through the night,
   \l and the moun -- tains in re -- ply ech -- o -- ing their brave de -- light.
   %% CHORUS
   Glo -- ri -- a in ex -- cel -- sis De -- o, glo -- ri -- a in ex -- cel -- sis De -- o.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   Shep -- herds, why this ju -- bi -- lee? Why these songs of hap -- py cheer?
   What great bright -- ness did you see? What glad tid -- ings did you hear?
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   Come to Beth -- le -- hem and see him whose birth the an -- gels sing.
   Come, a -- dore on bend -- ed knee Christ, the Lord, the new -- born King.
 }
-verseD = \tag #'verseD \lyricmode {
+verseD = \lyricmode {
   See him in a man -- ger laid whom the an -- gels praise a -- bove.
   Ma -- ry, Jo -- seph, lend your aid, while we raise our hearts in love.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/4verse.ly"
 
 %% All sheet music outputs
 clairStaffZoom = #.9

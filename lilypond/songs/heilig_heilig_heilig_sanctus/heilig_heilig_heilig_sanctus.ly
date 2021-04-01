@@ -15,7 +15,7 @@ dateAdded = "2021-03-08"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   %% CHORUS
   \l Hei -- lig, hei -- lig, hei -- lig, hei -- lig ist der Herr!
   \l Hei -- lig, hei -- lig, hei -- lig, hei -- lig ist nur er!
@@ -25,15 +25,22 @@ verseA = \tag #'verseA \lyricmode {
   \hideVerseNumberAtLineStart
   \l e -- wig ist und wal -- tet, sein wird im -- mer -- dar.
 }
-verseB = \tag #'verseB \lyricmode {
-  _ _ _ _ _ _ _ _ _ _ _
-  _ _ _ _ _ _ _ _ _ _ _
+verseB = \lyricmode {
+  %% CHORUS
+  \SB {
+    Hei -- lig, hei -- lig, hei -- lig, hei -- lig ist der Herr!
+    Hei -- lig, hei -- lig, hei -- lig, hei -- lig ist nur er!
+  } \SO {
+    _ _ _ _ _ _ _ _ _ _ _
+    _ _ _ _ _ _ _ _ _ _ _
+  }
+  %% END CHORUS
   \showVerseNumberAtLineStart "2" #4.5
   All -- macht, Wun -- der, Lie -- be, al -- les rings -- um -- her!
   \hideVerseNumberAtLineStart
   Hei -- lig, hei -- lig, hei -- lig, hei -- lig ist der Herr!
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   \override Lyrics.LyricText.font-shape = #'italic
   %% CHORUS
   Ho -- ly, ho -- ly, ho -- ly, ho -- ly is the Lord!
@@ -45,10 +52,17 @@ verseC = \tag #'verseC \lyricmode {
   ev -- er be ex -- alt -- ed, reign for -- ev -- er -- more.
 
 }
-verseD = \tag #'verseD \lyricmode {
+verseD = \lyricmode {
   \override Lyrics.LyricText.font-shape = #'italic
-  _ _ _ _ _ _ _ _ _ _ _
-  _ _ _ _ _ _ _ _ _ _ _
+  %% CHORUS
+  \SD {
+    Ho -- ly, ho -- ly, ho -- ly, ho -- ly is the Lord!
+    Ho -- ly, ho -- ly, ho -- ly, ho -- ly God a -- lone!
+  } \SO {
+    _ _ _ _ _ _ _ _ _ _ _
+    _ _ _ _ _ _ _ _ _ _ _
+  }
+  %% END CHORUS
   \showVerseNumberAtLineStart "2" #4.5
   Might -- y, won -- drous, lov -- ing, om -- ni -- pre -- sent God,
   \hideVerseNumberAtLineStart
@@ -58,10 +72,10 @@ verseD = \tag #'verseD \lyricmode {
 all_verses = <<
   \new NullVoice = "soprano" \soprano
   % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1-2" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "" "" \verseB }
-  \new Lyrics \with \dropLyricsSmall \lyricsto soprano  { \globalLyrics "1-2" "" \verseC }
-  \new Lyrics \with \dropLyricsSmall \lyricsto soprano  { \globalLyrics "" "" \verseD }
+  \tag #'verseA { \new Lyrics  \lyricsto soprano  { \globalLyrics "1-2" "" \verseA } }
+  \tag #'verseB { \new Lyrics  \lyricsto soprano  { \globalLyrics "" "" \verseB } }
+  \tag #'verseC { \new Lyrics \with \dropLyricsSmall \lyricsto soprano  { \globalLyrics "1-2" "" \verseC } }
+  \tag #'verseD { \new Lyrics \with \dropLyricsSmall \lyricsto soprano  { \globalLyrics "" "" \verseD } }
 >>
 
 %% All sheet music outputs

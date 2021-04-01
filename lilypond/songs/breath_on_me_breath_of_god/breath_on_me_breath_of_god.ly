@@ -44,31 +44,25 @@ bass = {
 
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l Breathe on me, breath of God. Fill me with life a -- new
   \l that I may love what thou dost love, and do what thou wouldst do.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   Breath on me, breath of God, un-til my heart is pure,
   un -- til with thee I will one will, to do and to en -- dure.
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   Breathe on me, breath of God, till I am whol -- ly thine,
   till all this earth -- ly part of me glows with thy fire di -- vine.
 }
-verseD = \tag #'verseD \lyricmode {
+verseD = \lyricmode {
   Breath on me, breath of God, so shall I nev -- er die,
   but live with thee the per -- fect life of thine e -- ter -- ni -- ty.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/4verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"

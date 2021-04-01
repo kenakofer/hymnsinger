@@ -55,13 +55,13 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   Hó -- son zêis, phaí -- nou
   mē -- dèn hó -- lōs sù lu -- poû
   pròs ol -- í -- gon és -- ti tò zên
   tò té -- los ho khró -- nos a -- pai -- teî.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   \override Lyrics.LyricText.font-shape = #'italic
   While you live, shine bright.
   Don't let grief sour your guest, Life,
@@ -76,14 +76,13 @@ spacingVerse = \lyricmode {
 
 all_verses = <<
   \new NullVoice = "soprano" \soprano
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "" "" \verseB }
+  \tag #'verseA { \new Lyrics  \lyricsto soprano  { \globalLyrics "" "" \verseA } }
+  \tag #'verseB { \new Lyrics  \lyricsto soprano  { \globalLyrics "" "" \verseB } }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "" "" \spacingVerse }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "" "" \spacingVerse }
 >>
 
 %% All sheet music outputs
-clairStaffZoom = #.9
 \include "../../lib/all_notation_outputs.ly"
 % Slides output
 \include "../../lib/slides_book_2verse.ly"

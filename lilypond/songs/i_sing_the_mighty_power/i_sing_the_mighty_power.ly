@@ -67,7 +67,7 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l I sing the might -- y pow'r of God,
   that made the moun -- tains rise,
   \l that spread the flow -- ing seas a -- broad
@@ -77,7 +77,7 @@ verseA = \tag #'verseA \lyricmode {
   \l The moon shines full at God's com -- mand
   and all the stars o -- bey.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   I sing the good -- ness of the Lord,
   that filled the earth with food.
   God formed the crea -- tures with a word,
@@ -87,7 +87,7 @@ verseB = \tag #'verseB \lyricmode {
   if I sur -- vey the ground I tread,
   or gaze up -- on the sky!
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   There's not a plant or flow'r be -- low,
   but makes thy glo -- ries known,
   and clouds a -- rise, and tem -- pests blow,
@@ -98,13 +98,8 @@ verseC = \tag #'verseC \lyricmode {
   but God is pres -- ent there.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/3verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"

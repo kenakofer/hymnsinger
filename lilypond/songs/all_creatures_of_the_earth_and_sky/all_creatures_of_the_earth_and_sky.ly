@@ -16,7 +16,7 @@ dateAdded = "2021-03-05"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l All crea -- tures of the earth and sky, come, kin -- dred, lift your voic -- es high,
   %% CHORUS
   al -- le -- lu -- ia, al -- le -- lu -- ia!
@@ -26,7 +26,7 @@ verseA = \tag #'verseA \lyricmode {
   O sing ye, O sing ye, al -- le -- lu -- ia, al -- le -- lu -- ia, al -- le -- lu -- ia!
   %% END CHORUS
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   Swift rush -- ing wind so wild and strong, white clouds that sail in heav'n a -- long,
   %% CHORUS
   \SB {
@@ -44,7 +44,7 @@ verseB = \tag #'verseB \lyricmode {
   }
   %% END CHORUS
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   Cool flow -- ing wa -- ter pure and clear, make mu -- sic for all life to hear,
   %% CHORUS
   \SC {
@@ -63,13 +63,8 @@ verseC = \tag #'verseC \lyricmode {
   %% END CHORUS
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" {\removeWithTag #'midionly \soprano}
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/3verse.ly"
 
 extra_verses = \markup {
   \fontsize #-1.5

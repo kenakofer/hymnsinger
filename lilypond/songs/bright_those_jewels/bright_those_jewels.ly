@@ -17,31 +17,27 @@ dateAdded = "2021-03-22"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   Bright those jew -- els of the skies
   which in sa -- ble dark -- ness glow.
   Bright -- er in com -- pas -- sion's eyes
   are the si -- lent tears which flow.
 }
-verseB = \tag #'verseB \lyricmode {
-  Sweet the fra -- grance from the fields where a -- bun -- dant spic -- es grow.
+verseB = \lyricmode {
+  Sweet the fra -- grance from the fields
+  where a -- bun -- dant spic -- es grow.
   Sweet -- er far is that which yields
   suc -- cor to the sick and low.
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   Grate -- ful are those gen -- tle dews
   on the green -- ing grass which fall.
   Far more grate -- ful what re -- news
   com -- forts to the poor who call
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/3verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"

@@ -61,7 +61,7 @@ bass = {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l A might -- y for -- tress is our God,
   a bul -- wark nev -- er fail -- ing.
   Our help -- er he a -- mid the flood
@@ -71,7 +71,7 @@ verseA = \tag #'verseA \lyricmode {
   His craft and pow'r are great, and arm'd with cru -- el hate,
   on earth is not his e -- qual.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   Did we in our own strength con -- fide,
   our striv -- ing would be los -- ing,
   were not the right one on our side,
@@ -81,7 +81,7 @@ verseB = \tag #'verseB \lyricmode {
   Lord Sab -- a -- oth, his name, from age to age the same,
   and he must win the bat -- tle.
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   And though this world, with dev -- ils filled,
   should threat -- en to un -- do us,
   we will not fear, for God hath willed
@@ -91,7 +91,7 @@ verseC = \tag #'verseC \lyricmode {
   His rage we can en -- dure, for lo, his doom is sure.
   One lit -- tle word shall fell him.
 }
-verseD = \tag #'verseD \lyricmode {
+verseD = \lyricmode {
   That word a -- bove all earth -- ly pow'rs,
   no thanks to them, a -- bid -- eth.
   The Spir -- it and the gifts are ours,
@@ -102,14 +102,8 @@ verseD = \tag #'verseD \lyricmode {
   His king -- dom is for -- ev -- er.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/4verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"

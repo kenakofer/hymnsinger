@@ -71,11 +71,8 @@ verseA = \tag #'verseA \lyricmode {
   down to the riv -- er to pray.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "" "" \verseA }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/1verse.ly"
 
 extra_verses = \markup {
   \fill-line {

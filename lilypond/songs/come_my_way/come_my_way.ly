@@ -53,32 +53,27 @@ bass = {
 
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   Come, my Way, my Truth, my Life:
   such a way as gives me breath;
   such a truth as ends all strife;
   such a life as kill -- eth death.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   Come, my Light, my Feast, my Strength:
   such a light as shows a feast;
   such a feast as mends in length;
   such a strength as makes __ his guest.
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   Come my Joy, my Love, my Heart:
   such a joy as none can move;
   such a love as none can part;
   such a heart as joys __ in love.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/3verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"

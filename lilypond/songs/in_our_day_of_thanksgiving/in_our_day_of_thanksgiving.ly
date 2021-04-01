@@ -67,7 +67,7 @@ songChords = \chords {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l In our day of thanks -- giv -- ing
   one psalm let us of -- fer
   \l for the saints who be -- fore us
@@ -77,7 +77,7 @@ verseA = \tag #'verseA \lyricmode {
   \l but now we re -- joice
   that they rest in the Lord
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   In the morn -- ing of life,
   and at noon, and at eve -- ning,
   they were gath -- ered to heav'n
@@ -88,12 +88,8 @@ verseB = \tag #'verseB \lyricmode {
   for the way they should go.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/2verse.ly"
 
 extra_verses = \markup {
   \fontsize #-1.5

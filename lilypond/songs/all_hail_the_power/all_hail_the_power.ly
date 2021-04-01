@@ -58,35 +58,30 @@ bass = {
 
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l All hail the pow’r of Je -- sus’ name! Let an -- gels pros -- trate fall.
   \l Bring forth the roy -- al di -- a -- dem, and crown him Lord of all.
   \l Bring forth the roy -- al di -- a -- dem, and crown him Lord of all!
 }
-verseB = \tag #'verseB \lyricmode {
-  O seed of Is -- rael’s cho -- sen race now ran -- somed from the fall,
+verseB = \lyricmode {
+  O cho -- sen seed of Is -- rael’s race now ran -- somed from the fall,
   hail him who saves you by his grace, and crown him Lord of all.
   Hail him who saves you by his grace, and crown him Lord of all!
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   Let ev -- ’ry tongue and ev -- ’ry tribe re -- spon -- sive to his call,
   to him all maj -- es -- ty a -- scribe, and crown him Lord of all.
   To him all maj -- es -- ty a -- scribe, and crown him Lord of all!
 }
-verseD = \tag #'verseD \lyricmode {
+verseD = \lyricmode {
   Oh, that with all the sa -- cred throng we at his feet may fall!
   We’ll join the ev -- er -- last -- ing song and crown him Lord of all.
   We’ll join the ev -- er -- last -- ing song and crown him Lord of all!
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/4verse.ly"
+
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"
 % Slides output

@@ -16,29 +16,24 @@ dateAdded = "2021-03-04"
 \include "../../lib/header.ly"
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l Gott ist ge -- gen -- wär -- tig. Las -- set uns an -- be -- ten und in Ehr -- furcht vor ihn tre -- ten.
   \l Gott ist in der Mit -- te. Al -- les in uns schwei -- ge und sich in -- nigst vor ihm beu -- ge.
   \l Wer ihn kennt, wer ihn nennt, schlag die Au -- gen nie -- der; kommt, er -- gebt euch wie -- der.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   Gott ist ge -- gen -- wär -- tig, dem die Che -- ru -- bi -- nen Tag und Nacht ge -- bü -- cket die -- nen.
   ''Hei -- lig, hei -- lig, hei -- lig!'' sin -- gen ihm zur Eh -- re al -- ler En -- gel ho -- he Chö -- re.
   Herr, ver -- nimm uns -- re Stimm, da auch wir Ge -- rin -- gen uns -- re Op -- fer brin -- gen.
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   Herr, komm in mir woh -- nen; lass mein Herz auf Er -- den dir ein Hei -- lig -- tum noch wer -- den.
   Komm, du na -- hes Wes -- en; dich in mir ver -- klä -- re, dass ich dich stets lieb und eh -- re.
   Wo ich geh, sitz und steh, lass mich dich er -- blick -- en und vor dir mich bü -- cken.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/3verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"

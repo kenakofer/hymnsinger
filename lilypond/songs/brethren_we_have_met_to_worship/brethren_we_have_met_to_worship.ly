@@ -51,39 +51,33 @@ bass = {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l Breth -- ren _  we have met to _ wor -- _ ship _ and a -- _ dore the Lord our God.
   \l Will you _ pray with all your _ pow -- _ er _ while we _ try to preach the word?
   \l All is vain un -- less the _ Spir -- it of the ho -- ly One comes _ down.
   \l Breth -- ren _ pray, and ho -- ly _ man -- _ na _ will be _ show -- ered all a -- round.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   Sis -- ters, _ will you come and _ help  _ us? _ Mo -- ses' _ sis -- ters aid -- ed him.
   Will you _ help the trem -- bling _ mourn -- _ ers _ who are _ strug -- gling hard with sin?
   Tell them all a -- bout the _ Sav -- ior. Tell them that he will be _ found.
   Sis -- ters _ pray, and ho -- ly _ man -- _ na _ will be _ show -- ered all a -- round.
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   Is there _ here a trem -- bling _ jail -- _ er, _ seek -- ing _ grace and filled with fears?
   Is there _ here a weep -- ing _ Ma -- _ ry _ pour -- ing _ forth  a flood of tears?
   Breth -- ren join your cries to _ help them, sis -- ters, let your prayers a -- _ bound!
   Pray, oh _ pray, that ho -- ly _ man -- _ na _ will be _ show -- ered all a -- round.
 }
-verseD = \tag #'verseD \lyricmode {
+verseD = \lyricmode {
   Let us _ love our God su -- _ preme -- _ ly, _ let us _ love each oth -- er too.
   Let us _ love and pray for _ sin -- _ ners _ till our _ God makes all things new.
   Christ will call us home to _ heav -- en. At his ta -- ble we'll sit _ down.
   Christ will _ gird him -- self and _ serve _ us _ with sweet _ man -- na all a -- round.
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "" \verseD }
->>
+% Set up music-aligned verses. Change to the correct number
+\include "../../lib/4verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"
