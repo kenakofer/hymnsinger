@@ -198,40 +198,48 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
       }
     #})
 
+S = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'slidesOnly { $exp } #})
+SA = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'(verseA slidesOnly) { $exp } #})
+SB = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'(verseB slidesOnly) { $exp } #})
+SC = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'(verseC slidesOnly) { $exp } #})
+SD = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'(verseD slidesOnly) { $exp } #})
+SE = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'(verseE slidesOnly) { $exp } #})
+SF = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'(verseF slidesOnly) { $exp } #})
+SG = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'(verseG slidesOnly) { $exp } #})
+
+SO = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'slidesOmit { $exp } #})
+
 dropLyricsSmall = {
-  \override LyricText.extra-offset = #'(0 . -0.5)
-  \override LyricHyphen.extra-offset = #'(0 . -0.5)
-  \override LyricExtender.extra-offset = #'(0 . -0.5)
-  \override StanzaNumber.extra-offset = #'(0 . -0.5)
-  \override InstrumentName.extra-offset = #'(0 . -0.5)
-  \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+  \SO {
+    \override LyricText.extra-offset = #'(0 . -0.5)
+    \override LyricHyphen.extra-offset = #'(0 . -0.5)
+    \override LyricExtender.extra-offset = #'(0 . -0.5)
+    \override StanzaNumber.extra-offset = #'(0 . -0.5)
+    \override InstrumentName.extra-offset = #'(0 . -0.5)
+    \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+  }
 }
 
 dropLyricsMedium = {
-  \override LyricText.extra-offset = #'(0 . -1)
-  \override LyricHyphen.extra-offset = #'(0 . -1)
-  \override LyricExtender.extra-offset = #'(0 . -1)
-  \override StanzaNumber.extra-offset = #'(0 . -1)
-  \override InstrumentName.extra-offset = #'(0 . -1)
-  \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+  \SO {
+    \override LyricText.extra-offset = #'(0 . -1)
+    \override LyricHyphen.extra-offset = #'(0 . -1)
+    \override LyricExtender.extra-offset = #'(0 . -1)
+    \override StanzaNumber.extra-offset = #'(0 . -1)
+    \override InstrumentName.extra-offset = #'(0 . -1)
+    \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+  }
 }
 
 dropLyricsLarge = {
-  \override LyricText.extra-offset = #'(0 . -2)
-  \override LyricHyphen.extra-offset = #'(0 . -2)
-  \override LyricExtender.extra-offset = #'(0 . -2)
-  \override StanzaNumber.extra-offset = #'(0 . -2)
-  \override InstrumentName.extra-offset = #'(0 . -2)
-  \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
-}
-
-dropLyricsReset = {
-  \revert LyricText.extra-offset
-  \revert LyricHyphen.extra-offset
-  \revert LyricExtender.extra-offset
-  \revert StanzaNumber.extra-offset
-  \revert InstrumentName.extra-offset
-  \revert VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding
+  \SO {
+    \override LyricText.extra-offset = #'(0 . -2)
+    \override LyricHyphen.extra-offset = #'(0 . -2)
+    \override LyricExtender.extra-offset = #'(0 . -2)
+    \override StanzaNumber.extra-offset = #'(0 . -2)
+    \override InstrumentName.extra-offset = #'(0 . -2)
+    \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
+  }
 }
 
 m =
@@ -243,17 +251,6 @@ m =
       \tag #'printonly { $show }
     #}
   )
-
-S = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'slidesOnly { $exp } #})
-SA = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'(verseA slidesOnly) { $exp } #})
-SB = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'(verseB slidesOnly) { $exp } #})
-SC = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'(verseC slidesOnly) { $exp } #})
-SD = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'(verseD slidesOnly) { $exp } #})
-SE = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'(verseE slidesOnly) { $exp } #})
-SF = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'(verseF slidesOnly) { $exp } #})
-SG = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'(verseG slidesOnly) { $exp } #})
-
-SO = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'slidesOmit { $exp } #})
 
 fillClairScore =
   #(define-music-function
