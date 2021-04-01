@@ -52,31 +52,31 @@ bass = {
 }
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
+verseA = \lyricmode {
   \l Be thou my vi -- sion, O Lord of my heart;
   \l naught be all else to me save that thou art.
   \l Thou my best thought, by day or by night,
   \l wak -- ing or sleep -- ing thy pres -- ence my light.
 }
-verseB = \tag #'verseB \lyricmode {
+verseB = \lyricmode {
   Be thou my wis -- dom, be thou my true word;
   I ev -- er with thee, and thou with me, Lord.
   Thou my great Ma-ker, thy child may I be,
   thou in me dwell -- ing, and I one with thee.
 }
-verseC = \tag #'verseC \lyricmode {
+verseC = \lyricmode {
   Be thou my buck -- ler, my sword for the fight.
   Be thou my dig -- ni -- ty, thou my de -- light,
   thou my soul's shel -- ter, thou my high tower.
   Raise thou me heav'n -- ward, O Pow'r of my pow'r.
 }
-verseD = \tag #'verseD \lyricmode {
+verseD = \lyricmode {
   Rich -- es I heed not, nor vain, emp -- ty praise;
   thou mine in -- her -- i -- tance, now and al -- ways.
   Thou and thou on -- ly, first in my heart,
   high King of heav -- en, my trea -- sure thou art.
 }
-verseE = \tag #'verseE \lyricmode {
+verseE = \lyricmode {
   High King of heav -- en, when vic -- t'ry is won
   may I reach heav -- en's joys, O bright heav'n's Sun!
   Heart of my heart, what -- ev -- er be -- fall,
@@ -86,11 +86,11 @@ verseE = \tag #'verseE \lyricmode {
 all_verses = <<
   \new NullVoice = "soprano" \soprano
   % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "1" \verseA }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "2" \verseB }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "3" \verseC }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "4" \verseD }
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE }
+  \tag #'verseA { \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "1" \verseA } }
+  \tag #'verseB { \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "2" \verseB } }
+  \tag #'verseC { \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "3" \verseC } }
+  \tag #'verseD { \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "4" \verseD } }
+  \tag #'verseE { \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE } }
 >>
 
 %% All sheet music outputs
