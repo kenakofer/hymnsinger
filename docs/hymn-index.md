@@ -1060,7 +1060,29 @@ O sweet anticipation!
 It cheers the watchers on
 to pray, and hope, and labor,
 till all our work is done.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Jane Laurie Borthwick, 1859, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/23</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/now_the_day_is_over.html">Now the day is over</a></td><td class='tune-box'>WEM IN LEIDENSTAGEN</td><td class='key-box'>F major
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Jane Laurie Borthwick, 1859, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/23</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/now_on_land_and_sea.html">Now, on land and sea descending</a></td><td class='tune-box'>VESPER HYMN</td><td class='key-box'>E-flat major
+</td><td class='meter-box'>87.87.86.87</td><td class='composer-box'>John A. Stevenson, 1818</td><td class='lyric-box'><div>Now, on land and sea descending, brings the night its peace profound.
+Let our vesper hymn be blending with the holy calm around.
+
+  Jubilate! Jubilate! Jubilate! Amen!
+
+Let our vesper hymn be blending with the holy calm around.
+
+Soon as dies the sunset glory, stars of heav'n shine out above,
+telling still the ancient story– their Creator's endless love.
+
+  Jubilate! Jubilate! Jubilate! Amen!
+
+Now, our wants and burdens leaving to our God who cares for all,
+cease we fearing, cease we grieving; touched by God our burdens fall.
+
+  Jubilate! Jubilate! Jubilate! Amen!
+
+As the darkness deepens o'er us, lo! Eternal stars arise.
+Hope and faith and love rise glorious, shining in the Spirit's skies.
+
+  Jubilate! Jubilate! Jubilate! Amen!
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Samuel Longfellow, 1859</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/04/02</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/now_the_day_is_over.html">Now the day is over</a></td><td class='tune-box'>WEM IN LEIDENSTAGEN</td><td class='key-box'>F major
 </td><td class='meter-box'>65.65</td><td class='composer-box'>Friedrich Filitz, 1847</td><td class='lyric-box'><div>Now the day is over,
 night is drawing nigh,
 shadows of the evening

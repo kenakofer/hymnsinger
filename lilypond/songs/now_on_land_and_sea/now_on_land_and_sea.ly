@@ -4,7 +4,7 @@
 
 %% TUNE INFO
 composer = \smallText "Music: John A. Stevenson, 1818"
-meter = \smallText "87.87.86.87"
+meter = \smallText "VESPER HYMN 87.87.86.87"
 hymnKey = \key ef \major
 hymnTime = \time 2/2
 quarternoteTempo = 120
