@@ -1372,23 +1372,23 @@ and with us stay.
 Amen.
 </div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Refugee Blessing, anon.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/28</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/religion_fit_to_last.html">Religion fit to last</a></td><td class='tune-box'>JESOUS AHATONHIA (adapted)</td><td class='key-box'>G minor
 </td><td class='meter-box'>86.86.76.86</td><td class='composer-box'>French folk melody;
-arr. Kenan Schaefkofer, 2021</td><td class='lyric-box'><div>A voice within becomes distressed to see you taste the fruit,
+arr. Kenan Schaefkofer, 2021</td><td class='lyric-box'><div>A voice within cries out, distressed, to see you taste the fruit,
 forbidden by your God and creed, respected since your youth:
 ''Prodigal, I'll fight in you, restore your faith to thrive.
 I'll bring you back within the fold. Without you can't survive.
 Without you can't survive!''
 
-"You'd loose the bond of family!" your instinct diatribes.
+''You'd loose the bond of family!'' your instinct diatribes.
 Decide: Be shunned to wilderness, or rest in harmless lies.
 Act against evolvéd traits? Your logic might agree,
 but in your gut, you crave not truth, you crave community.
 You crave community!
 
-If earthly fears don't move you, try a sample of Pascal:
+If earthly fears don't faze you, try a sample of Pascal:
 A slim chance of eternal bliss is worth more than your all.
 Walk along the Roman Road, avoid eternal pain.
 Salvation's path is markéd well, with brimstone in the drain,
-With brimstone in the drain:
+with brimstone in the drain:
 
 Step one: believe, O wretch, your life is worthless, justly lost,
 and second: faith's your only hope, at seemingly no cost!
@@ -1399,8 +1399,8 @@ Your God is watching you!
 Mere reason of one mind can't win; the test of time is passed.
 Religions of today are the religions fit to last.
 Members true through power, fear, or friendly company
-rebuke again their wayward young, "Eat not from yonder tree."
-Eat not from yonder tree!
+rebuke again their wayward young, ''Eat not from yonder tree.''
+''Eat not from yonder tree!''
 </div></td><td class='stanzas-box'>5.</td><td class='poet-box'>Kenan Schaefkofer, 2021</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">1part</a><a class="taglink" href="#">accompanied</a></div></td><td class='date-added-box'>2021/01/12</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/singer_of_life.html">Singer of Life</a></td><td class='tune-box'>LACQUIPARLE</td><td class='key-box'>C minor
 </td><td class='meter-box'>irregular</td><td class='composer-box'>Plains Indian traditional, 1879</td><td class='lyric-box'><div>Singer of Life, all flowers are songs, with petals do you write.
 Singer of Life, you color the earth, dazzling the eye with birds red and bright.

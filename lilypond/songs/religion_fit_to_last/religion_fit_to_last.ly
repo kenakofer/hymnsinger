@@ -56,86 +56,49 @@ bass = {
 
 
 %% LYRICS
-verseA = \tag #'verseA \lyricmode {
-  A voice with -- in be -- comes dis -- tressed to see you taste the fruit,
+verseA = \lyricmode {
+  A voice with -- in cries out, dis -- tressed, to see you taste the fruit,
   for -- bid -- den by your God and creed, res -- pec -- ted since your youth:
   ''Pro -- di -- gal, I'll fight in you, re -- store your faith to thrive.
   I'll bring you back with -- in the fold. With -- out you can't sur -- vive.
   With -- out you can't sur -- vive!''
 }
-
-extra_verses = \markup {
-       \fontsize #-1.5
-
-  \fill-line {
-    \hspace #-25.0 % moves the column off the left margin;
-     % can be removed if space on the page is tight
-     \vspace #0
-
-     \column {
-      \line {
-        \raise #3
-        \bold "2."
-        \raise #3
-        \column { % LYRICS-START
-"\"You'd loose the bond of family!\" your instinct diatribes."
-"Decide: Be shunned to wilderness, or rest in harmless lies."
-"Act against evolvéd traits? Your logic might agree,"
-"but in your gut, you crave not truth, you crave community."
-"You crave community!"
-        }
-      }
-      \combine \null \vspace #0.1 % adds vertical spacing between verses
-      \line { \bold "3."
-        \column { % LYRICS-START
-"If earthly fears don't move you, try a sample of Pascal:"
-"A slim chance of eternal bliss is worth more than your all."
-"Walk along the Roman Road, avoid eternal pain."
-"Salvation's path is markéd well, with brimstone in the drain,"
-"With brimstone in the drain:"
-        }
-      }
-    }
-    \hspace #0.1 % adds horizontal spacing between columns;
-    \column {
-      \line {
-        \raise #3
-        \bold "4."
-        \raise #3
-        \column { % LYRICS-START
-"Step one: believe, O wretch, your life is worthless, justly lost,"
-"and second: faith's your only hope, at seemingly no cost!"
-"Third, since faith is proved by work, pay up in duties due:"
-"Two hands on plow, and don't look back, for Brother's watching you."
-"Your God is watching you!"
-        }
-      }
-      \combine \null \vspace #0.1 % adds vertical spacing between verses
-      \line { \bold "5."
-        \column { % LYRICS-START
-"Mere reason of one mind can't win; the test of time is passed."
-"Religions of today are the religions fit to last."
-"Members true through power, fear, or friendly company"
-"rebuke again their wayward young, \"Eat not from yonder tree.\""
-"\"Eat not from yonder tree!\""
-        }
-      }
-    }
-  \hspace #0.1 % gives some extra space on the right margin;
-  % can be removed if page space is tight
-  }
+verseB = \lyricmode {
+  ''You'd loose the bond of fam -- i -- ly!'' your in -- stinct di -- a -- tribes.
+  De -- cide: Be shunned to wil -- der -- ness, or rest in harm -- less lies.
+  Act a -- gainst e -- vol -- véd traits? Your lo -- gic might a -- gree,
+  but in your gut, you crave not truth, you crave com -- mun -- i -- ty.
+  You crave com -- mun -- i -- ty!
+}
+verseC = \lyricmode {
+  If earth -- ly fears don't faze you, try a sam -- ple of Pas -- cal:
+  A slim chance of e -- ter -- nal bliss is worth more than your all.
+  Walk a -- long the Ro -- man Road, a -- void e -- ter -- nal pain.
+  Sal -- va -- tion's path is mark -- éd well, with brim -- stone in the drain,
+  with brim -- stone in the drain:
 }
 
-all_verses = <<
-  \new NullVoice = "soprano" \soprano
-  % Add what you need. If more than 4, fill in the second argument as shown in 5 and 6
-  \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA }
->>
+verseD = \lyricmode {
+  Step one: be -- lieve, O wretch, your life is worth -- less, just -- ly lost,
+  and se -- cond: faith's your on -- ly hope, at seem -- ing -- ly no cost!
+  Third, since faith is proved by work, pay up in du -- ties due:
+  Two hands on plow, and don't look back, for Bro -- ther's watch -- ing you.
+  Your God is watch -- ing you!
+}
+verseE = \lyricmode {
+  Mere rea -- son of one mind can't win; the test of time is passed.
+  Re -- li -- gions of to -- day are the re -- li -- gions fit to last.
+  Mem -- bers true through pow -- er, fear, or friend -- ly com -- pa -- ny
+  re -- buke a -- gain their way -- ward young, ''Eat not from yon -- der tree.''
+  ''Eat not from yon -- der tree!''
+}
+
+\include "../../lib/5verse.ly"
 
 %% All sheet music outputs
-clairStaffZoom = #.8
+clairStaffZoom = #.9
 \include "../../lib/all_notation_outputs.ly"
 % Slides output
-\include "../../lib/slides_book_1verse.ly"
+\include "../../lib/slides_book_5verse.ly"
 %% MIDI output
 \include "../../lib/midi_output.ly"
