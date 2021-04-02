@@ -165,7 +165,7 @@ Let all things their Creator bless, and worship God in humbleness,
 Bring forth the royal diadem, and crown him Lord of all.
 Bring forth the royal diadem, and crown him Lord of all!
 
-O seed of Israel’s chosen race now ransomed from the fall,
+O chosen seed of Israel’s race now ransomed from the fall,
 hail him who saves you by his grace, and crown him Lord of all.
 Hail him who saves you by his grace, and crown him Lord of all!
 
@@ -347,7 +347,8 @@ which in sable darkness glow.
 Brighter in compassion's eyes
 are the silent tears which flow.
 
-Sweet the fragrance from the fields where abundant spices grow.
+Sweet the fragrance from the fields
+where abundant spices grow.
 Sweeter far is that which yields
 succor to the sick and low.
 
@@ -612,10 +613,20 @@ sun, moon, and stars in their courses above,
 join with all nature in manifold witness
 to thy great faithfulness, mercy, and love.
 
+  Great is thy faithfulness! Great is thy faithfulness!
+  Morning by morning new mercies I see.
+  All I have needed thy hand hath provided.
+  Great is thy faithfulness! Lord unto me!
+
 Pardon for sin and a peace that endureth,
 thine own dear presence to cheer and to guide,
 strength for today and bright hope for tomorrow;
 blessings all mine, with ten thousand beside!
+
+  Great is thy faithfulness! Great is thy faithfulness!
+  Morning by morning new mercies I see.
+  All I have needed thy hand hath provided.
+  Great is thy faithfulness! Lord unto me!
 </div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Thomas O. Chisholm, 1923</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/01/24</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/heilig_heilig_heilig_sanctus.html">Heilig, Heilig, Heilig (Holy, Holy, Holy)</a></td><td class='tune-box'>SANCTUS (Schubert)</td><td class='key-box'>E-flat major
 </td><td class='meter-box'>65.65 D</td><td class='composer-box'>Franz Schubert, 1826</td><td class='lyric-box'><div>Heilig, heilig, heilig, heilig ist der Herr!
   Heilig, heilig, heilig, heilig ist nur er!
@@ -623,8 +634,8 @@ blessings all mine, with ten thousand beside!
 Er, der nie begonnen, or, der immer war,
 ewig ist und waltet, sein wird immerdar.
 
-Allmacht, Wunder, Liebe, alles ringsumher!
-Heilig, heilig, heilig, heilig ist der Herr!
+  Heilig, heilig, heilig, heilig ist der Herr!
+  Heilig, heilig, heilig, heilig ist nur er!
 
   Holy, holy, holy, holy is the Lord!
   Holy, holy, holy, holy God alone!
@@ -632,8 +643,8 @@ Heilig, heilig, heilig, heilig ist der Herr!
 God, without beginning, God, who always was,
 ever be exalted, reign forevermore.
 
-Mighty, wondrous, loving, omnipresent God,
-holy, holy, holy, holy is the Lord!
+  Holy, holy, holy, holy is the Lord!
+  Holy, holy, holy, holy God alone!
 </div></td><td class='stanzas-box'>2.</td><td class='poet-box'>German; Johann P. Neumann, 1826; trans. Kenan Schaefkofer, 2021</td><td class='tags-box'><div><a class="taglink" href="#">german</a><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/08</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/help_us_to_help_each_other_lord.html">Help us to help each other, Lord</a></td><td class='tune-box'>BALERMA</td><td class='key-box'>A-flat major
 </td><td class='meter-box'>CM</td><td class='composer-box'>François H. Barthélémon,  1833</td><td class='lyric-box'><div>Help us to help each other, Lord,
 each other's cross to bear,
@@ -765,6 +776,9 @@ There no foes nor storms assail me, while within the cleft I hide.
 Long pursued by sin and Satan, weary, sad, I longed for rest.
 Then I found this heav'nly shelter, opened in my Savior's breast.
 
+  Now I'm resting, sweetly resting, in the cleft once made for me.
+  Jesus, blessed Rock of ages, I will hide myself in thee.
+
 Wehrlos und verlassen sehnt sich oft mein Herz nach stiller Ruh';
 doch du deckest mit dem Fittich deiner Liebe sanft mich zu.
 
@@ -773,6 +787,9 @@ doch du deckest mit dem Fittich deiner Liebe sanft mich zu.
 
 Drückt mich Kummer, Müh' und Sorge, meine Zuflucht bist nur du,
 rettest mich aus allen Ängsten, tröstest mich und deckst mich zu.
+
+  Unter deinem sanften Fittich find' ich Frieden, Trost und Ruh';
+  denn du schirmest mich so freundlich, schützest mich und deckst mich zu.
 
 Peace which passeth understanding,
 joy the world can never give,
@@ -919,7 +936,7 @@ and hold love in.
 </div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Louis Untermeyer, 1923</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/01/31</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/may_we_each_take_joy_in_giving.html">May we each take joy in giving</a></td><td class='tune-box'>STUTTGART</td><td class='key-box'>G major
 </td><td class='meter-box'>87.87</td><td class='composer-box'>Henry J. Gauntlett, 1861</td><td class='lyric-box'><div>May we each take joy in giving with a spirit large and free
 to our neighbors and the strangers, fostering community.
-</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Robert Murray, 1880, alt. Kenan Schaefkofer, 2021</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/14</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/my_shepherd_will_supply_my_need.html">My Shepherd will supply my need</a></td><td class='tune-box'>RESIGNATION</td><td class='key-box'>C major
+</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Robert Murray, 1880 alt. Kenan Schaefkofer, 2021</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/14</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/my_shepherd_will_supply_my_need.html">My Shepherd will supply my need</a></td><td class='tune-box'>RESIGNATION</td><td class='key-box'>C major
 </td><td class='meter-box'>CMD</td><td class='composer-box'>North American Traditional;
 arr. Kenan Schaefkofer, 2021</td><td class='lyric-box'><div>My Shepherd will supply my need; most holy is your name.
 In pastures fresh you make me feed, beside the living stream.
@@ -998,12 +1015,12 @@ but thou, my heart, awake be,
 with pray'rful thanks, attend thee,
 to dearest Treasures ere thou rest.
 
-Why Sun, are you retreating?
-The Moon, in dance, now leading
-the ancient ballad, Night.
-Likewise, a brighter glory
-does Truth infuse our story,
-when offered soft as yonder light.
+Why Sun, are you retreating,
+and Moon, in dance, now leading
+the ancient ballad, Night?
+We set-tle down, we glisten,
+we laugh, and talk, and listen,
+resounding, gentle notes of light.
 
 Now obligation ceases,
 this Night the tired releases
@@ -1018,7 +1035,7 @@ protected be your heads;
 and happy slumbers send you,
 and ev'ry care attend you,
 as trusted souls watch o'er your beds.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Paul Gerhardt, 1648, tr. and alt. Kenan Schaefkofer, 2021</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">evening</a></div></td><td class='date-added-box'>2021/01/16</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/now_is_the_time_approaching.html">Now is the time approaching</a></td><td class='tune-box'>WEBB</td><td class='key-box'>A major
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Paul Gerhardt, 1648 tr. and alt. Kenan Schaefkofer, 2021</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">evening</a></div></td><td class='date-added-box'>2021/01/16</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/now_is_the_time_approaching.html">Now is the time approaching</a></td><td class='tune-box'>WEBB</td><td class='key-box'>A major
 </td><td class='meter-box'>76.76</td><td class='composer-box'>George James Webb, 1837</td><td class='lyric-box'><div>Now is the time approaching,
 by prophets long foretold,
 when all shall dwell together,
@@ -1701,10 +1718,16 @@ let my people go,
 to lead the Hebrew children through,
 let my people go.
 
+  Go down, Moses, way down in Egypt's land,
+  tell old Pharaoh: let my people go.
+
 As Israel stood by water's side,
 let my people go,
 at God's command it did divide,
 let my people go.
+
+  Go down, Moses, way down in Egypt's land,
+  tell old Pharaoh: let my people go.
 
 When they had reached the other shore,
 let my people go,
@@ -1728,13 +1751,19 @@ let this blest assurance control,
 that Christ hath regarded my helpless estate,
 and hath shed his own blood for my soul.
 
+  It is well with my soul, it is well, it is well with my soul.
+
 Redeemed! Oh, the bliss of this glorious thought:
 My sin– not in part, but the whole–
 is nailed to his cross, and I bear it no more,
 praise the Lord, praise the Lord, O my soul!
 
+  It is well with my soul, it is well, it is well with my soul.
+
 And, Lord, haste the day when my faith shall be sight,
 the clouds be rolled back as a scroll,
 the trumpet shall sound, and the Lord shall descend,
 even so, it is well with my soul.
+
+  It is well with my soul, it is well, it is well with my soul.
 </div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Horatio G. Spafford, 1876</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/12</td></tr></table>
