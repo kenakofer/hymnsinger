@@ -62,42 +62,25 @@ verseC = \lyricmode {
   all the slow -- ing pulse -- beats
   of the wan -- ing year.
 }
+verseD = \lyricmode {
+  May the sea -- son's rhy -- thms,
+  slow and strong and deep
+  soothe the mind and spi -- rit
+  lull -- ing us to sleep.
+}
+verseE = \lyricmode {
+  Sleep un -- til the ri -- sing
+  of a -- noth -- er spring
+  keeps the an -- cient pro -- mise
+  fall and win -- ter bring.
+}
 
 % Set up music-aligned verses. Change to the correct number
-\include "../../lib/3verse.ly"
-
-extra_verses = \markup {
-  \fill-line {
-  \hspace #0.01 % gives some extra space on the right margin;
-     \column {
-      \line { \bold "4."
-        \column { % LYRICS-START
-"May the season's rhythms,"
-"slow and strong and deep"
-"soothe the mind and spirit"
-"lulling us to sleep."
-        }
-      }
-    }
-    \hspace #0.1 % adds horizontal spacing between columns;
-    \column {
-      \line { \bold "5."
-        \column { % LYRICS-START
-"Sleep until the rising"
-"of another spring"
-"keeps the the ancient promise"
-"fall and winter bring."
-        }
-      }
-    }
-  \hspace #0.1 % gives some extra space on the right margin;
-  % can be removed if page space is tight
-  }
-}
+\include "../../lib/5verse.ly"
 
 %% All sheet music outputs
 \include "../../lib/all_notation_outputs.ly"
 % Slides output
-\include "../../lib/slides_book_3verse.ly"
+\include "../../lib/slides_book_5verse.ly"
 %% midi output
 \include "../../lib/midi_output.ly"

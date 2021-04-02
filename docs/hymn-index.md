@@ -1083,7 +1083,7 @@ lulling us to sleep.
 
 Sleep until the rising
 of another spring
-keeps the the ancient promise
+keeps the ancient promise
 fall and winter bring.
 </div></td><td class='stanzas-box'>5.</td><td class='poet-box'>v.1 Sabine Baring Gould, 1865 v.2-5 Marye B. Bonney (1910-1992)</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">evening</a><a class="taglink" href="#">autumn</a></div></td><td class='date-added-box'>2021/02/11</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_come_all_ye_faithful.html">O come, all ye faithful</a></td><td class='tune-box'>ADESTE FIDELES</td><td class='key-box'>A major
 </td><td class='meter-box'>irregular</td><td class='composer-box'>John F. Wade, 1782</td><td class='lyric-box'><div>O come, all ye faithful, joyful and triumphant,
