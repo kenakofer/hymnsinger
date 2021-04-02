@@ -1,5 +1,15 @@
 ---
 ---
+#header-logo {
+    width: 120px;
+    height: 88px;
+    left: 50%;
+    margin-left: -70px;
+    margin-bottom: 15px;
+}
+p.header {
+    text-align: center;
+}
 section {
     margin-top: 30px;
 }
