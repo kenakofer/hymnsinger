@@ -66,3 +66,6 @@ This is a project to make or take hymns with permissive copyright status, typese
   - Slides issues:
     - First page often gets only one line (o come o come)
     - Prevent dropLyricsSmall etc. (o come o come)
+    - Tagline missing on >1 verse songs
+  - Fix lyric extraction (all creatures worship god most high)
+  - \m is confusingly overloaded: Once in royal uses for melisma, others use for midionly

@@ -416,7 +416,7 @@ scoreWithVerse =
         { \removeWithTag #'midionly \tenor }
         { \removeWithTag #'midionly \bass }
         {}
-        #.7
+        #.8
         $whichVerse
         >>
     #})

@@ -33,6 +33,7 @@ find ./lilypond/songs -type f -iname "*.ly" -print0 | sort -z | while IFS= read 
         done
 
         # We use 3 colors instead of 2 for slides since the image is smaller
+        echo "     --> (Building ODP)"
         mogrify -colorspace gray +dither -posterize 3 "$OUTPUT_DIR$BASE-slides*.png"
 
         $SCRIPT_DIR/build_odp_presentation_from_images.sh "$BASE"
