@@ -236,26 +236,34 @@ def output_header_info(song_file_base, song_title, lyrics, tags, output_file):
         f.write("{% include choice_and_music.html %}")
 
 def add_tune_text_pair(tune, song_title, song_file_base):
-    record = [tune, song_title, song_file_base]
-    incomplete_record = [tune, song_title]
+    record = {
+        "t":tune,
+        "s":song_title,
+        "i":song_file_base
+    }
+    incomplete_record = {
+        "t":tune,
+        "s":song_title
+    }
 
     data = json.load(open(TUNE_TEXT_FILEPATH, "r"))
+
     if data and not record in data:
         if incomplete_record in data:
             data.remove(incomplete_record)
         data.append(record)
-        data.sort(key=lambda l: l[0])
+        data.sort(key=lambda l: l['t'])
         write_out_tune_text_json(data)
 
 def write_out_tune_text_json(data):
-    with open(TUNE_TEXT_FILEPATH, "w") as f:
-        f.write("[\n")
+    with open("other.json", "w") as f:
+        f.write("{\n")
         for i, d in enumerate(data):
             f.write(json.dumps(d))
             if i < len(data) - 1:
                 f.write(",")
             f.write("\n")
-        f.write("]")
+        f.write("}")
 
 if __name__ == "__main__":
     file_path = sys.argv[1]
