@@ -64,7 +64,7 @@ verseB = \lyricmode {
   Why Sun, are you re -- treat -- ing,
   and Moon, in dance, now lead -- ing
   the anc -- ient bal -- lad, Night?
-  We set-tle down, we glist -- en,
+  Re -- flect -- ing rays, we glist -- en,
   we laugh, and talk, and list -- en,
   re -- sound -- ing, gen -- tle notes of light.
 }

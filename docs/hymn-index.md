@@ -1018,7 +1018,7 @@ to dearest Treasures ere thou rest.
 Why Sun, are you retreating,
 and Moon, in dance, now leading
 the ancient ballad, Night?
-We set-tle down, we glisten,
+Reflecting rays, we glisten,
 we laugh, and talk, and listen,
 resounding, gentle notes of light.
 
