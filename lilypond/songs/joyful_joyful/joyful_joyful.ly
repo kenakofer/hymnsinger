@@ -15,7 +15,6 @@ title = \titleText "Joyful, joyful, we adore thee"
 poet = \smallText "Text: Henry van Dyke, 1907"
 typesetter = "Kenan Schaefkofer"
 verseCount = 4
-verseCount = 4
 tags = "english christian 4part"
 dateAdded = "2021-01-13"
 \include "../../lib/header.ly"
@@ -23,33 +22,40 @@ dateAdded = "2021-01-13"
 %% NOTES
 soprano = {
   \globalParts
-  \relative g' { b4 b c d | d c b a | g g a b | b4. a8 a2 | } \break
-  \relative g' { b4 b c d | d c b a | g g a b | a4. g8 g2 | } \break
-  \relative g' { a4 a b g | a b8( c) b4 g | a b8( c) b4 a | g a d2 | } \break
-  \relative g' { b4 b c d | d c b a | g g a b | a4. g8 g2 }\break
-  \bar "|."
+  \relative g' {
+    b4 b c d | d c b a | g g a b | b4. a8 a2 | \break
+    b4 b c d | d c b a | g g a b | a4. g8 g2 | \break
+    a4 a b g | a b8( c) b4 g | a b8( c) b4 a | g a d,2 | \break
+    b'4 b c d | d c b a | g g a b | a4. g8 g2 \break
+    \bar "|."
+  }
 }
 alto = {
   \globalParts
-  \relative e' { d4 d d d | d d d d | d4 d d d | d4. d8 d2 | }
-  \relative e' { d4 d e f | f e d c | d4 d fs g | fs4. d8 d2 | }
-  \relative e' { d4 d d d | fs4 d d d | fs4 g8( fs8) fs4 ds | e4 cs d2 | }
-  \relative e' { d4 d e f | f e e e | d d fs g | fs4. d8 d2 | }
+  \relative e' {
+    d4 d d d | d d d d | d4 d d d | d4. d8 d2 |
+    d4 d e f | f e d c | d4 d fs g | fs4. d8 d2 |
+    d4 d d d | fs4 d d d | fs4 g8( fs8) fs4 ds | e4 cs d2 |
+    d4 d e f | f e e e | d d fs g | fs4. d8 d2 |
+  }
 }
 tenor = {
   \globalParts
-  \relative a { g4 g a b | b a g fs | g4 g fs g | g4. fs8 fs2 | }
-  \relative a { g4 g g a8 b | b4 c d c | b b c d | c4. b8 b2 | }
-  \relative a { fs4 fs g b | d4 g,8 a g4 b | c4 b8 a b4 b | b a fs2 | }
-  \relative a { g4 g g a8 b | c4 c d c | b4 b c d | c4. b8 b2 }
-
+  \relative a {
+    g4 g a b | b a g fs | g4 g fs g | g4. fs8 fs2 |
+    g4 g g a8 b | b4 c d c | b b c d | c4. b8 b2 |
+    fs4 fs g b | d4 g,8 a g4 b | c4 b8 a b4 b | b a fs2 |
+    g4 g g a8 b | c4 c d c | b4 b c d | c4. b8 b2
+  }
 }
 bass = {
   \globalParts
-  \relative d { g4 g g g | d d d c | b4 b a g | d4. d8 d2 | }
-  \relative d { g4 g g g | c, c c c | d d d d | d4. g8 g,2 | }
-  \relative d { d4 d d d | d d d d | d d ds b | e a, d2 | }
-  \relative d { g,4 g' g g | c, c c c | d d d d | d4. g8 g,2 | }
+  \relative d {
+    g4 g g g | d d d c | b4 b a g | d'4. d8 d2 |
+    g4 g g g | c, c c c | d d d d | d4. g8 g,2 |
+    d'4 d d d | d d d d | d d ds b | e a, d2 |
+    g,4 g' g g | c, c c c | d d d d | d4. g8 g,2 |
+  }
 }
 
 
