@@ -15,7 +15,7 @@ title = \titleText "Now, on land and sea descending"
 poet = \smallText "Text: Samuel Longfellow, 1859"
 typesetter = "Kenan Schaefkofer"
 verseCount = 4
-tags = "english theist 4part"
+tags = "english theist 4part evening"
 dateAdded = "2021-04-02"
 \include "../../lib/header.ly"
 

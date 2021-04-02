@@ -1082,7 +1082,7 @@ As the darkness deepens o'er us, lo! Eternal stars arise.
 Hope and faith and love rise glorious, shining in the Spirit's skies.
 
   Jubilate! Jubilate! Jubilate! Amen!
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Samuel Longfellow, 1859</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/04/02</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/now_the_day_is_over.html">Now the day is over</a></td><td class='tune-box'>WEM IN LEIDENSTAGEN</td><td class='key-box'>F major
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Samuel Longfellow, 1859</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">evening</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/04/02</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/now_the_day_is_over.html">Now the day is over</a></td><td class='tune-box'>WEM IN LEIDENSTAGEN</td><td class='key-box'>F major
 </td><td class='meter-box'>65.65</td><td class='composer-box'>Friedrich Filitz, 1847</td><td class='lyric-box'><div>Now the day is over,
 night is drawing nigh,
 shadows of the evening
