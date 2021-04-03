@@ -299,7 +299,7 @@ when disappointment, grief, and fear are gone,
 sorrow forgot, love’s purest joys restored.
 Be still, my soul; when change and tears are past,
 all safe and blessed we shall meet at last.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Kathrina von Schlegel, tr. Jane Borthwick (1855)</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/01/14</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/be_thou_my_vision.html">Be thou my vision</a></td><td class='tune-box'>SLANE</td><td class='same-tune-box'><span class="external"><a class="external" target="_blank" href="http://dailyprayer.us/Christian_song_lyrics/lord-of-all-hopefulness.html">Lord of all hopefulness</a></span></td><td class='key-box'>E-flat major
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Kathrina von Schlegel, tr. Jane Borthwick (1855)</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/01/14</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/be_thou_my_vision.html">Be thou my vision</a></td><td class='tune-box'>SLANE</td><td class='same-tune-box'><span class="external"><a class="external" target="_blank" href="https://digitalsongsandhymns.com/songs/5068">Lord of all hopefulness</a></span></td><td class='key-box'>E-flat major
 </td><td class='meter-box'>10.10.9.10</td><td class='composer-box'>Irish melody, 1909;
 arr. Martin Shaw, 1931</td><td class='lyric-box'><div>Be thou my vision, O Lord of my heart;
 naught be all else to me save that thou art.
@@ -1842,4 +1842,31 @@ the trumpet shall sound, and the Lord shall descend,
 even so, it is well with my soul.
 
   It is well with my soul, it is well, it is well with my soul.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Horatio G. Spafford, 1876</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/12</td></tr></table>
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Horatio G. Spafford, 1876</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/12</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/when_rising_from_the_bed_of_death.html">When rising from the bed of death</a></td><td class='tune-box'>THIRD MODE MELODY</td><td class='same-tune-box'><span class="external"><a class="external" target="_blank" href="https://www.hopepublishing.com/find-hymns-hw/hw3067.aspx#">How shallow former shadows seem</a></span><span class="external"><a class="external" target="_blank" href="https://digitalsongsandhymns.com/songs/7641">To mock your reign, O dearest Lord</a></span></td><td class='key-box'>E phrygian
+</td><td class='meter-box'>CMD</td><td class='composer-box'>Thomas Tallis, 1568</td><td class='lyric-box'><div>When, rising from the bed of death,
+o’erwhelmed with guilt and fear,
+I view my Maker face to face,
+O how shall I appear?
+If yet, while pardon may be found,
+and mercy may be sought,
+my heart with inward horror shrinks,
+and trembles at the thought.
+
+When thou, O Lord, shalt stand disclosed
+in majesty severe,
+and sit in judgement on my soul,
+O how shall I appear?
+But thou hast told the troubled mind
+who does her sins lament,
+the timely tribute of her tears,
+shall endless woe prevent.
+
+Then see the sorrow of my heart,
+Ere yet it be too late;
+And hear my Saviour’s dying groans,
+To give those sorrows weight.
+For never shall my soul despair
+Her pardon to procure,
+Who knows thine only Son has died
+To make her pardon sure.
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Joseph Addison, 1672-1719</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/04/03</td></tr></table>
