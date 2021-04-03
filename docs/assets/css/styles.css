@@ -7,6 +7,42 @@
     margin-left: -70px;
     margin-bottom: 15px;
 }
+.same-tune-box span a{
+    color: #fff;
+    font-weight: 400;
+    padding-right: 8px;
+}
+.same-tune-box span {
+    color: #fff;
+    margin: 1px 1px;
+    padding: 2px 4px;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 1.6;
+}
+.same-tune-box span.internal {
+    background: #b55555;
+}
+.same-tune-box span.external {
+    background: #855555;
+}
+.same-tune-box span.external a:after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: url(https://mdn.mozillademos.org/files/12982/external-link-52.png);
+        background-size: auto;
+    background-size: 10px 10px;
+    filter: invert(100%);
+    margin-top: -1px;
+    margin-left: 1px;
+}
+
+.same-tune-box span {
+    background: gray;
+}
 p.header {
     text-align: center;
 }

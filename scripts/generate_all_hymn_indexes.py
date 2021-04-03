@@ -198,6 +198,8 @@ def output_table_row(song_file_base, song_title, lyrics, tune, key, meter, stanz
         f.write("</a>")
         f.write("</td><td class='tune-box'>")
         f.write(tune)
+        f.write("</td><td class='same-tune-box'>")
+        f.write(get_songs_with_same_tune_html(tune, song_title))
         f.write("</td><td class='key-box'>")
         f.write(key)
         f.write("</td><td class='meter-box'>")
@@ -235,6 +237,22 @@ def output_header_info(song_file_base, song_title, lyrics, tags, output_file):
         f.write("\n\n")
         f.write("{% include choice_and_music.html %}")
 
+def get_songs_with_same_tune_html(tune, song_title):
+    data = json.load(open(TUNE_TEXT_FILEPATH, "r"))
+    html_string=""
+    for d in data:
+        if d['t'] != tune:
+            continue
+        if d['s'] == song_title:
+            continue
+        if 'i' in d:
+            html_string += '<span class="internal"><a href="{{ site.baseurl }}/listing/' + d['i'] + '.html">' + d['s'] + '</a></span>'
+        elif 'e' in d:
+            html_string += '<span class="external"><a class="external" target="_blank" href="' + d['e'] + '">' + d['s'] + '</a></span>'
+        else:
+            html_string += '<span class="nolink">' + d['s'] + '</span>'
+    return html_string
+
 def add_tune_text_pair(tune, song_title, song_file_base):
     record = {
         "t":tune,
@@ -256,14 +274,14 @@ def add_tune_text_pair(tune, song_title, song_file_base):
         write_out_tune_text_json(data)
 
 def write_out_tune_text_json(data):
-    with open("other.json", "w") as f:
-        f.write("{\n")
+    with open(TUNE_TEXT_FILEPATH, "w") as f:
+        f.write("[\n")
         for i, d in enumerate(data):
             f.write(json.dumps(d))
             if i < len(data) - 1:
                 f.write(",")
             f.write("\n")
-        f.write("}")
+        f.write("]")
 
 if __name__ == "__main__":
     file_path = sys.argv[1]
