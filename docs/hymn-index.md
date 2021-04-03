@@ -455,7 +455,7 @@ All helplessness, all weakness I
 on thee alone for strength depend,
 nor have I power from thee to move.
 Thy nature, and thy name is Love!
-</div></td><td class='stanzas-box'>11.</td><td class='poet-box'>Charles Wesley, 1742</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">1part</a><a class="taglink" href="#">accompanied</a></div></td><td class='date-added-box'>2021/01/11</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_thou_fount.html">Come, thou fount</a></td><td class='tune-box'>NETTLETON</td><td class='same-tune-box'></td><td class='key-box'>D major
+</div></td><td class='stanzas-box'>11.</td><td class='poet-box'>Charles Wesley, 1742</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">1part</a><a class="taglink" href="#">accompanied</a></div></td><td class='date-added-box'>2021/01/11</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_thou_fount.html">Come, thou fount</a></td><td class='tune-box'>NETTLETON</td><td class='same-tune-box'><span class="nolink">Summoned by the God who made us</span></td><td class='key-box'>D major
 </td><td class='meter-box'>87.87 D</td><td class='composer-box'>American folk melody, 1813</td><td class='lyric-box'><div>Come, Thou Fount of ev'ry blessing, tune my heart to sing thy grace;
 Streams of mercy, never ceasing, call for songs of loudest praise.
 Teach me some melodious sonnet, sung by flaming tongues above.
@@ -469,7 +469,7 @@ O to grace how great a debtor daily I’m constrained to be!
 Let that grace now, like a fetter, bind my wand’ring heart to thee.
 Prone to wander, Lord, I feel it, prone to leave the God I love;
 Here’s my heart, O take and seal it, seal it for thy courts above.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Robert Robinson, 1759</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/01/13</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_thou_long_expected_jesus.html">Come, thou long-expected Jesus</a></td><td class='tune-box'>HYFRYDOL</td><td class='same-tune-box'></td><td class='key-box'>F major
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Robert Robinson, 1759</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/01/13</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_thou_long_expected_jesus.html">Come, thou long-expected Jesus</a></td><td class='tune-box'>HYFRYDOL</td><td class='same-tune-box'><span class="nolink">Alleluia! Sing to Jesus</span><span class="nolink">Love divine, all loves excelling</span></td><td class='key-box'>F major
 </td><td class='meter-box'>87.87 D</td><td class='composer-box'>Rowland H. Prichard ca. 1830;
 arr. Ralph Vaughn Williams, 1906</td><td class='lyric-box'><div>Come, thou longexpected Jesus! born to set thy people free,
 from our fears and sins release us, let us find our rest in thee.
@@ -822,7 +822,7 @@ Through the way, where hope is guiding, hark, what peaceful music rings,
 where the flock, in thee confiding, drink of joy from deathless springs.
 Theirs is beauty's fairest pleasure. Theirs is wisdom's holiest treasure.
 Thou dost ever lead thine own in the love of joys unknown.
-</div></td><td class='stanzas-box'>2.</td><td class='poet-box'>Martin Janus, 1665, trans. Robert Bridges, 1927</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/04</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/joyful_joyful.html">Joyful, joyful, we adore thee</a></td><td class='tune-box'>HYMN TO JOY</td><td class='same-tune-box'></td><td class='key-box'>G major
+</div></td><td class='stanzas-box'>2.</td><td class='poet-box'>Martin Janus, 1665, trans. Robert Bridges, 1927</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/04</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/joyful_joyful.html">Joyful, joyful, we adore thee</a></td><td class='tune-box'>HYMN TO JOY</td><td class='same-tune-box'><span class="nolink">Sing a new world into being</span></td><td class='key-box'>G major
 </td><td class='meter-box'>87.87 D</td><td class='composer-box'>Ludwig van Beethoven, 1823</td><td class='lyric-box'><div>Joyful, joyful, we adore thee, God of glory, Lord of love.
 Hearts unfold like flow'rs before thee, praising thee their sun above.
 Melt the clouds of sin and sadness; drive the dark of doubt away.
@@ -852,7 +852,27 @@ The peace of the earth be with you, the peace of the heavens too;
 The peace of the rivers be with you, the peace of the oceans too.
 Deep peace falling over you.
 Deep peace growing in you.
-</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Spanish; Guatemalan traditional; trans. Kenan Schaefkofer, 2021</td><td class='tags-box'><div><a class="taglink" href="#">spanish</a><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/lift_every_voice_and_sing.html">Lift every voice and sing</a></td><td class='tune-box'>ANTHEM</td><td class='same-tune-box'></td><td class='key-box'>G major
+</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Spanish; Guatemalan traditional; trans. Kenan Schaefkofer, 2021</td><td class='tags-box'><div><a class="taglink" href="#">spanish</a><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/let_there_be_light.html">Let there be light</a></td><td class='tune-box'>MISSIONARY CHANT</td><td class='same-tune-box'></td><td class='key-box'>A-flat major
+</td><td class='meter-box'>LM</td><td class='composer-box'>Charles H. C. Zeuner, 1832</td><td class='lyric-box'><div>Let there be light, O God of hosts!
+Let there be wisdom on the earth!
+Let broad humanity have birth!
+Let there be deeds instead of boasts.
+
+Within our passioned hearts instill
+the calm that endeth strain and strife.
+Make us your ministers of life.
+Drive out the urge to curse and kill.
+
+Give us the peace of vision clear
+to see each other's good, our own,
+to joy and suffer not alone:
+the love that casts aside all fear.
+
+Let woe and waste of warfare cease,
+that useful labor yet may build
+its homes with love and laughter filled!
+God, give your wayward children peace!
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>William M. Vories, 1909, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/04/03</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/lift_every_voice_and_sing.html">Lift every voice and sing</a></td><td class='tune-box'>ANTHEM</td><td class='same-tune-box'></td><td class='key-box'>G major
 </td><td class='meter-box'>66 10.66 10.14 14 66 10</td><td class='composer-box'>J. Rosamond Johnson, 1899</td><td class='lyric-box'><div>Lift ev'ry voice and sing, till earth and heaven ring,
 ring with the harmonies of liberty.
 Let our rejoicing rise high as the list'ning skies,
@@ -1394,7 +1414,7 @@ be here our guest,
 and with us stay.
 
 Amen.
-</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Refugee Blessing, anon.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/28</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/religion_fit_to_last.html">Religion fit to last</a></td><td class='tune-box'>JESOUS AHATONHIA (adapted)</td><td class='same-tune-box'></td><td class='key-box'>G minor
+</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Refugee Blessing, anon.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/28</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/religion_fit_to_last.html">Religion fit to last</a></td><td class='tune-box'>JESOUS AHATONHIA (adapted)</td><td class='same-tune-box'><span class="external"><a class="external" target="_blank" href="https://digitalsongsandhymns.com/songs/7291">'Twas in the moon of wintertime</a></span></td><td class='key-box'>G minor
 </td><td class='meter-box'>86.86.76.86</td><td class='composer-box'>French folk melody;
 arr. Kenan Schaefkofer, 2021</td><td class='lyric-box'><div>A voice within cries out, distressed, to see you taste the fruit,
 forbidden by your God and creed, respected since your youth:
@@ -1537,7 +1557,7 @@ Goodness and mercy all my life
 shall surely follow me,
 and in God's house forevermore
 my dwelling place shall be.
-</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>The Psalms in Meeter, 1650</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/19</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_morning_hangs_a_signal.html">The morning hangs a signal</a></td><td class='tune-box'>MEIRIONYDD</td><td class='same-tune-box'></td><td class='key-box'>D major
+</div></td><td class='stanzas-box'>5.</td><td class='poet-box'>The Psalms in Meeter, 1650</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/19</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/the_morning_hangs_a_signal.html">The morning hangs a signal</a></td><td class='tune-box'>MEIRIONYDD</td><td class='same-tune-box'><span class="nolink">The voice of God is calling</span><span class="nolink">O Jesus, we adore thee</span></td><td class='key-box'>D major
 </td><td class='meter-box'>76.76 D</td><td class='composer-box'>William Lloyd, 1840</td><td class='lyric-box'><div>The morning hangs a signal upon the mountain crest,
 while all the sleeping valleys in silent darkness rest.
 From peak to peak it flashes, it laughs along the sky,
