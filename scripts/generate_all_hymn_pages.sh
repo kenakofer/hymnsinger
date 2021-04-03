@@ -17,8 +17,8 @@ layout: default
 <div id='toggle-vis-panel'>
 Toggle:
 <a class="toggle-vis" data-column="0" href="#">Song</a> |
-<a class="toggle-vis off" data-column="1" href="#">Tune</a> |
-<a class="toggle-vis" data-column="2" href="#">Other Titles</a> |
+<a class="toggle-vis" data-column="1" href="#">Tune</a> |
+<a class="toggle-vis off" data-column="2" href="#">Other Titles</a> |
 <a class="toggle-vis off" data-column="3" href="#">Key</a> |
 <a class="toggle-vis off" data-column="4" href="#">Meter</a> |
 <a class="toggle-vis off" data-column="5" href="#">Composer</a> |
