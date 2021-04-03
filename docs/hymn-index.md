@@ -208,7 +208,39 @@ but God, who called me here below, will be forever mine.
 
 When we've been there ten thousand years, bright shining as the sun,
 we've no less days to sing God's praise than when we'd first begun.
-</div></td><td class='stanzas-box'>6.</td><td class='poet-box'>John Newton, 1779 (Sts. 1-5), 1790 (St. 6)</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/11</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/angels_we_have_heard.html">Angels we have heard on high</a></td><td class='tune-box'>GLORIA</td><td class='same-tune-box'></td><td class='key-box'>F major
+</div></td><td class='stanzas-box'>6.</td><td class='poet-box'>John Newton, 1779 (Sts. 1-5), 1790 (St. 6)</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/11</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/angels_from_the_realms_of_glory.html">Angels, from the realms of glory</a></td><td class='tune-box'>REGENT SQUARE</td><td class='same-tune-box'><span class="external"><a class="external" target="_blank" href="https://digitalsongsandhymns.com/songs/1837">For the healing of the nations</a></span></td><td class='key-box'>B-flat major
+</td><td class='meter-box'>87.87</td><td class='composer-box'>Henry Smart, 1867</td><td class='lyric-box'><div>Angels from the realms of glory,
+wing your flight o'er all the earth.
+As you sang creation's story,
+now proclaim Messiah's birth;
+
+  come and worship, come and worship,
+  worship Christ the newborn King.
+
+Shepherds, in the field abiding,
+watching o'er your flocks by night,
+God with us is now residing,
+yonder shines the infant light;
+
+  come and worship, come and worship,
+  worship Christ the newborn King.
+
+Sages, leave your contemplations–
+brighter visions beam afar.
+Seek the great desire of nations,
+guided by his natal star;
+
+  come and worship, come and worship,
+  worship Christ the newborn King.
+
+Saints, before the altar bending,
+watching long in hope and fear,
+shall behold God's love unending:
+Christ will once again appear;
+
+  come and worship, come and worship,
+  worship Christ the newborn King.
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>James Montgomery, 1816</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">winter</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/04/03</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/angels_we_have_heard.html">Angels we have heard on high</a></td><td class='tune-box'>GLORIA</td><td class='same-tune-box'></td><td class='key-box'>F major
 </td><td class='meter-box'>77.77 with refrain</td><td class='composer-box'>Traditional French carol, 1855</td><td class='lyric-box'><div>Angels we have heard on high, singing sweetly through the night,
 and the mountains in reply echoing their brave delight.
 
@@ -852,7 +884,7 @@ The peace of the earth be with you, the peace of the heavens too;
 The peace of the rivers be with you, the peace of the oceans too.
 Deep peace falling over you.
 Deep peace growing in you.
-</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Spanish; Guatemalan traditional; trans. Kenan Schaefkofer, 2021</td><td class='tags-box'><div><a class="taglink" href="#">spanish</a><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/let_there_be_light.html">Let there be light</a></td><td class='tune-box'>MISSIONARY CHANT</td><td class='same-tune-box'></td><td class='key-box'>A-flat major
+</div></td><td class='stanzas-box'>1.</td><td class='poet-box'>Spanish; Guatemalan traditional; trans. Kenan Schaefkofer, 2021</td><td class='tags-box'><div><a class="taglink" href="#">spanish</a><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/let_there_be_light.html">Let there be light</a></td><td class='tune-box'>MISSIONARY CHANT</td><td class='same-tune-box'><span class="nolink">Ye Christian heralds, go proclaim</span></td><td class='key-box'>A-flat major
 </td><td class='meter-box'>LM</td><td class='composer-box'>Charles H. C. Zeuner, 1832</td><td class='lyric-box'><div>Let there be light, O God of hosts!
 Let there be wisdom on the earth!
 Let broad humanity have birth!
@@ -1376,7 +1408,7 @@ Then it is the brave one chooses,
 while the coward stands aside
 till the multitude make virtue
 of the faith they had denied.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>James Russell Lowell, 1845</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/14</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/praise_god_old_hundredth.html">Praise God (Doxology)</a></td><td class='tune-box'>OLD HUNDREDTH</td><td class='same-tune-box'></td><td class='key-box'>G major
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>James Russell Lowell, 1845</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/14</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/praise_god_old_hundredth.html">Praise God (Doxology)</a></td><td class='tune-box'>OLD HUNDREDTH</td><td class='same-tune-box'><span class="nolink">Let there be light</span></td><td class='key-box'>G major
 </td><td class='meter-box'>LM</td><td class='composer-box'>Louis Bourgeois, Genevan Psalter, 1551</td><td class='lyric-box'><div>Praise God from whom all blessings flow;
 praise God all creatures here below;
 praise God above, ye heav'nly host;
