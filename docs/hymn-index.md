@@ -1862,11 +1862,11 @@ the timely tribute of her tears,
 shall endless woe prevent.
 
 Then see the sorrow of my heart,
-Ere yet it be too late;
-And hear my Saviour’s dying groans,
-To give those sorrows weight.
+ere yet it be too late;
+and hear my Saviour’s dying groans,
+to give those sorrows weight.
 For never shall my soul despair
-Her pardon to procure,
-Who knows thine only Son has died
-To make her pardon sure.
+her pardon to procure,
+who knows thine only Son has died
+to make her pardon sure.
 </div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Joseph Addison, 1672-1719</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/04/03</td></tr></table>

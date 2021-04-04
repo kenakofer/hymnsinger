@@ -89,13 +89,13 @@ verseB = \lyricmode {
 }
 verseC = \lyricmode {
   Then see the sor -- row of my heart,
-  Ere yet it be too late;
-  And hear my Sav -- iour’s dy -- ing groans,
-  To give those sor -- rows weight.
+  ere yet it be too late;
+  and hear my Sav -- iour’s dy -- ing groans,
+  to give those sor -- rows weight.
   For ne -- ver shall my soul des -- pair
-  Her par -- don to pro -- cure,
-  Who knows thine on -- ly Son has died
-  To make her par -- don sure.
+  her par -- don to pro -- cure,
+  who knows thine on -- ly Son has died
+  to make her par -- don sure.
 }
 
 % Set up music-aligned verses. Change to the correct number
