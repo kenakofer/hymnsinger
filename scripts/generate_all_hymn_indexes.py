@@ -12,6 +12,7 @@ meter_words = [
     "extended",
     "irregular",
     "with",
+    "alleluias",
     "refrain"
 ]
 

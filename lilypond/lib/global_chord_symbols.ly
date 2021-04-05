@@ -3,6 +3,7 @@ chExceptionMusic = {
   <c e g bf>-\markup { "7" }
   <c ef gf>-\markup { "dim" }
   <c ef gf bff>-\markup { "dim7" }
+  <c ef g bf>-\markup { "m7" }
 }
 
 chExceptions = #( append
