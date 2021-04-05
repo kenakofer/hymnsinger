@@ -530,7 +530,22 @@ Born thy people to deliver, born a child, and yet a King,
 born to reign in us forever, now thy gracious kingdom bring.
 By thine own eternal Spirit, rule in all our hearts alone.
 By thine allsufficient merit, raise us to thy glorious throne.
-</div></td><td class='stanzas-box'>2.</td><td class='poet-box'>Charles Wesley, 1744</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/07</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_ye_thankful_people.html">Come, ye thankful people</a></td><td class='tune-box'>ST. GEORGE'S WINDSOR</td><td class='same-tune-box'></td><td class='key-box'>G major
+</div></td><td class='stanzas-box'>2.</td><td class='poet-box'>Charles Wesley, 1744</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/07</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_ye_faithful_raise_the_strain.html">Come, ye faithful, raise the strain</a></td><td class='tune-box'>AVE VIRGO VIRGINUM (GAUDEAMUS PARITER)</td><td class='same-tune-box'><span class="internal"><a href="{{ site.baseurl }}/listing/we_are_people_of_gods_peace.html">We are people of God's peace</a></span><span class="nolink">When the King shall come again</span></td><td class='key-box'>G major
+</td><td class='meter-box'>76.76 D</td><td class='composer-box'>Johann Horn, 1544, alt. 1584</td><td class='lyric-box'><div>Come, ye faithful, raise the strain of triumphant gladness!
+God hath brought forth Israel into joy from sadness,
+loosed from Pharaeh's bitter yoke Jacob's sons and daughters,
+led them with unmoistened foot through the Red Sea waters.
+
+'Tis the spring of souls today: Christ hath burst his prison,
+and from three days' sleep in death as a sun hath risen.
+Now rejoice, Jerusalem, and with true affection
+welcome in unwearied strains Jesus' resurrection.
+
+Neither shall the gates of death, nor the tomb's dark portal,
+nor the watchers, nor the seal hold thee as a mortal.
+But arisen 'midst thy friends thou didst stand, bestowing
+thy true peace, which evermore passes human knowing.
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>John of Damascus, 8th c. tr. John M. Neale, 1859, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">easter</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/04/04</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_ye_thankful_people.html">Come, ye thankful people</a></td><td class='tune-box'>ST. GEORGE'S WINDSOR</td><td class='same-tune-box'></td><td class='key-box'>G major
 </td><td class='meter-box'>77.77 D</td><td class='composer-box'>George J. Elvey, 1858</td><td class='lyric-box'><div>Come, ye thankful people, come, raise a song of harvest home:
 fruit and crops are gathered in, safe before the storms begin;
 God, our Maker, will provide for our needs to be supplied;
@@ -1674,7 +1689,7 @@ Good night, dear heart, good night, good night.
 </td><td class='meter-box'>irregular</td><td class='composer-box'>traditional Ojibwe lullaby; transcr. Frences Densmore, 1913</td><td class='lyric-box'><div>Way way way way way.
 Way way way way way.
 Way way way way way.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Ojibwe traditional, 1913; Additional phrases suggested by Mark MacDonald</td><td class='tags-box'><div><a class="taglink" href="#">ojibwe</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/28</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/we_are_people_of_gods_peace.html">We are people of God's peace</a></td><td class='tune-box'>AVE VIRGO VIRGINUM (GAUDEAMUS PARITER)</td><td class='same-tune-box'><span class="nolink">Come, ye faithful, raise the strain</span><span class="nolink">When the King shall come again</span></td><td class='key-box'>G major
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Ojibwe traditional, 1913; Additional phrases suggested by Mark MacDonald</td><td class='tags-box'><div><a class="taglink" href="#">ojibwe</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/28</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/we_are_people_of_gods_peace.html">We are people of God's peace</a></td><td class='tune-box'>AVE VIRGO VIRGINUM (GAUDEAMUS PARITER)</td><td class='same-tune-box'><span class="nolink">When the King shall come again</span><span class="internal"><a href="{{ site.baseurl }}/listing/come_ye_faithful_raise_the_strain.html">Come, ye faithful, raise the strain</a></span></td><td class='key-box'>G major
 </td><td class='meter-box'>76.76 D</td><td class='composer-box'>Johann Horn, 1544, alt. 1584</td><td class='lyric-box'><div>We are people of God's peace
 as a new creation.
 Love unites and strengthens us
