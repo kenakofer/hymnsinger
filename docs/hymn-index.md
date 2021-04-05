@@ -1637,7 +1637,29 @@ The soul has lifted moments, above the drift of days,
 when life's great meaning breaketh in sunrise on our ways.
 Behold the radiant token of truth above all fear;
 night shall release its splendor that morning shall appear.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>William Channing Gannett (1768-1852), rev.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">morning</a></div></td><td class='date-added-box'>2021/02/11</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/tis_a_gift_to_be_simple.html">'Tis a gift to be simple</a></td><td class='tune-box'>SIMPLE GIFTS</td><td class='same-tune-box'><span class="external"><a class="external" target="_blank" href="http://www.hymntime.com/tch/htm/l/o/r/d/a/lordance.htm">Lord of the dance</a></span></td><td class='key-box'>F major
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>William Channing Gannett (1768-1852), rev.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">morning</a></div></td><td class='date-added-box'>2021/02/11</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/this_joyful_eastertide.html">This joyful Eastertide</a></td><td class='tune-box'>VRUECHTEN</td><td class='same-tune-box'></td><td class='key-box'>F major
+</td><td class='meter-box'>67.67 with refrain</td><td class='composer-box'>Dutch traditional, David's Psalmen, 1685;
+arr. Charles Wood, 1902</td><td class='lyric-box'><div>This joyful Eastertide, away with sin and sorrow!
+My love, the crucified, hath sprung to life this morrow.
+
+  Had Christ, who once was slain, ne'er burst his threeday prison,
+  our faith had been in vain. But now hath Christ arisen,
+  arisen, arisen, arisen.
+
+My flesh in hope shall rest and for a season slumber
+till trumpets east to west shall wake the dead in number.
+
+  Had Christ, who once was slain, ne'er burst his threeday prison,
+  our faith had been in vain. But now hath Christ arisen,
+  arisen, arisen, arisen.
+
+Death's flood hath lost its chill since Jesus crossed the river.
+Lover of souls, from ill my passing soul deliver.
+
+  Had Christ, who once was slain, ne'er burst his threeday prison,
+  our faith had been in vain. But now hath Christ arisen,
+  arisen, arisen, arisen.
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>George R. Woodward, 1894</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">easter</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/04/04</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/tis_a_gift_to_be_simple.html">'Tis a gift to be simple</a></td><td class='tune-box'>SIMPLE GIFTS</td><td class='same-tune-box'><span class="external"><a class="external" target="_blank" href="http://www.hymntime.com/tch/htm/l/o/r/d/a/lordance.htm">Lord of the dance</a></span></td><td class='key-box'>F major
 </td><td class='meter-box'>irregular</td><td class='composer-box'>Joseph Bracket, 1848;
 arr. Kenan Schaefkofer, 2021</td><td class='lyric-box'><div>'Tis a gift to be simple, 'tis a gift to be free,
 'tis a gift to come down where we ought to be.
