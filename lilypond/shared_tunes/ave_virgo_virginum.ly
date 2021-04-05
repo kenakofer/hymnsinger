@@ -14,7 +14,7 @@ soprano = {
   \relative g' {
     g4 g d d g a \partial 2 b2 | e d c4 b a2 g1 | \break
     g4 g d d g a \partial 2 b2 | e d c4 b a2 g1 | \break
-    d'2 e d4 c bf4 4 \partial 2 a2 | b a4 g2 fs4 e2 \partial 2 d | \break
+    d'2 e d4 c b4 4 \partial 2 a2 | b a4 g2 fs4 e2 \partial 2 d | \break
     g4 g d d g a \partial 2 b2 | e d c4 b a2 g1 | \break
     \bar "|."
   }
