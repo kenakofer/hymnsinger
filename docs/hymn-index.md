@@ -418,7 +418,31 @@ Alleluia
 
 Soar we now where Jesus led,
 Alleluia
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Charles Wesley, 1739, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">easter</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/04/04</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_my_way.html">Come, my Way, my Truth, my Light</a></td><td class='tune-box'>THE CALL</td><td class='same-tune-box'></td><td class='key-box'>E-flat major
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Charles Wesley, 1739, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">easter</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/04/04</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/christ_who_left_his_home.html">Christ who left his home in glory</a></td><td class='tune-box'>CHRIST IS RISEN</td><td class='same-tune-box'></td><td class='key-box'>E-flat major
+</td><td class='meter-box'>87.87 with refrain</td><td class='composer-box'>Abram B. Kolb, 1896</td><td class='lyric-box'><div>Christ who left his home in glory,
+and upon the cross was slain,
+now is ris'n O tell the story
+that the Savior lives again.
+
+  Hail him! Hail him! Tell the story.
+  Hail! all hail! Jesus lives forevermore.
+
+While the world in peace was sleeping,
+early on that Easter day,
+came the faithful women, weeping,
+but the stone was rolled away.
+
+  Hail him! Hail him! Tell the story.
+  Hail! all hail! Jesus lives forevermore.
+
+Christ, our loving mediator,
+now with God for you and me
+intercedes, and our Creator
+hears and answers ev'ry plea.
+
+  Hail him! Hail him! Tell the story.
+  Hail! all hail! Jesus lives forevermore.
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Abram B. Kolb, 1896, alt.</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">easter</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/04/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/come_my_way.html">Come, my Way, my Truth, my Light</a></td><td class='tune-box'>THE CALL</td><td class='same-tune-box'></td><td class='key-box'>E-flat major
 </td><td class='meter-box'>77.77</td><td class='composer-box'>Ralph Vaughan Williams, 1911</td><td class='lyric-box'><div>Come, my Way, my Truth, my Life:
 such a way as gives me breath;
 such a truth as ends all strife;
