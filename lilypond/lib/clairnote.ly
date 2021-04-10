@@ -2001,7 +2001,7 @@ initClairnoteDN =
        % Special context for both SN and DN at once, like so:
        %
        % clairnote-type = dn
-       % \include "clairnote.ly"  % creates StaffClairnoteDN context
+       % [SLASH]include "clairnote.ly"  % creates StaffClairnoteDN context
        % \initClairnoteSN         % makes default Staff context SN
        %
        \context {
