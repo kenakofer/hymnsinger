@@ -29,7 +29,7 @@ This is a project to make or take hymns with permissive copyright status, typese
   - Programatic key change? Would require either
     - Generating all the desired key changes up front (+/- 3 half steps?)
     - Using a custom lilybin setup on server or AWS lambda, or some other serverside way to re-parse lilypond files. This would be far more difficult, but also allow the user tons of flexibility down the line.
-  - Add vscode configuration section/page
+  - Add windows configuration section/page
   - Consider reaching out to people
   - Configurable space around lyrics
   - Figure out how to understand/clean up extra_lyrics columns
@@ -50,10 +50,6 @@ This is a project to make or take hymns with permissive copyright status, typese
   - Phrasing slurs \( \) are not dashed after partcombine
   - Enter multiple lines of lyrics above staff
   - Autofocus the index page search bar
-  - Add "Alternate Lyrics" column
-    - Tricky, because it's a many-to-many relationship.
-    - Json associations, both automatic for songs on the site, and manual
-    - External links to copyrighted lyrics
   - Add og: values to hymn.singer.ga index page for better sharability
   - Add MP3 download
   - Fix caps/underscore variables
@@ -61,5 +57,6 @@ This is a project to make or take hymns with permissive copyright status, typese
   - Slides issues:
     - Prevent dropLyricsSmall etc. (o come o come)
     - Tagline missing on >1 verse songs
-  - Fix lyric extraction (all creatures worship god most high)
+  - Fix lyric extraction for custom slides lyrics (all creatures worship god most high)
   - \m is confusingly overloaded: Once in royal uses for melisma, others use for midionly
+  - Finish filling out other titles column
