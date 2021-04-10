@@ -2,6 +2,8 @@
 \include "clairnote.ly"
 \include "left_align_lyrics.ly"
 \include "global_chord_symbols.ly"
+#(ly:set-option 'midi-extension "midi")
+
 pa = \partcombineApart
 pt = \partcombineAutomatic
 
