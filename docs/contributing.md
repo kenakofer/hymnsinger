@@ -11,7 +11,6 @@ All the songs on the site are written using Lilypond, which is a way to describe
 ### Installing
 
 You will need:
- - If on Windows, you'll probably want [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
  - [Lilypond](http://lilypond.org/download.html), the program that turns a file of code: `my_song.ly` into outputs `my_song.pdf` and `my_song.midi`. Hymn Singer currently uses 2.20.0, and the newer versions may be fine.
  - [Frescobaldi](https://frescobaldi.org/download), the easiest way to get started with Lilypond on Linux, Mac, or Windows.
  - (optional) [Git](https://git-scm.com/downloads)
@@ -41,9 +40,10 @@ Experiment by changing things!
 
 ### Audio playback
 
-If you want to _hear_ the music, you will need to install a program to play `.midi` files:
+If you want to _hear_ the music, you will need to install a program to play (synthesize) `.midi` files:
  - Linux instructions: <https://github.com/frescobaldi/frescobaldi/wiki/MIDI-playback-on-Linux>
  - Mac instructions: <https://github.com/frescobaldi/frescobaldi/wiki/MIDI-playback-on-Mac-OS-X>
+ - Windows actually has a built-in midi synthesizer that I think is just running all the time? You just need to select it.
 
 Then, with the synthesizer application running, go into Frescobaldi's settings and change the MIDI output device to the synthesizer.
 
