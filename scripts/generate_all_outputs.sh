@@ -6,8 +6,9 @@ find ./lilypond/songs -type f -iname "*.ly" -print0 | sort -z | while IFS= read 
     OUTPUT_DIR="docs/local_lilypond_outputs/"
     INPUT=$file
     MIDI_OUTPUT="$OUTPUT_DIR$BASE.midi"
-    if [ -e "$MIDI_OUTPUT" ] && [ "$MIDI_OUTPUT" -nt "$INPUT" ] ; then
-        echo "     ---- $BASE.midi exists and is up to date."
+    MP3_OUTPUT="$OUTPUT_DIR$BASE.mp3"
+    if [ -e "$MP3_OUTPUT" ] && [ "$MP3_OUTPUT" -nt "$INPUT" ] ; then
+        echo "     ---- $BASE.mp3 exists and is up to date."
         #echo "     ---- We'll assume the other outputs are good as well."
     else
         echo
@@ -35,8 +36,12 @@ find ./lilypond/songs -type f -iname "*.ly" -print0 | sort -z | while IFS= read 
         # We use 3 colors instead of 2 for slides since the image is smaller
         echo "     --> (Building ODP)"
         mogrify -colorspace gray +dither -posterize 3 "$OUTPUT_DIR$BASE-slides*.png"
-
         $SCRIPT_DIR/build_odp_presentation_from_images.sh "$BASE"
+
+
+        echo "     --> (Midi to MP3)"
+        # Timidity should be configured to use YDP Grand Piano soundfont, available for download at http://freepats.zenvoid.org/Piano/acoustic-grand-piano.html
+        timidity --quiet --quiet $MIDI_OUTPUT -Ow -o - | ffmpeg -loglevel error -y -i - -acodec libmp3lame -ab 64k $MP3_OUTPUT
 
         echo "     --> Done."
     fi

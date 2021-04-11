@@ -2,6 +2,7 @@
 --*
 *.pdf
 *.png
+*.mp3
 *-1.*
 /lilypond/**/*.midi
 .DS_Store
