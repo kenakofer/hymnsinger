@@ -400,7 +400,23 @@ The will to neither strive nor cry,
 the pow'r to feel with other's, give.
 Calm, calm me more, nor let me die
 before I have begun to live.
-</div></td><td class='stanzas-box'>2.</td><td class='poet-box'>Matthew Arnold (1822-1888)</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/christ_the_lord_is_risen_today.html">Christ the Lord is risen today</a></td><td class='tune-box'>EASTER HYMN</td><td class='same-tune-box'></td><td class='key-box'>C major
+</div></td><td class='stanzas-box'>2.</td><td class='poet-box'>Matthew Arnold (1822-1888)</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/03/09</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/child_in_the_manger.html">Child in the manger</a></td><td class='tune-box'>BUNESSAN</td><td class='same-tune-box'><span class="external"><a class="external" target="_blank" href="https://digitalsongsandhymns.com/songs/7650">Morning has broken</a></span></td><td class='key-box'>D major
+</td><td class='meter-box'>55.53</td><td class='composer-box'>L. Macbean, 1888;
+arr. Kenan Schaefkofer, 2021</td><td class='lyric-box'><div>Child in the manger, infant of Mary,
+outcast and stranger, Lord of all!
+Child who inherits all our transgressions,
+all our demerits on him fall.
+
+Monarchs have tender, delicate children
+nourished in splendor, day by day;
+death soon shall banish honor and beauty;
+pleasure shall vanish, forms decay.
+
+But the most holy Child of salvation
+gently and lowly lived below;
+now as our glorious mighty Redeemer,
+see him victorious o'er each foe.
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Mary MacDonald; tr. L. Macbean, 1888</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">winter</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/04/11</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/christ_the_lord_is_risen_today.html">Christ the Lord is risen today</a></td><td class='tune-box'>EASTER HYMN</td><td class='same-tune-box'></td><td class='key-box'>C major
 </td><td class='meter-box'>77.77 with alleluias</td><td class='composer-box'>anon, Lyra Davidica, 1708</td><td class='lyric-box'><div>Christ the Lord is ris'n today!
 Alleluia
 
