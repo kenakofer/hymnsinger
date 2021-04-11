@@ -7,6 +7,18 @@
 
 %% SONG INFO
 title = \titleText "Once to every soul and nation"
+subtitle = \markup{
+        \override #'(baseline-skip . 2)
+        \fontsize #-2
+        \italic
+        \medium
+        \center-column {
+          "But the soul is still oracular; amid the market's din,"
+          "List the ominous stern whisper from the Delphic cave within,—"
+          "``They enslave their children's children who make compromise with sin''"
+          " "
+        }
+      }
 poet = \smallText "Text: James Russell Lowell, 1845"
 typesetter = "Kenan Schaefkofer"
 verseCount = 3

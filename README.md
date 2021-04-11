@@ -51,7 +51,6 @@ This is a project to make or take hymns with permissive copyright status, typese
   - Enter multiple lines of lyrics above staff
   - Autofocus the index page search bar
   - Add og: values to hymn.singer.ga index page for better sharability
-  - Add MP3 download
   - Fix caps/underscore variables
   - Collapse misc downloads section on narrow screen
   - Slides issues:
