@@ -12,6 +12,7 @@ Visual Studio Code is a powerful open-source IDE with a dizzying array of helpfu
 
 You will need:
 1. Install Lilypond 2.20.0: http://lilypond.org/download.html>
+    - On windows, you need to change your PATH as described on the download page. For example, add this to your system path: `C:\Program Files (x86)\LilyPond\usr\bin`. This allows VSCode to find where `lilypond` is at.
 1. Install Visual Studio Code: <https://code.visualstudio.com/download>
 1. Clone our website for all the song examples: `git clone https://github.com/kenanbit/hymn-singer.git`
 
@@ -22,7 +23,7 @@ To set up Visual Studio Code for Lilypond development:
 1. Choose "Open folder", navigate to where the repository was downloaded, and click "Open" just inside. You should see a few files and directories, like `README.md` and `docs/`
 1. Click on the Extensions icon tab on the left side of the screen (Ctrl+Shift+X)
 1. Install the `Lilypond` extension. This adds syntax highlighting to .ly files.
-1. Install the `vscode-pdf` extension. This extension allows you to open PDFs for viewing, so you can check your work without leaving vscode.
+1. Install the `vscode-pdf` extension. This extension allows you to open PDFs for viewing, so you can check your work without leaving VSCode.
 1. Install the `VSLilyPond` extension (This will automatically install two other lilypond extensions). These extensions: run lilypond whenever a .ly file is saved; generate PDF and MIDI outputs in the same directory; provide error highlighting, autocomplete, code formatting, and midi input for note entry (haven't tried using this yet).
 1. The installed extensions look like this:
 ![VSCode Extensions screenshot](assets/img/vscode-extensions.png)
