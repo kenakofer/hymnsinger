@@ -1,5 +1,7 @@
 ---
-my_number: 5
+title: Welcome to Hymn Singer
+description: Music can be more inviting and better presented, especially the oldies-but-goodies found in dusty hymn books. One shouldn't need a music degree to learn and enjoy these musical works, nor should one need a law degree to feel safe singing, distributing, and modifying them.
+
 ---
 
 # Welcome to Hymn Singer
