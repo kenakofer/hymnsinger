@@ -1,6 +1,6 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ly"
+\include "../../lib/hymn_common.ily"
 
 %% TUNE INFO
 composer = \smallText "Music: Hans L. Hassler, 1601"
@@ -9,7 +9,7 @@ meter = \smallText "HERZLICH TUT MICH VERLANGEN 76.76 D"
 hymnKey = \key d \major
 hymnTime = \time 4/4
 quarternoteTempo = 100
-\include "../../lib/global_parts.ly"
+\include "../../lib/global_parts.ily"
 
 %% SONG INFO
 title = \titleText "O sacred Head, now wounded"
@@ -18,7 +18,7 @@ typesetter = "Kenan Schaefkofer"
 verseCount = 4
 tags = "english christian 4part death"
 dateAdded = "2021-03-22"
-\include "../../lib/header.ly"
+\include "../../lib/header.ily"
 
 %% NOTES
 soprano = {
@@ -94,12 +94,12 @@ verseD = \lyricmode {
 }
 
 % Set up music-aligned verses. Change to the correct number
-\include "../../lib/4verse.ly"
+\include "../../lib/4verse.ily"
 
 %% All sheet music outputs
 clairStaffZoom = #.9
-\include "../../lib/all_notation_outputs.ly"
+\include "../../lib/all_notation_outputs.ily"
 % Slides output
-\include "../../lib/slides_book_4verse.ly"
+\include "../../lib/slides_book_4verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ly"
+\include "../../lib/midi_output.ily"

@@ -1,6 +1,6 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ly"
+\include "../../lib/hymn_common.ily"
 
 %% TUNE INFO
 composer = \smallText "Music: Kenan Schaefkofer, 2021"
@@ -8,7 +8,7 @@ meter = \smallText "LIE LIGHT 88.88"
 hymnKey = \key e \major
 hymnTime = \time 4/4
 quarternoteTempo = 100
-\include "../../lib/global_parts.ly"
+\include "../../lib/global_parts.ily"
 
 %% SONG INFO
 title = \titleText "Warm summer sun"
@@ -17,7 +17,7 @@ typesetter = "Kenan Schaefkofer"
 verseCount = 1
 tags = "english secular 4part summer death"
 dateAdded = "2021-01-30"
-\include "../../lib/header.ly"
+\include "../../lib/header.ily"
 
 %% NOTES
 soprano = {
@@ -80,8 +80,8 @@ bottom_verses = <<
 >>
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ly"
+\include "../../lib/all_notation_outputs.ily"
 % Slides output
-\include "../../lib/slides_book_1verse.ly"
+\include "../../lib/slides_book_1verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ly"
+\include "../../lib/midi_output.ily"

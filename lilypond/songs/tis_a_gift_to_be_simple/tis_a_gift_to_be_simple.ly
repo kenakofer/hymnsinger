@@ -1,6 +1,6 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ly"
+\include "../../lib/hymn_common.ily"
 
 %% TUNE INFO
 composer = \smallText "Music: Joseph Bracket, 1848"
@@ -9,7 +9,7 @@ meter = \smallText "SIMPLE GIFTS irregular"
 hymnKey = \key f \major
 hymnTime = \time 4/4
 quarternoteTempo = 70
-\include "../../lib/global_parts.ly"
+\include "../../lib/global_parts.ily"
 
 %% SONG INFO
 title = \titleText "'Tis a gift to be simple"
@@ -18,7 +18,7 @@ typesetter = "Kenan Schaefkofer"
 verseCount = 1
 tags = "english secular 4part"
 dateAdded = "2021-01-10"
-\include "../../lib/header.ly"
+\include "../../lib/header.ily"
 
 %% NOTES
 soprano = {
@@ -65,11 +65,11 @@ verseA = \lyricmode {
 }
 
 % Set up music-aligned verses. Change to the correct number
-\include "../../lib/1verse.ly"
+\include "../../lib/1verse.ily"
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ly"
+\include "../../lib/all_notation_outputs.ily"
 % Slides output
-\include "../../lib/slides_book_1verse.ly"
+\include "../../lib/slides_book_1verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ly"
+\include "../../lib/midi_output.ily"

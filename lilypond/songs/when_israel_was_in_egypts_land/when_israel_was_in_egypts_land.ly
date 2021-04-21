@@ -1,6 +1,6 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ly"
+\include "../../lib/hymn_common.ily"
 
 %% TUNE INFO
 composer = \smallText "Music: African American spiritual"
@@ -9,7 +9,7 @@ meter = \smallText "GO DOWN MOSES 85.85 with refrain"
 hymnKey = \key g \minor
 hymnTime = \time 4/4
 quarternoteTempo = 100
-\include "../../lib/global_parts.ly"
+\include "../../lib/global_parts.ily"
 
 %% SONG INFO
 title = \titleText "When Israel was in Egypt's land"
@@ -18,7 +18,7 @@ typesetter = "Kenan Schaefkofer"
 verseCount = 5
 tags = "english christian 4part"
 dateAdded = "2021-02-07"
-\include "../../lib/header.ly"
+\include "../../lib/header.ily"
 
 %% NOTES
 soprano = {
@@ -92,7 +92,7 @@ verseC = \lyricmode {
 }
 
 % Set up music-aligned verses. Change to the correct number
-\include "../../lib/3verse.ly"
+\include "../../lib/3verse.ily"
 
 extra_verses = \markup {
   \fill-line {
@@ -123,8 +123,8 @@ extra_verses = \markup {
 }
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ly"
+\include "../../lib/all_notation_outputs.ily"
 % Slides output
-\include "../../lib/slides_book_3verse.ly"
+\include "../../lib/slides_book_3verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ly"
+\include "../../lib/midi_output.ily"

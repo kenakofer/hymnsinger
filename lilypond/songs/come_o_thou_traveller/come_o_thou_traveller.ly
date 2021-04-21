@@ -1,6 +1,6 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ly"
+\include "../../lib/hymn_common.ily"
 
 %% TUNE INFO
 composer = \smallText "Music: American folk melody, 1805"
@@ -9,7 +9,7 @@ meter = \smallText "VERNON 88.88.88"
 hymnKey = \key d \minor
 hymnTime = \time 4/4
 quarternoteTempo = 120
-\include "../../lib/global_parts.ly"
+\include "../../lib/global_parts.ily"
 
 %% SONG INFO
 title = \titleText "Come, O thou Traveler unknown"
@@ -18,7 +18,7 @@ typesetter = "Kenan Schaefkofer"
 verseCount = 11
 tags = "english theist 1part accompanied"
 dateAdded = "2021-01-11"
-\include "../../lib/header.ly"
+\include "../../lib/header.ily"
 
 %% NOTES
 soprano = {
@@ -61,7 +61,7 @@ verseB = \lyricmode {
 }
 
 % Set up music-aligned verses. Change to the correct number
-\include "../../lib/2verse.ly"
+\include "../../lib/2verse.ily"
 
 extra_verses = \markup {
        \fontsize #-1.5
@@ -174,8 +174,8 @@ extra_verses = \markup {
 
 %% All sheet music outputs
 %clairStaffZoom = #.9
-\include "../../lib/all_notation_outputs.ly"
+\include "../../lib/all_notation_outputs.ily"
 % Slides output
-\include "../../lib/slides_book_2verse.ly"
+\include "../../lib/slides_book_2verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ly"
+\include "../../lib/midi_output.ily"

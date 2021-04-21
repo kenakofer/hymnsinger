@@ -1,10 +1,10 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ly"
+\include "../../lib/hymn_common.ily"
 
 %% TUNE INFO
 %% If you have a shared tune file, use this form:
-\include "../../shared_tunes/lasst_uns_erfreuen.ly"
+\include "../../shared_tunes/lasst_uns_erfreuen.ily"
 
 %% Otherwise set up tune info here:
 composer = \smallText "Music: Composer, year"
@@ -13,7 +13,7 @@ meter = \smallText "TUNE NAME METER"
 hymnKey = \key c \major
 hymnTime = \time 4/4
 quarternoteTempo = 120
-\include "../../lib/global_parts.ly"
+\include "../../lib/global_parts.ily"
 
 %% SONG INFO
 title = \titleText "Title of the song"
@@ -25,7 +25,7 @@ typesetter = "Kenan Schaefkofer"
 verseCount = 4
 tags = "english theist 4part"
 dateAdded = %YYYY-MM-DD%
-\include "../../lib/header.ly"
+\include "../../lib/header.ily"
 
 %% NOTES
 soprano = {
@@ -75,14 +75,14 @@ verseE = \lyricmode { }
 verseF = \lyricmode { }
 
 % Set up music-aligned verses. Change to the correct number
-\include "../../lib/4verse.ly"
+\include "../../lib/4verse.ily"
 
 %% Use this, or the tradStaffZoom and shapeStaffZoom equivalents, if space is tight.
 %clairStaffZoom = #.9
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ly"
+\include "../../lib/all_notation_outputs.ily"
 % Slides output. Change to the correct number
-\include "../../lib/slides_book_4verse.ly"
+\include "../../lib/slides_book_4verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ly"
+\include "../../lib/midi_output.ily"

@@ -3,7 +3,7 @@ meter = \smallText "NEW BRITAIN (AMAZING GRACE) CM"
 hymnKey = \key g \major
 hymnTime = \time 3/4
 quarternoteTempo = 120
-\include "../lib/global_parts.ly"
+\include "../lib/global_parts.ily"
 
 %% NOTES
 soprano = {

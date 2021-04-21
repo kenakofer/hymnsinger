@@ -3,7 +3,7 @@ meter = \smallText "STUTTGART 87.87"
 hymnKey = \key g \major
 hymnTime = \time 2/2
 quarternoteTempo = 100
-\include "../lib/global_parts.ly"
+\include "../lib/global_parts.ily"
 
 %% NOTES
 soprano = {

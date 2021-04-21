@@ -1,6 +1,6 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ly"
+\include "../../lib/hymn_common.ily"
 
 %% TUNE INFO
 composer = \smallText "Music: Seikilos, ca. 1st-2nd c."
@@ -10,7 +10,7 @@ hymnTime = \time 6/8
 hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/8)
 hymnBeatStructure = \set Timing.beatStructure = 3,3
 quarternoteTempo = 70
-\include "../../lib/global_parts.ly"
+\include "../../lib/global_parts.ily"
 
 %% SONG INFO
 title = \titleText "Epitaph of Seikilos"
@@ -20,7 +20,7 @@ typesetter = "Kenan Schaefkofer"
 verseCount = 1
 tags = "english greek secular 1part death"
 dateAdded = "2021-03-21"
-\include "../../lib/header.ly"
+\include "../../lib/header.ily"
 
 %% NOTES
 soprano = {
@@ -83,8 +83,8 @@ all_verses = <<
 >>
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ly"
+\include "../../lib/all_notation_outputs.ily"
 % Slides output
-\include "../../lib/slides_book_2verse.ly"
+\include "../../lib/slides_book_2verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ly"
+\include "../../lib/midi_output.ily"

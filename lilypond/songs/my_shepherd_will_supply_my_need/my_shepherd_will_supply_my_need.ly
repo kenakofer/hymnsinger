@@ -1,9 +1,9 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ly"
+\include "../../lib/hymn_common.ily"
 
 %% TUNE INFO
-\include "../../shared_tunes/resignation_arrbykenan.ly"
+\include "../../shared_tunes/resignation_arrbykenan.ily"
 
 %% SONG INFO
 title = \titleText "My Shepherd will supply my need"
@@ -12,7 +12,7 @@ typesetter = "Kenan Schaefkofer"
 verseCount = 3
 tags = "english christian 4part"
 dateAdded = "2021-03-04"
-\include "../../lib/header.ly"
+\include "../../lib/header.ily"
 
 %% LYRICS
 verseA = \lyricmode {
@@ -35,11 +35,11 @@ verseC = \lyricmode {
 }
 
 % Set up music-aligned verses. Change to the correct number
-\include "../../lib/3verse.ly"
+\include "../../lib/3verse.ily"
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ly"
+\include "../../lib/all_notation_outputs.ily"
 % Slides output
-\include "../../lib/slides_book_3verse.ly"
+\include "../../lib/slides_book_3verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ly"
+\include "../../lib/midi_output.ily"

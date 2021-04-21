@@ -1,6 +1,6 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ly"
+\include "../../lib/hymn_common.ily"
 
 %% TUNE INFO
 composer = \smallText "Music: Martin Luther, 1529, 1531"
@@ -8,7 +8,7 @@ meter = \smallText "EIN FESTE BURG (rhythmic) 87.87.66.66.7"
 hymnKey = \key c \major
 hymnTime = \time 8/2
 quarternoteTempo = 120
-\include "../../lib/global_parts.ly"
+\include "../../lib/global_parts.ily"
 
 %% SONG INFO
 title = \titleText "A mighty fortress is our God"
@@ -17,7 +17,7 @@ typesetter = "Kenan Schaefkofer"
 verseCount = 4
 tags = "english christian 4part"
 dateAdded = "2021-03-28"
-\include "../../lib/header.ly"
+\include "../../lib/header.ily"
 
 %% NOTES
 soprano = {
@@ -103,11 +103,11 @@ verseD = \lyricmode {
 }
 
 % Set up music-aligned verses. Change to the correct number
-\include "../../lib/4verse.ly"
+\include "../../lib/4verse.ily"
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ly"
+\include "../../lib/all_notation_outputs.ily"
 % Slides output
-\include "../../lib/slides_book_4verse.ly"
+\include "../../lib/slides_book_4verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ly"
+\include "../../lib/midi_output.ily"

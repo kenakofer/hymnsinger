@@ -1,9 +1,9 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ly"
+\include "../../lib/hymn_common.ily"
 
 %% TUNE INFO
-\include "../../shared_tunes/lasst_uns_erfreuen.ly"
+\include "../../shared_tunes/lasst_uns_erfreuen.ily"
 
 %% SONG INFO
 title = \titleText "All creatures of the earth and sky"
@@ -13,7 +13,7 @@ typesetter = "Kenan Schaefkofer"
 verseCount = 5
 tags = "english theist 4part"
 dateAdded = "2021-03-05"
-\include "../../lib/header.ly"
+\include "../../lib/header.ily"
 
 %% LYRICS
 verseA = \lyricmode {
@@ -64,7 +64,7 @@ verseC = \lyricmode {
 }
 
 % Set up music-aligned verses. Change to the correct number
-\include "../../lib/3verse.ly"
+\include "../../lib/3verse.ily"
 
 extra_verses = \markup {
   \fontsize #-1.5
@@ -113,8 +113,8 @@ extra_verses = \markup {
 }
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ly"
+\include "../../lib/all_notation_outputs.ily"
 % Slides output
-\include "../../lib/slides_book_3verse.ly"
+\include "../../lib/slides_book_3verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ly"
+\include "../../lib/midi_output.ily"

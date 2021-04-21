@@ -4,7 +4,7 @@ meter = \smallText "BE STILL AND KNOW 8.8.8"
 hymnKey = \key c \major
 hymnTime = \time 3/4
 quarternoteTempo = 100
-\include "../lib/global_parts.ly"
+\include "../lib/global_parts.ily"
 
 %% NOTES
 soprano = {

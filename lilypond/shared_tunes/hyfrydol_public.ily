@@ -3,7 +3,7 @@ arranger = \smallText "arr. Ralph Vaughn Williams, 1906"
 meter = \smallText "HYFRYDOL 87.87 D"
 hymnKey = \key f \major
 hymnTime = \time 3/4
-\include "../lib/global_parts.ly"
+\include "../lib/global_parts.ily"
 
 %% NOTES
 soprano = {

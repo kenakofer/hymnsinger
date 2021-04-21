@@ -1,6 +1,6 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ly"
+\include "../../lib/hymn_common.ily"
 
 %% TUNE INFO
 composer = \smallText "Music: Louis Bourgeois, Genevan Psalter, 1551"
@@ -8,7 +8,7 @@ meter = \smallText "OLD HUNDREDTH LM"
 hymnKey = \key g \major
 hymnTime = \time 4/4
 quarternoteTempo = 100
-\include "../../lib/global_parts.ly"
+\include "../../lib/global_parts.ily"
 
 %% SONG INFO
 title = \titleText "Praise God (Doxology)"
@@ -17,7 +17,7 @@ typesetter = "Kenan Schaefkofer"
 verseCount = 1
 tags = "english french spanish german christian 4part"
 dateAdded = "2021-03-30"
-\include "../../lib/header.ly"
+\include "../../lib/header.ily"
 
 %% NOTES
 soprano = {
@@ -119,8 +119,8 @@ all_verses = <<
 >>
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ly"
+\include "../../lib/all_notation_outputs.ily"
 % Slides output
-\include "../../lib/slides_book_4verse.ly"
+\include "../../lib/slides_book_4verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ly"
+\include "../../lib/midi_output.ily"

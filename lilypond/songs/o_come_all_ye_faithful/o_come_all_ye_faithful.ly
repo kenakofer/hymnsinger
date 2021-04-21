@@ -1,6 +1,6 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ly"
+\include "../../lib/hymn_common.ily"
 
 %% TUNE INFO
 composer = \smallText "Music: John F. Wade, 1782"
@@ -8,7 +8,7 @@ meter = \smallText "ADESTE FIDELES irregular"
 hymnKey = \key a \major
 hymnTime = \time 4/4
 quarternoteTempo = 120
-\include "../../lib/global_parts.ly"
+\include "../../lib/global_parts.ily"
 
 %% SONG INFO
 title = \titleText "O come, all ye faithful"
@@ -17,7 +17,7 @@ typesetter = "Kenan Schaefkofer"
 verseCount = 4
 tags = "english christian 4part winter"
 dateAdded = "2021-01-19"
-\include "../../lib/header.ly"
+\include "../../lib/header.ily"
 
 %% NOTES
 soprano = \relative g' {
@@ -192,12 +192,12 @@ verseD = \lyricmode {
 }
 
 % Set up music-aligned verses. Change to the correct number
-\include "../../lib/4verse.ly"
+\include "../../lib/4verse.ily"
 
 %% All sheet music outputs
 clairStaffZoom = #.9
-\include "../../lib/all_notation_outputs.ly"
+\include "../../lib/all_notation_outputs.ily"
 % Slides output
-\include "../../lib/slides_book_4verse.ly"
+\include "../../lib/slides_book_4verse.ily"
 %% midi output
-\include "../../lib/midi_output.ly"
+\include "../../lib/midi_output.ily"

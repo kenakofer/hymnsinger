@@ -1,6 +1,6 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ly"
+\include "../../lib/hymn_common.ily"
 
 %% TUNE INFO
 composer = \smallText "Music: African-American Spiritual"
@@ -9,7 +9,7 @@ meter = \smallText "WE SHALL OVERCOME irregular"
 hymnKey = \key c \major
 hymnTime = \time 4/4
 quarternoteTempo = 100
-\include "../../lib/global_parts.ly"
+\include "../../lib/global_parts.ily"
 
 %% SONG INFO
 title = \titleText "We shall overcome"
@@ -18,7 +18,7 @@ typesetter = "Kenan Schaefkofer"
 verseCount = 3
 tags = "english secular 4part"
 dateAdded = "2021-01-12"
-\include "../../lib/header.ly"
+\include "../../lib/header.ily"
 
 %% NOTES
 soprano = {
@@ -67,7 +67,7 @@ verseA = \lyricmode {
 }
 
 % Set up music-aligned verses. Change to the correct number
-\include "../../lib/1verse.ly"
+\include "../../lib/1verse.ily"
 
 extra_verses = \markup {
        \fontsize #-1.5
@@ -106,8 +106,8 @@ extra_verses = \markup {
 }
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ly"
+\include "../../lib/all_notation_outputs.ily"
 % Slides output
-\include "../../lib/slides_book_1verse.ly"
+\include "../../lib/slides_book_1verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ly"
+\include "../../lib/midi_output.ily"

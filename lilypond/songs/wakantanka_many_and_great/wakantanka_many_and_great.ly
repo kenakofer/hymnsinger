@@ -1,9 +1,9 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ly"
+\include "../../lib/hymn_common.ily"
 
 %% TUNE INFO
-\include "../../shared_tunes/lacquiparle_melody.ly"
+\include "../../shared_tunes/lacquiparle_melody.ily"
 
 %% SONG INFO
 title = \titleText "Wakantanka (Many and Great)"
@@ -12,7 +12,7 @@ typesetter = "Kenan Schaefkofer"
 verseCount = 2
 tags = "dakota english theist 1part"
 dateAdded = "2021-03-07"
-\include "../../lib/header.ly"
+\include "../../lib/header.ily"
 
 %% LYRICS
 verseA = \lyricmode {
@@ -49,8 +49,8 @@ all_verses = <<
 
 %% All sheet music outputs
 clairStaffZoom = #.9
-\include "../../lib/all_notation_outputs.ly"
+\include "../../lib/all_notation_outputs.ily"
 % Slides output
-\include "../../lib/slides_book_4verse.ly"
+\include "../../lib/slides_book_4verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ly"
+\include "../../lib/midi_output.ily"

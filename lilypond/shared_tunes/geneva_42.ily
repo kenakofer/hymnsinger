@@ -4,7 +4,7 @@ meter = \smallText "GENEVA 42 (FREU DICH SEHR) 87.87.77.88"
 hymnKey = \key f \major
 hymnTime = \time 12/4
 quarternoteTempo = 170
-\include "../lib/global_parts.ly"
+\include "../lib/global_parts.ily"
 
 %% NOTES
 soprano = {

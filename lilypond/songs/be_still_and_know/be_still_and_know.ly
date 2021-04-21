@@ -1,10 +1,10 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ly"
+\include "../../lib/hymn_common.ily"
 
 %% TUNE INFO
 %% If you have a shared tune file, use this form:
-\include "../../shared_tunes/be_still_and_know.ly"
+\include "../../shared_tunes/be_still_and_know.ily"
 
 %% SONG INFO
 title = \titleText "Be still and know"
@@ -13,7 +13,7 @@ typesetter = "Kenan Schaefkofer"
 verseCount = 1
 tags = "english theist 4part"
 dateAdded = "2021-03-30"
-\include "../../lib/header.ly"
+\include "../../lib/header.ily"
 
 %% LYRICS
 verseA = \tag #'verseA \lyricmode {
@@ -35,8 +35,8 @@ all_verses = <<
 >>
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ly"
+\include "../../lib/all_notation_outputs.ily"
 % Slides output
-\include "../../lib/slides_book_1verse.ly"
+\include "../../lib/slides_book_1verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ly"
+\include "../../lib/midi_output.ily"

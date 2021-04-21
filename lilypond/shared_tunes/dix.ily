@@ -2,7 +2,7 @@ composer = \smallText "Music: Conrad Kocher, 1838"
 meter = \smallText "DIX 77.77.77"
 hymnKey = \key a \major
 hymnTime = \time 2/2
-\include "../lib/global_parts.ly"
+\include "../lib/global_parts.ily"
 
 %% NOTES
 soprano = {

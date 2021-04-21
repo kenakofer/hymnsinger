@@ -1,6 +1,6 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ly"
+\include "../../lib/hymn_common.ily"
 
 %% TUNE INFO
 composer = \smallText "Music: The Columbian Harmony, 1825"
@@ -8,7 +8,7 @@ meter = \smallText "HOLY MANNA 87.87 D"
 hymnKey = \key a \major
 hymnTime = \time 2/2
 quarternoteTempo = 130
-\include "../../lib/global_parts.ly"
+\include "../../lib/global_parts.ily"
 
 %% SONG INFO
 title = \titleText "Brethren, we have met to worship"
@@ -17,7 +17,7 @@ typesetter = "Kenan Schaefkofer"
 verseCount = 4
 tags = "english christian 4part"
 dateAdded = "2021-01-07"
-\include "../../lib/header.ly"
+\include "../../lib/header.ily"
 
 %% NOTES
 soprano = {
@@ -77,11 +77,11 @@ verseD = \lyricmode {
 }
 
 % Set up music-aligned verses. Change to the correct number
-\include "../../lib/4verse.ly"
+\include "../../lib/4verse.ily"
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ly"
+\include "../../lib/all_notation_outputs.ily"
 % Slides output
-\include "../../lib/slides_book_4verse.ly"
+\include "../../lib/slides_book_4verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ly"
+\include "../../lib/midi_output.ily"

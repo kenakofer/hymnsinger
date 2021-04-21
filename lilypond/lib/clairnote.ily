@@ -1,4 +1,4 @@
-%    This file "clairnote.ly" is a LilyPond include file for producing
+%    This file "clairnote.ily" is a LilyPond include file for producing
 %    sheet music in Clairnote music notation (http://clairnote.org).
 %    Version: 20181125
 %
@@ -2001,7 +2001,7 @@ initClairnoteDN =
        % Special context for both SN and DN at once, like so:
        %
        % clairnote-type = dn
-       % [SLASH]include "clairnote.ly"  % creates StaffClairnoteDN context
+       % [SLASH]include "clairnote.ily"  % creates StaffClairnoteDN context
        % \initClairnoteSN         % makes default Staff context SN
        %
        \context {

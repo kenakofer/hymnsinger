@@ -3,7 +3,7 @@ meter = \smallText "SANCTUS (Schubert) 65.65 D"
 hymnKey = \key ef \major
 hymnTime = \time 3/4
 quarternoteTempo = 120
-\include "../lib/global_parts.ly"
+\include "../lib/global_parts.ily"
 
 %% NOTES
 soprano = {

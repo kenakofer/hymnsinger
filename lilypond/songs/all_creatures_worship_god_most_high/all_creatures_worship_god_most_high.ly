@@ -1,9 +1,9 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ly"
+\include "../../lib/hymn_common.ily"
 
 %% TUNE INFO
-\include "../../shared_tunes/lasst_uns_erfreuen.ly"
+\include "../../shared_tunes/lasst_uns_erfreuen.ily"
 
 %% SONG INFO
 title = \titleText "All creatures worship God most high"
@@ -14,7 +14,7 @@ verseCount = 7
 tags = "english christian 4part"
 postscore_text = \postscoreText "*Or, ''All creatures of our God and King, / lift up your voice and with us sing''"
 dateAdded = "2021-03-05"
-\include "../../lib/header.ly"
+\include "../../lib/header.ily"
 
 %% LYRICS
 verseA = \lyricmode {
@@ -140,13 +140,13 @@ verseG = \lyricmode {
 }
 
 % Set up music-aligned verses. Change to the correct number
-\include "../../lib/7verse.ly"
+\include "../../lib/7verse.ily"
 
 %% All sheet music outputs
 clairStaffZoom = #.9
 tradStaffZoom = #.98
-\include "../../lib/all_notation_outputs.ly"
+\include "../../lib/all_notation_outputs.ily"
 % Slides output
-\include "../../lib/slides_book_7verse.ly"
+\include "../../lib/slides_book_7verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ly"
+\include "../../lib/midi_output.ily"

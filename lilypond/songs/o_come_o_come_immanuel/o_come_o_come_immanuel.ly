@@ -1,6 +1,6 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ly"
+\include "../../lib/hymn_common.ily"
 
 %% TUNE INFO
 composer = \smallText "Music: trope melody, 15th c."
@@ -9,7 +9,7 @@ meter = \smallText "VENI EMMANUEL LM with refrain"
 hymnKey = \key e \minor
 hymnTime = \time 11/8
 quarternoteTempo = 60
-\include "../../lib/global_parts.ly"
+\include "../../lib/global_parts.ily"
 
 %% SONG INFO
 title = \titleText "O come, O come, Immanuel"
@@ -18,7 +18,7 @@ typesetter = "Kenan Schaefkofer"
 verseCount = 7
 tags = "english christian winter 4part"
 dateAdded = "2021-03-21"
-\include "../../lib/header.ly"
+\include "../../lib/header.ily"
 
 %% NOTES
 halfBar = \override Staff.BarLine #'bar-extent = #'(0 . 2)
@@ -143,8 +143,8 @@ all_verses = <<
 >>
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ly"
+\include "../../lib/all_notation_outputs.ily"
 % Slides output
-\include "../../lib/slides_book_7verse.ly"
+\include "../../lib/slides_book_7verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ly"
+\include "../../lib/midi_output.ily"

@@ -1,6 +1,6 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ly"
+\include "../../lib/hymn_common.ily"
 
 %% TUNE INFO
 composer = \smallText "Music: John H. Hopkins Jr., 1857"
@@ -11,7 +11,7 @@ hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/8)
 hymnBeatStructure = \set Timing.beatStructure = 3,3
 hymnTime = \time 6/8
 quarternoteTempo = 90
-\include "../../lib/global_parts.ly"
+\include "../../lib/global_parts.ily"
 
 %% SONG INFO
 title = \titleText "We three kings"
@@ -21,7 +21,7 @@ typesetter = "Kenan Schaefkofer"
 verseCount = 5
 tags = "english christian winter 4part"
 dateAdded = "2021-03-20"
-\include "../../lib/header.ly"
+\include "../../lib/header.ily"
 
 %% NOTES
 soprano = {
@@ -142,8 +142,8 @@ all_verses = <<
 >>
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ly"
+\include "../../lib/all_notation_outputs.ily"
 % Slides output
-\include "../../lib/slides_book_5verse.ly"
+\include "../../lib/slides_book_5verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ly"
+\include "../../lib/midi_output.ily"
