@@ -1,6 +1,6 @@
 ---
 title: Complete Index
-description: An list of every hymn song music resource on the site
+description: A complete searchable list of every song, hymn, or musical work provided without restriction on this site. Click on a song to view or download the full sheet music, or listen to the audio playback.
 layout: default
 ---
 
