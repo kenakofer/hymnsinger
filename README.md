@@ -50,7 +50,7 @@ This is a project to make or take hymns with permissive copyright status, typese
   - Phrasing slurs \( \) are not dashed after partcombine
   - Enter multiple lines of lyrics above staff
   - Autofocus the index page search bar
-  - Add og: values to hymn.singer.ga index page for better sharability
+  - Add og: values to hymn-singer.com index page for better sharability
   - Fix caps/underscore variables
   - Collapse misc downloads section on narrow screen
   - Slides issues:
@@ -59,3 +59,21 @@ This is a project to make or take hymns with permissive copyright status, typese
   - Fix lyric extraction for custom slides lyrics (all creatures worship god most high)
   - \m is confusingly overloaded: Once in royal uses for melisma, others use for midionly
   - Finish filling out other titles column
+  - Look into Contributing to Mutopia
+  - Perhaps they would even like to have an in-browser playback?
+  - Mutopia sheet music has a nice footer too. Copy?
+  - Check out Mutopia source
+  - Google SEO/analytics
+  - Push state on search term with ?s="search term", so back button keeps search
+  - Change included files to have ".ily" extension
+  - The quest for LY -> JS musical representation:
+    - Possibility 1: Through MusicXML
+      - Very poor support through ly, which doesn't process scheme _at all_
+        - \dispalyLilyMusic to produce a flat ly representation?
+      - Possibility of longer path: LY -> Guile 2 SXML -> XML -> MusicXML
+      - Possibility of python-ly xml-export-init.ly script as a starting point, since that _does_ actually use lilypond
+      - Possible con: Harder to associate playing notes to written notes for live highlighting?
+      - Possible con: Harder for non-standard notations
+      - Keep an eye on https://github.com/openlilylib/lilypond-export
+    - Possibility 2: Through MEI
+      -
