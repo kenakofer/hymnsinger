@@ -1,6 +1,6 @@
 ---
 title: Welcome to Hymn Singer
-description: Music can be more inviting and better presented, especially the oldies-but-goodies found in dusty hymn books. One shouldn't need a music degree to learn and enjoy these musical works, nor should one need a law degree to feel safe singing, distributing, and modifying them.
+description: "Hymn Singer provides high-quality sheet music and in-browser playback for hundreds of songs, free without restrictions. If you'd like to learn one of the voice parts to a song, you can adjust individual volume levels to hear certain parts more loudly. If you need resources for a service, we have PDFs, Powerpoint Slides, MP3s, MIDIs and more to freely distribute."
 
 ---
 
@@ -10,7 +10,7 @@ Music can be more inviting and better presented, especially the *oldies-but-good
 
 ### No cost, no accounts, no catch, just 🎵 that wants to be free!
 
-This site provides **full sheet music** and **in-browser playback** on every song's page. If you'd like to learn one of the voice parts to a song, you can **adjust individual volume levels** to hear certain part more loudly. If you need resources for a service, we have **PDFs** and **Powerpoint Slides** handy.
+This site provides **full sheet music** and **in-browser playback** on every song's page. If you'd like to learn one of the voice parts to a song, you can **adjust individual volume levels** to hear certain parts more loudly. If you need resources for a service, we have **PDFs**, **Powerpoint Slides** and more, free to distribute without restrictions.
 
 Check out the [Full Index of songs]({{ site.baseurl }}/hymn-index.html).
 
