@@ -142,7 +142,31 @@ To him all majesty ascribe, and crown him Lord of all!
 Oh, that with all the sacred throng we at his feet may fall!
 We’ll join the everlasting song and crown him Lord of all.
 We’ll join the everlasting song and crown him Lord of all!
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Edward Perronet, 1780, revised by John Rippon, 1787</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/01/14</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/all_praise_to_thee_my_god.html">All praise to thee, my God</a></td><td class='tune-box'>TALLIS' CANON</td><td class='same-tune-box'><span class="internal"><a href="{{ site.baseurl }}/listing/calm_soul_of_all_things.html">Calm soul of all things</a></span></td><td class='key-box'>G major
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Edward Perronet, 1780, revised by John Rippon, 1787</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/01/14</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/all_hail_the_power_diadem.html">All hail the power of Jesus' name</a></td><td class='tune-box'>DIADEM</td><td class='same-tune-box'></td><td class='key-box'>A major
+</td><td class='meter-box'>CM extended</td><td class='composer-box'>James Ellor, 1838</td><td class='lyric-box'><div>All hail the pow’r of Jesus’ name!
+Let angels prostrate fall,
+let angels prostrate fall.
+Bring forth the royal diadem,
+
+  and crown him, crown him, crown him,
+  crown him, and crown him Lord of all
+
+Let ev'ry kindred, ev'ry tribe,
+on this terrestrial ball,
+on this terrestrial ball,
+to him all majesty ascribe,
+
+  and crown him, crown him, crown him,
+  crown him, and crown him Lord of all
+
+Oh, that with yonder sacred throng
+we at his feet may fall,
+we at his feet may fall!
+We'll join the everlasting song,
+
+  and crown him, crown him, crown him,
+  crown him, and crown him Lord of all
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Edward Perronet, 1780, revised by John Rippon, 1787</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/04/21</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/all_praise_to_thee_my_god.html">All praise to thee, my God</a></td><td class='tune-box'>TALLIS' CANON</td><td class='same-tune-box'><span class="internal"><a href="{{ site.baseurl }}/listing/calm_soul_of_all_things.html">Calm soul of all things</a></span></td><td class='key-box'>G major
 </td><td class='meter-box'>LM</td><td class='composer-box'>Thomas Tallis, 1567</td><td class='lyric-box'><div>All praise to thee, my God, this night, for all the blessings of the light.
 Keep me, O keep me, King of kings, beneath thine own almighty wings.
 

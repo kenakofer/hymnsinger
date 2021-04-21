@@ -30,7 +30,7 @@
 {"t": "DEO GRACIAS", "s": "A hymn of glory let us sing"},
 {"t": "DEO GRACIAS", "s": "Sing we triumphant hymns"},
 {"t": "DEO GRACIAS", "s": "Forth in the peace of Christ we go"},
-{"t": "DIADEM", "s": "All hail the power of Jesus' name"},
+{"t": "DIADEM", "s": "All hail the power of Jesus' name", "i": "all_hail_the_power_diadem"},
 {"t": "DIX", "s": "For the beauty of our earth", "i": "for_the_beauty_of_our_earth"},
 {"t": "DIX", "s": "As with gladness men of old"},
 {"t": "DIX", "s": "Praise to God, immortal praise"},
