@@ -28,7 +28,7 @@ soprano = {
     \partial 4 f8( g) | a4 a4 8( bf) c4 | bf bf4 8( a) g4 | a4 4 8( bf) c4 | g2. \bar "" \break
     a8( g) | f4 8( g) a4 bf | c f c4 8( bf) | a4 8( f) g4 g | f2. \bar "||" \break
     f8( g) | a4 8. 16 a8( bf) c4 | bf4.( c8 bf a) g4 | a4 8. 16 8( bf) c4 | g2. \bar "" \break
-    a8( g) | f4 8( g) a4 bf | c4 f c c8( bf) | a4 a8( f) g4 4 | f2. \bar "|."
+    a8( g) | f4 8( g) a4 bf | c4 f c c8( bf) | a4 a8[ f] g4 4 | f2. \bar "|."
   }
 }
 alto = {
@@ -46,7 +46,7 @@ tenor = {
     a8( bf) | c4 4 4 4 | 4 4 4 4 | 4 4 4 4 | 2.
     c8( bf) | a4 8( bf) c4 4 | 4 4 4 8( d) | c4 c8( a) c4 bf | a2.
     a8( bf) | c4 8. 16 4 4 | 2. 4 | 4 8. 16 4 4 | 2.
-    c8( bf) | a4 8( bf) c4 4 | 4 4 4 f8( d) | c4 8( a) c4 bf | a2.
+    c8( bf) | a4 8( bf) c4 4 | 4 4 4 f8( d) | c4 8 a c4 bf | a2.
   }
 }
 bass = {
@@ -65,7 +65,7 @@ verseA = \lyricmode {
   \l to Ca -- naan's fair and hap -- py land where my pos -- ses -- sions lie.
   %% CHORUS
   I'm bound for the prom -- ised land, I'm bound for the prom -- ised land;
-  O who will come and go with me? I'm for the prom -- ised land.
+  O who will come and go with me? I'm bound for the prom -- ised land.
 }
 verseB = \lyricmode {
   All o'er those wide ex -- tend -- ed plains shines one e -- ter -- nal day;
@@ -73,7 +73,7 @@ verseB = \lyricmode {
   \SB {
     %% CHORUS
     I'm bound for the prom -- ised land, I'm bound for the prom -- ised land;
-    O who will come and go with me? I'm for the prom -- ised land.
+    O who will come and go with me? I'm bound for the prom -- ised land.
   }
 }
 verseC = \lyricmode {
@@ -82,7 +82,7 @@ verseC = \lyricmode {
   \SC {
     %% CHORUS
     I'm bound for the prom -- ised land, I'm bound for the prom -- ised land;
-    O who will come and go with me? I'm for the prom -- ised land.
+    O who will come and go with me? I'm bound for the prom -- ised land.
   }
 }
 verseD = \lyricmode {
@@ -91,7 +91,7 @@ verseD = \lyricmode {
   \SD {
     %% CHORUS
     I'm bound for the prom -- ised land, I'm bound for the prom -- ised land;
-    O who will come and go with me? I'm for the prom -- ised land.
+    O who will come and go with me? I'm bound for the prom -- ised land.
   }
 }
 

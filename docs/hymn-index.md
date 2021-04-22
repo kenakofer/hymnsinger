@@ -1443,25 +1443,25 @@ of the faith they had denied.
 to Canaan's fair and happy land where my possessions lie.
 
   I'm bound for the promised land, I'm bound for the promised land;
-  O who will come and go with me? I'm for the promised land.
+  O who will come and go with me? I'm bound for the promised land.
 
 All o'er those wide extended plains shines one eternal day;
 there God the Son forever reigns and scatters night away.
 
   I'm bound for the promised land, I'm bound for the promised land;
-  O who will come and go with me? I'm for the promised land.
+  O who will come and go with me? I'm bound for the promised land.
 
 No chilling winds nor poisonous breath can reach that healthful shore;
 sickness and sorrow, pain and death are felt and feared no more.
 
   I'm bound for the promised land, I'm bound for the promised land;
-  O who will come and go with me? I'm for the promised land.
+  O who will come and go with me? I'm bound for the promised land.
 
 When shall I reach that happy place and be forever blest?
 When shall I see my Father's face and in God's bosom rest?
 
   I'm bound for the promised land, I'm bound for the promised land;
-  O who will come and go with me? I'm for the promised land.
+  O who will come and go with me? I'm bound for the promised land.
 </div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Samuel Stennett, 1787</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a></div></td><td class='date-added-box'>2021/04/21</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/o_sacred_head_now_wounded.html">O sacred Head, now wounded</a></td><td class='tune-box'>HERZLICH TUT MICH VERLANGEN</td><td class='same-tune-box'></td><td class='key-box'>D major
 </td><td class='meter-box'>76.76 D</td><td class='composer-box'>Hans L. Hassler, 1601;
 arr. J. S. Bach, 1729</td><td class='lyric-box'><div>O sacred Head, now wounded,
