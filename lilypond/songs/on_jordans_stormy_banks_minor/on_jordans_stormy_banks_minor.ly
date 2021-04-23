@@ -94,7 +94,7 @@ verseC = \lyricmode {
 }
 verseD = \lyricmode {
   Filled with de -- light, my rap -- tured soul can here no long -- er stay.
-  Through Jor -- dan's waves a -- round me roll, fear -- less I'd launch a -- way.
+  Though Jor -- dan's waves a -- round me roll, fear -- less I'd launch a -- way.
   \SD {
     %% CHORUS
     I'm bound for the prom -- ised land, I'm bound for the prom -- ised land;

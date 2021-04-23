@@ -1459,7 +1459,7 @@ There God the sun forever reigns, and scatters night away.
   O who will come and go with me? I'm bound for the promised land.
 
 Filled with delight, my raptured soul can here no longer stay.
-Through Jordan's waves around me roll, fearless I'd launch away.
+Though Jordan's waves around me roll, fearless I'd launch away.
 
   I'm bound for the promised land, I'm bound for the promised land;
   O who will come and go with me? I'm bound for the promised land.
