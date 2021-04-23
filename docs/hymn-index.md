@@ -1438,7 +1438,32 @@ Then it is the brave one chooses,
 while the coward stands aside
 till the multitude make virtue
 of the faith they had denied.
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>James Russell Lowell, 1845</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/14</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/on_jordans_stormy_banks.html">On Jordan's Stormy Banks</a></td><td class='tune-box'>PROMISED LAND</td><td class='same-tune-box'></td><td class='key-box'>F major
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>James Russell Lowell, 1845</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/01/14</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/on_jordans_stormy_banks_minor.html">On Jordan's Stormy Banks</a></td><td class='tune-box'>BOUND FOR THE PROMISED LAND</td><td class='same-tune-box'></td><td class='key-box'>E minor
+</td><td class='meter-box'>CM with refrain</td><td class='composer-box'>American traditional, Southern Harmony, 1835;
+arr. Kenan Schaefkofer, 2021</td><td class='lyric-box'><div>On Jordan's stormy banks I stand and cast a wishful eye
+to Canaan's fair and happy land where my possessions lie.
+
+  I'm bound for the promised land, I'm bound for the promised land;
+  O who will come and go with me? I'm bound for the promised land.
+
+There gen'rous fruits that never fail on trees immortal grow.
+There rocks and hills and brooks and vales with milk and honey flow.
+
+  I'm bound for the promised land, I'm bound for the promised land;
+  O who will come and go with me? I'm bound for the promised land.
+
+All o'er those wide extended plains shines one eternnal day.
+There God the sun forever reigns, and scatters night away.
+
+  I'm bound for the promised land, I'm bound for the promised land;
+  O who will come and go with me? I'm bound for the promised land.
+
+Filled with delight, my raptured soul can here no longer stay.
+Through Jordan's waves around me roll, fearless I'd launch away.
+
+  I'm bound for the promised land, I'm bound for the promised land;
+  O who will come and go with me? I'm bound for the promised land.
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Samuel Stennett, 1787</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">theist</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/04/23</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/on_jordans_stormy_banks.html">On Jordan's Stormy Banks</a></td><td class='tune-box'>PROMISED LAND</td><td class='same-tune-box'></td><td class='key-box'>F major
 </td><td class='meter-box'>CM with refrain</td><td class='composer-box'></td><td class='lyric-box'><div>On Jordan's stormy banks I stand and cast a wishful eye
 to Canaan's fair and happy land where my possessions lie.
 
