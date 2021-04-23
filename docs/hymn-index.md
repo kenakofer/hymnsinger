@@ -446,7 +446,34 @@ But the most holy Child of salvation
 gently and lowly lived below;
 now as our glorious mighty Redeemer,
 see him victorious o'er each foe.
-</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Mary MacDonald; tr. L. Macbean, 1888</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">winter</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/04/11</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/christ_the_lord_is_risen_today.html">Christ the Lord is risen today</a></td><td class='tune-box'>EASTER HYMN</td><td class='same-tune-box'></td><td class='key-box'>C major
+</div></td><td class='stanzas-box'>4.</td><td class='poet-box'>Mary MacDonald; tr. L. Macbean, 1888</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">winter</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/04/11</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/christian_hearts_in_love_united.html">Christian hearts in love united</a></td><td class='tune-box'>O DU LIEBE MEINER</td><td class='same-tune-box'></td><td class='key-box'>G major
+</td><td class='meter-box'>LIEBE</td><td class='composer-box'>Johann Thommen, 1735</td><td class='lyric-box'><div>Christian hearts in love united:
+search to know God's holy will.
+Let his love in us ignited,
+more and more our spirits fill.
+Christ the head, and we his members—
+we reflect the light he is.
+Christ the master, we disciples—
+he is ours, and we are his.
+
+Grant, lord, that with your direction,
+''Love each other'' we comply.
+Help us live in true affection,
+your love to exemplify.
+Let our mutual love be glowing
+brightly so that all may view
+that we, as on one stem growing,
+living branches are in you.
+
+Come, then, living church of Jesus,
+covenant with him anew.
+Unto him who conquered for us
+may we pledge our service true.
+May our lives reflect the brightness
+of God's love in Jesus shown.
+To the world we then bear witness:
+we belong to God alone.
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Nicolaus Ludwig von Zinzendorf, 1723; tr. Frederick William Foster</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">christian</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/04/23</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/christ_the_lord_is_risen_today.html">Christ the Lord is risen today</a></td><td class='tune-box'>EASTER HYMN</td><td class='same-tune-box'></td><td class='key-box'>C major
 </td><td class='meter-box'>77.77 with alleluias</td><td class='composer-box'>anon, Lyra Davidica, 1708</td><td class='lyric-box'><div>Christ the Lord is ris'n today!
 Alleluia
 
