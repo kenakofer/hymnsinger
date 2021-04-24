@@ -1,9 +1,19 @@
 {
-    "tags": [
-        "swahili",
-        "english",
-        "theist",
-        "4part",
-        "chords"
-    ]
+  "file": "bwana_awabariki",
+  "title": "Bwana awabariki (May God grant you a blessing)",
+  "tune": "BWANA AWABARIKI",
+  "meter": "irregular",
+  "stanza_count": "2",
+  "composer": "Kenyan traditional",
+  "poet": "Swahili; Kenyan traditional; tr. anonymous",
+  "key": "G major\n",
+  "date_added": "2021/04/23",
+  "tags": [
+    "swahili",
+    "english",
+    "theist",
+    "4part",
+    "chords"
+  ],
+  "lyrics": "Bwana awabariki, Bwana awabariki,\nBwana awabariki, milele\n\nMay God grant you a blessing, may God grant you a blessing,\nmay God grant you a blessing, evermore.\n"
 }
