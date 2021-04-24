@@ -197,21 +197,28 @@ def add_song_json(data):
     with open(output_file, 'w') as f:
         f.write(json.dumps(data, indent=2))
 
+def get_description(lyrics, tags):
+    tag_string = " ".join(tags)
+    lyrics_string = lyrics[:150].replace("\n", " ")
+    return 'View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: '+lyrics_string+'... '+tag_string
+
+def get_image(song_file_base):
+    return "https://github.com/kenanbit/hymn-singer/releases/latest/download/"+song_file_base+"-trad.png"
+
 def output_header_info(song_file_base, song_title, lyrics, tags, output_file):
     with open(output_file, 'a') as f:
         f.write("song_file: "+song_file_base)
         f.write("\n")
         f.write('title: "'+song_title+'"')
         f.write("\n")
-        tag_string = " ".join(tags)
-        lyrics_string = lyrics[:150].replace("\n", " ")
-        f.write('description: "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: '+lyrics_string+'... '+tag_string+'"')
+        f.write('description: "'+get_description(lyrics, tags)'"')
         f.write("\n")
-        f.write("image: https://github.com/kenanbit/hymn-singer/releases/latest/download/"+song_file_base+"-trad.png")
+        f.write("image: "+get_image(song_file_base))
         f.write("\n")
         f.write("---")
         f.write("\n\n")
         f.write("{% include choice_and_music.html %}")
+
 
 def get_songs_with_same_tune(tune, song_title):
     data = json.load(open(TUNE_TEXT_FILEPATH, "r"))
@@ -273,11 +280,14 @@ if __name__ == "__main__":
             "key": get_key(lines),
             "date_added": get_date_added(lines),
             "tags": get_tags(lines),
-            "lyrics": get_lyrics(lines)
+            "lyrics": get_lyrics(lines),
+            "image": get_image(song_file_base)
         }
+        song_data["description"] = get_description(song_data["lyrics"], song_data["tags"])
+
         add_tune_text_pair(song_data['tune'], song_data['title'], song_data['song_file'])
         song_data["songs_with_same_tune"] = get_songs_with_same_tune(song_data["tune"], song_data["title"])
 
-    song_markdown_file = "docs/listing/"+song_file_base+".md"
-    output_header_info(song_data['song_file'], song_data['title'], song_data['lyrics'], song_data['tags'], song_markdown_file)
-    add_song_json(song_data)
+        song_markdown_file = "docs/listing/"+song_file_base+".md"
+        output_header_info(song_data['song_file'], song_data['title'], song_data['lyrics'], song_data['tags'], song_markdown_file)
+        add_song_json(song_data)
