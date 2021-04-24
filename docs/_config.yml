@@ -1,3 +1,16 @@
 theme: jekyll-theme-dinky
 release_version: "0.7"
 google_analytics: "G-6MBRPLS92C"
+
+plugins:
+  - jekyll-datapage-generator
+
+page_gen-dirs: false # uncomment, if you prefer to generate named folders
+
+page_gen:
+  - data: 'songs'
+    template: 'song_page'
+    title: 'title'
+    name: 'song_file'
+    dir: 'listing'
+    debug: true

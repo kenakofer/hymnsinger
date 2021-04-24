@@ -22,7 +22,7 @@ We "typeset" songs using [Lilypond](http://lilypond.org/). Lilypond turns a musi
  - 1 MIDI
  - 1 MP3
  - 1 _beautifully formatted, verse-by-verse slideshow presentation_
- - 1 [sleek webpage here]({{ site.baseurl }}{% link listing/joyful_joyful.md %}) on the site to display, play, and download.
+ - 1 [sleek webpage here]({{ site.baseurl }}{% link listing/joyful_joyful.html %}) on the site to display, play, and download.
 
 Check out the [Getting Started]({{ site.baseurl }}{% link contributing.md %}) guide to learn the ropes yourself. (We are always open to having more contributors!)
 
