@@ -16,7 +16,7 @@ meter_words = [
     "refrain"
 ]
 
-TUNE_TEXT_FILEPATH = "docs/data/tune_text_pairs.json"
+TUNE_TEXT_FILEPATH = "docs/_data/tune_text_pairs.json"
 
 def get_tags(all_lines):
     for i, line in enumerate(all_lines):
