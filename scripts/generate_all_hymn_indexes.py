@@ -53,7 +53,7 @@ def get_key(all_lines):
                 line = line[0] + "-flat" + line[2:]
             if line[1] == "s":
                 line = line[0] + "-sharp" + line[2:]
-            return line
+            return line.strip()
     return "C major"
 
 def get_title(all_lines):
