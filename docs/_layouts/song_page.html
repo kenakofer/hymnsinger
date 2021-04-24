@@ -127,6 +127,10 @@
             </a><br />
           </div>
         </details>
+        <h4>Tags:</h4>
+        {% for tag in site.data.songs[page.song_file].tags %}
+          <a class="taglink" href="{{ site.baseurl }}/hymn-index.html?s={{ tag }}">{{ tag }}</a>
+        {% endfor %}
       </header>
 
       <section>
