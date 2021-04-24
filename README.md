@@ -33,11 +33,8 @@ This is a project to make or take hymns with permissive copyright status, typese
   - Consider reaching out to people
   - Configurable space around lyrics
   - Figure out how to understand/clean up extra_lyrics columns
-  - Include song index data in pages somehow (js?) then DRY on indexes
-  - Store full index in JSON?
   - ' versus ’ in lyrics extraction
   - Figure out what the meters mean for consistency
-  - Song versus Tune columns
   - Upgrade to lilypond 2.21
     - Swing added (Wade in the water
   - Less space between two staves in clairnotes
@@ -52,7 +49,6 @@ This is a project to make or take hymns with permissive copyright status, typese
   - Autofocus the index page search bar
   - Add og: values to hymn-singer.com index page for better sharability
   - Fix caps/underscore variables
-  - Collapse misc downloads section on narrow screen
   - Slides issues:
     - Prevent dropLyricsSmall etc. (o come o come)
     - Tagline missing on >1 verse songs
