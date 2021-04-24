@@ -50,9 +50,6 @@ bass = {
   \relative d {}
   \relative d {}
 }
-songChords = \chords {
-  \globalChordSymbols
-}
 
 %% LYRICS
 verseA = \lyricmode {
