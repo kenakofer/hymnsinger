@@ -56,6 +56,7 @@ This is a project to make or take hymns with permissive copyright status, typese
   - Slides issues:
     - Prevent dropLyricsSmall etc. (o come o come)
     - Tagline missing on >1 verse songs
+    - Fix the lord bless you and keep you
   - Fix lyric extraction for custom slides lyrics (all creatures worship god most high)
   - \m is confusingly overloaded: Once in royal uses for melisma, others use for midionly
   - Finish filling out other titles column
@@ -65,7 +66,6 @@ This is a project to make or take hymns with permissive copyright status, typese
   - Check out Mutopia source
   - Google SEO/analytics
   - Push state on search term with ?s="search term", so back button keeps search
-  - Change included files to have ".ily" extension
   - The quest for LY -> JS musical representation:
     - Possibility 1: Through MusicXML
       - Very poor support through ly, which doesn't process scheme _at all_
