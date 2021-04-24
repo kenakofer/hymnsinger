@@ -193,7 +193,7 @@ def join_verse_line(line, remove_quotes):
     return " ".join(words)
 
 def add_song_json(data):
-    output_file = SONG_DATA_DIR + data['file'] + ".json"
+    output_file = SONG_DATA_DIR + data['song_file'] + ".json"
     with open(output_file, 'w') as f:
         f.write(json.dumps(data, indent=2))
 
@@ -263,7 +263,7 @@ if __name__ == "__main__":
                 break
         tune, meter = get_tune_and_meter(lines)
         song_data = {
-            "file": song_file_base,
+            "song_file": song_file_base,
             "title": get_title(lines),
             "tune": tune,
             "meter": meter,
@@ -275,9 +275,9 @@ if __name__ == "__main__":
             "tags": get_tags(lines),
             "lyrics": get_lyrics(lines)
         }
-        add_tune_text_pair(song_data['tune'], song_data['title'], song_data['file'])
+        add_tune_text_pair(song_data['tune'], song_data['title'], song_data['song_file'])
         song_data["songs_with_same_tune"] = get_songs_with_same_tune(song_data["tune"], song_data["title"])
 
     song_markdown_file = "docs/listing/"+song_file_base+".md"
-    output_header_info(song_data['file'], song_data['title'], song_data['lyrics'], song_data['tags'], song_markdown_file)
+    output_header_info(song_data['song_file'], song_data['title'], song_data['lyrics'], song_data['tags'], song_markdown_file)
     add_song_json(song_data)

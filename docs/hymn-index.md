@@ -39,7 +39,7 @@ Toggle:
 {% for song_hash in site.data.songs %}
 {% assign song = song_hash[1] %}
 <tr>
-  <td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/{{ song.file }}.html">{{ song.title }}</a></td>
+  <td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/{{ song.song_file }}.html">{{ song.title }}</a></td>
   <td class='tune-box'>{{ song.tune }}</td>
   <td class='same-tune-box'>
     {% for other in song.songs_with_same_tune %}
