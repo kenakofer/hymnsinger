@@ -414,7 +414,7 @@ Grateful are those gentle dews
 on the greening grass which fall.
 Far more grateful what renews
 comforts to the poor who call
-</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Hosea Ballou II, 1849</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/22</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/bwana_awabariki.html">Bwana awakariki (May God grant you a blessing)</a></td><td class='tune-box'>BWANA AWABARIKI</td><td class='same-tune-box'></td><td class='key-box'>G major
+</div></td><td class='stanzas-box'>3.</td><td class='poet-box'>Hosea Ballou II, 1849</td><td class='tags-box'><div><a class="taglink" href="#">english</a><a class="taglink" href="#">secular</a><a class="taglink" href="#">4part</a><a class="taglink" href="#">chords</a></div></td><td class='date-added-box'>2021/03/22</td></tr><tr><td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/bwana_awabariki.html">Bwana awabariki (May God grant you a blessing)</a></td><td class='tune-box'>BWANA AWABARIKI</td><td class='same-tune-box'><span class="internal"><a href="{{ site.baseurl }}/listing/bwana_awabariki.html">Bwana awakariki (May God grant you a blessing)</a></span></td><td class='key-box'>G major
 </td><td class='meter-box'>irregular</td><td class='composer-box'>Kenyan traditional</td><td class='lyric-box'><div>Bwana awabariki, Bwana awabariki,
 Bwana awabariki, milele
 

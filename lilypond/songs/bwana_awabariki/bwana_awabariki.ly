@@ -11,7 +11,7 @@ quarternoteTempo = 80
 \include "../../lib/global_parts.ily"
 
 %% SONG INFO
-title = \titleText "Bwana awakariki (May God grant you a blessing)"
+title = \titleText "Bwana awabariki (May God grant you a blessing)"
 poet = \smallText "Text: Swahili; Kenyan traditional; tr. anonymous"
 typesetter = "Kenan Schaefkofer"
 verseCount = 2
