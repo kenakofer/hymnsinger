@@ -41,7 +41,17 @@ Toggle:
 <tr>
   <td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/{{ song.file }}.html">{{ song.title }}</a></td>
   <td class='tune-box'>{{ song.tune }}</td>
-  <td class='same-tune-box'></td>
+  <td class='same-tune-box'>
+    {% for other in song.songs_with_same_tune %}
+      {% if other.i %}
+        <span class="internal"><a href="{{ site.baseurl }}/listing/{{ other.i }}.html">{{ other.s }}</a></span>
+      {% elsif other.e %}
+        <span class="external"><a class="external" target="_blank" href="{{ other.e }}">{{ other.s }}</a></span>
+      {% else %}
+        <span class="nolink">{{ other.s }}</span>
+      {% endif %}
+    {% endfor %}
+  </td>
   <td class='key-box'>{{ song.key }}</td>
   <td class='meter-box'>{{ song.meter }}</td>
   <td class='composer-box'>{{ song.composer }}</td>
