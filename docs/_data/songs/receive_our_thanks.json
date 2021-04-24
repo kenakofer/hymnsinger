@@ -14,5 +14,12 @@
     "4part",
     "chords"
   ],
-  "lyrics": "Receive our thanks\nfor night and day,\nfor food and shelter,\nrest and play,\nbe here our guest,\nand with us stay.\n\nAmen.\n"
+  "lyrics": "Receive our thanks\nfor night and day,\nfor food and shelter,\nrest and play,\nbe here our guest,\nand with us stay.\n\nAmen.\n",
+  "songs_with_same_tune": [
+    {
+      "t": "BE STILL AND KNOW",
+      "s": "Be still and know",
+      "i": "be_still_and_know"
+    }
+  ]
 }

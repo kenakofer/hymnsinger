@@ -14,5 +14,16 @@
     "4part",
     "chords"
   ],
-  "lyrics": "We are people of God's peace\nas a new creation.\nLove unites and strengthens us\nat this celebration.\nSons and daughters of the Lord,\nserving one another,\na new covenant of peace\nbinds us all together.\n\nWe are children of God's peace\nin this new creation,\nspreading joy and happiness\nthrough God's great salvation.\nHope we bring in spirit meek,\nin our daily living.\nPeace with ev'ryone we seek,\ngood for evil giving.\n\nWe are servants of God's peace,\nof the new creation.\nChoosing peace, we faithfully\nserve with heart's devotion.\nJesus Christ, the Prince of Peace,\nconfidence will give us.\nChrist the Lord is our defense;\nChrist will never leave us.\n"
+  "lyrics": "We are people of God's peace\nas a new creation.\nLove unites and strengthens us\nat this celebration.\nSons and daughters of the Lord,\nserving one another,\na new covenant of peace\nbinds us all together.\n\nWe are children of God's peace\nin this new creation,\nspreading joy and happiness\nthrough God's great salvation.\nHope we bring in spirit meek,\nin our daily living.\nPeace with ev'ryone we seek,\ngood for evil giving.\n\nWe are servants of God's peace,\nof the new creation.\nChoosing peace, we faithfully\nserve with heart's devotion.\nJesus Christ, the Prince of Peace,\nconfidence will give us.\nChrist the Lord is our defense;\nChrist will never leave us.\n",
+  "songs_with_same_tune": [
+    {
+      "t": "AVE VIRGO VIRGINUM (GAUDEAMUS PARITER)",
+      "s": "When the King shall come again"
+    },
+    {
+      "t": "AVE VIRGO VIRGINUM (GAUDEAMUS PARITER)",
+      "s": "Come, ye faithful, raise the strain",
+      "i": "come_ye_faithful_raise_the_strain"
+    }
+  ]
 }

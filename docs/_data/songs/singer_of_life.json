@@ -14,5 +14,12 @@
     "1part",
     "chords"
   ],
-  "lyrics": "Singer of Life, all flowers are songs, with petals do you write.\nSinger of Life, you color the earth, dazzling the eye with birds red and bright.\nJoy is for us! The flowers are spread! Singing is our delight!\n\nMortal are we, with all living things, with eagles in the sky.\nEven all gold and jade will not last; singing alone, I know, cannot die.\nHere in this house of springtime bestow songs that like birds can fly.\n"
+  "lyrics": "Singer of Life, all flowers are songs, with petals do you write.\nSinger of Life, you color the earth, dazzling the eye with birds red and bright.\nJoy is for us! The flowers are spread! Singing is our delight!\n\nMortal are we, with all living things, with eagles in the sky.\nEven all gold and jade will not last; singing alone, I know, cannot die.\nHere in this house of springtime bestow songs that like birds can fly.\n",
+  "songs_with_same_tune": [
+    {
+      "t": "LACQUIPARLE",
+      "s": "Wakantanka (Many and Great)",
+      "i": "wakantanka_many_and_great"
+    }
+  ]
 }

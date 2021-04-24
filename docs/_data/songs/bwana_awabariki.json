@@ -15,5 +15,12 @@
     "4part",
     "chords"
   ],
-  "lyrics": "Bwana awabariki, Bwana awabariki,\nBwana awabariki, milele\n\nMay God grant you a blessing, may God grant you a blessing,\nmay God grant you a blessing, evermore.\n"
+  "lyrics": "Bwana awabariki, Bwana awabariki,\nBwana awabariki, milele\n\nMay God grant you a blessing, may God grant you a blessing,\nmay God grant you a blessing, evermore.\n",
+  "songs_with_same_tune": [
+    {
+      "t": "BWANA AWABARIKI",
+      "s": "Bwana awakariki (May God grant you a blessing)",
+      "i": "bwana_awabariki"
+    }
+  ]
 }

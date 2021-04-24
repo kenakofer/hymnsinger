@@ -14,5 +14,12 @@
     "4part",
     "chords"
   ],
-  "lyrics": "Be still and know that I am God.\nBe still and know that I am God.\nBe still and know that I am God.\n"
+  "lyrics": "Be still and know that I am God.\nBe still and know that I am God.\nBe still and know that I am God.\n",
+  "songs_with_same_tune": [
+    {
+      "t": "BE STILL AND KNOW",
+      "s": "Receive our thanks",
+      "i": "receive_our_thanks"
+    }
+  ]
 }

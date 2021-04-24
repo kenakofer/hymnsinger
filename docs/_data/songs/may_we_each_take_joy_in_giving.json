@@ -14,5 +14,16 @@
     "4part",
     "chords"
   ],
-  "lyrics": "May we each take joy in giving with a spirit large and free\nto our neighbors and the strangers, fostering community.\n"
+  "lyrics": "May we each take joy in giving with a spirit large and free\nto our neighbors and the strangers, fostering community.\n",
+  "songs_with_same_tune": [
+    {
+      "t": "STUTTGART",
+      "s": "Grant us, God, the grace of giving",
+      "i": "grant_us_god_the_grace_of_giving"
+    },
+    {
+      "t": "STUTTGART",
+      "s": "Come, thou long-expected Jesus"
+    }
+  ]
 }

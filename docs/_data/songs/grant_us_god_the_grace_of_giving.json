@@ -14,5 +14,16 @@
     "4part",
     "chords"
   ],
-  "lyrics": "Grant us, God, the grace of giving with a spirit large and free\nthat ourselves and all our living we may offer unto thee.\n"
+  "lyrics": "Grant us, God, the grace of giving with a spirit large and free\nthat ourselves and all our living we may offer unto thee.\n",
+  "songs_with_same_tune": [
+    {
+      "t": "STUTTGART",
+      "s": "May we each take joy in giving",
+      "i": "may_we_each_take_joy_in_giving"
+    },
+    {
+      "t": "STUTTGART",
+      "s": "Come, thou long-expected Jesus"
+    }
+  ]
 }

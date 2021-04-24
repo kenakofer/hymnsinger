@@ -14,5 +14,24 @@
     "4part",
     "chords"
   ],
-  "lyrics": "O the deep, deep love of Jesus!\nVast, unmeasured, boundless, free!\nRolling as a mighty ocean\nin its fullness over me!\n\nUnderneath me, all aroundme,\nis the current of thy love;\nleading onward, leading homeward,\nto thy glorious rest above.\n\nO the deep, deep love of Jesus!\nSpread his praise from shore to shore!\nHow he loves us, ever loves us,\nchanges never, nevermore!\n\nHow he watches o'er his loved ones,\ndied to call them all his own;\nhow for them he's interceding,\nwatching o'er them from the throne!\n\nO the deep, deep love of Jesus,\nlove of ev'ry love the best!\n'Tis an ocean vast of blessing,\n'tis a haven sweet of rest!\n\nOh, the deep, deep love of Jesus,\n'tis a heav'n of heav'ns to me;\nand it lifts me up to glory,\nfor it lifts me up to thee!\n"
+  "lyrics": "O the deep, deep love of Jesus!\nVast, unmeasured, boundless, free!\nRolling as a mighty ocean\nin its fullness over me!\n\nUnderneath me, all aroundme,\nis the current of thy love;\nleading onward, leading homeward,\nto thy glorious rest above.\n\nO the deep, deep love of Jesus!\nSpread his praise from shore to shore!\nHow he loves us, ever loves us,\nchanges never, nevermore!\n\nHow he watches o'er his loved ones,\ndied to call them all his own;\nhow for them he's interceding,\nwatching o'er them from the throne!\n\nO the deep, deep love of Jesus,\nlove of ev'ry love the best!\n'Tis an ocean vast of blessing,\n'tis a haven sweet of rest!\n\nOh, the deep, deep love of Jesus,\n'tis a heav'n of heav'ns to me;\nand it lifts me up to glory,\nfor it lifts me up to thee!\n",
+  "songs_with_same_tune": [
+    {
+      "t": "EBENEZER",
+      "s": "Once to every soul and nation",
+      "i": "once_to_every_soul"
+    },
+    {
+      "t": "EBENEZER",
+      "s": "Jesus, tempted in the desert"
+    },
+    {
+      "t": "EBENEZER",
+      "s": "God hath spoken by his prophets"
+    },
+    {
+      "t": "EBENEZER",
+      "s": "Hear the turmoil of the nations"
+    }
+  ]
 }
