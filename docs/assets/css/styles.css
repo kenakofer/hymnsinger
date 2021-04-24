@@ -320,6 +320,9 @@ details summary {
     font-size: 10px;
     line-height: 1.6;
 }
+.taglink.large {
+    font-size: 13px;
+}
 .stanzas-box, .date-added-box  {
     font-size: 14px;
     font-family: monospace;
