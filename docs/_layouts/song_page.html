@@ -31,7 +31,9 @@
     <div class="wrapper">
       <header>
           &larr; <a href="{{ site.baseurl }}/hymn-index.html" style="color:#ff5555;">Back to list</a>
-        <h1 class="header">Playback</h1>
+
+          <hr>
+
           <button class="button button-primary" id="play-button" onclick="click_play()" disabled="disabled" title="Shortcut: Space">Play</button><!--
           --><button class="button button-primary" id="stop-button" onclick="stop()">Reset</button><!--
           --><span id='loop-span'>Loop<input type="checkbox" id="loop-checkbox"></span>
@@ -40,68 +42,73 @@
         <div id="play-bar-background">
             <div id="play-bar"></div>
         </div>
-        <div class="tempo-panel">
-            Tempo <span id="tempo-display">___ BPM</span><br />
-            <!--<input id='tempo-input' type="range" onchange="Player.pause();Player.setTempo(this.value);Player.play()" min="50" max="200">-->
-            <input id='tempo-input' type="range" onchange="changeTempo(this.value);" min="50" max="200">
-        </div>
-        <table class='part-volume'>
-            <tr>
-                <tr>
-                <th>
-                  <div class="tooltip">
-                    S
-                    <span class="tooltiptext">
-                      Soprano volume adjust. Soprano sings the highest, most important notes (the melody). Their notes are seen above the lyrics.
-                    </span>
-                  </div>
-                </th>
-                <td ><input type="range" onchange="channel_to_velocity[1]=this.value" min="0" max="200" value="150"></td>
-                </tr>
 
-                <tr>
+        <details open="true" id="playback-settings">
+          <summary>Playback Settings</summary>
+          <div class="tempo-panel">
+              Tempo <span id="tempo-display">___ BPM</span><br />
+              <!--<input id='tempo-input' type="range" onchange="Player.pause();Player.setTempo(this.value);Player.play()" min="50" max="200">-->
+              <input id='tempo-input' type="range" onchange="changeTempo(this.value);" min="50" max="200">
+          </div>
+          <table class='part-volume'>
+              <tr>
+                  <tr>
                   <th>
                     <div class="tooltip">
-                      A
+                      S
                       <span class="tooltiptext">
-                        Alto volume adjust. Alto is lower than soprano, on the staff above the lyrics. They sing a harmony that supports the soprano's melody, so their notes might not sound song-like by themselves.
+                        Soprano volume adjust. Soprano sings the highest, most important notes (the melody). Their notes are seen above the lyrics.
                       </span>
                     </div>
                   </th>
-                <td ><input type="range" onchange="channel_to_velocity[2]=this.value" min="0" max="200" value="70"></td>
-                </tr>
+                  <td ><input type="range" onchange="channel_to_velocity[1]=this.value" min="0" max="200" value="150"></td>
+                  </tr>
 
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
+                  <tr>
+                    <th>
+                      <div class="tooltip">
+                        A
+                        <span class="tooltiptext">
+                          Alto volume adjust. Alto is lower than soprano, on the staff above the lyrics. They sing a harmony that supports the soprano's melody, so their notes might not sound song-like by themselves.
+                        </span>
+                      </div>
+                    </th>
+                  <td ><input type="range" onchange="channel_to_velocity[2]=this.value" min="0" max="200" value="70"></td>
+                  </tr>
 
-                <tr>
-                  <th>
-                  <div class="tooltip">
-                    T
-                    <span class="tooltiptext">
-                      Tenor volume adjust. Tenor is higher than bass, on the staff below the lyrics. They sing a harmony that supports the soprano's melody, so their notes might not sound song-like by themselves.
-                    </span>
-                  </div>
-                  </th>
-                <td ><input type="range" onchange="channel_to_velocity[3]=this.value" min="0" max="200" value="90"></td>
-                </tr>
+                  <tr></tr>
+                  <tr></tr>
+                  <tr></tr>
 
-                <tr>
-                  <th>
-                  <div class="tooltip">
-                    B
-                    <span class="tooltiptext">
-                      Bass volume adjust. Bass sings the lowest notes on the staff below the lyrics. Their notes provide a foundation for all the other parts.
-                    </span>
-                  </div>
-                  </th>
-                <td ><input type="range" onchange="channel_to_velocity[4]=this.value" min="0" max="200" value="110"></td>
-                </tr>
-            </tr>
-        </table>
-        <div id="misc-downloads">
-          <h4>Other formats</h3>
+                  <tr>
+                    <th>
+                    <div class="tooltip">
+                      T
+                      <span class="tooltiptext">
+                        Tenor volume adjust. Tenor is higher than bass, on the staff below the lyrics. They sing a harmony that supports the soprano's melody, so their notes might not sound song-like by themselves.
+                      </span>
+                    </div>
+                    </th>
+                  <td ><input type="range" onchange="channel_to_velocity[3]=this.value" min="0" max="200" value="90"></td>
+                  </tr>
+
+                  <tr>
+                    <th>
+                    <div class="tooltip">
+                      B
+                      <span class="tooltiptext">
+                        Bass volume adjust. Bass sings the lowest notes on the staff below the lyrics. Their notes provide a foundation for all the other parts.
+                      </span>
+                    </div>
+                    </th>
+                  <td ><input type="range" onchange="channel_to_velocity[4]=this.value" min="0" max="200" value="110"></td>
+                  </tr>
+              </tr>
+          </table>
+        </details>
+
+        <details id="misc-downloads">
+          <summary>Downloads</summary>
           <div id="misc-download-list">
             <a href="https://github.com/kenanbit/hymn-singer/releases/download/{{ site.release_version }}/{{ page.song_file }}.odp">
               Projection Slides (ODP)
@@ -119,7 +126,7 @@
               Source code (LY)
             </a><br />
           </div>
-        </div>
+        </details>
       </header>
 
       <section>

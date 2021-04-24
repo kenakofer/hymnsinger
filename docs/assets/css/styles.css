@@ -219,8 +219,14 @@ img {
   visibility: visible;
 }
 
-#misc-downloads h4 {
+details {
+    margin-top: 10px;
+}
+details summary {
     color: #f7f7ee;
+    font-family: Arvo, Monaco, serif;
+    font-weight: 700;
+    cursor: pointer;
 }
 #misc-download-list a {
     color: #f55;
