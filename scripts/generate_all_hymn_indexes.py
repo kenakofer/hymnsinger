@@ -192,37 +192,6 @@ def join_verse_line(line, remove_quotes):
         words[index-1:index+2] = [words[index-1] + words[index+1]]
     return " ".join(words)
 
-
-def output_table_row(data, output_file):
-    with open(output_file, 'a') as f:
-        f.write("<tr><td class='hymn-name-box'><a href=\"{{ site.baseurl }}/listing/"+data["file"]+".html\">")
-        f.write(data['title'])
-        f.write("</a>")
-        f.write("</td><td class='tune-box'>")
-        f.write(data['tune'])
-        f.write("</td><td class='same-tune-box'>")
-        f.write(get_songs_with_same_tune_html(data['tune'], data['title']))
-        f.write("</td><td class='key-box'>")
-        f.write(data['key'])
-        f.write("</td><td class='meter-box'>")
-        f.write(data['meter'])
-        f.write("</td><td class='composer-box'>")
-        f.write(data['composer'])
-        f.write("</td><td class='lyric-box'><div>")
-        f.write(data['lyrics'])
-        f.write("</div></td><td class='stanzas-box'>")
-        f.write(data['stanza_count'] + ".")
-        f.write("</td><td class='poet-box'>")
-        f.write(data['poet'])
-        f.write("</td><td class='tags-box'><div>")
-        for tag in data['tags']:
-            f.write(get_tag_html(tag))
-        f.write("</div></td>")
-        f.write("<td class='date-added-box'>")
-        f.write(data['date_added'])
-        f.write("</td>")
-        f.write("</tr>")
-
 def add_song_json(data):
     output_file = SONG_DATA_DIR + data['file'] + ".json"
     with open(output_file, 'w') as f:
@@ -294,7 +263,6 @@ if __name__ == "__main__":
     file_path = sys.argv[1]
     song_file_base = os.path.basename(file_path)
     song_file_base = song_file_base[:song_file_base.index(".")]
-    index_files_to_append_to = ["docs/hymn-index.md"]
     with open(file_path, 'r') as f:
         lines = f.readlines()
         for l in lines:
@@ -319,8 +287,6 @@ if __name__ == "__main__":
             "lyrics": get_lyrics(lines)
         }
         add_tune_text_pair(song_data['tune'], song_data['title'], song_data['file'])
-    for output_file in index_files_to_append_to:
-        output_table_row(song_data, output_file)
 
     song_markdown_file = "docs/listing/"+song_file_base+".md"
     output_header_info(song_data['file'], song_data['title'], song_data['lyrics'], song_data['tags'], song_markdown_file)
