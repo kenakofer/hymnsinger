@@ -17,6 +17,7 @@ meter_words = [
 ]
 
 TUNE_TEXT_FILEPATH = "docs/_data/tune_text_pairs.json"
+SONG_DATA_DIR = "docs/_data/songs/"
 
 def get_tags(all_lines):
     for i, line in enumerate(all_lines):
@@ -192,35 +193,40 @@ def join_verse_line(line, remove_quotes):
     return " ".join(words)
 
 
-def output_table_row(song_file_base, song_title, lyrics, tune, key, meter, stanza_count, tags, composer, poet, date_added, output_file):
+def output_table_row(data, output_file):
     with open(output_file, 'a') as f:
-        f.write("<tr><td class='hymn-name-box'><a href=\"{{ site.baseurl }}/listing/"+song_file_base+".html\">")
-        f.write(song_title)
+        f.write("<tr><td class='hymn-name-box'><a href=\"{{ site.baseurl }}/listing/"+data["file"]+".html\">")
+        f.write(data['title'])
         f.write("</a>")
         f.write("</td><td class='tune-box'>")
-        f.write(tune)
+        f.write(data['tune'])
         f.write("</td><td class='same-tune-box'>")
-        f.write(get_songs_with_same_tune_html(tune, song_title))
+        f.write(get_songs_with_same_tune_html(data['tune'], data['title']))
         f.write("</td><td class='key-box'>")
-        f.write(key)
+        f.write(data['key'])
         f.write("</td><td class='meter-box'>")
-        f.write(meter)
+        f.write(data['meter'])
         f.write("</td><td class='composer-box'>")
-        f.write(composer)
+        f.write(data['composer'])
         f.write("</td><td class='lyric-box'><div>")
-        f.write(lyrics)
+        f.write(data['lyrics'])
         f.write("</div></td><td class='stanzas-box'>")
-        f.write(stanza_count + ".")
+        f.write(data['stanza_count'] + ".")
         f.write("</td><td class='poet-box'>")
-        f.write(poet)
+        f.write(data['poet'])
         f.write("</td><td class='tags-box'><div>")
-        for tag in tags:
+        for tag in data['tags']:
             f.write(get_tag_html(tag))
         f.write("</div></td>")
         f.write("<td class='date-added-box'>")
-        f.write(date_added)
+        f.write(data['date_added'])
         f.write("</td>")
         f.write("</tr>")
+
+def add_song_json(data):
+    output_file = SONG_DATA_DIR + data['file'] + ".json"
+    with open(output_file, 'w') as f:
+        f.write(json.dumps(data, indent=2))
 
 def output_header_info(song_file_base, song_title, lyrics, tags, output_file):
     with open(output_file, 'a') as f:
@@ -298,18 +304,24 @@ if __name__ == "__main__":
                 include_lines = open(included_path, 'r').readlines()
                 lines = include_lines + lines
                 break
-        all_lyrics = get_lyrics(lines)
-        all_tags = get_tags(lines)
-        song_title = get_title(lines)
         tune, meter = get_tune_and_meter(lines)
-        stanza_count = get_stanza_count(lines)
-        composer = get_composer_info(lines)
-        poet = get_poet_info(lines)
-        key = get_key(lines)
-    date_added = get_date_added(lines)
+        song_data = {
+            "file": song_file_base,
+            "title": get_title(lines),
+            "tune": tune,
+            "meter": meter,
+            "stanza_count": get_stanza_count(lines),
+            "composer": get_composer_info(lines),
+            "poet": get_poet_info(lines),
+            "key": get_key(lines),
+            "date_added": get_date_added(lines),
+            "tags": get_tags(lines),
+            "lyrics": get_lyrics(lines)
+        }
+        add_tune_text_pair(song_data['tune'], song_data['title'], song_data['file'])
     for output_file in index_files_to_append_to:
-        output_table_row(song_file_base, song_title, all_lyrics, tune, key, meter, stanza_count, all_tags, composer, poet, date_added, output_file)
+        output_table_row(song_data, output_file)
 
     song_markdown_file = "docs/listing/"+song_file_base+".md"
-    output_header_info(song_file_base, song_title, all_lyrics, all_tags, song_markdown_file)
-    add_tune_text_pair(tune, song_title, song_file_base)
+    output_header_info(song_data['file'], song_data['title'], song_data['lyrics'], song_data['tags'], song_markdown_file)
+    add_song_json(song_data)
