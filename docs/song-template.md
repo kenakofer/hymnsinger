@@ -1,2 +1,0 @@
----
-layout: song_page
