@@ -213,21 +213,10 @@ def output_header_info(song_file_base, song_title, lyrics, tags, output_file):
         f.write("\n\n")
         f.write("{% include choice_and_music.html %}")
 
-def get_songs_with_same_tune_html(tune, song_title):
+def get_songs_with_same_tune(tune, song_title):
     data = json.load(open(TUNE_TEXT_FILEPATH, "r"))
-    html_string=""
-    for d in data:
-        if d['t'] != tune:
-            continue
-        if d['s'] == song_title:
-            continue
-        if 'i' in d:
-            html_string += '<span class="internal"><a href="{{ site.baseurl }}/listing/' + d['i'] + '.html">' + d['s'] + '</a></span>'
-        elif 'e' in d:
-            html_string += '<span class="external"><a class="external" target="_blank" href="' + d['e'] + '">' + d['s'] + '</a></span>'
-        else:
-            html_string += '<span class="nolink">' + d['s'] + '</span>'
-    return html_string
+    data = [d for d in data if d['t'] == tune and d['s'] != song_title]
+    return data
 
 def add_tune_text_pair(tune, song_title, song_file_base):
     record = {
@@ -287,6 +276,7 @@ if __name__ == "__main__":
             "lyrics": get_lyrics(lines)
         }
         add_tune_text_pair(song_data['tune'], song_data['title'], song_data['file'])
+        song_data["songs_with_same_tune"] = get_songs_with_same_tune(song_data["tune"], song_data["title"])
 
     song_markdown_file = "docs/listing/"+song_file_base+".md"
     output_header_info(song_data['file'], song_data['title'], song_data['lyrics'], song_data['tags'], song_markdown_file)
