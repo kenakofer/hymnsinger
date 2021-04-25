@@ -127,10 +127,62 @@
             </a><br />
           </div>
         </details>
-        <h4>Tags:</h4>
+
+        <details id="song-info">
+          <summary>Song Details</summary>
+          {% assign song_data = site.data.songs[page.song_file] %}
+          <table>
+            <tr>
+              <td class="info-key">Title:</td>
+              <td class="info-value">{{ song_data.title }}</td>
+            </tr>
+            <tr>
+              <td class="info-key">Text:</td>
+              <td class="info-value">{{ song_data.poet }}</td>
+            </tr>
+            <tr>
+              <td class="info-key">Tune:</td>
+              <td class="info-value">{{ song_data.tune }}</td>
+            </tr>
+            <tr>
+              <td class="info-key">Music:</td>
+              <td class="info-value">{{ song_data.composer }}</td>
+            </tr>
+            <tr>
+              <td class="info-key">Key:</td>
+              <td class="info-value">{{ song_data.key }}</td>
+            </tr>
+            <tr>
+              <td class="info-key">Meter:</td>
+              <td class="info-value">{{ song_data.meter }}</td>
+            </tr>
+            <tr>
+              <td class="info-key">Date Added:</td>
+              <td class="info-value">{{ song_data.date_added }}</td>
+            </tr>
+          </table>
+        </details>
+
+        {% if site.data.songs[page.song_file].songs_with_same_tune[0] %}
+        <h4>Alternate words</h4>
+        <div class='same-tune-box'>
+          {% for other in site.data.songs[page.song_file].songs_with_same_tune %}
+            {% if other.i %}
+              <span class="internal"><a href="{{ site.baseurl }}/listing/{{ other.i }}.html">{{ other.s }}</a></span>
+            {% elsif other.e %}
+              <span class="external"><a class="external" target="_blank" href="{{ other.e }}">{{ other.s }}</a></span>
+            {% else %}
+              <span class="nolink">{{ other.s }}</span>
+            {% endif %}
+          {% endfor %}
+        </div>
+        {% endif %}
+
+        <h4>Tags</h4>
         {% for tag in site.data.songs[page.song_file].tags %}
           <a class="taglink large" href="{{ site.baseurl }}/hymn-index.html?s={{ tag }}">{{ tag }}</a>
         {% endfor %}
+
       </header>
 
       <section>
