@@ -12,7 +12,7 @@ This is a project to make or take hymns with permissive copyright status, typese
 
 ### Running the website locally:
  - See github pages documentation on [running a site locally](https://docs.github.com/en/github/working-with-github-pages/testing-your-github-pages-site-locally-with-jekyll)
- - Before you run `bundle install`, navigate into `hymn-singer/docs`, because the Gemfile is there.
+ - Before you run `bundle install`, navigate into `hymnsinger/docs`, because the Gemfile is there.
  - If `bundle install` complains about `Gemfile.lock` in the same directory, delete it.
  - After you `bundle exec jekyll serve` successfully, you can see the site at <http://127.0.0.1:4000> or something similar.
 
@@ -47,7 +47,7 @@ This is a project to make or take hymns with permissive copyright status, typese
   - Phrasing slurs \( \) are not dashed after partcombine
   - Enter multiple lines of lyrics above staff
   - Autofocus the index page search bar
-  - Add og: values to hymn-singer.com index page for better sharability
+  - Add og: values to hymnsinger.com index page for better sharability
   - Fix caps/underscore variables
   - Slides issues:
     - Prevent dropLyricsSmall etc. (o come o come)

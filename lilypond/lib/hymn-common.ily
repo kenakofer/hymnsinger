@@ -185,13 +185,13 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
         \override #'(font-series . "regular")
         \fontsize #-4
         \with-url
-        #"https://hymn-singer.com/"
+        #"https://hymnsinger.com/"
         \line {
           "Engraver: LilyPond"
           $(lilypond-version)
           \char ##x2014
           "Added to"
-          \bold "https://hymn-singer.com"
+          \bold "https://hymnsinger.com"
           "on"
           \dateAdded
           ", updated"
