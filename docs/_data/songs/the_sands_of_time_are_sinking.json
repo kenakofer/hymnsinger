@@ -1,0 +1,27 @@
+{
+  "song_file": "the_sands_of_time_are_sinking",
+  "title": "The Sands of Time Are Sinking",
+  "tune": "RUTHERFORD",
+  "meter": "76.76.76.75",
+  "stanza_count": "4",
+  "composer": "Edward F. Rimbault, 1867",
+  "poet": "A. R. Cousin, 1857",
+  "key": "E major",
+  "date_added": "2021/04/25",
+  "tags": [
+    "english",
+    "christian",
+    "4part",
+    "chords"
+  ],
+  "lyrics": "The sands of time are sinking,\nthe dawn of heaven breaks.\nthe summer morn I've sighed for,\nthe fair sweet morn awakes;\ndark, dark hath been the midnight,\nbut dayspring is at hand,\nand glory, glory dwelleth\nin Emmanuel's land.\n\nThe King there in his beaty\nwithout a veil is seen;\nit were a wellspent journey,\nthough sev'n deaths lay between:\nthe Lamb with his fair army\ndoth on Mount Zion stand.\nand glory, glory dwelleth\nin Emmanuel's land.\n\nO Christ, he is the fountain,\nthe deep sweet well of love!\nThe streams on earth I've tasted,\nmore deep I'll drink above:\nthere to an ocean fullness\nhis mercy doth expand,\nand glory, glory dwelleth\nin Emmanuel's land.\n\nThe bride eyes not her garment,\nbut her dear bridegroom's face;\nI will not gaze at glory,\nbut on my King of grace;\nnot at the crown he gifteth,\nbut on his pierc\u00e8d hand:\nthe Lamb is all the glory\nof Emmanuel's land.\n",
+  "image": "https://github.com/kenanbit/hymn-singer/releases/latest/download/the_sands_of_time_are_sinking-trad.png",
+  "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: The sands of time are sinking, the dawn of heaven breaks. the summer morn I've sighed for, the fair sweet morn awakes; dark, dark hath been the midnig... english christian 4part chords",
+  "songs_with_same_tune": [
+    {
+      "t": "RUTHERFORD",
+      "s": "O God, in restless living",
+      "i": "o_god_in_restless_living"
+    }
+  ]
+}
