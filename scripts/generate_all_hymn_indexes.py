@@ -211,7 +211,7 @@ def output_header_info(song_file_base, song_title, lyrics, tags, output_file):
         f.write("\n")
         f.write('title: "'+song_title+'"')
         f.write("\n")
-        f.write('description: "'+get_description(lyrics, tags)'"')
+        f.write('description: "'+get_description(lyrics, tags)+'"')
         f.write("\n")
         f.write("image: "+get_image(song_file_base))
         f.write("\n")
