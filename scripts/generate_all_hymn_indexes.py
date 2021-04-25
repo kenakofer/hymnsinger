@@ -43,6 +43,7 @@ def has_chord_symbols(all_lines):
 
 def get_key(all_lines):
     search_for = "hymnKey=\key"
+    key_string = "C major"
     for line in all_lines:
         line = line.replace(" ", "")
         if line.startswith(search_for):
@@ -53,8 +54,8 @@ def get_key(all_lines):
                 line = line[0] + "-flat" + line[2:]
             if line[1] == "s":
                 line = line[0] + "-sharp" + line[2:]
-            return line.strip()
-    return "C major"
+            key_string = line.strip()
+    return key_string
 
 def get_title(all_lines):
     for line in all_lines:
