@@ -1,5 +1,5 @@
 {
-  "song_file": "comfort_comfort_o_my_people",
+  "song_file": "comfort-comfort-o-my-people",
   "title": "Comfort, comfort, O my people",
   "tune": "GENEVA 42 (FREU DICH SEHR)",
   "meter": "87.87.77.88",
@@ -14,13 +14,18 @@
     "4part"
   ],
   "lyrics": "Comfort, comfort, O my people,\nspeak of peace, now says our God.\nComfort those who sit in darkness,\nmourning 'neath their sorrows' load.\n\nSpeak unto Jerusalem\nof the peace that waits for them.\nTell of all the sins I cover,\nand that warfare now is over.\n\nHark, the voice of one who's crying\nin the desert far and near,\nbidding all to full repentance\nsince the kingdom now is here.\n\nO that warning cry obey!\nNow prepare for God a way.\nLet the valleys rise to meet God\nand the hills bow down to greet God.\n\nO make straight what long was crooked,\nmake the rougher places plain.\nLet your hearts be true and humble,\nas befits God's holy reign.\n\nFor the glory of the Lord\nnow o'er earth is shed abroad.\nAnd all flesh shall see the token\nthat God's word is never broken.\n",
-  "image": "https://github.com/kenanbit/hymnsinger/releases/latest/download/comfort_comfort_o_my_people-trad.png",
+  "image": "https://github.com/kenanbit/hymnsinger/releases/latest/download/comfort-comfort-o-my-people-trad.png",
   "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: Comfort, comfort, O my people, speak of peace, now says our God. Comfort those who sit in darkness, mourning 'neath their sorrows' load.  Speak unto J... english christian 4part",
   "songs_with_same_tune": [
     {
       "t": "GENEVA 42 (FREU DICH SEHR)",
       "s": "As the deer with eager yearning",
       "i": "as_the_deer_with_eager_yearning"
+    },
+    {
+      "t": "GENEVA 42 (FREU DICH SEHR)",
+      "s": "As the deer with eager yearning",
+      "i": "as-the-deer-with-eager-yearning"
     }
   ]
 }

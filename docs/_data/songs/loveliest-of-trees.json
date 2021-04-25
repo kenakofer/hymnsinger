@@ -1,5 +1,5 @@
 {
-  "song_file": "loveliest_of_trees",
+  "song_file": "loveliest-of-trees",
   "title": "Loveliest of trees",
   "tune": "ORIENTIS PARTIBUS",
   "meter": "77.77",
@@ -16,13 +16,18 @@
     "chords"
   ],
   "lyrics": "Loveliest of trees, the cherry now,\nhung with bloom along the bough,\nit stands about the woodland ride\nwearing white for Eastertide.\n\nNow of my threescore years and ten,\ntwenty will not come again.\nAnd take from sev'nty springs a score,\nleaving me just fifty more.\n\nAnd since to look at things in bloom\nfifty springs are little room,\nabout the woodlands I will go,\nsee the cherry hung with snow.\n",
-  "image": "https://github.com/kenanbit/hymnsinger/releases/latest/download/loveliest_of_trees-trad.png",
+  "image": "https://github.com/kenanbit/hymnsinger/releases/latest/download/loveliest-of-trees-trad.png",
   "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: Loveliest of trees, the cherry now, hung with bloom along the bough, it stands about the woodland ride wearing white for Eastertide.  Now of my threes... english secular 4part spring chords",
   "songs_with_same_tune": [
     {
       "t": "ORIENTIS PARTIBUS",
       "s": "Bright those jewels",
       "i": "bright_those_jewels"
+    },
+    {
+      "t": "ORIENTIS PARTIBUS",
+      "s": "Bright those jewels",
+      "i": "bright-those-jewels"
     }
   ]
 }

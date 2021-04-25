@@ -1,5 +1,5 @@
 {
-  "song_file": "angels_we_have_heard",
+  "song_file": "angels-we-have-heard",
   "title": "Angels we have heard on high",
   "tune": "GLORIA",
   "meter": "77.77 with refrain",
@@ -15,7 +15,7 @@
     "winter"
   ],
   "lyrics": "Angels we have heard on high, singing sweetly through the night,\nand the mountains in reply echoing their brave delight.\n\n  Gloria in excelsis Deo, gloria in excelsis Deo.\n\nShepherds, why this jubilee? Why these songs of happy cheer?\nWhat great brightness did you see? What glad tidings did you hear?\n\nCome to Bethlehem and see him whose birth the angels sing.\nCome, adore on bended knee Christ, the Lord, the newborn King.\n\nSee him in a manger laid whom the angels praise above.\nMary, Joseph, lend your aid, while we raise our hearts in love.\n",
-  "image": "https://github.com/kenanbit/hymnsinger/releases/latest/download/angels_we_have_heard-trad.png",
+  "image": "https://github.com/kenanbit/hymnsinger/releases/latest/download/angels-we-have-heard-trad.png",
   "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: Angels we have heard on high, singing sweetly through the night, and the mountains in reply echoing their brave delight.    Gloria in excelsis Deo, gl... english christian 4part winter",
   "songs_with_same_tune": []
 }

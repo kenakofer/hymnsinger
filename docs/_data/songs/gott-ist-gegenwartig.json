@@ -1,5 +1,5 @@
 {
-  "song_file": "gott_ist_gegenwartig",
+  "song_file": "gott-ist-gegenwartig",
   "title": "Gott ist gegenw\u00e4rtig",
   "tune": "WUNDERBARER K\u00d6NIG",
   "meter": "66.86.66.86.666",
@@ -15,13 +15,18 @@
     "chords"
   ],
   "lyrics": "Gott ist gegenw\u00e4rtig. Lasset uns anbeten und in Ehrfurcht vor ihn treten.\nGott ist in der Mitte. Alles in uns schweige und sich innigst vor ihm beuge.\nWer ihn kennt, wer ihn nennt, schlag die Augen nieder; kommt, ergebt euch wieder.\n\nGott ist gegenw\u00e4rtig, dem die Cherubinen Tag und Nacht geb\u00fccket dienen.\n''Heilig, heilig, heilig!'' singen ihm zur Ehre aller Engel hohe Ch\u00f6re.\nHerr, vernimm unsre Stimm, da auch wir Geringen unsre Opfer bringen.\n\nHerr, komm in mir wohnen; lass mein Herz auf Erden dir ein Heiligtum noch werden.\nKomm, du nahes Wesen; dich in mir verkl\u00e4re, dass ich dich stets lieb und ehre.\nWo ich geh, sitz und steh, lass mich dich erblicken und vor dir mich b\u00fccken.\n",
-  "image": "https://github.com/kenanbit/hymnsinger/releases/latest/download/gott_ist_gegenwartig-trad.png",
+  "image": "https://github.com/kenanbit/hymnsinger/releases/latest/download/gott-ist-gegenwartig-trad.png",
   "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: Gott ist gegenw\u00e4rtig. Lasset uns anbeten und in Ehrfurcht vor ihn treten. Gott ist in der Mitte. Alles in uns schweige und sich innigst vor ihm beuge.... german christian 4part chords",
   "songs_with_same_tune": [
     {
       "t": "WUNDERBARER K\u00d6NIG",
       "s": "God is here among us",
       "i": "god_is_here_among_us"
+    },
+    {
+      "t": "WUNDERBARER K\u00d6NIG",
+      "s": "God is here among us",
+      "i": "god-is-here-among-us"
     }
   ]
 }

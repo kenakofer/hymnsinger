@@ -1,9 +1,9 @@
 ---
 layout: song_page
-song_file: way_way_way
+song_file: way-way-way
 title: "Way way way"
 description: "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: Way way way way way. Way way way way way. Way way way way way. ... ojibwe secular 4part"
-image: https://github.com/kenanbit/hymnsinger/releases/latest/download/way_way_way-trad.png
+image: https://github.com/kenanbit/hymnsinger/releases/latest/download/way-way-way-trad.png
 ---
 
 {% include choice_and_music.html %}

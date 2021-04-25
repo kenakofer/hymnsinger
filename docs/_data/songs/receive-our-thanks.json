@@ -1,5 +1,5 @@
 {
-  "song_file": "receive_our_thanks",
+  "song_file": "receive-our-thanks",
   "title": "Receive our thanks",
   "tune": "BE STILL AND KNOW",
   "meter": "8.8.8",
@@ -15,13 +15,18 @@
     "chords"
   ],
   "lyrics": "Receive our thanks\nfor night and day,\nfor food and shelter,\nrest and play,\nbe here our guest,\nand with us stay.\n\nAmen.\n",
-  "image": "https://github.com/kenanbit/hymnsinger/releases/latest/download/receive_our_thanks-trad.png",
+  "image": "https://github.com/kenanbit/hymnsinger/releases/latest/download/receive-our-thanks-trad.png",
   "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: Receive our thanks for night and day, for food and shelter, rest and play, be here our guest, and with us stay.  Amen. ... english theist 4part chords",
   "songs_with_same_tune": [
     {
       "t": "BE STILL AND KNOW",
       "s": "Be still and know",
       "i": "be_still_and_know"
+    },
+    {
+      "t": "BE STILL AND KNOW",
+      "s": "Be still and know",
+      "i": "be-still-and-know"
     }
   ]
 }
