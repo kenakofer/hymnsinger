@@ -415,9 +415,13 @@ header ul {
         max-width: 1190px;
     }
     header {
-        padding: 10px 25px 10px 40px;
+        padding: 10px 25px 10px 35px;
+        width: 185px;
         max-height: 80vh;
         overflow-y: scroll;
+        overflow-x: hidden;
+        scrollbar-color: #aaa #171717;
+        scrollbar-width: thin;
     }
 }
 
