@@ -5,7 +5,7 @@ find ./lilypond/songs -type f -iname "*.ly" -print0 | sort -z | while IFS= read 
     BASE=`basename "${file%.*}"` # This only strips the final ly, not any earlier "extension"
     OUTPUT_DIR="docs/local-lilypond-outputs/"
     INPUT=$file
-    midi-output="$OUTPUT_DIR$BASE.midi"
+    MIDI_OUTPUT="$OUTPUT_DIR$BASE.midi"
     MP3_OUTPUT="$OUTPUT_DIR$BASE.mp3"
     if [ -e "$MP3_OUTPUT" ] && [ "$MP3_OUTPUT" -nt "$INPUT" ] ; then
         echo "     ---- $BASE.mp3 exists and is up to date."
@@ -41,7 +41,7 @@ find ./lilypond/songs -type f -iname "*.ly" -print0 | sort -z | while IFS= read 
 
         echo "     --> (Midi to MP3)"
         # Timidity should be configured to use YDP Grand Piano soundfont, available for download at http://freepats.zenvoid.org/Piano/acoustic-grand-piano.html
-        timidity --quiet --quiet $midi-output -Ow -o - | ffmpeg -loglevel error -y -i - -acodec libmp3lame -ab 64k $MP3_OUTPUT
+        timidity --quiet --quiet $MIDI_OUTPUT -Ow -o - | ffmpeg -loglevel error -y -i - -acodec libmp3lame -ab 64k $MP3_OUTPUT
 
         echo "     --> Done."
     fi
