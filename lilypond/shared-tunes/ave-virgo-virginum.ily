@@ -5,7 +5,7 @@ meter = \smallText "AVE VIRGO VIRGINUM (GAUDEAMUS PARITER) 76.76 D"
 hymnKey = \key g \major
 hymnTime = \time 12/4
 quarternoteTempo = 140
-\include "../lib/global_parts.ily"
+\include "../lib/global-parts.ily"
 
 %% NOTES
 soprano = {

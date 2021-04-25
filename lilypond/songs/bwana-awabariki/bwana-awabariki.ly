@@ -1,6 +1,6 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ily"
+\include "../../lib/hymn-common.ily"
 
 %% TUNE INFO
 composer = \smallText "Music: Kenyan traditional"
@@ -8,7 +8,7 @@ meter = \smallText "BWANA AWABARIKI irregular"
 hymnKey = \key g \major
 hymnTime = \time 4/4
 quarternoteTempo = 80
-\include "../../lib/global_parts.ily"
+\include "../../lib/global-parts.ily"
 
 %% SONG INFO
 title = \titleText "Bwana awabariki (May God grant you a blessing)"
@@ -76,8 +76,8 @@ all_verses = <<
 %clairStaffZoom = #.9
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ily"
+\include "../../lib/all-notation-outputs.ily"
 % Slides output. Change to the correct number
-\include "../../lib/slides_book_2verse.ily"
+\include "../../lib/slides-book-2verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ily"
+\include "../../lib/midi-output.ily"

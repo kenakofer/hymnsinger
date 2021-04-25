@@ -3,7 +3,7 @@ meter = \smallText "LACQUIPARLE irregular"
 hymnKey = \key c \minor
 hymnTime = \time 2/2
 quarternoteTempo = 165
-\include "../lib/global_parts.ily"
+\include "../lib/global-parts.ily"
 
 %% NOTES
 soprano = {

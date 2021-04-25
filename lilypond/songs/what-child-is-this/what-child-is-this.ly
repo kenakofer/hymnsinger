@@ -1,6 +1,6 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ily"
+\include "../../lib/hymn-common.ily"
 
 %% TUNE INFO
 composer = \smallText "Music: traditional English melody"
@@ -10,7 +10,7 @@ hymnTime = \time 6/8
 hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/8)
 hymnBeatStructure = \set Timing.beatStructure = 3,3
 quarternoteTempo = 65
-\include "../../lib/global_parts.ily"
+\include "../../lib/global-parts.ily"
 
 %% SONG INFO
 title = \titleText "What Child is this"
@@ -77,8 +77,8 @@ verseC = \lyricmode {
 \include "../../lib/3verse.ily"
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ily"
+\include "../../lib/all-notation-outputs.ily"
 % Slides output
-\include "../../lib/slides_book_3verse.ily"
+\include "../../lib/slides-book-3verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ily"
+\include "../../lib/midi-output.ily"

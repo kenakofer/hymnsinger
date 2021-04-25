@@ -1,10 +1,10 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ily"
+\include "../../lib/hymn-common.ily"
 
 %% TUNE INFO
 %% If you have a shared tune file, use this form:
-\include "../../shared_tunes/rutherford.ily"
+\include "../../shared-tunes/rutherford.ily"
 hymnKey = \key e \major
 
 %% SONG INFO
@@ -69,8 +69,8 @@ verseD = \lyricmode {
 \include "../../lib/4verse.ily"
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ily"
+\include "../../lib/all-notation-outputs.ily"
 % Slides output. Change to the correct number
-\include "../../lib/slides_book_4verse.ily"
+\include "../../lib/slides-book-4verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ily"
+\include "../../lib/midi-output.ily"

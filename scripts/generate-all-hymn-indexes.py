@@ -263,9 +263,9 @@ if __name__ == "__main__":
     with open(file_path, 'r') as f:
         lines = f.readlines()
         for l in lines:
-            search = '\include "../../shared_tunes/'
+            search = '\include "../../shared-tunes/'
             if l.startswith(search):
-                included_path = "lilypond/shared_tunes/" + l[len(search):].strip()[:-1]
+                included_path = "lilypond/shared-tunes/" + l[len(search):].strip()[:-1]
                 include_lines = open(included_path, 'r').readlines()
                 lines = include_lines + lines
                 break

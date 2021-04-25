@@ -1,10 +1,10 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ily"
+\include "../../lib/hymn-common.ily"
 
 %% TUNE INFO
 %% If you have a shared tune file, use this form:
-\include "../../shared_tunes/be_still_and_know.ily"
+\include "../../shared-tunes/be-still-and-know.ily"
 
 %% SONG INFO
 title = \titleText "Be still and know"
@@ -35,8 +35,8 @@ all_verses = <<
 >>
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ily"
+\include "../../lib/all-notation-outputs.ily"
 % Slides output
-\include "../../lib/slides_book_1verse.ily"
+\include "../../lib/slides-book-1verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ily"
+\include "../../lib/midi-output.ily"

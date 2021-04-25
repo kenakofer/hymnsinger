@@ -4,7 +4,7 @@ meter = \smallText "LASST UNS ERFREUEN LM"
 hymnKey = \key d \major
 hymnTime = \time 3/2
 quarternoteTempo = 130
-\include "../lib/global_parts.ily"
+\include "../lib/global-parts.ily"
 
 %% NOTES
 soprano = {

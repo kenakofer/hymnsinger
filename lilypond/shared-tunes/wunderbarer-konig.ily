@@ -3,7 +3,7 @@ meter = \smallText "WUNDERBARER KÖNIG 66.86.66.86.666"
 hymnKey = \key g \major
 hymnTime = \time 2/2
 quarternoteTempo = 120
-\include "../lib/global_parts.ily"
+\include "../lib/global-parts.ily"
 
 %% NOTES
 soprano = {

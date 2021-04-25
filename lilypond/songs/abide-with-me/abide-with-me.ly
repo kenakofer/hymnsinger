@@ -1,13 +1,13 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ily"
+\include "../../lib/hymn-common.ily"
 
 composer = \smallText "Music: William H. Monk, 1861"
 meter = \smallText "EVENTIDE 10 10.10 10"
 hymnKey = \key ef \major
 hymnTime = \time 2/2
 quarternoteTempo = 110
-\include "../../lib/global_parts.ily"
+\include "../../lib/global-parts.ily"
 
 title = \titleText "Abide with me"
 poet = \smallText "Text: Henry F. Lyte, 1847"
@@ -79,8 +79,8 @@ verseD = \lyricmode {
 \include "../../lib/4verse.ily"
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ily"
+\include "../../lib/all-notation-outputs.ily"
 % Slides output
-\include "../../lib/slides_book_4verse.ily"
+\include "../../lib/slides-book-4verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ily"
+\include "../../lib/midi-output.ily"

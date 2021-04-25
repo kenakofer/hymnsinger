@@ -1,6 +1,6 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ily"
+\include "../../lib/hymn-common.ily"
 
 %% TUNE INFO
 composer = \smallText "Music: Heinrich Isaac, 1539"
@@ -8,7 +8,7 @@ meter = \smallText "O WELT, ICH MUSS DICH LASSEN 776.778"
 hymnKey = \key g \major
 hymnTime = \time 6/2
 quarternoteTempo = 140
-\include "../../lib/global_parts.ily"
+\include "../../lib/global-parts.ily"
 
 %% SONG INFO
 title = \titleText "Now all the woods are sleeping"
@@ -89,8 +89,8 @@ verseD = \lyricmode {
 \include "../../lib/4verse.ily"
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ily"
+\include "../../lib/all-notation-outputs.ily"
 % Slides output
-\include "../../lib/slides_book_4verse.ily"
+\include "../../lib/slides-book-4verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ily"
+\include "../../lib/midi-output.ily"

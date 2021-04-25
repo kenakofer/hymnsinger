@@ -1,6 +1,6 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ily"
+\include "../../lib/hymn-common.ily"
 
 %% TUNE INFO
 composer = \smallText "Music: George J. Elvey, 1858"
@@ -8,7 +8,7 @@ meter = \smallText "ST. GEORGE'S WINDSOR 77.77 D"
 hymnKey = \key g \major
 hymnTime = \time 2/2
 quarternoteTempo = 120
-\include "../../lib/global_parts.ily"
+\include "../../lib/global-parts.ily"
 
 %% SONG INFO
 title = \titleText "Come, ye thankful people"
@@ -68,8 +68,8 @@ verseB = \lyricmode {
 \include "../../lib/2verse.ily"
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ily"
+\include "../../lib/all-notation-outputs.ily"
 % Slides output
-\include "../../lib/slides_book_2verse.ily"
+\include "../../lib/slides-book-2verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ily"
+\include "../../lib/midi-output.ily"

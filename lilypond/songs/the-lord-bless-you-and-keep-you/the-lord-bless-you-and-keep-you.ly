@@ -1,6 +1,6 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ily"
+\include "../../lib/hymn-common.ily"
 
 %% TUNE INFO
 composer = \smallText "Music: Peter C. Lutkin, 1900"
@@ -9,7 +9,7 @@ meter = \smallText "FAREWELL ANTHEM irregular"
 hymnKey = \key c \major
 hymnTime = \time 4/4
 quarternoteTempo = 85
-\include "../../lib/global_parts.ily"
+\include "../../lib/global-parts.ily"
 
 %% SONG INFO
 title = \titleText "The Lord bless you and keep you"
@@ -124,8 +124,8 @@ bottom_verses = <<
 
 %% All sheet music outputs
 clairStaffZoom = #1
-\include "../../lib/all_notation_outputs.ily"
+\include "../../lib/all-notation-outputs.ily"
 % Slides output
-\include "../../lib/slides_book_1verse.ily"
+\include "../../lib/slides-book-1verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ily"
+\include "../../lib/midi-output.ily"

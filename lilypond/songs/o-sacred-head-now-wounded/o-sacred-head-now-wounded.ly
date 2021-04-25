@@ -1,6 +1,6 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ily"
+\include "../../lib/hymn-common.ily"
 
 %% TUNE INFO
 composer = \smallText "Music: Hans L. Hassler, 1601"
@@ -9,7 +9,7 @@ meter = \smallText "HERZLICH TUT MICH VERLANGEN 76.76 D"
 hymnKey = \key d \major
 hymnTime = \time 4/4
 quarternoteTempo = 100
-\include "../../lib/global_parts.ily"
+\include "../../lib/global-parts.ily"
 
 %% SONG INFO
 title = \titleText "O sacred Head, now wounded"
@@ -98,8 +98,8 @@ verseD = \lyricmode {
 
 %% All sheet music outputs
 clairStaffZoom = #.9
-\include "../../lib/all_notation_outputs.ily"
+\include "../../lib/all-notation-outputs.ily"
 % Slides output
-\include "../../lib/slides_book_4verse.ily"
+\include "../../lib/slides-book-4verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ily"
+\include "../../lib/midi-output.ily"

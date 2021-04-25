@@ -1,6 +1,6 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ily"
+\include "../../lib/hymn-common.ily"
 
 %% TUNE INFO
 composer = \smallText "Music: William M. Runyan, 1923"
@@ -8,7 +8,7 @@ meter = \smallText "FAITHFULNESS 11 10.11 10 with refrain"
 hymnKey = \key ef \major
 hymnTime = \time 3/4
 quarternoteTempo = 120
-\include "../../lib/global_parts.ily"
+\include "../../lib/global-parts.ily"
 
 %% SONG INFO
 title = \titleText "Great is thy faithfulness"
@@ -115,8 +115,8 @@ verseC = \lyricmode {
 \include "../../lib/3verse.ily"
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ily"
+\include "../../lib/all-notation-outputs.ily"
 % Slides output
-\include "../../lib/slides_book_3verse.ily"
+\include "../../lib/slides-book-3verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ily"
+\include "../../lib/midi-output.ily"

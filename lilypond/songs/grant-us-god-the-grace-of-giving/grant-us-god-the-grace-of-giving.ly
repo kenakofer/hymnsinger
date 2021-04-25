@@ -1,9 +1,9 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ily"
+\include "../../lib/hymn-common.ily"
 
 %% TUNE INFO
-\include "../../shared_tunes/stuttgart.ily"
+\include "../../shared-tunes/stuttgart.ily"
 
 %% SONG INFO
 title = \titleText "Grant us, God, the grace of giving"
@@ -25,8 +25,8 @@ verseA = \tag #'verseA \lyricmode {
 \include "../../lib/1verse.ily"
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ily"
+\include "../../lib/all-notation-outputs.ily"
 % Slides output
-\include "../../lib/slides_book_1verse.ily"
+\include "../../lib/slides-book-1verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ily"
+\include "../../lib/midi-output.ily"

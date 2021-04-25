@@ -1,9 +1,9 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ily"
+\include "../../lib/hymn-common.ily"
 
 %% TUNE INFO
-\include "../../shared_tunes/ave_virgo_virginum.ily"
+\include "../../shared-tunes/ave-virgo-virginum.ily"
 soprano = \transpose g f \soprano
 alto = \transpose g f \alto
 tenor = \transpose g f \tenor
@@ -58,8 +58,8 @@ verseC = \lyricmode {
 
 %% All sheet music outputs
 shapeStaffZoom = #1.1
-\include "../../lib/all_notation_outputs.ily"
+\include "../../lib/all-notation-outputs.ily"
 % Slides output
-\include "../../lib/slides_book_3verse.ily"
+\include "../../lib/slides-book-3verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ily"
+\include "../../lib/midi-output.ily"

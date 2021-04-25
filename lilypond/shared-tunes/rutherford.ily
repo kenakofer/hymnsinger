@@ -3,7 +3,7 @@ meter = \smallText "RUTHERFORD 76.76.76.75"
 hymnKey = \key f \major
 hymnTime = \time 2/2
 quarternoteTempo = 96
-\include "../lib/global_parts.ily"
+\include "../lib/global-parts.ily"
 
 %% NOTES
 soprano = {

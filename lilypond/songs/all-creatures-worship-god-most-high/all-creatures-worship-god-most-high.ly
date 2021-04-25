@@ -1,9 +1,9 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ily"
+\include "../../lib/hymn-common.ily"
 
 %% TUNE INFO
-\include "../../shared_tunes/lasst_uns_erfreuen.ily"
+\include "../../shared-tunes/lasst-uns-erfreuen.ily"
 
 %% SONG INFO
 title = \titleText "All creatures worship God most high"
@@ -145,8 +145,8 @@ verseG = \lyricmode {
 %% All sheet music outputs
 clairStaffZoom = #.9
 tradStaffZoom = #.98
-\include "../../lib/all_notation_outputs.ily"
+\include "../../lib/all-notation-outputs.ily"
 % Slides output
-\include "../../lib/slides_book_7verse.ily"
+\include "../../lib/slides-book-7verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ily"
+\include "../../lib/midi-output.ily"

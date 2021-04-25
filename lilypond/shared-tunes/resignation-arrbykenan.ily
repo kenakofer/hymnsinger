@@ -4,7 +4,7 @@ meter = \smallText "RESIGNATION CMD"
 hymnKey = \key c \major
 hymnTime = \time 3/4
 quarternoteTempo = 100
-\include "../lib/global_parts.ily"
+\include "../lib/global-parts.ily"
 
 %% NOTES
 soprano = {

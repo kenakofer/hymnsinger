@@ -1,6 +1,6 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ily"
+\include "../../lib/hymn-common.ily"
 
 %% TUNE INFO
 composer = \smallText "Music: Lewis H. Redner, 1874"
@@ -8,7 +8,7 @@ meter = \smallText "ST. LOUIS 86.86.76.86"
 hymnKey = \key f \major
 hymnTime = \time 4/4
 quarternoteTempo = 110
-\include "../../lib/global_parts.ily"
+\include "../../lib/global-parts.ily"
 
 %% SONG INFO
 title = \titleText "O little town of Bethlehem"
@@ -81,8 +81,8 @@ verseD = \lyricmode {
 \include "../../lib/4verse.ily"
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ily"
+\include "../../lib/all-notation-outputs.ily"
 % Slides output
-\include "../../lib/slides_book_4verse.ily"
+\include "../../lib/slides-book-4verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ily"
+\include "../../lib/midi-output.ily"

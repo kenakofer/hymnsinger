@@ -1,7 +1,7 @@
 \language "english"
 \include "clairnote.ily"
-\include "left_align_lyrics.ily"
-\include "global_chord_symbols.ily"
+\include "left-align-lyrics.ily"
+\include "global-chord-symbols.ily"
 #(ly:set-option 'midi-extension "midi")
 
 pa = \partcombineApart

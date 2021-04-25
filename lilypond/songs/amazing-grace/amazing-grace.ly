@@ -1,9 +1,9 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ily"
+\include "../../lib/hymn-common.ily"
 
 %% TUNE INFO
-\include "../../shared_tunes/amazing_grace.ily"
+\include "../../shared-tunes/amazing-grace.ily"
 
 %% SONG INFO
 title = \titleText "Amazing grace"
@@ -44,8 +44,8 @@ verseF = \lyricmode {
 \include "../../lib/6verse.ily"
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ily"
+\include "../../lib/all-notation-outputs.ily"
 % Slides output
-\include "../../lib/slides_book_6verse.ily"
+\include "../../lib/slides-book-6verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ily"
+\include "../../lib/midi-output.ily"

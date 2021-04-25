@@ -2,7 +2,7 @@ composer = \smallText "Music: North American Traditional"
 meter = \smallText "RESIGNATION CMD"
 hymnKey = \key c \major
 hymnTime = \time 3/4
-\include "../lib/global_parts.ily"
+\include "../lib/global-parts.ily"
 
 %% NOTES
 soprano = {

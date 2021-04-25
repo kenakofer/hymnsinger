@@ -1,9 +1,9 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ily"
+\include "../../lib/hymn-common.ily"
 
 %% TUNE INFO
-\include "../../shared_tunes/deo_gracias_arrbykenan.ily"
+\include "../../shared-tunes/deo-gracias-arrbykenan.ily"
 
 %% SONG INFO
 title = \titleText "O love, how deep, how broad"
@@ -40,8 +40,8 @@ verseE = \lyricmode {
 \include "../../lib/5verse.ily"
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ily"
+\include "../../lib/all-notation-outputs.ily"
 % Slides output
-\include "../../lib/slides_book_5verse.ily"
+\include "../../lib/slides-book-5verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ily"
+\include "../../lib/midi-output.ily"

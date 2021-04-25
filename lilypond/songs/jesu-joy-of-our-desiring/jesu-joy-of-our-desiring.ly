@@ -1,6 +1,6 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ily"
+\include "../../lib/hymn-common.ily"
 
 %% TUNE INFO
 composer = \smallText "Music: Johann Schopp, 1642, harm. J. S. Bach, 1716"
@@ -8,7 +8,7 @@ meter = \smallText "WERDE MUNTER 87.87.88.77"
 hymnKey = \key g \major
 hymnTime = \time 3/4
 quarternoteTempo = 100
-\include "../../lib/global_parts.ily"
+\include "../../lib/global-parts.ily"
 
 %% SONG INFO
 title = \titleText "Jesu, joy of our desiring"
@@ -68,8 +68,8 @@ verseB = \lyricmode {
 \include "../../lib/2verse.ily"
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ily"
+\include "../../lib/all-notation-outputs.ily"
 % Slides output
-\include "../../lib/slides_book_2verse.ily"
+\include "../../lib/slides-book-2verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ily"
+\include "../../lib/midi-output.ily"

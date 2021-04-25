@@ -1,5 +1,5 @@
 \book {
-  \include "slides_book_common.ily"
+  \include "slides-book-common.ily"
   \bookpart {
     \score {
       \scoreWithVerse #'(verseA printonly)

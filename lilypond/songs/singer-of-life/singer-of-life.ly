@@ -1,9 +1,9 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ily"
+\include "../../lib/hymn-common.ily"
 
 %% TUNE INFO
-\include "../../shared_tunes/lacquiparle_melody.ily"
+\include "../../shared-tunes/lacquiparle-melody.ily"
 
 %% SONG INFO
 title = \titleText "Singer of Life"
@@ -30,8 +30,8 @@ verseB = \lyricmode {
 \include "../../lib/2verse.ily"
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ily"
+\include "../../lib/all-notation-outputs.ily"
 % Slides output
-\include "../../lib/slides_book_2verse.ily"
+\include "../../lib/slides-book-2verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ily"
+\include "../../lib/midi-output.ily"

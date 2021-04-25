@@ -1,6 +1,6 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ily"
+\include "../../lib/hymn-common.ily"
 
 %% TUNE INFO
 %% Otherwise set up tune info here:
@@ -12,7 +12,7 @@ hymnTime = \time 9/8
 hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/8)
 hymnBeatStructure = \set Timing.beatStructure = 3,3,3
 quarternoteTempo = 70
-\include "../../lib/global_parts.ily"
+\include "../../lib/global-parts.ily"
 
 %% SONG INFO
 title = \titleText "Child in the manger"
@@ -93,8 +93,8 @@ verseC = \lyricmode {
 \include "../../lib/3verse.ily"
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ily"
+\include "../../lib/all-notation-outputs.ily"
 % Slides output. Change to the correct number
-\include "../../lib/slides_book_3verse.ily"
+\include "../../lib/slides-book-3verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ily"
+\include "../../lib/midi-output.ily"

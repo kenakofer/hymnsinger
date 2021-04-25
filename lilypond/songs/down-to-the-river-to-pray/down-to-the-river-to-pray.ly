@@ -1,6 +1,6 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ily"
+\include "../../lib/hymn-common.ily"
 
 %% TUNE INFO
 composer = \smallText "Music: African American Spiritual"
@@ -8,7 +8,7 @@ meter = \smallText "AS I WENT DOWN TO THE RIVER TO PRAY irregular"
 hymnKey = \key f \major
 hymnTime = \time 2/2
 quarternoteTempo = 130
-\include "../../lib/global_parts.ily"
+\include "../../lib/global-parts.ily"
 
 %% SONG INFO
 title = \titleText "As I went down to the river to pray"
@@ -103,8 +103,8 @@ extra_verses = \markup {
 
 %% All sheet music outputs
 clairStaffZoom = #.9
-\include "../../lib/all_notation_outputs.ily"
+\include "../../lib/all-notation-outputs.ily"
 % Slides output
-\include "../../lib/slides_book_1verse.ily"
+\include "../../lib/slides-book-1verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ily"
+\include "../../lib/midi-output.ily"

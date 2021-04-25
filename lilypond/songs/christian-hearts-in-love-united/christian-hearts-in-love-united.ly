@@ -1,6 +1,6 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ily"
+\include "../../lib/hymn-common.ily"
 
 %% TUNE INFO
 composer = \smallText "Music: Johann Thommen, 1735"
@@ -8,7 +8,7 @@ meter = \smallText "O DU LIEBE MEINER LIEBE"
 hymnKey = \key g \major
 hymnTime = \time 2/2
 quarternoteTempo = 110
-\include "../../lib/global_parts.ily"
+\include "../../lib/global-parts.ily"
 
 %% SONG INFO
 title = \titleText "Christian hearts in love united"
@@ -104,8 +104,8 @@ verseC = \lyricmode {
 %clairStaffZoom = #.9
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ily"
+\include "../../lib/all-notation-outputs.ily"
 % Slides output. Change to the correct number
-\include "../../lib/slides_book_3verse.ily"
+\include "../../lib/slides-book-3verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ily"
+\include "../../lib/midi-output.ily"

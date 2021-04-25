@@ -1,6 +1,6 @@
 \version "2.20.0"
 #(ly:set-option 'relative-includes #t)
-\include "../../lib/hymn_common.ily"
+\include "../../lib/hymn-common.ily"
 
 %% TUNE INFO
 composer = \smallText "Music: Ralph Vaughan Williams, 1911"
@@ -8,7 +8,7 @@ meter = \smallText "THE CALL 77.77"
 hymnKey = \key ef \major
 hymnTime = \time 6/4
 quarternoteTempo = 130
-\include "../../lib/global_parts.ily"
+\include "../../lib/global-parts.ily"
 
 %% SONG INFO
 title = \titleText "Come, my Way, my Truth, my Light"
@@ -76,8 +76,8 @@ verseC = \lyricmode {
 \include "../../lib/3verse.ily"
 
 %% All sheet music outputs
-\include "../../lib/all_notation_outputs.ily"
+\include "../../lib/all-notation-outputs.ily"
 % Slides output
-\include "../../lib/slides_book_3verse.ily"
+\include "../../lib/slides-book-3verse.ily"
 %% MIDI output
-\include "../../lib/midi_output.ily"
+\include "../../lib/midi-output.ily"
