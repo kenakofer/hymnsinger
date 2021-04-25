@@ -229,6 +229,10 @@ h4 {
 }
 details {
     margin-top: 10px;
+
+    border-radius: 4px;
+    padding: 2px 6px;
+    border-top: 2px solid #711;
 }
 details summary {
     color: #f7f7ee;
@@ -381,9 +385,9 @@ header ul {
 }
 @media print, screen and (max-width: 960px) {
     header {
-    max-width: 400px;
-    padding-right: 34px;
-    padding-bottom: 22px;
+        max-width: 400px;
+        padding-right: 34px;
+        padding-bottom: 22px;
     }
     #song-info table {
         table-layout: fixed;
@@ -409,6 +413,11 @@ header ul {
     .wrapper {
         width: 100%;
         max-width: 1190px;
+    }
+    header {
+        padding: 10px 25px 10px 40px;
+        max-height: 80vh;
+        overflow-y: scroll;
     }
 }
 

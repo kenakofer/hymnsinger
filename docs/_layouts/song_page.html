@@ -164,24 +164,29 @@
         </details>
 
         {% if site.data.songs[page.song_file].songs_with_same_tune[0] %}
-        <h4>Alternate words</h4>
-        <div class='same-tune-box'>
-          {% for other in site.data.songs[page.song_file].songs_with_same_tune %}
-            {% if other.i %}
-              <span class="internal"><a href="{{ site.baseurl }}/listing/{{ other.i }}.html">{{ other.s }}</a></span>
-            {% elsif other.e %}
-              <span class="external"><a class="external" target="_blank" href="{{ other.e }}">{{ other.s }}</a></span>
-            {% else %}
-              <span class="nolink">{{ other.s }}</span>
-            {% endif %}
-          {% endfor %}
-        </div>
+        <details open=true>
+          <summary>Alternate words</summary>
+          <div class='same-tune-box'>
+            {% for other in site.data.songs[page.song_file].songs_with_same_tune %}
+              {% if other.i %}
+                <span class="internal"><a href="{{ site.baseurl }}/listing/{{ other.i }}.html">{{ other.s }}</a></span>
+              {% elsif other.e %}
+                <span class="external"><a class="external" target="_blank" href="{{ other.e }}">{{ other.s }}</a></span>
+              {% else %}
+                <span class="nolink">{{ other.s }}</span>
+              {% endif %}
+            {% endfor %}
+          </div>
+        </details>
+
         {% endif %}
 
-        <h4>Tags</h4>
-        {% for tag in site.data.songs[page.song_file].tags %}
-          <a class="taglink large" href="{{ site.baseurl }}/hymn-index.html?s={{ tag }}">{{ tag }}</a>
-        {% endfor %}
+        <details open=true>
+          <summary>Tags</summary>
+          {% for tag in site.data.songs[page.song_file].tags %}
+            <a class="taglink large" href="{{ site.baseurl }}/hymn-index.html?s={{ tag }}">{{ tag }}</a>
+          {% endfor %}
+        </details>
 
       </header>
 
