@@ -1,6 +1,6 @@
 #!/bin/bash
 
-INPUT="lilypond/hymn_template/hymn_template.ly"
+INPUT="lilypond/hymn-template/hymn-template.ly"
 NEW_BASE=$1
 mkdir -p "lilypond/songs/$NEW_BASE"
 OUTPUT="lilypond/songs/$NEW_BASE/$NEW_BASE.ly"

@@ -13,5 +13,5 @@ find lilypond/songs -type f -iname "*.ly" -print0 | sort -z | while IFS= read -r
     cp $INPUT $OUTPUT
 
     # Add to every relevant index
-    $SCRIPT_DIR/generate_all_hymn_indexes.py $file
+    $SCRIPT_DIR/generate-all-hymn-indexes.py $file
 done

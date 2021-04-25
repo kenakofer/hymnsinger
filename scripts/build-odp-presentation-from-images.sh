@@ -2,9 +2,9 @@
 
 ## Create the odp presentation
 BASE=$1
-OUTPUT_DIR="docs/local_lilypond_outputs/"
-SKELETON_DIR="scripts/odp_skeleton"
-TEMP_DIR="/tmp/lilypond_odp_build"
+OUTPUT_DIR="docs/local-lilypond-outputs/"
+SKELETON_DIR="scripts/odp-skeleton"
+TEMP_DIR="/tmp/lilypond-odp-build"
 PICTURES_DIR="$TEMP_DIR/Pictures"
 
 MANIFEST_ENTRY_TEMPLATE='<manifest:file-entry manifest:full-path="FILE_NAME" manifest:media-type="image/png"/>'

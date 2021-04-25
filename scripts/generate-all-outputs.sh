@@ -3,7 +3,7 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 find ./lilypond/songs -type f -iname "*.ly" -print0 | sort -z | while IFS= read -r -d $'\0' file; do
     BASE=`basename "${file%.*}"` # This only strips the final ly, not any earlier "extension"
-    OUTPUT_DIR="docs/local_lilypond_outputs/"
+    OUTPUT_DIR="docs/local-lilypond-outputs/"
     INPUT=$file
     midi-output="$OUTPUT_DIR$BASE.midi"
     MP3_OUTPUT="$OUTPUT_DIR$BASE.mp3"
@@ -36,7 +36,7 @@ find ./lilypond/songs -type f -iname "*.ly" -print0 | sort -z | while IFS= read 
         # We use 3 colors instead of 2 for slides since the image is smaller
         echo "     --> (Building ODP)"
         mogrify -colorspace gray +dither -posterize 3 "$OUTPUT_DIR$BASE-slides*.png"
-        $SCRIPT_DIR/build_odp_presentation_from_images.sh "$BASE"
+        $SCRIPT_DIR/build-odp-presentation-from-images.sh "$BASE"
 
 
         echo "     --> (Midi to MP3)"
