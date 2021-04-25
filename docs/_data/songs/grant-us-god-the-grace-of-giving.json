@@ -20,12 +20,12 @@
   "songs_with_same_tune": [
     {
       "t": "STUTTGART",
-      "s": "May we each take joy in giving",
-      "i": "may_we_each_take_joy_in_giving"
+      "s": "Come, thou long-expected Jesus"
     },
     {
       "t": "STUTTGART",
-      "s": "Come, thou long-expected Jesus"
+      "s": "May we each take joy in giving",
+      "i": "may-we-each-take-joy-in-giving"
     }
   ]
 }

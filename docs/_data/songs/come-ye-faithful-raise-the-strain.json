@@ -21,12 +21,12 @@
   "songs_with_same_tune": [
     {
       "t": "AVE VIRGO VIRGINUM (GAUDEAMUS PARITER)",
-      "s": "We are people of God's peace",
-      "i": "we_are_people_of_gods_peace"
+      "s": "When the King shall come again"
     },
     {
       "t": "AVE VIRGO VIRGINUM (GAUDEAMUS PARITER)",
-      "s": "When the King shall come again"
+      "s": "We are people of God's peace",
+      "i": "we-are-people-of-gods-peace"
     }
   ]
 }
