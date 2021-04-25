@@ -1,9 +1,9 @@
 ---
-layout: song_page
+layout: song-page
 song_file: all-praise-to-thee-my-god
 title: "All praise to thee, my God"
 description: "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: All praise to thee, my God, this night, for all the blessings of the light. Keep me, O keep me, King of kings, beneath thine own almighty wings.  Forg... english christian 4part evening"
 image: https://github.com/kenanbit/hymnsinger/releases/latest/download/all-praise-to-thee-my-god-trad.png
 ---
 
-{% include choice_and_music.html %}
+{% include choice-and-music.html %}

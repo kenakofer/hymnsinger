@@ -218,7 +218,7 @@ def output_header_info(song_file_base, song_title, lyrics, tags, output_file):
         f.write("\n")
         f.write("---")
         f.write("\n\n")
-        f.write("{% include choice_and_music.html %}")
+        f.write("{% include choice-and-music.html %}")
 
 
 def get_songs_with_same_tune(tune, song_title):

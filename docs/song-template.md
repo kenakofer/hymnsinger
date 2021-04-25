@@ -1,2 +1,2 @@
 ---
-layout: song_page
+layout: song-page

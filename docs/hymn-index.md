@@ -4,7 +4,7 @@ description: A complete searchable list of every song, hymn, or musical work pro
 layout: default
 ---
 
-{% include data_table.html %}
+{% include data-table.html %}
 
 # Complete Index
 
