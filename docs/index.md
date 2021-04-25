@@ -16,13 +16,13 @@ Check out the [Full Index of songs]({{ site.baseurl }}/hymn-index.html).
 
 ### How it's done
 
-We "typeset" songs using [Lilypond](http://lilypond.org/). Lilypond turns a musical code file into various output files which are used on the site. For example, after 15 minutes adding this [one file](https://github.com/kenanbit/hymn-singer/blob/main/lilypond/songs/joyful_joyful/joyful_joyful.ly) describing "Joyful, joyful, we adore thee" to the mix, we get:
+We "typeset" songs using [Lilypond](http://lilypond.org/). Lilypond turns a musical code file into various output files which are used on the site. For example, after 15 minutes adding this [one file](https://github.com/kenanbit/hymn-singer/blob/main/lilypond/songs/joyful-joyful/joyful-joyful.ly) describing "Joyful, joyful, we adore thee" to the mix, we get:
  - 4 PDFs
  - 3 PNGs
  - 1 MIDI
  - 1 MP3
  - 1 _beautifully formatted, verse-by-verse slideshow presentation_
- - 1 [sleek webpage here]({{ site.baseurl }}{% link listing/joyful_joyful.md %}) on the site to display, play, and download.
+ - 1 [sleek webpage here]({{ site.baseurl }}{% link listing/joyful-joyful.md %}) on the site to display, play, and download.
 
 Check out the [Getting Started]({{ site.baseurl }}{% link contributing.md %}) guide to learn the ropes yourself. (We are always open to having more contributors!)
 
