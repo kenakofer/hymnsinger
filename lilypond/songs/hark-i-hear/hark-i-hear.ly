@@ -11,7 +11,7 @@ title = \titleText "Hark, I hear the harps eternal"
 poet = \smallText "Text: F. R. Warren"
 typesetter = "Kenan Schaefkofer"
 verseCount = 3
-tags = "english christian 4part"
+tags = "english christian 3part"
 dateAdded = "2021-04-26"
 \include "../../lib/header.ily"
 
