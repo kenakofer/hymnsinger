@@ -1,0 +1,27 @@
+{
+  "song_file": "hark-i-hear",
+  "title": "Hark, I hear the harps eternal",
+  "tune": "INVITATION NEW",
+  "meter": "87.87.87.87",
+  "stanza_count": "3",
+  "composer": "Southern Harmony, 1854, alt.;\narr. Kenan Schaefkofer, 2021",
+  "poet": "F. R. Warren",
+  "key": "E major",
+  "date_added": "2021/04/26",
+  "tags": [
+    "english",
+    "christian",
+    "4part",
+    "chords"
+  ],
+  "lyrics": "Hark, I hear the harps eternal\nringing on the farther shore\nas I near those swollen waters\nwith their deep and solemn roar.\n\n  Halle lujah, hallelujah,\n  Halle lujah, praise the lamb!\n  Halle lujah, hallelujah,\n  Glory to the great I Am!\n\nAnd my soul, though stain'd with sorrow\nfading as the light of day\npasses swiftly o'er those waters\nto the city far away.\n\n  Halle lujah, hallelujah,\n  Halle lujah, praise the lamb!\n  Halle lujah, hallelujah,\n  Glory to the great I Am!\n\nSouls have cross'd before me, saintly,\nto that land of perfect rest,\nand I hear them singing faintly\nin the mansions of the blest.\n\n  Halle lujah, hallelujah,\n  Halle lujah, praise the lamb!\n  Halle lujah, hallelujah,\n  Glory to the great I Am!\n",
+  "image": "https://github.com/kenanbit/hymnsinger/releases/latest/download/hark-i-hear-trad.png",
+  "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: Hark, I hear the harps eternal ringing on the farther shore as I near those swollen waters with their deep and solemn roar.    Halle lujah, hallelujah... english christian 4part chords",
+  "songs_with_same_tune": [
+    {
+      "t": "INVITATION NEW",
+      "s": "Come, ye sinners, poor and wretched",
+      "i": "come-ye-sinners"
+    }
+  ]
+}
