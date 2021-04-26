@@ -65,9 +65,9 @@ spacingVerse = \lyricmode {
 % Set up music-aligned verses. Change to the correct number
 all_verses = <<
   \new NullVoice = "soprano" \soprano
-  \tag #'verseA { \new Lyrics  \lyricsto soprano  { \globalLyrics "" "" \verseA } }
-  \tag #'verseB { \new Lyrics  \lyricsto soprano  { \globalLyrics "" "" \verseB } }
-  \tag #'verseC { \new Lyrics  \lyricsto soprano  { \globalLyrics "" "" \verseC } }
+  \tag #'verseA { \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "" \verseA } }
+  \tag #'verseB { \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "" \verseB } }
+  \tag #'verseC { \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "" \verseC } }
   \new Lyrics  \lyricsto soprano  { \globalLyrics "" "" \spacingVerse }
 >>
 
