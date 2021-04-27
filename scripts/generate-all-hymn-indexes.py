@@ -57,6 +57,19 @@ def get_key(all_lines):
             key_string = line.strip()
     return key_string
 
+
+def get_exclude_from_index(all_lines):
+    search_for_true = "exclude_from_index=##t"
+    search_for_false = "exclude_from_index=##f"
+    exclude_from_index = False
+    for line in all_lines:
+        line = line.replace(" ", "")
+        if line.startswith(search_for_true):
+            exclude_from_index = True
+        elif line.startswith(search_for_false):
+            exclude_from_index = False
+    return exclude_from_index
+
 def get_title(all_lines):
     for line in all_lines:
         search_for = "\\titleText"
@@ -206,7 +219,7 @@ def get_description(lyrics, tags):
 def get_image(song_file_base):
     return "https://github.com/kenanbit/hymnsinger/releases/latest/download/"+song_file_base+"-trad.png"
 
-def output_header_info(song_file_base, song_title, lyrics, tags, output_file):
+def output_header_info(song_file_base, exclude_from_index, song_title, lyrics, tags, output_file):
     with open(output_file, 'a') as f:
         f.write("song_file: "+song_file_base)
         f.write("\n")
@@ -216,6 +229,9 @@ def output_header_info(song_file_base, song_title, lyrics, tags, output_file):
         f.write("\n")
         f.write("image: "+get_image(song_file_base))
         f.write("\n")
+        if exclude_from_index:
+            f.write("exclude_from_index: true")
+            f.write("\n")
         f.write("---")
         f.write("\n\n")
         f.write("{% include choice-and-music.html %}")
@@ -272,6 +288,7 @@ if __name__ == "__main__":
         tune, meter = get_tune_and_meter(lines)
         song_data = {
             "song_file": song_file_base,
+            "exclude_from_index": get_exclude_from_index(lines),
             "title": get_title(lines),
             "tune": tune,
             "meter": meter,
@@ -290,5 +307,5 @@ if __name__ == "__main__":
         song_data["songs_with_same_tune"] = get_songs_with_same_tune(song_data["tune"], song_data["title"])
 
         song_markdown_file = "docs/listing/"+song_file_base+".md"
-        output_header_info(song_data['song_file'], song_data['title'], song_data['lyrics'], song_data['tags'], song_markdown_file)
+        output_header_info(song_data['song_file'], song_data['exclude_from_index'], song_data['title'], song_data['lyrics'], song_data['tags'], song_markdown_file)
         add_song_json(song_data)

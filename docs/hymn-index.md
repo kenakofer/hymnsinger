@@ -38,6 +38,7 @@ Toggle:
 </thead>
 {% for song_hash in site.data.songs %}
 {% assign song = song_hash[1] %}
+{% unless song.exclude_from_index == true %}
 <tr>
   <td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/{{ song.song_file }}.html">{{ song.title }}</a></td>
   <td class='tune-box'>{{ song.tune }}</td>
@@ -65,5 +66,6 @@ Toggle:
   </div></td>
   <td class='date-added-box'>{{ song.date_added }}</td>
 </tr>
+{% endunless %}
 {% endfor %}
 </table>
