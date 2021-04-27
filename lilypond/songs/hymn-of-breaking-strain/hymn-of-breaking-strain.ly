@@ -9,7 +9,7 @@
 %% 2030 when it will be PD
 
 %% Exclude from the main listing and Google while I'm getting it ready
-exclude_from_index = "true"
+exclude_from_index = ##t
 
 %% TUNE INFO
 composer = \smallText "Music: Leslie Fish, 1983"
