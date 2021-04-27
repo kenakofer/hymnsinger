@@ -142,7 +142,8 @@ verseD = \lyricmode {
   take shame in be -- ing bro -- ken,
   \hideVerseNumberAtLineStart
   how -- ev -- er great the odds.
-  Oh __ the bur -- den of the Odds.
+  \SD { Oh __ } \SO { _ }
+  the bur -- den of the Odds.
 }
 verseE = \lyricmode {
   Oh, veil -- ed, se -- cret Pow -- er,
@@ -158,14 +159,27 @@ verseE = \lyricmode {
   stand up and build a -- new.
 }
 
+bassOh = \lyricmode {
+  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  \SO {
+    \override LyricText.extra-offset = #'(0 . 5.5)
+    \override LyricHyphen.extra-offset = #'(0 . 5.5)
+    \override LyricExtender.extra-offset = #'(0 . 5.5)
+  }
+  Oh __
+}
+
 all_verses = <<
   \new NullVoice = "soprano" {\removeWithTag #'midionly \soprano}
   \new NullVoice = "bass" {\removeWithTag #'midionly \bass}
   \tag #'verseA { \new Lyrics  \lyricsto soprano  { \globalLyrics "1" "1" \verseA } }
   \tag #'verseB { \new Lyrics  \lyricsto soprano  { \globalLyrics "2" "2" \verseB } }
   \tag #'verseC { \new Lyrics  \lyricsto soprano  { \globalLyrics "3" "3" \verseC } }
-  \tag #'verseD { \new Lyrics  \lyricsto bass  { \globalLyrics "4" "4" \verseD } }
+  \tag #'verseD { \new Lyrics  \lyricsto soprano  { \globalLyrics "4" "4" \verseD } }
   \tag #'verseE { \new Lyrics  \lyricsto soprano  { \globalLyrics "5" "5" \verseE } }
+  \new Lyrics \lyricsto bass { \globalLyrics "" "" \bassOh }
 >>
 
 %% MIDI output
