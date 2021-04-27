@@ -1,5 +1,6 @@
 {
   "song_file": "no-matter-if-you-live",
+  "exclude_from_index": false,
   "title": "No matter if you live now far or near",
   "tune": "INDIA",
   "meter": "10.10.10.10",

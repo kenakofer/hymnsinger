@@ -1,5 +1,6 @@
 {
   "song_file": "once-in-royal-davids-city",
+  "exclude_from_index": false,
   "title": "Once in royal David's city",
   "tune": "IRBY",
   "meter": "87.87.77",

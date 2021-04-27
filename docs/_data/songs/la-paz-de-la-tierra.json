@@ -1,5 +1,6 @@
 {
   "song_file": "la-paz-de-la-tierra",
+  "exclude_from_index": false,
   "title": "La paz de la tierra (The peace of the earth)",
   "tune": "LA PAZ DE LA TIERRA",
   "meter": "87.97.76",

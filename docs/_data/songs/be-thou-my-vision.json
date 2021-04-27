@@ -1,5 +1,6 @@
 {
   "song_file": "be-thou-my-vision",
+  "exclude_from_index": false,
   "title": "Be thou my vision",
   "tune": "SLANE",
   "meter": "10.10.9.10",

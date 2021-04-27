@@ -1,5 +1,6 @@
 {
   "song_file": "come-ye-sinners",
+  "exclude_from_index": false,
   "title": "Come, ye sinners, poor and wretched",
   "tune": "INVITATION NEW",
   "meter": "87.87.87.87",

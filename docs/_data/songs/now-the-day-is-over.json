@@ -1,5 +1,6 @@
 {
   "song_file": "now-the-day-is-over",
+  "exclude_from_index": false,
   "title": "Now the day is over",
   "tune": "WEM IN LEIDENSTAGEN",
   "meter": "65.65",

@@ -1,5 +1,6 @@
 {
   "song_file": "in-our-day-of-thanksgiving",
+  "exclude_from_index": false,
   "title": "In our day of thanksgiving",
   "tune": "ST. CATHERINE'S COURT",
   "meter": "13.12.13.11",

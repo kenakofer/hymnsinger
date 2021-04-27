@@ -1,5 +1,6 @@
 {
   "song_file": "let-there-be-light",
+  "exclude_from_index": false,
   "title": "Let there be light",
   "tune": "MISSIONARY CHANT",
   "meter": "LM",

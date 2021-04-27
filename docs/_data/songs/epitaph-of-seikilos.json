@@ -1,5 +1,6 @@
 {
   "song_file": "epitaph-of-seikilos",
+  "exclude_from_index": false,
   "title": "Epitaph of Seikilos",
   "tune": "EPITAPH OF SEIKILOS",
   "meter": "irregular",

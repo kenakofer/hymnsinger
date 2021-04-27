@@ -1,5 +1,6 @@
 {
   "song_file": "o-the-deep-deep-love",
+  "exclude_from_index": false,
   "title": "O the deep, deep love of Jesus",
   "tune": "EBENEZER",
   "meter": "87.87.87.87",

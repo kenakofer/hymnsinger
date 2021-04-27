@@ -1,5 +1,6 @@
 {
   "song_file": "o-come-o-come-immanuel",
+  "exclude_from_index": false,
   "title": "O come, O come, Immanuel",
   "tune": "VENI EMMANUEL",
   "meter": "LM with refrain",

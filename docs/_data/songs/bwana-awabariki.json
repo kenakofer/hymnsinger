@@ -1,5 +1,6 @@
 {
   "song_file": "bwana-awabariki",
+  "exclude_from_index": false,
   "title": "Bwana awabariki (May God grant you a blessing)",
   "tune": "BWANA AWABARIKI",
   "meter": "irregular",

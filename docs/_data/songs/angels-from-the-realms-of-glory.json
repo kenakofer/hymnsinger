@@ -1,5 +1,6 @@
 {
   "song_file": "angels-from-the-realms-of-glory",
+  "exclude_from_index": false,
   "title": "Angels, from the realms of glory",
   "tune": "REGENT SQUARE",
   "meter": "87.87",

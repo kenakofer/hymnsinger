@@ -1,5 +1,6 @@
 {
   "song_file": "now-is-the-time-approaching",
+  "exclude_from_index": false,
   "title": "Now is the time approaching",
   "tune": "WEBB",
   "meter": "76.76",

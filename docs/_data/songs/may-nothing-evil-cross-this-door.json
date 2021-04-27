@@ -1,5 +1,6 @@
 {
   "song_file": "may-nothing-evil-cross-this-door",
+  "exclude_from_index": false,
   "title": "May nothing evil cross this door",
   "tune": "OLDBRIDGE",
   "meter": "88.84",

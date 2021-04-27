@@ -1,5 +1,6 @@
 {
   "song_file": "we-shall-overcome",
+  "exclude_from_index": false,
   "title": "We shall overcome",
   "tune": "WE SHALL OVERCOME",
   "meter": "irregular",

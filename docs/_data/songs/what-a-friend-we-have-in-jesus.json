@@ -1,5 +1,6 @@
 {
   "song_file": "what-a-friend-we-have-in-jesus",
+  "exclude_from_index": false,
   "title": "What a friend we have in Jesus",
   "tune": "CONVERSE",
   "meter": "87.87 D",

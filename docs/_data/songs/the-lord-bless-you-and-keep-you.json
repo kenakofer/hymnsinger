@@ -1,5 +1,6 @@
 {
   "song_file": "the-lord-bless-you-and-keep-you",
+  "exclude_from_index": false,
   "title": "The Lord bless you and keep you",
   "tune": "FAREWELL ANTHEM",
   "meter": "irregular",

@@ -1,5 +1,6 @@
 {
   "song_file": "help-us-to-help-each-other-lord",
+  "exclude_from_index": false,
   "title": "Help us to help each other, Lord",
   "tune": "BALERMA",
   "meter": "CM",

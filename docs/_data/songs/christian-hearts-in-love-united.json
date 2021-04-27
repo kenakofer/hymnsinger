@@ -1,5 +1,6 @@
 {
   "song_file": "christian-hearts-in-love-united",
+  "exclude_from_index": false,
   "title": "Christian hearts in love united",
   "tune": "O DU LIEBE MEINER",
   "meter": "LIEBE",

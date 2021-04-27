@@ -1,5 +1,6 @@
 {
   "song_file": "come-ye-faithful-raise-the-strain",
+  "exclude_from_index": false,
   "title": "Come, ye faithful, raise the strain",
   "tune": "AVE VIRGO VIRGINUM (GAUDEAMUS PARITER)",
   "meter": "76.76 D",

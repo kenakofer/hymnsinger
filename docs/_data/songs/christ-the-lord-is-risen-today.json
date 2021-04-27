@@ -1,5 +1,6 @@
 {
   "song_file": "christ-the-lord-is-risen-today",
+  "exclude_from_index": false,
   "title": "Christ the Lord is risen today",
   "tune": "EASTER HYMN",
   "meter": "77.77 with alleluias",

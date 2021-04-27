@@ -1,5 +1,6 @@
 {
   "song_file": "tis-a-gift-to-be-simple",
+  "exclude_from_index": false,
   "title": "'Tis a gift to be simple",
   "tune": "SIMPLE GIFTS",
   "meter": "irregular",

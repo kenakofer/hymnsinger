@@ -1,5 +1,6 @@
 {
   "song_file": "my-shepherd-will-supply-my-need",
+  "exclude_from_index": false,
   "title": "My Shepherd will supply my need",
   "tune": "RESIGNATION",
   "meter": "CMD",

@@ -1,5 +1,6 @@
 {
   "song_file": "i-to-the-hills",
+  "exclude_from_index": false,
   "title": "I to the hills will lift my eyes",
   "tune": "DUNDEE",
   "meter": "CM",

@@ -1,5 +1,6 @@
 {
   "song_file": "calm-soul-of-all-things",
+  "exclude_from_index": false,
   "title": "Calm soul of all things",
   "tune": "TALLIS' CANON",
   "meter": "LM",

@@ -1,5 +1,6 @@
 {
   "song_file": "praise-god-old-hundredth",
+  "exclude_from_index": false,
   "title": "Praise God (Doxology)",
   "tune": "OLD HUNDREDTH",
   "meter": "LM",

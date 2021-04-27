@@ -1,5 +1,6 @@
 {
   "song_file": "come-my-way",
+  "exclude_from_index": false,
   "title": "Come, my Way, my Truth, my Light",
   "tune": "THE CALL",
   "meter": "77.77",

@@ -1,5 +1,6 @@
 {
   "song_file": "the-day-you-gave-us",
+  "exclude_from_index": false,
   "title": "The day you gave us, Lord",
   "tune": "ST. CLEMENT",
   "meter": "98.98",

@@ -1,5 +1,6 @@
 {
   "song_file": "receive-our-thanks",
+  "exclude_from_index": false,
   "title": "Receive our thanks",
   "tune": "BE STILL AND KNOW",
   "meter": "8.8.8",

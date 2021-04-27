@@ -1,5 +1,6 @@
 {
   "song_file": "christ-who-left-his-home",
+  "exclude_from_index": false,
   "title": "Christ who left his home in glory",
   "tune": "CHRIST IS RISEN",
   "meter": "87.87 with refrain",

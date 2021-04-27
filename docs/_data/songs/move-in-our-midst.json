@@ -1,5 +1,6 @@
 {
   "song_file": "move-in-our-midst",
+  "exclude_from_index": false,
   "title": "Move in our midst",
   "tune": "PINE GLEN",
   "meter": "9.9.9.9",

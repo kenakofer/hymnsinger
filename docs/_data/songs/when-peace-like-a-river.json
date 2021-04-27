@@ -1,5 +1,6 @@
 {
   "song_file": "when-peace-like-a-river",
+  "exclude_from_index": false,
   "title": "When Peace like a River",
   "tune": "VILLE DU HAVRE",
   "meter": "11.8.11.9 with refrain",

@@ -1,5 +1,6 @@
 {
   "song_file": "as-the-deer-with-eager-yearning",
+  "exclude_from_index": false,
   "title": "As the deer with eager yearning",
   "tune": "GENEVA 42 (FREU DICH SEHR)",
   "meter": "87.87.77.88",

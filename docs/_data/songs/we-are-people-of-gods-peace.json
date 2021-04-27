@@ -1,5 +1,6 @@
 {
   "song_file": "we-are-people-of-gods-peace",
+  "exclude_from_index": false,
   "title": "We are people of God's peace",
   "tune": "AVE VIRGO VIRGINUM (GAUDEAMUS PARITER)",
   "meter": "76.76 D",

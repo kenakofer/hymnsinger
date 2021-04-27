@@ -1,5 +1,6 @@
 {
   "song_file": "down-to-the-river-to-pray",
+  "exclude_from_index": false,
   "title": "As I went down to the river to pray",
   "tune": "AS I WENT DOWN TO THE RIVER TO PRAY",
   "meter": "irregular",

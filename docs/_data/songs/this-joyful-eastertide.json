@@ -1,5 +1,6 @@
 {
   "song_file": "this-joyful-eastertide",
+  "exclude_from_index": false,
   "title": "This joyful Eastertide",
   "tune": "VRUECHTEN",
   "meter": "67.67 with refrain",

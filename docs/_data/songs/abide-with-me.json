@@ -1,5 +1,6 @@
 {
   "song_file": "abide-with-me",
+  "exclude_from_index": false,
   "title": "Abide with me",
   "tune": "EVENTIDE",
   "meter": "10 10.10 10",

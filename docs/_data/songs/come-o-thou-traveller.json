@@ -1,5 +1,6 @@
 {
   "song_file": "come-o-thou-traveller",
+  "exclude_from_index": false,
   "title": "Come, O thou Traveler unknown",
   "tune": "VERNON",
   "meter": "88.88.88",

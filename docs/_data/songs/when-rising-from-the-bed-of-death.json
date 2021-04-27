@@ -1,5 +1,6 @@
 {
   "song_file": "when-rising-from-the-bed-of-death",
+  "exclude_from_index": false,
   "title": "When rising from the bed of death",
   "tune": "THIRD MODE MELODY",
   "meter": "CMD",

@@ -1,5 +1,6 @@
 {
   "song_file": "o-love-how-deep-how-broad",
+  "exclude_from_index": false,
   "title": "O love, how deep, how broad",
   "tune": "DEO GRACIAS",
   "meter": "LM",

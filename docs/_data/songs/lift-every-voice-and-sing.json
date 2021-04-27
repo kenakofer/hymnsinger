@@ -1,5 +1,6 @@
 {
   "song_file": "lift-every-voice-and-sing",
+  "exclude_from_index": false,
   "title": "Lift every voice and sing",
   "tune": "ANTHEM",
   "meter": "66 10.66 10.14 14 66 10",

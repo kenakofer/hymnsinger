@@ -1,5 +1,6 @@
 {
   "song_file": "now-on-land-and-sea",
+  "exclude_from_index": false,
   "title": "Now, on land and sea descending",
   "tune": "VESPER HYMN",
   "meter": "87.87.86.87",

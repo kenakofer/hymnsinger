@@ -1,5 +1,6 @@
 {
   "song_file": "a-mighty-fortress-is-our-god",
+  "exclude_from_index": false,
   "title": "A mighty fortress is our God",
   "tune": "EIN FESTE BURG (rhythmic)",
   "meter": "87.87.66.66.7",

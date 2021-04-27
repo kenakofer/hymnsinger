@@ -1,5 +1,6 @@
 {
   "song_file": "i-sing-the-mighty-power",
+  "exclude_from_index": false,
   "title": "I sing the mighty power of God",
   "tune": "ELLACOMBE",
   "meter": "CMD",

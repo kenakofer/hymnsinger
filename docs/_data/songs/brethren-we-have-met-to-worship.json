@@ -1,5 +1,6 @@
 {
   "song_file": "brethren-we-have-met-to-worship",
+  "exclude_from_index": false,
   "title": "Brethren, we have met to worship",
   "tune": "HOLY MANNA",
   "meter": "87.87 D",

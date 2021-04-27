@@ -1,5 +1,6 @@
 {
   "song_file": "wakantanka-many-and-great",
+  "exclude_from_index": false,
   "title": "Wakantanka (Many and Great)",
   "tune": "LACQUIPARLE",
   "meter": "irregular",

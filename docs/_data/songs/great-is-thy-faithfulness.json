@@ -1,5 +1,6 @@
 {
   "song_file": "great-is-thy-faithfulness",
+  "exclude_from_index": false,
   "title": "Great is thy faithfulness",
   "tune": "FAITHFULNESS",
   "meter": "11 10.11 10 with refrain",

@@ -1,5 +1,6 @@
 {
   "song_file": "hark-i-hear",
+  "exclude_from_index": false,
   "title": "Hark, I hear the harps eternal",
   "tune": "INVITATION NEW",
   "meter": "87.87.87.87",

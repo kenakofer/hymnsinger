@@ -1,5 +1,6 @@
 {
   "song_file": "all-praise-to-thee-my-god",
+  "exclude_from_index": false,
   "title": "All praise to thee, my God",
   "tune": "TALLIS' CANON",
   "meter": "LM",

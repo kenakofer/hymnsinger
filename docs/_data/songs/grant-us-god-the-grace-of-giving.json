@@ -1,5 +1,6 @@
 {
   "song_file": "grant-us-god-the-grace-of-giving",
+  "exclude_from_index": false,
   "title": "Grant us, God, the grace of giving",
   "tune": "STUTTGART",
   "meter": "87.87",

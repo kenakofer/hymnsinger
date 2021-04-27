@@ -1,5 +1,6 @@
 {
   "song_file": "be-still-and-know",
+  "exclude_from_index": false,
   "title": "Be still and know",
   "tune": "BE STILL AND KNOW",
   "meter": "8.8.8",

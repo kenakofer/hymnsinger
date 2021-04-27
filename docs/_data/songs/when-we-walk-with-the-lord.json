@@ -1,5 +1,6 @@
 {
   "song_file": "when-we-walk-with-the-lord",
+  "exclude_from_index": false,
   "title": "When we walk with the Lord",
   "tune": "TRUST AND OBEY 6.6.9 D",
   "meter": "with refrain",

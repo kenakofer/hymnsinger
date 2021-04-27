@@ -1,5 +1,6 @@
 {
   "song_file": "the-lords-my-shepherd",
+  "exclude_from_index": false,
   "title": "The Lord's my shepherd",
   "tune": "CRIMOND",
   "meter": "CM",

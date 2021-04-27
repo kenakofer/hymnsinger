@@ -1,5 +1,6 @@
 {
   "song_file": "now-all-the-woods-are-sleeping",
+  "exclude_from_index": false,
   "title": "Now all the woods are sleeping",
   "tune": "O WELT, ICH MUSS DICH LASSEN",
   "meter": "776.778",

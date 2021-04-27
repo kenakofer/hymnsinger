@@ -1,5 +1,6 @@
 {
   "song_file": "heilig-heilig-heilig-sanctus",
+  "exclude_from_index": false,
   "title": "Heilig, Heilig, Heilig (Holy, Holy, Holy)",
   "tune": "SANCTUS (Schubert)",
   "meter": "65.65 D",

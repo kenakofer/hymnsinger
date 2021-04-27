@@ -1,5 +1,6 @@
 {
   "song_file": "o-sacred-head-now-wounded",
+  "exclude_from_index": false,
   "title": "O sacred Head, now wounded",
   "tune": "HERZLICH TUT MICH VERLANGEN",
   "meter": "76.76 D",

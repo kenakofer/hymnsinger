@@ -1,5 +1,6 @@
 {
   "song_file": "we-three-kings",
+  "exclude_from_index": false,
   "title": "We three kings",
   "tune": "KINGS OF ORIENT",
   "meter": "88.446 with refrain",

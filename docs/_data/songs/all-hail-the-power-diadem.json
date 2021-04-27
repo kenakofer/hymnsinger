@@ -1,5 +1,6 @@
 {
   "song_file": "all-hail-the-power-diadem",
+  "exclude_from_index": false,
   "title": "All hail the power of Jesus' name",
   "tune": "DIADEM",
   "meter": "CM extended",

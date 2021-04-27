@@ -1,5 +1,6 @@
 {
   "song_file": "joyful-joyful",
+  "exclude_from_index": false,
   "title": "Joyful, joyful, we adore thee",
   "tune": "HYMN TO JOY",
   "meter": "87.87 D",

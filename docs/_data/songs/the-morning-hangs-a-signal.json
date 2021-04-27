@@ -1,5 +1,6 @@
 {
   "song_file": "the-morning-hangs-a-signal",
+  "exclude_from_index": false,
   "title": "The morning hangs a signal",
   "tune": "MEIRIONYDD",
   "meter": "76.76 D",

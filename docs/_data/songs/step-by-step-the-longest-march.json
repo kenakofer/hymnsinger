@@ -1,5 +1,6 @@
 {
   "song_file": "step-by-step-the-longest-march",
+  "exclude_from_index": false,
   "title": "Step by step the longest march",
   "tune": "SOLIDARITY",
   "meter": "76.76 D",

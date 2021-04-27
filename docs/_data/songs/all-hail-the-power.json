@@ -1,5 +1,6 @@
 {
   "song_file": "all-hail-the-power",
+  "exclude_from_index": false,
   "title": "All hail the power of Jesus' name",
   "tune": "CORONATION",
   "meter": "CM extended",

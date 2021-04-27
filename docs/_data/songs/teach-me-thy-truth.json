@@ -1,5 +1,6 @@
 {
   "song_file": "teach-me-thy-truth",
+  "exclude_from_index": false,
   "title": "Teach me thy truth",
   "tune": "GOSHEN",
   "meter": "CM",

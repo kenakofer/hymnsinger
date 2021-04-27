@@ -1,5 +1,6 @@
 {
   "song_file": "no-number-tallies-up-my-score",
+  "exclude_from_index": false,
   "title": "No number tallies up my score",
   "tune": "RESIGNATION",
   "meter": "CMD",

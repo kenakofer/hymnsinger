@@ -1,5 +1,6 @@
 {
   "song_file": "amazing-grace",
+  "exclude_from_index": false,
   "title": "Amazing grace",
   "tune": "NEW BRITAIN (AMAZING GRACE)",
   "meter": "CM",

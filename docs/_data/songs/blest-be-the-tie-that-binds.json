@@ -1,5 +1,6 @@
 {
   "song_file": "blest-be-the-tie-that-binds",
+  "exclude_from_index": false,
   "title": "Blest be the tie that binds",
   "tune": "DENNIS",
   "meter": "SM",

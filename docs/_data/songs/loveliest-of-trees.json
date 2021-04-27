@@ -1,5 +1,6 @@
 {
   "song_file": "loveliest-of-trees",
+  "exclude_from_index": false,
   "title": "Loveliest of trees",
   "tune": "ORIENTIS PARTIBUS",
   "meter": "77.77",

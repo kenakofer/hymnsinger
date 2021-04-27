@@ -1,5 +1,6 @@
 {
   "song_file": "take-my-life-and-let-it-be",
+  "exclude_from_index": false,
   "title": "Take my life, and let it be",
   "tune": "HENDON",
   "meter": "77.77 extended",

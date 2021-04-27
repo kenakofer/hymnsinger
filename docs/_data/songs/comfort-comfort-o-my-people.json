@@ -1,5 +1,6 @@
 {
   "song_file": "comfort-comfort-o-my-people",
+  "exclude_from_index": false,
   "title": "Comfort, comfort, O my people",
   "tune": "GENEVA 42 (FREU DICH SEHR)",
   "meter": "87.87.77.88",

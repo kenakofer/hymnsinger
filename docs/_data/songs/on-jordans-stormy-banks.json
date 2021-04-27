@@ -1,5 +1,6 @@
 {
   "song_file": "on-jordans-stormy-banks",
+  "exclude_from_index": false,
   "title": "On Jordan's Stormy Banks",
   "tune": "PROMISED LAND",
   "meter": "CM with refrain",

@@ -1,5 +1,6 @@
 {
   "song_file": "breath-on-me-breath-of-god",
+  "exclude_from_index": false,
   "title": "Breath on me, breath of God",
   "tune": "TRENTHAM",
   "meter": "SM",

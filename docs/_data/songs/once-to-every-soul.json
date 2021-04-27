@@ -1,5 +1,6 @@
 {
   "song_file": "once-to-every-soul",
+  "exclude_from_index": false,
   "title": "Once to every soul and nation",
   "tune": "EBENEZER",
   "meter": "87.87.87.87",

@@ -1,5 +1,6 @@
 {
   "song_file": "jesu-joy-of-our-desiring",
+  "exclude_from_index": false,
   "title": "Jesu, joy of our desiring",
   "tune": "WERDE MUNTER",
   "meter": "87.87.88.77",

@@ -1,5 +1,6 @@
 {
   "song_file": "when-israel-was-in-egypts-land",
+  "exclude_from_index": false,
   "title": "When Israel was in Egypt's land",
   "tune": "GO DOWN MOSES",
   "meter": "85.85 with refrain",

@@ -1,5 +1,6 @@
 {
   "song_file": "angels-we-have-heard",
+  "exclude_from_index": false,
   "title": "Angels we have heard on high",
   "tune": "GLORIA",
   "meter": "77.77 with refrain",

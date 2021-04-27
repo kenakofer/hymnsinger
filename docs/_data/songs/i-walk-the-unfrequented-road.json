@@ -1,5 +1,6 @@
 {
   "song_file": "i-walk-the-unfrequented-road",
+  "exclude_from_index": false,
   "title": "I walk the unfrequented road",
   "tune": "CONSOLATION (MORNING SONG)",
   "meter": "CM",

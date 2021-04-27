@@ -1,5 +1,6 @@
 {
   "song_file": "warm-summer-sun",
+  "exclude_from_index": false,
   "title": "Warm summer sun",
   "tune": "LIE LIGHT",
   "meter": "88.88",

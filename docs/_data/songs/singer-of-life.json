@@ -1,5 +1,6 @@
 {
   "song_file": "singer-of-life",
+  "exclude_from_index": false,
   "title": "Singer of Life",
   "tune": "LACQUIPARLE",
   "meter": "irregular",

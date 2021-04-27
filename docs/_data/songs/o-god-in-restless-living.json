@@ -1,5 +1,6 @@
 {
   "song_file": "o-god-in-restless-living",
+  "exclude_from_index": false,
   "title": "O God, in restless living",
   "tune": "RUTHERFORD",
   "meter": "76.76.76.75",

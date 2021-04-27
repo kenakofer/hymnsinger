@@ -1,5 +1,6 @@
 {
   "song_file": "be-still-my-soul",
+  "exclude_from_index": false,
   "title": "Be still my soul",
   "tune": "FINLANDIA",
   "meter": "10.10.10",

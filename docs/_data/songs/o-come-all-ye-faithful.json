@@ -1,5 +1,6 @@
 {
   "song_file": "o-come-all-ye-faithful",
+  "exclude_from_index": false,
   "title": "O come, all ye faithful",
   "tune": "ADESTE FIDELES",
   "meter": "irregular",

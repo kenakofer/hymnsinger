@@ -1,5 +1,6 @@
 {
   "song_file": "way-way-way",
+  "exclude_from_index": false,
   "title": "Way way way",
   "tune": "WAY WAY WAY",
   "meter": "irregular",

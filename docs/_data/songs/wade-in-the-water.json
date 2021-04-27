@@ -1,5 +1,6 @@
 {
   "song_file": "wade-in-the-water",
+  "exclude_from_index": false,
   "title": "Wade in the water",
   "tune": "WADE IN THE WATER",
   "meter": "irregular with refrain",

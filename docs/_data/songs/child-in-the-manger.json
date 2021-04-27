@@ -1,5 +1,6 @@
 {
   "song_file": "child-in-the-manger",
+  "exclude_from_index": false,
   "title": "Child in the manger",
   "tune": "BUNESSAN",
   "meter": "55.53",

@@ -1,5 +1,6 @@
 {
   "song_file": "for-the-beauty-of-our-earth",
+  "exclude_from_index": false,
   "title": "For the beauty of our earth",
   "tune": "DIX",
   "meter": "77.77.77",

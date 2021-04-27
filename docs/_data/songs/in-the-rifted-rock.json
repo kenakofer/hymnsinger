@@ -1,5 +1,6 @@
 {
   "song_file": "in-the-rifted-rock",
+  "exclude_from_index": false,
   "title": "In the Rifted Rock (Wehrlos und verlassen)",
   "tune": "RIFTED ROCK",
   "meter": "87.87 with refrain",

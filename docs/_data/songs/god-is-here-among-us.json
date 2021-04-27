@@ -1,5 +1,6 @@
 {
   "song_file": "god-is-here-among-us",
+  "exclude_from_index": false,
   "title": "God is here among us",
   "tune": "WUNDERBARER K\u00d6NIG",
   "meter": "66.86.66.86.666",

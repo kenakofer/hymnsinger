@@ -1,5 +1,6 @@
 {
   "song_file": "bright-those-jewels",
+  "exclude_from_index": false,
   "title": "Bright those jewels",
   "tune": "ORIENTIS PARTIBUS",
   "meter": "87.87",

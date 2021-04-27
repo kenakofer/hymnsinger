@@ -1,5 +1,6 @@
 {
   "song_file": "all-creatures-of-the-earth-and-sky",
+  "exclude_from_index": false,
   "title": "All creatures of the earth and sky",
   "tune": "LASST UNS ERFREUEN",
   "meter": "LM",

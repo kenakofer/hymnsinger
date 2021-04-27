@@ -1,5 +1,6 @@
 {
   "song_file": "all-creatures-worship-god-most-high",
+  "exclude_from_index": false,
   "title": "All creatures worship God most high",
   "tune": "LASST UNS ERFREUEN",
   "meter": "LM",

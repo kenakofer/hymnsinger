@@ -1,5 +1,6 @@
 {
   "song_file": "o-little-town",
+  "exclude_from_index": false,
   "title": "O little town of Bethlehem",
   "tune": "ST. LOUIS",
   "meter": "86.86.76.86",

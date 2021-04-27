@@ -1,5 +1,6 @@
 {
   "song_file": "the-sands-of-time-are-sinking",
+  "exclude_from_index": false,
   "title": "The Sands of Time Are Sinking",
   "tune": "RUTHERFORD",
   "meter": "76.76.76.75",
