@@ -16,7 +16,7 @@ poet = \twoLineSmallText "Text: Ojibwe traditional, 1913;" "Additional phrases s
 typesetter = "Kenan Schaefkofer"
 postscore_text = \postscoreText "Other lyrics from traditional prayers may be used: ''Alleluia,'' ''Christ have mercy,'' ''Kyrie eleison,'' ''Holy Spirit, Come''"
 verseCount = 4
-tags = "ojibwe secular 4part"
+tags = "ojibwe secular 1part"
 dateAdded = "2021-03-28"
 \include "../../lib/header.ily"
 
