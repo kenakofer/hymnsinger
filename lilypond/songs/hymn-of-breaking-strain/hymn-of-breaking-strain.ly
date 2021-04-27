@@ -12,7 +12,7 @@ quarternoteTempo = 120
 \include "../../lib/global-parts.ily"
 
 %% SONG INFO
-title = \titleText "The Hymn of Breaking Strain"
+title = \titleText "Hymn of Breaking Strain"
 subtitle = \markup{
         \override #'(baseline-skip . 2)
         \fontsize #-2
@@ -38,19 +38,19 @@ soprano = {
   \globalParts
   \relative g' {
     \partial 4
-    r8 e8 | e8 4. 4 fs | g8 e4. r4 r8 fs8 | e4 fs8 e8~ 4 fs8 g8~ | 2. \bar "" \break
-    r8 e8 | e4 e e fs | g8 e4. r4 r8 fs8 | e4 fs8 e8~ 4 fs8 g8~ | 2. \bar "" \break
-    r8 a8 | b8 b4. a4 g | b8 e,4. r4 r8 g8 | g4 g a a | b2. \bar "" \break
-    r8 b8 | b4 e, e fs | g8 e4. r4 r8 fs8 | g4. g8 fs4 d8 e8~ | 4 r4 \bar "" \break
+    r8 e8 | e8 4. 4 fs | g8 e4. r4 r8 fs8 | e4 fs8 e4 fs4 g8~ | 2. \bar "" \break
+    r8 e8 | e4. 8 4 fs | g8 e4. r4 r8 fs8 | e4 fs8 e4 fs4 g8~ | 2. \bar "" \break
+    r8 a8 | b4 b4 a4 g | b8 e,4. r4 r8 g8 | g4 g a a | b2. \bar "" \break
+    r8 b8 | b8( e,8) e4 e fs | g8 e4. r4 r8 fs8 | g4. g8 fs4 d8 e8~ | 4 r4 \bar "" \break
     r2 | e2~ 4. e8 | fs4 4 g fs8 e~ | e1 | \partial 2. r2 r4 \bar "|."
   }
 }
 alto = {
   \globalParts
   \relative e' {
-    r8 b8 | b8 4. 4 4 | b8 4. r4 r8 d8 | e4 d8[ e8]~ 4 d8 c8~ | 2.
-    r8 b8 | b4 b b b | b8 4. r4 r8 d8 | e4 d8[ e8]~ 4 d8 c8~ | 2.
-    r8 fs8 | g8 g4. fs4 e | e8 e4. r4 r8 d8 | e4 c d4. fs8 | e2.
+    r8 b8 | b8 4. 4 4 | b8 4. r4 r8 d8 | e4 d8 e4 d4 e8~ | 2.
+    r8 b8 | b4. 8 4 4 | b8 4. r4 r8 d8 | e4 d8 e4 d4 c8~ | 2.
+    r8 fs8 | g4 g4 fs4 e | e8 e4. r4 r8 d8 | e4 c d4. fs8 | e2.
     r8 b8 | b4 b b b | b8 4. r4 r8 d8 | e4. e8 d4 d8 b8~ | 4 r4
     r2 | c2~ 4. c8 | d4 8( a) a4 8 b~ | 1
   }
@@ -58,21 +58,21 @@ alto = {
 tenor = {
   \globalParts
   \relative a {
-    r8 b8 | b8 4. g4 b | b8 b4. r4 r8 b8 | b4 b8 g8~ 4 fs8 g~ | 2.
-    r8 b8 | b4 b g b | b8 b4. r4 r8 b8 | b4 b8 g8~ 4 fs8 g~ | 2.
-    r8 a8 | g8 b4. d4 b | b8 b4. r4 r8 g8 | c4. b8 a4 a | g2.
+    r8 b8 | b8 4. g4 b | b8 b4. r4 r8 b8 | b4 b8 g4 fs4 g8~ | 2.
+    r8 b8 | b4. 8 g4 b | b8 b4. r4 r8 b8 | b4 b8 g4 fs4 g8~ | 2.
+    r8 a8 | g4 b4 d4 b | b8 b4. r4 r8 g8 | c4. b8 a4 fs | g2.
     r8 b8 | b4 g g b | b8 b4. r4 r8 b8 | g4. b8 a4 a8 g~ | 4 r4
-    r2 | g2~ 4. g8 | a4 4 a4 a8 g~ | 1 | r2 r4
+    r2 | g2~ 4. g8 | a4 4 a4 a8 b~ | 1 | r2 r4
   }
 }
 bass = {
   \globalParts
   \relative d {
-    r8 e8 | e8 4. 4 4 | 8 4. r4 r8 b8 | b4 8 e8~ 4 d8 c8~ | 2.
-    r8 b8 | e4 4 4 4 | 8 4. r4 r8 b8 | b4 8 e8~ 4 d8 e8~ | 2.
-    r8 fs8 | e8 e4. d4 e4 | e8 e4. r4 r8 b8 | c4 e d c | b2.
+    r8 e8 | e8 4. 4 4 | 8 4. r4 r8 b8 | b4 8 e4 d4 c8~ | 2.
+    r8 b8 | e4. 8 4 4 | 8 4. r4 r8 b8 | b4 8 e4 d4 e8~ | 2.
+    r8 fs8 | e4 e4 d4 e4 | e8 e4. r4 r8 b8 | c4 e d c | b2.
     r8 b8 | e4 e4 4 4 | 8 4. r4 r8 b8 | c4. 8 d4 d8 e8~ | 4 r4
-    e4( d c2~ 4.) c8 | a4 4 d4 d8 e8~ | 1 | r2
+    e4( d c2~ 4.) c8 | a4 4 4 8 e'8~ | 1 | r2
   }
 }
 songChords = \chords {
@@ -81,7 +81,7 @@ songChords = \chords {
   e4:m | 1 | 1 | 2. d4 | c2.
   e4:m | 1 | 1 | c2 d2 | e2.:m
   e4:m | 1 | 1 | c2 d2 | e2.:m
-  d4 | c1 | d | e:m
+  d4 | c1 | d/a | e:m
 }
 
 %% LYRICS
