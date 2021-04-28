@@ -5,7 +5,7 @@ find lilypond/songs -type f -iname "*.ly" -print0 | sort -z | while IFS= read -r
     BASE=`basename "$file"`
     BASE="${BASE%%.*}"
 
-    INPUT='docs/song-template.md'
+    INPUT='docs/_data/song-template.md'
     OUTPUT="docs/listing/$BASE.md"
 
     # Make the hymn page
