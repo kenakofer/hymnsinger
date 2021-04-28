@@ -40,12 +40,12 @@ Toggle:
 {% assign song = song_hash[1] %}
 {% unless song.exclude_from_index == true %}
 <tr>
-  <td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/{{ song.song_file }}.html">{{ song.title }}</a></td>
+  <td class='hymn-name-box'><a href="{{ site.baseurl }}/listing/{{ song.song_file }}">{{ song.title }}</a></td>
   <td class='tune-box'>{{ song.tune }}</td>
   <td class='same-tune-box'>
     {% for other in song.songs_with_same_tune %}
       {% if other.i %}
-        <span class="internal"><a href="{{ site.baseurl }}/listing/{{ other.i }}.html">{{ other.s }}</a></span>
+        <span class="internal"><a href="{{ site.baseurl }}/listing/{{ other.i }}">{{ other.s }}</a></span>
       {% elsif other.e %}
         <span class="external"><a class="external" target="_blank" href="{{ other.e }}">{{ other.s }}</a></span>
       {% else %}

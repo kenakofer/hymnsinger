@@ -12,7 +12,7 @@ Music can be more inviting and better presented, especially the *oldies-but-good
 
 This site provides **full sheet music** and **in-browser playback** on every song's page. If you'd like to learn one of the voice parts to a song, you can **adjust individual volume levels** to hear certain parts more loudly. If you need resources for a service, we have **PDFs**, **Powerpoint Slides** and more, free to distribute without restrictions.
 
-Check out the [Full Index of songs]({{ site.baseurl }}/hymn-index.html).
+Check out the [Full Index of songs]({{ site.baseurl }}/hymn-index).
 
 ### How it's done
 

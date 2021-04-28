@@ -30,7 +30,7 @@
     <script src="{{ site.baseurl }}/assets/js/app.js"></script>
     <div class="wrapper">
       <header>
-          &larr; <a href="{{ site.baseurl }}/hymn-index.html" style="color:#ff5555;">Back to list</a>
+          &larr; <a href="{{ site.baseurl }}/hymn-index" style="color:#ff5555;">Back to list</a>
 
           <hr>
 
@@ -169,7 +169,7 @@
           <div class='same-tune-box'>
             {% for other in site.data.songs[page.song_file].songs_with_same_tune %}
               {% if other.i %}
-                <span class="internal"><a href="{{ site.baseurl }}/listing/{{ other.i }}.html">{{ other.s }}</a></span>
+                <span class="internal"><a href="{{ site.baseurl }}/listing/{{ other.i }}">{{ other.s }}</a></span>
               {% elsif other.e %}
                 <span class="external"><a class="external" target="_blank" href="{{ other.e }}">{{ other.s }}</a></span>
               {% else %}
@@ -184,7 +184,7 @@
         <details open=true>
           <summary>Tags</summary>
           {% for tag in site.data.songs[page.song_file].tags %}
-            <a class="taglink large" href="{{ site.baseurl }}/hymn-index.html?s={{ tag }}">{{ tag }}</a>
+            <a class="taglink large" href="{{ site.baseurl }}/hymn-index?s={{ tag }}">{{ tag }}</a>
           {% endfor %}
         </details>
 

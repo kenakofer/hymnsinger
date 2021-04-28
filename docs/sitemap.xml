@@ -8,7 +8,7 @@ exclude_from_index: true
   {% for page in site.pages %}
     {% unless page.exclude_from_index == true or page.name == "style.scss" %}
       <url>
-        <loc>{{ site.url }}{{ page.url }}</loc>
+        <loc>{{ site.url }}{{ page.url | split:'.' | first }}</loc>
       </url>
     {% endunless %}
   {% endfor %}
