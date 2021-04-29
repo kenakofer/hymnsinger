@@ -104,7 +104,7 @@ verseA = \lyricmode {
   \SA {
     Al -- le -- lu -- ia
   } \SO { _ _ _ _ }
-  \l Sing, O heav'n, and earth re -- play:
+  \l Sing, O heav'n, and earth re -- ply:
   \SA {
     Al -- le -- lu -- ia
   } \SO { _ _ _ _ }

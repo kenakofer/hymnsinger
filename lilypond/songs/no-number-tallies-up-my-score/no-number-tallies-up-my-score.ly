@@ -53,7 +53,7 @@ verseD = \lyricmode {
   my old -- est force is new,
   and fresh the rose on yon -- der thorn
   gives back the heav'ns in dew.
- }
+}
 
 % Set up music-aligned verses. Change to the correct number
 \include "../../lib/4verse.ily"

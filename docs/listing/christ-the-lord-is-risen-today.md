@@ -2,7 +2,7 @@
 layout: song-page
 song_file: christ-the-lord-is-risen-today
 title: "Christ the Lord is risen today"
-description: "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: Christ the Lord is ris'n today! Alleluia  Love's redeeming work is done, Alleluia fought the fight, the battle won. Alleluia Death in vain forbids him... english christian easter 4part chords"
+description: "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: Christ the Lord is ris'n today! Alleluia All creaation join to say: Alleluia Raise your joys and triumphs high: Alleluia Sing, O heav'n, and earth rep... english christian easter 4part chords"
 image: https://github.com/kenanbit/hymnsinger/releases/latest/download/christ-the-lord-is-risen-today-trad.png
 ---
 
