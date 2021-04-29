@@ -154,11 +154,14 @@ def get_lyrics(all_lines):
     current_verse = None
     chorus_mode = False
     remove_quotes = False
+    is_extra = False
     lyrics = ""
-    for line in all_lines:
-        line = line.strip()
+    for unstripped_line in all_lines:
+        line = unstripped_line.strip()
         if line.startswith("verseCount"):
             pass
+        elif line.startswith("extra_verses ="):
+            is_extra = True
         elif line.startswith("verse") and not line.endswith("}"):
             current_verse = True
             remove_quotes = False
@@ -173,10 +176,16 @@ def get_lyrics(all_lines):
         elif line.startswith('%% END CHORUS'):
             chorus_mode = False
             lyrics+="\n"
-        elif current_verse and line.strip().startswith("}"):
+        elif current_verse and unstripped_line.startswith("}"):
             current_verse = None
             chorus_mode = False
             lyrics+="\n"
+        elif current_verse and is_extra and line.startswith("}"):
+            current_verse = None
+            chorus_mode = False
+            lyrics+="\n"
+        elif line.startswith("}"):
+            pass
         elif current_verse:
             prefix = "  " if chorus_mode else ""
             line = prefix + join_verse_line(line, remove_quotes)
