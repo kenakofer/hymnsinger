@@ -24,6 +24,25 @@
         img.src="https://github.com/kenanbit/hymnsinger/releases/download/{{ site.release_version }}/{{ page.song_file }}-"+variant+".png";
         return false;
     }
+    function copyLyrics() {
+      open_at_start = document.getElementById("song-lyrics").open;
+      document.getElementById("song-lyrics").open = true;
+      var copyText = document.getElementById("copy-me");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999)
+      document.execCommand("copy");
+      document.getElementById("copy-lyrics-button").textContent = "Copied!"
+      document.getElementById("song-lyrics").open = open_at_start;
+
+      setTimeout(function(){
+        copyText.focus();
+        copyText.setSelectionRange(0, 0)
+        copyText.blur();
+      }, 200);
+      setTimeout(function(){
+        copyButton = document.getElementById("copy-lyrics-button").textContent = "Copy all"
+      }, 1500);
+    }
     </script>
     <script src="{{ site.baseurl }}/assets/js/midiplayer.js"></script>
     <script src="{{ site.baseurl }}/assets/js/soundfont-player.js"></script>
@@ -161,6 +180,12 @@
               <td class="info-value">{{ song_data.date_added }}</td>
             </tr>
           </table>
+        </details>
+
+        <details id="song-lyrics">
+          <summary>Lyrics <button id="copy-lyrics-button" onclick="copyLyrics()">Copy all</button></summary>
+          {% assign song_data = site.data.songs[page.song_file] %}
+            <div class='lyric-box'><textarea id="copy-me" readonly>{{ song_data.lyrics }}</textarea></div>
         </details>
 
         {% if site.data.songs[page.song_file].songs_with_same_tune[0] %}

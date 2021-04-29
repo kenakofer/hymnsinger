@@ -98,15 +98,26 @@ input[type="radio"] {
 input[type="radio"]:checked + label {
     border: solid 2px black;
 }
-#play-button, #stop-button {
-    width: 30%;
-    padding: 6px 0;
+textarea {
+    resize: none;
+    width: 98%;
+    background: inherit;
+    color: inherit;
+    border: none;
     font-size: 11px;
+    height: 97%;
+}
+button {
     border-width: 2px;
     border-radius: 4px;
     border-color: #ccc;
     background: #f7f7ee;
     cursor: pointer;
+}
+#play-button, #stop-button {
+    width: 30%;
+    padding: 6px 0;
+    font-size: 11px;
 }
 #loop-span {
     width: 40%;
@@ -309,13 +320,26 @@ details summary {
     border-radius: 3px;
     margin: 2px 0;
 }
-.lyric-box::first-letter {
+.lyric-box div::first-letter {
   font-weight: 500;
   font-size: 18px;
   font-family: Arvo, sans-serif;
 }
+#song-lyrics .lyric-box {
+    background: #232323;
+    border-radius: 4px;
+    padding: 0px 2px 2px 2px;
+    border: 2px solid #f7f7ee;
+    margin-left: -35px;
+    width: 130%;
+    height: 100px
+}
 .composer-box {
     white-space: pre-wrap
+}
+#copy-lyrics-button {
+    float: right;
+    margin-top: 3px;
 }
 #song-table td.tags-box {
     padding: 0;
@@ -392,6 +416,10 @@ header ul {
     }
     #song-info table {
         table-layout: fixed;
+        margin-left: 0px;
+        width: 100%;
+    }
+    #song-lyrics .lyric-box {
         margin-left: 0px;
         width: 100%;
     }
