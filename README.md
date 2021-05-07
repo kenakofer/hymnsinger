@@ -1,12 +1,15 @@
 ## Hymn Singer
 
-This is a project to make or take hymns with permissive copyright status, typeset them with lilypond in a variety of formats, and serve them online in a friendly and usable github pages site. It has a long ways to go yet.
+This is a project to make or take hymns with permissive copyright status, typeset them with LilyPond in a variety of formats, and serve them online in a friendly and usable github pages site.
 
 ### Features of the site include:
- - Easy browsing of the full song selection, including lyrics
- - An interface for simultaneously viewing and playing the song
+ - Easy browsing and searching of the full song selection, including lyrics
+ - A browser interface for simultaneously viewing and playing the song
      - Ability to change volume on a per-part basis
- - Multiple formats available
+ - Multiple formats available:
+     - PDFs and PNGs for several notation styles,
+     - a slideshow in ODF and PDF
+     - MIDI and MP3
  - Full mobile support (issues with android firefox at the moment)
  - One can add to the site by simply adding a new lilypond file
 
@@ -23,13 +26,8 @@ This is a project to make or take hymns with permissive copyright status, typese
     - Add master volume slider
     - Add pitch change slider
     - Add Instrument change option
-    - Add expandable advanced panel, place most things inside to avoid clutter
   - Play sample on the index page?
   - Screenshot on home page showing e.g. amazing grace old and new.
-  - Programatic key change? Would require either
-    - Generating all the desired key changes up front (+/- 3 half steps?)
-    - Using a custom lilybin setup on server or AWS lambda, or some other serverside way to re-parse lilypond files. This would be far more difficult, but also allow the user tons of flexibility down the line.
-  - Add windows configuration section/page
   - Consider reaching out to people
   - Configurable space around lyrics
   - Figure out how to understand/clean up extra_lyrics columns
@@ -62,14 +60,4 @@ This is a project to make or take hymns with permissive copyright status, typese
   - Check out Mutopia source
   - Google SEO/analytics
   - Push state on search term with ?s="search term", so back button keeps search
-  - The quest for LY -> JS musical representation:
-    - Possibility 1: Through MusicXML
-      - Very poor support through ly, which doesn't process scheme _at all_
-        - \dispalyLilyMusic to produce a flat ly representation?
-      - Possibility of longer path: LY -> Guile 2 SXML -> XML -> MusicXML
-      - Possibility of python-ly xml-export-init.ly script as a starting point, since that _does_ actually use lilypond
-      - Possible con: Harder to associate playing notes to written notes for live highlighting?
-      - Possible con: Harder for non-standard notations
-      - Keep an eye on https://github.com/openlilylib/lilypond-export
-    - Possibility 2: Through MEI
-      -
+  - The quest for LY -> JS musical representation. Best bet at this point is probably to get JPV's code working and start trying to extend the effort
