@@ -3,9 +3,9 @@ import sys
 import os
 import json
 
-meter_words = [
+METER_WORDS = [
     "CM",
-    "CMD"
+    "CMD",
     "D",
     "LM",
     "SM",
@@ -130,7 +130,7 @@ def get_poet_info(all_lines):
     raise Exception("Poet not found")
 
 def ismeterword(word):
-    if word in meter_words:
+    if word in METER_WORDS:
         return True
     return any(char.isdigit() for char in word)
 
