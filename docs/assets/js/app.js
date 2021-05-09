@@ -46,7 +46,7 @@ var stop = function() {
 	Player.stop();
 }
 var channel_to_velocity = {
-    1: 150,
+    1: 200,
     2: 90,
     3: 105,
     4: 120
