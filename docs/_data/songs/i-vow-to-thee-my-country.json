@@ -1,0 +1,29 @@
+{
+  "song_file": "i-vow-to-thee-my-country",
+  "exclude_from_index": false,
+  "title": "I vow to thee, my country",
+  "tune": "THAXTED",
+  "meter": "13.13.13 D",
+  "stanza_count": "2",
+  "composer": "Adapted from The Planets, Gustav Holst, 1925",
+  "poet": "Cecil Spring-Rice, 1922",
+  "key": "B-flat major",
+  "date_added": "2021/05/09",
+  "tags": [
+    "english",
+    "nationalist",
+    "1part",
+    "accompanied",
+    "chords"
+  ],
+  "lyrics": "I vow to thee, my country, all earthly things above,\nentire and whole and perfect, the service of my love:\nthe love that asks no question, the love that stands the test,\nthat lays upon the altar the dearest and the best;\nthe love that never falters, the love that pays the price,\nthe love that makes undaunted the final sacrifice.\n\nAnd there's another country I've heard of long ago,\nmost dear to them that love her, most great to them that know;\nwe may not count her armies, we may not see her King;\nher fortress is a faithful heart, her pride is suffering;\nand soul by soul and silently her shining bounds increase,\nand her ways are ways of gentleness and all her paths are peace.\n",
+  "image": "https://github.com/kenanbit/hymnsinger/releases/latest/download/i-vow-to-thee-my-country-trad.png",
+  "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: I vow to thee, my country, all earthly things above, entire and whole and perfect, the service of my love: the love that asks no question, the love th... english nationalist 1part accompanied chords",
+  "songs_with_same_tune": [
+    {
+      "t": "THAXTED",
+      "s": "O God beyond all praising",
+      "e": "https://digitalsongsandhymns.com/songs/1872"
+    }
+  ]
+}
