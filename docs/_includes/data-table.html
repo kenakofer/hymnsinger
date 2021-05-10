@@ -1,3 +1,14 @@
+<noscript>
+  <style type="text/css">
+  table#song-table {
+    display: block;
+  }
+  #toggle-vis-panel {
+    display: none;
+  }
+  </style>
+</noscript>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.min.css">
@@ -6,6 +17,8 @@
 <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.7/css/responsive.dataTables.min.css">
 
 <script>
+start_load_time = new Date().getTime();
+
 search = function(value) {
     table.search(value).draw()
 }
@@ -31,6 +44,9 @@ $(document).on("click", "a.toggle-vis", function (e) {
 
 
 $(document).ready( function () {
+    ready_time = new Date().getTime();
+    console.log("Page ready in " + (ready_time - start_load_time) + " ms");
+
     var searchHash = window.location.search
     var searchString = searchHash.substr(searchHash.indexOf('s='))
         .split('&')[0]
@@ -104,5 +120,9 @@ $(document).ready( function () {
             },
         ]
     });
+    $('#song-table').show();
+    end_load_time = new Date().getTime();
+    console.log("Table ready in " + (end_load_time - start_load_time) + " ms");
+
 } );
 </script>

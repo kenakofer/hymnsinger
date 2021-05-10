@@ -288,6 +288,7 @@ details summary {
     table-layout: fixed;
     font-size: 12px;
     line-height: 1.3;
+    display: none; /* Speeds datatables loading. Will be undone be either noscript or datatables js */
 }
 .odd td {
     background: #ccc;
