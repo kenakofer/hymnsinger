@@ -21,7 +21,8 @@
   "songs_with_same_tune": [
     {
       "t": "ELLACOMBE",
-      "s": "Hosanna, loud hosanna"
+      "s": "Hosanna, loud hosanna",
+      "i": "hosanna-loud-hosanna"
     }
   ]
 }

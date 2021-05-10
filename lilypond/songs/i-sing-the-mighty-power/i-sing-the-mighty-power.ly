@@ -13,6 +13,7 @@ quarternoteTempo = 120
 
 %% SONG INFO
 title = \titleText "I sing the mighty power of God"
+subtitle = \smallText "For a lower key, see ''Hosanna, loud hosanna''"
 poet = \smallText "Text: Isaac Watts, 1715, alt."
 typesetter = "Kenan Schaefkofer"
 verseCount = 3

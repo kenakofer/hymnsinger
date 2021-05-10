@@ -1,0 +1,28 @@
+{
+  "song_file": "hosanna-loud-hosanna",
+  "exclude_from_index": false,
+  "title": "Hosanna, loud hosanna",
+  "tune": "ELLACOMBE",
+  "meter": "CMD",
+  "stanza_count": "3",
+  "composer": "Gesangbuch der Herzogl, 1784;\narr. Willliam H. Monk, 1868",
+  "poet": "Jeannette Threlfall, 1873, alt.",
+  "key": "A major",
+  "date_added": "2021/05/10",
+  "tags": [
+    "english",
+    "christian",
+    "4part",
+    "chords"
+  ],
+  "lyrics": "Hosanna, loud hosanna, the littlechildren sang.\nThrough pillared court and temple the lovely anthem rang.\nTo Jesus, who had blessed them, close folded to his breast,\nthe children sang their praises, the simplest and the best.\n\nFrom Olivet they followed 'mid an exultant crowd,\nthe victor palm branch waving, and chanting clear and loud.\nThe Lord of earth and heaven rode on in lowly state,\nnor scorned that little children should on his bidding wait.\n\n\"Hosanna in the highest!\" That ancient song we sing,\nfor Christ is our Redeemer, the Lord of heav'n, our King.\nOh, may we ever praise him with heart and life and voice,\nand in his blissful presence eternally rejoice!\n",
+  "image": "https://github.com/kenanbit/hymnsinger/releases/latest/download/hosanna-loud-hosanna-trad.png",
+  "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: Hosanna, loud hosanna, the littlechildren sang. Through pillared court and temple the lovely anthem rang. To Jesus, who had blessed them, close folded... english christian 4part chords",
+  "songs_with_same_tune": [
+    {
+      "t": "ELLACOMBE",
+      "s": "I sing the mighty power of God",
+      "i": "i-sing-the-mighty-power"
+    }
+  ]
+}
