@@ -209,6 +209,8 @@ def join_verse_line(line, remove_quotes):
     for i in range(len(words)):
         if words[i][0] == '"' and words[i][-1] == '"':
             words[i] = words[i][1:-1]
+        words[i] = words[i].replace("''",'"')
+
 
     while "--" in words:
         index = words.index("--")
