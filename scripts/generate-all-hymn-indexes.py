@@ -224,7 +224,7 @@ def add_song_json(data):
 
 def get_description(lyrics, tags):
     tag_string = " ".join(tags)
-    lyrics_string = lyrics[:150].replace("\n", " ")
+    lyrics_string = lyrics[:150].replace("\n", " ").replace('"', '\\"')
     return 'View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: '+lyrics_string+'... '+tag_string
 
 def get_image(song_file_base):
