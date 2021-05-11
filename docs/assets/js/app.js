@@ -25,6 +25,13 @@ document.addEventListener('DOMContentLoaded', function() {
         var percentage = (event.clientX-this.offsetLeft) / this.offsetWidth * 100;
         Player.skipToPercent(percentage);
     });
+
+    // Show the advanced playback settings iff the window is wide enough for the
+    // wide css and the height is tall enough to not show a scroll bar with the
+    // panel open
+    if (window.innerWidth >= 961 && window.innerHeight >= 754) {
+        document.getElementById('playback-settings').open = true;
+    }
 }, false);
 
 var click_play = function() {
