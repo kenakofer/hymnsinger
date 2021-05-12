@@ -1,0 +1,27 @@
+{
+  "song_file": "say-not-the-struggle",
+  "exclude_from_index": false,
+  "title": "Say not the struggle naught availeth",
+  "tune": "WAYFARING STRANGER",
+  "meter": "98.98 D",
+  "stanza_count": "3",
+  "composer": "American traditional;\narr. Kenan Schaefkofer, 2021",
+  "poet": "Arthur Hugh Clough, 1849, alt.",
+  "key": "D minor",
+  "date_added": "2021/05/11",
+  "tags": [
+    "english",
+    "secular",
+    "4part"
+  ],
+  "lyrics": "Say not: the struggle naught availeth,\nthe wounds and labour are in vain,\nthe fearsome foe faints not, nor faileth,\nand all unchanging doth remain.\n\n  For not by eastern windows only,\n  when daylight comes, comes in the light;\n  in front the sun climbs slow, how slowly,\n  but westward, look, the land is bright.\n\nIf hopes were dupes, fears may be liars;\nIt may be, in yon smoke concealed,\nour comrades chase e'en now the fliers,\nAnd, but for us, possess the field.\n\n  For not by eastern windows only,\n  when daylight comes, comes in the light;\n  in front the sun climbs slow, how slowly,\n  but westward, look, the land is bright.\n\nFor while the tired waves, vainly breaking\nSeem here no painful inch to gain,\nFar back through creeks and inlets making,\nComes silent, flooding in, the main.\n\n  For not by eastern windows only,\n  when daylight comes, comes in the light;\n  in front the sun climbs slow, how slowly,\n  but westward, look, the land is bright.\n",
+  "image": "https://github.com/kenanbit/hymnsinger/releases/latest/download/say-not-the-struggle-trad.png",
+  "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: Say not: the struggle naught availeth, the wounds and labour are in vain, the fearsome foe faints not, nor faileth, and all unchanging doth remain.   ... english secular 4part",
+  "songs_with_same_tune": [
+    {
+      "t": "WAYFARING STRANGER",
+      "s": "I am a poor wayfaring stranger",
+      "i": "i-am-a-poor-wayfaring"
+    }
+  ]
+}
