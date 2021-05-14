@@ -72,8 +72,8 @@ verseB = \lyricmode {
 }
 verseC = \lyricmode {
   If earth -- ly fears don't faze you, try a sam -- ple of Pas -- cal:
-  A slim chance of e -- ter -- nal bliss is worth more than your all.
-  Walk a -- long the Ro -- man Road, a -- void e -- ter -- nal pain.
+  A slim chance of un -- fath -- omed bliss is worth more than your all.
+  Walk a -- long the Ro -- man Road, e -- lude e -- ter -- nal pain.
   Sal -- va -- tion's path is mark -- éd well, with brim -- stone in the drain,
   with brim -- stone in the drain:
 }
@@ -86,7 +86,7 @@ verseD = \lyricmode {
   Your God is watch -- ing you!
 }
 verseE = \lyricmode {
-  Mere rea -- son of one mind can't win; the test of time is passed.
+  Heed not the slug -- gish, skep -- tic thought, the votes have all been cast.
   Re -- li -- gions of to -- day are the re -- li -- gions fit to last.
   Mem -- bers true through pow -- er, fear, or friend -- ly com -- pa -- ny
   re -- buke a -- gain their way -- ward young, ''Eat not from yon -- der tree.''
