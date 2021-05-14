@@ -18,7 +18,7 @@ dateAdded = "2021-03-14"
 %% LYRICS
 verseA = \lyricmode {
   May we each take joy in giv -- ing with a spir -- it large and free
-  to our neigh -- bors and the stran -- gers, fost -- er -- ing com -- mun -- i -- ty.
+  to our neigh -- bors and the stran -- gers, give as has been giv -- en me
 }
 
 % Set up music-aligned verses. Change to the correct number
