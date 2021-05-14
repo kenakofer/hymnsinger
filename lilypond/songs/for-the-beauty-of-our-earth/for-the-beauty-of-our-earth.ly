@@ -48,7 +48,7 @@ verseD = \lyricmode {
 }
 verseE = \lyricmode {
   For thy Truth both harsh and kind, sha -- dowed set -- ter of our stage,
-  pat -- terns sought by hu -- man mind, guid -- ing us from age to age,
+  pat -- terns sought by hu -- man mind, writ, re -- vised from age to age,
   %% CHORUS
   \SE {
     Source of all, to thee we raise this our hymn of grate -- ful praise.
