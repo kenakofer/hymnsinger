@@ -80,7 +80,7 @@ verseD = \lyricmode {
   My loved ones, rest se -- cure -- ly,
   from ev -- 'ry per -- il sure -- ly
   pro -- tect -- ed be your heads;
-  and hap -- py slum -- bers send you,
+  may hap -- py slum -- bers mend you,
   and ev -- 'ry care at -- tend you,
   as trus -- ted souls watch o'er your beds.
 }
