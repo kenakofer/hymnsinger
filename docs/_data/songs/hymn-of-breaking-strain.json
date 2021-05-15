@@ -1,6 +1,6 @@
 {
   "song_file": "hymn-of-breaking-strain",
-  "exclude_from_index": true,
+  "exclude_from_index": false,
   "title": "Hymn of Breaking Strain",
   "tune": "BREAKING STRAIN",
   "meter": "76.76.76.76.6",
@@ -8,7 +8,7 @@
   "composer": "Leslie Fish, 1983;\narr. Kenan Schaefkofer, 2021",
   "poet": "Rudyard Kipling, 1935, alt.",
   "key": "E minor",
-  "date_added": "2021/04/26",
+  "date_added": "2021/05/15",
   "tags": [
     "english",
     "secular",

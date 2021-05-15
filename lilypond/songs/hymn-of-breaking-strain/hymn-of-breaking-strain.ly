@@ -8,8 +8,13 @@
 %% in spite of their silence.  Worst case scenario, I'll sit on this until
 %% 2030 when it will be PD
 
-%% Exclude from the main listing and Google while I'm getting it ready
-exclude_from_index = ##t
+%% 2021-05-04: Still haven't heard back. They forwarded my request to %
+%% foreign@unitedagents.co.uk, who looks after the Kipling estate on the Trust's
+%% behalf
+
+%% 2021-05-15: Since I still haven't heard back, I'm going to go ahead and stop
+%% excluding this song from inclusion on the site. I don't think I'm exposing
+%% myself to too much risk, and I'll remove it if asked.
 
 %% TUNE INFO
 composer = \smallText "Music: Leslie Fish, 1983"
@@ -39,7 +44,7 @@ poet = \smallText "Text: Rudyard Kipling, 1935, alt."
 typesetter = "Kenan Schaefkofer"
 verseCount = 4
 tags = "english secular 4part"
-dateAdded = "2021-04-26"
+dateAdded = "2021-05-15"
 \include "../../lib/header.ily"
 
 %% NOTES
