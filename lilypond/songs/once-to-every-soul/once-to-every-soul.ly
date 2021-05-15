@@ -45,7 +45,7 @@ verseB = \lyricmode {
   who would keep a -- breast of truth.
 
   Lo, be -- fore us gleam her camp -- fires!
-  We our -- selves must pil-grims be,
+  We our -- selves must pil -- grims be,
   nor at -- tempt the fu -- ture's por -- tal
   with the past's blood -- rus -- ted key.
 }
