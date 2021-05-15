@@ -4,7 +4,7 @@
 
 %% TUNE INFO
 composer = \smallText "Music: William G. Tomer, 1880"
-meter = \smallText "GOD BE WITH YOU 9.8.8.9 with refrain"
+meter = \smallText "GOD BE WITH YOU 98.89 with refrain"
 hymnKey = \key c \major
 hymnTime = \time 4/4
 quarternoteTempo = 100
