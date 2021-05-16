@@ -1,12 +1,16 @@
 ---
 exclude_from_index: true
 ---
+ol ul {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
 #header-logo {
     width: 120px;
     height: 88px;
     left: 50%;
     margin-left: -70px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 }
 .same-tune-box span a{
     color: #fff;
