@@ -431,7 +431,10 @@ header ul {
 }
 @media print, screen and (max-width: 720px) {
     section {
-        padding: 0;
+        padding: 0 8px;
+    }
+    section.small-no-pad{
+        padding: 0 0;
     }
     body {
         padding: 0;
