@@ -3,7 +3,7 @@
 \include "../../lib/hymn-common.ily"
 
 %% TUNE INFO
-composer = \smallText "Music: Plum Blossom Melodies (梅花三弄)"
+composer = \smallText "Music: 梅花三弄 (Plum Blossom Melodies)"
 arranger = \smallText "arr. Kenan Schaefkofer, 2021"
 meter = \smallText "PLUM BLOSSOM"
 hymnKey = \key g \major
@@ -13,12 +13,34 @@ quarternoteTempo = 90
 
 %% SONG INFO
 title = \titleText "Drinking alone with the moon"
-poet = \smallText \twoLineSmallText "Text: 李白 (Li Bai), 701-762" "tr. W.J.B. Fletcher, 1919"
+subtitle = \markup{
+        \override #'(baseline-skip . 2)
+        \fontsize #-0
+        \italic
+        \medium
+        \center-column {
+          "花間一壺酒"
+          "獨酌無相親"
+          "舉杯邀明月"
+          "對影成三人"
+          "月既不解飲"
+          "影徒隨我身"
+          "暫伴月將影"
+          "行樂須及春"
+          "我歌月徘徊"
+          "我舞影零亂"
+          "醒時同交歡"
+          "醉後各分散"
+          "永結無情遊"
+          "相期邈雲漢"
+        }
+      }
+poet = \smallText \twoLineSmallText "Text: 李白 (Li Bai), 701-762" "tr. W.J.B. Fletcher, 1919, alt. Kenan Schaefkofer, 2021"
 typesetter = "Kenan Schaefkofer"
 %prescore_text = \prescoreText "Uncomment to add text up and left of the score"
 %postscore_text = \postscoreText "Uncomment to add text down and left of the score"
 verseCount = 2
-tags = "english secular 3part"
+tags = "english secular evening 3part"
 dateAdded = "2021-06-02"
 \include "../../lib/header.ily"
 
@@ -60,23 +82,23 @@ bass = {
 %% LYRICS
 verseA = \lyricmode {
   \l One pot of wine a -- mid the flowers
-  A -- lone I pour, and none with me.
+  a -- lone I pour, and none with me.
   \l The cup I lift; the Moon in -- vite;
-  Who with my sha -- dow makes us three.
-  \l The moon then drinks with -- out a pause.
-  The sha -- dow does what I be -- gin.
-  \l The sha -- dow, Moon and I in fere
-  Re -- joice un -- til the spring come in.
+  who with my Sha -- dow makes us three.
+  \l Though Moon dis -- miss my off -- ered drink,
+  the Sha -- dow does what I be -- gin.
+  \l As one, the Sha -- dow, Moon and I
+  re -- joice, and watch the spring come in.
 }
 verseB = \lyricmode {
-  I sing: and wa -- vers time the moon.
-  I dance: the sha -- dow an -- tics too.
+  I sing: and wa -- vers time the Moon.
+  I dance: the Sha -- dow an -- tics too.
   Our joys we share while so -- ber still.
   When drunk, we part and bid a -- dieu.
   Of love -- less out -- ing this the pact,
-  Which we all swear to keep for aye.
+  sus -- tain -- ing us through clou -- dy day.
   The next time that we meet shall be
-  Be -- side yon dis -- tant mil -- ky way.
+  be -- side yon dis -- tant mil -- ky way.
 }
 
 % Set up music-aligned verses. Change to the correct number
