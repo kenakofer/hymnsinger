@@ -61,8 +61,8 @@ verseA = \lyricmode {
 verseB = \lyricmode {
   \override Lyrics.LyricText.font-shape = #'italic
   While you live, shine bright.
-  Don't let grief sour your guest, Life,
-  stay -- ing with you, just for a while.
+  Let not grief sour your guest, Life,
+  stay -- ing with you, but for a while.
   Soon will come due all de -- mands of Time.
 }
 spacingVerse = \lyricmode {
