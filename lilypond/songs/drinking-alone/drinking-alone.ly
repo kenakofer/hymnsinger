@@ -5,7 +5,7 @@
 %% TUNE INFO
 composer = \smallText "Music: 梅花三弄 (Plum Blossom Melodies)"
 arranger = \smallText "arr. Kenan Schaefkofer, 2021"
-meter = \smallText "PLUM BLOSSOM"
+meter = \smallText "PLUM BLOSSOM 88.88.88.88"
 hymnKey = \key g \major
 hymnTime = \time 4/4
 quarternoteTempo = 90
@@ -53,7 +53,7 @@ soprano = {
     b8 d4 e8 e4. b8 | d( b d) e g,4. 8 |
     e8 g a d b4 a8( b16 a) | g1 \break
 
-    d'8 4 b8 d e g fs | e2. d8( e) |
+    d'8 4 b8 d e b a | b2. d8( e) |
     b4. d8 g, e g b16( d) | a1 | \break
     a8 4 g8 a b d b | a2. 8( d) |
     b4. a8 g e a b | b16( a g4.)~ 2 |
@@ -75,6 +75,15 @@ tenor = {
 bass = {
   \globalParts
   \relative d {
+    g8 a4 a8 g4. d8 | d8( e4) 8 e8( g4) 8 |
+    g4. e8 d d g g | g1 |
+    d8 d4 d8 b'4. 8 | a4( g8) b, e4. 8 |
+    e8 d d b d4 4 | g1
+
+    d8 b'4 b8 a g g fs | e2. 4 |
+    d4. b'8 g g e b | d1
+    d8 d4 e8 fs g b,  g' | d2. d4 | g4( b,8) e e b a a | g1
+
 
   }
 }
