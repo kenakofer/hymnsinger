@@ -67,8 +67,8 @@ alto = {
     b8 b fs' fs g4 g4 | d1
 
     d8 b'4 b8 a g g fs | g2. g4
-    g4. 8 e b e e | e8( fs2..)
-    d8 4 8 fs g b g | d2. fs4
+    g4. b8 e, b e e | e8( fs2..)
+    d8 4 8 fs g b g | g2. fs4
     g4. e8 e[ e] d d | d1
   }
 }
@@ -82,7 +82,7 @@ bass = {
     e8 d d b d4 4 | g1
 
     g4 8 e d b b d | e8( g~ 2) g4 |
-    d4. b'8 g g e b | d1
+    d4. g8 g g e b | d1
     d8 d4 d8 d d b b | d2. d4 |
     g4( d8) e e b a a | g1
   }
