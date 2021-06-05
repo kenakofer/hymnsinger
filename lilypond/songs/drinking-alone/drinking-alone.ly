@@ -8,7 +8,7 @@ arranger = \smallText "arr. Kenan Schaefkofer, 2021"
 meter = \smallText "PLUM BLOSSOM 88.88.88.88"
 hymnKey = \key g \major
 hymnTime = \time 4/4
-quarternoteTempo = 90
+quarternoteTempo = 76
 \include "../../lib/global-parts.ily"
 
 %% SONG INFO
@@ -54,7 +54,7 @@ soprano = {
     e8 g a d b4 a8( b16 a) | g1 \break
 
     d'8 4 b8 d e b a | b2. d8( e) |
-    b4. d8 g, e g b16( d) | a1 | \break
+    b4. d8 g, e g[ b16( d)] | a1 | \break
     a8 4 g8 a b d b | a2. 8( d) |
     b4. a8 g e a b | b16( a g4.)~ 2 |
 
@@ -64,6 +64,15 @@ soprano = {
 alto = {
   \globalParts
   \relative e' {
+    g8 a4 g8 g4. fs8 | e4. 8 b4. 8 |
+    4. 8 fs'[ g] g g | g1
+    g8 a4 g8 g4. g8 | a8( g b) g g4. b,8 |
+    b8 b fs' fs g4 g4 | d1
+
+    d8 b'4 b8 a g g fs | g2. g4
+    g4. 8 e b e e | e8( fs2..)
+    d8 4 8 fs g b g | d2. fs4
+    g4. e8 e[ e] d d | d1
 
   }
 }
@@ -75,14 +84,15 @@ tenor = {
 bass = {
   \globalParts
   \relative d {
-    g8 a4 a8 g4. d8 | d8( e4) 8 e8( g4) 8 |
+    g4 g8 e d4. 8 | d8( e4) 8 e8( g4) 8 |
     g4. e8 d d g g | g1 |
     d8 d4 d8 b'4. 8 | a4( g8) b, e4. 8 |
     e8 d d b d4 4 | g1
 
-    d8 b'4 b8 a g g fs | e2. 4 |
+    g4 8 e d b b d | e8( g~ 2) g4 |
     d4. b'8 g g e b | d1
-    d8 d4 e8 fs g b,  g' | d2. d4 | g4( b,8) e e b a a | g1
+    d8 d4 d8 d d b b | d2. d4 |
+    g4( d8) e e b a a | g1
 
 
   }
