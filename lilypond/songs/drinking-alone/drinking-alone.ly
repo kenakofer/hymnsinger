@@ -35,7 +35,7 @@ subtitle = \markup{
           "相期邈雲漢"
         }
       }
-poet = \smallText \twoLineSmallText "Text: 李白 (Li Bai), 701-762" "tr. W.J.B. Fletcher, 1919, alt. Kenan Schaefkofer, 2021"
+poet = \twoLineSmallText "Text: 李白 (Li Bai), 701-762" "tr. W.J.B. Fletcher, 1919, alt. Kenan Schaefkofer, 2021"
 typesetter = "Kenan Schaefkofer"
 verseCount = 2
 tags = "chinese english secular evening 3part"
