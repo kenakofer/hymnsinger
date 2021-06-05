@@ -12,7 +12,7 @@ quarternoteTempo = 76
 \include "../../lib/global-parts.ily"
 
 %% SONG INFO
-title = \titleText "Drinking alone with the moon"
+title = \titleText "Drinking alone in the moonlight"
 subtitle = \markup{
         \override #'(baseline-skip . 2)
         \fontsize #-0
@@ -37,11 +37,9 @@ subtitle = \markup{
       }
 poet = \smallText \twoLineSmallText "Text: 李白 (Li Bai), 701-762" "tr. W.J.B. Fletcher, 1919, alt. Kenan Schaefkofer, 2021"
 typesetter = "Kenan Schaefkofer"
-%prescore_text = \prescoreText "Uncomment to add text up and left of the score"
-%postscore_text = \postscoreText "Uncomment to add text down and left of the score"
 verseCount = 2
-tags = "english secular evening 3part"
-dateAdded = "2021-06-02"
+tags = "chinese english secular evening 3part"
+dateAdded = "2021-06-05"
 \include "../../lib/header.ily"
 
 %% NOTES
@@ -57,7 +55,6 @@ soprano = {
     b4. d8 g, e g[ b16( d)] | a1 | \break
     a8 4 g8 a b d b | a2. 8( d) |
     b4. a8 g e a b | b16( a g4.)~ 2 |
-
     \bar "|."
   }
 }
@@ -73,14 +70,9 @@ alto = {
     g4. 8 e b e e | e8( fs2..)
     d8 4 8 fs g b g | d2. fs4
     g4. e8 e[ e] d d | d1
-
   }
 }
-tenor = {
-  \globalParts
-  \relative a {
-  }
-}
+tenor = {}
 bass = {
   \globalParts
   \relative d {
@@ -93,8 +85,6 @@ bass = {
     d4. b'8 g g e b | d1
     d8 d4 d8 d d b b | d2. d4 |
     g4( d8) e e b a a | g1
-
-
   }
 }
 
