@@ -11,8 +11,6 @@ quarternoteTempo = 145
 title = \titleText "Say not the struggle naught availeth"
 poet = \smallText "Text: Arthur Hugh Clough, 1849, alt."
 typesetter = "Kenan Schaefkofer"
-%prescore_text = \prescoreText "Uncomment to add text up and left of the score"
-%postscore_text = \postscoreText "Uncomment to add text down and left of the score"
 verseCount = 3
 tags = "english secular 4part"
 dateAdded = "2021-05-11"
@@ -20,7 +18,7 @@ dateAdded = "2021-05-11"
 
 %% LYRICS
 verseA = \lyricmode {
-  \l Say not: the strug -- gle naught a -- vail -- eth,
+  \l Say not the strug -- gle naught a -- vail -- eth,
   the wounds and la -- bour are in vain,
   \l the fear -- some foe faints not, nor fail -- eth,
   and all un -- chang -- ing doth re -- main.
@@ -31,10 +29,10 @@ verseA = \lyricmode {
   but west -- ward, look, the land is bright.
 }
 verseB = \lyricmode {
-  If hopes were dupes, fears may be li -- ars;
+  If hopes were dupes, fears may be li -- ars.
   It may be, in yon smoke con -- cealed,
   our com -- rades chase e'en now the fli -- ers,
-  And, but for us, pos -- sess the field.
+  and, but for us, pos -- sess the field.
   %% CHORUS
   \SB {
     For not by east -- ern win -- dows on -- ly,
@@ -45,9 +43,9 @@ verseB = \lyricmode {
 }
 verseC = \lyricmode {
   For while the tired waves, vain -- ly break -- ing
-  Seem here no pain -- ful inch to gain,
-  Far back through creeks and in -- lets mak -- ing,
-  Comes sil -- ent, flood -- ing in, the main.
+  seem here no pain -- ful inch to gain,
+  far back through creeks and in -- lets mak -- ing,
+  comes sil -- ent, flood -- ing in, the main.
 
   %% CHORUS
   \SC {
