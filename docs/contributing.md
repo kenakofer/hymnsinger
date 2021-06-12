@@ -18,8 +18,8 @@ You will need:
 ### Clone the git repository
 
 You're going to copy this entire website, including all the songs, to your computer.
-- If you're comfortable with git: `git clone https://github.com/kenanbit/hymnsinger.git`
-- Otherwise, go to <https://github.com/kenanbit/hymnsinger> Click the big green download button. You can download a zip and unzip it.
+- If you're comfortable with git: `git clone https://github.com/kenakofer/hymnsinger.git`
+- Otherwise, go to <https://github.com/kenakofer/hymnsinger> Click the big green download button. You can download a zip and unzip it.
 
 ### Getting a song to engrave correctly
 
