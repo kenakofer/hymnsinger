@@ -474,6 +474,10 @@ scoreWithVerse =
     \Score
     \consists #Lyric_text_align_engraver
   }
+  \context {
+    \ChordNames
+    \consists "Instrument_name_engraver"
+  }
 }
 
 empty_header = \header {

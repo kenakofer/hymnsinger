@@ -58,3 +58,5 @@ Here are a list of common Lilypond tasks that are easy to forget, and an example
 | Add symmetrical padding to verses | The Lord Bless you and keep you |
 | Line Lyrics Stanza above the soprano staff | The Lord Bless you and keep you |
 | Different note/duration midi vs. print (e.g. for fermatas) | Teach me thy truth |
+| Capo chords / Chords on multiple lines | O wizened eyes resplendent |
+| Vertical space padding using white-out chords | O wizened eyes resplendent |

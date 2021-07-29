@@ -66,7 +66,8 @@ bass = {
     f4 | ef2 c'4 | d2 bf8 d | ef2 4 | bf2
   }
 }
-songChords = \chords {
+
+chordSymbols = \chordmode {
   \globalChordSymbols
   bf4 | ef2 f4:7/c | bf2. | ef2 f4 | g2.:m
       | ef2 f4:7/c | bf2. | ef2:maj7 c4:m | bf2.
@@ -75,6 +76,25 @@ songChords = \chords {
       | ef2 f4:7/c bf2./d | ef2 f4 | g2.:m
       | ef2 f4:7/c | bf2. | ef2:maj7 c4:m | bf2.
 }
+songChords =
+<<
+\new ChordNames {
+  \set instrumentName = ""
+  \override ChordNames.ChordName.color = #white
+  \chordmode { a1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 }
+}
+\new ChordNames {
+  \once \override InstrumentName.extra-offset = #'(10 . 0.7)
+  \override ChordNames.ChordName.font-shape = #'italic
+  \override ChordNames.ChordName.font-size = #-1
+  \set instrumentName = \markup { \italic "Capo 3:" }
+  \transpose bf g \chordSymbols
+}
+\new ChordNames {
+  \set instrumentName = ""
+  \chordSymbols
+}
+>>
 
 %% LYRICS
 verseA = \lyricmode {
