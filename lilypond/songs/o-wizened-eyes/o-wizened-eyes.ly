@@ -7,11 +7,11 @@ composer = \smallText "Music: Gustav Holst, 1921"
 meter = \smallText "THAXTED 13.13.14.12.13.14"
 hymnKey = \key bf \major
 hymnTime = \time 3/4
-quarternoteTempo = 86
+quarternoteTempo = 89
 \include "../../lib/global-parts.ily"
 
 %% SONG INFO
-title = \titleText "O, wizened eyes resplendent"
+title = \titleText "O wizened eyes resplendent"
 subtitle = \smallText "In memory of Robert Coon"
 poet = \smallText "Text: Kenan Schaefkofer, 2021"
 typesetter = "Kenan Schaefkofer"
@@ -78,7 +78,7 @@ songChords = \chords {
 
 %% LYRICS
 verseA = \lyricmode {
-  \l O, wiz -- ened eyes re -- splen -- dent, we seek the things you saw,
+  \l O wiz -- ened eyes re -- splen -- dent, we seek the things you saw,
   \l that urged you to such great -- ness, and hum -- bled you in awe.
   \l We strive now, as you once strove, toward the bea -- con, toward the Light.
   \l With fore -- bears in -- vit -- ing, it beck -- ons yet more bright.
@@ -86,7 +86,7 @@ verseA = \lyricmode {
   \l what _ seems to us like eve -- _ ning may just be break of day.
 }
 verseB = \lyricmode {
-  O, ea -- ger lips of bless -- ing, speak grace for us to -- day,
+  O ea -- ger lips of bless -- ing, speak grace for us to -- day,
   for -- give us and our mourn -- ing, our stub -- born, pet -- ty ways.
   We speak now, as you once spoke, prayers and stor -- ies, ho -- ly jest,
   to bol -- ster worn hearts and in -- spire us to our best.
@@ -94,7 +94,7 @@ verseB = \lyricmode {
   there _ is a -- far in Gi -- le -- ad, vouch -- safed for us a Balm.
 }
 verseC = \lyricmode {
-  O, trem -- b'ling hands of ser -- vice, wrap arms a -- round us all.
+  O trem -- b'ling hands of ser -- vice, wrap arms a -- round us all.
   Take res -- pite from your la -- bors, and joy in heav -- en's call.
   We fight now, as you once fought, not with sword, but plow -- share hewn.
   Through clang -- or -- ous war drums you hummed a dif -- f'rent tune:
