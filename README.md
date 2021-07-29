@@ -67,8 +67,7 @@ This is a project to make or take hymns with permissive copyright status, typese
       - Syllable hyphens missing
   - Audiveris (FOSS Musical OCR) as part of workflow? It can go from image -> musicxml (not sure about quality). MusicXML -> LY would need to be good though...
 
-  - Lead sheet export? (melody + lyrics + chords)
   - Can't zoom on phone
   - Don't search after every character press
   - Remove page numbers (page 2 onwards)
-  - Add capo chords line with transposition
+  - Add public domain graphic?
