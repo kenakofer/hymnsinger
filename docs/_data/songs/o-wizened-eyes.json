@@ -1,0 +1,35 @@
+{
+  "song_file": "o-wizened-eyes",
+  "exclude_from_index": false,
+  "title": "O, wizened eyes resplendent",
+  "tune": "THAXTED",
+  "meter": "13.13.14.12.13.14",
+  "stanza_count": "2",
+  "composer": "Gustav Holst, 1921",
+  "poet": "Kenan Schaefkofer, 2021",
+  "key": "B-flat major",
+  "date_added": "2021/07/29",
+  "tags": [
+    "english",
+    "theist",
+    "1part",
+    "death",
+    "accompanied",
+    "chords"
+  ],
+  "lyrics": "O, wizened eyes resplendent, we seek the things you saw,\nthat urged you to such greatness, and humbled you in awe.\nWe strive now, as you once strove, toward the beacon, toward the Light.\nWith forebears inviting, it beckons yet more bright.\nThough teary eyes may hinder, and sorrow shroud our way,\nwhat seems to us like evening may just be break of day.\n\nO, eager lips of blessing, speak grace for us today,\nforgive us and our mourning, our stubborn, petty ways.\nWe speak now, as you once spoke, prayers and stories, holy jest,\nto bolster worn hearts and inspire us to our best.\nYou uttered bless'd assurance, through strife, your words did calm,\nthere is afar in Gilead, vouchsafed for us a Balm.\n\nO, tremb'ling hands of service, wrap arms around us all.\nTake respite from your labors, and joy in heaven's call.\nWe fight now, as you once fought, not with sword, but plowshare hewn.\nThrough clangorous war drums you hummed a diff'rent tune:\nEv'ry note is one of justice, each tear can shatter chains,\nev'ry sigh becomes a rush of wind, set free across the plains.\n",
+  "image": "https://github.com/kenakofer/hymnsinger/releases/latest/download/o-wizened-eyes-trad.png",
+  "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: O, wizened eyes resplendent, we seek the things you saw, that urged you to such greatness, and humbled you in awe. We strive now, as you once strove, ... english theist 1part death accompanied chords",
+  "songs_with_same_tune": [
+    {
+      "t": "THAXTED",
+      "s": "I vow to thee, my country",
+      "i": "i-vow-to-thee-my-country"
+    },
+    {
+      "t": "THAXTED",
+      "s": "O God beyond all praising",
+      "e": "https://digitalsongsandhymns.com/songs/1872"
+    }
+  ]
+}
