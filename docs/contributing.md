@@ -28,7 +28,7 @@ To "engrave" (meaning turn the `.ly` file into `.pdf` and `.midi` outputs):
 - Open the source code (the `.ly` file) for one of the songs. For example, "Angels we have heard on high" is at `lilypond/songs/angels_we_have_heard_on_high/angels_we_have_heard_on_high.ly`
 - Hit the lilypad button to engrave. It should look something like this:
 ![Frescobaldi screenshot](assets/img/frescobaldi-screenshot.png)
-- If the notation looks strange to you, you need to use the dropdown menu next to the engrave button to select a different PDF file to view. (One of them is traditional notation, one uses shape-note heads, and one uses Clairnote notation. You get three for the price of one!)
+- If the notation looks strange to you, you need to use the dropdown menu next to the engrave button to select a different PDF file to view. (One of them is traditional notation, one uses shape-note heads, and one uses Clairnote notation, and one is a lead-sheet. You get four for the price of one!)
 - Find and replace "Kenan Schaefkofer" with your name, and re-engrave to see the change. Now _you_ are the one doing the typesetting and (hopefully) making your contributions free for all!
 
 ### Leverage your individual creative energies

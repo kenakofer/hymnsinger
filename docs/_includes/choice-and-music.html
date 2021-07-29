@@ -3,18 +3,23 @@
     <tr>
     <td>
     <input type="radio" id="traditional" name="variant-radio" checked onclick="changeImage('trad');">
-    <label for="traditional">Traditional Score</label>
+    <label for="traditional">Traditional</label>
+    </td><td>
+    <input type="radio" id="lead" name="variant-radio" onclick="changeImage('lead');">
+    <label for="lead">Leadsheet</label>
     </td><td>
     <input type="radio" id="shapenote" name="variant-radio" onclick="changeImage('shapenote');">
-    <label for="shapenote">Shapenote Score</label>
+    <label for="shapenote">Shapenote</label>
     </td><td>
     <input type="radio" id="clairnote" name="variant-radio" onclick="changeImage('clairnote');">
-    <label for="clairnote">Clairnote Score</label>
+    <label for="clairnote">Clairnote</label>
     </td>
     </tr>
     <tr>
     <td>
     (<a href="https://github.com/kenakofer/hymnsinger/releases/download/{{ site.release_version }}/{{ page.song_file }}-trad.pdf">PDF</a>)
+    </td><td>
+    (<a href="https://github.com/kenakofer/hymnsinger/releases/download/{{ site.release_version }}/{{ page.song_file }}-lead.pdf">PDF</a>)
     </td><td>
     (<a href="https://github.com/kenakofer/hymnsinger/releases/download/{{ site.release_version }}/{{ page.song_file }}-shapenote.pdf">PDF</a>)
         (<div class="tooltip">
