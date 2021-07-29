@@ -61,3 +61,14 @@ This is a project to make or take hymns with permissive copyright status, typese
   - Google SEO/analytics
   - Push state on search term with ?s="search term", so back button keeps search
   - The quest for LY -> JS musical representation. Best bet at this point is probably to get JPV's code working and start trying to extend the effort
+    - Issues with lilypond-export:
+      - Key sig missing
+      - Slurs missing
+      - Syllable hyphens missing
+  - Audiveris (FOSS Musical OCR) as part of workflow? It can go from image -> musicxml (not sure about quality). MusicXML -> LY would need to be good though...
+
+  - Lead sheet export? (melody + lyrics + chords)
+  - Can't zoom on phone
+  - Don't search after every character press
+  - Remove page numbers (page 2 onwards)
+  - Add capo chords line with transposition
