@@ -347,6 +347,33 @@ fillTradScore =
       >>
     #})
 
+fillTradLeadSheetScore =
+  #(define-music-function
+    (parser location topA songChords zoomLevel)
+    (ly:music? ly:music? number?)
+    #{
+      <<
+        \removeWithTag #'midionly
+        $songChords
+        \new Lyrics = "topVerse" \with {
+          % lyrics above a staff should have this override
+          \override VerticalAxisGroup.staff-affinity = #DOWN
+        }
+        \new TradStaff = "top" \with {
+          printPartCombineTexts = ##f
+          \magnifyStaff $zoomLevel
+          \RemoveAllEmptyStaves
+        }
+        <<
+          \new Voice \with {
+
+          } << $topA >>
+          \removeWithTag #'slidesOnly \all_verses
+        >>
+      >>
+    #})
+
+
 fillTradScoreSingleStaff =
   #(define-music-function
     (parser location topA topB bottomA bottomB songChords)
@@ -488,5 +515,6 @@ extra_verses = {}
 top_verse = {}
 bottom_verses = {}
 tradStaffZoom = #1
+tradLeadSheetStaffZoom = #1
 clairStaffZoom = #1
 shapeStaffZoom = #1.1 %% A bit larger by default to help see the shapes
