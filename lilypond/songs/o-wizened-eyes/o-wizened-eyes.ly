@@ -7,15 +7,15 @@ composer = \smallText "Music: Gustav Holst, 1921"
 meter = \smallText "THAXTED 13.13.14.12.13.14"
 hymnKey = \key bf \major
 hymnTime = \time 3/4
-quarternoteTempo = 89
+quarternoteTempo = 90
 \include "../../lib/global-parts.ily"
 
 %% SONG INFO
 title = \titleText "O wizened eyes resplendent"
-subtitle = \smallText "In memory of Robert Coon"
+subtitle = \smallText "In memory of Robert Coon (1931 - 2021)"
 poet = \smallText "Text: Kenan Schaefkofer, 2021"
 typesetter = "Kenan Schaefkofer"
-verseCount = 2
+verseCount = 3
 tags = "english theist 1part death accompanied"
 dateAdded = "2021-07-29"
 \include "../../lib/header.ily"
