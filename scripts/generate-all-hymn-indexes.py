@@ -37,7 +37,7 @@ def get_computed_tags(all_lines):
 
 def has_chord_symbols(all_lines):
     for line in all_lines:
-        if line.strip().replace(" ","").startswith("songChords=\chords"):
+        if line.strip().replace(" ","").startswith("songChords="):
             return True
     return False
 
