@@ -42,7 +42,7 @@ This is a project to make or take hymns with permissive copyright status, typese
       ragged-last-bottom = ##f
       ragged-bottom = ##f
     }
-  - Phrasing slurs \( \) are not dashed after partcombine
+  - Phrasing slurs \( \) are not dashed after partCombine
   - Enter multiple lines of lyrics above staff
   - Autofocus the index page search bar
   - Add og: values to hymnsinger.com index page for better sharability

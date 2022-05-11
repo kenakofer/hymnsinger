@@ -5,6 +5,5 @@ bottom = \relative { \aikenHeads a'8 f f4 g a }
 % Beats 2, 3, and 4 revert note heads in the combine
 {
 
-\partcombine #'(2 . 9) \top \bottom
+\partCombine #'(2 . 9) \top \bottom
 }
-

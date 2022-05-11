@@ -27,7 +27,7 @@ coloredNoteHeads =
    ;; the outline, 7 is a good default.
    (lambda (grob)
      (let* ((fsz  (ly:grob-property grob 'font-size 0.0))
-            
+
             (mult (magstep fsz))
             (stl empty-stencil)
             (dur-log (ly:grob-property grob 'duration-log))
@@ -64,7 +64,7 @@ coloredNoteHeads =
                    (else black)))
             (outline-clr (if color-outline clr black))
             (note-clr (if color-outline black clr)))
-       
+
      (set! stl
            (cond
             ;; quarter notes and smaller
@@ -83,8 +83,8 @@ coloredNoteHeads =
                         (closepath))
                     \translate #(cons (* 0.0002 line-width) 0)
                     \with-color #note-clr
-                    \override #'(filled . #t) 
-                    \path #0.001 
+                    \override #'(filled . #t)
+                    \path #0.001
                     #'((moveto   0.000  -0.200)
                        (curveto  0.000  -0.420   0.180  -0.542   0.420  -0.542)
                        (curveto  0.800  -0.542   1.318  -0.210   1.318   0.200)
@@ -121,8 +121,8 @@ coloredNoteHeads =
                        (closepath))
                     \translate #(cons (* 0.0002 line-width) 0)
                     \with-color #note-clr
-                    \override #'(filled . #t) 
-                    \path #0.001 
+                    \override #'(filled . #t)
+                    \path #0.001
                     #'((moveto    0.000  -0.250)
                        (lineto    0.110  -0.270)
                        (curveto   0.110  -0.380   0.210  -0.435   0.280  -0.435)
@@ -164,8 +164,8 @@ coloredNoteHeads =
                      (closepath))
                   \translate #(cons (* 0.0002 line-width) 0)
                   \with-color #note-clr
-                  \override #'(filled . #t) 
-                  \path #0.001 
+                  \override #'(filled . #t)
+                  \path #0.001
                     #'((moveto    0.000   0.000)
                        (lineto    0.660  -0.190)
                        (curveto   0.540   0.000   0.560   0.310   0.710   0.415)
@@ -218,8 +218,8 @@ coloredNoteHeads =
                        (closepath))
                    \translate #(cons (* 0.0002 line-width) 0)
                    \with-color #note-clr
-                   \override #'(filled . #t) 
-                   \path #0.001 
+                   \override #'(filled . #t)
+                   \path #0.001
                     #'((moveto   -0.160   0.000)
                        (lineto    0.560   0.100)
                        (curveto   0.560   0.270  0.630   0.460   0.850   0.460)
@@ -247,7 +247,7 @@ coloredNoteHeads =
                        (curveto  -0.122   0.700 -0.160   0.657  -0.160   0.610)
                        (lineto   -0.160   0.100)
                        (closepath))
-                  }                 
+                  }
                #}
                ))
             ))
@@ -280,8 +280,7 @@ bottom =
   \override NoteHead.layer = #2
   \override NoteHead.before-line-breaking = #(coloredNoteHeads #f 2 0)
 }
-{ \partcombine #'(2 . 9) \music \bottom }
+{ \partCombine #'(2 . 9) \music \bottom }
 
 %%% LSR workaround
 \markup\vspace #.5
-

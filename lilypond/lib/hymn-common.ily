@@ -4,8 +4,8 @@
 \include "global-chord-symbols.ily"
 #(ly:set-option 'midi-extension "midi")
 
-pa = \partcombineApart
-pt = \partcombineAutomatic
+pa = \partCombineApart
+pt = \partCombineAutomatic
 
 globalLyrics =
 #(define-music-function
@@ -272,7 +272,7 @@ fillClairScore =
         }
         <<
           \new Voice \with {
-          } << \partcombine #'(2 . 20) $topA $topB >>
+          } << \partCombine #'(2 . 20) $topA $topB >>
           \removeWithTag #'slidesOnly \all_verses
         >>
         \new Staff = "bottom" \with {
@@ -282,7 +282,7 @@ fillClairScore =
           \RemoveAllEmptyStaves
         }<<
           \new Voice \with {
-          } { \clef bass << \partcombine #'(2 . 20) $bottomA $bottomB >> }
+          } { \clef bass << \partCombine #'(2 . 20) $bottomA $bottomB >> }
           \bottom_verses
           \top_verse
         >>
@@ -304,7 +304,7 @@ fillClairScoreSingleStaff =
         <<
 
           \new Voice \with {
-          } << \partcombine #'(2 . 20) $topA $topB $bottomA $bottomB >>
+          } << \partCombine #'(2 . 20) $topA $topB $bottomA $bottomB >>
           \removeWithTag #'slidesOnly \all_verses
         >>
       >>
@@ -330,7 +330,7 @@ fillTradScore =
         <<
           \new Voice \with {
 
-          } << \partcombine #'(2 . 20) $topA $topB >>
+          } << \partCombine #'(2 . 20) $topA $topB >>
           \removeWithTag #'slidesOnly \all_verses
         >>
         \new TradStaff = "bottom" \with {
@@ -340,7 +340,7 @@ fillTradScore =
         } <<
           \new Voice \with {
 
-          } { \clef bass << \partcombine #'(2 . 20) $bottomA $bottomB >> }
+          } { \clef bass << \partCombine #'(2 . 20) $bottomA $bottomB >> }
           \bottom_verses
           \top_verse
         >>
@@ -389,7 +389,7 @@ fillTradScoreSingleStaff =
         <<
           \new Voice \with {
 
-          } << \partcombine #'(2 . 20) $topA $topB $bottomA $bottomB >>
+          } << \partCombine #'(2 . 20) $topA $topB $bottomA $bottomB >>
           \removeWithTag #'slidesOnly \all_verses
         >>
       >>
@@ -415,7 +415,7 @@ fillSlidesScore =
         <<
           \new Voice \with {
 
-          } << \partcombine #'(2 . 20) $topA $topB >>
+          } << \partCombine #'(2 . 20) $topA $topB >>
           \keepWithTag $whichVerse \all_verses
         >>
         \new TradStaff = "bottom" \with {
@@ -425,7 +425,7 @@ fillSlidesScore =
         } <<
           \new Voice \with {
 
-          } { \clef bass << \partcombine #'(2 . 20) $bottomA $bottomB >> }
+          } { \clef bass << \partCombine #'(2 . 20) $bottomA $bottomB >> }
           \bottom_verses
           \top_verse
         >>
