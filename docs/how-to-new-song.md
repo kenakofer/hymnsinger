@@ -6,7 +6,7 @@
 
 If you haven't already, set up [Frescobaldi + Lilypond](contributing) or [Visual Studio Code + Lilypond](vscode).
 
-If you haven't already, go [learn the basics of Lilypond](https://lilypond.org/doc/v2.20/Documentation/learning/simple-notation). It will make doing basic things much less painful.
+If you haven't already, go [learn the basics of Lilypond](https://lilypond.org/doc/v2.22/Documentation/learning/simple-notation). It will make doing basic things much less painful.
 
 ### Copy the template
 

@@ -3,28 +3,25 @@
 \include "../../lib/hymn-common.ily"
 
 %% TUNE INFO
-%% If you have a shared tune file, use this form:
-\include "../../shared-tunes/lasst-uns-erfreuen.ily"
 
 %% Otherwise set up tune info here:
-composer = \smallText "Music: Composer, year"
-%arranger = \smallText "arr. Name, year"
+composer = \smallText "Music: Kenan Schaefkofer, 2022"
 meter = \smallText "TUNE NAME METER"
 hymnKey = \key c \major
-hymnTime = \time 4/4
-quarternoteTempo = 120
+hymnTime = \time 6/8
+quarternoteTempo = 90
 \include "../../lib/global-parts.ily"
 
 %% SONG INFO
-title = \titleText "Title of the song"
+title = \titleText "Fruit of the Whys"
 %subtitle = \smallText "Optional"
-poet = \smallText "Text: Author, year"
+poet = \smallText "Text: Kenan Schaefkofer, 2022"
 typesetter = "Kenan Schaefkofer"
 %prescore_text = \prescoreText "Uncomment to add text up and left of the score"
 %postscore_text = \postscoreText "Uncomment to add text down and left of the score"
-verseCount = 4
-tags = "english theist 4part"
-dateAdded = %YYYY-MM-DD%
+verseCount = 5
+tags = "english secular 1part"
+dateAdded = "2022-05-11"
 \include "../../lib/header.ily"
 
 %% NOTES

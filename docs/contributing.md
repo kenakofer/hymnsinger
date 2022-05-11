@@ -11,7 +11,7 @@ All the songs on the site are written using Lilypond, which is a way to describe
 ### Installing
 
 You will need:
- - [Lilypond](http://lilypond.org/download.html), the program that turns a file of code: `my-song.ly` into outputs `my-song.pdf` and `my-song.midi`. Hymn Singer currently uses 2.20.0, and the newer versions may be fine.
+ - [Lilypond](http://lilypond.org/download.html), the program that turns a file of code: `my-song.ly` into outputs `my-song.pdf` and `my-song.midi`. Hymn Singer currently uses 2.22.1, and the newer versions may be fine.
  - [Frescobaldi](https://frescobaldi.org/download), the easiest way to get started with Lilypond on Linux, Mac, or Windows.
  - (optional) [Git](https://git-scm.com/downloads)
 
@@ -36,7 +36,7 @@ To "engrave" (meaning turn the `.ly` file into `.pdf` and `.midi` outputs):
 Experiment by changing things!
 - Maybe change the title, or some of the lyrics and see if your changes show up in the PDF.
 - Change some note letters in the `soprano = `, `alto = `, etc. For example, maybe change the first `a4` to `gs4` to change the soprano's first quarter note from `A` to `G#`.
-- Then go [learn the basics of Lilypond](https://lilypond.org/doc/v2.20/Documentation/learning/simple-notation)
+- Then go [learn the basics of Lilypond](https://lilypond.org/doc/v2.22/Documentation/learning/simple-notation)
 
 ### Audio playback
 

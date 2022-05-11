@@ -11,7 +11,7 @@ Visual Studio Code is a powerful open-source IDE with a dizzying array of helpfu
 ### Installing
 
 You will need:
-1. Install Lilypond 2.20.0: http://lilypond.org/download.html>
+1. Install Lilypond 2.22: http://lilypond.org/download.html>
     - On windows, you need to change your PATH as described on the download page. For example, add this to your system path: `C:\Program Files (x86)\LilyPond\usr\bin`. This allows VSCode to find where `lilypond` is at.
 1. Install Visual Studio Code: <https://code.visualstudio.com/download>
 1. Clone our website for all the song examples: `git clone https://github.com/kenakofer/hymnsinger.git`

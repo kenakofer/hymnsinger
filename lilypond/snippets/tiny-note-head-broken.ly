@@ -1,4 +1,4 @@
-\version "2.20.0"
+\version "2.22.1"
 
 top = \relative { \aikenHeads d''8 c c b a4 a }
 bottom = \relative { \aikenHeads a'8 f f4 g a }

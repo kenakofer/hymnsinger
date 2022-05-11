@@ -1,4 +1,4 @@
-\version "2.20.0"
+\version "2.22.1"
 #(ly:set-option 'relative-includes #t)
 \include "../../lib/hymn-common.ily"
 
