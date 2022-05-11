@@ -11,15 +11,15 @@ If you haven't already, go [learn the basics of Lilypond](https://lilypond.org/d
 ### Copy the template
 
 To create a song called "My Song":
-* Run the script `scripts/new_song_from_template.sh my_song`. This just copies the a template file into a new file at `lilypond/songs/my_song/my_song.ly`.
-* Or manually: create a new directory `my_song` in `lilypond/songs/`, and copy `lilypond/hymn_template/hymn_template.ly` to `my_song/my_song.ly`.
+* Run the script `scripts/new-song-from-template.sh my-song`. This just copies the a template file into a new file at `lilypond/songs/my-song/my-song.ly`.
+* Or manually: create a new directory `my-song` in `lilypond/songs/`, and copy `lilypond/hymn-template/hymn-template.ly` to `my-song/my-song.ly`.
 
 ### Modify the template
 The first things you'll do after creating the new song file:
-* Remove the included `shared_tune` (unless you just want to provide new lyrics to an existing tune)
+* Remove the included `shared-tune` (unless you just want to provide new lyrics to an existing tune)
 * Fill out everything in the `%% TUNE INFO`, and `%% SONG INFO` sections, e.g. change "Title of the song" to "My Song"
 * Add some notes to soprano, alto, tenor, and bass
-* Add some lyrics in `verseA-verseF`
+* Add some lyrics in `verseA` through `verseF`
 * Make weird special-case tweaks (Scroll down to appendix)
 * Check your work frequently by saving/re-engraving!
 

@@ -11,7 +11,7 @@ All the songs on the site are written using Lilypond, which is a way to describe
 ### Installing
 
 You will need:
- - [Lilypond](http://lilypond.org/download.html), the program that turns a file of code: `my_song.ly` into outputs `my_song.pdf` and `my_song.midi`. Hymn Singer currently uses 2.20.0, and the newer versions may be fine.
+ - [Lilypond](http://lilypond.org/download.html), the program that turns a file of code: `my-song.ly` into outputs `my-song.pdf` and `my-song.midi`. Hymn Singer currently uses 2.20.0, and the newer versions may be fine.
  - [Frescobaldi](https://frescobaldi.org/download), the easiest way to get started with Lilypond on Linux, Mac, or Windows.
  - (optional) [Git](https://git-scm.com/downloads)
 
@@ -25,7 +25,7 @@ You're going to copy this entire website, including all the songs, to your compu
 
 To "engrave" (meaning turn the `.ly` file into `.pdf` and `.midi` outputs):
 - Open Frescobaldi
-- Open the source code (the `.ly` file) for one of the songs. For example, "Angels we have heard on high" is at `lilypond/songs/angels_we_have_heard_on_high/angels_we_have_heard_on_high.ly`
+- Open the source code (the `.ly` file) for one of the songs. For example, "Angels we have heard on high" is at `lilypond/songs/angels-we-have-heard-on-high/angels-we-have-heard-on-high.ly`
 - Hit the lilypad button to engrave. It should look something like this:
 ![Frescobaldi screenshot](assets/img/frescobaldi-screenshot.png)
 - If the notation looks strange to you, you need to use the dropdown menu next to the engrave button to select a different PDF file to view. (One of them is traditional notation, one uses shape-note heads, and one uses Clairnote notation, and one is a lead-sheet. You get four for the price of one!)

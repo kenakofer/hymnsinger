@@ -33,9 +33,9 @@ To set up Visual Studio Code for Lilypond development:
 ![VSCode Extensions screenshot](assets/img/vscode-extensions.png)
 1. Exit and restart VSCode for extensions to take full effect
 1. Click on the Explorer icon tab on the left side of the screen (Ctrl+Shift+E)
-1. Open the file dropdowns and double click `lilypond/songs/angels_we_have_heard_on_high/angels_we_have_heard_on_high.ly` (The code in the file should be colored by the syntax highlighter.)
-1. Try saving (Ctrl-S). You should see the `angels_we_have_heard_on_high/` directory get populated with some PDF files and a midi file.
-1. Double click `angels_we_have_heard_on_high-trad.pdf` to open it. Optionally, drag the PDF file to the right side of the window, to open a second pane alongside the editor.
+1. Open the file dropdowns and double click `lilypond/songs/angels-we-have-heard-on-high/angels-we-have-heard-on-high.ly` (The code in the file should be colored by the syntax highlighter.)
+1. Try saving (Ctrl-S). You should see the `angels-we-have-heard-on-high/` directory get populated with some PDF files and a midi file.
+1. Double click `angels-we-have-heard-on-high-trad.pdf` to open it. Optionally, drag the PDF file to the right side of the window, to open a second pane alongside the editor.
 1. Find and replace "Kenan Schaefkofer" with your name, and re-engrave to see the change. Now _you_ are the one doing the typesetting and (hopefully) making your contributions free for all!
 1. Your setup may look something like this:
 ![VSCode Workflow screenshot](assets/img/vscode-full.png)
