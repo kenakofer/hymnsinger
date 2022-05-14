@@ -25,10 +25,16 @@ find ./lilypond/songs -type f -iname "*.ly" -print0 | sort -z | while IFS= read 
         # If it was a multi-page score, the images should be vertically joined
         echo "     --> (Optimizing PNGs)"
         for TYPE in -trad -clairnote -shapenote -lead; do
-            if [ -e "$OUTPUT_DIR$BASE$TYPE-page2.png" ] ; then
-                convert -append "$OUTPUT_DIR$BASE$TYPE-page1.png" "$OUTPUT_DIR$BASE$TYPE-page2.png" -strip "$OUTPUT_DIR$BASE$TYPE.png" &&
-                rm "$OUTPUT_DIR$BASE$TYPE-page1.png" "$OUTPUT_DIR$BASE$TYPE-page2.png" ||
+            if [ -e "$OUTPUT_DIR$BASE$TYPE-page3.png" ] ; then # 3 page case
+                convert -append "$OUTPUT_DIR$BASE$TYPE-page1.png" "$OUTPUT_DIR$BASE$TYPE-page2.png" "$OUTPUT_DIR$BASE$TYPE-page3.png" -strip "$OUTPUT_DIR$BASE$TYPE.png" &&
+                rm "$OUTPUT_DIR$BASE$TYPE-page1.png" "$OUTPUT_DIR$BASE$TYPE-page2.png" "$OUTPUT_DIR$BASE$TYPE-page3.png" ||
                 echo "Failed to merge images for $BASE"
+            else
+                if [ -e "$OUTPUT_DIR$BASE$TYPE-page2.png" ] ; then # 2 page case
+                    convert -append "$OUTPUT_DIR$BASE$TYPE-page1.png" "$OUTPUT_DIR$BASE$TYPE-page2.png" -strip "$OUTPUT_DIR$BASE$TYPE.png" &&
+                    rm "$OUTPUT_DIR$BASE$TYPE-page1.png" "$OUTPUT_DIR$BASE$TYPE-page2.png" ||
+                    echo "Failed to merge images for $BASE"
+                fi
             fi
             mogrify -colorspace gray +dither -posterize 2 "$OUTPUT_DIR$BASE$TYPE*.png"
         done
