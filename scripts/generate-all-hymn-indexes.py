@@ -190,7 +190,7 @@ def get_lyrics(all_lines):
             prefix = "  " if chorus_mode else ""
             line = prefix + join_verse_line(line, remove_quotes)
             if not line.isspace():
-                lyrics+=prefix + join_verse_line(line, remove_quotes) + "\n"
+                lyrics+=line + "\n"
     while "\n\n\n" in lyrics:
         lyrics = lyrics.replace("\n\n\n", "\n\n")
     return lyrics.strip() + "\n"
@@ -201,10 +201,10 @@ def join_verse_line(line, remove_quotes):
         stripped = stripped[1:-1].replace('\\"','"')
 
     words = stripped.replace("_","").replace("~"," ").split()
-    if "%%" in words:
-        words.remove("%%")
-    if "\\l" in words:
-        words.remove("\\l")
+
+    # Filter out lilypond tokens %% and \command
+    words = [w for w in words if not w.startswith("%%") and not w.startswith("\\")]
+
     # Remove quotes and asterisks on individual words
     for i in range(len(words)):
         if words[i][0] == '"' and words[i][-1] == '"':
