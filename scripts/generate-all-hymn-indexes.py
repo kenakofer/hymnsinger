@@ -209,7 +209,8 @@ def join_verse_line(line, remove_quotes):
     for i in range(len(words)):
         if words[i][0] == '"' and words[i][-1] == '"':
             words[i] = words[i][1:-1]
-        words[i] = words[i].replace("''",'"')
+        words[i] = words[i].replace('"','') # Any " in the source is syntactic. Get rid!
+        words[i] = words[i].replace("''",'"') # And now we can turn the '' into a proper ", no longer syntactic
 
 
     while "--" in words:
