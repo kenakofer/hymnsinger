@@ -4,7 +4,7 @@
 
 %% TUNE INFO
 composer = \smallText "Music: Kenan Schaefkofer, 2022"
-meter = \smallText "AN EXCELLENT QUESTION 11.11.12.11 with refrain"
+meter = \smallText "EXCELLENT QUESTION 11.11.11.11 with refrain"
 hymnKey = \key f \major
 hymnTime = \time 6/8
 hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/8)
