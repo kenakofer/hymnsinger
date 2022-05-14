@@ -9,7 +9,7 @@ hymnKey = \key f \major
 hymnTime = \time 6/8
 hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/8)
 hymnBeatStructure = \set Timing.beatStructure = 3,3
-quarternoteTempo = 86
+quarternoteTempo = 80
 \include "../../lib/global-parts.ily"
 
 %% SONG INFO
@@ -163,7 +163,8 @@ verseA = \lyricmode {
   \l The Whys as a fam -- 'ly seem odd at first glance,
   \l They're farm -- ers at -- temp -- ting to kill all their plants.
   \l When har -- vest day comes, af -- ter all that ab -- use,
-  \l the veg -- gies sur -- vi -- ving can \hideVerseNumberAtLineStart real -- ly pro -- duce!
+  \l the veg -- gies sur -- vi -- ving can real -- ly pro -- duce!
+  \hideVerseNumberAtLineStart
 
   %% CHORUS
   Oh, how do the Whys grow what -- ev -- er they do?
