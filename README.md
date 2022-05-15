@@ -71,3 +71,4 @@ This is a project to make or take hymns with permissive copyright status, typese
   - Don't search after every character press
   - Remove page numbers (page 2 onwards)
   - Add public domain graphic?
+  - Final note off of midi not triggering in browser(js issue, the midi itself is fine I think)
