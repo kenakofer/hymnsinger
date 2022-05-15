@@ -4,7 +4,7 @@
 
 %% TUNE INFO
 composer = \smallText "Music: Franz Gruber, 1818"
-meter = \smallText "Irregular"
+meter = \smallText "STILLE NACHT Irregular"
 hymnKey = \key bf \major
 hymnTime = \time 6/8
 hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/8)
@@ -16,7 +16,7 @@ quarternoteTempo = 50
 title = \titleText "Silent Night, Holy Night"
 poet = \twoLineSmallText "Text: Joseph Mohr, 1818;" "tr. John Freeman Young, 1863"
 typesetter = "Zachary Cline"
-verseCount = 1
+verseCount = 4
 tags = "english christian christmas 4part"
 dateAdded = "2022-05-13"
 \include "../../lib/header.ily"
@@ -65,21 +65,21 @@ songChords = \chords {
 verseA = \lyricmode {
   \l Si -- lent night, ho -- ly night! All is calm, all is bright, 
   \l Round yon vir -- gin moth -- er and child, Ho -- ly In -- fant, so ten -- der and mild,
-  \l Sleep in heav -- en -- ly peace, Sleep in heav -- en -- ly peace.
+  \l sleep in heav -- en -- ly peace, sleep in heav -- en -- ly peace.
 }
 verseB = \lyricmode {
   Si -- lent night, ho -- ly night! Shep -- herds quake at the sight, 
-  Glo -- ries stream from heav -- en a -- far, Heav'n -- ly hosts _ sing: "\"Al" -- le -- lu -- ia,
+  glo -- ries stream from heav -- en a -- far, heav'n -- ly hosts _ sing: "\"Al" -- le -- lu -- ia,
   Christ the Sav -- ior is born, Christ the Sav -- ior is "born.\""
 }
 verseC = \lyricmode {
   Si -- lent night, ho -- ly night! Son of God, love's pure light,
-  Ra -- diant beams from Thy ho -- ly face, With the dawn of re deem -- _ ing grace,
+  ra -- diant beams from Thy ho -- ly face, with the dawn of re deem -- _ ing grace,
   Je -- sus, Lord, at Thy birth, Je -- sus, Lord, at Thy birth.
 }
 verseD = \lyricmode {
   Si -- lent night, ho -- ly night! Won -- drous star, lend they light, 
-  With the an -- gels let _ us sing, Al -- le -- lu -- _ ia to _ our King,
+  with the an -- gels let _ us sing, Al -- le -- lu -- _ ia to _ our King,
   Christ the Sav -- ior is born, Christ the Sav -- ior is born.
 }
 

@@ -7,7 +7,7 @@
 quarternoteTempo = 120
 
 %% SONG INFO
-title = \titleText "Love Divine, All Loves Excelling"
+title = \titleText "Love divine, all loves excelling"
 poet = \smallText "Text: Charles Wesley, 1747"
 typesetter = "Zachary Cline"
 verseCount = 4
@@ -17,22 +17,22 @@ dateAdded = "2022-05-12"
 
 %% LYRICS
 verseA = \lyricmode {
-  \l Love di -- vine, all loves ex -- cel -- ling, Joy of heaven to earth come down,
-  \l Fix in us Thy hum -- ble dwell -- ing, All Thy faith -- ful mer -- cies crown!
-  \l Je -- sus, Thou art all com -- pas -- sion, Pure, un -- bound -- ed love Thou art;
-  \l Vis -- it us with Thy sal -- va -- tion, En -- ter ev -- ery trem -- bling heart.
+  \l Love di -- vine, all loves ex -- cel -- ling, Joy of heav'n to earth come down,
+  \l fix in us Thy hum -- ble dwell -- ing, all Thy faith -- ful mer -- cies crown!
+  \l Je -- sus, Thou art all com -- pas -- sion, pure, un -- bound -- ed love Thou art;
+  \l vis -- it us with Thy sal -- va -- tion, en -- ter ev -- ery trem -- bling heart.
 }
 verseB = \lyricmode {
-  Breathe, O breathe Thy lov -- ing Spir -- it In -- to ev -- ery trou -- bled breast!
-  Let us all in Thee in -- her -- it, Let us find the prom -- ised rest;
-  Take a -- way the love of sin -- ning; Al -- pha and O -- me -- ga be;
-  End of faith, as its be -- gin -- ning, Set our hearts at lib -- er -- ty.
+  Breathe, O breathe Thy lov -- ing Spir -- it in -- to ev -- ery trou -- bled breast!
+  Let us all in Thee in -- her -- it, let us find the prom -- ised rest;
+  take a -- way the love of sin -- ning; Al -- pha and O -- me -- ga be;
+  end of faith, as its be -- gin -- ning, set our hearts at lib -- er -- ty.
 }
 verseC = \lyricmode {
-  Come, Al -- might -- y to de -- liv -- er, Let us all Thy life re -- ceive;
-  Sud -- den -- ly re -- turn, and nev -- er, Nev -- er -- more Thy tem -- ples leave.
-  Thee we would be al -- ways bless -- ing, Serve Thee as Thy hosts a -- bove;
-  Pray, and praise Thee with -- out ceas -- ing, Glo -- ry in Thy per -- fect love.
+  Come, Al -- might -- y to de -- liv -- er, let us all Thy life re -- ceive;
+  sud -- den -- ly re -- turn, and nev -- er, nev -- er -- more Thy tem -- ples leave.
+  Thee we would be al -- ways bless -- ing, serve Thee as Thy hosts a -- bove;
+  pray, and praise Thee with -- out ceas -- ing, glo -- ry in Thy per -- fect love.
 }
 verseD = \lyricmode {
   Fin -- ish, then, Thy new cre -- a -- tion; Pure and spot -- less let us be;
