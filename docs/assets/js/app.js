@@ -32,6 +32,20 @@ document.addEventListener('DOMContentLoaded', function() {
     if (window.innerWidth >= 961 && window.innerHeight >= 754) {
         document.getElementById('playback-settings').open = true;
     }
+
+    const urlParams = new URLSearchParams(window.location.search);
+
+    if (urlParams.has("lead")) {
+        changeImage('lead');
+    }
+    if (urlParams.has("shapenote")) {
+        document.getElementById('shapenote').checked = true;
+        changeImage('shapenote');
+    }
+    if (urlParams.has("clairenote")) {
+        document.getElementById('clairenote').checked = true;
+        changeImage('clairenote');
+    }
 }, false);
 
 var click_play = function() {

@@ -22,6 +22,18 @@
     function changeImage(variant) {
         var img = document.getElementById("music-image");
         img.src="https://github.com/kenakofer/hymnsinger/releases/download/{{ site.release_version }}/{{ page.song_file }}-"+variant+".png";
+
+        // Get the right checkboxes
+        document.getElementById(variant).checked = true;
+
+        // Set the query for sharing
+        var new_query;
+        if (variant == "trad")
+          new_query = location.pathname; // Clears out parameters
+        else
+          new_query = "?" + variant
+        history.replaceState(null, null, new_query);
+
         return false;
     }
     function copyLyrics() {
