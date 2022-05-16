@@ -36,9 +36,9 @@ verseC = \lyricmode {
 }
 verseD = \lyricmode {
   Fin -- ish, then, Thy new cre -- a -- tion; Pure and spot -- less let us be;
-  Let us see Thy great sal -- va -- tion Per -- fect -- ly re -- stored in Thee;
-  Changed from glo -- ry in -- to glo -- ry, Till in heaven we take our place,
-  Till we cast our crowns be -- fore Thee, Lost in won -- der, love, and praise.
+  let us see Thy great sal -- va -- tion per -- fect -- ly re -- stored in Thee;
+  changed from glo -- ry in -- to glo -- ry, till in heav'n we take our place,
+  till we cast our crowns be -- fore Thee, lost in won -- der, love, and praise.
 }
 
 % Set up music-aligned verses. Change to the correct number
