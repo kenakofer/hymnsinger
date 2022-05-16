@@ -60,3 +60,4 @@ Here are a list of common Lilypond tasks that are easy to forget, and an example
 | Different note/duration midi vs. print (e.g. for fermatas) | Teach me thy truth |
 | Capo chords / Chords on multiple lines | O wizened eyes resplendent |
 | Vertical space padding using white-out chords | O wizened eyes resplendent |
+| "Quotes" in lyrics | Use two ''apostrophes'' instead |

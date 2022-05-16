@@ -9,7 +9,8 @@
 %% Otherwise set up tune info here:
 composer = \smallText "Music: Composer, year"
 %arranger = \smallText "arr. Name, year"
-meter = \smallText "TUNE NAME METER"
+%% Note: the meter variable requires a TUNE NAME, following by a meter, for page generation to work. See existing songs for examples
+meter = \smallText "TUNE NAME meter"
 hymnKey = \key c \major
 hymnTime = \time 4/4
 quarternoteTempo = 120
