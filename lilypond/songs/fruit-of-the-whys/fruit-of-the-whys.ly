@@ -18,7 +18,7 @@ title = \titleText "Fruit of the Whys"
 poet = \smallText "Text: Kenan Schaefkofer, 2022"
 typesetter = "Kenan Schaefkofer"
 %prescore_text = \prescoreText "Uncomment to add text up and left of the score"
-%postscore_text = \postscoreText "Uncomment to add text down and left of the score"
+postscore_text = \postscoreText "Author's interpretation (ROT13): Fpehgval srrqf gehr oryvrsf naq xvyyf jrrqf bs snyfrubbq tebjvat va bar'f zvaq."
 verseCount = 5
 tags = "english secular 3part"
 dateAdded = "2022-05-12"
@@ -178,42 +178,115 @@ verseA = \lyricmode {
   The ones that do, thrive, and have made us quite rich.
   With re -- spect to all farm -- ers, re -- gard -- ing their crops,
   too man -- y col -- lapse when the pam -- per -- ing stops!
-
+  %% END CHORUS
 }
 verseB = \lyricmode {
   The Whys sow with each seed a ker -- nel of doubt.
   They trust a few neigh -- bors, but nev -- er a sprout,
   cause folk round these parts grow the darn -- dest of things,
   but Whys plant a seed just to test what it brings!
+
+  %% CHORUS
+  \SB {
+    Oh, how do the Whys grow what -- ev -- er they do?
+    An ex -- cel -- lent ques -- tion! Here's what they'll tell you:
+
+    We flood in the night and we burn in the day.
+    In eve -- ning and morn -- ing we're hack -- ing a -- way.
+    We suf -- fer no beet leaf to stay past its prime,
+    or give ten -- der stems just a lit -- tle more time.
+    Yes, some will sur -- vive, but we know not yet which!
+    The ones that do, thrive, and have made us quite rich.
+    With re -- spect to all farm -- ers, re -- gard -- ing their crops,
+    too man -- y col -- lapse when the pam -- per -- ing stops!
+  } \SO {
+    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  }
+  %% END CHORUS
 }
 verseC = \lyricmode {
   An oak tree, un -- yield -- ing two -- hun -- dred years back,
   was fin -- al -- ly felled af -- ter man -- y a whack.
   You might think it cold, but they shed not a tear.
   The stump made a bed for new growth to ap -- pear!
+
+  %% CHORUS
+  \SC {
+    Oh, how do the Whys grow what -- ev -- er they do?
+    An ex -- cel -- lent ques -- tion! Here's what they'll tell you:
+
+    We flood in the night and we burn in the day.
+    In eve -- ning and morn -- ing we're hack -- ing a -- way.
+    We suf -- fer no beet leaf to stay past its prime,
+    or give ten -- der stems just a lit -- tle more time.
+    Yes, some will sur -- vive, but we know not yet which!
+    The ones that do, thrive, and have made us quite rich.
+    With re -- spect to all farm -- ers, re -- gard -- ing their crops,
+    too man -- y col -- lapse when the pam -- per -- ing stops!
+  } \SO {
+    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  }
+  %% END CHORUS
 }
 verseD = \lyricmode {
   A guy once came by sell -- ing Mag -- ic -- al Stalk™.
   The Whys took one look and said, ''That's just a rock!
   Un -- liv -- ing, un -- kill -- a -- ble, won't give a yield.
   It's not worth the space it would take in our field!''
+
+  %% CHORUS
+  \SD {
+    Oh, how do the Whys grow what -- ev -- er they do?
+    An ex -- cel -- lent ques -- tion! Here's what they'll tell you:
+
+    We flood in the night and we burn in the day.
+    In eve -- ning and morn -- ing we're hack -- ing a -- way.
+    We suf -- fer no beet leaf to stay past its prime,
+    or give ten -- der stems just a lit -- tle more time.
+    Yes, some will sur -- vive, but we know not yet which!
+    The ones that do, thrive, and have made us quite rich.
+    With re -- spect to all farm -- ers, re -- gard -- ing their crops,
+    too man -- y col -- lapse when the pam -- per -- ing stops!
+  } \SO {
+    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  }
+  %% END CHORUS
 }
 verseE = \lyricmode {
   To be like the Whys, you must take things a -- part.
   To chal -- lenge my stor -- y's a great place to start!
   "If this" her -- bal an -- al -- o -- gy with -- ers and dies,
   I still think it's true you'll find truth in the Whys!
+
+  %% CHORUS
+  \SE {
+    Oh, how do the Whys grow what -- ev -- er they do?
+    An ex -- cel -- lent ques -- tion! Here's what they'll tell you:
+
+    We flood in the night and we burn in the day.
+    In eve -- ning and morn -- ing we're hack -- ing a -- way.
+    We suf -- fer no beet leaf to stay past its prime,
+    or give ten -- der stems just a lit -- tle more time.
+    Yes, some will sur -- vive, but we know not yet which!
+    The ones that do, thrive, and have made us quite rich.
+    With re -- spect to all farm -- ers, re -- gard -- ing their crops,
+    too man -- y col -- lapse when the pam -- per -- ing stops!
+  } \SO {
+    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  }
+  %% END CHORUS
 }
 
 % Set up music-aligned verses. Change to the correct number
 \include "../../lib/5verse.ily"
 
 %% Use this, or the tradStaffZoom and shapeStaffZoom equivalents, if space is tight.
-%clairStaffZoom = #.9
+%% Making clair bigger
+clairStaffZoom = #1.1
 
 %% All sheet music outputs
 \include "../../lib/all-notation-outputs.ily"
 % Slides output. Change to the correct number
-\include "../../lib/slides-book-4verse.ily"
+\include "../../lib/slides-book-5verse.ily"
 %% MIDI output
 \include "../../lib/midi-output.ily"
