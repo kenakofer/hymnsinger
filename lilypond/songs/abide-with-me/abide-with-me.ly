@@ -75,6 +75,35 @@ verseD = \lyricmode {
   I tri -- umph still, if Thou a -- bide with me.
 }
 
+chordSymbols = \chordmode {
+  \globalChordSymbols
+  ef2 g4:m bf4 | c2:m ef2 | c4:m bf c:m bf:7 | ef1
+  ef2 af4 ef | af2 ef | f4:m7 bf ef f:7 | bf1
+  ef2 g4:m bf4 | c2:m ef2 | c4:m af c:aug c:7 | f1:m
+  bf2:7 ef4 bf:7 | ef bf:7 c:m af | ef2/bf bf:7 | ef1
+}
+
+songChords =
+<<
+\new ChordNames { % Hidden duplicate chord line for vertical separation
+  \override ChordNames.ChordName.font-size = #-7
+  \set instrumentName = ""
+  \override ChordNames.ChordName.color = #white
+  \chordSymbols
+}
+\new ChordNames {
+  \once \override InstrumentName.extra-offset = #'(10 . 0.7)
+  \override ChordNames.ChordName.font-shape = #'italic
+  \override ChordNames.ChordName.font-size = #-1
+  \set instrumentName = \markup { \italic "Capo 1:" }
+  \transpose ef d \chordSymbols
+}
+\new ChordNames {
+  \set instrumentName = ""
+  \chordSymbols
+}
+>>
+
 % Set up music-aligned verses. Change to the correct number
 \include "../../lib/4verse.ily"
 
