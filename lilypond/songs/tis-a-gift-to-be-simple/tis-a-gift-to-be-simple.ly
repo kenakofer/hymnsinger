@@ -64,6 +64,34 @@ verseA = \lyricmode {
   till by turn -- ing, turn -- ing we come round right.
 }
 
+chordSymbols = \chordmode {
+  \globalChordSymbols
+  f4 | f1 | f1 | c1 | g2:m7 c4
+  s4 | f1 | f2 d2:m | g2:m7 d4:m c4 | bf2 f4
+  s4 | f1 | d4:m c4 d4.:m c8 | f1 | c2.
+  s4 | f1 | f4 c4 d2:m | g2:m7 d4:m c4 | bf2 f4 |
+}
+
+songChords =
+<<
+\new ChordNames { % Hidden chord line for vertical separation (must mostly line up with the visible chords to work)
+  \set instrumentName = ""
+  \override ChordNames.ChordName.color = #white
+  \chordmode { a4 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 }
+}
+\new ChordNames {
+  \once \override InstrumentName.extra-offset = #'(10 . 0.7)
+  \override ChordNames.ChordName.font-shape = #'italic
+  \override ChordNames.ChordName.font-size = #-1
+  \set instrumentName = \markup { \italic "Capo 1:" }
+  \transpose f e \chordSymbols
+}
+\new ChordNames {
+  \set instrumentName = ""
+  \chordSymbols
+}
+>>
+
 % Set up music-aligned verses. Change to the correct number
 \include "../../lib/1verse.ily"
 
