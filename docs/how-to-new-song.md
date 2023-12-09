@@ -20,6 +20,7 @@ The first things you'll do after creating the new song file:
 * Fill out everything in the `%% TUNE INFO`, and `%% SONG INFO` sections, e.g. change "Title of the song" to "My Song"
 * Add some notes to soprano, alto, tenor, and bass
 * Add some lyrics in `verseA` through `verseF`
+    * To left align lyrics, put `\l` before the top syllable. This makes the leftmost columns of syllables neater.
 * Make weird special-case tweaks (Scroll down to appendix)
 * Check your work frequently by saving/re-engraving!
 
@@ -44,6 +45,7 @@ Here are a list of common Lilypond tasks that are easy to forget, and an example
 | Single column lyrics at the end | We shall overcome |
 | Alternating Leader/All or Unison/Harmony | When Israel was in Egypt's land |
 | Chorus / Refrain lines condensed to one line without ruining the lyrics extractor | All creatures worship God most high |
+| Hide verse numbers in first staff (e.g. songs starting with chorus) | All things bright and beautiful |
 | Fermatas (up and down facing) | All creatures worship God most high |
 | Alternate title | All creatures worship God most high |
 | Score zoomed to fit on one page (both traditional notation and clairscore) | All creatures worship God most high |
