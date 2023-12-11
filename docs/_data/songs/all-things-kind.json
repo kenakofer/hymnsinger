@@ -1,0 +1,28 @@
+{
+  "song_file": "all-things-kind",
+  "exclude_from_index": false,
+  "title": "All things kind and beautiful",
+  "tune": "ROYAL OAK",
+  "meter": "76.76 with refrain",
+  "stanza_count": "3",
+  "composer": "17th cent. English Traditional; adapt. Martin Shaw, 1915",
+  "poet": "Kenan Schaefkofer, 2023",
+  "key": "G major",
+  "date_added": "2023/12/10",
+  "tags": [
+    "english",
+    "secular",
+    "4part",
+    "chords"
+  ],
+  "lyrics": "All things kind and beautiful, all beings far and near,\n  all words wise and wonderful, are treasures we hold dear.\n\nEach little flower blooming, each feather on a wing,\nand bits of soulfilled stardust who hurt and heal and sing;\n\nAll things kind and beautiful, all beings far and near,\nall words wise and wonderful, are treasures we hold dear.\n\nEach tiny seed that opens, each leafing tow'r of wood,\n\neach plan that leads to action, and yields a harvest good;\n\nAll things kind and beautiful, all beings far and near,\nall words wise and wonderful, are treasures we hold dear.\n\nEach planet in its wand'ring, that meets a child's gaze,\nEach love thrown past all bound'ries, a lightcone tipped with praise;\n",
+  "image": "https://github.com/kenakofer/hymnsinger/releases/latest/download/all-things-kind-trad.png",
+  "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: All things kind and beautiful, all beings far and near,   all words wise and wonderful, are treasures we hold dear.  Each little flower blooming, each... english secular 4part chords",
+  "songs_with_same_tune": [
+    {
+      "t": "ROYAL OAK",
+      "s": "All things bright and beautiful",
+      "i": "all-things-bright"
+    }
+  ]
+}
