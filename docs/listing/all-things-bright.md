@@ -3,7 +3,7 @@ layout: song-page
 song_file: all-things-bright
 title: "All things bright and beautiful"
 description: "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: All things bright and beautiful, all creatures great and small,   all things wise and wonderful, the Lord God made them all. { { #-2 Fine } }  Each li... english theist 4part chords"
-image: https://github.com/kenakofer/hymnsinger/releases/latest/download/all-things-bright-trad.png
+image: /local-lilypond-outputs/all-things-bright-trad.png
 ---
 
 {% include choice-and-music.html %}

@@ -2,7 +2,7 @@
 
 ## Create the odp presentation
 BASE=$1
-OUTPUT_DIR="docs/local-lilypond-outputs/"
+OUTPUT_DIR="docs//local-lilypond-outputs/"
 SKELETON_DIR="scripts/odp-skeleton"
 TEMP_DIR="/tmp/lilypond-odp-build"
 PICTURES_DIR="$TEMP_DIR/Pictures"

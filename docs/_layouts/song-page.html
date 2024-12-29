@@ -18,10 +18,10 @@
   <body>
     <script>
     window.song_filename = "{{ page.song_file }}";
-    window.midi_url = "{{ site.baseurl }}/local-lilypond-outputs/{{ page.song_file }}.midi";
+    window.midi_url = "/local-lilypond-outputs/{{ page.song_file }}.midi";
     function changeImage(variant) {
         var img = document.getElementById("music-image");
-        img.src="https://github.com/kenakofer/hymnsinger/releases/download/{{ site.release_version }}/{{ page.song_file }}-"+variant+".png";
+        img.src="/local-lilypond-outputs/{{ page.song_file }}-"+variant+".png";
 
         // Get the right checkboxes
         document.getElementById(variant).checked = true;
@@ -141,19 +141,19 @@
         <details id="misc-downloads">
           <summary>Downloads</summary>
           <div id="misc-download-list">
-            <a href="https://github.com/kenakofer/hymnsinger/releases/download/{{ site.release_version }}/{{ page.song_file }}.odp">
+            <a href="/local-lilypond-outputs/{{ page.song_file }}.odp">
               Projection Slides (ODP)
             </a><br />
-            <a href="https://github.com/kenakofer/hymnsinger/releases/download/{{ site.release_version }}/{{ page.song_file }}-slides.pdf">
+            <a href="/local-lilypond-outputs/{{ page.song_file }}-slides.pdf">
               Projection Slides (PDF)
             </a><br />
-            <a href="https://github.com/kenakofer/hymnsinger/releases/download/{{ site.release_version }}/{{ page.song_file }}.mp3">
+            <a href="/local-lilypond-outputs/{{ page.song_file }}.mp3">
               Audio (MP3)
             </a><br />
-            <a href="https://github.com/kenakofer/hymnsinger/releases/download/{{ site.release_version }}/{{ page.song_file }}.midi">
+            <a href="/local-lilypond-outputs/{{ page.song_file }}.midi">
               Audio (MIDI)
             </a><br />
-            <a href="https://github.com/kenakofer/hymnsinger/blob/main/lilypond/songs/{{ page.song_file }}/{{ page.song_file }}.ly">
+            <a href="/local-lilypond-outputs/{{ page.song_file }}.ly">
               Source code (LY)
             </a><br />
           </div>

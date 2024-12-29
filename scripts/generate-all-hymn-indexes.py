@@ -229,7 +229,7 @@ def get_description(lyrics, tags):
     return 'View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: '+lyrics_string+'... '+tag_string
 
 def get_image(song_file_base):
-    return "https://github.com/kenakofer/hymnsinger/releases/latest/download/"+song_file_base+"-trad.png"
+    return "/local-lilypond-outputs/"+song_file_base+"-trad.png"
 
 def output_header_info(song_file_base, exclude_from_index, song_title, lyrics, tags, output_file):
     with open(output_file, 'a') as f:

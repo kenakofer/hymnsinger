@@ -11,7 +11,7 @@ $SCRIPT_DIR/generate-all-hymn-pages.sh
 
 # Commit the lilypond file and midi output and updated pages
 git add "lilypond/songs/"
-git add docs/local-lilypond-outputs/
+git add docs//local-lilypond-outputs/
 git add docs/listing/
 git add docs/hymn-index*
 git add docs/_data*
@@ -22,4 +22,4 @@ git push
 
 # Add the song outputs to the release
 LATEST_RELEASE=`gh release list | head -n1 | awk '{print $1;}'`
-gh release upload --clobber $LATEST_RELEASE "docs/local-lilypond-outputs/"*
+gh release upload --clobber $LATEST_RELEASE "docs//local-lilypond-outputs/"*

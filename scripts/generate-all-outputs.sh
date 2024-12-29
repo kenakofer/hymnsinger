@@ -3,7 +3,7 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 find ./lilypond/songs -type f -iname "*.ly" -print0 | sort -z | while IFS= read -r -d $'\0' file; do
     BASE=`basename "${file%.*}"` # This only strips the final ly, not any earlier "extension"
-    OUTPUT_DIR="docs/local-lilypond-outputs/"
+    OUTPUT_DIR="docs//local-lilypond-outputs/"
     INPUT=$file
     MIDI_OUTPUT="$OUTPUT_DIR$BASE.midi"
     MP3_OUTPUT="$OUTPUT_DIR$BASE.mp3"

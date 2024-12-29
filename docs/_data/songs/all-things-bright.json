@@ -15,8 +15,14 @@
     "4part",
     "chords"
   ],
-  "lyrics": "All things bright and beautiful, all creatures great and small,\n  all things wise and wonderful, the Lord God made them all.\n\nEach little flow'r that opens, each little bird that sings,\nGod made their glowing colors, God made their tiny wings.\n\nAll things bright and beautiful, all creatures great and small,\nall things wise and wonderful, the Lord God made them all.\n\nThe purpleheaded mountain, the river running by,\nthe sunset, and the morning that brightens up the sky;\n\nAll things bright and beautiful, all creatures great and small,\nall things wise and wonderful, the Lord God made them all.\n\nThe cold wind in the winter, the pleasant summer sun,\nthe ripe fruits in the garden, God made them ev'ry one.\n\nAll things bright and beautiful, all creatures great and small,\nall things wise and wonderful, the Lord God made them all.\n\nGod gave us eyes to see them, and lips that we might tell\nhow great is God Almighty, who has made all things well.\n",
-  "image": "https://github.com/kenakofer/hymnsinger/releases/latest/download/all-things-bright-trad.png",
-  "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: All things bright and beautiful, all creatures great and small,   all things wise and wonderful, the Lord God made them all.  Each little flow'r that ... english theist 4part chords",
-  "songs_with_same_tune": []
+  "lyrics": "All things bright and beautiful, all creatures great and small,\n  all things wise and wonderful, the Lord God made them all. { { #-2 Fine } }\n\nEach little flow'r that opens, each little bird that sings,\nGod made their glowing colors, God made their tiny wings.\n\nAll things bright and beautiful, all creatures great and small,\nall things wise and wonderful, the Lord God made them all.\n\nThe purpleheaded mountain, the river running by,\nthe sunset, and the morning that brightens up the sky;\n\nAll things bright and beautiful, all creatures great and small,\nall things wise and wonderful, the Lord God made them all.\n\nThe cold wind in the winter, the pleasant summer sun,\nthe ripe fruits in the garden, God made them ev'ry one.\n\nAll things bright and beautiful, all creatures great and small,\nall things wise and wonderful, the Lord God made them all.\n\nGod gave us eyes to see them, and lips that we might tell\nhow great is God Almighty, who has made all things well.\n",
+  "image": "/local-lilypond-outputs/all-things-bright-trad.png",
+  "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: All things bright and beautiful, all creatures great and small,   all things wise and wonderful, the Lord God made them all. { { #-2 Fine } }  Each li... english theist 4part chords",
+  "songs_with_same_tune": [
+    {
+      "t": "ROYAL OAK",
+      "s": "All things kind and beautiful",
+      "i": "all-things-kind"
+    }
+  ]
 }
