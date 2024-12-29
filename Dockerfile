@@ -1,7 +1,7 @@
 # Build arguments for configuration
 ARG ENVIRONMENT=dev
 
-FROM ruby:3.2-slim as builder
+FROM ruby:3.2-bullseye as builder
 
 # Install essential build tools
 RUN apt-get update && apt-get install -y \
@@ -10,9 +10,13 @@ RUN apt-get update && apt-get install -y \
     apache2-utils \
     && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /app
-COPY Gemfile* ./
+WORKDIR /docs
+# COPY Gemfile* ./
+COPY ./docs ./
 RUN bundle install
+
+# Build the html files
+RUN bundle exec jekyll build --incremental
 
 # Final image
 FROM httpd:2.4-alpine
@@ -34,7 +38,7 @@ COPY init-container.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/init-container.sh
 
 # Copy the built site
-COPY --from=builder /app/_site/ /usr/local/apache2/htdocs/
+COPY --from=builder /docs/_site/ /usr/local/apache2/htdocs/
 
 # Create required directories for SSL
 RUN mkdir -p /etc/letsencrypt /var/lib/letsencrypt /var/log/letsencrypt
