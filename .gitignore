@@ -1,10 +1,11 @@
 .*
 --*
-*.pdf
-*.png
-*.mp3
-*-1.*
+/lilypond/**/*.pdf
+/lilypond/**/*.png
+/lilypond/**/*.mp3
+/lilypond/**/*.odp
 /lilypond/**/*.midi
+*-1.*
 .DS_Store
 _site
 .bundle
@@ -15,4 +16,3 @@ sass-cache/
 .ruby-version
 .sass-cache/
 vendor/
-*.odp
