@@ -1,3 +1,9 @@
-theme: jekyll-theme-dinky
+title: Private Hymnsinger
+description: Kenan's personal collection of not-quite-public-domain-yet sheet music. 
+# theme: jekyll-theme-dinky
+remote_theme: pages-themes/dinky@v0.2.0
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
 release_version: "0.10"
 google_analytics: "G-6MBRPLS92C"

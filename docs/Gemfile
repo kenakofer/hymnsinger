@@ -2,13 +2,10 @@
 
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3.0"
+group :jekyll_plugins do
+  gem "jekyll", "~> 4.3.0"
+  gem "webrick", "~> 1.8"
 
-gem "webrick", "~> 1.8"  # Required for Ruby 3+
-
-# Add any other Jekyll plugins you need here
-gem 'jekyll-theme-dinky'
-# For example:
-# gem "jekyll-feed", "~> 0.12"
-# gem "jekyll-seo-tag", "~> 2.6"
-
+  gem "jekyll-seo-tag"
+  gem "jekyll-remote-theme"
+end

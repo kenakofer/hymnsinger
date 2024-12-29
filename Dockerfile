@@ -11,12 +11,16 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /docs
-# COPY Gemfile* ./
-COPY ./docs ./
+
+# Copy Gemfile first and install
+COPY ./docs/Gemfile ./
 RUN bundle install
 
-# Build the html files
-RUN bundle exec jekyll build --incremental
+# Now copy the rest of the docs
+COPY ./docs/ ./
+
+# Build the html files with explicit theme
+RUN bundle exec jekyll build --trace
 
 # Final image
 FROM httpd:2.4-alpine
