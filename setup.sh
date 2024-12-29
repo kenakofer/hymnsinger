@@ -1,6 +1,6 @@
 # dev.sh
 docker build --build-arg ENVIRONMENT=dev -t jekyll-site . && \
-docker run -p 8080:80 jekyll-site
+docker run -it -p 8080:80 jekyll-site
 
 docker run -it --entrypoint /bin/sh -p 8080:80 jekyll-site
 
