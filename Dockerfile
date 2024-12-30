@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /docs
 
 # Copy Gemfile first and install
-COPY ./docs/Gemfile ./
+COPY ./docs/Gemfile ./docs/Gemfile.lock ./
 RUN bundle install
 
 # Now copy the rest of the docs

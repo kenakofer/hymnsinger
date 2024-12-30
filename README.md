@@ -3,7 +3,6 @@
 For building and self-hosting your own private collection of sheet music with password protection.
 
 ## TODO
-.lock file
 fix source code link on song page
 parameterize domain name
 push changes to branch of public repo
