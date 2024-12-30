@@ -6,4 +6,3 @@ plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
 release_version: "0.10"
-google_analytics: "G-6MBRPLS92C"
