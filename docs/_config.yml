@@ -1,6 +1,5 @@
-title: Private Hymnsinger
-description: Kenan's personal collection of not-quite-public-domain-yet sheet music. 
-# theme: jekyll-theme-dinky
+title: Personal Hymns
+description: A personal collection of vocal sheet music. 
 remote_theme: pages-themes/dinky@v0.2.0
 plugins:
   - jekyll-remote-theme

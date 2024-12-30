@@ -1,3 +1,2 @@
-Sitemap: https://hymnsinger.com/sitemap.xml
 User-agent:*
-Disallow:
+Disallow:*
