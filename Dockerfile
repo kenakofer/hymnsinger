@@ -1,5 +1,9 @@
 # Build arguments for configuration
 ARG ENVIRONMENT=dev
+arg USERNAME=user
+ARG PASSWORD=overrideme
+ARG DOMAIN=localhost
+ARG EMAIL=your@email.com
 
 FROM ruby:3.2-bullseye as builder
 
@@ -28,6 +32,14 @@ FROM httpd:2.4-alpine
 # Build arguments in final stage
 ARG ENVIRONMENT
 ENV ENVIRONMENT=${ENVIRONMENT}
+ARG USERNAME
+ENV USERNAME=${USERNAME}
+ARG PASSWORD
+ENV PASSWORD=${PASSWORD}
+ARG DOMAIN
+ENV DOMAIN=${DOMAIN}
+ARG EMAIL
+ENV EMAIL=${EMAIL}
 
 # Install additional tools only in production
 RUN if [ "$ENVIRONMENT" = "prod" ]; then \

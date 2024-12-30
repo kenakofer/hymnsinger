@@ -1,15 +1,18 @@
 #!/bin/sh
+    
+# Replace domain name with localhost
+sed -i "s|ServerName.*|ServerName $DOMAIN|g" /usr/local/apache2/conf/httpd.conf
+echo "${DOMAIN}" > /docs/CNAME
 
-# Default values
-DEFAULT_PASSWORD="defaultpassword"
-DOMAIN="p.hymnsinger.com"
+# Replace email in apache config
+sed -i "s|ServerAdmin.*|ServerAdmin $EMAIL|g" /usr/local/apache2/conf/httpd.conf
+    
+# Create password file 
+htpasswd -cb /usr/local/apache2/conf/.htpasswd ${USERNAME} ${PASSWORD}
 
 # Environment-specific setup
 if [ "$ENVIRONMENT" = "prod" ]; then
     echo "Setting up production environment..."
-    
-    # Create password file with provided or default password
-    htpasswd -cb /usr/local/apache2/conf/.htpasswd user "${PASSWORD:-$DEFAULT_PASSWORD}"
     
     # Get Let's Encrypt certificate
     if [ ! -f /etc/letsencrypt/live/$DOMAIN/fullchain.pem ]; then
@@ -17,7 +20,7 @@ if [ "$ENVIRONMENT" = "prod" ]; then
             --agree-tos \
             --non-interactive \
             --domain $DOMAIN \
-            --email "${EMAIL:-admin@example.com}" \
+            --email "${EMAIL}" \
             --preferred-challenges http
     fi
     
@@ -39,12 +42,6 @@ else
     # Use self-signed certificate paths
     sed -i "s|SSLCertificateFile.*|SSLCertificateFile /usr/local/apache2/conf/server.crt|g" /usr/local/apache2/conf/httpd.conf
     sed -i "s|SSLCertificateKeyFile.*|SSLCertificateKeyFile /usr/local/apache2/conf/server.key|g" /usr/local/apache2/conf/httpd.conf
-    
-    # Create password file with default password for development
-    htpasswd -cb /usr/local/apache2/conf/.htpasswd user "devpassword"
-    
-    # Replace domain name with localhost
-    sed -i "s|ServerName.*|ServerName localhost|g" /usr/local/apache2/conf/httpd.conf
 fi
 
 # Start Apache
