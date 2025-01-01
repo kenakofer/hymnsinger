@@ -20,7 +20,8 @@ verseA = \lyricmode {
   \hideVerseNumberAtLineStart
   %% CHORUS
   \l All things bright and beau -- ti -- ful, all crea -- tures great and small,
-  all things wise and won -- der -- ful, the Lord God made them all. \SO { \mark \markup { \fontsize #-2 "Fine" } }
+  all things wise and won -- der -- ful, the Lord God made them all.
+  \SO { \mark \markup { \fontsize #-2 "Fine" } }
   %% END CHORUS
   \showVerseNumberAtLineStart "1" #3.5
   \SA { \showVerseNumberAtLineStart "1" #2.0 }
