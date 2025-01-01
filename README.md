@@ -20,6 +20,7 @@ This is a project to make or take hymns with permissive copyright status, typese
  - After you `bundle exec jekyll serve` successfully, you can see the site at <http://127.0.0.1:4000> or something similar.
 
 ### Possible TODOs:
+  - Add verses to break forth
   - Differentiate fonts png versus pdf?
   - Stem default directions down/up?
   - Midiplayer tweaks:
@@ -72,3 +73,7 @@ This is a project to make or take hymns with permissive copyright status, typese
   - Remove page numbers (page 2 onwards)
   - Add public domain graphic?
   - Final note off of midi not triggering in browser(js issue, the midi itself is fine I think)
+  - Add more Christmas tags
+  - separate out meter and tune variables in template
+  - Auto scroll down page while playing?
+  - Remove redundant Em from hymn of breaking strain
