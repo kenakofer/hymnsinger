@@ -434,16 +434,16 @@ fillSlidesScore =
 
 scoreWithVerse =
   #(define-music-function
-    (parser location whichVerse)
-    (pair?)
+    (parser location topA topB bottomA bottomB whichVerse)
+    (ly:music? ly:music? ly:music? ly:music? pair?)
     #{
       <<
       \removeWithTag #'midionly
       \fillSlidesScore
-        { \removeWithTag #'midionly \soprano }
-        { \removeWithTag #'midionly \alto }
-        { \removeWithTag #'midionly \tenor }
-        { \removeWithTag #'midionly \bass }
+        { \removeWithTag #'midionly $topA }
+        { \removeWithTag #'midionly $topB }
+        { \removeWithTag #'midionly $bottomA }
+        { \removeWithTag #'midionly $bottomB }
         {}
         #.8
         $whichVerse

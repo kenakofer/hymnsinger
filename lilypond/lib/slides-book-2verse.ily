@@ -2,13 +2,13 @@
   \include "slides-book-common.ily"
   \bookpart {
     \score {
-      \scoreWithVerse #'(verseA printonly)
+      \scoreWithVerse {\soprano} {\alto} {\tenor} {\bass} #'(verseA printonly)
       \header { breakbefore = ##t }
     }
   }
   \bookpart {
     \score {
-      \scoreWithVerse #'(verseB printonly)
+      \scoreWithVerse {\soprano} {\alto} {\tenor} {\bass} #'(verseB printonly)
     }
     \empty_header
   }
