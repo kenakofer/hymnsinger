@@ -17,6 +17,7 @@ quarternoteTempo = 120
 title = \titleText "Solfege: E natural minor scale"
 subtitle =
       \markup{
+        
         %\override #'(font-name . "Linux Biolinum")
         \override #'(font-series . "regular")
         \fontsize #-2

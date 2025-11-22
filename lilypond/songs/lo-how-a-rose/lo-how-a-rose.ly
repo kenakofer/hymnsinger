@@ -12,9 +12,9 @@ quarternoteTempo = 120
 
 %% SONG INFO
 title = \titleText "Lo, how a Rose e'er blooming"
-poet = \twoLineSmallText "Text: v.1-2 anonymous, 1599; v.3 Friedrich Layritz, 1599" "tr. v.1-2 Theodore Baker, 1894; v.3 Harriet Spaeth, 1875; alt."
+poet = \smallText "Text: anonymous, 1599; tr. Theodore Baker, 1894"
 typesetter = "Kenan Schaefkofer"
-verseCount = 3
+verseCount = 2
 tags = "english christian 4part winter"
 dateAdded = "2021-01-12"
 \include "../../lib/header.ily"
@@ -74,12 +74,15 @@ verseC = \lyricmode {
   and light -- ens ev -- 'ry load.
 }
 
+clairStaffZoom = #1.0
+shapeStaffZoom = #1.2
+
 % Set up music-aligned verses. Change to the correct number
-\include "../../lib/3verse.ily"
+\include "../../lib/2verse.ily"
 
 %% All sheet music outputs
 \include "../../lib/all-notation-outputs.ily"
 % Slides output
-\include "../../lib/slides-book-3verse.ily"
+\include "../../lib/slides-book-2verse.ily"
 %% MIDI output
 \include "../../lib/midi-output.ily"
