@@ -8,26 +8,26 @@ composer = \smallText ""
 %arranger = \smallText "arr. Name, year"
 %% Note: the meter variable requires a TUNE NAME, following by a meter, for page generation to work. See existing songs for examples
 meter = \smallText ""
-hymnKey = \key g \major
+hymnKey = \key f \major
 hymnTime = \time 4/4
 quarternoteTempo = 120
 \include "../../lib/global-parts.ily"
 
 %% SONG INFO
-title = \titleText "Solfege: E natural minor scale"
+title = \titleText "Solfege: F major scale"
 subtitle =
       \markup{
         
         %\override #'(font-name . "Linux Biolinum")
         \override #'(font-series . "regular")
         \fontsize #-2
-        "When sharps ("
+        "(With British accent) When flats ("
         \override #'(font-series . "regular")
         \fontsize #-2
-        \sharp
+        \flat
         \override #'(font-series . "regular")
         \fontsize #-2
-        ") you see, the last is Ti!" 
+        ") there are, the last is Fa!" 
       }
 poet = \smallText ""
 typesetter = "Kenan Schaefkofer"
@@ -40,8 +40,8 @@ dateAdded = "2025-11-22"
 soprano = {
   \globalParts
   \relative g' {
-    e4 fs g a | b c d e |
-    fs e d c | b a g fs | e1
+    f4 g a bf | c d e f |
+    g f e d | c bf a g | f1
     \bar "|."
   }
 }
@@ -49,23 +49,23 @@ alto = {
   \globalParts
   \relative e' {
 
-    e4 fs g a | b c d e |
-    fs e d c | b a g fs | e1
+    f4 g a bf | c d e f |
+    g f e d | c bf a g | f1
   }
 }
 tenor = {
   \globalParts
   \relative a {
-    e4 fs g a | b c d e |
-    fs e d c | b a g fs | e1
+    f4 g a bf | c d e f |
+    g f e d | c bf a g | f1
   }
 }
 bass = {
   \globalParts
   \relative d {
 
-    e4 fs g a | b c d e |
-    fs e d c | b a g fs | e1
+    f,4 g a bf | c d e f |
+    g f e d | c bf a g | f1
   }
 }
 songChords = \chords {
@@ -74,15 +74,15 @@ songChords = \chords {
 
 %% LYRICS
 verseA = \lyricmode {
-  \l La Ti Do Re Mi Fa So La Ti La So Fa Mi Re Do Ti La
+  \l Do Re Mi Fa So La Ti Do Re Do Ti La So Fa Mi Re Do
 }
 
 % Set up music-aligned verses. Change to the correct number
 \include "../../lib/1verse.ily"
 
 %% Use this, or the tradStaffZoom and shapeStaffZoom equivalents, if space is tight.
-clairStaffZoom = #1.5
-shapeStaffZoom = #1.5
+clairStaffZoom = #1.0
+shapeStaffZoom = #1.2
 
 %% All sheet music outputs
 \include "../../lib/all-notation-outputs.ily"
