@@ -16,3 +16,4 @@ sass-cache/
 .sass-cache/
 vendor/
 *.odp
+*.log
