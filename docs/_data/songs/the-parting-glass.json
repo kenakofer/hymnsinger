@@ -1,0 +1,22 @@
+{
+  "song_file": "the-parting-glass",
+  "exclude_from_index": false,
+  "title": "Parting Glass",
+  "tune": "PARTING GLASS",
+  "meter": "8.8.8.8",
+  "stanza_count": "2",
+  "composer": "Traditional Irish;\narr. Kenan Schaefkofer, based on arr. by Wailing Jennys",
+  "poet": "Traditional Irish",
+  "key": "F major",
+  "date_added": "2026/01/28",
+  "tags": [
+    "english",
+    "secular",
+    "3part",
+    "chords"
+  ],
+  "lyrics": "Oh, all the money that 'ere I spent,\nI spent it in good company. \nAnd all the harm that 'ere I done,\nalas, it was to none but me.\n\nAnd all I've done for want of wit,\nTo mem'ry now I can't recall.\nSo raise to me the parting glass.\nGoodnight! And joy be with you all.\n\nOh, all the comrades that 'ere I had,\nare sorry for my going away.\nAnd all the sweethearts that 'ere I had,\nwould wish me one more day to stay.\n\nBut since it falls unto my lot\nthat I should rise and you should not,\nI'll gently rise, and I'll softly call:\nGoodnight! And joy be with you all.\nGoodnight! And joy be with you all.\n",
+  "image": "https://github.com/kenakofer/hymnsinger/releases/latest/download/the-parting-glass-trad.png",
+  "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: Oh, all the money that 'ere I spent, I spent it in good company.  And all the harm that 'ere I done, alas, it was to none but me.  And all I've done f... english secular 3part chords",
+  "songs_with_same_tune": []
+}
