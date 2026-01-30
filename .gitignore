@@ -1,10 +1,10 @@
 .*
 --*
-*.pdf
-*.png
-*.mp3
 *-1.*
 /lilypond/**/*.midi
+/lilypond/**/*.pdf
+/lilypond/**/*.png
+/lilypond/**/*.mp3
 .DS_Store
 _site
 .bundle
