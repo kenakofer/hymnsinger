@@ -75,12 +75,43 @@ export class AudioSynthesizer {
         onEnded: () => this.onSynthEnded(),
       };
 
-      // Initialize with the parsed ABC object
+      // Initialize with the parsed ABC visual object (first element of renderAbc result)
+      console.log('Calling synth.init with visualObj:', abcjsInstance[0]);
       await this.synth.init({
         audioContext: this.audioContext,
-        visualObj: abcjsInstance,
+        visualObj: abcjsInstance[0],
         options: options,
       });
+      
+      // If init didn't populate tunes, try calling setSoundFont or using the full visualObj
+      if (!this.synth.tunes || this.synth.tunes.length === 0) {
+        console.warn('Synth.tunes empty after init. Trying alternative initialization...');
+        
+        // Try calling synth.init with full visualObj array and visual callback
+        try {
+          await this.synth.init({
+            audioContext: this.audioContext,
+            visualObj: abcjsInstance,
+            options: options,
+          });
+        } catch (altErr) {
+          console.warn('Alternative init also failed:', altErr);
+        }
+      }
+      
+      // Verify synth state after init
+      const synthState = {
+        hasTunes: !!this.synth.tunes,
+        tuneCount: this.synth.tunes?.length || 0,
+        hasDirectSource: !!this.synth.directSource,
+        directSourceLength: this.synth.directSource?.length || 0,
+        hasSequence: !!this.synth.sequenceArray,
+      };
+      console.log('Synth state after init:', synthState);
+      
+      if (!this.synth.directSource || this.synth.directSource.length === 0) {
+        console.warn('Warning: synth.directSource not populated after init. Audio may not work.');
+      }
 
       // Create controller for volume/speed control
       this.synthController = new abcjsGlobal.synth.SynthController();
@@ -105,13 +136,29 @@ export class AudioSynthesizer {
     if (!this.synth) return;
 
     try {
-      // Prime by playing a tiny bit
-      await this.synth.play();
-      
-      // Stop immediately
-      this.synth.stop();
-      
-      console.log('Synth buffer primed');
+      // Conservative guard: check for internal audio/source fields that abcjs expects
+      const synthKeys = Object.keys(this.synth || {});
+      const hasInternalSource = synthKeys.includes('directSource') || synthKeys.includes('directSources') || synthKeys.some(k => /direct|source|audio/i.test(k));
+
+      if (!hasInternalSource) {
+        console.info('Synth priming skipped: synth lacks internal source fields', synthKeys);
+      } else {
+        // Prime by playing a tiny bit using a flexible API guard
+        if (typeof this.synth.play === 'function') {
+          await this.synth.play();
+          this.synth.stop?.();
+        } else if (typeof this.synth.start === 'function') {
+          await this.synth.start();
+          this.synth.stop?.();
+        } else if (typeof this.synth.resume === 'function') {
+          await this.synth.resume();
+          this.synth.pause?.();
+        } else {
+          console.warn('Synth priming skipped: no playable method found', synthKeys);
+        }
+
+        console.log('Synth buffer primed');
+      }
     } catch (error) {
       console.warn('Buffer priming warning:', error);
       // Non-critical error, continue anyway
@@ -133,7 +180,18 @@ export class AudioSynthesizer {
     }
 
     try {
-      this.synth.play();
+      // Prefer synthController which wraps synth and handles audio state correctly
+      if (this.synthController && typeof this.synthController.play === 'function') {
+        this.synthController.play();
+      } else if (typeof this.synth.play === 'function') {
+        this.synth.play();
+      } else if (typeof this.synth.start === 'function') {
+        this.synth.start();
+      } else {
+        console.error('Failed to start playback: no playable method on synth or controller');
+        return;
+      }
+
       this.isPlaying = true;
       console.log('Playback started');
     } catch (error) {
@@ -156,7 +214,15 @@ export class AudioSynthesizer {
     }
 
     try {
-      this.synth.stop();
+      if (typeof this.synth.stop === 'function') {
+        this.synth.stop();
+      } else if (typeof this.synth.pause === 'function') {
+        // Some APIs expose pause instead of stop
+        this.synth.pause();
+      } else {
+        console.warn('No stop/pause method on synth', Object.keys(this.synth || {}));
+      }
+
       this.isPlaying = false;
       console.log('Playback stopped');
     } catch (error) {
@@ -171,7 +237,14 @@ export class AudioSynthesizer {
     if (!this.synth || !this.isPlaying) return;
 
     try {
-      this.synth.pause();
+      if (typeof this.synth.pause === 'function') {
+        this.synth.pause();
+      } else if (typeof this.synth.stop === 'function') {
+        this.synth.stop();
+      } else {
+        console.warn('No pause/stop method on synth', Object.keys(this.synth || {}));
+      }
+
       this.isPlaying = false;
       console.log('Playback paused');
     } catch (error) {
@@ -186,7 +259,14 @@ export class AudioSynthesizer {
     if (!this.synth) return;
 
     try {
-      this.synth.resume();
+      if (typeof this.synth.resume === 'function') {
+        this.synth.resume();
+      } else if (typeof this.synth.start === 'function') {
+        this.synth.start();
+      } else {
+        console.warn('No resume/start method on synth', Object.keys(this.synth || {}));
+      }
+
       this.isPlaying = true;
       console.log('Playback resumed');
     } catch (error) {

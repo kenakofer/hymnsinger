@@ -38,7 +38,7 @@ export class PlaybackCoordinator {
    * Start playback and set up scroll synchronization.
    * Triggers synth playback which automatically runs TimingCallbacks.
    */
-  public play(): void {
+  public async play(): Promise<void> {
     if (!this.audioSynthesizer) {
       console.error('AudioSynthesizer not initialized');
       return;
@@ -50,6 +50,47 @@ export class PlaybackCoordinator {
     }
 
     try {
+      // If synth isn't initialized/primed, attempt lazy initialization using app's abcjs instance
+      try {
+        const synthesizer = this.audioSynthesizer;
+        const hasSynth = typeof synthesizer.getSynth === 'function' ? !!synthesizer.getSynth() : false;
+        const isPrimed = typeof synthesizer.isPrimmed === 'function' ? synthesizer.isPrimmed() : false;
+
+        if (!hasSynth || !isPrimed) {
+          // Try to get existing abcjs visual object from the renderer
+          let abcjsInstance = (window as any).app && typeof (window as any).app.getAbcjsInstance === 'function'
+            ? (window as any).app.getAbcjsInstance()
+            : null;
+
+          // If not available, attempt to create a visual object from current notation
+          if ((!abcjsInstance || !abcjsInstance[0]) && typeof (window as any).ABCJS !== 'undefined') {
+            try {
+              const abcjs = (window as any).ABCJS;
+              const notation = (window as any).app && typeof (window as any).app.getState === 'function'
+                ? (window as any).app.getState().input
+                : '';
+
+              // Render to the existing svgWrapper to produce a visualObj suitable for synth init
+              const renderTarget = this.svgWrapper || document.createElement('div');
+              abcjsInstance = abcjs.renderAbc(renderTarget, notation || '', { staffwidth: 800 });
+              console.log('Created abcjs visual object for synth init');
+            } catch (renderErr) {
+              console.error('Failed to create abcjs visual object for synth init:', renderErr);
+            }
+          }
+
+          if (typeof (window as any).ABCJS !== 'undefined' && abcjsInstance && abcjsInstance[0]) {
+            console.log('Lazy-initializing synth on play...');
+            await synthesizer.initializeSynth(abcjsInstance);
+            console.log('Synth initialized lazily on play');
+          } else {
+            console.warn('Cannot initialize synth on play: ABCJS or abcjs instance not available');
+          }
+        }
+      } catch (initErr) {
+        console.error('Error during lazy synth initialization:', initErr);
+      }
+
       this.audioSynthesizer.play();
       this.isPlaying = true;
 

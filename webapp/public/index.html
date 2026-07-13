@@ -118,6 +118,28 @@
             border-radius: 4px;
             margin-bottom: 20px;
         }
+
+        /* Minimal abcjs audio control styles (prevents visible "CSS required" warning) */
+        .abcjs-inline-audio {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 8px;
+            background: transparent;
+        }
+        .abcjs-inline-audio .abcjs-css-warning { display: none !important; }
+        .abcjs-inline-audio .abcjs-btn {
+            background: none;
+            border: none;
+            padding: 6px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .abcjs-midi-progress-background { position: relative; width: 160px; height: 10px; background: #eee; border-radius: 6px; }
+        .abcjs-midi-progress-indicator { position: absolute; left: 0; top: 0; width: 10px; height: 10px; background: #3498db; border-radius: 50%; }
+        .abcjs-midi-clock { font-size: 12px; color: #333; margin-left: 8px; }
     </style>
 </head>
 <body>
@@ -220,6 +242,8 @@
                 console.log('Initializing PlaybackCoordinator...');
                 const renderer = window.app.getRenderer();
                 playbackCoordinator.initialize(audioSynthesizer, renderer.getSvgWrapper());
+                // Expose playbackCoordinator for debugging and e2e tests
+                window.playbackCoordinator = playbackCoordinator;
                 console.log('PlaybackCoordinator initialized');
 
                 // Initialize synth if abcjs is available and renderer produced an abcjs instance
