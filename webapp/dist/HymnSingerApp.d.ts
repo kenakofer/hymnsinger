@@ -1,5 +1,6 @@
 import { type AppState } from './StateParser';
 import { BouncingCursor } from './BouncingCursor';
+import { AudioControls } from './AudioControls';
 export interface RenderingOptions {
     viewportHorizontal?: boolean;
     scrollHorizontal?: boolean;
@@ -65,7 +66,12 @@ export declare class HymnSingerApp {
     private isInputVisible;
     private debouncedUrlUpdate;
     private onTextChangeHandler;
-    constructor(appContainerId: string, textAreaId: string, rendererContainerId: string);
+    private audioControls;
+    private audioControlsContainer;
+    private onSpeedChange;
+    private onPianoVolumeChange;
+    private onMetronomeVolumeChange;
+    constructor(appContainerId: string, textAreaId: string, rendererContainerId: string, onSpeedChange?: (speed: number) => void, onPianoVolumeChange?: (volume: number) => void, onMetronomeVolumeChange?: (volume: number) => void);
     private onTextChange;
     private render;
     private toggleInputVisibility;
@@ -83,6 +89,14 @@ export declare class HymnSingerApp {
      * Get the music renderer instance.
      */
     getRenderer(): MusicRenderer;
+    /**
+     * Get the audio controls instance.
+     */
+    getAudioControls(): AudioControls | null;
+    /**
+     * Set audio control values programmatically.
+     */
+    setAudioControlValues(speed?: number, pianoVolume?: number, metronomeVolume?: number): void;
     /**
      * Destroy the application.
      */

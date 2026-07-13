@@ -1,5 +1,6 @@
 import { StateParser, type AppState } from './StateParser';
 import { BouncingCursor } from './BouncingCursor';
+import { AudioControls } from './AudioControls';
 
 export interface RenderingOptions {
   viewportHorizontal?: boolean;
@@ -175,14 +176,29 @@ export class HymnSingerApp {
   private isInputVisible: boolean;
   private debouncedUrlUpdate: (state: AppState) => void;
   private onTextChangeHandler: () => void;
+  private audioControls: AudioControls | null = null;
+  private audioControlsContainer: HTMLElement | null = null;
+
+  // Callbacks for audio control changes
+  private onSpeedChange: ((speed: number) => void) | null = null;
+  private onPianoVolumeChange: ((volume: number) => void) | null = null;
+  private onMetronomeVolumeChange: ((volume: number) => void) | null = null;
 
   constructor(
     appContainerId: string,
     textAreaId: string,
-    rendererContainerId: string
+    rendererContainerId: string,
+    onSpeedChange?: (speed: number) => void,
+    onPianoVolumeChange?: (volume: number) => void,
+    onMetronomeVolumeChange?: (volume: number) => void
   ) {
     // Parse initial state from URL
     this.state = StateParser.parseFromUrl(window.location.search);
+
+    // Store audio control callbacks
+    this.onSpeedChange = onSpeedChange || null;
+    this.onPianoVolumeChange = onPianoVolumeChange || null;
+    this.onMetronomeVolumeChange = onMetronomeVolumeChange || null;
 
     // Get or create elements
     const appContainer = document.getElementById(appContainerId);
@@ -214,6 +230,30 @@ export class HymnSingerApp {
 
     // Insert toggle button before text area
     this.inputContainer.insertBefore(this.toggleButton, this.textArea);
+
+    // Initialize audio controls if callbacks provided
+    if (this.onSpeedChange || this.onPianoVolumeChange || this.onMetronomeVolumeChange) {
+      this.audioControls = new AudioControls({
+        onSpeedChange: (speed: number) => {
+          if (this.onSpeedChange) {
+            this.onSpeedChange(speed);
+          }
+        },
+        onPianoVolumeChange: (volume: number) => {
+          if (this.onPianoVolumeChange) {
+            this.onPianoVolumeChange(volume);
+          }
+        },
+        onMetronomeVolumeChange: (volume: number) => {
+          if (this.onMetronomeVolumeChange) {
+            this.onMetronomeVolumeChange(volume);
+          }
+        },
+      });
+
+      this.audioControlsContainer = this.audioControls.create();
+      appContainer.insertBefore(this.audioControlsContainer, appContainer.firstChild);
+    }
 
     // Determine initial visibility based on URL payload
     this.isInputVisible = !this.state.hasUrlPayload;
@@ -287,6 +327,34 @@ export class HymnSingerApp {
   }
 
   /**
+   * Get the audio controls instance.
+   */
+  public getAudioControls(): AudioControls | null {
+    return this.audioControls;
+  }
+
+  /**
+   * Set audio control values programmatically.
+   */
+  public setAudioControlValues(
+    speed?: number,
+    pianoVolume?: number,
+    metronomeVolume?: number
+  ): void {
+    if (this.audioControls) {
+      if (speed !== undefined) {
+        this.audioControls.setSpeed(speed);
+      }
+      if (pianoVolume !== undefined) {
+        this.audioControls.setPianoVolume(pianoVolume);
+      }
+      if (metronomeVolume !== undefined) {
+        this.audioControls.setMetronomeVolume(metronomeVolume);
+      }
+    }
+  }
+
+  /**
    * Destroy the application.
    */
   public destroy(): void {
@@ -294,6 +362,14 @@ export class HymnSingerApp {
     this.textArea.removeEventListener('input', this.onTextChangeHandler);
     if (this.toggleButton.parentElement) {
       this.toggleButton.parentElement.removeChild(this.toggleButton);
+    }
+    if (this.audioControls) {
+      this.audioControls.destroy();
+      this.audioControls = null;
+    }
+    if (this.audioControlsContainer && this.audioControlsContainer.parentElement) {
+      this.audioControlsContainer.parentElement.removeChild(this.audioControlsContainer);
+      this.audioControlsContainer = null;
     }
   }
 }

@@ -3,6 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.HymnSingerApp = exports.MusicRenderer = void 0;
 const StateParser_1 = require("./StateParser");
 const BouncingCursor_1 = require("./BouncingCursor");
+const AudioControls_1 = require("./AudioControls");
 /**
  * MusicRenderer handles ABC notation rendering via abcjs.
  * Provides horizontal scrolling, lyric alignment, and synced playback.
@@ -139,9 +140,19 @@ exports.MusicRenderer = MusicRenderer;
  * Manages state, UI, and rendering.
  */
 class HymnSingerApp {
-    constructor(appContainerId, textAreaId, rendererContainerId) {
+    constructor(appContainerId, textAreaId, rendererContainerId, onSpeedChange, onPianoVolumeChange, onMetronomeVolumeChange) {
+        this.audioControls = null;
+        this.audioControlsContainer = null;
+        // Callbacks for audio control changes
+        this.onSpeedChange = null;
+        this.onPianoVolumeChange = null;
+        this.onMetronomeVolumeChange = null;
         // Parse initial state from URL
         this.state = StateParser_1.StateParser.parseFromUrl(window.location.search);
+        // Store audio control callbacks
+        this.onSpeedChange = onSpeedChange || null;
+        this.onPianoVolumeChange = onPianoVolumeChange || null;
+        this.onMetronomeVolumeChange = onMetronomeVolumeChange || null;
         // Get or create elements
         const appContainer = document.getElementById(appContainerId);
         if (!appContainer) {
@@ -167,6 +178,28 @@ class HymnSingerApp {
         this.toggleButton.onclick = () => this.toggleInputVisibility();
         // Insert toggle button before text area
         this.inputContainer.insertBefore(this.toggleButton, this.textArea);
+        // Initialize audio controls if callbacks provided
+        if (this.onSpeedChange || this.onPianoVolumeChange || this.onMetronomeVolumeChange) {
+            this.audioControls = new AudioControls_1.AudioControls({
+                onSpeedChange: (speed) => {
+                    if (this.onSpeedChange) {
+                        this.onSpeedChange(speed);
+                    }
+                },
+                onPianoVolumeChange: (volume) => {
+                    if (this.onPianoVolumeChange) {
+                        this.onPianoVolumeChange(volume);
+                    }
+                },
+                onMetronomeVolumeChange: (volume) => {
+                    if (this.onMetronomeVolumeChange) {
+                        this.onMetronomeVolumeChange(volume);
+                    }
+                },
+            });
+            this.audioControlsContainer = this.audioControls.create();
+            appContainer.insertBefore(this.audioControlsContainer, appContainer.firstChild);
+        }
         // Determine initial visibility based on URL payload
         this.isInputVisible = !this.state.hasUrlPayload;
         this.setInputVisibility(this.isInputVisible);
@@ -222,6 +255,28 @@ class HymnSingerApp {
         return this.renderer;
     }
     /**
+     * Get the audio controls instance.
+     */
+    getAudioControls() {
+        return this.audioControls;
+    }
+    /**
+     * Set audio control values programmatically.
+     */
+    setAudioControlValues(speed, pianoVolume, metronomeVolume) {
+        if (this.audioControls) {
+            if (speed !== undefined) {
+                this.audioControls.setSpeed(speed);
+            }
+            if (pianoVolume !== undefined) {
+                this.audioControls.setPianoVolume(pianoVolume);
+            }
+            if (metronomeVolume !== undefined) {
+                this.audioControls.setMetronomeVolume(metronomeVolume);
+            }
+        }
+    }
+    /**
      * Destroy the application.
      */
     destroy() {
@@ -229,6 +284,14 @@ class HymnSingerApp {
         this.textArea.removeEventListener('input', this.onTextChangeHandler);
         if (this.toggleButton.parentElement) {
             this.toggleButton.parentElement.removeChild(this.toggleButton);
+        }
+        if (this.audioControls) {
+            this.audioControls.destroy();
+            this.audioControls = null;
+        }
+        if (this.audioControlsContainer && this.audioControlsContainer.parentElement) {
+            this.audioControlsContainer.parentElement.removeChild(this.audioControlsContainer);
+            this.audioControlsContainer = null;
         }
     }
 }
