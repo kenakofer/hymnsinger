@@ -38,6 +38,7 @@ test('synth initialization on play', async ({ page }) => {
 
   // If synth not present, surface console errors for debugging
   if (!synthExists) {
+    const consoleErrors = consoleMessages.filter(m => m.type === 'error').map(m => m.text);
     console.log('Console errors:', consoleErrors);
   }
 
