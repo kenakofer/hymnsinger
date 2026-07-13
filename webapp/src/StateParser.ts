@@ -1,4 +1,8 @@
-import * as LZ from 'lz-string';
+// LZ-string is loaded as a global from CDN in index.html
+declare const LZ: {
+  decompressFromEncodedURIComponent(input: string): string;
+  compressToEncodedURIComponent(input: string): string;
+};
 
 export interface AppState {
   input: string;
@@ -14,7 +18,7 @@ L: 1/4
 Q: 1/4=80
 K: Bb
 F/2 | B A/2G/2 (3G F E- | E/2 (E/2C/2) D z/2 |
-w: This here is a song you can _ prac- _ tice`,
+w: This is an ex- am- ple to _ prac- _ tice`,
   speed: 1.0,
   metronomeVol: 50,
   pianoVol: 80,
