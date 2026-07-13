@@ -222,6 +222,20 @@
                 playbackCoordinator.initialize(audioSynthesizer, renderer.getSvgWrapper());
                 console.log('PlaybackCoordinator initialized');
 
+                // Initialize synth if abcjs is available and renderer produced an abcjs instance
+                try {
+                    const abcjsInstance = renderer.getAbcjsInstance && typeof renderer.getAbcjsInstance === 'function' ? renderer.getAbcjsInstance() : null;
+                    if (typeof window.ABCJS !== 'undefined' && abcjsInstance && abcjsInstance[0]) {
+                        console.log('Initializing synth...');
+                        await audioSynthesizer.initializeSynth(abcjsInstance, true);
+                        console.log('AudioSynthesizer initialized');
+                    } else {
+                        console.warn('ABCJS synth not initialized: abcjs instance not available');
+                    }
+                } catch (err) {
+                    console.error('Error initializing synth:', err);
+                }
+
                 console.log('HymnSinger app initialized with playback and audio controls');
             } catch (error) {
                 console.error('Failed to initialize HymnSingerApp:', error);
