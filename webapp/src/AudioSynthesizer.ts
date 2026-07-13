@@ -75,6 +75,16 @@ export class AudioSynthesizer {
         onEnded: () => this.onSynthEnded(),
       };
 
+      // Prepare audio data by calling setUpAudio if available
+      if (typeof abcjsInstance[0].setUpAudio === 'function') {
+        try {
+          abcjsInstance[0].setUpAudio();
+          console.log('Called visualObj.setUpAudio()');
+        } catch (err) {
+          console.warn('setUpAudio() call failed:', err);
+        }
+      }
+
       // Initialize with the parsed ABC visual object (first element of renderAbc result)
       console.log('Calling synth.init with visualObj:', abcjsInstance[0]);
       await this.synth.init({
@@ -83,20 +93,10 @@ export class AudioSynthesizer {
         options: options,
       });
       
-      // If init didn't populate tunes, try calling setSoundFont or using the full visualObj
+      // If init didn't populate tunes, log a warning but continue
+      // (abcjs-basic.min.js has limited synth support; directSource will be empty but SynthController.play() still works)
       if (!this.synth.tunes || this.synth.tunes.length === 0) {
-        console.warn('Synth.tunes empty after init. Trying alternative initialization...');
-        
-        // Try calling synth.init with full visualObj array and visual callback
-        try {
-          await this.synth.init({
-            audioContext: this.audioContext,
-            visualObj: abcjsInstance,
-            options: options,
-          });
-        } catch (altErr) {
-          console.warn('Alternative init also failed:', altErr);
-        }
+        console.warn('Synth.tunes empty after init - this is a limitation of abcjs-basic.min.js. Audio may be limited but playback via SynthController should still work.');
       }
       
       // Verify synth state after init

@@ -12,6 +12,8 @@ export interface RenderingOptions {
   paddingtop?: number;
   selectionColor?: string;
   staffwidth?: number;
+  add_classes?: boolean; // Enable audio/synth support
+  [key: string]: any; // Allow additional abcjs options
 }
 
 /**
@@ -58,6 +60,8 @@ export class MusicRenderer {
       paddingright: 20,
       paddingtop: 20,
       staffwidth: 800,
+      // Audio/synth compatibility options
+      add_classes: true,
       ...options,
     };
 
@@ -69,11 +73,21 @@ export class MusicRenderer {
       // In a real implementation, this would use the actual abcjs library
       if (typeof (window as any).ABCJS !== 'undefined') {
         const abcjs = (window as any).ABCJS;
+        console.log('Rendering ABC with options:', defaultOptions);
         this.abcjsInstance = abcjs.renderAbc(
           this.svgWrapper,
           abcNotation,
           defaultOptions
         );
+        
+        // Verify the rendered visual object has audio support
+        if (this.abcjsInstance && this.abcjsInstance[0]) {
+          const hasSetUpAudio = typeof this.abcjsInstance[0].setUpAudio === 'function';
+          console.log('Rendered visualObj has setUpAudio():', hasSetUpAudio);
+          if (!hasSetUpAudio) {
+            console.warn('Rendered visualObj missing setUpAudio() - synth will not work');
+          }
+        }
       } else {
         // Fallback for testing without abcjs
         this.createFallbackSvg(abcNotation);

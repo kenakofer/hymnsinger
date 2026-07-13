@@ -11,6 +11,8 @@ export interface RenderingOptions {
     paddingtop?: number;
     selectionColor?: string;
     staffwidth?: number;
+    add_classes?: boolean;
+    [key: string]: any;
 }
 /**
  * MusicRenderer handles ABC notation rendering via abcjs.

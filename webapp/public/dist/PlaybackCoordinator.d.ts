@@ -21,7 +21,7 @@ export declare class PlaybackCoordinator {
      * Start playback and set up scroll synchronization.
      * Triggers synth playback which automatically runs TimingCallbacks.
      */
-    play(): void;
+    play(): Promise<void>;
     /**
      * Stop playback and cancel scroll synchronization.
      */

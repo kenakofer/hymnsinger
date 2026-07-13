@@ -71,9 +71,13 @@ export class PlaybackCoordinator {
                 : '';
 
               // Render to the existing svgWrapper to produce a visualObj suitable for synth init
+              // Use add_classes to enable audio/synth support in the visualObj
               const renderTarget = this.svgWrapper || document.createElement('div');
-              abcjsInstance = abcjs.renderAbc(renderTarget, notation || '', { staffwidth: 800 });
-              console.log('Created abcjs visual object for synth init');
+              abcjsInstance = abcjs.renderAbc(renderTarget, notation || '', { 
+                staffwidth: 800,
+                add_classes: true 
+              });
+              console.log('Created abcjs visual object for synth init, has setUpAudio:', typeof abcjsInstance?.[0]?.setUpAudio === 'function');
             } catch (renderErr) {
               console.error('Failed to create abcjs visual object for synth init:', renderErr);
             }
@@ -81,6 +85,7 @@ export class PlaybackCoordinator {
 
           if (typeof (window as any).ABCJS !== 'undefined' && abcjsInstance && abcjsInstance[0]) {
             console.log('Lazy-initializing synth on play...');
+            console.log('abcjsInstance[0].setUpAudio available:', typeof abcjsInstance[0].setUpAudio === 'function');
             await synthesizer.initializeSynth(abcjsInstance);
             console.log('Synth initialized lazily on play');
           } else {
