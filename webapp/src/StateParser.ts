@@ -50,7 +50,8 @@ export class StateParser {
         return { ...DEFAULT_STATE, hasUrlPayload: false };
       }
 
-      const decompressed = LZ.decompressFromEncodedURIComponent(compressedState);
+      const lzModule = (LZ as any).default || LZ;
+      const decompressed = lzModule.decompressFromEncodedURIComponent(compressedState);
       if (!decompressed) {
         return { ...DEFAULT_STATE, hasUrlPayload: false };
       }
@@ -80,7 +81,8 @@ export class StateParser {
       pianoVol: state.pianoVol,
     };
     const json = JSON.stringify(stateWithoutPayload);
-    const compressed = LZ.compressToEncodedURIComponent(json);
+    const lzModule = (LZ as any).default || LZ;
+    const compressed = lzModule.compressToEncodedURIComponent(json);
     return compressed;
   }
 
@@ -93,10 +95,12 @@ export class StateParser {
    */
   public static generateUrl(
     state: AppState,
-    baseUrl: string = 'https://hymnsinger.com/practice/'
+    baseUrl?: string
   ): string {
     const encodedState = StateParser.serializeToUrl(state);
-    const url = new URL(baseUrl);
+    // Use current page URL without query params as base, or use provided baseUrl
+    const base = baseUrl || window.location.pathname + window.location.hash;
+    const url = new URL(base, window.location.origin);
     url.searchParams.set(StateParser.STATE_PARAM, encodedState);
     return url.toString();
   }

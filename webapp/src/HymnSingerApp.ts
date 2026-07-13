@@ -67,8 +67,8 @@ export class MusicRenderer {
     try {
       // Type-safe abcjs rendering
       // In a real implementation, this would use the actual abcjs library
-      if (typeof (window as any).abcjs !== 'undefined') {
-        const abcjs = (window as any).abcjs;
+      if (typeof (window as any).ABCJS !== 'undefined') {
+        const abcjs = (window as any).ABCJS;
         this.abcjsInstance = abcjs.renderAbc(
           this.svgWrapper,
           abcNotation,
@@ -238,14 +238,14 @@ export class HymnSingerApp {
     }
     this.inputContainer = textAreaParent;
 
-    // Create toggle button
+    // Create toggle button - add it to app container instead of input container
     this.toggleButton = document.createElement('button');
     this.toggleButton.id = 'abc-toggle-input';
     this.toggleButton.style.marginBottom = '10px';
     this.toggleButton.onclick = () => this.toggleInputVisibility();
 
-    // Insert toggle button before text area
-    this.inputContainer.insertBefore(this.toggleButton, this.textArea);
+    // Insert toggle button in the app container, before the input container
+    appContainer.insertBefore(this.toggleButton, this.inputContainer);
 
     // Initialize playback controls if callbacks provided
     if (this.onPlaybackPlay || this.onPlaybackPause || this.onPlaybackStop) {

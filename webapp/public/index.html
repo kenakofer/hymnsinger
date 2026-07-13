@@ -135,8 +135,8 @@
         </div>
     </div>
 
-    <!-- Load external libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/abcjs@6.6.4/dist/abcjs-basic.min.js"></script>
+    <!-- Load external libraries with explicit onload handler -->
+    <script src="https://cdn.jsdelivr.net/npm/abcjs@6.6.4/dist/abcjs-basic.min.js" onload="window.abcjsLoaded = true;"></script>
 
     <!-- Load app as ES module -->
     <script type="module">
@@ -149,6 +149,32 @@
         window.PlaybackCoordinator = PlaybackCoordinator;
         window.HymnSingerApp = HymnSingerApp;
         
+        // Wait for both DOM and abcjs to be ready
+        function waitForAbcjs() {
+            return new Promise((resolve) => {
+                if (window.abcjsLoaded && typeof window.ABCJS !== 'undefined') {
+                    console.log('ABCJS already loaded');
+                    resolve();
+                    return;
+                }
+                
+                let attempts = 0;
+                const maxAttempts = 100; // ~5 seconds with 50ms interval
+                const interval = setInterval(() => {
+                    attempts++;
+                    if (typeof window.ABCJS !== 'undefined') {
+                        console.log('ABCJS loaded after', attempts * 50, 'ms');
+                        clearInterval(interval);
+                        resolve();
+                    } else if (attempts >= maxAttempts) {
+                        console.warn('ABCJS did not load within timeout, proceeding anyway');
+                        clearInterval(interval);
+                        resolve();
+                    }
+                }, 50);
+            });
+        }
+        
         // Trigger initialization when DOM is ready
         if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', initApp);
@@ -156,9 +182,13 @@
             initApp();
         }
         
-        function initApp() {
+        async function initApp() {
             try {
                 console.log('Starting app initialization...');
+                
+                // Wait for abcjs to load
+                await waitForAbcjs();
+                console.log('ABCJS available:', typeof window.ABCJS !== 'undefined');
                 
                 // Create audio synthesizer and playback coordinator
                 console.log('Creating AudioSynthesizer...');
