@@ -9,7 +9,7 @@ export declare class PlaybackCoordinator {
     private isPlaying;
     private scrollAnimationId;
     private cursorObserver;
-    constructor();
+    constructor(audioSynthesizer?: AudioSynthesizer);
     /**
      * Initialize the PlaybackCoordinator with synthesizer and renderer.
      *

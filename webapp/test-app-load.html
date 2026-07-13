@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test App Load</title>
+</head>
+<body>
+  <div id="app-container" class="app-container">
+    <div id="input-container">
+      <textarea id="abc-text-area" placeholder="Enter ABC notation here..."></textarea>
+    </div>
+    <div id="renderer-container"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/abcjs@6.6.4/dist/abcjs-basic.min.js"></script>
+  <script type="module">
+    import { AudioSynthesizer } from './dist/AudioSynthesizer.js';
+    import { PlaybackCoordinator } from './dist/PlaybackCoordinator.js';
+    import { HymnSingerApp } from './dist/HymnSingerApp.js';
+    
+    console.log('Module imports successful');
+    
+    try {
+      const audioSynthesizer = new AudioSynthesizer();
+      console.log('AudioSynthesizer created');
+      
+      const playbackCoordinator = new PlaybackCoordinator(audioSynthesizer);
+      console.log('PlaybackCoordinator created');
+
+      window.app = new HymnSingerApp(
+        'app-container',
+        'abc-text-area',
+        'renderer-container',
+        (speed) => audioSynthesizer.setSpeed(speed),
+        (volume) => audioSynthesizer.setPianoVolume(volume),
+        (volume) => audioSynthesizer.setMetronomeVolume(volume),
+        () => playbackCoordinator.play(),
+        () => audioSynthesizer.pause(),
+        () => audioSynthesizer.stop()
+      );
+      
+      console.log('App initialized successfully');
+    } catch (error) {
+      console.error('App initialization failed:', error);
+    }
+  </script>
+</body>
+</html>

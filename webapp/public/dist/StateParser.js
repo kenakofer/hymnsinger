@@ -1,3 +1,4 @@
+import * as LZ from 'lz-string';
 export const DEFAULT_STATE = {
     input: `M: 4/4
 L: 1/4

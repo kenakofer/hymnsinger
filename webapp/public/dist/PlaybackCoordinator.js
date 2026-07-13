@@ -1,11 +1,9 @@
-import { AudioSynthesizer } from './AudioSynthesizer.js';
-import { BouncingCursor } from './BouncingCursor.js';
 /**
  * PlaybackCoordinator manages playback synchronization between the synth,
  * visual cursor, and horizontal scrolling of the music renderer.
  */
 export class PlaybackCoordinator {
-    constructor() {
+    constructor(audioSynthesizer) {
         Object.defineProperty(this, "audioSynthesizer", {
             enumerable: true,
             configurable: true,
@@ -36,6 +34,9 @@ export class PlaybackCoordinator {
             writable: true,
             value: null
         });
+        if (audioSynthesizer) {
+            this.audioSynthesizer = audioSynthesizer;
+        }
     }
     /**
      * Initialize the PlaybackCoordinator with synthesizer and renderer.

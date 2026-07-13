@@ -8,4 +8,16 @@ module.exports = {
     'src/**/*.ts',
     '!src/**/*.test.ts',
   ],
+  extensionsToTreatAsEsm: ['.ts'],
+  globals: {
+    'ts-jest': {
+      useESM: true,
+      tsconfig: {
+        module: 'ES2020',
+      },
+    },
+  },
+  moduleNameMapper: {
+    '^(\\.{1,2}/.*)\\.js$': '$1',
+  },
 };

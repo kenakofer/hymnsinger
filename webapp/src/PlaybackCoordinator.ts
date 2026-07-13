@@ -12,7 +12,11 @@ export class PlaybackCoordinator {
   private scrollAnimationId: number | null = null;
   private cursorObserver: MutationObserver | null = null;
 
-  constructor() {}
+  constructor(audioSynthesizer?: AudioSynthesizer) {
+    if (audioSynthesizer) {
+      this.audioSynthesizer = audioSynthesizer;
+    }
+  }
 
   /**
    * Initialize the PlaybackCoordinator with synthesizer and renderer.

@@ -15,8 +15,7 @@
     "declarationMap": true,
     "sourceMap": true,
     "noEmitOnError": false,
-    "useDefineForClassFields": true,
-    "verbatimModuleSyntax": true
+    "useDefineForClassFields": true
   },
   "include": ["src"],
   "exclude": ["node_modules", "dist", "**/*.test.ts", "**/*.spec.ts"]

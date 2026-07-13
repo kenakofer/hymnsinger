@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HymnSinger - Practice Tool</title>
+    
+    <!-- Import map for ES modules -->
+    <script type="importmap">
+    {
+      "imports": {
+        "lz-string": "https://cdn.jsdelivr.net/npm/lz-string@1.5.0/+esm"
+      }
+    }
+    </script>
+    
     <style>
         * {
             margin: 0;
@@ -126,7 +136,6 @@
     </div>
 
     <!-- Load external libraries -->
-    <script src="https://cdn.jsdelivr.net/npm/lz-string@1.5.0/libs/lz-string.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/abcjs@6.6.4/dist/abcjs-basic.min.js"></script>
 
     <!-- Load app as ES module -->
@@ -149,11 +158,19 @@
         
         function initApp() {
             try {
+                console.log('Starting app initialization...');
+                
                 // Create audio synthesizer and playback coordinator
+                console.log('Creating AudioSynthesizer...');
                 const audioSynthesizer = new window.AudioSynthesizer();
+                console.log('AudioSynthesizer created');
+                
+                console.log('Creating PlaybackCoordinator...');
                 const playbackCoordinator = new window.PlaybackCoordinator(audioSynthesizer);
+                console.log('PlaybackCoordinator created');
 
                 // Initialize app with playback and audio control callbacks
+                console.log('Creating HymnSingerApp...');
                 window.app = new window.HymnSingerApp(
                     'app-container',
                     'abc-text-area',
@@ -167,13 +184,21 @@
                     () => audioSynthesizer.pause(),        // onPause
                     () => audioSynthesizer.stop()          // onStop
                 );
+                console.log('HymnSingerApp created');
+
+                // Initialize playback coordinator with the renderer's SVG wrapper
+                console.log('Initializing PlaybackCoordinator...');
+                const renderer = window.app.getRenderer();
+                playbackCoordinator.initialize(audioSynthesizer, renderer.getSvgWrapper());
+                console.log('PlaybackCoordinator initialized');
 
                 console.log('HymnSinger app initialized with playback and audio controls');
             } catch (error) {
                 console.error('Failed to initialize HymnSingerApp:', error);
+                console.error('Stack:', error instanceof Error ? error.stack : 'No stack available');
                 const errorDiv = document.createElement('div');
                 errorDiv.className = 'error-message';
-                errorDiv.textContent = 'Error initializing application: ' + error.message;
+                errorDiv.textContent = 'Error initializing application: ' + error;
                 document.getElementById('app-container').insertBefore(
                     errorDiv,
                     document.getElementById('app-container').firstChild

@@ -10,8 +10,13 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   reporter: 'html',
   use: {
-    baseURL: `file://${path.resolve(__dirname, 'public')}`,
+    baseURL: 'http://localhost:3000',
     trace: 'on-first-retry',
+  },
+  webServer: {
+    command: 'npx http-server public -p 3000 -c-1',
+    url: 'http://localhost:3000',
+    reuseExistingServer: !process.env.CI,
   },
 
   projects: [

@@ -1,8 +1,4 @@
-// LZ-string is loaded as a global from CDN in index.html
-declare const LZ: {
-  decompressFromEncodedURIComponent(input: string): string;
-  compressToEncodedURIComponent(input: string): string;
-};
+import * as LZ from 'lz-string';
 
 export interface AppState {
   input: string;
