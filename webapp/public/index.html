@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HymnSinger - Practice Tool</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+                sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .app-container {
+            padding: 20px;
+        }
+
+        #input-container {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #abc-toggle-input {
+            display: block;
+            margin-bottom: 10px;
+            padding: 8px 16px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        #abc-toggle-input:hover {
+            background-color: #2980b9;
+        }
+
+        #abc-text-area {
+            width: 100%;
+            height: 200px;
+            padding: 12px;
+            border: 1px solid #bdc3c7;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            resize: vertical;
+            line-height: 1.5;
+        }
+
+        #abc-text-area:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+        }
+
+        #renderer-container {
+            width: 100%;
+            min-height: 300px;
+            background-color: #fafafa;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        #abc-svg-wrapper {
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .error-message {
+            color: #e74c3c;
+            background-color: #fadbd8;
+            border: 1px solid #e74c3c;
+            padding: 12px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎵 HymnSinger Practice Tool</h1>
+            <p>Practice hymns with interactive music notation</p>
+        </div>
+
+        <div id="app-container" class="app-container">
+            <div id="input-container">
+                <textarea id="abc-text-area" placeholder="Enter ABC notation here..."></textarea>
+            </div>
+            <div id="renderer-container"></div>
+        </div>
+    </div>
+
+    <!-- Load external libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/lz-string@1.5.0/libs/lz-string.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/abcjs@6.6.4/dist/abcjs-basic.min.js"></script>
+
+    <!-- Load our compiled app -->
+    <script src="../dist/StateParser.js"></script>
+    <script src="../dist/BouncingCursor.js"></script>
+    <script src="../dist/HymnSingerApp.js"></script>
+
+    <script>
+        // Initialize the app when the DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            try {
+                window.app = new window.HymnSingerApp(
+                    'app-container',
+                    'abc-text-area',
+                    'renderer-container'
+                );
+            } catch (error) {
+                console.error('Failed to initialize HymnSingerApp:', error);
+                const errorDiv = document.createElement('div');
+                errorDiv.className = 'error-message';
+                errorDiv.textContent = 'Error initializing application: ' + error.message;
+                document.getElementById('app-container').insertBefore(
+                    errorDiv,
+                    document.getElementById('app-container').firstChild
+                );
+            }
+        });
+    </script>
+</body>
+</html>
