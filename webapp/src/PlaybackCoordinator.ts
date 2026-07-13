@@ -1,5 +1,5 @@
-import { AudioSynthesizer } from './AudioSynthesizer';
-import { BouncingCursor } from './BouncingCursor';
+import { AudioSynthesizer } from './AudioSynthesizer.js';
+import { BouncingCursor } from './BouncingCursor.js';
 
 /**
  * PlaybackCoordinator manages playback synchronization between the synth,

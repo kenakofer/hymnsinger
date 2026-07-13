@@ -1,7 +1,7 @@
-import { StateParser, type AppState } from './StateParser';
-import { BouncingCursor } from './BouncingCursor';
-import { AudioControls } from './AudioControls';
-import { PlaybackControls } from './PlaybackControls';
+import { StateParser, type AppState } from './StateParser.js';
+import { BouncingCursor } from './BouncingCursor.js';
+import { AudioControls } from './AudioControls.js';
+import { PlaybackControls } from './PlaybackControls.js';
 
 export interface RenderingOptions {
   viewportHorizontal?: boolean;

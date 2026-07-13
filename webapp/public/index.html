@@ -129,18 +129,25 @@
     <script src="https://cdn.jsdelivr.net/npm/lz-string@1.5.0/libs/lz-string.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/abcjs@6.6.4/dist/abcjs-basic.min.js"></script>
 
-    <!-- Load our compiled app -->
-    <script src="../dist/StateParser.js"></script>
-    <script src="../dist/BouncingCursor.js"></script>
-    <script src="../dist/AudioControls.js"></script>
-    <script src="../dist/PlaybackControls.js"></script>
-    <script src="../dist/AudioSynthesizer.js"></script>
-    <script src="../dist/PlaybackCoordinator.js"></script>
-    <script src="../dist/HymnSingerApp.js"></script>
-
-    <script>
-        // Initialize the app when the DOM is loaded
-        document.addEventListener('DOMContentLoaded', () => {
+    <!-- Load app as ES module -->
+    <script type="module">
+        import { AudioSynthesizer } from './dist/AudioSynthesizer.js';
+        import { PlaybackCoordinator } from './dist/PlaybackCoordinator.js';
+        import { HymnSingerApp } from './dist/HymnSingerApp.js';
+        
+        // Expose to window so initialization code can access them
+        window.AudioSynthesizer = AudioSynthesizer;
+        window.PlaybackCoordinator = PlaybackCoordinator;
+        window.HymnSingerApp = HymnSingerApp;
+        
+        // Trigger initialization when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initApp);
+        } else {
+            initApp();
+        }
+        
+        function initApp() {
             try {
                 // Create audio synthesizer and playback coordinator
                 const audioSynthesizer = new window.AudioSynthesizer();
@@ -172,7 +179,7 @@
                     document.getElementById('app-container').firstChild
                 );
             }
-        });
+        }
     </script>
 </body>
 </html>
