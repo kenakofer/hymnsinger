@@ -1,6 +1,7 @@
 import { type AppState } from './StateParser';
 import { BouncingCursor } from './BouncingCursor';
 import { AudioControls } from './AudioControls';
+import { PlaybackControls } from './PlaybackControls';
 export interface RenderingOptions {
     viewportHorizontal?: boolean;
     scrollHorizontal?: boolean;
@@ -68,10 +69,15 @@ export declare class HymnSingerApp {
     private onTextChangeHandler;
     private audioControls;
     private audioControlsContainer;
+    private playbackControls;
+    private playbackControlsContainer;
     private onSpeedChange;
     private onPianoVolumeChange;
     private onMetronomeVolumeChange;
-    constructor(appContainerId: string, textAreaId: string, rendererContainerId: string, onSpeedChange?: (speed: number) => void, onPianoVolumeChange?: (volume: number) => void, onMetronomeVolumeChange?: (volume: number) => void);
+    private onPlaybackPlay;
+    private onPlaybackPause;
+    private onPlaybackStop;
+    constructor(appContainerId: string, textAreaId: string, rendererContainerId: string, onSpeedChange?: (speed: number) => void, onPianoVolumeChange?: (volume: number) => void, onMetronomeVolumeChange?: (volume: number) => void, onPlaybackPlay?: () => void, onPlaybackPause?: () => void, onPlaybackStop?: () => void);
     private onTextChange;
     private render;
     private toggleInputVisibility;
@@ -94,9 +100,21 @@ export declare class HymnSingerApp {
      */
     getAudioControls(): AudioControls | null;
     /**
+     * Get the playback controls instance.
+     */
+    getPlaybackControls(): PlaybackControls | null;
+    /**
      * Set audio control values programmatically.
      */
     setAudioControlValues(speed?: number, pianoVolume?: number, metronomeVolume?: number): void;
+    /**
+     * Set playback state programmatically.
+     */
+    setPlaybackState(playing: boolean): void;
+    /**
+     * Stop playback and reset UI.
+     */
+    stopPlayback(): void;
     /**
      * Destroy the application.
      */

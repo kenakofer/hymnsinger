@@ -1,6 +1,7 @@
 import { StateParser, type AppState } from './StateParser';
 import { BouncingCursor } from './BouncingCursor';
 import { AudioControls } from './AudioControls';
+import { PlaybackControls } from './PlaybackControls';
 
 export interface RenderingOptions {
   viewportHorizontal?: boolean;
@@ -178,11 +179,18 @@ export class HymnSingerApp {
   private onTextChangeHandler: () => void;
   private audioControls: AudioControls | null = null;
   private audioControlsContainer: HTMLElement | null = null;
+  private playbackControls: PlaybackControls | null = null;
+  private playbackControlsContainer: HTMLElement | null = null;
 
   // Callbacks for audio control changes
   private onSpeedChange: ((speed: number) => void) | null = null;
   private onPianoVolumeChange: ((volume: number) => void) | null = null;
   private onMetronomeVolumeChange: ((volume: number) => void) | null = null;
+
+  // Callbacks for playback control
+  private onPlaybackPlay: (() => void) | null = null;
+  private onPlaybackPause: (() => void) | null = null;
+  private onPlaybackStop: (() => void) | null = null;
 
   constructor(
     appContainerId: string,
@@ -190,7 +198,10 @@ export class HymnSingerApp {
     rendererContainerId: string,
     onSpeedChange?: (speed: number) => void,
     onPianoVolumeChange?: (volume: number) => void,
-    onMetronomeVolumeChange?: (volume: number) => void
+    onMetronomeVolumeChange?: (volume: number) => void,
+    onPlaybackPlay?: () => void,
+    onPlaybackPause?: () => void,
+    onPlaybackStop?: () => void
   ) {
     // Parse initial state from URL
     this.state = StateParser.parseFromUrl(window.location.search);
@@ -199,6 +210,11 @@ export class HymnSingerApp {
     this.onSpeedChange = onSpeedChange || null;
     this.onPianoVolumeChange = onPianoVolumeChange || null;
     this.onMetronomeVolumeChange = onMetronomeVolumeChange || null;
+
+    // Store playback callbacks
+    this.onPlaybackPlay = onPlaybackPlay || null;
+    this.onPlaybackPause = onPlaybackPause || null;
+    this.onPlaybackStop = onPlaybackStop || null;
 
     // Get or create elements
     const appContainer = document.getElementById(appContainerId);
@@ -230,6 +246,30 @@ export class HymnSingerApp {
 
     // Insert toggle button before text area
     this.inputContainer.insertBefore(this.toggleButton, this.textArea);
+
+    // Initialize playback controls if callbacks provided
+    if (this.onPlaybackPlay || this.onPlaybackPause || this.onPlaybackStop) {
+      this.playbackControls = new PlaybackControls({
+        onPlay: () => {
+          if (this.onPlaybackPlay) {
+            this.onPlaybackPlay();
+          }
+        },
+        onPause: () => {
+          if (this.onPlaybackPause) {
+            this.onPlaybackPause();
+          }
+        },
+        onStop: () => {
+          if (this.onPlaybackStop) {
+            this.onPlaybackStop();
+          }
+        },
+      });
+
+      this.playbackControlsContainer = this.playbackControls.create();
+      appContainer.insertBefore(this.playbackControlsContainer, appContainer.firstChild);
+    }
 
     // Initialize audio controls if callbacks provided
     if (this.onSpeedChange || this.onPianoVolumeChange || this.onMetronomeVolumeChange) {
@@ -334,6 +374,13 @@ export class HymnSingerApp {
   }
 
   /**
+   * Get the playback controls instance.
+   */
+  public getPlaybackControls(): PlaybackControls | null {
+    return this.playbackControls;
+  }
+
+  /**
    * Set audio control values programmatically.
    */
   public setAudioControlValues(
@@ -355,6 +402,24 @@ export class HymnSingerApp {
   }
 
   /**
+   * Set playback state programmatically.
+   */
+  public setPlaybackState(playing: boolean): void {
+    if (this.playbackControls) {
+      this.playbackControls.setPlayingState(playing);
+    }
+  }
+
+  /**
+   * Stop playback and reset UI.
+   */
+  public stopPlayback(): void {
+    if (this.playbackControls) {
+      this.playbackControls.stop();
+    }
+  }
+
+  /**
    * Destroy the application.
    */
   public destroy(): void {
@@ -362,6 +427,14 @@ export class HymnSingerApp {
     this.textArea.removeEventListener('input', this.onTextChangeHandler);
     if (this.toggleButton.parentElement) {
       this.toggleButton.parentElement.removeChild(this.toggleButton);
+    }
+    if (this.playbackControls) {
+      this.playbackControls.destroy();
+      this.playbackControls = null;
+    }
+    if (this.playbackControlsContainer && this.playbackControlsContainer.parentElement) {
+      this.playbackControlsContainer.parentElement.removeChild(this.playbackControlsContainer);
+      this.playbackControlsContainer = null;
     }
     if (this.audioControls) {
       this.audioControls.destroy();

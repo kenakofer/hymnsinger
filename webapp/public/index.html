@@ -133,6 +133,7 @@
     <script src="../dist/StateParser.js"></script>
     <script src="../dist/BouncingCursor.js"></script>
     <script src="../dist/AudioControls.js"></script>
+    <script src="../dist/PlaybackControls.js"></script>
     <script src="../dist/AudioSynthesizer.js"></script>
     <script src="../dist/PlaybackCoordinator.js"></script>
     <script src="../dist/HymnSingerApp.js"></script>
@@ -145,18 +146,22 @@
                 const audioSynthesizer = new window.AudioSynthesizer();
                 const playbackCoordinator = new window.PlaybackCoordinator(audioSynthesizer);
 
-                // Initialize app with audio control callbacks
+                // Initialize app with playback and audio control callbacks
                 window.app = new window.HymnSingerApp(
                     'app-container',
                     'abc-text-area',
                     'renderer-container',
+                    // Audio controls callbacks
                     (speed) => audioSynthesizer.setSpeed(speed),
                     (volume) => audioSynthesizer.setPianoVolume(volume),
-                    (volume) => audioSynthesizer.setMetronomeVolume(volume)
+                    (volume) => audioSynthesizer.setMetronomeVolume(volume),
+                    // Playback controls callbacks
+                    () => playbackCoordinator.play(),     // onPlay
+                    () => audioSynthesizer.pause(),        // onPause
+                    () => audioSynthesizer.stop()          // onStop
                 );
 
-                // Optional: Set up playback button for manual control
-                // This would be implemented in Phase 7 with UI buttons
+                console.log('HymnSinger app initialized with playback and audio controls');
             } catch (error) {
                 console.error('Failed to initialize HymnSingerApp:', error);
                 const errorDiv = document.createElement('div');

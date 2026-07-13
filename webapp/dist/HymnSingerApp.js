@@ -4,6 +4,7 @@ exports.HymnSingerApp = exports.MusicRenderer = void 0;
 const StateParser_1 = require("./StateParser");
 const BouncingCursor_1 = require("./BouncingCursor");
 const AudioControls_1 = require("./AudioControls");
+const PlaybackControls_1 = require("./PlaybackControls");
 /**
  * MusicRenderer handles ABC notation rendering via abcjs.
  * Provides horizontal scrolling, lyric alignment, and synced playback.
@@ -140,19 +141,29 @@ exports.MusicRenderer = MusicRenderer;
  * Manages state, UI, and rendering.
  */
 class HymnSingerApp {
-    constructor(appContainerId, textAreaId, rendererContainerId, onSpeedChange, onPianoVolumeChange, onMetronomeVolumeChange) {
+    constructor(appContainerId, textAreaId, rendererContainerId, onSpeedChange, onPianoVolumeChange, onMetronomeVolumeChange, onPlaybackPlay, onPlaybackPause, onPlaybackStop) {
         this.audioControls = null;
         this.audioControlsContainer = null;
+        this.playbackControls = null;
+        this.playbackControlsContainer = null;
         // Callbacks for audio control changes
         this.onSpeedChange = null;
         this.onPianoVolumeChange = null;
         this.onMetronomeVolumeChange = null;
+        // Callbacks for playback control
+        this.onPlaybackPlay = null;
+        this.onPlaybackPause = null;
+        this.onPlaybackStop = null;
         // Parse initial state from URL
         this.state = StateParser_1.StateParser.parseFromUrl(window.location.search);
         // Store audio control callbacks
         this.onSpeedChange = onSpeedChange || null;
         this.onPianoVolumeChange = onPianoVolumeChange || null;
         this.onMetronomeVolumeChange = onMetronomeVolumeChange || null;
+        // Store playback callbacks
+        this.onPlaybackPlay = onPlaybackPlay || null;
+        this.onPlaybackPause = onPlaybackPause || null;
+        this.onPlaybackStop = onPlaybackStop || null;
         // Get or create elements
         const appContainer = document.getElementById(appContainerId);
         if (!appContainer) {
@@ -178,6 +189,28 @@ class HymnSingerApp {
         this.toggleButton.onclick = () => this.toggleInputVisibility();
         // Insert toggle button before text area
         this.inputContainer.insertBefore(this.toggleButton, this.textArea);
+        // Initialize playback controls if callbacks provided
+        if (this.onPlaybackPlay || this.onPlaybackPause || this.onPlaybackStop) {
+            this.playbackControls = new PlaybackControls_1.PlaybackControls({
+                onPlay: () => {
+                    if (this.onPlaybackPlay) {
+                        this.onPlaybackPlay();
+                    }
+                },
+                onPause: () => {
+                    if (this.onPlaybackPause) {
+                        this.onPlaybackPause();
+                    }
+                },
+                onStop: () => {
+                    if (this.onPlaybackStop) {
+                        this.onPlaybackStop();
+                    }
+                },
+            });
+            this.playbackControlsContainer = this.playbackControls.create();
+            appContainer.insertBefore(this.playbackControlsContainer, appContainer.firstChild);
+        }
         // Initialize audio controls if callbacks provided
         if (this.onSpeedChange || this.onPianoVolumeChange || this.onMetronomeVolumeChange) {
             this.audioControls = new AudioControls_1.AudioControls({
@@ -261,6 +294,12 @@ class HymnSingerApp {
         return this.audioControls;
     }
     /**
+     * Get the playback controls instance.
+     */
+    getPlaybackControls() {
+        return this.playbackControls;
+    }
+    /**
      * Set audio control values programmatically.
      */
     setAudioControlValues(speed, pianoVolume, metronomeVolume) {
@@ -277,6 +316,22 @@ class HymnSingerApp {
         }
     }
     /**
+     * Set playback state programmatically.
+     */
+    setPlaybackState(playing) {
+        if (this.playbackControls) {
+            this.playbackControls.setPlayingState(playing);
+        }
+    }
+    /**
+     * Stop playback and reset UI.
+     */
+    stopPlayback() {
+        if (this.playbackControls) {
+            this.playbackControls.stop();
+        }
+    }
+    /**
      * Destroy the application.
      */
     destroy() {
@@ -284,6 +339,14 @@ class HymnSingerApp {
         this.textArea.removeEventListener('input', this.onTextChangeHandler);
         if (this.toggleButton.parentElement) {
             this.toggleButton.parentElement.removeChild(this.toggleButton);
+        }
+        if (this.playbackControls) {
+            this.playbackControls.destroy();
+            this.playbackControls = null;
+        }
+        if (this.playbackControlsContainer && this.playbackControlsContainer.parentElement) {
+            this.playbackControlsContainer.parentElement.removeChild(this.playbackControlsContainer);
+            this.playbackControlsContainer = null;
         }
         if (this.audioControls) {
             this.audioControls.destroy();
