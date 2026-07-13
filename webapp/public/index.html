@@ -157,8 +157,8 @@
         </div>
     </div>
 
-    <!-- Load external libraries with explicit onload handler -->
-    <script src="https://cdn.jsdelivr.net/npm/abcjs@6.6.4/dist/abcjs-basic.min.js" onload="window.abcjsLoaded = true;"></script>
+    <!-- Load abcjs library with synth support -->
+    <script src="https://cdn.jsdelivr.net/npm/abcjs@6.6.4/dist/abcjs-basic-min.js" onload="window.abcjsLoaded = true;"></script>
 
     <!-- Load app as ES module -->
     <script type="module">
@@ -181,7 +181,7 @@
                 }
                 
                 let attempts = 0;
-                const maxAttempts = 100; // ~5 seconds with 50ms interval
+                const maxAttempts = 200; // ~10 seconds with 50ms interval
                 const interval = setInterval(() => {
                     attempts++;
                     if (typeof window.ABCJS !== 'undefined') {
