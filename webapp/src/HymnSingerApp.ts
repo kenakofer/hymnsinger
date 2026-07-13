@@ -70,7 +70,7 @@ export class MusicRenderer {
       if (typeof (window as any).abcjs !== 'undefined') {
         const abcjs = (window as any).abcjs;
         this.abcjsInstance = abcjs.renderAbc(
-          'abc-svg-container',
+          this.svgWrapper,
           abcNotation,
           defaultOptions
         );

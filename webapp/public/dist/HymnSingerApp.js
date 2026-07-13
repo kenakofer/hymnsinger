@@ -72,7 +72,7 @@ export class MusicRenderer {
             // In a real implementation, this would use the actual abcjs library
             if (typeof window.abcjs !== 'undefined') {
                 const abcjs = window.abcjs;
-                this.abcjsInstance = abcjs.renderAbc('abc-svg-container', abcNotation, defaultOptions);
+                this.abcjsInstance = abcjs.renderAbc(this.svgWrapper, abcNotation, defaultOptions);
             }
             else {
                 // Fallback for testing without abcjs
