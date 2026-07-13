@@ -60,7 +60,9 @@ export class AudioSynthesizer {
       }
 
       // Create synth instance
-      this.synth = new (window as any).abcjs.synth.CreateSynth();
+      // Use ABCJS global (UMD export) for synth creation
+      const abcjsGlobal = (window as any).ABCJS || (window as any).abcjs;
+      this.synth = new abcjsGlobal.synth.CreateSynth();
 
       // Set tempo and metronome options
       const options = {
@@ -77,7 +79,8 @@ export class AudioSynthesizer {
       });
 
       // Create controller for volume/speed control
-      this.synthController = new (window as any).abcjs.synth.SynthController();
+      const abcjsGlobal = (window as any).ABCJS || (window as any).abcjs;
+      this.synthController = new abcjsGlobal.synth.SynthController();
       this.synthController.load('#abc-svg-wrapper', null, this.synth);
 
       // Prime the buffer
