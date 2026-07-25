@@ -1,0 +1,23 @@
+{
+  "song_file": "dona-nobis-pacem",
+  "exclude_from_index": false,
+  "title": "Dona nobis pacem",
+  "tune": "DONA NOBIS PACEM",
+  "meter": "6.6",
+  "stanza_count": "1",
+  "composer": "Traditional",
+  "poet": "Traditional Latin",
+  "key": "F major",
+  "date_added": "2026/07/25",
+  "tags": [
+    "latin",
+    "christian",
+    "1part",
+    "round",
+    "chords"
+  ],
+  "lyrics": "Dona nobis pacem, pacem. Dona nobis pacem.\nDona nobis pacem. Dona nobis pacem.\nDona nobis pacem. Dona nobis pacem.\n",
+  "image": "/local-lilypond-outputs/dona-nobis-pacem-trad.png",
+  "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: Dona nobis pacem, pacem. Dona nobis pacem. Dona nobis pacem. Dona nobis pacem. Dona nobis pacem. Dona nobis pacem. ... latin christian 1part round chords",
+  "songs_with_same_tune": []
+}
