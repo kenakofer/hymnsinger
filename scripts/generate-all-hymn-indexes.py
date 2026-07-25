@@ -99,35 +99,67 @@ def get_tune_and_meter(all_lines):
                 meter_words.insert(0, tune_words.pop())
             return (" ".join(tune_words), " ".join(meter_words))
 
+def extract_from_source(all_lines, search_for):
+    if isinstance(search_for, list):
+        for s in search_for:
+            result = extract_from_source(all_lines, s)
+            if result:
+                return result
+        return None
+    # Collapse runs of whitespace before matching. The patterns are written
+    # by hand and the spacing in a .ly is not meaningful, so a stray double
+    # space on either side should not decide whether a song gets a page.
+    search_for = " ".join(search_for.split())
+    for raw_line in all_lines:
+        line = " ".join(raw_line.split())
+        if line.startswith(search_for):
+            index = line.index(search_for) + len(search_for)
+            line = line[index:]
+            line = line.replace('"', '')
+            line = line.replace('{', '')
+            line = line.replace('}', '')
+            line = line.strip()
+            # Check and remove any words in line that start with \
+            words = line.split()
+            words = [w for w in words if not w.startswith("\\")]
+            return " ".join(words)
+    return None
+
 def get_composer_info(all_lines):
-    composer_search_for = 'composer = \\smallText "Music:'
-    arranger_search_for = "arranger = \\smallText"
-    composer = ""
-    arranger = ""
-    for line in all_lines:
-        if line.startswith(composer_search_for):
-            index = line.index(composer_search_for) + len(composer_search_for) + 1
-            line = line[index:].strip()
-            composer = line[:-1] # Strip trailing quote
-        if line.startswith(arranger_search_for):
-            index = line.index(arranger_search_for) + len(arranger_search_for) + 1
-            line = line[index:].strip()
-            arranger = ";\n" + line[1:-1] # Strip trailing quote
+    composer = extract_from_source(all_lines, [
+        'composer = \\smallText "Music:',
+        'composer = \\twoLineSmallText "Music:',
+        'composer = \\smallText \\markup { "Music:',
+        'composer = \\twoLineSmallText \\markup { "Music:',
+    ])
+    # An empty composer is legitimate - 'composer = \smallText "Music: "'
+    # appears in songs whose tune has no attributable composer. Fall back to
+    # the empty string rather than raising, which is what this branch has
+    # always done; only the poet is treated as required.
+    if not composer:
+        composer = ""
+
+    arranger = extract_from_source(all_lines, [
+        'arranger = \\smallText ',
+        'arranger = \\twoLineSmallText '
+    ])
+    if arranger:
+        arranger = ";\n" + arranger
+    else:
+        arranger = ""
+
     return composer + arranger
 
 def get_poet_info(all_lines):
-    search_for = 'poet = \\smallText "Text:'
-    two_line_search_for = 'poet = \\twoLineSmallText "Text:'
-    for line in all_lines:
-        if line.startswith(search_for):
-            index = line.index(search_for) + len(search_for) + 1
-            line = line[index:].strip()
-            return line[:-1] # Strip trailing quote
-        if line.startswith(two_line_search_for):
-            index = line.index(two_line_search_for) + len(two_line_search_for) + 1
-            line = line[index:].strip()
-            return line.replace('"', '')
-    raise Exception("Poet not found")
+    poet = extract_from_source(all_lines, [
+        'poet = \\smallText "Text:',
+        'poet = \\twoLineSmallText "Text:',
+        'poet = \\smallText \\markup { "Text:',
+        'poet = \\twoLineSmallText \\markup { "Text:',
+    ])
+    if not poet:
+        raise Exception("Poet not found")
+    return poet
 
 def ismeterword(word):
     if word in METER_WORDS:
