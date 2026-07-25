@@ -27,7 +27,15 @@ quarternoteTempo = 200
 \include "../../lib/header.ily"
 
 soprano = { \globalParts
-  \time 3/2 \partial 2 e'2 | b'1 a'2 | b'4.( c''8 d''2) g'2 | b'4.( a'8 g'2) fs'2 | e'1 e'2 | e'1 d'2 | g'2( fs'2) e'2 | e'1 b2 | e'1 | b'2 | e''2( b'2) d''2 | g'2( a'2) b'2 | b'1 b'2 | b'1 g'2 | b'4.( a'8 g'2) fs'2 | g'2( c''2) b'2 | g'4.( fs'8 e'2) d'2 | e'1
+  %% One system per 4-measure phrase. Each break cuts a measure in half so
+  %% the next phrase opens on its upbeat, hence the repeated \partial 2.
+  \time 3/2 \partial 2 e'2 | b'1 a'2 | b'4.( c''8 d''2) g'2 | b'4.( a'8 g'2) fs'2 | e'1
+  \bar "" \break
+  \partial 2 e'2 | e'1 d'2 | g'2( fs'2) e'2 | e'1 b2 | e'1
+  \bar "" \break
+  \partial 2 b'2 | e''2( b'2) d''2 | g'2( a'2) b'2 | b'1 b'2 | b'1
+  \bar "" \break
+  \partial 2 g'2 | b'4.( a'8 g'2) fs'2 | g'2( c''2) b'2 | g'4.( fs'8 e'2) d'2 | e'1
 \bar "|."
 }
 %% This is a round, not a four-part setting: all four voices sing the
