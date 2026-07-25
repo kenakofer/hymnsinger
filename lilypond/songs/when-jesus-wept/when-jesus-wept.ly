@@ -3,18 +3,18 @@
 \include "../../lib/hymn-common.ily"
 
 %% MANUAL INFO
-composer = \smallText \markup { "Music: Composer," \italic "Book," "year" }
-poet = \smallText \markup { "Text: Author," \italic "Book," "year" }
-meter = \smallText "TUNE NAME meter"
+composer = \smallText \markup { "Music: William Billings," \italic "The New-England Psalm-Singer," "1770" }
+poet = \smallText \markup { "Text: William Billings," \italic "The New-England Psalm-Singer," "1770" }
+meter = \smallText "WHEN JESUS WEPT 8.8.8.8"
 
 %arranger = \smallText "arr. Name, year"
 %% Note: the meter variable requires a TUNE NAME, following by a meter, for page generation to work. See existing songs for examples
 %subtitle = \smallText "Optional"
 %prescore_text = \prescoreText "Uncomment to add text up and left of the score"
-%postscore_text = \postscoreText "Uncomment to add text down and left of the score"
+postscore_text = \postscoreText "A four-voice round: each voice enters in turn, one measure apart."
 
 verseCount = 1
-tags = "english christian 4part"
+tags = "english christian 1part round"
 dateAdded = "2026-07-25"
 typesetter = "Kenan Schaefkofer"
 
