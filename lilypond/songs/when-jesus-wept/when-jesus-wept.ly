@@ -27,15 +27,20 @@ quarternoteTempo = 200
 \include "../../lib/header.ily"
 
 soprano = { \globalParts
-  %% One system per 4-measure phrase. Each break cuts a measure in half so
-  %% the next phrase opens on its upbeat, hence the repeated \partial 2.
-  \time 3/2 \partial 2 e'2 | b'1 a'2 | b'4.( c''8 d''2) g'2 | b'4.( a'8 g'2) fs'2 | e'1
+  %% One system per phrase - this song is 16 measures of four equal
+  %% phrases, so that works out to a break every 4 measures. Each break
+  %% cuts a measure in half so the next phrase opens on its upbeat, hence
+  %% the repeated \partial 2.
+  %%
+  %% The 1/2/3/4 marks are the canon entries: voice 2 starts when voice 1
+  %% reaches the second system, and so on.
+  \time 3/2 \partial 2 e'2^\markup { \bold "1" } | b'1 a'2 | b'4.( c''8 d''2) g'2 | b'4.( a'8 g'2) fs'2 | e'1
   \bar "" \break
-  \partial 2 e'2 | e'1 d'2 | g'2( fs'2) e'2 | e'1 b2 | e'1
+  \partial 2 e'2^\markup { \bold "2" } | e'1 d'2 | g'2( fs'2) e'2 | e'1 b2 | e'1
   \bar "" \break
-  \partial 2 b'2 | e''2( b'2) d''2 | g'2( a'2) b'2 | b'1 b'2 | b'1
+  \partial 2 b'2^\markup { \bold "3" } | e''2( b'2) d''2 | g'2( a'2) b'2 | b'1 b'2 | b'1
   \bar "" \break
-  \partial 2 g'2 | b'4.( a'8 g'2) fs'2 | g'2( c''2) b'2 | g'4.( fs'8 e'2) d'2 | e'1
+  \partial 2 g'2^\markup { \bold "4" } | b'4.( a'8 g'2) fs'2 | g'2( c''2) b'2 | g'4.( fs'8 e'2) d'2 | e'1
 \bar "|."
 }
 %% This is a round, not a four-part setting: all four voices sing the
