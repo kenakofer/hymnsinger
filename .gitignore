@@ -20,3 +20,8 @@ vendor/
 # Python bytecode from scripts/
 __pycache__/
 *.pyc
+
+# Intake toolchain state (also matched by .* above; explicit for clarity)
+.convert-queue/
+.song-intake/
+.hymnal-index.json
