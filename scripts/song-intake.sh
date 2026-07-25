@@ -5,11 +5,11 @@
 # one commit per stage, so each step is a checkpoint you can read, amend,
 # or drop:
 #
-#   start <song>              branch intake/<song>, convert, commit notes
+#   start <song>              branch intake/<song> off public-main, convert
 #   transcribe <song>         commit the agent's metadata edits
 #   review <song>             show the metadata commit and confidence notes
 #   listen <song>             play the generated MIDI
-#   publish <song> [--public] merge to main, and public-main if eligible
+#   publish <song> [--public] merge to public-main if eligible, then main
 #
 # The agent edits the .ly directly and runs `transcribe`. It never merges
 # and never touches main or public-main.
@@ -38,11 +38,15 @@ branch_for() { echo "intake/$1"; }
 # republish-all.sh. See Stage 5 in docs/song-intake-protocol.md.
 assets_warning() {
   local song="$1"
-  # Key on the listing page and _data entry only. Both live on $MAIN_BRANCH,
-  # and they are what Jekyll builds the song's page from - without them
-  # there is no page for a PDF to hang off. Deliberately NOT checking
-  # docs/local-lilypond-outputs/: that directory exists only on
-  # $PUBLIC_BRANCH, so testing it from main would warn on every song and
+  # Key on the listing page and _data entry only. They exist on both
+  # branches and are what Jekyll builds the song's page from - without them
+  # there is no page for a PDF to hang off. This runs after the final
+  # checkout, so it is reading $MAIN_BRANCH's working tree.
+  #
+  # Deliberately NOT checking the outputs directory: the two branches keep
+  # it in different places ($PUBLIC_BRANCH in docs/local-lilypond-outputs/,
+  # $MAIN_BRANCH in docs/_site/local-lilypond-outputs/) because their hosts
+  # differ, so a single path would warn on every song on one branch and
   # train you to ignore the warning.
   [ -f "$REPO/docs/listing/$song.md" ] \
     && [ -f "$REPO/docs/_data/songs/$song.json" ] && return 0
@@ -72,16 +76,26 @@ cmd_start() {
     && die "$branch already exists (git branch -D $branch to redo)"
   [ -d "$SONGS/$song" ] && die "$SONGS/$song already exists"
 
-  # Fork from main, NOT from wherever HEAD happens to sit. An intake
-  # branch that starts off a feature branch carries that branch's history
-  # as ancestors, and `publish` then merges all of it into main and
-  # public-main - which is how a converter branch full of copyrighted
-  # songs once rode a single public-domain hymn onto public-main.
-  git -C "$REPO" show-ref --verify --quiet "refs/heads/$MAIN_BRANCH" \
-    || die "$MAIN_BRANCH does not exist"
-  git -C "$REPO" checkout -q -b "$branch" "$MAIN_BRANCH" \
-    || die "could not create $branch off $MAIN_BRANCH"
-  echo "${c_grn}branch${c_off}   $branch ${c_dim}(off $MAIN_BRANCH)${c_off}"
+  # Fork from public-main, NOT from main and NOT from wherever HEAD
+  # happens to sit.
+  #
+  # public-main holds only public-domain songs, so a branch forked from it
+  # can be merged into public-main later and carry nothing but this song.
+  # A branch forked from main cannot: main has 19 songs public-main lacks,
+  # 12 of them copyrighted, and merging such a branch drags all of them
+  # across. That is why publish used to copy the song's files across
+  # instead of merging, and forking from here is what makes an honest
+  # merge possible.
+  #
+  # Nothing about this exposes the song. The branch lives in the private
+  # repo, has no upstream, and `git push` on it refuses and suggests
+  # origin (private). A song that turns out copyrighted simply never gets
+  # merged into public-main.
+  git -C "$REPO" show-ref --verify --quiet "refs/heads/$PUBLIC_BRANCH" \
+    || die "$PUBLIC_BRANCH does not exist"
+  git -C "$REPO" checkout -q -b "$branch" "$PUBLIC_BRANCH" \
+    || die "could not create $branch off $PUBLIC_BRANCH"
+  echo "${c_grn}branch${c_off}   $branch ${c_dim}(off $PUBLIC_BRANCH)${c_off}"
 
   local warnings
   warnings="$("$REPO/scripts/convert-queue.sh" convert "$song" 2>&1)" || {
@@ -257,12 +271,20 @@ cmd_listen() {
 }
 
 # No song carrying a copyright notice may exist on the public branch.
+#
+# Match `copyright =` anywhere, not just on a line that also opens the
+# \header block. Every copyrighted song today writes it as the one-liner
+# '\header { copyright = "..." }', but nothing enforces that spelling, and
+# a header split across lines would walk straight past a stricter pattern.
+# This is the check that decides whether a song may go public: it should
+# err toward flagging. The post-condition check after the merge uses the
+# same loose pattern, so the two cannot disagree.
 public_branch_clean() {
   local offenders=""
   while read -r f; do
     [ -z "$f" ] && continue
     if git -C "$REPO" show "$PUBLIC_BRANCH:$f" 2>/dev/null \
-         | grep -q '^\s*\\header\s*{.*copyright\s*='; then
+         | grep -qE '^[^%]*copyright[[:space:]]*='; then
       offenders="$offenders $(basename "$f")"
     fi
   done < <(git -C "$REPO" ls-tree -r --name-only "$PUBLIC_BRANCH" \
@@ -282,10 +304,11 @@ cmd_publish() {
 
   # The metadata commit is not necessarily the branch tip: notation fixes
   # and hand edits legitimately land after `transcribe`. Find the commit on
-  # this branch (ahead of main) that carries the Copyright-Status line, and
-  # read the determination from that commit's message.
+  # this branch (ahead of public-main, which is what it forked from) that
+  # carries the Copyright-Status line, and read the determination from that
+  # commit's message.
   local msg status notice meta_commit
-  meta_commit="$(git -C "$REPO" log --format='%H' "$MAIN_BRANCH..$branch" \
+  meta_commit="$(git -C "$REPO" log --format='%H' "$PUBLIC_BRANCH..$branch" \
                  --grep='^Copyright-Status:' -i | head -1)"
   [ -z "$meta_commit" ] \
     && die "no commit on $branch carries a Copyright-Status: line (did you run transcribe?)"
@@ -303,20 +326,21 @@ cmd_publish() {
   [ -z "$status" ] && die "no Copyright-Status in the metadata commit"
   [ "$status" = "unknown" ] && die "copyright status is unknown - resolve before publishing"
 
-  # The branch must sit directly on top of main, carrying only this song's
-  # own commits. If it forked from somewhere else it drags that history
-  # into main (and possibly public-main) on merge - the failure that once
-  # put a whole converter branch, copyrighted songs and all, onto
-  # public-main. List the files this merge would introduce and refuse if
-  # any belong to a song other than this one.
+  # The branch must sit directly on top of public-main, carrying only this
+  # song's own commits. If it forked from somewhere else - main especially -
+  # it drags that history along, and for a --public song the merge would
+  # put every song main has and public-main lacks onto the public branch.
+  # That is the failure that once put a whole converter branch, copyrighted
+  # songs and all, onto public-main. List the files this merge would
+  # introduce and refuse if any belong to a song other than this one.
   local stray
-  stray="$(git -C "$REPO" diff --name-only "$MAIN_BRANCH...$branch" -- lilypond/songs \
+  stray="$(git -C "$REPO" diff --name-only "$PUBLIC_BRANCH...$branch" -- lilypond/songs \
            | sed -n 's,^lilypond/songs/\([^/]*\)/.*,\1,p' | sort -u \
            | grep -vx "$song")"
   if [ -n "$stray" ]; then
-    die "branch is not based on $MAIN_BRANCH: publishing it would also change other songs:
+    die "branch is not based on $PUBLIC_BRANCH: publishing it would also change other songs:
 $(echo "$stray" | sed 's/^/    /')
-    rebase intake onto $MAIN_BRANCH (git rebase --onto $MAIN_BRANCH ... $branch) first"
+    rebase intake onto $PUBLIC_BRANCH (git rebase --onto $PUBLIC_BRANCH ... $branch) first"
   fi
 
   local ly; ly="$(song_ly "$song")"
@@ -343,6 +367,35 @@ $(echo "$stray" | sed 's/^/    /')
       || die "$PUBLIC_BRANCH does not exist"
   fi
 
+  # Public first, then main. The branch forked from public-main, so for an
+  # eligible song this is an honest merge that fast-forwards public-main by
+  # exactly this song's commits - no file-copying, and nothing to review
+  # beyond the song itself. main then gets the song by merging the same
+  # branch, and stays a superset of public-main.
+  #
+  # If the song is not eligible, public-main is skipped entirely and only
+  # main sees it. The branch's ancestry is public-main either way, which is
+  # harmless: ancestry is not content, and a copyrighted song's commits are
+  # never merged here.
+  if [ "$want_public" = "1" ]; then
+    git -C "$REPO" checkout -q "$PUBLIC_BRANCH" || die "could not switch to $PUBLIC_BRANCH"
+    if ! git -C "$REPO" merge --no-ff -q -m "Add song \"$song\"" "$branch"; then
+      git -C "$REPO" merge --abort 2>/dev/null
+      git -C "$REPO" checkout -q "$MAIN_BRANCH"
+      die "merge into $PUBLIC_BRANCH failed"
+    fi
+    # Post-condition: this merge must not have put a copyright field on
+    # public-main. Belt-and-suspenders against a mislabelled song or a
+    # stray file, checked against the real tree after merging. On failure
+    # roll the branch back to where it was rather than leaving it dirty.
+    if git -C "$REPO" grep -qE 'copyright\s*=' -- 'lilypond/songs/**/*.ly'; then
+      git -C "$REPO" reset -q --hard HEAD~1
+      git -C "$REPO" checkout -q "$MAIN_BRANCH"
+      die "aborted: publishing $song would put a copyright field on $PUBLIC_BRANCH"
+    fi
+    echo "${c_grn}merged${c_off}   $branch -> $PUBLIC_BRANCH"
+  fi
+
   git -C "$REPO" checkout -q "$MAIN_BRANCH" || die "could not switch to $MAIN_BRANCH"
   git -C "$REPO" merge --no-ff -q -m "Add song \"$song\" ($status)" "$branch" \
     || die "merge into $MAIN_BRANCH failed"
@@ -356,31 +409,6 @@ $(echo "$stray" | sed 's/^/    /')
     note "not pushed - review, then: git push origin $MAIN_BRANCH"
     return 0
   fi
-
-  # Do NOT merge the branch into public-main: the branch is forked from
-  # main, so a merge would drag main's divergent (copyrighted) songs onto
-  # public-main. That is exactly the leak this guard exists to prevent.
-  # Instead take ONLY this song's files from the branch and commit them, so
-  # public-main gains the one song and nothing else.
-  git -C "$REPO" checkout -q "$PUBLIC_BRANCH" || die "could not switch to $PUBLIC_BRANCH"
-  if ! git -C "$REPO" checkout "$branch" -- "lilypond/songs/$song" 2>/dev/null; then
-    git -C "$REPO" checkout -q "$MAIN_BRANCH"
-    die "could not take lilypond/songs/$song from $branch"
-  fi
-  # Post-condition: adding this song must not introduce a copyright field on
-  # public-main. Belt-and-suspenders against a mislabelled song or a stray
-  # file, checked against the actual staged tree before committing.
-  if git -C "$REPO" grep -qE 'copyright\s*=' -- 'lilypond/songs/**/*.ly'; then
-    git -C "$REPO" reset -q --hard
-    git -C "$REPO" checkout -q "$MAIN_BRANCH"
-    die "aborted: publishing $song would put a copyright field on $PUBLIC_BRANCH"
-  fi
-  git -C "$REPO" add "lilypond/songs/$song" \
-    || { git -C "$REPO" checkout -q "$MAIN_BRANCH"; die "git add failed"; }
-  git -C "$REPO" commit -q -m "Add song \"$song\"" \
-    || { git -C "$REPO" checkout -q "$MAIN_BRANCH"; die "commit into $PUBLIC_BRANCH failed"; }
-  echo "${c_grn}added${c_off}    $song -> $PUBLIC_BRANCH ${c_dim}(files only, no merge)${c_off}"
-  git -C "$REPO" checkout -q "$MAIN_BRANCH"
 
   echo
   assets_warning "$song"
