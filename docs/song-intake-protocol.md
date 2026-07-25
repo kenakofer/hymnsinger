@@ -309,8 +309,28 @@ hymnsinger.com - not broken-looking, simply absent.
 
     scripts/republish-all.sh
 
-Then review and push. This regenerates outputs, rebuilds the listing and
-index pages, and commits `docs/`.
+This regenerates outputs, rebuilds the listing and index pages, and
+commits `docs/`. It does not push - review, then push the branch you are
+on.
+
+**Run it once per branch the song landed on.** A `--public` song is now on
+both, and the two branches build their assets into different directories
+for different hosts, so generating on one does nothing for the other:
+
+    git checkout public-main && scripts/republish-all.sh
+    git push public-origin public-main:main
+
+    git checkout main && scripts/republish-all.sh
+    git push origin main
+
+A private song is only on `main`, so only the second pair applies.
+
+The script is incremental - `generate-all-outputs.sh` skips any song whose
+`.mp3` is newer than its `.ly` - so the second run only builds the new
+song. One caveat: checking out a branch can give a song's `.ly` and `.mp3`
+the same mtime, and the check requires the `.mp3` to be *strictly* newer,
+so an unrelated song may re-render. That is harmless; the only change is
+the "updated" date in the engraved footer.
 
 ### Why publish does not do this
 
@@ -363,9 +383,8 @@ It keys on those two files only, deliberately not on
 but not on `main`, so checking it from `main` would warn on every song
 and train you to ignore the warning.
 
-`republish-all.sh` is incremental - `generate-all-outputs.sh` skips any
-song whose `.mp3` is newer than its `.ly` - so running it after a batch of
-publishes is cheap and safe.
+Running it after a batch of publishes is cheap and safe, for the
+incremental reason noted above.
 
 To find songs that have source but no page:
 

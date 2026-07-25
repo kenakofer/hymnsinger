@@ -412,9 +412,12 @@ $(echo "$stray" | sed 's/^/    /')
 
   echo
   assets_warning "$song"
-  note "not pushed - review both branches, then:"
-  note "  git push origin $MAIN_BRANCH"
+  note "not pushed. the song is on both branches, and each builds its"
+  note "assets separately, so stage 5 runs once per branch:"
+  note "  git checkout $PUBLIC_BRANCH && scripts/republish-all.sh"
   note "  git push public-origin $PUBLIC_BRANCH:main"
+  note "  git checkout $MAIN_BRANCH && scripts/republish-all.sh"
+  note "  git push origin $MAIN_BRANCH"
 }
 
 case "${1:-help}" in
