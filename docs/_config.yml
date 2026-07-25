@@ -1,3 +1,10 @@
 theme: jekyll-theme-dinky
 release_version: "0.10"
 google_analytics: "G-6MBRPLS92C"
+
+# Internal documentation that lives on this branch so intake branches can
+# reach it, but must not be served from hymnsinger.com. The files also
+# carry `published: false`; this list is the belt to that pair of braces.
+exclude:
+  - song-intake-protocol.md
+  - agent-prompt-song-intake.md

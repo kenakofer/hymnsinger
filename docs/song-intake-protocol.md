@@ -1,5 +1,17 @@
 ---
+published: false
 ---
+
+<!--
+Internal workflow documentation, not a page on the site.
+
+`published: false` keeps Jekyll from rendering it, and docs/_config.yml
+on public-main also lists it under `exclude`. Both are deliberate: this
+file lives on public-main so that intake branches - which fork from that
+branch - can hand it to the agent in Stage 2, but it describes the
+private repo's layout and vetting process and has no business being
+served from hymnsinger.com.
+-->
 
 # Song intake protocol
 

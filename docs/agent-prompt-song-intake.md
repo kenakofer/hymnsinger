@@ -1,5 +1,11 @@
 ---
+published: false
 ---
+
+<!--
+Internal workflow documentation, not a page on the site. See the note at
+the top of song-intake-protocol.md; docs/_config.yml excludes both.
+-->
 
 # Example agent prompts
 
