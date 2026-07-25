@@ -367,16 +367,21 @@ $(echo "$stray" | sed 's/^/    /')
       || die "$PUBLIC_BRANCH does not exist"
   fi
 
-  # Public first, then main. The branch forked from public-main, so for an
-  # eligible song this is an honest merge that fast-forwards public-main by
-  # exactly this song's commits - no file-copying, and nothing to review
-  # beyond the song itself. main then gets the song by merging the same
-  # branch, and stays a superset of public-main.
+  # Public first, then main.
   #
-  # If the song is not eligible, public-main is skipped entirely and only
-  # main sees it. The branch's ancestry is public-main either way, which is
-  # harmless: ancestry is not content, and a copyrighted song's commits are
-  # never merged here.
+  # Into public-main this is an honest merge: the branch forked from there,
+  # so it differs by exactly this song's commits.
+  #
+  # Into main it CANNOT be a merge. The branch's merge base with main is
+  # public-main's own ancient base (db622afa), so merging it replays every
+  # file public-main and main disagree about - ~1700 of them, including the
+  # 1400+ assets each branch keeps in a different directory for a different
+  # host. That is the wholesale cross-branch merge the protocol forbids.
+  # Take just this song's files instead.
+  #
+  # So the file-copy did not disappear in the reversal, it moved: it used to
+  # guard the public side and now guards the private one. The direction that
+  # gets a real merge is whichever branch the intake fork came from.
   if [ "$want_public" = "1" ]; then
     git -C "$REPO" checkout -q "$PUBLIC_BRANCH" || die "could not switch to $PUBLIC_BRANCH"
     if ! git -C "$REPO" merge --no-ff -q -m "Add song \"$song\"" "$branch"; then
@@ -397,9 +402,17 @@ $(echo "$stray" | sed 's/^/    /')
   fi
 
   git -C "$REPO" checkout -q "$MAIN_BRANCH" || die "could not switch to $MAIN_BRANCH"
-  git -C "$REPO" merge --no-ff -q -m "Add song \"$song\" ($status)" "$branch" \
-    || die "merge into $MAIN_BRANCH failed"
-  echo "${c_grn}merged${c_off}   $branch -> $MAIN_BRANCH"
+  if ! git -C "$REPO" checkout "$branch" -- "lilypond/songs/$song" 2>/dev/null; then
+    die "could not take lilypond/songs/$song from $branch"
+  fi
+  git -C "$REPO" add "lilypond/songs/$song" || die "git add failed"
+  if git -C "$REPO" diff --cached --quiet; then
+    note "$song is already on $MAIN_BRANCH and unchanged"
+  else
+    git -C "$REPO" commit -q -m "Add song \"$song\" ($status)" \
+      || die "commit into $MAIN_BRANCH failed"
+    echo "${c_grn}added${c_off}    $song -> $MAIN_BRANCH ${c_dim}(files only, no merge)${c_off}"
+  fi
 
   if [ "$want_public" != "1" ]; then
     [ "$status" = "public-domain" ] \
