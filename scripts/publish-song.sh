@@ -19,7 +19,3 @@ git add docs/_data*
 # Commit and push
 git commit -e -m "Add new song \"$BASE_NAME\""
 git push
-
-# Add the song outputs to the release
-LATEST_RELEASE=`gh release list | head -n1 | awk '{print $1;}'`
-gh release upload --clobber $LATEST_RELEASE "docs/local-lilypond-outputs/$BASE_NAME"*
