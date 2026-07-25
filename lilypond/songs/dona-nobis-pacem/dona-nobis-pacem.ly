@@ -11,7 +11,7 @@ meter = \smallText "TUNE NAME meter"
 %% Note: the meter variable requires a TUNE NAME, following by a meter, for page generation to work. See existing songs for examples
 %subtitle = \smallText "Optional"
 %prescore_text = \prescoreText "Uncomment to add text up and left of the score"
-%postscore_text = \postscoreText "Uncomment to add text down and left of the score"
+postscore_text = \postscoreText "*Translation: Grant us peace. A three-voice round: each voice enters in turn, eight measures apart."
 
 verseCount = 1
 tags = "english christian 4part"
@@ -27,26 +27,40 @@ quarternoteTempo = 100
 \include "../../lib/header.ily"
 
 soprano = { \globalParts
-  \time 3/4 f'8 c'8 a'2 | g'8 c'8 bf'2 | a'4( g'4) f'4 | f'4 e'2 | d''4( c''8 bf'8) a'8 g'8 | c''4.( bf'8) a'4 | a'8( g'8 f'4 e'4) | f'2. | c''2. | c''2. | c''4( bf'4) a'4 | a'4 g'2 | d''4 d''2 | c''4 c''2 | c''8( bf'8 a'4 g'4) | f'2. | f'2. | e'2. | f'4.( g'8) a'8 bf'8 | c''4 c'2 | bf'4 bf'2 | a'4 a'2 | e'8( g'8 c''4 c'4) | f'2.
+  %% One system per canon phrase - 24 measures of three equal 8-measure
+  %% phrases, each closing on the tonic. Unlike when-jesus-wept the
+  %% phrases start on the downbeat, so there is no \partial to re-declare;
+  %% a plain \break at the barline is enough.
+  %%
+  %% The 1/2/3 marks are the canon entries: voice 2 starts when voice 1
+  %% reaches the second system, and so on.
+  \time 3/4 f'8^\markup { \bold "1" }( c'8) a'2 | g'8( c'8) bf'2 | a'4( g'4) f'4 | f'4 e'2 | d''4( c''8 bf'8) a'8( g'8) | c''4.( bf'8) a'4 | a'8( g'8 f'4 e'4) | f'2.
+  \break
+  c''2.^\markup { \bold "2" } | c''2. | c''4( bf'4) a'4 | a'4 g'2 | d''4 d''2 | c''4 c''2 | c''8( bf'8 a'4 g'4) | f'2.
+  \break
+  f'2.^\markup { \bold "3" } | e'2. | f'4.( g'8) a'8( bf'8) | c''4 c'2 | bf'4 bf'2 | a'4 a'2 | e'8( g'8 c''4 c'4) | f'2.
 \bar "|."
 }
-alto = { \globalParts
-  \time 3/4
-}
-tenor = { \globalParts
-  \time 3/4
-}
-bass = { \globalParts
-  \time 3/4
-}
+%% This is a three-voice round, not a four-part setting: every voice sings
+%% the soprano line, entering eight measures apart. The lower parts stay
+%% empty, but the variables have to exist - lib/traditional-book.ily
+%% references them.
+alto = {}
+tenor = {}
+bass = {}
 
 %CHORDS
 songChords = \chords {
   \globalChordSymbols
 }
 
+%% One line per canon phrase, 14/12/12 syllables - the split the source
+%% marks, and the reason every phrase opens on "Do": a round only works if
+%% each voice enters at the start of the words, not mid-phrase.
 verseA = \lyricmode {
-\l Do -- na no -- bis pa -- "cem,*" pa -- "cem." Do -- na no -- bis pa -- "cem." Do -- na no -- bis pa -- "cem." Do -- na no -- bis pa -- "cem." Do -- na no -- bis pa -- "cem." Do -- na no -- bis pa -- "cem." 
+\l Do -- na no -- bis pa -- "cem,*" pa -- "cem." Do -- na no -- bis pa -- "cem."
+\l Do -- na no -- bis pa -- "cem." Do -- na no -- bis pa -- "cem."
+\l Do -- na no -- bis pa -- "cem." Do -- na no -- bis pa -- "cem."
 }
 
 
