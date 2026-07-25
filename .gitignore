@@ -16,3 +16,7 @@ sass-cache/
 .sass-cache/
 vendor/
 *.log
+
+# Python bytecode from scripts/
+__pycache__/
+*.pyc
