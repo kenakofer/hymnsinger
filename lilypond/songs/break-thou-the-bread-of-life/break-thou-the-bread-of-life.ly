@@ -26,18 +26,32 @@ quarternoteTempo = 130
 \include "../../lib/global-parts.ily"
 \include "../../lib/header.ily"
 
+%% Four systems of four measures, one per poetic phrase, the way the
+%% hymnal sets it. The tune is 64.64D: two paired phrases, then two more.
 soprano = { \globalParts
-  g'2 ef'4 g'4 | bf'4 c''4 bf'2 | g'2 ef'4 g'4 | f'1 | g'2 ef'4 g'4 | bf'4 c''4 bf'4 c''4 | d''2 c''2 | bf'1 | f'2 g'4 af'4 | c''4 bf'4 g'2 | bf'2 c''4 c''4 | d''1 | ef''2 bf'4 g'4 | f'4 af'4 c''4 af'4 | f'2 bf'2 | ef'1
+  g'2 ef'4 g'4 | bf'4 c''4 bf'2 | g'2 ef'4 g'4 | f'1 \break
+  | g'2 ef'4 g'4 | bf'4 c''4 bf'4 c''4 | d''2 c''2 | bf'1 \break
+  | f'2 g'4 af'4 | c''4 bf'4 g'2 | bf'2 c''4 c''4 | d''1 \break
+  | ef''2 bf'4 g'4 | f'4 af'4 c''4 af'4 | f'2 bf'2 | ef'1
 \bar "|."
 }
 alto = { \globalParts
-  ef'2 bf4 ef'4 | g'4 af'4 g'2 | ef'2 bf4 ef'4 | d'1 | ef'2 bf4 ef'4 | g'4 af'4 g'4 g'4 | f'2 ef'2 | d'1 | d'2 ef'4 f'4 | af'4 g'4 ef'2 | f'2 f'4 f'4 | f'2( af'2) | g'2 g'4 ef'4 | ef'4 ef'4 ef'4 ef'4 | ef'2 d'2 | bf1
+  ef'2 bf4 ef'4 | g'4 af'4 g'2 | ef'2 bf4 ef'4 | d'1
+  | ef'2 bf4 ef'4 | g'4 af'4 g'4 g'4 | f'2 ef'2 | d'1
+  | d'2 ef'4 f'4 | af'4 g'4 ef'2 | f'2 f'4 f'4 | f'2( af'2)
+  | g'2 g'4 ef'4 | ef'4 ef'4 ef'4 ef'4 | ef'2 d'2 | bf1
 }
 tenor = { \globalParts
-  bf2 g4 bf4 | ef'4 ef'4 ef'2 | bf2 g4 bf4 | bf1 | bf2 g4 bf4 | ef'4 ef'4 ef'4 bf4 | bf2 a2 | bf1 | bf2 bf4 d'4 | ef'4 ef'4 bf2 | bf2 a4 a4 | bf1 | bf2 ef'4 bf4 | c'4 c'4 c'4 c'4 | bf2 af2 | g1
+  bf2 g4 bf4 | ef'4 ef'4 ef'2 | bf2 g4 bf4 | bf1
+  | bf2 g4 bf4 | ef'4 ef'4 ef'4 bf4 | bf2 a2 | bf1
+  | bf2 bf4 d'4 | ef'4 ef'4 bf2 | bf2 a4 a4 | bf1
+  | bf2 ef'4 bf4 | c'4 c'4 c'4 c'4 | bf2 af2 | g1
 }
 bass = { \globalParts
-  ef2 ef4 ef4 | ef4 ef4 ef2 | ef2 ef4 ef4 | bf,1 | ef2 ef4 ef4 | ef4 ef4 ef4 ef4 | f2 f2 | bf,1 | bf,2 bf,4 bf,4 | ef4 ef4 ef2 | d2 c4 c4 | bf,1 | ef2 ef4 ef4 | af,4 af,4 af,4 af,4 | bf,2 bf,2 | ef1
+  ef2 ef4 ef4 | ef4 ef4 ef2 | ef2 ef4 ef4 | bf,1
+  | ef2 ef4 ef4 | ef4 ef4 ef4 ef4 | f2 f2 | bf,1
+  | bf,2 bf,4 bf,4 | ef4 ef4 ef2 | d2 c4 c4 | bf,1
+  | ef2 ef4 ef4 | af,4 af,4 af,4 af,4 | bf,2 bf,2 | ef1
 }
 
 %CHORDS
@@ -46,10 +60,16 @@ songChords = \chords {
 }
 
 verseA = \lyricmode {
-\l Break thou the bread of life, dear Lord, to me, as thou didst break the loaves be -- side the sea. Be -- yond the sa -- cred page I seek thee, Lord; my spir -- it pants for thee, O liv -- ing Word. 
+\l Break thou the bread of life, dear Lord, to me,
+\l as thou didst break the loaves be -- side the sea.
+\l Be -- yond the sa -- cred page I seek thee, Lord;
+\l my spir -- it pants for thee, O liv -- ing Word.
 }
 verseB = \lyricmode {
-Bless thou the truth, dear Lord, now un -- to me, as thou didst bless the bread by Gal -- i -- lee. Then shall all bond -- age cease, all fet -- ters fall, and I shall find my peace, my All -- in -- all. 
+\l Bless thou the truth, dear Lord, now un -- to me,
+\l as thou didst bless the bread by Gal -- i -- lee.
+\l Then shall all bond -- age cease, all fet -- ters fall,
+\l and I shall find my peace, my All -- in -- all.
 }
 
 
