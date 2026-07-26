@@ -6,6 +6,7 @@
 
 pa = \partCombineApart
 pt = \partCombineAutomatic
+bb = { \bar "" \break }
 
 globalLyrics =
 #(define-music-function
@@ -89,6 +90,16 @@ public_domain_notice_two_lines =
         }
       }
     #})
+    
+setBeamPos =
+% warning, the distance won't be consistent in the clairenotes
+#(define-music-function
+  (left right)
+  (number? number?)
+  "Manually set beam position for next group."
+  #{
+    \once \override Beam.positions = #(cons left right)
+  #})
 
 smallText =
   #(define-scheme-function
@@ -181,6 +192,15 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
   #(define-scheme-function
     (parser location) ()
     #{
+      %% The engraver footer is the one part of this file that must NOT be
+      %% shared with main. Only public-main's songs are served from
+      %% hymnsinger.com, so only they may name it. main deliberately
+      %% dropped the URL in dc45b2f8: its site is private and carries 13
+      %% copyrighted songs, and a PDF that points at hymnsinger.com would
+      %% imply they can be found there.
+      %%
+      %% Everything else in this file should stay in step with main. When
+      %% porting a change across, port around this block.
       \markup {
         \override #'(font-series . "regular")
         \fontsize #-4
@@ -200,6 +220,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
       }
     #})
 
+\tagGroup #'(slidesOnly verseA verseB verseC verseD verseE verseF verseG verseH slidesOmit midionly printonly)
 S = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'slidesOnly { $exp } #})
 SA = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'(verseA slidesOnly) { $exp } #})
 SB = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'(verseB slidesOnly) { $exp } #})
@@ -208,6 +229,7 @@ SD = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'(verseD
 SE = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'(verseE slidesOnly) { $exp } #})
 SF = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'(verseF slidesOnly) { $exp } #})
 SG = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'(verseG slidesOnly) { $exp } #})
+SH = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'(verseH slidesOnly) { $exp } #})
 
 SO = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'slidesOmit { $exp } #})
 
@@ -426,8 +448,8 @@ fillSlidesScore =
           \new Voice \with {
 
           } { \clef bass << \partCombine #'(2 . 20) $bottomA $bottomB >> }
-          \bottom_verses
-          \top_verse
+          \keepWithTag $whichVerse \bottom_verses
+          \keepWithTag $whichVerse \top_verse
         >>
       >>
     #})
@@ -440,12 +462,12 @@ scoreWithVerse =
       <<
       \removeWithTag #'midionly
       \fillSlidesScore
-        { \removeWithTag #'midionly $topA }
-        { \removeWithTag #'midionly $topB }
-        { \removeWithTag #'midionly $bottomA }
-        { \removeWithTag #'midionly $bottomB }
+        { \keepWithTag $whichVerse $topA }
+        { \keepWithTag $whichVerse $topB }
+        { \keepWithTag $whichVerse $bottomA }
+        { \keepWithTag $whichVerse $bottomB }
         {}
-        #.8
+        $slidesStaffZoom
         $whichVerse
         >>
     #})
@@ -521,4 +543,5 @@ bottom_verses = {}
 tradStaffZoom = #1
 tradLeadSheetStaffZoom = #1
 clairStaffZoom = #1
+slidesStaffZoom = #0.8
 shapeStaffZoom = #1.1 %% A bit larger by default to help see the shapes

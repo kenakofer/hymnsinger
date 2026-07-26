@@ -172,7 +172,11 @@ cmd_convert() {
 
   python3 "$REPO/scripts/lyrics_extractor.py" "$xml" > "$STATE/$name.lyrics" \
     2>>"$FRAG/$name.warn"
-  local verses; verses="$(grep -c '^verse[A-G] = ' "$STATE/$name.lyrics" 2>/dev/null || echo 1)"
+  # [A-H]: the library has <N>verse.ily for 1..8. This must stay in step
+  # with VERSE_LETTERS in lyrics_extractor.py - when it said [A-G] and the
+  # extractor emitted 8 verses, verseCount and the \include would disagree
+  # with the lyrics actually in the file.
+  local verses; verses="$(grep -c '^verse[A-H] = ' "$STATE/$name.lyrics" 2>/dev/null || echo 1)"
   [ "$verses" -lt 1 ] && verses=1
 
   python3 - "$SONGS/$name/$name.ly" "$frag" "$STATE/$name.lyrics" "$verses" <<'PY'

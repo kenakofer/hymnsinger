@@ -108,8 +108,26 @@ def warn_syllabic_mismatch(lyrics):
 
 warn_syllabic_mismatch(lyrics)
 
-#Print the verses, in order
-for verse, letter in zip(lyrics, ['A', 'B', 'C', 'D', 'E', 'F', 'G']):
+#Print the verses, in order.
+#
+# The letter list used to stop at G, and zip() truncates to the shorter
+# argument, so an 8-verse song lost its 8th verse silently - no warning,
+# nothing in the .warn file, just 7 verses where the source had 8. That
+# is how woman-in-the-night was converted. The ceiling is now the
+# library: lilypond/lib/<N>verse.ily and slides-book-<N>verse.ily exist
+# for 1..8, so going past 8 needs those files before it needs this list.
+VERSE_LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
+
+if len(lyrics) > len(VERSE_LETTERS):
+    sys.stderr.write(
+        'warning: source has %d verses but the library supports %d. '
+        'Verses %d+ are dropped. Add lilypond/lib/%dverse.ily and '
+        'slides-book-%dverse.ily (and the matching \\S<letter> tag in '
+        'hymn-common.ily) to raise the ceiling.\n'
+        % (len(lyrics), len(VERSE_LETTERS), len(VERSE_LETTERS) + 1,
+           len(lyrics), len(lyrics)))
+
+for verse, letter in zip(lyrics, VERSE_LETTERS):
     sys.stdout.write('verse' + letter + ' = \\lyricmode {\n')
     if letter == 'A':
         sys.stdout.write('\\l ')

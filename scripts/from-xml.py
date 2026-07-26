@@ -139,6 +139,8 @@ class Score:
         if self.time_sig is None:
             self.time_sig = (4, 4)
             self.warnings.append('no time signature found; assumed 4/4')
+        # After the 4/4 fallback: the check needs a time_sig to compare against.
+        self._warn_irregular_measures()
         if self.tempo is None:
             self.tempo = 90
             self.warnings.append('no tempo found; assumed 90')
@@ -449,6 +451,51 @@ class Score:
                 f'{len(added)} implied notes restored (absent voice = '
                 'doubling or divisi, not silence)')
 
+    def _warn_irregular_measures(self):
+        """Flag interior measures LONGER than the metre.
+
+        MuseScore writes these with len="9/8" on the <Measure> and no
+        <TimeSig>, so nothing in the note data says the bar is longer.
+        The converter emits one \\time for the song, LilyPond measures the
+        bar against it, and every voice reports a barcheck failure at the
+        same places - which reads like a bad conversion when the notes are
+        in fact correct and only the metre declaration is wrong.
+
+        Only over-long measures are reported. Short interior measures are
+        common and harmless: they are phrase-end fermata bars and the two
+        halves of a measure split across a repeat, which LilyPond absorbs
+        without complaint. Warning on those too was the first version of
+        this check and it fired on 166 of 297 songs, 146 of them for short
+        bars alone - we-gather-together, when-jesus-wept and
+        each-morning-brings-us all compile with 0 barchecks despite having
+        them. A warning that cries wolf five times out of six is worse
+        than none, because it trains you to skip the one that matters.
+
+        Reported rather than fixed: the right answer is a \\time change (and
+        usually a hidden signature, since hymnals rarely print these), and
+        which of the two the engraving wants is a judgement about the page.
+        woman-in-the-night is the worked example - m6-m9 are 9/8, 9/8, 4/4,
+        4/4 inside a 7/8 song, and every voice barchecked three times.
+        """
+        if not self.measures or self.time_sig is None:
+            return
+        full = Fraction(self.time_sig[0], self.time_sig[1]) * 4 * self.divisions
+        odd = []
+        # Skip measure 0: a short first bar is a pickup, handled separately.
+        for index, (_start, length, _implicit) in enumerate(self.measures[1:], 2):
+            if length and length > full:
+                odd.append((index, Fraction(length, self.divisions) / 4))
+        if odd:
+            shown = ', '.join(
+                'm%d=%s/%s' % (i, f.numerator, f.denominator) for i, f in odd[:8])
+            more = '' if len(odd) <= 8 else ' (+%d more)' % (len(odd) - 8)
+            self.warnings.append(
+                '%d measure(s) longer than %d/%d: %s%s. The notes are right; '
+                'the metre declaration is not. Add a \\time change at each '
+                '(and hide the signature if the hymnal prints none), or every '
+                'voice will barcheck there.'
+                % (len(odd), self.time_sig[0], self.time_sig[1], shown, more))
+
     def _detect_pickup(self):
         """Record an anacrusis so the parts can emit \\partial.
 
@@ -616,10 +663,23 @@ def render_part(score, part):
             out.append(pending_partial)
             pending_partial = None
 
+    # The opening \time is left out when it just repeats hymnTime.
+    # \globalParts already applies \hymnTime and then \hymnBeatStructure,
+    # in that order; a second \time here re-runs LilyPond's default
+    # grouping for the metre and silently discards the beat structure. A
+    # 7/8 song set to 3,2,2 came out with its eighths unbeamed for exactly
+    # this reason. Mid-song changes are still emitted - they are real.
+    seen_first_time = False
+
     for group in grouped:
         event = group[0]
         if event['kind'] == 'time':
-            out.append(f"\\time {event['time_sig'][0]}/{event['time_sig'][1]}")
+            redundant = (not seen_first_time
+                         and tuple(event['time_sig']) == tuple(score.time_sig))
+            seen_first_time = True
+            if not redundant:
+                out.append(
+                    f"\\time {event['time_sig'][0]}/{event['time_sig'][1]}")
             flush_partial()
             continue
         flush_partial()
