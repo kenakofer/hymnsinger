@@ -663,20 +663,27 @@ def render_part(score, part):
             out.append(pending_partial)
             pending_partial = None
 
-    # The opening \time is left out when it just repeats hymnTime.
+    # A \time is emitted only when it actually changes the metre.
     # \globalParts already applies \hymnTime and then \hymnBeatStructure,
-    # in that order; a second \time here re-runs LilyPond's default
-    # grouping for the metre and silently discards the beat structure. A
-    # 7/8 song set to 3,2,2 came out with its eighths unbeamed for exactly
-    # this reason. Mid-song changes are still emitted - they are real.
-    seen_first_time = False
+    # in that order; a redundant \time re-runs LilyPond's default grouping
+    # for the metre and silently discards the beat structure. A 7/8 song
+    # set to 3,2,2 came out with its eighths unbeamed for exactly this
+    # reason.
+    #
+    # This tracks the metre in force rather than only skipping the opening
+    # one, because MuseScore also restates the metre mid-score without
+    # changing it - joyful-is-the-dark carries a second 2/2 <TimeSig> at
+    # m9, which the hymnal does not print. Those restatements are not
+    # harmless: a part whose m9 begins with a rest emitted the \time a
+    # measure earlier than the others, so the same no-op landed in
+    # different bars in different voices.
+    current_time = tuple(score.time_sig)
 
     for group in grouped:
         event = group[0]
         if event['kind'] == 'time':
-            redundant = (not seen_first_time
-                         and tuple(event['time_sig']) == tuple(score.time_sig))
-            seen_first_time = True
+            redundant = tuple(event['time_sig']) == current_time
+            current_time = tuple(event['time_sig'])
             if not redundant:
                 out.append(
                     f"\\time {event['time_sig'][0]}/{event['time_sig'][1]}")
