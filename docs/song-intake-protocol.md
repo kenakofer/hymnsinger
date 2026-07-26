@@ -524,15 +524,15 @@ reports paths as differing when they are byte-identical.
 Not because anything is broken - because `generate-all-outputs.sh` decides
 "up to date" by hashing each `.ly` *together with the files it
 `\include`s*, so that editing a lib still invalidates the songs that use
-it. Four lib files are included by every single song:
+it. Four lib files are included by essentially every song:
 
     hymn-common.ily   all-notation-outputs.ily
     header.ily        midi-output.ily
 
-Touch any of them and all 152 songs on `main` (130 on `public-main`) get
-new fingerprints and re-render. That is ~7.4s per song for the PDF and
-400dpi PNG passes alone, before the ODP build and the MIDI→MP3, so budget
-**20-30 minutes per branch**.
+Touch any of them and 149 of `main`'s 152 songs (130 of 130 on
+`public-main`) get new fingerprints and re-render. That is ~7.4s per song
+for the PDF and 400dpi PNG passes alone, before the ODP build and the
+MIDI→MP3, so budget **20-30 minutes per branch**.
 
 The cost is per branch, not per change, and it does not compound: two lib
 edits in one republish cost the same as one. So:
@@ -542,8 +542,8 @@ edits in one republish cost the same as one. So:
   one sitting is one.
 - **Do the song work first.** A lib change plus a new song is one rebuild
   if the lib commit lands before you republish, two if after.
-- **Remember the second branch.** Porting a lib fix across leaves
-  `public-main` needing its own full republish. Batch that with whatever
+- **Remember the second branch.** Porting a lib fix across leaves the
+  other branch needing its own full republish. Batch that with whatever
   else is pending there rather than paying it immediately - the branches
   do not have to be regenerated at the same time, only before each is
   pushed.
