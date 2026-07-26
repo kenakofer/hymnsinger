@@ -14,7 +14,7 @@ meter = \smallText "TUNE NAME meter"
 %postscore_text = \postscoreText "Uncomment to add text down and left of the score"
 
 verseCount = 4
-tags = "english christian 4part"
+tags = "english christian winter 1part chant"
 dateAdded = "2026-07-26"
 typesetter = "Kenan Schaefkofer"
 
@@ -26,16 +26,34 @@ quarternoteTempo = 120
 \include "../../lib/global-parts.ily"
 \include "../../lib/header.ily"
 
+%% Plainsong, so the hymnal prints no time signature and the barlines are
+%% phrase divisions rather than measures of equal length. The converter
+%% declared 12/4 from the source and four of the seven phrases do not fit
+%% it - m2 and m4 are 11/4, m5 is 15/4, m6 is 10/4 - which is four failed
+%% barchecks, not four wrong phrases. \cadenzaOn stops LilyPond counting
+%% altogether, which is what unmetered chant wants: the barlines below
+%% then fall exactly where the hymnal draws them, and \bar "" \break puts
+%% one phrase pair per system as printed.
+%%
+%% hymnTime stays 12/4 for the MIDI tempo to key off; the signature is
+%% hidden rather than removed, following o-come-o-come-immanuel.
 soprano = { \globalParts
-  ef'4 f'4 g'4 af'4 g'4 f'4 g'4( f'4) ef'1 | g'4 af'4 bf'4 c''4 bf'4( g'4) af'4 bf'1 | c''4 d''4 ef''4 bf'4 bf'4 af'4 g'4( f'4) ef'1 | c'4 d'4 ef'4 f'4 ef'4( c'4) d'4 ef'1 | ef'4 f'4 g'4 af'4 g'4 f'4 bf'4( c''4 bf'4 g'4 af'4) bf'1 | ef'4 d'4 c'4 d'4 ef'4 c'4 bf1 | ef'4 f'4 g'4 bf'4 g'4 ef'4 f'2( ef'1)
+  \override Staff.TimeSignature #'stencil = ##f
+  \cadenzaOn
+  ef'4 f'4 g'4 af'4 g'4 f'4 g'4( f'4) ef'1 \bar "|"
+  g'4 af'4 bf'4 c''4 bf'4( g'4) af'4 bf'1 \bar "|" \break
+  c''4 d''4 ef''4 bf'4 bf'4 af'4 g'4( f'4) ef'1 \bar "|"
+  c'4 d'4 ef'4 f'4 ef'4( c'4) d'4 ef'1 \bar "|" \break
+  ef'4 f'4 g'4 af'4 g'4 f'4 bf'4( c''4 bf'4 g'4 af'4) bf'1 \bar "|"
+  ef'4 d'4 c'4 d'4 ef'4 c'4 bf1 \bar "|" \break
+  ef'4 f'4 g'4 bf'4 g'4 ef'4 f'2( ef'1)
 \bar "|."
 }
-alto = { \globalParts
-}
-tenor = { \globalParts
-}
-bass = { \globalParts
-}
+%% Unison plainsong: the variables must exist because
+%% lib/traditional-book.ily references them, but only soprano sings.
+alto = {}
+tenor = {}
+bass = {}
 
 %CHORDS
 songChords = \chords {
