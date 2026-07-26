@@ -45,20 +45,83 @@ songChords = \chords {
   \globalChordSymbols
 }
 
+%% Verse is m1-16; the refrain is m17-24, which the page marks "Refrain"
+%% after a double bar and the meter records as "with refrain". The
+%% converter had no way to see that: it reads syllables off the soprano
+%% line in order, so the refrain arrived attached to verse 1 and verses
+%% 2-3 simply ran out of words at m16. Wrapping it in \SB and \SC gives
+%% the later verses their copy for the slides while the score still
+%% prints it once, following when-israel-was-in-egypts-land.
 verseA = \lyricmode {
-\l Come, let us all u -- nite to sing, God is love. Let heav'n and earth their prais -- es bring, God is love. Let ev -- 'ry soul from sin a -- wake, let ev -- 'ry heart sweet mu -- sic make, and sing with us for Je -- sus' sake, for God is love. God is love! God is love! God is love! God is love! Come, let us all u -- nite to sing that God is love! 
+\l Come, let us all u -- nite to sing, God is love.
+\l Let heav'n and earth their prais -- es bring, God is love.
+\l Let ev -- 'ry soul from sin a -- wake,
+\l let ev -- 'ry heart sweet mu -- sic make,
+\l and sing with us for Je -- sus' sake, for God is love.
+%% REFRAIN
+\l God is love! God is love!
+\l Come, let us all u -- nite to sing that God is love!
 }
 verseB = \lyricmode {
-O tell to earth's re -- mot -- est bound, God is love. In Christ we have re -- demp -- tion found, God is love. His blood has washed our sins a -- way, his Spir -- it turned our night to day, and now we can re -- joice to say that God is love. 
+\l O tell to earth's re -- mot -- est bound, God is love.
+\l In Christ we have re -- demp -- tion found, God is love.
+\l His blood has washed our sins a -- way,
+\l his Spir -- it turned our night to day,
+\l and now we can re -- joice to say that God is love.
+%% REFRAIN
+\SB {
+\l God is love! God is love!
+\l Come, let us all u -- nite to sing that God is love!
+}
 }
 verseC = \lyricmode {
-How hap -- py is our por -- tion here, God is love. His prom -- is -- es our spir -- its cheer, God is love. He is our sun and shield by day, our help, our hope, our strength and stay; he will be with us all the way, our God is love. 
+\l How hap -- py is our por -- tion here, God is love.
+\l His prom -- is -- es our spir -- its cheer, God is love.
+\l He is our sun and shield by day,
+\l our help, our hope, our strength and stay;
+\l he will be with us all the way, our God is love.
+%% REFRAIN
+\SC {
+\l God is love! God is love!
+\l Come, let us all u -- nite to sing that God is love!
+}
+}
+
+%% The refrain is antiphonal: the lower voices answer "God is love!" in
+%% m18 and m20 while the upper voices hold, then join them wordlessly for
+%% m21-24 under the soprano text above. The source carries that answer as
+%% its own lyric line on voice 5, but the converter assigns every syllable
+%% to the soprano, so it was dropped. Restored here on its own staff,
+%% following warm-summer-sun.
+%%
+%% The 38 skips are note events in the bass line before m18, not measures.
+%% Do not re-derive this by counting sounding notes and assuming rests are
+%% free: that gives 37 and puts "God" a note early, splitting it from "is"
+%% across m17's rest. The count was settled by rendering 36-40 and reading
+%% the engraved x-positions - at 38 the two answers come out contiguous
+%% (God/is/love! at 27/32/34 and 47/52/55), and every other value leaves a
+%% visible gap inside one of them.
+%%
+%% Only the first answer needs padding. The second follows three notes
+%% later on its own, because m19's rest does not take a syllable the way
+%% m17's does.
+bottomA = \lyricmode {
+\repeat unfold 38 { \skip 1 }
+\l God is love!
+\l God is love!
 }
 
 
 
 % Set up music-aligned verses. Change to the correct number
 \include "../../lib/3verse.ily"
+
+%% Defined after the include: 3verse.ily sets all_verses, and this adds the
+%% bass answer as a second lyric staff without disturbing it.
+bottom_verses = <<
+  \new NullVoice = "bass" {\removeWithTag #'midionly \bass}
+  \new Lyrics \lyricsto bass { \globalLyrics "" "" \bottomA }
+>>
 
 %% Use this, or the tradStaffZoom and shapeStaffZoom equivalents, if space is tight.
 %clairStaffZoom = #.9
