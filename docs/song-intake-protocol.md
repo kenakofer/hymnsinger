@@ -325,12 +325,18 @@ for different hosts, so generating on one does nothing for the other:
 
 A private song is only on `main`, so only the second pair applies.
 
-The script is incremental - `generate-all-outputs.sh` skips any song whose
-`.mp3` is newer than its `.ly` - so the second run only builds the new
-song. One caveat: checking out a branch can give a song's `.ly` and `.mp3`
-the same mtime, and the check requires the `.mp3` to be *strictly* newer,
-so an unrelated song may re-render. That is harmless; the only change is
-the "updated" date in the engraved footer.
+The script is incremental, so the second run normally builds only the new
+song. `generate-all-outputs.sh` decides "up to date" by **content, not
+mtime**: it fingerprints each `.ly` together with the files it
+`\include`s and compares that against a stored `.inputhash`. The older
+mtime test (`.mp3` newer than `.ly`) is what produced the ~200-file diffs
+of identical-but-for-the-date PDFs, because `git checkout` rewrites the
+mtime of every file that differs between the branches.
+
+The exception is a change to a shared `lilypond/lib/*.ily`, which
+legitimately invalidates every song that includes it - usually all of
+them. That is a 20-30 minute rebuild and a reason to batch lib edits; see
+[Batch changes to `lilypond/lib/`](#batch-changes-to-lilypondlib---each-one-costs-a-full-rebuild).
 
 ### Why publish does not do this
 
@@ -511,6 +517,50 @@ To see the current state of the split:
 
 Compare blob hashes, not `git diff main public-main -- <path>`, which
 reports paths as differing when they are byte-identical.
+
+### Batch changes to `lilypond/lib/` - each one costs a full rebuild
+
+**A one-line edit to a shared `.ily` rebuilds every song on the branch.**
+Not because anything is broken - because `generate-all-outputs.sh` decides
+"up to date" by hashing each `.ly` *together with the files it
+`\include`s*, so that editing a lib still invalidates the songs that use
+it. Four lib files are included by every single song:
+
+    hymn-common.ily   all-notation-outputs.ily
+    header.ily        midi-output.ily
+
+Touch any of them and all 152 songs on `main` (130 on `public-main`) get
+new fingerprints and re-render. That is ~7.4s per song for the PDF and
+400dpi PNG passes alone, before the ODP build and the MIDI→MP3, so budget
+**20-30 minutes per branch**.
+
+The cost is per branch, not per change, and it does not compound: two lib
+edits in one republish cost the same as one. So:
+
+- **Collect lib changes and apply them together.** Adding `\SH` on Monday
+  and a beam tweak on Tuesday is two full rebuilds; the same two edits in
+  one sitting is one.
+- **Do the song work first.** A lib change plus a new song is one rebuild
+  if the lib commit lands before you republish, two if after.
+- **Remember the second branch.** Porting a lib fix across leaves
+  `public-main` needing its own full republish. Batch that with whatever
+  else is pending there rather than paying it immediately - the branches
+  do not have to be regenerated at the same time, only before each is
+  pushed.
+
+Do not try to dodge this by narrowing the fingerprint to the `.ly` alone.
+The script's own comment explains why: it would serve stale output after
+a lib change, which is worse than rebuilding too often. The mtime-based
+test it replaced is what produced the ~200-file diffs of
+identical-but-for-the-date PDFs.
+
+LilyPond's `-ddump-signatures` looks like a way out - it dumps grob
+positions and genuinely ignores unused definitions - but it fails both
+tests that matter. It missed a real change (`tradStaffZoom` 1 → 1.05
+altered the PDFs while every signature file stayed byte-identical,
+because signatures do not capture staff magnification), and it costs
+2765ms per song against 2472ms to just render the PDF. It is a
+regression-testing tool, not a build cache.
 
 ### The public branch also drifts from its own remote
 
