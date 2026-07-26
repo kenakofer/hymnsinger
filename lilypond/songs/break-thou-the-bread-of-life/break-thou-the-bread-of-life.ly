@@ -3,9 +3,9 @@
 \include "../../lib/hymn-common.ily"
 
 %% MANUAL INFO
-composer = \smallText \markup { "Music: Composer," \italic "Book," "year" }
-poet = \smallText \markup { "Text: Author," \italic "Book," "year" }
-meter = \smallText "TUNE NAME meter"
+composer = \twoLineSmallText \markup { "Music: William F. Sherwin, 1877," } \markup { \italic "The Calvary Selection of Spiritual Songs," "1878" }
+poet = \smallText \markup { "Text: Mary A. Lathbury," \italic "Chautauqua Carols," "1877" }
+meter = \smallText "BREAD OF LIFE 64.64D"
 
 %arranger = \smallText "arr. Name, year"
 %% Note: the meter variable requires a TUNE NAME, following by a meter, for page generation to work. See existing songs for examples
