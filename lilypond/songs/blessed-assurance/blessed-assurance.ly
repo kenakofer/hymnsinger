@@ -28,18 +28,39 @@ quarternoteTempo = 120
 \include "../../lib/global-parts.ily"
 \include "../../lib/header.ily"
 
+%% Each poetic line ends on the tied dotted-half ("mine!", "di-vine!",
+%% "God,", "blood.") and the next line's pickup follows inside the same
+%% measure, so the breaks are mid-measure rather than at a barline.
 soprano = { \globalParts
-  \partial 4. fs'8 e'8 d'8 | a'4. a'4. g'8 a'8 b'8 | a'4.~ a'4. a'8 fs'8 a'8 | d''4. cs''4 cs''8 b'8 a'8 gs'8 | a'4.~ a'4. fs'8 e'8 d'8 | a'4. a'4. g'8 a'8 b'8 | a'4.~ a'4. d'8 e'8 fs'8 | g'4. e'4. d'8 e'8 cs'8 | d'4.~ d'4. | a'8 a'8 a'8 | d''4. a'4. b'8 b'8 b'8 | a'4.~ a'4. a'8 a'8 a'8 | b'4. d''4. cs''8 cs''8 b'8 | cs''4.~ cs''4. cs''8 d''8 e''8 | d''4. a'4. b'8 a'8 b'8 | a'4.~ a'4. d'8 e'8 fs'8 | g'4. e'4. d'8. e'16 cs'8 | d'4.~ d'4.
+  \partial 4. fs'8 e'8 d'8 | a'4. a'4. g'8 a'8 b'8 | a'4.~ a'4. a'8 fs'8 a'8 | d''4. cs''4 cs''8 b'8 a'8 gs'8
+  | a'4.~ a'4. \bar "" \break fs'8 e'8 d'8 | a'4. a'4. g'8 a'8 b'8 | a'4.~ a'4. d'8 e'8 fs'8 | g'4. e'4. d'8 e'8 cs'8
+  | d'4.~ d'4. \bar "" \break | a'8 a'8 a'8 | d''4. a'4. b'8 b'8 b'8 | a'4.~ a'4. a'8 a'8 a'8 | b'4. d''4. cs''8 cs''8 b'8
+  | cs''4.~ cs''4. \bar "" \break cs''8 d''8 e''8 | d''4. a'4. b'8 a'8 b'8 | a'4.~ a'4. d'8 e'8 fs'8 | g'4. e'4. d'8. e'16 cs'8 | d'4.~ d'4.
 \bar "|."
 }
 alto = { \globalParts
-  \partial 4. d'8 d'8 d'8 | fs'4. fs'4. d'8 d'8 d'8 | d'4.~ d'4. fs'8 d'8 fs'8 | fs'4. e'4 e'8 e'8 e'8 e'8 | e'4.~ e'4. d'8 d'8 d'8 | fs'4. fs'4. d'8 d'8 d'8 | d'4.~ d'4. d'8 d'8 d'8 | e'4. b4. d'8 cs'8 a8 | a4.~ a4. | fs'8 fs'8 fs'8 | fs'4. fs'4. g'8 g'8 g'8 | fs'4.~ fs'4. fs'8 fs'8 fs'8 | g'4. a'4. a'8 a'8 gs'8 | a'4.~ a'4. g'8 g'8 g'8 | fs'4. fs'4. g'8 fs'8 g'8 | fs'4.~ fs'4. d'8 cs'8 d'8 | e'4. b4. d'8. cs'16 a8 | a4.~ a4.
+  \partial 4. d'8 d'8 d'8 | fs'4. fs'4. d'8 d'8 d'8 | d'4.~ d'4. fs'8 d'8 fs'8 | fs'4. e'4 e'8 e'8 e'8 e'8
+  | e'4.~ e'4. d'8 d'8 d'8 | fs'4. fs'4. d'8 d'8 d'8 | d'4.~ d'4. d'8 d'8 d'8
+  | e'4. b4. d'8 cs'8 a8 | a4.~ a4. | fs'8 fs'8 fs'8
+  | fs'4. fs'4. g'8 g'8 g'8 | fs'4.~ fs'4. fs'8 fs'8 fs'8 | g'4. a'4. a'8 a'8 gs'8
+  | a'4.~ a'4. g'8 g'8 g'8 | fs'4. fs'4. g'8 fs'8 g'8 | fs'4.~ fs'4. d'8 cs'8 d'8
+  | e'4. b4. d'8. cs'16 a8 | a4.~ a4.
 }
 tenor = { \globalParts
-  \partial 4. a8 g8 fs8 | a4. a4. b8 fs8 g8 | fs4.~ fs4. a8 a8 a8 | a4. a4 a8 d'8 cs'8 b8 | cs'4.~ cs'4. a8 g8 fs8 | a4. a4. b8 fs8 g8 | fs4.~ fs4. fs8 g8 a8 | b4. g4. fs8 g8 g8 | fs4.~ fs4. | d'8 d'8 d'8 | a4. d'4. d'8 d'8 d'8 | d'4.~ d'4. d'8 d'8 d'8 | d'4. d'4. e'8 e'8 e'8 | e'4.~ e'4. a8 b8 cs'8 | d'4. d'4. d'8 d'8 d'8 | d'4.~ d'4. a8 a8 a8 | b4. g4. fs8. g16 e8 | fs4.~ fs4.
+  \partial 4. a8 g8 fs8 | a4. a4. b8 fs8 g8 | fs4.~ fs4. a8 a8 a8 | a4. a4 a8 d'8 cs'8 b8
+  | cs'4.~ cs'4. a8 g8 fs8 | a4. a4. b8 fs8 g8 | fs4.~ fs4. fs8 g8 a8
+  | b4. g4. fs8 g8 g8 | fs4.~ fs4. | d'8 d'8 d'8
+  | a4. d'4. d'8 d'8 d'8 | d'4.~ d'4. d'8 d'8 d'8 | d'4. d'4. e'8 e'8 e'8
+  | e'4.~ e'4. a8 b8 cs'8 | d'4. d'4. d'8 d'8 d'8 | d'4.~ d'4. a8 a8 a8
+  | b4. g4. fs8. g16 e8 | fs4.~ fs4.
 }
 bass = { \globalParts
-  \partial 4. d8 d8 d8 | d4. d4. d8 d8 d8 | d4.~ d4. d8 d8 d8 | d4. e4 e8 e8 e8 e8 | a,4.~ a,4. d8 d8 d8 | d4. d4. d8 d8 d8 | d4.~ d4. d8 d8 d8 | g,4. g,4. a,8 a,8 a,8 | d4.~ d4. | d8 d8 d8 | d4. d4. g8 g8 g8 | d4.~ d4. d8 d8 d8 | g4. fs4. e8 e8 e8 | a4.~ a4. a8 a8 a8 | d4. d4. d8 d8 d8 | d4.~ d4. fs8 e8 d8 | g,4. g,4. a,8. a,16 a,8 | d4.~ d4.
+  \partial 4. d8 d8 d8 | d4. d4. d8 d8 d8 | d4.~ d4. d8 d8 d8 | d4. e4 e8 e8 e8 e8
+  | a,4.~ a,4. d8 d8 d8 | d4. d4. d8 d8 d8 | d4.~ d4. d8 d8 d8
+  | g,4. g,4. a,8 a,8 a,8 | d4.~ d4. | d8 d8 d8
+  | d4. d4. g8 g8 g8 | d4.~ d4. d8 d8 d8 | g4. fs4. e8 e8 e8
+  | a4.~ a4. a8 a8 a8 | d4. d4. d8 d8 d8 | d4.~ d4. fs8 e8 d8
+  | g,4. g,4. a,8. a,16 a,8 | d4.~ d4.
 }
 
 %CHORDS
@@ -47,14 +68,56 @@ songChords = \chords {
   \globalChordSymbols
 }
 
+%% The chorus is the same words for every verse, so the printed score
+%% shows it once, under verse 1, and verses 2-3 pass 36 skips to stay
+%% note-aligned. \SB is tagged slidesOnly, \SO slidesOmit, so the slides
+%% still get the full text on every verse. See "All creatures worship
+%% God most high" in docs/how-to-new-song.md.
 verseA = \lyricmode {
-\l Bless -- ed as -- sur -- ance, Je -- sus is mine! Oh, what a fore -- taste of glo -- ry di -- vine! Heir of sal -- va -- tion, pur -- chase of God, born of his Spir -- it, washed in his blood. This is my sto -- ry, this is my song, prais -- ing my Sav -- ior all the day long. This is my sto -- ry, this is my song, prais -- ing my Sav -- ior all the day long. 
+\l Bless -- ed as -- sur -- ance, Je -- sus is mine!
+\l Oh, what a fore -- taste of glo -- ry di -- vine!
+\l Heir of sal -- va -- tion, pur -- chase of God,
+\l born of his Spir -- it, washed in his blood.
+  %% CHORUS
+\l This is my sto -- ry, this is my song,
+\l prais -- ing my Sav -- ior all the day long.
+\l This is my sto -- ry, this is my song,
+\l prais -- ing my Sav -- ior all the day long.
+  %% END CHORUS
 }
 verseB = \lyricmode {
-Per -- fect sub -- mis -- sion, per -- fect de -- light, vi -- sions of rap -- ture now burst on my sight. An -- gels de -- scend -- ing bring from a -- bove ech -- oes of mer -- cy, whis -- pers of love. 
+\l Per -- fect sub -- mis -- sion, per -- fect de -- light,
+\l vi -- sions of rap -- ture now burst on my sight.
+\l An -- gels de -- scend -- ing bring from a -- bove
+\l ech -- oes of mer -- cy, whis -- pers of love.
+  %% CHORUS
+  \SB {
+    This is my sto -- ry, this is my song,
+    prais -- ing my Sav -- ior all the day long.
+    This is my sto -- ry, this is my song,
+    prais -- ing my Sav -- ior all the day long.
+  } \SO {
+    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  }
+  %% END CHORUS
 }
 verseC = \lyricmode {
-Per -- fect sub -- mis -- sion, all is at rest. I in my Sav -- ior am hap -- py and bless'd, Watch -- ing and wait -- ing, look -- ing a -- bove, filled with his good -- ness, lost in his love. 
+\l Per -- fect sub -- mis -- sion, all is at rest.
+\l I in my Sav -- ior am hap -- py and bless'd,
+\l watch -- ing and wait -- ing, look -- ing a -- bove,
+\l filled with his good -- ness, lost in his love.
+  %% CHORUS
+  \SB {
+    This is my sto -- ry, this is my song,
+    prais -- ing my Sav -- ior all the day long.
+    This is my sto -- ry, this is my song,
+    prais -- ing my Sav -- ior all the day long.
+  } \SO {
+    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+    _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+  }
+  %% END CHORUS
 }
 
 
