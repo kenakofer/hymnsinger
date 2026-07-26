@@ -76,6 +76,20 @@ cmd_start() {
     && die "$branch already exists (git branch -D $branch to redo)"
   [ -d "$SONGS/$song" ] && die "$SONGS/$song already exists"
 
+  # The hymnal sometimes spells a title differently than the tree does
+  # ("Bless'd" vs "Blest"), so the check above misses and intake starts on
+  # a song that is already converted. Caught here rather than at publish,
+  # where the duplicate would already have a branch and two commits.
+  local aliases="$REPO/scripts/queue-aliases.txt"
+  if [ -f "$aliases" ]; then
+    local from to
+    while read -r from to; do
+      case "$from" in ''|\#*) continue;; esac
+      [ "$from" = "$song" ] && [ -d "$SONGS/$to" ] \
+        && die "'$song' is already converted as $to (scripts/queue-aliases.txt)"
+    done < "$aliases"
+  fi
+
   # Fork from public-main, NOT from main and NOT from wherever HEAD
   # happens to sit.
   #

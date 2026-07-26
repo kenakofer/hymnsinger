@@ -41,6 +41,28 @@ dash_name() {
     | tr '[:upper:]' '[:lower:]'
 }
 
+ALIASES="$REPO/scripts/queue-aliases.txt"
+
+# The song directory a source maps to, which is not always its dash-name:
+# the hymnal sometimes spells a title differently than the tree does
+# ("Bless'd" vs "Blest"), and then the plain -d test misses and the queue
+# offers a song that is already converted. See scripts/queue-aliases.txt.
+song_dir_for() {
+  local n="$1" from to
+  if [ -f "$ALIASES" ]; then
+    while read -r from to; do
+      case "$from" in ''|\#*) continue;; esac
+      [ "$from" = "$n" ] && { echo "$to"; return 0; }
+    done < "$ALIASES"
+  fi
+  echo "$n"
+}
+
+# True when this source is already in the tree, under either name.
+already_converted() {
+  [ -d "$SONGS/$(song_dir_for "$1")" ]
+}
+
 find_source() {
   local want="$1" f
   while IFS= read -r f; do
@@ -73,7 +95,7 @@ cmd_status() {
   while IFS= read -r f; do
     total=$((total + 1))
     local n; n="$(dash_name "$f")"
-    if [ -d "$SONGS/$n" ]; then
+    if already_converted "$n"; then
       converted=$((converted + 1))
       grep -qxF "$n" "$DONE" && marked=$((marked + 1))
     else
@@ -104,7 +126,7 @@ cmd_list() {
   local scanned=0
   while IFS= read -r f; do
     local n; n="$(dash_name "$f")"
-    [ -d "$SONGS/$n" ] && continue
+    already_converted "$n" && continue
     scanned=$((scanned + 1))
     printf '\r  scanning %d...' "$scanned" >&2
     local xml frag rate note=""
@@ -136,6 +158,9 @@ cmd_convert() {
   local name="$1"
   local src; src="$(find_source "$name")" || die "no source for '$name'"
   [ -d "$SONGS/$name" ] && die "$SONGS/$name already exists (remove it to redo)"
+  local existing; existing="$(song_dir_for "$name")"
+  [ "$existing" != "$name" ] && [ -d "$SONGS/$existing" ] \
+    && die "'$name' is $existing under another spelling (scripts/queue-aliases.txt)"
 
   echo "source   $src"
   local xml; xml="$(ensure_xml "$src" "$name")" || die "MusicXML export failed"

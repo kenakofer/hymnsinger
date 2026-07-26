@@ -1,0 +1,31 @@
+# Sources whose dash-name differs from the song already in lilypond/songs/.
+#
+# The queue decides "already converted" with [ -d lilypond/songs/<name> ],
+# where <name> comes from the source .mscx filename. When the hymnal spells
+# a title differently than the song directory does, that test misses and the
+# queue offers a song that is already in the tree. That is how an intake
+# branch got started for blessd-be-the-tie-that-binds, which is DENNIS SM -
+# the same tune, arranger and text as blest-be-the-tie-that-binds.
+#
+# Format:  <source dash-name>  <existing song directory>
+# Lines starting with # are ignored.
+
+angels-we-have-heard-on-high         angels-we-have-heard
+blessd-be-the-tie-that-binds         blest-be-the-tie-that-binds
+breathe-on-me-breath-of-god          breath-on-me-breath-of-god
+i-sing-the-mighty-power-of-god       i-sing-the-mighty-power
+r337-what-a-friend-we-have-in-jesus  what-a-friend-we-have-in-jesus
+
+# NOT aliases - these look like near-duplicates by filename but are
+# genuinely different settings, and each belongs in the queue on its own.
+# Checked by comparing key, meter, measure count and first line:
+#
+#   for-the-beauty-of-the-earth      3 sharps; the tree's for-the-beauty-of-our-earth
+#                                    is a different text revision ("of our earth")
+#   heilig-heilig-heilig             32 measures; heilig-heilig-heilig-sanctus differs
+#   i-know-that-my-redeemer-liveth   5 flats, 4/4; the tree's ...-lives is G major, 2/2
+#   o-breathe-on-me-o-breath-of-god  3 flats, 18 measures, and the text begins
+#                                    "O breathe on me, O breath of God" - a different
+#                                    hymn from breath-on-me-breath-of-god (F, 13 bars)
+#   on-jordans-stormy-banks-i-stand  G major; the tree's ...-minor is E minor, which
+#                                    is the whole point of that song's name
