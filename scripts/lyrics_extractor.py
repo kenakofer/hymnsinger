@@ -128,10 +128,29 @@ for verse, letter in zip(lyrics, ['A', 'B', 'C', 'D', 'E', 'F', 'G']):
             text = text.replace('"', "''")
             if not text:
                 continue
-            # Bare syllables may only contain letters and a few marks;
-            # anything else (footnote asterisks, stray dots, digits) has to
-            # be quoted or LilyPond treats it as syntax.
-            if not re.fullmatch(r"[^\W\d_][\w'’\-]*", text, re.UNICODE):
+            # \lyricmode is far more permissive than a letters-only rule
+            # suggests: ordinary punctuation (. , ; : ! ? * ' ’ ( ) [ ] - =
+            # % &) all set unquoted, and quoting it only makes the source
+            # noisier ("cem." instead of cem.). Quote only what LilyPond
+            # would actually reinterpret, verified by rendering each case:
+            #
+            #   { }   block delimiters - silently dropped ({y} sets as "y")
+            #   # $   start Scheme     - truncate the word (a#b sets as "a")
+            #   _     lyric space      - f_g sets as "f g"
+            #   ~     lyric tie        - h~i sets as a ligature
+            #   \     escape           - parse error
+            #   "     already handled above (turned into '')
+            #
+            # Some characters are safe inside a word but not at the front,
+            # where LilyPond reads them as syntax rather than text: a digit
+            # is a duration ("3c"), "%" opens a comment, and ". * =" are
+            # each a parse error. Note "cem,*" is fine because it starts
+            # with a letter - only the leading position matters.
+            #
+            # Internal whitespace has to stay quoted too: a two-word
+            # syllable like "If this" splits across two notes unquoted,
+            # shifting every syllable after it.
+            if re.search(r'[{}#$_~\\\s]', text) or re.match(r'[\d.*=%]', text):
                 text = '"' + text + '"'
             first = False
             sys.stdout.write(text)
