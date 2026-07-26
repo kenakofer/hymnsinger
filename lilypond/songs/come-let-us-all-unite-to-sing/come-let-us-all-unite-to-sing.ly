@@ -3,8 +3,19 @@
 \include "../../lib/hymn-common.ily"
 
 %% MANUAL INFO
+%% The poet line is split across two lines because on one line the two
+%% attributions overran the margin and collided into each other
+%% ("...Revival Music,M1876c: Edmund S. Lorenz..."). Only the poet is
+%% split: meter sits below poet in the header, so making the composer two
+%% lines as well pushes the meter line down onto the top staff. The
+%% composer fits on one line, so it stays there - the same split
+%% a-mighty-fortress-is-our-god uses.
+%%
+%% The hymnal sets the source titles in italic, but \twoLineSmallText
+%% takes plain strings, so the italics are given up to keep the credits
+%% legible and inside the margin.
 composer = \smallText \markup { "Music: Edmund S. Lorenz," \italic "Notes of Triumph: for the Sunday School," "1886" }
-poet = \smallText \markup { "Text: anonymous, attributed to Howard Kingsbury," \italic "Complete Compendium of Revival Music," "1876" }
+poet = \twoLineSmallText "Text: anonymous, attributed to Howard Kingsbury," "Complete Compendium of Revival Music, 1876"
 meter = \smallText "GOD IS LOVE 83.83.8884 with refrain"
 
 %arranger = \smallText "arr. Name, year"
@@ -31,13 +42,30 @@ soprano = { \globalParts
 \bar "|."
 }
 alto = { \globalParts
-  \time 2/2 d'4 d'8 e'8 fs'4 fs'4 | g'4 g'4 fs'2 | g'2 e'2 | fs'2. r4 | d'4 d'8 e'8 fs'4 fs'4 | g'4 g'4 fs'2 | e'2 d'2 | cs'2. r4 | e'4 e'8 d'8 cs'4 e'4 | d'4 fs'4 fs'2 | e'4 e'8 d'8 cs'4 e'4 | d'4 fs'4 fs'2 | fs'4 fs'8 g'8 a'4 fs'4 | g'4 g'4 g'4 g'4 | fs'2 g'2 | fs'2. r4 | fs'2 g'2 | e'2. r4 | e'2 fs'2 | d'2. r4 | fs'4 fs'8 g'8 a'4 fs'4 | g'4 g'4 g'4 g'4 | fs'2 g'2 | fs'2. r4
+  %% Final measure ends on the dotted half, with no trailing r4. The source
+  %% does carry one - every voice's last measure is "dotted half + quarter
+  %% rest" - but the converter kept it only in alto and bass and dropped it
+  %% in soprano and tenor, so the score showed a quarter rest hanging off
+  %% two of the four voices after the closing chord. Dropped here to match.
+  \time 2/2 d'4 d'8 e'8 fs'4 fs'4 | g'4 g'4 fs'2 | g'2 e'2 | fs'2. r4 | d'4 d'8 e'8 fs'4 fs'4 | g'4 g'4 fs'2 | e'2 d'2 | cs'2. r4 | e'4 e'8 d'8 cs'4 e'4 | d'4 fs'4 fs'2 | e'4 e'8 d'8 cs'4 e'4 | d'4 fs'4 fs'2 | fs'4 fs'8 g'8 a'4 fs'4 | g'4 g'4 g'4 g'4 | fs'2 g'2 | fs'2. r4 | fs'2 g'2 | e'2. r4 | e'2 fs'2 | d'2. r4 | fs'4 fs'8 g'8 a'4 fs'4 | g'4 g'4 g'4 g'4 | fs'2 g'2 | fs'2.
 }
 tenor = { \globalParts
-  \time 2/2 fs4 a8 a8 d'4 d'4 | d'4 a4 a2 | b2 a2 | a2. r4 | fs4 a8 a8 d'4 d'4 | d'4 a4 a2 | a2 gs2 | a2. r4 | a,1 | d,1 | a,1 | d,1 | a4 a8 a8 a4 a4 | b4 b4 cs'4 d'4 | d'2 a2 | a2. r1 | r4 | a4 a4 a4 r1 | r4 | a4 a4 a4 r4 | a4 a8 a8 a4 a4 | b4 b4 cs'4 d'4 | d'2 a2 | a2.
+  %% m16-m20 were malformed: the converter emitted "a2. r1 | r4" and
+  %% "a4 a4 a4 r1 | r4", splitting whole rests across the barline so m16
+  %% ran to 7 beats and the leftover quarter formed a measure of its own.
+  %% The durations still summed correctly overall, so LilyPond compiled it
+  %% without a barcheck warning - it is only wrong to look at and to sing.
+  %%
+  %% The cause is that voice 6 is empty in the source: there is no separate
+  %% tenor part. The tenor is the upper note of the bass-staff chords in
+  %% voice 5, so it carries the bass's rhythm exactly, and the corrected
+  %% bars below are that rhythm (this is the "4 implied notes restored"
+  %% warning from the conversion).
+  \time 2/2 fs4 a8 a8 d'4 d'4 | d'4 a4 a2 | b2 a2 | a2. r4 | fs4 a8 a8 d'4 d'4 | d'4 a4 a2 | a2 gs2 | a2. r4 | a,1 | d,1 | a,1 | d,1 | a4 a8 a8 a4 a4 | b4 b4 cs'4 d'4 | d'2 a2 | a2. r4 | r1 | a4 a4 a4 r4 | r1 | a4 a4 a4 r4 | a4 a8 a8 a4 a4 | b4 b4 cs'4 d'4 | d'2 a2 | a2.
 }
 bass = { \globalParts
-  \time 2/2 d4 d8 d8 d4 d4 | g4 e4 d2 | g2 a2 | d2. r4 | d4 d8 d8 d4 d4 | g4 e4 d2 | e2 e2 | a,2. r4 | a,1 | d,1 | a,1 | d,1 | d4 d8 e8 fs4 d4 | g4 g4 g4 g4 | a2 a,2 | d2. r4 | r1 | a,4 a,4 a,4 r4 | r1 | d4 d4 d4 r4 | d4 d8 e8 fs4 d4 | g4 g4 g4 g4 | a2 a,2 | d2. r4
+  %% Trailing r4 dropped from the final measure - see the note on alto.
+  \time 2/2 d4 d8 d8 d4 d4 | g4 e4 d2 | g2 a2 | d2. r4 | d4 d8 d8 d4 d4 | g4 e4 d2 | e2 e2 | a,2. r4 | a,1 | d,1 | a,1 | d,1 | d4 d8 e8 fs4 d4 | g4 g4 g4 g4 | a2 a,2 | d2. r4 | r1 | a,4 a,4 a,4 r4 | r1 | d4 d4 d4 r4 | d4 d8 e8 fs4 d4 | g4 g4 g4 g4 | a2 a,2 | d2.
 }
 
 %CHORDS
