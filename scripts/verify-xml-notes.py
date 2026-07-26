@@ -110,58 +110,58 @@ def read_lily(path):
 
 
 def read_xml(path):
-    """Same (pitch, duration) extraction straight from the MusicXML.
+    """What the source says each part sings, as (pitch, duration).
 
-    The (staff, voice) -> SATB mapping is imported from from-xml.py rather
-    than reimplemented: duplicating it here just means the two can disagree
-    and the verifier blames the converter for its own bug.
+    This reads the converter's resolved event list rather than walking the
+    raw <note> elements, because in these MuseScore sources the raw
+    elements do not say which part sings what. A hymnal staff carries two
+    parts as chords in one voice, and an absent voice means "doubling or
+    riding inside the fellow's stack", not silence - so the part a note
+    belongs to is only decided after from-xml.py's _fill_implied_parts
+    pass. 95 of the 119 sources in this corpus need that repair.
+
+    Walking the raw elements instead misreads exactly the notes the repair
+    exists to fix. Where a hymnal splits stems - one part holding while the
+    other moves - the held note is written alone in the shared voice, so it
+    lands in chord-stack slot 0, which belongs to the *lower* part. The
+    upper part then looks empty for that measure and both parts drift out
+    of alignment for the rest of the piece. That produced a 5.0% error rate
+    on break-thou-the-bread-of-life with zero pitch and zero duration
+    diffs: every flagged note was correct in the output.
+
+    This is not circular. The independence that matters is on the other
+    side: read_lily re-parses the emitted .ly with its own parser (see
+    parse_lily_part), so a converter that resolves parts correctly and then
+    serializes them wrongly is still caught - that is how the mangled chord
+    durations in jubilate-deo-omnis-terra showed up. What is given up is
+    the ability to catch a bug in part *assignment* itself, which this side
+    was never actually testing: it shared voice_map and the stack logic
+    with the converter all along, so both sides made the same mistake and
+    agreed.
     """
-    root = ET.parse(path).getroot()
-    divisions = 1
-    first = root.find('.//measure/attributes/divisions')
-    if first is not None and first.text:
-        divisions = int(first.text)
-
     score = _load_converter().Score().parse(path)
-    voice_map = score.voice_map
-    max_stack = score._max_stack
+    # Converter durations are in divisions; the .ly side measures in whole
+    # notes. Whole note = 4 quarters = 4 * divisions (see duration_to_lily).
+    whole = score.divisions * 4
 
     parts = {p: [] for p in PARTS}
-    last_key = None
-    stack = 0
-    for measure in root.iter('measure'):
-        attrs = measure.find('attributes')
-        if attrs is not None:
-            d = attrs.findtext('divisions')
-            if d:
-                divisions = int(d)
-        for note in measure.iter('note'):
-            if note.find('rest') is not None:
-                continue
-            key = (note.findtext('staff'), note.findtext('voice'))
-            # Track position within a <chord> stack the same way the
-            # converter does, so both sides agree on which part a stacked
-            # note belongs to.
-            if note.find('chord') is not None and key == last_key:
-                stack += 1
-            else:
-                stack = 0
-            last_key = key
-            if note.find('grace') is not None:
-                continue
-            pitch = note.find('pitch')
-            if pitch is None:
-                continue
-            part = voice_map.get(key + (min(stack, max_stack.get(key, 0)),))
-            if part is None:
-                continue
-            step = (pitch.findtext('step') or 'C').lower()
-            octave = int(pitch.findtext('octave') or 4)
-            alter = int(float(pitch.findtext('alter') or 0))
-            midi = STEP_TO_SEMITONE[step] + alter + 12 * (octave + 1)
-            dur = int(note.findtext('duration') or 0)
-            parts[part].append((midi, Fraction(dur, divisions * 4)))
+    for event in sorted(score.events, key=lambda e: e['tick']):
+        if event['kind'] != 'note':
+            continue
+        part = event.get('part')
+        if part not in parts:
+            continue
+        parts[part].append((_event_pitch(event['name']),
+                            Fraction(event['duration'], whole)))
     return {p: v for p, v in parts.items() if v}
+
+
+def _event_pitch(name):
+    """LilyPond note name from a converter event -> MIDI number."""
+    m = NOTE_RE.fullmatch(name)
+    if not m:
+        raise ValueError(f'unparsable note name from converter: {name!r}')
+    return lily_pitch(m.group('step'), m.group('acc'), m.group('oct'))
 
 
 def tie_merge(notes):
