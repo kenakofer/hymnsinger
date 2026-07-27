@@ -3,9 +3,13 @@
 \include "../../lib/hymn-common.ily"
 
 %% MANUAL INFO
-composer = \smallText \markup { "Music: Composer," \italic "Book," "year" }
-poet = \smallText \markup { "Text: Author," \italic "Book," "year" }
-meter = \smallText "TUNE NAME meter"
+%% Both attributions name the same long book, and on one line each they
+%% collide in the middle of the page and run off the right edge. Split
+%% across two lines apiece, the way of-the-fathers-love-begotten and
+%% come-come-emmanuel handle their long sources.
+composer = \twoLineSmallText \markup { "Music: George C. Stebbins," } \markup { \italic "Northfield Hymnal with Alexander's Supplement," "1907" }
+poet = \twoLineSmallText \markup { "Text: Adelaide A. Pollard," } \markup { \italic "Northfield Hymnal with Alexander's Supplement," "1907, alt." }
+meter = \smallText "ADELAIDE 54. 54D"
 
 %arranger = \smallText "arr. Name, year"
 %% Note: the meter variable requires a TUNE NAME, following by a meter, for page generation to work. See existing songs for examples
