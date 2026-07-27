@@ -26,8 +26,14 @@ quarternoteTempo = 90
 \include "../../lib/global-parts.ily"
 \include "../../lib/header.ily"
 
+%% Three systems, matching the hymnal. Note that the breaks deliberately
+%% do NOT fall at the ends of the poetic lines: the page runs a line
+%% across the break ("...our fool-ish | ways.") and ("...ful mind, in |
+%% pur-er lives"), so a break per phrase would be five systems and a
+%% layout the singer is not reading from. Both land at a barline, so
+%% plain \break is enough - no \bar "" needed.
 soprano = { \globalParts
-  \partial 4 fs'4 | fs'4. fs'8 es'4 fs'4 | a'4 a'4 gs'4 g'4 | fs'4. d'8 d'4 e'4 | e'2. fs'4 | fs'4. g'8 a'4 d''4 | d''4. cs''8 b'4 b'4 | b'4. a'8 g'4 gs'4 | a'4 g'4 fs'4 a'4 | d'4. d'8 d'4 e'4 | fs'2.
+  \partial 4 fs'4 | fs'4. fs'8 es'4 fs'4 | a'4 a'4 gs'4 g'4 | fs'4. d'8 d'4 e'4 \break | e'2. fs'4 | fs'4. g'8 a'4 d''4 | d''4. cs''8 b'4 b'4 | b'4. a'8 g'4 gs'4 \break | a'4 g'4 fs'4 a'4 | d'4. d'8 d'4 e'4 | fs'2.
 \bar "|."
 }
 alto = { \globalParts
@@ -46,19 +52,39 @@ songChords = \chords {
 }
 
 verseA = \lyricmode {
-\l "*Dear" Lord and Fa -- ther of man -- kind, for -- give our fool -- ish ways. Re -- clothe us in our right -- ful mind, in pur -- er lives thy ser -- vice find, in deep -- er rev -- 'rence praise. 
+\l "*Dear" Lord and Fa -- ther of man -- kind,
+\l for -- give our fool -- ish ways.
+\l Re -- clothe us in our right -- ful mind,
+\l in pur -- er lives thy ser -- vice find,
+\l in deep -- er rev -- 'rence praise.
 }
 verseB = \lyricmode {
-In sim -- ple trust like theirs who heard, be -- side the Syr -- ian sea, the gra -- ciaus call -- ing of the Lord, let us, like them, with -- out a word rise up and fol -- low thee. 
+\l In sim -- ple trust like theirs who heard,
+\l be -- side the Syr -- ian sea,
+\l the gra -- cious call -- ing of the Lord,
+\l let us, like them, with -- out a word
+\l rise up and fol -- low thee.
 }
 verseC = \lyricmode {
-O Sab -- bath rest by Gal -- i -- lee! O calm of hills a -- bove, where Je -- sus knelt to share with thee the si -- lence of e -- ter -- ni -- ty, in -- ter -- pret -- ed by love; 
+\l O Sab -- bath rest by Gal -- i -- lee!
+\l O calm of hills a -- bove,
+\l where Je -- sus knelt to share with thee
+\l the si -- lence of e -- ter -- ni -- ty,
+\l in -- ter -- pret -- ed by love;
 }
 verseD = \lyricmode {
-drop thy still dews of qui -- et -- ness, till all our striv -- ings cease. Take from our souls the strain and stress, and let our or -- dered lives con -- fess the beau -- ty of thy peace. 
+\l drop thy still dews of qui -- et -- ness,
+\l till all our striv -- ings cease.
+\l Take from our souls the strain and stress,
+\l and let our or -- dered lives con -- fess
+\l the beau -- ty of thy peace.
 }
 verseE = \lyricmode {
-Breathe through the heats of our de -- sire thy cool -- ness and thy balm. Let sense be dumb, let flesh re -- tire, speak through the earth -- quake, wind, and fire, O still small voice of calm! 
+\l Breathe through the heats of our de -- sire
+\l thy cool -- ness and thy balm.
+\l Let sense be dumb, let flesh re -- tire,
+\l speak through the earth -- quake, wind, and fire,
+\l O still small voice of calm!
 }
 
 
