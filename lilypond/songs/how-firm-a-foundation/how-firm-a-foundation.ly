@@ -29,17 +29,26 @@ quarternoteTempo = 160
 \include "../../lib/header.ily"
 
 soprano = { \globalParts
-  \partial 2 e'4 fs'4 | a'2 fs'4 a'4 | e'2 a'4 a'4 | cs''2 a'4 cs''4 | e'2 e'4 fs'4 | a'2 fs'4 a'4 | e'2 a'4 a'4 | cs''2 b'4 b'4 | a'2 cs''2 | e''2 cs''4 e''4 | a'2 a'4 a'4 | cs''2 a'4 cs''4 | e'2 e'4 fs'4 | a'2 fs'4 a'4 | e'2 a'4 a'4 | cs''2 b'4 b'4 | a'2
+  %% Each of the three upbeats e'-fs' is slurred on the page - the photo
+  %% shows two arcs on the pickup, one over the soprano pair and one under
+  %% the alto pair, and every verse sets a single syllable across the two
+  %% notes. from-xml.py carried the slur into the alto only and left the
+  %% soprano bare, which would have set two syllables here and shifted the
+  %% rest of all five verses by one.
+  %%
+  %% Four systems, each starting on its pickup, as the page prints them.
+  %% \bar "" \break because the break falls mid-measure, before the upbeat.
+  \partial 2 e'4( fs'4) | a'2 fs'4 a'4 | e'2 a'4 a'4 | cs''2 a'4 cs''4 | e'2 \bar "" \break e'4( fs'4) | a'2 fs'4 a'4 | e'2 a'4 a'4 | cs''2 b'4 b'4 | a'2 \bar "" \break cs''2 | e''2 cs''4 e''4 | a'2 a'4 a'4 | cs''2 a'4 cs''4 | e'2 \bar "" \break e'4( fs'4) | a'2 fs'4 a'4 | e'2 a'4 a'4 | cs''2 b'4 b'4 | a'2
 \bar "|."
 }
 alto = { \globalParts
-  \partial 2 cs'4( d'4) | e'2 d'4 fs'4 | e'2 cs'4 cs'4 | e'2 cs'4 a4 | b2 cs'4( d'4) | e'2 d'4 fs'4 | e'2 cs'4 cs'4 | e'2 e'4 e'4 | cs'2 e'2 | a'2 e'4 e'4 | fs'2 fs'4 fs'4 | e'2 cs'4 a4 | b2 cs'4( d'4) | e'2 d'4 fs'4 | e'2 cs'4 cs'4 | e'2 e'4 e'4 | cs'2
+  \partial 2 cs'4( d'4) | e'2 d'4 fs'4 | e'2 cs'4 cs'4 | e'2 cs'4 a4 | b2 \bar "" \break cs'4( d'4) | e'2 d'4 fs'4 | e'2 cs'4 cs'4 | e'2 e'4 e'4 | cs'2 \bar "" \break e'2 | a'2 e'4 e'4 | fs'2 fs'4 fs'4 | e'2 cs'4 a4 | b2 \bar "" \break cs'4( d'4) | e'2 d'4 fs'4 | e'2 cs'4 cs'4 | e'2 e'4 e'4 | cs'2
 }
 tenor = { \globalParts
-  \partial 2 a2 | cs'2 a4 a4 | a2 e4 e4 | a2 a4 a4 | gs2 a2 | cs'2 a4 a4 | a2 a4 a4 | a2 gs4 gs4 | a2 a2 | cs'2 a4 b4 | cs'2 d'4 a4 | a2 a4 a4 | gs2 a2 | cs'2 a4 a4 | a2 a4 a4 | a2 gs4 gs4 | a2
+  \partial 2 a2 | cs'2 a4 a4 | a2 e4 e4 | a2 a4 a4 | gs2 \bar "" \break a2 | cs'2 a4 a4 | a2 a4 a4 | a2 gs4 gs4 | a2 \bar "" \break a2 | cs'2 a4 b4 | cs'2 d'4 a4 | a2 a4 a4 | gs2 \bar "" \break a2 | cs'2 a4 a4 | a2 a4 a4 | a2 gs4 gs4 | a2
 }
 bass = { \globalParts
-  \partial 2 a,2 | a,2 d4 d4 | cs2 a,4 a,4 | a,2 a,4 a,4 | e2 a,2 | a,2 d4 d4 | cs2 fs4 fs4 | e2 e4 e4 | a,2 a2 | a2 a4 gs4 | fs2 d4 d4 | a,2 a,4 a,4 | e2 a,2 | a,2 d4 d4 | cs2 fs4 fs4 | e2 e4 e4 | a,2
+  \partial 2 a,2 | a,2 d4 d4 | cs2 a,4 a,4 | a,2 a,4 a,4 | e2 \bar "" \break a,2 | a,2 d4 d4 | cs2 fs4 fs4 | e2 e4 e4 | a,2 \bar "" \break a2 | a2 a4 gs4 | fs2 d4 d4 | a,2 a,4 a,4 | e2 \bar "" \break a,2 | a,2 d4 d4 | cs2 fs4 fs4 | e2 e4 e4 | a,2
 }
 
 %CHORDS
@@ -47,20 +56,40 @@ songChords = \chords {
   \globalChordSymbols
 }
 
+%% One \l line per system, so each line after the first starts on that
+%% system's upbeat. The converter emitted verse A with a leading \l and
+%% B-E without one, and wrote the page's curly quotes as a doubled
+%% apostrophe (''Fear), which sets a literal '' before the word; the
+%% verses that open a quotation use a real left double quote instead.
 verseA = \lyricmode {
-\l How firm a foun -- da -- tion, ye saints of the Lord, is laid for your faith in his ex -- cel -- lent Word! What more can he say than to you he hath said, to you who for ref -- uge to Je -- sus have fled? 
+\l How firm a foun -- da -- tion, ye saints of the Lord,
+\l is laid for your faith in his ex -- cel -- lent Word!
+\l What more can he say than to you he hath said,
+\l to you who for ref -- uge to Je -- sus have fled?
 }
 verseB = \lyricmode {
-''Fear not, I am with thee; O be not dis -- mayed, for I am thy God, and will still give thee aid. I'll strength -- en thee, help thee, and cause thee to stand, up -- held by my right -- eous, om -- ni -- po -- tent hand. 
+\l “Fear not, I am with thee; O be not dis -- mayed,
+\l for I am thy God, and will still give thee aid.
+\l I'll strength -- en thee, help thee, and cause thee to stand,
+\l up -- held by my right -- eous, om -- ni -- po -- tent hand.
 }
 verseC = \lyricmode {
-''When through the deep wa -- ters I call thee to go, the riv -- ers of sor -- row shall not o -- ver -- flow, for I will be with thee, thy trou -- bles to bless, and sanc -- ti -- fy to thee thy deep -- est dis -- tress. 
+\l “When through the deep wa -- ters I call thee to go,
+\l the riv -- ers of sor -- row shall not o -- ver -- flow,
+\l for I will be with thee, thy trou -- bles to bless,
+\l and sanc -- ti -- fy to thee thy deep -- est dis -- tress.
 }
 verseD = \lyricmode {
-''When through fi -- ery tri -- als thy path -- way shall lie, my grace, all -- suf -- fi -- cient, shall be thy sup -- ply. The flame shall not hurt thee. I on -- ly de -- sign thy dross to con -- sume, and thy gold to re -- fine. 
+\l “When through fi -- ery tri -- als thy path -- way shall lie,
+\l my grace, all -- suf -- fi -- cient, shall be thy sup -- ply.
+\l The flame shall not hurt thee. I on -- ly de -- sign
+\l thy dross to con -- sume, and thy gold to re -- fine.
 }
 verseE = \lyricmode {
-''The soul that on Je -- sus still leans for re -- pose, I will not, I will not de -- sert to its foes. That soul, though all hell should en -- deav -- or to shake, I'll nev -- er, no nev -- er, no nev -- er for -- sake!'' 
+\l “The soul that on Je -- sus still leans for re -- pose,
+\l I will not, I will not de -- sert to its foes.
+\l That soul, though all hell should en -- deav -- or to shake,
+\l I'll nev -- er, no nev -- er, no nev -- er for -- sake!”
 }
 
 
