@@ -3,9 +3,11 @@
 \include "../../lib/hymn-common.ily"
 
 %% MANUAL INFO
-composer = \smallText \markup { "Music: Composer," \italic "Book," "year" }
-poet = \smallText \markup { "Text: Author," \italic "Book," "year" }
-meter = \smallText "TUNE NAME meter"
+%% The music attribution is long enough to collide with the poet's on one
+%% line each, so both are split, as have-thine-own-way does.
+composer = \twoLineSmallText \markup { "Music: American folk melody, in Joseph Funk's" } \markup { \italic "Genuine Church Music," "1st ed., 1832" }
+poet = \twoLineSmallText \markup { "Text: “K” in Rippon's" } \markup { \italic "Selection of Hymns," "1787" }
+meter = \smallText "FOUNDATION (BELLEVUE) 11 11. 11 11"
 
 %arranger = \smallText "arr. Name, year"
 %% Note: the meter variable requires a TUNE NAME, following by a meter, for page generation to work. See existing songs for examples
