@@ -558,6 +558,15 @@ whichever copy the intake branch inherited from `public-main`; if the two
 drift, an intake branch runs a different tool than the one you last
 edited on `main`. Change them on one branch, then copy across verbatim.
 
+Stage 4 checks this for you. `song-intake.sh publish` compares those six
+files across both branches and warns if any differ, because publish is the
+moment the gap is easiest to create and hardest to notice - it merges the
+intake branch into `public-main` but copies only the song across to `main`,
+so a tooling fix made on the intake branch lands on one branch and not the
+other. The warning does not block the publish; it tells you a port is
+owed. It deliberately ignores the six host-specific scripts above, which
+are supposed to differ.
+
 To see the current state of the split:
 
     for f in $(comm -12 \

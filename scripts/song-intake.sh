@@ -60,6 +60,48 @@ assets_warning() {
   echo
 }
 
+# The stages move songs; they do not move tooling. Stage 4 merges the intake
+# branch into $PUBLIC_BRANCH but takes only lilypond/songs/<song> across to
+# $MAIN_BRANCH, so a fix committed to a script on the intake branch reaches
+# the public branch and silently misses the private one. The reverse gap is
+# worse: an intake branch forks from $PUBLIC_BRANCH, so a script fixed only
+# on $MAIN_BRANCH is not the script Stage 1 actually runs. Both happened
+# while publishing blessed-assurance - see "Keeping main and public-main in
+# sync" in docs/song-intake-protocol.md.
+#
+# Only the intake toolchain is checked. The six host-specific scripts
+# (republish-all.sh, the index generators, ...) differ for good reasons and
+# are expected to; listing them here would train you to ignore the warning.
+# These six have no host-specific paths and should stay byte-identical.
+TOOLCHAIN_SHARED=(
+  scripts/song-intake.sh
+  scripts/convert-queue.sh
+  scripts/from-xml.py
+  scripts/from-muse.py
+  scripts/lyrics_extractor.py
+  scripts/verify-xml-notes.py
+)
+
+toolchain_warning() {
+  local f a b drift=""
+  for f in "${TOOLCHAIN_SHARED[@]}"; do
+    # Compare blob hashes, not `git diff <branch> <branch> -- <path>`, which
+    # reports byte-identical paths as differing.
+    a=$(git -C "$REPO" rev-parse "$MAIN_BRANCH:$f" 2>/dev/null) || continue
+    b=$(git -C "$REPO" rev-parse "$PUBLIC_BRANCH:$f" 2>/dev/null) || continue
+    [ "$a" != "$b" ] && drift="$drift $f"
+  done
+  [ -z "$drift" ] && return 0
+
+  echo "${c_yel}warning${c_off} intake toolchain differs between branches"
+  for f in $drift; do note "  $f"; done
+  note "  these carry no host-specific paths and should be identical."
+  note "  stage 1 runs whichever copy $PUBLIC_BRANCH holds, so a fix that"
+  note "  landed on only one branch is not the one the next song will use."
+  note "  port it by hand, verbatim, and push both branches."
+  echo
+}
+
 require_clean() {
   git -C "$REPO" diff --quiet && git -C "$REPO" diff --cached --quiet \
     || die "working tree has uncommitted changes; commit or stash first"
@@ -433,12 +475,14 @@ $(echo "$stray" | sed 's/^/    /')
       && note "public-domain: pass --public to also promote to $PUBLIC_BRANCH"
     echo
     assets_warning "$song"
+    toolchain_warning
     note "not pushed - review, then: git push origin $MAIN_BRANCH"
     return 0
   fi
 
   echo
   assets_warning "$song"
+  toolchain_warning
   note "not pushed. the song is on both branches, and each builds its"
   note "assets separately, so stage 5 runs once per branch:"
   note "  git checkout $PUBLIC_BRANCH && scripts/republish-all.sh"
