@@ -28,8 +28,11 @@ quarternoteTempo = 110
 \include "../../lib/global-parts.ily"
 \include "../../lib/header.ily"
 
+%% Three systems of four measures, matching the hymnal. Two poetic lines
+%% per system, and every break lands on a barline, so plain \break is
+%% enough - no \bar "" needed.
 soprano = { \globalParts
-  bf'4. bf'8 a'4 bf'4 | g'4 bf'4 f'2 | d''4 bf'4 ef''4 c''4 | bf'4 a'4 bf'2 | d''4. d''8 c''4 d''4 | ef''4 d''4 c''2 | d''4. d''8 c''4 d''4 | ef''4 d''4 c''2 | bf'4. bf'8 a'4 bf'4 | g'4 bf'4 f'2 | d''4 bf'4 ef''4 c''4 | bf'4 a'4 bf'2
+  bf'4. bf'8 a'4 bf'4 | g'4 bf'4 f'2 | d''4 bf'4 ef''4 c''4 | bf'4 a'4 bf'2 \break | d''4. d''8 c''4 d''4 | ef''4 d''4 c''2 | d''4. d''8 c''4 d''4 | ef''4 d''4 c''2 \break | bf'4. bf'8 a'4 bf'4 | g'4 bf'4 f'2 | d''4 bf'4 ef''4 c''4 | bf'4 a'4 bf'2
 \bar "|."
 }
 alto = { \globalParts
@@ -48,7 +51,12 @@ songChords = \chords {
 }
 
 verseA = \lyricmode {
-\l Come, di -- vine In -- ter -- pre -- ter, bring us eyes thy book to read, ears the mys -- tic words to hear, words which did from thee pro -- ceed, words that end -- less bliss im -- part, kept in an o -- be -- dient heart. 
+\l Come, di -- vine In -- ter -- pre -- ter,
+\l bring us eyes thy book to read,
+\l ears the mys -- tic words to hear,
+\l words which did from thee pro -- ceed,
+\l words that end -- less bliss im -- part,
+\l kept in an o -- be -- dient heart.
 }
 
 
