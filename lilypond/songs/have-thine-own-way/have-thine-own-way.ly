@@ -31,17 +31,28 @@ quarternoteTempo = 160
 \include "../../lib/header.ily"
 
 soprano = { \globalParts
-  \partial 2. g'4 f'4 g'4 | af'2. g'2. ef'4 d'4 ef'4 | f'2.~ f'2. f'4 e'4 f'4 | g'2. f'2. f'4 ef'4 d'4 | ef'2.~ ef'2. g'4 f'4 g'4 | af'2. g'2. bf'4 a'4 bf'4 | c''2.~ c''2. c''4 d''4 c''4 | bf'2. g'2. f'4 ef'4 f'4 | ef'2.~ ef'2.
+  %% Four two-measure phrases, each ending on a tied dotted half and each
+  %% beginning with a three-quarter upbeat that the barline cuts across.
+  %% One phrase per system: the phrases are structurally identical, so this
+  %% gives four systems of equal length. The page groups phrases 1-2 on one
+  %% system and prints three, but four even systems read more regularly and
+  %% put every line break at a phrase end.
+  %%
+  %% \bar "" \break rather than a plain \break: the break falls mid-measure,
+  %% between the tie's resolution and the next phrase's upbeat, so each new
+  %% system starts on the pickup. A plain \break at this spot would be
+  %% overridden. Same idiom as blessed-assurance.
+  \partial 2. g'4 f'4 g'4 | af'2. g'2. ef'4 d'4 ef'4 | f'2.~ f'2. \bar "" \break f'4 e'4 f'4 | g'2. f'2. f'4 ef'4 d'4 | ef'2.~ ef'2. \bar "" \break g'4 f'4 g'4 | af'2. g'2. bf'4 a'4 bf'4 | c''2.~ c''2. \bar "" \break c''4 d''4 c''4 | bf'2. g'2. f'4 ef'4 f'4 | ef'2.~ ef'2.
 \bar "|."
 }
 alto = { \globalParts
-  \partial 2. ef'4 ef'4 ef'4 | ef'2. ef'2. bf4 bf4 bf4 | d'2.~ d'2. d'4 d'4 d'4 | d'2. d'2. bf4 bf4 bf4 | bf2.~ bf2. ef'4 ef'4 ef'4 | ef'2. ef'2. df'4 c'4 df'4 | ef'2.~ ef'2. ef'4 ef'4 ef'4 | ef'2. ef'2. bf4 bf4 bf4 | bf2.~ bf2.
+  \partial 2. ef'4 ef'4 ef'4 | ef'2. ef'2. bf4 bf4 bf4 | d'2.~ d'2. \bar "" \break d'4 d'4 d'4 | d'2. d'2. bf4 bf4 bf4 | bf2.~ bf2. \bar "" \break ef'4 ef'4 ef'4 | ef'2. ef'2. df'4 c'4 df'4 | ef'2.~ ef'2. \bar "" \break ef'4 ef'4 ef'4 | ef'2. ef'2. bf4 bf4 bf4 | bf2.~ bf2.
 }
 tenor = { \globalParts
-  \partial 2. bf4 af4 bf4 | c'2. bf2. g4 f4 g4 | af2.~ af2. af4 g4 af4 | bf2. af2. af4 g4 f4 | g2.~ g2. bf4 af4 bf4 | c'2. bf2. g4 g4 g4 | af2.~ af2. af4 bf4 af4 | g2. bf2. af4 g4 af4 | g2.~ g2.
+  \partial 2. bf4 af4 bf4 | c'2. bf2. g4 f4 g4 | af2.~ af2. \bar "" \break af4 g4 af4 | bf2. af2. af4 g4 f4 | g2.~ g2. \bar "" \break bf4 af4 bf4 | c'2. bf2. g4 g4 g4 | af2.~ af2. \bar "" \break af4 bf4 af4 | g2. bf2. af4 g4 af4 | g2.~ g2.
 }
 bass = { \globalParts
-  \partial 2. ef4 ef4 ef4 | ef2. ef2. ef4 ef4 ef4 | bf,2.~ bf,2. bf,4 bf,4 bf,4 | bf,2. bf,2. bf,4 bf,4 bf,4 | ef2.~ ef2. ef4 ef4 ef4 | ef2. ef2. ef4 ef4 ef4 | af,2.~ af,2. af,4 af,4 af,4 | bf,2. bf,2. bf,4 bf,4 bf,4 | ef2.~ ef2.
+  \partial 2. ef4 ef4 ef4 | ef2. ef2. ef4 ef4 ef4 | bf,2.~ bf,2. \bar "" \break bf,4 bf,4 bf,4 | bf,2. bf,2. bf,4 bf,4 bf,4 | ef2.~ ef2. \bar "" \break ef4 ef4 ef4 | ef2. ef2. ef4 ef4 ef4 | af,2.~ af,2. \bar "" \break af,4 af,4 af,4 | bf,2. bf,2. bf,4 bf,4 bf,4 | ef2.~ ef2.
 }
 
 %CHORDS
@@ -49,17 +60,31 @@ songChords = \chords {
   \globalChordSymbols
 }
 
+%% One \l line per system, so one per phrase. Each line after the first
+%% starts with that phrase's upbeat, since that is where the system starts.
 verseA = \lyricmode {
-\l Have thine own way, Lord! Have thine own way! Thou art the pot -- ter, I am the clay. Mold me and make me aft -- er thy will, while I am wait -- ing, yield -- ed and still. 
+\l Have thine own way, Lord! Have thine own way!
+\l Thou art the pot -- ter, I am the clay.
+\l Mold me and make me aft -- er thy will,
+\l while I am wait -- ing, yield -- ed and still.
 }
 verseB = \lyricmode {
-Have thine own way, Lord! Have thine own way! Search me and try me, Mas -- ter, to -- day! Wash me just now, Lord, wash me just now, as in thy pres -- ence hum -- bly I bow. 
+\l Have thine own way, Lord! Have thine own way!
+\l Search me and try me, Mas -- ter, to -- day!
+\l Wash me just now, Lord, wash me just now,
+\l as in thy pres -- ence hum -- bly I bow.
 }
 verseC = \lyricmode {
-Have thine own way, Lord! Have thine own way! Wound -- ed and wea -- ry, help me, I pray! Pow -- er -- all pow -- er -- sure -- ly is thine! Touch me and heal me, Sav -- ior di -- vine! 
+\l Have thine own way, Lord! Have thine own way!
+\l Wound -- ed and wea -- ry, help me, I pray!
+\l Pow -- er -- all pow -- er -- sure -- ly is thine!
+\l Touch me and heal me, Sav -- ior di -- vine!
 }
 verseD = \lyricmode {
-Have thine own way, Lord! Have thine own way! Hold o'er my be -- ing ab -- so -- lute sway! Fill with thy Spir -- it till all shall see Christ on -- ly, al -- ways, liv -- ing in me! 
+\l Have thine own way, Lord! Have thine own way!
+\l Hold o'er my be -- ing ab -- so -- lute sway!
+\l Fill with thy Spir -- it till all shall see
+\l Christ on -- ly, al -- ways, liv -- ing in me!
 }
 
 
