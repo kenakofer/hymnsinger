@@ -134,6 +134,7 @@ Common cases, and the song that demonstrates the fix:
 | Split one staff into four parts | Song is unison or single-staff | `wakantanka-many-and-great` |
 | Gave both staves the same lyrics | Parts have different words | `warm-summer-sun`, `when-peace-like-a-river` |
 | Kept every verse in the score | Later verses belong in `extra_verses` below it | `religion-fit-to-last`, `we-shall-overcome` |
+| Fragmented a beam where the parts meet | Each part beams straight through | `blessed-assurance` (`\pa`, `\pt`) |
 
 **This is a separate commit**, not part of the metadata one. The
 `transcribe` gate refuses a diff that touches notes or lyrics, and that
@@ -150,6 +151,54 @@ phrasing slur `X\( X\)` (auto-dashed here) plus a `_` skip in each holding
 verse, following the `we-gather-together` m15 example and the how-to's
 "Dotted slur (lyrics ignore)" row. A regular slur `( )` is wrong here: it
 forces *every* verse to skip the note and shoves their syllables right.
+
+#### Beams broken by part-combining
+
+`\partCombine` puts two parts on one staff and decides, note by note,
+whether to merge them into one voice. It merges where they sing the same
+pitch and splits where they do not.
+
+**Neither state is a problem on its own.** A run that stays split gets
+one beam per part; a run that stays merged gets one beam over the chord
+columns, which is what a hymnal prints where the parts move together.
+Most beamed runs are fine and want no annotation.
+
+The break happens when a run contains *both*. A merged note cannot share
+a beam with the split notes beside it, so the run fragments into flags
+and stubs. `blessed-assurance` opens with the case — soprano `fs' e' d'`
+against alto `d' d' d'`, split for two notes and merged on the third:
+
+    %% before - flag, then a two-note beam
+    \partial 4. fs'8 e'8 d'8 |
+
+    %% after - one beam per part
+    \partial 4. \pa fs'8 e'8 d'8 \pt |
+
+`\pa` (`\partCombineApart`) and `\pt` (`\partCombineAutomatic`) are
+defined in `hymn-common.ily`. Two things make this cheaper than it looks:
+
+- **Mark one voice, not both.** Annotating soprano alone is enough; alto
+  needs no matching marks.
+- **`\pt` matters as much as `\pa`.** It hands the following notes back
+  to automatic, so the dotted halves after the run still merge into
+  chords. Applying `\partCombineApart` to a whole part instead — or to
+  the `\partCombine` call in `hymn-common.ily` — fixes the beams and
+  breaks every chord in the song. It was tried; do not retry it.
+
+To find them:
+
+    scripts/find-broken-beams.py lilypond/songs/<song>/*.ly
+
+It reports only the mixed runs, skipping both the uniform ones and any
+already wrapped in `\pa`. As of 2026-07-26 that is 118 runs across 44 of
+133 songs, out of 510 beamed runs in total — so roughly one beamed run
+in four needs the annotation, and about a third of songs have at least
+one. Check the render against the photo before wrapping: the script
+finds what LilyPond will fragment, not what the hymnal disagrees with.
+
+This is engraving only — `\pa`/`\pt` emit no notes, and
+`verify-xml-notes.py` strips them, so the error rate should not move.
+Fold it into the same formatting commit as `\break` placement.
 
 **Where to stop.** Fix structure the photo settles: verse boundaries,
 unison vs. harmony markings, which staff carries which words. Do *not*
@@ -224,6 +273,9 @@ converter warnings from commit 1.
 - [ ] Verse count, and verse text under the right notes
 - [ ] Repeats, endings, fermatas, chord symbols
 - [ ] Attribution lines read as the hymnal prints them
+- [ ] Line breaks fall where the hymnal's do, and beams run one per part
+      (a lone flag next to a short beam means the parts merged
+      mid-run — see "Beams broken by part-combining")
 
 ### Auditory pass
 
