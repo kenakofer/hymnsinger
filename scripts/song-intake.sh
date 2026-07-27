@@ -213,16 +213,23 @@ cmd_transcribe() {
   local META_FIELDS='composer|poet|meter|title|tags|verseCount|dateAdded|typesetter|subtitle|arranger|alternateTitle|prescore_text|postscore_text'
   local meta_re="^[+-][[:space:]]*%?[[:space:]]*($META_FIELDS)[[:space:]]*="
   local copy_re='^[+-][[:space:]]*\\header[[:space:]]*\{.*copyright'
+  # A whole-line comment, which is prose about the song and never notes or
+  # lyrics. Transcriptions routinely add one to say why a field is written
+  # the way it is (why an attribution had to wrap, where a date came from),
+  # and that note belongs with the field it explains. Note this is a
+  # COMMENT LINE, not the '%?' above: that one allows a commented-out
+  # field, which is a different thing.
+  local note_re='^[+-][[:space:]]*%'
 
   local music_changed
   music_changed="$(git -C "$REPO" diff -U0 -- "$ly" \
     | grep -E '^[+-]' | grep -vE '^[+-][+-]' \
-    | grep -vcE "$meta_re|$copy_re|^[+-][[:space:]]*$" \
+    | grep -vcE "$meta_re|$copy_re|$note_re|^[+-][[:space:]]*$" \
     || true)"
   if [ "${music_changed:-0}" -gt 0 ] && [ "${FORCE:-0}" != "1" ]; then
     echo "${c_yel}warning${c_off} the diff touches $music_changed non-metadata line(s):"
     git -C "$REPO" diff -- "$ly" | grep -E '^[+-]' | grep -vE '^[+-][+-]' \
-      | grep -vE "$meta_re|$copy_re" \
+      | grep -vE "$meta_re|$copy_re|$note_re" \
       | head -8 | sed 's/^/    /'
     die "notes and lyrics belong to the conversion commit (FORCE=1 to override)"
   fi
