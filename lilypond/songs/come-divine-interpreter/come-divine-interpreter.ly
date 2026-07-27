@@ -3,11 +3,13 @@
 \include "../../lib/hymn-common.ily"
 
 %% MANUAL INFO
-composer = \smallText \markup { "Music: Composer," \italic "Book," "year" }
-poet = \smallText \markup { "Text: Author," \italic "Book," "year" }
-meter = \smallText "TUNE NAME meter"
+composer = \smallText \markup { "Music: Burgoyne's" \italic "Collection," "1827" }
+%% Wrapped: on one line this ran past the right margin and clipped the
+%% composer text next to it ("Collection, 18").
+poet = \twoLineSmallText \markup { "Text: Charles Wesley," } \markup { \italic "Short Hymns on Select Passages of Holy Scripture," "1762" }
+meter = \smallText "SPANISH CHANT 77. 77. 77"
 
-%arranger = \smallText "arr. Name, year"
+arranger = \smallText "arr. Benjamin Carr"
 %% Note: the meter variable requires a TUNE NAME, following by a meter, for page generation to work. See existing songs for examples
 %subtitle = \smallText "Optional"
 %prescore_text = \prescoreText "Uncomment to add text up and left of the score"
