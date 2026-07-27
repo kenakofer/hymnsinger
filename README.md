@@ -44,6 +44,14 @@ This is a project to make or take hymns with permissive copyright status, typese
       ragged-bottom = ##f
     }
   - Phrasing slurs \( \) are not dashed after partCombine
+  - partCombine collapses identical slurs in merged voices to a single arc.
+    Where soprano and alto are rhythmically identical and both slurred, the
+    hymnal prints two arcs (one above, one below) and we print one. See the
+    pickups in how-firm-a-foundation and the-parting-glass; both have the
+    slur in each voice in the source, so a fix here needs no per-song edit.
+    \pa around the passage forces two arcs but also splits the stems and
+    note column, which diverges from the page more visibly than the missing
+    arc does.
   - Enter multiple lines of lyrics above staff
   - Autofocus the index page search bar
   - Add og: values to hymnsinger.com index page for better sharability
