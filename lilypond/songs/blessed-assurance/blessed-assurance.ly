@@ -31,11 +31,18 @@ quarternoteTempo = 120
 %% Each poetic line ends on the tied dotted-half ("mine!", "di-vine!",
 %% "God,", "blood.") and the next line's pickup follows inside the same
 %% measure, so the breaks are mid-measure rather than at a barline.
+%%
+%% \pa ... \pt around the three-eighth figures where soprano touches
+%% alto's pitch. \partCombine merges the parts at a unison, and a merged
+%% note cannot share a beam with the split notes beside it, so the run
+%% would print as a flag plus a stub instead of one beam per part. The
+%% marks go on soprano alone -- one voice is enough -- and \pt hands the
+%% dotted halves back so they still merge into chords.
 soprano = { \globalParts
-  \partial 4. fs'8 e'8 d'8 | a'4. a'4. g'8 a'8 b'8 | a'4.~ a'4. a'8 fs'8 a'8 | d''4. cs''4 cs''8 b'8 a'8 gs'8
-  | a'4.~ a'4. \bar "" \break fs'8 e'8 d'8 | a'4. a'4. g'8 a'8 b'8 | a'4.~ a'4. d'8 e'8 fs'8 | g'4. e'4. d'8 e'8 cs'8
+  \partial 4. \pa fs'8 e'8 d'8 \pt | a'4. a'4. g'8 a'8 b'8 | a'4.~ a'4. a'8 fs'8 a'8 | d''4. cs''4 cs''8 b'8 a'8 gs'8
+  | a'4.~ a'4. \bar "" \break \pa fs'8 e'8 d'8 \pt | a'4. a'4. g'8 a'8 b'8 | a'4.~ a'4. \pa d'8 e'8 fs'8 | g'4. e'4. d'8 e'8 cs'8 \pt
   | d'4.~ d'4. \bar "" \break | a'8 a'8 a'8 | d''4. a'4. b'8 b'8 b'8 | a'4.~ a'4. a'8 a'8 a'8 | b'4. d''4. cs''8 cs''8 b'8
-  | cs''4.~ cs''4. \bar "" \break cs''8 d''8 e''8 | d''4. a'4. b'8 a'8 b'8 | a'4.~ a'4. d'8 e'8 fs'8 | g'4. e'4. d'8. e'16 cs'8 | d'4.~ d'4.
+  | cs''4.~ cs''4. \bar "" \break cs''8 d''8 e''8 | d''4. a'4. b'8 a'8 b'8 | a'4.~ a'4. \pa d'8 e'8 fs'8 | g'4. e'4. d'8. e'16 cs'8 \pt | d'4.~ d'4.
 \bar "|."
 }
 alto = { \globalParts
@@ -51,7 +58,7 @@ tenor = { \globalParts
   | cs'4.~ cs'4. a8 g8 fs8 | a4. a4. b8 fs8 g8 | fs4.~ fs4. fs8 g8 a8
   | b4. g4. fs8 g8 g8 | fs4.~ fs4. | d'8 d'8 d'8
   | a4. d'4. d'8 d'8 d'8 | d'4.~ d'4. d'8 d'8 d'8 | d'4. d'4. e'8 e'8 e'8
-  | e'4.~ e'4. a8 b8 cs'8 | d'4. d'4. d'8 d'8 d'8 | d'4.~ d'4. a8 a8 a8
+  | e'4.~ e'4. \pa a8 b8 cs'8 \pt | d'4. d'4. d'8 d'8 d'8 | d'4.~ d'4. a8 a8 a8
   | b4. g4. fs8. g16 e8 | fs4.~ fs4.
 }
 bass = { \globalParts
