@@ -3,15 +3,15 @@
 \include "../../lib/hymn-common.ily"
 
 %% MANUAL INFO
-composer = \smallText \markup { "Music: Composer," \italic "Book," "year" }
-poet = \smallText \markup { "Text: Author," \italic "Book," "year" }
-meter = \smallText "TUNE NAME meter"
+composer = \smallText \markup { "Music: Frederick C. Maker," \italic "Congregational Church Hymnal," "1887" }
+poet = \smallText \markup { "Text: John Greenleaf Whittier," \italic "The Atlantic Monthly," "1872" }
+meter = \smallText "REST (WHITTIER) 86. 886"
 
 %arranger = \smallText "arr. Name, year"
 %% Note: the meter variable requires a TUNE NAME, following by a meter, for page generation to work. See existing songs for examples
 %subtitle = \smallText "Optional"
 %prescore_text = \prescoreText "Uncomment to add text up and left of the score"
-%postscore_text = \postscoreText "Uncomment to add text down and left of the score"
+postscore_text = \postscoreText "*Alternate phrase: Dear Lord, thou life of humankind"
 
 verseCount = 5
 tags = "english christian 4part"
