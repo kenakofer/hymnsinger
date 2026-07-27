@@ -16,3 +16,5 @@
 # Format:  <dash-name>  <tab>  <reason>
 
 asithi-amen-sing-amen	Music: Stephen C. Molefe, composed at David Dargie's 1977 workshop; in copyright. The page prints no notice, but Rule 2 needs text AND music pre-1930. Published commercially by GIA.
+awake-arise-o-sing-a-new-song	Text and music Marna Leasure; the page prints "Text and music copyright (c)1975 Choristers Guild".
+cantemos-al-señor-lets-sing-unto-the-lord	Carlos Rosas. Page prints two notices: text (Spanish) and music (c)1976 Resource Publications, translation (c)1989 United Methodist Publishing House.
