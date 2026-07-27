@@ -204,15 +204,25 @@ cmd_transcribe() {
 
   # The music belongs to commit 1. A transcription that changes notes or
   # lyrics means something went wrong, so refuse rather than bury it.
+  #
+  # prescore_text and postscore_text are metadata like the rest: they carry
+  # a footnote transcribed off the page (an alternate phrase, a translation,
+  # a performance note), never notes or lyrics. They ship commented out in
+  # the template, so the transcription that adds one also removes the '%' -
+  # hence the optional '%' below, which subtitle and arranger need too.
+  local META_FIELDS='composer|poet|meter|title|tags|verseCount|dateAdded|typesetter|subtitle|arranger|alternateTitle|prescore_text|postscore_text'
+  local meta_re="^[+-][[:space:]]*%?[[:space:]]*($META_FIELDS)[[:space:]]*="
+  local copy_re='^[+-][[:space:]]*\\header[[:space:]]*\{.*copyright'
+
   local music_changed
   music_changed="$(git -C "$REPO" diff -U0 -- "$ly" \
     | grep -E '^[+-]' | grep -vE '^[+-][+-]' \
-    | grep -vcE '^[+-]\s*(composer|poet|meter|title|tags|verseCount|dateAdded|typesetter|subtitle|arranger|alternateTitle)\s*=|^[+-]\s*\\header\s*\{.*copyright|^[+-]\s*$' \
+    | grep -vcE "$meta_re|$copy_re|^[+-][[:space:]]*$" \
     || true)"
   if [ "${music_changed:-0}" -gt 0 ] && [ "${FORCE:-0}" != "1" ]; then
     echo "${c_yel}warning${c_off} the diff touches $music_changed non-metadata line(s):"
     git -C "$REPO" diff -- "$ly" | grep -E '^[+-]' | grep -vE '^[+-][+-]' \
-      | grep -vE '^[+-]\s*(composer|poet|meter|title|tags|verseCount|dateAdded|typesetter|subtitle|arranger|alternateTitle)\s*=|^[+-]\s*\\header\s*\{.*copyright' \
+      | grep -vE "$meta_re|$copy_re" \
       | head -8 | sed 's/^/    /'
     die "notes and lyrics belong to the conversion commit (FORCE=1 to override)"
   fi
