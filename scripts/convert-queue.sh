@@ -44,14 +44,16 @@ dash_name() {
 # The hymnal a source came from, taken from the filename prefix: H is
 # Hymnal: A Worship Book, and J/S/R are the supplements.
 #
-# This decides queue order, ahead of the error rate, because the error rate
-# says nothing about whether a song may be published. Only A Worship Book
-# has page photos indexed (index-hymnal-photos.py takes an integer hymn
-# number, so it cannot even address "J020"), and only its core is old enough
-# for the pre-1930 rule to clear a song without reading a notice off the
-# page. A supplement song can convert at 0.0% and still be unpublishable,
-# so offering one first just burns a review on a song that has to stop at
-# the copyright gate.
+# This decides queue order, ahead of the error rate, because only A Worship
+# Book has page photos indexed: index-hymnal-photos.py takes an integer hymn
+# number, so it cannot even address "J020". Without the page there is no
+# attribution line to read, and the copyright status cannot be established
+# either way - not that the song is unpublishable, just that nobody can say
+# which of the two publish paths it takes.
+#
+# Nothing here is about a song being copyrighted. That is an ordinary
+# outcome the protocol handles by publishing to main alone; it is being
+# UNKNOWABLE that stalls an intake.
 #
 # Drop this back to a plain error-rate sort once the other hymnals are
 # photographed and indexed.
@@ -84,16 +86,17 @@ already_converted() {
   [ -d "$SONGS/$(song_dir_for "$1")" ]
 }
 
-BLOCKED="$REPO/scripts/queue-blocked.txt"
+COPYRIGHT_NOTES="$REPO/scripts/queue-copyright-notes.txt"
 
-# The recorded reason this song cannot be published, empty if none.
-# See scripts/queue-blocked.txt.
-blocked_reason() {
-  [ -f "$BLOCKED" ] || return 0
+# The recorded copyright status of a song, empty if nobody has checked it.
+# Informational only: a copyrighted song still converts and still publishes,
+# just to main alone. See scripts/queue-copyright-notes.txt.
+copyright_status() {
+  [ -f "$COPYRIGHT_NOTES" ] || return 0
   awk -F'\t' -v n="$1" '
     /^[[:space:]]*(#|$)/ { next }
-    $1 == n { sub(/^[^\t]*\t[[:space:]]*/, ""); print; exit }
-  ' "$BLOCKED"
+    $1 == n { print $2; exit }
+  ' "$COPYRIGHT_NOTES"
 }
 
 find_source() {
@@ -156,41 +159,53 @@ cmd_list() {
   # Score every pending song, then show the cleanest -- those are the ones
   # worth a human pass first.
   local tmp; tmp="$(mktemp)"
-  local scanned=0 blocked=0
+  local scanned=0
   while IFS= read -r f; do
     local n; n="$(dash_name "$f")"
     already_converted "$n" && continue
-    [ -n "$(blocked_reason "$n")" ] && { blocked=$((blocked + 1)); continue; }
     scanned=$((scanned + 1))
     printf '\r  scanning %d...' "$scanned" >&2
-    local xml frag rate note="" rank
+    local xml frag rate note="" rank status
     rank="$(hymnal_rank "$f")"
+    status="$(copyright_status "$n")"
     if xml="$(ensure_xml "$f" "$n")" && frag="$(ensure_fragment "$xml" "$n")"; then
       rate="$(python3 "$REPO/scripts/verify-xml-notes.py" \
                 --ly-dir "$FRAG" --xml-dir "$XML" --only "$n" 2>/dev/null \
               | awk '/^error rate/{print $NF}')"
       [ -z "$rate" ] && rate="?"
       [ -s "$FRAG/$n.warn" ] && note="$(head -1 "$FRAG/$n.warn" | sed 's/warning: //')"
-      printf '%s\t%s\t%s\t%s\n' "$rank" "${rate%\%}" "$n" "$note" >> "$tmp"
+      # Write "-" for an absent status or note, never an empty field: with
+      # IFS=tab, `read` collapses the two tabs around an empty field and
+      # every later value shifts one column left. Reordering cannot fix
+      # that - either field can be empty - so the placeholder is what keeps
+      # the columns aligned, and the reader turns it back into "".
+      printf '%s\t%s\t%s\t%s\t%s\n' \
+        "$rank" "${rate%\%}" "$n" "${status:--}" "${note:--}" >> "$tmp"
     else
-      printf '%s\t999\t%s\tconversion failed\n' "$rank" "$n" >> "$tmp"
+      printf '%s\t999\t%s\t%s\tconversion failed\n' "$rank" "$n" "${status:--}" >> "$tmp"
     fi
   done < <(find "$HYMNS" -name '*.source.mscx' | sort)
   printf '\r%*s\r' 30 '' >&2
 
   sort -t$'\t' -k1,1n -k2,2g "$tmp" | head -"$limit" \
-  | while IFS=$'\t' read -r rank rate n note; do
+  | while IFS=$'\t' read -r rank rate n status note; do
+    [ "$status" = "-" ] && status=""
+    [ "$note" = "-" ] && note=""
     local colour="$c_grn"
     awk "BEGIN{exit !($rate > 5)}"  && colour="$c_yel"
     awk "BEGIN{exit !($rate > 20)}" && colour="$c_red"
+    # Which publish path this song takes, when someone has already worked
+    # it out. Not a warning - copyrighted songs publish to main alone.
     local mark=""
-    [ "$rank" != "0" ] && mark=" ${c_yel}(supplement - copyright unverifiable)${c_off}"
+    case "$status" in
+      copyrighted)   mark=" ${c_yel}[copyrighted - main only]${c_off}" ;;
+      public-domain) mark=" ${c_grn}[public-domain]${c_off}" ;;
+    esac
+    [ "$rank" != "0" ] && mark="$mark ${c_dim}(supplement - no page photos yet)${c_off}"
     printf "  %-46s ${colour}%6s%%${c_off}  ${c_dim}%s${c_off}%s\n" "$n" "$rate" "$note" "$mark"
   done
   rm -f "$tmp"
   echo
-  [ "$blocked" -gt 0 ] && \
-    echo "  ${c_dim}$blocked song(s) hidden as unpublishable - see scripts/queue-blocked.txt${c_off}"
   echo "  ${c_dim}convert one:${c_off} $0 convert <name>"
 }
 
@@ -202,15 +217,12 @@ cmd_convert() {
   [ "$existing" != "$name" ] && [ -d "$SONGS/$existing" ] \
     && die "'$name' is $existing under another spelling (scripts/queue-aliases.txt)"
 
-  # Converting is fine -- the private branch may carry a copyrighted song.
-  # Stop anyway, because the reason it cannot be published is worth reading
-  # before spending a review on it. FORCE=1 proceeds.
-  local why; why="$(blocked_reason "$name")"
-  if [ -n "$why" ] && [ "${FORCE:-0}" != "1" ]; then
-    echo "${c_yel}blocked${c_off} $name cannot be published:" >&2
-    echo "  $why" >&2
-    die "pass FORCE=1 to convert anyway (private branch only)"
-  fi
+  # Surface a known copyright status, so the publish path is clear from the
+  # start. Never a refusal: a copyrighted song converts like any other and
+  # publishes to main alone.
+  local status; status="$(copyright_status "$name")"
+  [ "$status" = "copyrighted" ] \
+    && echo "${c_yel}note${c_off}     known copyrighted - publishes to main only, not public-main"
 
   echo "source   $src"
   local xml; xml="$(ensure_xml "$src" "$name")" || die "MusicXML export failed"

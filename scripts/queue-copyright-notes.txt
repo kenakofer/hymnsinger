@@ -1,0 +1,24 @@
+# Copyright findings, recorded so they are not re-derived.
+#
+# Establishing a song's status can take real work: finding the hymnal page,
+# reading the attribution, and sometimes dating a composer from outside
+# sources. That answer does not change, so it is written down here the
+# first time someone works it out.
+#
+# These notes do NOT gate anything. A copyrighted song is a normal, expected
+# outcome - the protocol publishes it to main only, and it reaches the
+# private host without ever touching public-main. Being listed here means
+# "the status is already known", not "skip this song".
+#
+# `list` shows the note next to the song, so whoever picks it up knows which
+# publish path it takes before starting rather than discovering it at stage 4.
+#
+# A song being absent means nobody has checked it yet, NOT that it is clear.
+# The gate still runs per song, and the hymnal page is the authority.
+#
+# Format:  <dash-name>  <tab>  <status>  <tab>  <reason>
+#          status is one of: copyrighted | public-domain
+
+asithi-amen-sing-amen	copyrighted	Music: Stephen C. Molefe, composed at David Dargie's 1977 workshop. The page prints no notice, but a missing notice is not clearance - Rule 2 needs text AND music pre-1930. Published commercially by GIA.
+awake-arise-o-sing-a-new-song	copyrighted	Text and music Marna Leasure; the page prints "Text and music copyright (c)1975 Choristers Guild".
+cantemos-al-señor-lets-sing-unto-the-lord	copyrighted	Carlos Rosas. Page prints two notices: text (Spanish) and music (c)1976 Resource Publications, translation (c)1989 United Methodist Publishing House.
