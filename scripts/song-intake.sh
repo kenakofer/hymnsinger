@@ -212,7 +212,15 @@ cmd_transcribe() {
   # hence the optional '%' below, which subtitle and arranger need too.
   local META_FIELDS='composer|poet|meter|title|tags|verseCount|dateAdded|typesetter|subtitle|arranger|alternateTitle|prescore_text|postscore_text'
   local meta_re="^[+-][[:space:]]*%?[[:space:]]*($META_FIELDS)[[:space:]]*="
+  # The copyright override, which may be a single line or a \markup block.
+  # A page that prints two notices (an original text and its translation,
+  # say) needs the block form, and its continuation lines have to pass too:
+  # a bare quoted string, which is a notice, and a line of nothing but
+  # markup punctuation, which is the block closing. Neither can express a
+  # note or a syllable - lyrics reach a verse* variable and notes reach a
+  # part, and both are named on their own lines - so this stays narrow.
   local copy_re='^[+-][[:space:]]*\\header[[:space:]]*\{.*copyright'
+  local copy_cont_re='^[+-][[:space:]]*("[^"]*"[[:space:]]*|[{}()[:space:]]*)$'
   # A whole-line comment, which is prose about the song and never notes or
   # lyrics. Transcriptions routinely add one to say why a field is written
   # the way it is (why an attribution had to wrap, where a date came from),
@@ -224,12 +232,12 @@ cmd_transcribe() {
   local music_changed
   music_changed="$(git -C "$REPO" diff -U0 -- "$ly" \
     | grep -E '^[+-]' | grep -vE '^[+-][+-]' \
-    | grep -vcE "$meta_re|$copy_re|$note_re|^[+-][[:space:]]*$" \
+    | grep -vcE "$meta_re|$copy_re|$copy_cont_re|$note_re|^[+-][[:space:]]*$" \
     || true)"
   if [ "${music_changed:-0}" -gt 0 ] && [ "${FORCE:-0}" != "1" ]; then
     echo "${c_yel}warning${c_off} the diff touches $music_changed non-metadata line(s):"
     git -C "$REPO" diff -- "$ly" | grep -E '^[+-]' | grep -vE '^[+-][+-]' \
-      | grep -vE "$meta_re|$copy_re|$note_re" \
+      | grep -vE "$meta_re|$copy_re|$copy_cont_re|$note_re" \
       | head -8 | sed 's/^/    /'
     die "notes and lyrics belong to the conversion commit (FORCE=1 to override)"
   fi
