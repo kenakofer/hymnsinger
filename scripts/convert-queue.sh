@@ -41,6 +41,27 @@ dash_name() {
     | tr '[:upper:]' '[:lower:]'
 }
 
+# The hymnal a source came from, taken from the filename prefix: H is
+# Hymnal: A Worship Book, and J/S/R are the supplements.
+#
+# This decides queue order, ahead of the error rate, because the error rate
+# says nothing about whether a song may be published. Only A Worship Book
+# has page photos indexed (index-hymnal-photos.py takes an integer hymn
+# number, so it cannot even address "J020"), and only its core is old enough
+# for the pre-1930 rule to clear a song without reading a notice off the
+# page. A supplement song can convert at 0.0% and still be unpublishable,
+# so offering one first just burns a review on a song that has to stop at
+# the copyright gate.
+#
+# Drop this back to a plain error-rate sort once the other hymnals are
+# photographed and indexed.
+hymnal_rank() {
+  case "$(basename "$1")" in
+    H*) echo 0 ;;
+    *)  echo 1 ;;
+  esac
+}
+
 ALIASES="$REPO/scripts/queue-aliases.txt"
 
 # The song directory a source maps to, which is not always its dash-name:
@@ -129,25 +150,29 @@ cmd_list() {
     already_converted "$n" && continue
     scanned=$((scanned + 1))
     printf '\r  scanning %d...' "$scanned" >&2
-    local xml frag rate note=""
+    local xml frag rate note="" rank
+    rank="$(hymnal_rank "$f")"
     if xml="$(ensure_xml "$f" "$n")" && frag="$(ensure_fragment "$xml" "$n")"; then
       rate="$(python3 "$REPO/scripts/verify-xml-notes.py" \
                 --ly-dir "$FRAG" --xml-dir "$XML" --only "$n" 2>/dev/null \
               | awk '/^error rate/{print $NF}')"
       [ -z "$rate" ] && rate="?"
       [ -s "$FRAG/$n.warn" ] && note="$(head -1 "$FRAG/$n.warn" | sed 's/warning: //')"
-      printf '%s\t%s\t%s\n' "${rate%\%}" "$n" "$note" >> "$tmp"
+      printf '%s\t%s\t%s\t%s\n' "$rank" "${rate%\%}" "$n" "$note" >> "$tmp"
     else
-      printf '999\t%s\tconversion failed\n' "$n" >> "$tmp"
+      printf '%s\t999\t%s\tconversion failed\n' "$rank" "$n" >> "$tmp"
     fi
   done < <(find "$HYMNS" -name '*.source.mscx' | sort)
   printf '\r%*s\r' 30 '' >&2
 
-  sort -g "$tmp" | head -"$limit" | while IFS=$'\t' read -r rate n note; do
+  sort -t$'\t' -k1,1n -k2,2g "$tmp" | head -"$limit" \
+  | while IFS=$'\t' read -r rank rate n note; do
     local colour="$c_grn"
     awk "BEGIN{exit !($rate > 5)}"  && colour="$c_yel"
     awk "BEGIN{exit !($rate > 20)}" && colour="$c_red"
-    printf "  %-46s ${colour}%6s%%${c_off}  ${c_dim}%s${c_off}\n" "$n" "$rate" "$note"
+    local mark=""
+    [ "$rank" != "0" ] && mark=" ${c_yel}(supplement - copyright unverifiable)${c_off}"
+    printf "  %-46s ${colour}%6s%%${c_off}  ${c_dim}%s${c_off}%s\n" "$n" "$rate" "$note" "$mark"
   done
   rm -f "$tmp"
   echo
