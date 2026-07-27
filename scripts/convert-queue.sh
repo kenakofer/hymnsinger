@@ -84,6 +84,18 @@ already_converted() {
   [ -d "$SONGS/$(song_dir_for "$1")" ]
 }
 
+BLOCKED="$REPO/scripts/queue-blocked.txt"
+
+# The recorded reason this song cannot be published, empty if none.
+# See scripts/queue-blocked.txt.
+blocked_reason() {
+  [ -f "$BLOCKED" ] || return 0
+  awk -F'\t' -v n="$1" '
+    /^[[:space:]]*(#|$)/ { next }
+    $1 == n { sub(/^[^\t]*\t[[:space:]]*/, ""); print; exit }
+  ' "$BLOCKED"
+}
+
 find_source() {
   local want="$1" f
   while IFS= read -r f; do
@@ -144,10 +156,11 @@ cmd_list() {
   # Score every pending song, then show the cleanest -- those are the ones
   # worth a human pass first.
   local tmp; tmp="$(mktemp)"
-  local scanned=0
+  local scanned=0 blocked=0
   while IFS= read -r f; do
     local n; n="$(dash_name "$f")"
     already_converted "$n" && continue
+    [ -n "$(blocked_reason "$n")" ] && { blocked=$((blocked + 1)); continue; }
     scanned=$((scanned + 1))
     printf '\r  scanning %d...' "$scanned" >&2
     local xml frag rate note="" rank
@@ -176,6 +189,8 @@ cmd_list() {
   done
   rm -f "$tmp"
   echo
+  [ "$blocked" -gt 0 ] && \
+    echo "  ${c_dim}$blocked song(s) hidden as unpublishable - see scripts/queue-blocked.txt${c_off}"
   echo "  ${c_dim}convert one:${c_off} $0 convert <name>"
 }
 
@@ -186,6 +201,16 @@ cmd_convert() {
   local existing; existing="$(song_dir_for "$name")"
   [ "$existing" != "$name" ] && [ -d "$SONGS/$existing" ] \
     && die "'$name' is $existing under another spelling (scripts/queue-aliases.txt)"
+
+  # Converting is fine -- the private branch may carry a copyrighted song.
+  # Stop anyway, because the reason it cannot be published is worth reading
+  # before spending a review on it. FORCE=1 proceeds.
+  local why; why="$(blocked_reason "$name")"
+  if [ -n "$why" ] && [ "${FORCE:-0}" != "1" ]; then
+    echo "${c_yel}blocked${c_off} $name cannot be published:" >&2
+    echo "  $why" >&2
+    die "pass FORCE=1 to convert anyway (private branch only)"
+  fi
 
   echo "source   $src"
   local xml; xml="$(ensure_xml "$src" "$name")" || die "MusicXML export failed"
