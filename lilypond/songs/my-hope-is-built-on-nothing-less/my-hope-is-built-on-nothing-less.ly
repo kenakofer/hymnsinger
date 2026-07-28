@@ -3,9 +3,9 @@
 \include "../../lib/hymn-common.ily"
 
 %% MANUAL INFO
-composer = \smallText \markup { "Music: Composer," \italic "Book," "year" }
-poet = \smallText \markup { "Text: Author," \italic "Book," "year" }
-meter = \smallText "TUNE NAME meter"
+composer = \smallText \markup { "Music: William B. Bradbury, 1863," \italic "Devotional Hymn and Tune Book," "1864" }
+poet = \smallText \markup { "Text: Edward Mote, ca. 1834," \italic "Spiritual Magazine," "alt." }
+meter = \smallText "SOLID ROCK LM with refrain"
 
 %arranger = \smallText "arr. Name, year"
 %% Note: the meter variable requires a TUNE NAME, following by a meter, for page generation to work. See existing songs for examples
@@ -37,6 +37,7 @@ quarternoteTempo = 100
 %% also dropped), but no song in this repo marks one on the staff - the
 %% convention here is to say "with refrain" in the meter string, as
 %% blessed-assurance and jesus-loves-me do, and let the lyrics carry it.
+%% The tune line on the page says the same: "SOLID ROCK LM with refrain".
 %%
 %% The source's backward repeat at m16 is a MuseScore artifact for "sing
 %% the next stanza"; this repo expands stanzas as verseA-E, so it is not
