@@ -17,8 +17,8 @@ served from hymnsinger.com.
 
 How a song goes from photos of a physical hymnal page to a published song.
 
-The work happens on a side branch, one commit per step, so every stage is
-a reviewable checkpoint you can inspect, amend, or drop.
+The work happens on a side branch and lands as **one commit per song**,
+which is what `publish` merges.
 
 Stage 4 is not the end. It publishes *source*; Stage 5 is what makes the
 song appear on the site.
@@ -26,7 +26,7 @@ song appear on the site.
 | Stage | Who | Produces |
 |---|---|---|
 | 1. Convert | you (scripted) | branch off `public-main`; commit: machine-generated notes |
-| 2. Transcribe | agent | commit: metadata from the hymnal photos |
+| 2. Transcribe | agent | folds metadata and hand fixes into that commit |
 | 3. Inspect | you | approval, correction, or reset |
 | 4. Publish | you (scripted) | merge to `public-main` if eligible, then `main` |
 | 5. Generate | you (scripted) | commit: `docs/` assets, listing and index pages |
@@ -40,23 +40,39 @@ stages run on are a separate matter with its own hazards - see
 
 ---
 
-## Why commits, and why separate ones
+## Why one commit per song
 
-The two commits split cleanly along the line where trust differs:
+A song lands as a single commit. `start` commits the raw conversion so
+there is something to diff against while transcribing, and `transcribe`
+**amends** that commit rather than stacking a second one.
 
-- **Commit 1 is machine-generated music.** The converter is weakest in
-  divisi passages, where parts look plausible but sound wrong.
-- **Commit 2 is transcribed metadata.** Different failure mode entirely:
-  a misread date or a missed copyright notice.
+Intake used to keep the two apart, and `transcribe` refused a metadata
+commit that touched notes or lyrics. The theory was that machine output
+and human transcription have different failure modes - the converter is
+weakest in divisi passages, transcription fails on a misread date - and
+so deserve separate review.
 
-Keeping them apart means `git show` on the second commit is *only* the
-agent's transcription, so metadata review is not buried in a few hundred
-lines of generated notes. It also means you can `git reset` the metadata
-without redoing the conversion, or redo the conversion while keeping the
-metadata.
+In practice the split cost more than it returned. Hand fixes to the
+generated music are a normal part of transcribing a song, not a sign
+something went wrong: the converter drops slurs the source never
+encoded, system breaks have to be placed by eye, and hymnal pages
+contain outright misspellings. All of that surfaces in the same sitting
+as the metadata, so the gate mostly produced amend-and-restage busywork.
+It also misfired on layout fields like `clairStaffZoom`, which are
+neither notes nor lyrics but matched no metadata pattern either.
 
-    git show HEAD                 # just the metadata
-    git show HEAD~1 --stat        # just the conversion
+What actually protects the public remote is the **copyright validation**,
+and that never depended on the split. It still runs on every
+`transcribe`: `Copyright-Status` must be one of four values, and
+`public-domain` must cite a four-digit date and may not argue from a
+missing notice. `publish` searches the whole branch for that line rather
+than assuming which commit carries it, so it works unchanged.
+
+    git show HEAD                 # the whole song
+    git show HEAD --stat          # what it touched
+
+To redo a song's metadata, edit the `.ly` and run `transcribe` again - it
+amends in place, so re-running is safe and does not stack commits.
 
 ---
 
@@ -115,8 +131,11 @@ Rules:
    survive for years.
 3. **Quote the copyright notice verbatim**, symbol, years, holder, and any
    "admin." clause.
-4. **Touch only metadata.** Notes and lyrics belong to commit 1. The
-   script rejects a transcription commit that changes the music.
+4. **Say what you changed to the music.** Hand fixes to the generated
+   notes and lyrics belong in this commit alongside the metadata, but the
+   message has to name them and say why the page justifies each one. The
+   script no longer refuses a diff that touches the music, so the commit
+   message is the only record that a change was deliberate.
 
 ### Structural fixes the agent can make
 
@@ -136,12 +155,11 @@ Common cases, and the song that demonstrates the fix:
 | Kept every verse in the score | Later verses belong in `extra_verses` below it | `religion-fit-to-last`, `we-shall-overcome` |
 | Fragmented a beam where the parts meet | Each part beams straight through | `blessed-assurance` (`\pa`, `\pt`) |
 
-**This is a separate commit**, not part of the metadata one. The
-`transcribe` gate refuses a diff that touches notes or lyrics, and that
-gate is doing its job — a structural fix is a different kind of claim
-from a transcription, and it deserves its own reviewable commit with its
-own reasoning. Commit it before or after `transcribe`, with a message
-that says what the page shows and which example you followed.
+**These land in the song's commit**, along with the metadata. A
+structural fix is still a different kind of claim from a transcription,
+so it needs its own reasoning — but that reasoning goes in the commit
+message rather than in a commit of its own. Say what the page shows and
+which example you followed, one bullet per fix.
 
 The converter also flags **syllabic mismatches** in the `.warn` file: a
 note where one verse sings a syllable and another holds through it (a lone
@@ -260,8 +278,10 @@ sends a song public, so an unsure agent costs you nothing.
 
     scripts/song-intake.sh review <song-name>
 
-Shows the metadata commit on its own, the confidence notes, and any
-converter warnings from commit 1.
+Shows the song's commit message, the confidence notes, the header fields
+it set, and any converter warnings. The commit carries the whole song, so
+`review` prints the metadata fields rather than the full diff — use the
+visual pass below to check the music.
 
 ### Visual pass
 
@@ -291,9 +311,13 @@ this**, so do not skip it.
 
 ### If something is wrong
 
-    git commit --amend            # fix the metadata in place
-    git reset --hard HEAD~1       # drop metadata, keep the conversion
-    git branch -D intake/<song>   # abandon entirely
+    git commit --amend                     # fix the message in place
+    scripts/song-intake.sh transcribe <song>  # re-transcribe; amends, does not stack
+    git branch -D intake/<song>            # abandon entirely
+
+There is one commit now, so `git reset --hard HEAD~1` drops the **whole
+song**, conversion included, not just the metadata. To redo the metadata,
+edit the `.ly` and run `transcribe` again.
 
 ---
 
@@ -303,15 +327,16 @@ this**, so do not skip it.
 
 Refuses unless:
 
-1. The branch is `intake/<song>` with both commits present
+1. The branch is `intake/<song>` and carries the song's commit
 2. The `.ly` compiles
 3. No placeholder metadata remains
 4. `Copyright-Status` is present and is not `unknown`
 
 **Public first, then `main`.** With `--public` on an eligible song the
-branch is merged into `public-main`, checked, and then merged into `main`.
-Without it, only `main` is touched and `public-main` never sees the song.
-Either way `main` ends up a superset of `public-main`.
+branch is merged into `public-main`, checked, and then the song's files
+are taken into `main`. Without it, only `main` is touched and
+`public-main` never sees the song. Either way `main` ends up a superset of
+`public-main`.
 
 Promotion to `public-main` needs **both** `Copyright-Status: public-domain`
 **and** an explicit `--public`. Every precondition is checked before
@@ -320,9 +345,29 @@ behind, and after the public merge the script re-greps the whole tree for
 a copyright field - rolling the merge back if one appears, which catches a
 mislabelled song that cleared the earlier gates.
 
-Both merges are ordinary `git merge --no-ff`. There is no file-copying
-step any more: because the branch forked from `public-main`, merging it
-carries this song and nothing else.
+### Why one side merges and the other copies
+
+Only the branch you forked from can receive a real merge.
+
+`intake/<song>` forks from `public-main`, so relative to `public-main` it
+differs by exactly this song and `git merge --no-ff` carries nothing else.
+Relative to `main` it is a different story: the branch's merge base with
+`main` is `public-main`'s own ancient base, `db622afa`, so a merge would
+replay every file the two branches disagree about - around 1700, including
+the 1400+ generated assets each keeps in a different directory for a
+different host. That is the wholesale cross-branch merge forbidden below,
+arrived at from the happy path. Publishing `when-jesus-wept` hit it as a
+rename conflict across the whole of `docs/local-lilypond-outputs/`.
+
+So `main` takes the song by file copy:
+
+    git checkout "$branch" -- "lilypond/songs/$song"
+
+This is inherent, not a wart. The two branches cannot share a recent
+ancestor while their `docs/` layouts are dictated by different hosts, and
+the fork point decides which side gets the honest merge. It used to be
+`main`; it is now `public-main`. The copy always guards the other side,
+and the stray-song check above is what keeps it honest either way.
 
 The invariant to protect, which the branches satisfy today: `main` has 146
 songs, `public-main` has 127, and **all 12 songs carrying a copyright
@@ -396,8 +441,9 @@ The `lilypond` call in Stage 4 is a **gate, not a build** - it compiles to
 `/dev/null` to prove the file is valid, and discards the result.
 
 And the intake branch only ever contains the `.ly`: Stage 1 commits the
-source, Stage 2 commits metadata edits to it, and neither generates
-anything under `docs/`. So there is nothing for the merge to carry.
+source and Stage 2 folds the metadata into that commit, and neither
+generates anything under `docs/`. So there is nothing for the merge to
+carry.
 
 The generated assets could not ride along even in principle, because the
 two branches keep them in different places - `docs/local-lilypond-outputs/`

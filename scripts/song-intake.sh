@@ -1,18 +1,30 @@
 #!/bin/bash
 # Song intake: hymnal photos -> reviewed metadata -> published song.
 #
-# Implements docs/song-intake-protocol.md. Work happens on a side branch,
-# one commit per stage, so each step is a checkpoint you can read, amend,
-# or drop:
+# Implements docs/song-intake-protocol.md. Work happens on a side branch
+# and lands as ONE commit per song:
 #
 #   start <song>              branch intake/<song> off public-main, convert
-#   transcribe <song>         commit the agent's metadata edits
-#   review <song>             show the metadata commit and confidence notes
+#   transcribe <song>         fold metadata into the song's commit
+#   review <song>             show the commit and confidence notes
 #   listen <song>             play the generated MIDI
 #   publish <song> [--public] merge to public-main if eligible, then main
 #
 # The agent edits the .ly directly and runs `transcribe`. It never merges
 # and never touches main or public-main.
+#
+# `start` commits the raw conversion so there is something to diff against
+# while transcribing; `transcribe` amends that commit rather than adding a
+# second one. Intake used to keep the two apart and refuse a metadata
+# commit that touched notes or lyrics, on the theory that machine output
+# and human transcription should be separately auditable. In practice the
+# split cost more than it returned: hand fixes to the generated music
+# (slurs the source never encoded, system breaks, corrected misspellings)
+# are a normal part of transcribing and legitimately land in the same
+# sitting, so the gate mostly produced amend-and-restage busywork, and it
+# misfired on layout fields like clairStaffZoom that are neither notes nor
+# lyrics. The copyright validation below is the check that actually has
+# teeth, and it never depended on the split.
 set -uo pipefail
 
 REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
@@ -199,54 +211,27 @@ cmd_transcribe() {
   [ "$current" = "$branch" ] || die "not on $branch (on $current)"
 
   local ly; ly="$(song_ly "$song")"
-  git -C "$REPO" diff --quiet -- "$ly" \
-    && die "no changes to $ly - the agent has not edited it yet"
-
-  # The music belongs to commit 1. A transcription that changes notes or
-  # lyrics means something went wrong, so refuse rather than bury it.
-  #
-  # prescore_text and postscore_text are metadata like the rest: they carry
-  # a footnote transcribed off the page (an alternate phrase, a translation,
-  # a performance note), never notes or lyrics. They ship commented out in
-  # the template, so the transcription that adds one also removes the '%' -
-  # hence the optional '%' below, which subtitle and arranger need too.
-  local META_FIELDS='composer|poet|meter|title|tags|verseCount|dateAdded|typesetter|subtitle|arranger|alternateTitle|prescore_text|postscore_text'
-  local meta_re="^[+-][[:space:]]*%?[[:space:]]*($META_FIELDS)[[:space:]]*="
-  # The copyright override, which may be a single line or a \markup block.
-  # A page that prints two notices (an original text and its translation,
-  # say) needs the block form, and its continuation lines have to pass too:
-  # a bare quoted string, which is a notice, and a line of nothing but
-  # markup punctuation, which is the block closing. Neither can express a
-  # note or a syllable - lyrics reach a verse* variable and notes reach a
-  # part, and both are named on their own lines - so this stays narrow.
-  local copy_re='^[+-][[:space:]]*\\header[[:space:]]*\{.*copyright'
-  local copy_cont_re='^[+-][[:space:]]*("[^"]*"[[:space:]]*|[{}()[:space:]]*)$'
-  # A whole-line comment, which is prose about the song and never notes or
-  # lyrics. Transcriptions routinely add one to say why a field is written
-  # the way it is (why an attribution had to wrap, where a date came from),
-  # and that note belongs with the field it explains. Note this is a
-  # COMMENT LINE, not the '%?' above: that one allows a commented-out
-  # field, which is a different thing.
-  local note_re='^[+-][[:space:]]*%'
-
-  local music_changed
-  music_changed="$(git -C "$REPO" diff -U0 -- "$ly" \
-    | grep -E '^[+-]' | grep -vE '^[+-][+-]' \
-    | grep -vcE "$meta_re|$copy_re|$copy_cont_re|$note_re|^[+-][[:space:]]*$" \
-    || true)"
-  if [ "${music_changed:-0}" -gt 0 ] && [ "${FORCE:-0}" != "1" ]; then
-    echo "${c_yel}warning${c_off} the diff touches $music_changed non-metadata line(s):"
-    git -C "$REPO" diff -- "$ly" | grep -E '^[+-]' | grep -vE '^[+-][+-]' \
-      | grep -vE "$meta_re|$copy_re|$copy_cont_re|$note_re" \
-      | head -8 | sed 's/^/    /'
-    die "notes and lyrics belong to the conversion commit (FORCE=1 to override)"
+  # A clean tree is fine on a re-run: transcribe amends, so fixing a typo
+  # in the message alone is a legitimate second call. Only refuse when the
+  # file is untouched AND the commit has no determination yet, which is
+  # the real "the agent has not edited it" case.
+  if git -C "$REPO" diff --quiet -- "$ly"; then
+    git -C "$REPO" show --no-patch --format='%B' HEAD \
+      | grep -qi '^Copyright-Status:' \
+      || die "no changes to $ly - the agent has not edited it yet"
   fi
+
+  # No metadata-vs-music check here on purpose: this commit carries the
+  # whole song, hand fixes to the generated music included. See the header.
 
   local msgfile="${MSG_FILE:-}"
   if [ -z "$msgfile" ]; then
     msgfile="$(mktemp)"
     cat > "$msgfile" <<'TEMPLATE'
-Add metadata for SONG from HYMNAL, p.N
+Add song "SONG" from HYMNAL, p.N
+
+Converted from the MuseScore source, with metadata transcribed from the
+page. Note any hand fixes to the generated music here.
 
 Copyright-Status: copyrighted | public-domain | unknown | mixed
 Copyright-Notice: <verbatim, or "none visible">
@@ -288,11 +273,44 @@ TEMPLATE
     fi
   fi
 
+  # Amend the conversion commit rather than stacking a second one, so the
+  # song lands as a single commit. Guarded: amending when HEAD is the fork
+  # point would rewrite a commit that belongs to public-main, not to this
+  # song. In that case fall back to a fresh commit.
   git -C "$REPO" add "$ly"
-  git -C "$REPO" commit -q -F "$msgfile" || die "commit failed"
+  local base amend_ok=0
+  base="$(git -C "$REPO" merge-base "$branch" "$PUBLIC_BRANCH" 2>/dev/null || true)"
+  local head; head="$(git -C "$REPO" rev-parse HEAD)"
+  if [ -n "$base" ] && [ "$head" != "$base" ]; then
+    # Only fold into a commit this branch created for this song.
+    if git -C "$REPO" show -s --format=%s HEAD | grep -qiE "^Convert .*$song|^Add song"; then
+      amend_ok=1
+    fi
+  fi
+
+  if [ "$amend_ok" = "1" ]; then
+    # Amending with -F replaces the message outright, which would throw
+    # away the converter warnings start recorded. They say where the
+    # generated music is least trustworthy and are exactly what review
+    # shows, so carry them onto the end of the new message.
+    local carried
+    carried="$(git -C "$REPO" show --no-patch --format='%B' HEAD \
+               | grep -A20 'Converter warnings:' || true)"
+    local finalmsg="$msgfile"
+    if [ -n "$carried" ]; then
+      finalmsg="$(mktemp)"
+      cat "$msgfile" > "$finalmsg"
+      printf '\n%s\n' "$carried" >> "$finalmsg"
+    fi
+    git -C "$REPO" commit -q --amend -F "$finalmsg" || die "commit failed"
+    [ "$finalmsg" != "$msgfile" ] && rm -f "$finalmsg"
+    echo "${c_grn}committed${c_off} song, one commit (Copyright-Status: $status)"
+  else
+    git -C "$REPO" commit -q -F "$msgfile" || die "commit failed"
+    echo "${c_grn}committed${c_off} metadata (Copyright-Status: $status)"
+  fi
   [ -z "${MSG_FILE:-}" ] && rm -f "$msgfile"
 
-  echo "${c_grn}committed${c_off} metadata (Copyright-Status: $status)"
   echo
   echo "next: $0 review $song"
 }
@@ -304,18 +322,27 @@ cmd_review() {
     || die "$branch does not exist"
 
   echo
-  echo "${c_bold}metadata commit${c_off} ${c_dim}(stage 2 - the agent's transcription)${c_off}"
+  echo "${c_bold}song commit${c_off} ${c_dim}(the agent's transcription)${c_off}"
   git -C "$REPO" show --no-patch --format='%B' "$branch" | sed 's/^/  /'
+
+  # The commit carries the whole song, so its diff is the entire file and
+  # too long to read here. Show the header fields, which are what stage 3
+  # is actually checking, and leave the music to the visual review below.
   echo "${c_dim}$(printf '%.0s-' {1..60})${c_off}"
   git -C "$REPO" show --format='' "$branch" -- "$(song_ly "$song")" \
-    | grep -E '^[+-]' | grep -vE '^[+-][+-]' | sed 's/^/  /'
+    | grep -E '^[+-]' | grep -vE '^[+-][+-]' \
+    | grep -E '^[+-][[:space:]]*%?[[:space:]]*(composer|poet|meter|title|tags|verseCount|dateAdded|typesetter|subtitle|arranger|alternateTitle|copyright)[[:space:]]*=' \
+    | sed 's/^/  /'
 
+  # Converter warnings live in this same commit now (start writes them,
+  # transcribe amends around them), so read them from the commit itself
+  # rather than from a conversion commit that no longer exists.
   local warnings
-  warnings="$(git -C "$REPO" show --no-patch --format='%B' "$branch~1" \
+  warnings="$(git -C "$REPO" show --no-patch --format='%B' "$branch" \
               | grep -A20 'Converter warnings:' || true)"
   if [ -n "$warnings" ]; then
     echo
-    echo "${c_yel}converter warnings from the conversion commit${c_off}"
+    echo "${c_yel}converter warnings${c_off}"
     echo "$warnings" | sed 's/^/  /'
   fi
 
@@ -324,8 +351,8 @@ cmd_review() {
   echo "  visual : scripts/convert-queue.sh review $song"
   echo "  audio  : $0 listen $song"
   echo
-  echo "${c_dim}  amend metadata : git commit --amend"
-  echo "  drop metadata  : git reset --hard HEAD~1"
+  echo "${c_dim}  amend the song : git commit --amend"
+  echo "  redo metadata  : edit the .ly, then $0 transcribe $song"
   echo "  abandon        : git branch -D $branch${c_off}"
   echo
   echo "  publish: $0 publish $song [--public]"
