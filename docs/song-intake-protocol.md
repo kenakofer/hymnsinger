@@ -524,7 +524,7 @@ files:
 | Served by | a private host with no build step | GitHub Pages, `build_type: legacy` |
 | Therefore commits | the **built** site, `docs/_site/` | **source**; Pages runs Jekyll |
 | Outputs live in | `docs/_site/local-lilypond-outputs/` | `docs/local-lilypond-outputs/` |
-| Listing page front matter | written whole by the parser | `cp docs/_data/song-template.md` first, parser appends |
+| Listing page front matter | written whole by the parser | written whole by the parser |
 
 ### The differing layouts are required, not drift
 
@@ -574,27 +574,44 @@ Cherry-pick when the file is genuinely identical on both sides:
     git checkout public-main
     git cherry-pick <sha>
 
-When it is not - and for the six scripts below it is not - **port the
-change by hand and test it on the target branch**. Copying `main`'s file
-wholesale is the tempting mistake: `main`'s
-`generate-all-hymn-indexes.py` takes two CLI arguments and writes the
-whole listing page, while `public-main`'s takes one and appends to a
-template, so the copy would break every page on the public site.
+When it is not, **port the change by hand and test it on the target
+branch**. Copying `main`'s file wholesale is the tempting mistake, and the
+test is not "did it run" but "did it reproduce the pages already
+committed" - run the generator and check that `git status` shows only the
+files you meant to change.
+
+The page-generation pair is no longer in this category. As of 2026-07-28
+`generate-all-hymn-indexes.py` and `generate-all-hymn-pages.sh` are
+byte-identical on both branches: the parser takes two CLI arguments and
+writes the whole listing page, and `docs/_data/song-template.md` is gone.
+Until then `public-main` ran an older design that did
+`cp docs/_data/song-template.md "$OUTPUT"` *before* calling a one-argument
+parser, and ignored its exit code. Running `main`'s parser under that
+wrapper truncated all 140 listing pages to the bare template, because the
+`cp` had already landed when the parser died on the missing second
+argument. If you ever see that, `git checkout -- docs/` restores it.
 
 These shared files have diverged and need the by-hand treatment:
 
     scripts/build-odp-presentation-from-images.sh
-    scripts/generate-all-hymn-indexes.py
-    scripts/generate-all-hymn-pages.sh
     scripts/generate-all-outputs.sh
     scripts/odp-skeleton
     scripts/publish-song.sh
     scripts/republish-all.sh
 
-Some of those differ for a good reason and should stay different -
+`scripts/build.sh` exists on `main` only, and deliberately. It ends in
+`jekyll build`, which writes `docs/_site/` - the directory `main` commits
+and Pages discards. Having it on `public-main` would only invite
+committing a `_site` that must never be committed there. To regenerate
+listing pages on `public-main`, run `generate-all-hymn-pages.sh`, which is
+now the same script on both branches.
+
+Those differ for a good reason and should stay different -
 `republish-all.sh` prints the push command for the branch it is on, and
-the parsers write listing pages differently. Divergence is not itself a
-bug to be closed; the question is only whether a given fix is missing.
+`generate-all-outputs.sh` writes to `docs/_site/local-lilypond-outputs/`
+on `main` but `docs/local-lilypond-outputs/` on `public-main`. Divergence
+is not itself a bug to be closed; the question is only whether a given fix
+is missing.
 
 The intake toolchain is the opposite case. `song-intake.sh`,
 `convert-queue.sh`, `from-xml.py`, `from-muse.py`, `lyrics_extractor.py`

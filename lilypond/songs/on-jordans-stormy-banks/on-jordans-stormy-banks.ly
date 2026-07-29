@@ -3,8 +3,7 @@
 \include "../../lib/hymn-common.ily"
 
 %% TUNE INFO
-composer = \smallText "Music: "
-%arranger = \smallText "arr. Name, year"
+composer = \smallText \markup { "Music: American folk melody," \italic "Southern Harmony," "1812" }
 meter = \smallText "PROMISED LAND CM with refrain"
 hymnKey = \key f \major
 hymnTime = \time 4/4
