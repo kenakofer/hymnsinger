@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import sys
 import os
 import json
@@ -108,7 +107,9 @@ def extract_from_source(all_lines, search_for):
         return None
     # Collapse runs of whitespace before matching. The patterns are written
     # by hand and the spacing in a .ly is not meaningful, so a stray double
-    # space on either side should not decide whether a song gets a page.
+    # space on either side should not decide whether a song gets a page:
+    # 'composer = \twoLineSmallText  \markup {' carried one for a while and
+    # silently failed every song using the single-spaced form.
     search_for = " ".join(search_for.split())
     for raw_line in all_lines:
         line = " ".join(raw_line.split())
@@ -132,12 +133,8 @@ def get_composer_info(all_lines):
         'composer = \\smallText \\markup { "Music:',
         'composer = \\twoLineSmallText \\markup { "Music:',
     ])
-    # An empty composer is legitimate - 'composer = \smallText "Music: "'
-    # appears in songs whose tune has no attributable composer. Fall back to
-    # the empty string rather than raising, which is what this branch has
-    # always done; only the poet is treated as required.
     if not composer:
-        composer = ""
+        raise Exception("Composer not found")
 
     arranger = extract_from_source(all_lines, [
         'arranger = \\smallText ',
@@ -178,6 +175,33 @@ def get_date_added(all_lines):
 def get_tag_html(tag):
     return '<a class="taglink" href="#">'+tag+'</a>'
 
+if __name__ == "__main__":
+    with open(sys.argv[1], 'r') as f:
+        get_tags(f.readlines())
+
+# Songs spell the repeated section both ways: 32 files say CHORUS, 5 say
+# REFRAIN. Only CHORUS used to be recognised, so REFRAIN markers fell through
+# to the lyric branch and printed as a bare "REFRAIN" / "END REFRAIN" line.
+# Accept either word rather than forcing one spelling on the sources.
+CHORUS_WORDS = ('CHORUS', 'REFRAIN')
+
+def is_chorus_marker(line, prefix=''):
+    if not line.startswith('%'):
+        return False
+    body = line.lstrip('%').strip().upper()
+    if prefix:
+        if not body.startswith(prefix):
+            return False
+        body = body[len(prefix):].strip()
+    elif body.startswith('END'):
+        return False
+    # The marker has to be the WHOLE comment, not merely start with the word.
+    # Prose comments mention these words in passing - my-hope-is-built has a
+    # header note reading "The page also prints "Refrain" over m10", and a
+    # prefix match on that turned chorus_mode on before verseA even began,
+    # indenting the second line of verse 1 as though it were the chorus.
+    return body.strip('"\' .:-') in CHORUS_WORDS
+
 def get_lyrics(all_lines):
     current_verse = None
     chorus_mode = False
@@ -198,12 +222,24 @@ def get_lyrics(all_lines):
             remove_quotes = True
         elif line.startswith("\\") and not line.startswith("\\l "):
             pass
-        elif line.startswith('%% CHORUS'):
-            chorus_mode = True
-            lyrics+="\n"
-        elif line.startswith('%% END CHORUS'):
+        elif is_chorus_marker(line, 'END'):
             chorus_mode = False
             lyrics+="\n"
+        elif is_chorus_marker(line):
+            chorus_mode = True
+            lyrics+="\n"
+        elif line.startswith('%'):
+            # Any other comment inside a verse block is editorial - a note
+            # about why a \markup or \set is there, why a source typo was
+            # kept, and so on. It is not sung, so it must not reach the page
+            # or the SEO description. This has to be a blanket skip: the
+            # earlier code only knew the two CHORUS markers, so every other
+            # comment fell through to the "elif current_verse" branch below,
+            # where join_verse_line quietly stripped the leading %% and the
+            # \commands and emitted the remaining prose as lyrics. That is
+            # how "4verse.ily passes 1 as the laterLabel..." ended up printed
+            # as a line of oh-have-you-not-heard.
+            pass
         elif current_verse and unstripped_line.startswith("}"):
             current_verse = None
             chorus_mode = False
@@ -260,7 +296,11 @@ def get_image(song_file_base):
     return "/local-lilypond-outputs/"+song_file_base+"-trad.png"
 
 def output_header_info(song_file_base, exclude_from_index, song_title, lyrics, tags, output_file):
-    with open(output_file, 'a') as f:
+    with open(output_file, 'w') as f:
+        f.write("---")
+        f.write("\n")
+        f.write("layout: song-page")
+        f.write("\n")
         f.write("song_file: "+song_file_base)
         f.write("\n")
         f.write('title: "'+song_title+'"')
@@ -314,7 +354,8 @@ def write_out_tune_text_json(data):
 
 if __name__ == "__main__":
     file_path = sys.argv[1]
-    song_file_base = os.path.basename(file_path)
+    song_markdown_file = sys.argv[2]
+    song_file_base = os.path.basename(song_markdown_file)
     song_file_base = song_file_base[:song_file_base.index(".")]
     with open(file_path, 'r') as f:
         lines = f.readlines()
@@ -346,6 +387,5 @@ if __name__ == "__main__":
         add_tune_text_pair(song_data['tune'], song_data['title'], song_data['song_file'])
         song_data["songs_with_same_tune"] = get_songs_with_same_tune(song_data["tune"], song_data["title"])
 
-        song_markdown_file = "docs/listing/"+song_file_base+".md"
         output_header_info(song_data['song_file'], song_data['exclude_from_index'], song_data['title'], song_data['lyrics'], song_data['tags'], song_markdown_file)
         add_song_json(song_data)
