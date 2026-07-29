@@ -91,9 +91,9 @@ about why:
 
 A branch forked from `public-main` differs from it by exactly this song,
 so Stage 4 can merge it into `public-main` honestly. A branch forked from
-`main` cannot be merged there at all - `main` carries 19 songs
-`public-main` lacks, 12 of them copyrighted, and the merge would take all
-of them along. That is why publish used to copy the song's files across
+`main` cannot be merged there at all - `main` carries songs
+`public-main` lacks, many of them copyrighted, and the merge would take
+all of them along. That is why publish used to copy the song's files across
 one path at a time instead of merging.
 
 Forking from the public branch does not make the work public. The branch
@@ -208,11 +208,13 @@ To find them:
     scripts/find-broken-beams.py lilypond/songs/<song>/*.ly
 
 It reports only the mixed runs, skipping both the uniform ones and any
-already wrapped in `\pa`. As of 2026-07-26 that is 118 runs across 44 of
-133 songs, out of 510 beamed runs in total — so roughly one beamed run
-in four needs the annotation, and about a third of songs have at least
-one. Check the render against the photo before wrapping: the script
-finds what LilyPond will fragment, not what the hymnal disagrees with.
+already wrapped in `\pa`, and prints its own totals — run it without a
+song argument for the current backlog. Roughly one beamed run in four
+needs the annotation, and about a third of songs have at least one; the
+backlog grows with the corpus, so treat it as a standing chore rather
+than something to finish. Check the render against the photo before
+wrapping: the script finds what LilyPond will fragment, not what the
+hymnal disagrees with.
 
 This is engraving only — `\pa`/`\pt` emit no notes, and
 `verify-xml-notes.py` strips them, so the error rate should not move.
@@ -222,9 +224,33 @@ Fold it into the same formatting commit as `\break` placement.
 unison vs. harmony markings, which staff carries which words. Do *not*
 "fix" notes that merely look odd — that is the audio pass's job, and the
 converter's divisi bugs produce parts that are wrong in ways no amount of
-staring at the page reveals. If barcheck warnings appear, report the
-count rather than editing rhythms to silence them; check whether the raw
-conversion already produced them.
+staring at the page reveals.
+
+#### Barcheck warnings: two different animals
+
+The old advice was "report the count, never edit rhythms to silence
+them." That is right for the first kind and wrong for the second, and
+conflating them cost real time.
+
+**Leave alone** a measure that is short or long because you disagree with
+the converter's *reading* of a rhythm. Silencing that by editing durations
+is how a wrong note becomes a permanent wrong note.
+
+**Do investigate** a warning caused by the converter dropping something
+outright, because the photo does settle these and they are common:
+
+- **Dropped rests**, and non-uniformly across voices — one part comes up
+  short while the others scan.
+- **A dropped measure** where the source content was a tie.
+- **An over-long chord duration**, which pushes the bar past its meter.
+
+Always check whether the raw conversion already produced the warning
+before assuming your edit caused it:
+
+    git show <the start commit> -- <the .ly>
+
+Note that `verify-xml-notes.py` reports 0.0% straight through every one of
+these, so a clean error rate is not evidence the measure is intact.
 
 ### The commit message carries the confidence notes
 
@@ -245,7 +271,16 @@ belongs with the change it describes and survives in the history:
     Source: photos IMG_4471-4473
 
 `Copyright-Status` is machine-read by the publish gate. The prose lines
-are for you.
+are for you — with one exception.
+
+**`Copyright-Notice` has a magic value.** `publish --public` refuses when
+that line has content that is not literally `none visible`. So on a song
+with no notice, write exactly that. Writing `(none)`, `n/a` or `-` reads
+fine to a human but blocks the publish, and the refusal says *"a copyright
+notice is recorded (none)"* — which sounds like the opposite of what
+happened, and sent me looking at the wrong thing for a while. Omitting the
+line entirely also passes, but say `none visible` instead: it records that
+you looked.
 
 ### Copyright determination
 
@@ -286,6 +321,11 @@ visual pass below to check the music.
 ### Visual pass
 
     scripts/convert-queue.sh review <song-name>
+
+**This opens whatever PDF is on disk; it does not rebuild first.** After
+editing the `.ly` you can spend a full pass reviewing the previous render
+and conclude the fix did not take. Regenerate before reviewing if you have
+touched the source since the last build.
 
 - [ ] Title, key signature, time signature
 - [ ] Note accuracy, **especially alto and tenor** - the converter is
@@ -369,21 +409,24 @@ the fork point decides which side gets the honest merge. It used to be
 `main`; it is now `public-main`. The copy always guards the other side,
 and the stray-song check above is what keeps it honest either way.
 
-The invariant to protect, which the branches satisfy today: `main` has 146
-songs, `public-main` has 127, and **all 12 songs carrying a copyright
-field are absent from `public-main`**.
+The invariant to protect: **no `.ly` on `public-main` carries a copyright
+field.** `main` is a superset and does carry them.
 
-To re-check it at any time:
+To check it at any time:
 
-    for f in $(git ls-tree -r --name-only public-main -- lilypond/songs/ \
-                 | grep '\.ly$'); do
-      git show "public-main:$f" \
-        | grep -qE '^[^%]*copyright[[:space:]]*=' && echo "$f"
-    done
+    scripts/song-intake.sh check
 
-That must print nothing; run against `main` it prints 12.
+It prints both song counts, how many on `main` carry a copyright field,
+whether the shared toolchain has drifted, and then the invariant itself.
+It exits non-zero on a leak, so it works in a script.
 
-Two things the pattern has to get right, both of which have caught me:
+Deliberately no counts are quoted here. They used to be, and they rotted:
+once the sentence said 146/127/12 and the tree said 177/140/30, a reader
+could not tell a real leak from a stale doc — which is the one distinction
+this section exists to make. Derive them; do not memorise them.
+
+Two things the grep has to get right, both of which have caught me, and
+both of which `check` already handles:
 
 - The field is indented inside `\header { }`, so anchoring to the start of
   the line finds zero matches on *both* branches and looks like a pass.
@@ -393,7 +436,7 @@ Two things the pattern has to get right, both of which have caught me:
 Nothing is pushed. Both merges are left for you to review and push.
 
 Private-only is also the resting state for songs that are probably public
-domain but unconfirmed - nine such songs sit on `main` today. Not being
+domain but unconfirmed, and several sit on `main` that way. Not being
 public is not a judgement; it is the default.
 
 ---
@@ -423,7 +466,15 @@ for different hosts, so generating on one does nothing for the other:
 A private song is only on `main`, so only the second pair applies.
 
 The script is incremental, so the second run normally builds only the new
-song. `generate-all-outputs.sh` decides "up to date" by **content, not
+song.
+
+**`generate-all-outputs.sh` takes no song argument.** It globs the whole
+tree, and a name passed to it is ignored silently rather than rejected —
+so `generate-all-outputs.sh <song>` looks targeted and rebuilds
+everything. Use it bare, and let the fingerprinting below decide what is
+stale.
+
+It decides "up to date" by **content, not
 mtime**: it fingerprints each `.ly` together with the files it
 `\include`s and compares that against a stored `.inputhash`. The older
 mtime test (`.mp3` newer than `.ly`) is what produced the ~200-file diffs
@@ -520,7 +571,7 @@ files:
 |  | `main` | `public-main` |
 |---|---|---|
 | Remote | `origin` (private) | `public-origin` (public) |
-| Songs | 146, incl. 12 copyrighted | 127, all public domain |
+| Songs | a superset, incl. every copyrighted one | public domain only |
 | Served by | a private host with no build step | GitHub Pages, `build_type: legacy` |
 | Therefore commits | the **built** site, `docs/_site/` | **source**; Pages runs Jekyll |
 | Outputs live in | `docs/_site/local-lilypond-outputs/` | `docs/local-lilypond-outputs/` |
@@ -580,24 +631,26 @@ test is not "did it run" but "did it reproduce the pages already
 committed" - run the generator and check that `git status` shows only the
 files you meant to change.
 
-The page-generation pair is no longer in this category. As of 2026-07-28
+The page-generation pair is no longer in this category — as of 2026-07-28
 `generate-all-hymn-indexes.py` and `generate-all-hymn-pages.sh` are
-byte-identical on both branches: the parser takes two CLI arguments and
-writes the whole listing page, and `docs/_data/song-template.md` is gone.
-Until then `public-main` ran an older design that did
-`cp docs/_data/song-template.md "$OUTPUT"` *before* calling a one-argument
-parser, and ignored its exit code. Running `main`'s parser under that
-wrapper truncated all 140 listing pages to the bare template, because the
-`cp` had already landed when the parser died on the missing second
-argument. If you ever see that, `git checkout -- docs/` restores it.
+byte-identical on both branches, and `docs/_data/song-template.md` is
+gone. Worth knowing only for the failure it produced: a mismatched
+wrapper and parser truncated *every* listing page to a two-line stub,
+because the wrapper copied a template into place before the parser died.
+If `git status` ever shows a mass edit of `docs/listing/`,
+`git checkout -- docs/` restores it.
 
-These shared files have diverged and need the by-hand treatment:
+To see which shared files have diverged and need the by-hand treatment,
+run the blob-hash comparison at the end of this section rather than
+trusting a list here — the membership changes.
 
-    scripts/build-odp-presentation-from-images.sh
-    scripts/generate-all-outputs.sh
-    scripts/odp-skeleton
-    scripts/publish-song.sh
-    scripts/republish-all.sh
+The stable part is *why* the current ones differ: they encode a
+branch's `docs/` output path or its push target. `generate-all-outputs.sh`
+writes to `docs/_site/local-lilypond-outputs/` on `main` and
+`docs/local-lilypond-outputs/` on `public-main`; `republish-all.sh` prints
+the push command for the branch it is on; `publish-song.sh` pushes to a
+different remote. Divergence there is not a bug to be closed. The question
+is only ever whether a given *fix* is missing from one side.
 
 `scripts/build.sh` exists on `main` only, and deliberately. It ends in
 `jekyll build`, which writes `docs/_site/` - the directory `main` commits
@@ -606,31 +659,24 @@ committing a `_site` that must never be committed there. To regenerate
 listing pages on `public-main`, run `generate-all-hymn-pages.sh`, which is
 now the same script on both branches.
 
-Those differ for a good reason and should stay different -
-`republish-all.sh` prints the push command for the branch it is on, and
-`generate-all-outputs.sh` writes to `docs/_site/local-lilypond-outputs/`
-on `main` but `docs/local-lilypond-outputs/` on `public-main`. Divergence
-is not itself a bug to be closed; the question is only whether a given fix
-is missing.
+The intake toolchain is the opposite case. Those scripts carry no
+host-specific paths and **must stay byte-identical**; the authoritative
+list is `TOOLCHAIN_SHARED` in `scripts/song-intake.sh`, which is also what
+the drift check reads, so there is one list rather than two that disagree.
+Stage 1 runs whichever copy the intake branch inherited from
+`public-main`; if the two drift, an intake branch runs a different tool
+than the one you last edited on `main`. Change them on one branch, then
+copy across verbatim.
 
-The intake toolchain is the opposite case. `song-intake.sh`,
-`convert-queue.sh`, `from-xml.py`, `from-muse.py`, `lyrics_extractor.py`
-and `verify-xml-notes.py` now live on **both** branches and have no
-host-specific paths, so they should stay byte-identical. Stage 1 runs
-whichever copy the intake branch inherited from `public-main`; if the two
-drift, an intake branch runs a different tool than the one you last
-edited on `main`. Change them on one branch, then copy across verbatim.
-
-Stage 4 checks this for you. `song-intake.sh publish` compares those six
-files across both branches and warns if any differ, because publish is the
-moment the gap is easiest to create and hardest to notice - it merges the
-intake branch into `public-main` but copies only the song across to `main`,
-so a tooling fix made on the intake branch lands on one branch and not the
+Both `publish` and `check` compare them and warn. Publish is the moment
+the gap is easiest to create and hardest to notice — it merges the intake
+branch into `public-main` but copies only the song across to `main`, so a
+tooling fix made on the intake branch lands on one branch and not the
 other. The warning does not block the publish; it tells you a port is
-owed. It deliberately ignores the six host-specific scripts above, which
-are supposed to differ.
+owed. Host-specific scripts are deliberately excluded, since those are
+supposed to differ.
 
-To see the current state of the split:
+To see the full state of the split, including files outside that list:
 
     for f in $(comm -12 \
         <(git ls-tree --name-only main -- scripts/ | sort) \
@@ -653,10 +699,10 @@ it. Four lib files are included by essentially every song:
     hymn-common.ily   all-notation-outputs.ily
     header.ily        midi-output.ily
 
-Touch any of them and 149 of `main`'s 152 songs (130 of 130 on
-`public-main`) get new fingerprints and re-render. That is ~7.4s per song
-for the PDF and 400dpi PNG passes alone, before the ODP build and the
-MIDI→MP3, so budget **20-30 minutes per branch**.
+Touch any of them and essentially every song on the branch gets a new
+fingerprint and re-renders. That is ~7.4s per song for the PDF and 400dpi
+PNG passes alone, before the ODP build and the MIDI→MP3, so budget
+**20-30 minutes per branch** and expect that to grow with the corpus.
 
 The cost is per branch, not per change, and it does not compound: two lib
 edits in one republish cost the same as one. So:

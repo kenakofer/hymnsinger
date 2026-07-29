@@ -9,6 +9,8 @@
 #   review <song>             show the commit and confidence notes
 #   listen <song>             play the generated MIDI
 #   publish <song> [--public] merge to public-main if eligible, then main
+#   check                     cross-branch invariants: counts, toolchain
+#                             drift, and no copyright field on public-main
 #
 # The agent edits the .ly directly and runs `transcribe`. It never merges
 # and never touches main or public-main.
@@ -543,12 +545,61 @@ $(echo "$stray" | sed 's/^/    /')
   note "  git push origin $MAIN_BRANCH"
 }
 
+# Report the cross-branch invariants instead of asserting them in prose.
+#
+# The protocol doc used to carry these as literal counts ("main has 146
+# songs, public-main 127, 12 copyrighted"). Counts in prose rot: by the
+# time they read 177/140/30 the reader cannot tell a real leak from a
+# stale sentence, which is the one distinction that matters here. So the
+# doc points at this command and the numbers are derived on the spot.
+#
+# What is actually invariant is the LAST line: no .ly on the public branch
+# may carry a copyright field. The counts are context, not the assertion.
+cmd_check() {
+  local main_songs public_songs main_copy
+  main_songs="$(git -C "$REPO" ls-tree -d --name-only "$MAIN_BRANCH" \
+                  -- lilypond/songs/ 2>/dev/null | wc -l)"
+  public_songs="$(git -C "$REPO" ls-tree -d --name-only "$PUBLIC_BRANCH" \
+                  -- lilypond/songs/ 2>/dev/null | wc -l)"
+
+  # -z, because ls-tree quotes names containing non-ASCII bytes and an
+  # unquoted read then skips accented titles silently.
+  main_copy=0
+  while IFS= read -r -d '' f; do
+    case "$f" in *.ly) ;; *) continue ;; esac
+    git -C "$REPO" show "$MAIN_BRANCH:$f" 2>/dev/null \
+      | grep -qE '^[^%]*copyright[[:space:]]*=' && main_copy=$((main_copy + 1))
+  done < <(git -C "$REPO" ls-tree -r -z --name-only "$MAIN_BRANCH" \
+             -- lilypond/songs 2>/dev/null)
+
+  echo "${c_bold}songs${c_off}"
+  note "  $MAIN_BRANCH: $main_songs ($main_copy carrying a copyright field)"
+  note "  $PUBLIC_BRANCH: $public_songs"
+  echo
+
+  echo "${c_bold}toolchain${c_off}"
+  if toolchain_warning; then
+    note "  shared scripts identical on both branches"
+    echo
+  fi
+
+  echo "${c_bold}public branch copyright${c_off}"
+  local offenders; offenders="$(public_branch_clean)"
+  if [ -n "$offenders" ]; then
+    echo "${c_red}LEAK${c_off} $PUBLIC_BRANCH carries a copyright field:"
+    for f in $offenders; do echo "  $f"; done
+    return 1
+  fi
+  echo "${c_grn}clean${c_off} no copyright field on $PUBLIC_BRANCH"
+}
+
 case "${1:-help}" in
+  check)      cmd_check ;;
   start)      [ $# -ge 2 ] || die "usage: start <song>";      cmd_start "$2" ;;
   transcribe) [ $# -ge 2 ] || die "usage: transcribe <song>"; cmd_transcribe "$2" ;;
   review)     [ $# -ge 2 ] || die "usage: review <song>";     cmd_review "$2" ;;
   listen)     [ $# -ge 2 ] || die "usage: listen <song>";     cmd_listen "$2" ;;
   publish)    [ $# -ge 2 ] || die "usage: publish <song> [--public]";
               song="$2"; shift 2; cmd_publish "$song" "$@" ;;
-  *)          sed -n '2,15p' "${BASH_SOURCE[0]}" | sed 's/^# \?//' ;;
+  *)          sed -n '2,17p' "${BASH_SOURCE[0]}" | sed 's/^# \?//' ;;
 esac
