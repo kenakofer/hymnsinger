@@ -170,6 +170,58 @@ verse, following the `we-gather-together` m15 example and the how-to's
 "Dotted slur (lyrics ignore)" row. A regular slur `( )` is wrong here: it
 forces *every* verse to skip the note and shoves their syllables right.
 
+#### A tie that eats a syllable in every verse
+
+The `.warn` mismatch above is one signature of a per-verse melisma. Here
+is the other, and the converter does *not* flag it: the source ties two
+same-pitch notes **and still puts `<lyric>` text on the tie-stop note**
+for some verses.
+
+The two encodings contradict each other and the tie wins silently. A tie
+fuses the pair into one sustained note, so lyrics place exactly one
+syllable across it in *every* verse — including the verses whose own
+lyric text says otherwise — and each of them comes out a syllable short.
+`verify-xml-notes.py` reports 0.0% throughout, because the notes are
+right; only the singing is wrong.
+
+What the page prints there is a **dashed** curve — the hymnal's mark for
+"applies to some verses only." One verse holds across both notes; the
+others sing a new syllable on the second. `you-are-salt-for-the-earth`
+m1 beat 2 is the worked example: two F#4 eighths tied in the source, yet
+verses 2-4 put 'a'/'a'/'the' on the second one.
+
+The fix is the same as for a flagged mismatch — two separate notes under
+a **phrasing** slur, which lyrics ignore, plus a `_` in the holding
+verse:
+
+    %% wrong - one syllable here in all four verses
+    fs'4 fs'8~ fs'8 g'4
+
+    %% right - verse A holds, B-D sing a new syllable
+    fs'4 fs'8\( fs'8\) g'4
+
+A regular slur `( )` is equally wrong, for the reason given above: it
+makes *every* verse skip.
+
+To find them, before or after converting — it reads the source XML, so it
+works on an unconverted song:
+
+    scripts/find-tied-lyrics.py .convert-queue/xml/<song>.xml
+
+It reports only the contradiction (a tie-stop note carrying lyric text
+where verses disagree), not every tie. Because it reads the XML rather
+than the `.ly`, it keeps firing after you have fixed the `.ly` — it
+cannot confirm the fix landed, so check the engraving.
+
+Run it bare for the current backlog, which is a standing chore like the
+beams rather than something to finish — it skips songs already converted,
+since for those the `.ly` may be fixed and the XML would report a
+contradiction that no longer exists. Several songs carry it repeatedly
+(`the-lord-is-my-light` x5, `this-little-light-of-mine` x4,
+`the-first-noel-the-angel-did-say` x4). Deliberately no total is quoted
+here, for the same reason the song counts in Stage 4 are not: it would
+rot. Run the script during Stage 2 for the song at hand.
+
 #### Beams broken by part-combining
 
 `\partCombine` puts two parts on one staff and decides, note by note,
@@ -331,6 +383,9 @@ touched the source since the last build.
 - [ ] Note accuracy, **especially alto and tenor** - the converter is
       weakest in inner voices
 - [ ] Verse count, and verse text under the right notes
+- [ ] Every verse has a syllable under each note the page gives one (a
+      verse that quietly loses one usually means a tie where the page
+      draws a dashed curve — see "A tie that eats a syllable")
 - [ ] Repeats, endings, fermatas, chord symbols
 - [ ] Attribution lines read as the hymnal prints them
 - [ ] Line breaks fall where the hymnal's do, and beams run one per part
