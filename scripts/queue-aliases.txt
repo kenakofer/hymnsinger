@@ -14,6 +14,7 @@ angels-we-have-heard-on-high         angels-we-have-heard
 blessd-be-the-tie-that-binds         blest-be-the-tie-that-binds
 breathe-on-me-breath-of-god          breath-on-me-breath-of-god
 i-sing-the-mighty-power-of-god       i-sing-the-mighty-power
+in-the-rifted-rock-im-resting        in-the-rifted-rock
 r337-what-a-friend-we-have-in-jesus  what-a-friend-we-have-in-jesus
 
 # NOT aliases - these look like near-duplicates by filename but are
