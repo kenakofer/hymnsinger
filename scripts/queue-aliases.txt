@@ -15,7 +15,9 @@ blessd-be-the-tie-that-binds         blest-be-the-tie-that-binds
 breathe-on-me-breath-of-god          breath-on-me-breath-of-god
 i-sing-the-mighty-power-of-god       i-sing-the-mighty-power
 in-the-rifted-rock-im-resting        in-the-rifted-rock
+let-there-be-light-lord-god          let-there-be-light
 r337-what-a-friend-we-have-in-jesus  what-a-friend-we-have-in-jesus
+we-plow-the-fields-and-scatter       we-plow-the-fields
 
 # NOT aliases - these look like near-duplicates by filename but are
 # genuinely different settings, and each belongs in the queue on its own.
