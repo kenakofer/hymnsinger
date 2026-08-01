@@ -5,15 +5,15 @@
 # and lands as ONE commit per song:
 #
 #   start <song>              branch intake/<song> off public-main, convert
-#   transcribe <song>         fold metadata into the song's commit
-#   review <song>             show the commit and confidence notes
-#   listen <song>             play the generated MIDI
-#   publish <song> [--public] merge to public-main if eligible, then main
+#   finish <song>             transcribe, publish, build both branches, stop
+#   finish <song> --go        push both branches
 #   check                     cross-branch invariants: counts, toolchain
 #                             drift, and no copyright field on public-main
 #
-# The agent edits the .ly directly and runs `transcribe`. It never merges
-# and never touches main or public-main.
+# Two commands per song: `start`, edit the .ly, `finish`, look at the
+# render, `finish --go`. The stages finish wraps (transcribe, review,
+# listen, publish) stay callable on their own for when a song needs
+# picking apart, but the normal path does not touch them.
 #
 # `start` commits the raw conversion so there is something to diff against
 # while transcribing; `transcribe` amends that commit rather than adding a
@@ -213,14 +213,19 @@ cmd_transcribe() {
   [ "$current" = "$branch" ] || die "not on $branch (on $current)"
 
   local ly; ly="$(song_ly "$song")"
-  # A clean tree is fine on a re-run: transcribe amends, so fixing a typo
-  # in the message alone is a legitimate second call. Only refuse when the
-  # file is untouched AND the commit has no determination yet, which is
-  # the real "the agent has not edited it" case.
+  # A clean tree is fine: transcribe amends, so a re-run to fix the message
+  # alone is legitimate, and so are edits already committed by hand - which
+  # is the normal case when a transcription spans more than one sitting.
+  # What identifies "not edited yet" is HEAD still being the untouched
+  # conversion commit, so key on that rather than on an unstaged diff. The
+  # old check refused a finished song whose edits were committed.
   if git -C "$REPO" diff --quiet -- "$ly"; then
-    git -C "$REPO" show --no-patch --format='%B' HEAD \
-      | grep -qi '^Copyright-Status:' \
-      || die "no changes to $ly - the agent has not edited it yet"
+    local head_msg
+    head_msg="$(git -C "$REPO" show --no-patch --format='%B' HEAD)"
+    if echo "$head_msg" | grep -qiE "^Convert .*$song" \
+       && ! echo "$head_msg" | grep -qi '^Copyright-Status:'; then
+      die "no changes to $ly - the agent has not edited it yet"
+    fi
   fi
 
   # No metadata-vs-music check here on purpose: this commit carries the
@@ -284,8 +289,16 @@ TEMPLATE
   base="$(git -C "$REPO" merge-base "$branch" "$PUBLIC_BRANCH" 2>/dev/null || true)"
   local head; head="$(git -C "$REPO" rev-parse HEAD)"
   if [ -n "$base" ] && [ "$head" != "$base" ]; then
-    # Only fold into a commit this branch created for this song.
-    if git -C "$REPO" show -s --format=%s HEAD | grep -qiE "^Convert .*$song|^Add song"; then
+    # Only fold into a commit this branch created for this song. Keying on
+    # the subject alone missed hand-written ones ("Edits", "fix slur"), and
+    # the fallback then tried a fresh commit with nothing staged and died.
+    # What makes a commit safe to amend is that it is ahead of the public
+    # branch and touches nothing but this song, so test that instead.
+    local touched
+    touched="$(git -C "$REPO" show --name-only --format= HEAD \
+               | sed -n 's,^lilypond/songs/\([^/]*\)/.*,\1,p' | sort -u)"
+    if git -C "$REPO" show -s --format=%s HEAD | grep -qiE "^Convert .*$song|^Add song" \
+       || [ "$touched" = "$song" ]; then
       amend_ok=1
     fi
   fi
@@ -295,16 +308,39 @@ TEMPLATE
     # away the converter warnings start recorded. They say where the
     # generated music is least trustworthy and are exactly what review
     # shows, so carry them onto the end of the new message.
+    # Take the warnings block only. `grep -A20` swept up whatever followed
+    # it, so a re-run re-appended the previous message's own trailers and
+    # the commit ended carrying two Copyright-Status lines. Stop at the
+    # first line that is not part of the block.
+    # Read the warnings off the conversion commit, not HEAD: hand commits
+    # may sit on top, and only the conversion carries them.
+    local convert_commit
+    convert_commit="$(git -C "$REPO" log --format='%H' "$PUBLIC_BRANCH..$branch" \
+                      --grep="^Convert .*$song" -i | tail -1)"
     local carried
-    carried="$(git -C "$REPO" show --no-patch --format='%B' HEAD \
-               | grep -A20 'Converter warnings:' || true)"
+    carried="$(git -C "$REPO" show --no-patch --format='%B' \
+                 "${convert_commit:-HEAD}" | awk '
+      /^Converter warnings:/ { collecting=1; print; next }
+      collecting && /^[ \t]+[^ \t]/ { print; next }
+      collecting { exit }
+    ' || true)"
+
+    # Collapse to one commit per song. Edits committed by hand while
+    # transcribing leave "Convert ..." underneath, and amending only the
+    # tip would report "one commit" while leaving two. Reset to the fork
+    # point with the tree intact, so the commit below is the whole song.
+    git -C "$REPO" reset -q --soft "$base" || die "could not squash onto $base"
+    git -C "$REPO" add "$ly"
     local finalmsg="$msgfile"
     if [ -n "$carried" ]; then
       finalmsg="$(mktemp)"
       cat "$msgfile" > "$finalmsg"
       printf '\n%s\n' "$carried" >> "$finalmsg"
     fi
-    git -C "$REPO" commit -q --amend -F "$finalmsg" || die "commit failed"
+    # Plain commit, not --amend: the reset above moved HEAD to $base, which
+    # is public-main's tip, and amending there would rewrite a commit that
+    # belongs to the public branch rather than to this song.
+    git -C "$REPO" commit -q -F "$finalmsg" || die "commit failed"
     [ "$finalmsg" != "$msgfile" ] && rm -f "$finalmsg"
     echo "${c_grn}committed${c_off} song, one commit (Copyright-Status: $status)"
   else
@@ -545,6 +581,83 @@ $(echo "$stray" | sed 's/^/    /')
   note "  git push origin $MAIN_BRANCH"
 }
 
+# One command for everything after the agent has edited the .ly.
+#
+# What this replaces was five commands with ordering constraints:
+# transcribe, publish, then republish-all and a push once per branch, with
+# two checkouts in between. The ordering was load-bearing and unenforced -
+# pushing before republishing produced a song that was committed but
+# invisible on the site, and the two checkouts are where the copyright
+# invariant was most at risk of being pushed from the wrong branch.
+#
+# Looking at the engraving is the one checkpoint worth keeping, so it is
+# the default: finish transcribes, publishes, builds both branches, and
+# stops with the render on disk. `--go` does the pushes.
+cmd_finish() {
+  local song="$1"; shift
+  local go=0
+  [ "${1:-}" = "--go" ] && go=1
+
+  local branch; branch="$(branch_for "$song")"
+  local status
+
+  if [ "$go" = "1" ]; then
+    # The branches are already built and committed; push them. Read the
+    # determination from the song's own commit, not from HEAD, which by
+    # now is the republish commit.
+    status="$(git -C "$REPO" log --format='%B' -30 "$MAIN_BRANCH" \
+              | grep -i '^Copyright-Status:' | head -1 \
+              | sed 's/^[^:]*:\s*//' | awk '{print $1}')"
+
+    if git -C "$REPO" ls-tree -d --name-only "$PUBLIC_BRANCH" \
+         -- "lilypond/songs/$song/" 2>/dev/null | grep -q .; then
+      # Last point where a copyrighted song could still be stopped, so
+      # re-check the invariant against the real tree before pushing.
+      local offenders; offenders="$(public_branch_clean)"
+      [ -n "$offenders" ] \
+        && die "refusing to push: $PUBLIC_BRANCH carries a copyright field:$offenders"
+      git -C "$REPO" push public-origin "$PUBLIC_BRANCH:main" || die "push to public failed"
+      echo "${c_grn}pushed${c_off}   $PUBLIC_BRANCH -> public"
+    fi
+
+    git -C "$REPO" push origin "$MAIN_BRANCH" || die "push to private failed"
+    echo "${c_grn}pushed${c_off}   $MAIN_BRANCH -> private"
+    echo
+    echo "${c_grn}done${c_off}     $song"
+    return 0
+  fi
+
+  local current; current="$(git -C "$REPO" rev-parse --abbrev-ref HEAD)"
+  [ "$current" = "$branch" ] || die "not on $branch (on $current)"
+  cmd_transcribe "$song" || exit 1
+
+  status="$(git -C "$REPO" show --no-patch --format='%B' HEAD \
+            | grep -i '^Copyright-Status:' | head -1 \
+            | sed 's/^[^:]*:\s*//' | awk '{print $1}')"
+
+  # public-domain is the only status that may reach the public branch;
+  # everything else publishes to main alone. Not a decision point.
+  if [ "$status" = "public-domain" ]; then
+    cmd_publish "$song" --public || exit 1
+  else
+    cmd_publish "$song" || exit 1
+  fi
+
+  # Build both branches now, so --go is a push and not a build-and-push.
+  if [ "$status" = "public-domain" ]; then
+    git -C "$REPO" checkout -q "$PUBLIC_BRANCH" || die "could not switch to $PUBLIC_BRANCH"
+    "$REPO/scripts/republish-all.sh" >/dev/null 2>&1 || die "republish failed on $PUBLIC_BRANCH"
+    echo "${c_grn}built${c_off}    $PUBLIC_BRANCH"
+  fi
+  git -C "$REPO" checkout -q "$MAIN_BRANCH" || die "could not switch to $MAIN_BRANCH"
+  "$REPO/scripts/republish-all.sh" >/dev/null 2>&1 || die "republish failed on $MAIN_BRANCH"
+  echo "${c_grn}built${c_off}    $MAIN_BRANCH"
+
+  echo
+  echo "${c_bold}render${c_off} $SONGS/$song/$song-trad.pdf"
+  note "look at it, then: $0 finish $song --go"
+}
+
 # Report the cross-branch invariants instead of asserting them in prose.
 #
 # The protocol doc used to carry these as literal counts ("main has 146
@@ -601,5 +714,7 @@ case "${1:-help}" in
   listen)     [ $# -ge 2 ] || die "usage: listen <song>";     cmd_listen "$2" ;;
   publish)    [ $# -ge 2 ] || die "usage: publish <song> [--public]";
               song="$2"; shift 2; cmd_publish "$song" "$@" ;;
+  finish)     [ $# -ge 2 ] || die "usage: finish <song> [--go]";
+              song="$2"; shift 2; cmd_finish "$song" "$@" ;;
   *)          sed -n '2,17p' "${BASH_SOURCE[0]}" | sed 's/^# \?//' ;;
 esac
