@@ -6,6 +6,7 @@
 # picked up and put down without losing the thread.
 #
 #   ./scripts/convert-queue.sh status            what is done / left / needs review
+#   ./scripts/convert-queue.sh next              the one song to do now, bare name
 #   ./scripts/convert-queue.sh list [n]          next n unconverted songs, best first
 #   ./scripts/convert-queue.sh convert <name>    convert one song into lilypond/songs/
 #   ./scripts/convert-queue.sh convert --next N  convert the next N cleanest
@@ -209,6 +210,44 @@ cmd_list() {
   echo "  ${c_dim}convert one:${c_off} $0 convert <name>"
 }
 
+# The single next song, as one bare dash-name and nothing else.
+#
+# `list` prints a ranked table, which invites picking from it; the ranking
+# is already a total order, so there is nothing to pick. Deliberating over
+# the table is how an intake session turns into a discussion between every
+# song. This prints one name so the next step is mechanical:
+#
+#   ./scripts/song-intake.sh start "$(./scripts/convert-queue.sh next)"
+#
+# Same sort as cmd_list -- hymnal rank, then error rate -- so `next` is
+# always the top row of `list`. Scoring every pending song costs a MusicXML
+# export apiece, so this is not instant; that cost is what buys a real
+# ranking rather than filename order.
+cmd_next() {
+  local tmp; tmp="$(mktemp)"
+  local scanned=0
+  while IFS= read -r f; do
+    local n; n="$(dash_name "$f")"
+    already_converted "$n" && continue
+    scanned=$((scanned + 1))
+    printf '\r  scanning %d...' "$scanned" >&2
+    local xml frag rate rank
+    rank="$(hymnal_rank "$f")"
+    if xml="$(ensure_xml "$f" "$n")" && frag="$(ensure_fragment "$xml" "$n")"; then
+      rate="$(python3 "$REPO/scripts/verify-xml-notes.py" \
+                --ly-dir "$FRAG" --xml-dir "$XML" --only "$n" 2>/dev/null \
+              | awk '/^error rate/{print $NF}')"
+      [ -z "$rate" ] && rate="999"
+      printf '%s\t%s\t%s\n' "$rank" "${rate%\%}" "$n" >> "$tmp"
+    else
+      printf '%s\t999\t%s\n' "$rank" "$n" >> "$tmp"
+    fi
+  done < <(find "$HYMNS" -name '*.source.mscx' | sort)
+  printf '\r%*s\r' 30 '' >&2
+  sort -t$'\t' -k1,1n -k2,2g "$tmp" | head -1 | cut -f3
+  rm -f "$tmp"
+}
+
 cmd_convert() {
   local name="$1"
   local src; src="$(find_source "$name")" || die "no source for '$name'"
@@ -319,6 +358,7 @@ cmd_done() {
 
 case "${1:-status}" in
   status)  cmd_status ;;
+  next)    cmd_next ;;
   list)    cmd_list "${2:-15}" ;;
   convert)
     shift
