@@ -62,15 +62,18 @@ Edit `lilypond/songs/<song>/<song>.ly`: `composer`, `poet`, `meter`,
 `tags`, and a `\header { copyright = "..." }` block when a notice is
 present.
 
-1. **Transcribe, do not recall.** Every text value must be visible in a
-   photo. Outside knowledge goes in the commit message, never in a field.
+1. **Transcribe, do not recall.** Every value must come from the photo or
+   the source file. Outside knowledge - what you know the hymn to say -
+   goes in the commit message, never in a field.
 2. **Never read notes from the image.** Pitches, rhythms, ties and beaming
    come from the MuseScore/MusicXML source, never from the photo - the
    notes printed on the page may themselves be wrong, and the XML is what
    the corpus is verified against. When a passage looks wrong or unclear,
    dump the XML for those measures rather than zooming into the photo.
-   Words are the opposite: lyrics, title, attributions, meter, tune name
-   and the copyright notice are read from the photo and only from it.
+   Words carry no such restriction: take lyrics, title, attributions and
+   meter from whichever of the two is clearer. The copyright notice is the
+   exception - read that from the photo, since it is what the hymnal
+   actually asserts.
 3. **Null over guess.** A gap costs a minute of review; a wrong value can
    survive for years.
 4. **Quote the copyright notice verbatim** - symbol, years, holder, and
