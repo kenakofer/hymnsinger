@@ -8,308 +8,134 @@ Internal workflow documentation, not a page on the site.
 `published: false` keeps Jekyll from rendering it, and docs/_config.yml
 on public-main also lists it under `exclude`. Both are deliberate: this
 file lives on public-main so that intake branches - which fork from that
-branch - can hand it to the agent in Stage 2, but it describes the
-private repo's layout and vetting process and has no business being
-served from hymnsinger.com.
+branch - can hand it to the agent, but it describes the private repo's
+layout and vetting process and has no business being served from
+hymnsinger.com.
 -->
 
 # Song intake protocol
 
 How a song goes from photos of a physical hymnal page to a published song.
 
-The work happens on a side branch and lands as **one commit per song**,
-which is what `publish` merges.
+    scripts/song-intake.sh start <song>      # branch off public-main, convert
+    ... the agent edits the .ly ...
+    scripts/song-intake.sh finish <song>     # transcribe, publish, build both branches
+    ... you look at the render ...
+    scripts/song-intake.sh finish <song> --go   # push both branches
 
-Stage 4 is not the end. It publishes *source*; Stage 5 is what makes the
-song appear on the site.
+The song lands as **one commit** on `intake/<song>`. The agent edits the
+`.ly` and never merges, pushes, or touches `main` or `public-main`.
 
-| Stage | Who | Produces |
-|---|---|---|
-| 1. Convert | you (scripted) | branch off `public-main`; commit: machine-generated notes |
-| 2. Transcribe | agent | folds metadata and hand fixes into that commit |
-| 3. Inspect | you | approval, correction, or reset |
-| 4. Publish | you (scripted) | merge to `public-main` if eligible, then `main` |
-| 5. Generate | you (scripted) | commit: `docs/` assets, listing and index pages |
+`finish` wraps `transcribe`, `publish`, and a `republish-all.sh` and push
+per branch. Those stages stay callable individually when a song needs
+picking apart; the normal path does not use them.
 
-The agent edits the `.ly` directly and commits. It does not decide what
-gets published and never touches `main` or `public-main`.
-
-The five stages move one song at a time. Changes to the *tooling* the
-stages run on are a separate matter with its own hazards - see
-[Keeping `main` and `public-main` in sync](#keeping-main-and-public-main-in-sync).
+Changes to the *tooling* are a separate matter with its own hazards - see
+[Keeping the branches in sync](#keeping-the-branches-in-sync).
 
 ---
 
-## Why one commit per song
+## The branch forks from `public-main`
 
-A song lands as a single commit. `start` commits the raw conversion so
-there is something to diff against while transcribing, and `transcribe`
-**amends** that commit rather than stacking a second one.
-
-Intake used to keep the two apart, and `transcribe` refused a metadata
-commit that touched notes or lyrics. The theory was that machine output
-and human transcription have different failure modes - the converter is
-weakest in divisi passages, transcription fails on a misread date - and
-so deserve separate review.
-
-In practice the split cost more than it returned. Hand fixes to the
-generated music are a normal part of transcribing a song, not a sign
-something went wrong: the converter drops slurs the source never
-encoded, system breaks have to be placed by eye, and hymnal pages
-contain outright misspellings. All of that surfaces in the same sitting
-as the metadata, so the gate mostly produced amend-and-restage busywork.
-It also misfired on layout fields like `clairStaffZoom`, which are
-neither notes nor lyrics but matched no metadata pattern either.
-
-What actually protects the public remote is the **copyright validation**,
-and that never depended on the split. It still runs on every
-`transcribe`: `Copyright-Status` must be one of four values, and
-`public-domain` must cite a four-digit date and may not argue from a
-missing notice. `publish` searches the whole branch for that line rather
-than assuming which commit carries it, so it works unchanged.
-
-    git show HEAD                 # the whole song
-    git show HEAD --stat          # what it touched
-
-To redo a song's metadata, edit the `.ly` and run `transcribe` again - it
-amends in place, so re-running is safe and does not stack commits.
-
----
-
-## Stage 1 - Convert
-
-    scripts/song-intake.sh start <song-name>
-
-Creates the branch `intake/<song-name>`, runs the conversion, and commits
-the result with the converter's own warnings recorded in the message.
-
-Only the `.ly` is committed; PDFs, MIDI and MP3s are git-ignored.
-
-**The branch forks from `public-main`, not `main`.** That looks backwards
-for a song that may turn out copyrighted, so it is worth being explicit
-about why:
+Not from `main`, which reads backwards for a song that may turn out
+copyrighted.
 
 A branch forked from `public-main` differs from it by exactly this song,
-so Stage 4 can merge it into `public-main` honestly. A branch forked from
-`main` cannot be merged there at all - `main` carries songs
-`public-main` lacks, many of them copyrighted, and the merge would take
-all of them along. That is why publish used to copy the song's files across
-one path at a time instead of merging.
+so it can be merged there honestly. A branch forked from `main` cannot be
+merged there at all - `main` carries copyrighted songs `public-main`
+lacks, and the merge would take all of them along.
 
 Forking from the public branch does not make the work public. The branch
-lives in the private repo, has no upstream, and `git push` on it refuses
-and suggests `origin` (private). Exposure follows merges, not ancestry: a
-song that turns out copyrighted is simply never merged into `public-main`,
-and its commits exist only on `main`.
+lives in the private repo, has no upstream, and `git push` on it refuses.
+**Exposure follows merges, not ancestry:** a song that turns out
+copyrighted is simply never merged into `public-main`.
 
 ---
 
-## Stage 2 - Agent transcribes the hymnal page
+## What the agent does
 
-### Input
+Input: photos of the page (title, tune name, meter, attributions), a
+close-up of the fine print where the copyright lives, and the hymnal's
+title and copyright pages once per hymnal.
 
-Photos of the hymnal page for one song:
-
-- the full page (title, tune name, meter, attributions)
-- a close-up of the fine print under or beside the score, which is where
-  the copyright and administrator usually live
-- the hymnal's title and copyright pages, **once per hymnal**
-
-### What the agent does
-
-Edit `lilypond/songs/<song>/<song>.ly` directly, filling in `composer`,
-`poet`, `meter`, `tags`, and a `\header { copyright = "..." }` block when
-a notice is present. Then commit with `scripts/song-intake.sh transcribe`,
-which enforces the message format below.
-
-Rules:
+Edit `lilypond/songs/<song>/<song>.ly`: `composer`, `poet`, `meter`,
+`tags`, and a `\header { copyright = "..." }` block when a notice is
+present.
 
 1. **Transcribe, do not recall.** Every value must be visible in a photo.
    Outside knowledge goes in the commit message, never in a field.
-2. **Null over guess.** Leave a field alone rather than filling it with a
-   plausible value. A gap costs a minute of review; a wrong value can
+2. **Null over guess.** A gap costs a minute of review; a wrong value can
    survive for years.
-3. **Quote the copyright notice verbatim**, symbol, years, holder, and any
-   "admin." clause.
-4. **Say what you changed to the music.** Hand fixes to the generated
-   notes and lyrics belong in this commit alongside the metadata, but the
-   message has to name them and say why the page justifies each one. The
-   script no longer refuses a diff that touches the music, so the commit
-   message is the only record that a change was deliberate.
+3. **Quote the copyright notice verbatim** - symbol, years, holder, and
+   any "admin." clause.
+4. **Say what you changed to the music.** Hand fixes belong in the commit
+   alongside the metadata, but the message must name them and say why the
+   page justifies each one. Nothing refuses a diff that touches the music,
+   so the message is the only record that a change was deliberate.
 
-### Structural fixes the agent can make
+### Run the checkers
 
-The converter reads notes and syllables, not musical intent. It gets the
-*shape* of a song wrong in ways an agent can often recognise from the
-photo and fix, because `docs/how-to-new-song.md` has a worked example of
-each. Read its appendix table before deciding something is broken.
+    scripts/find-tied-lyrics.py .convert-queue/xml/<song>.xml
+    scripts/find-broken-beams.py lilypond/songs/<song>/*.ly
 
-Common cases, and the song that demonstrates the fix:
+Both report line numbers and skip what is already correct; fix what they
+flag. Two things neither script knows:
+
+- **`find-tied-lyrics.py` reads the XML, not the `.ly`**, so it keeps
+  firing after you fix the `.ly`. It cannot confirm the fix landed - check
+  the engraving.
+- **A beam report spanning many notes across several measures is the known
+  positional desync**, not a real finding. Verify against the engraving
+  before adding `\pa`/`\pt`.
+
+The fixes themselves: a tie whose stop-note carries lyric text becomes
+`X\( X\)` (phrasing slur, which lyrics ignore) plus a `_` in each holding
+verse. A regular slur `( )` is wrong - it makes *every* verse skip. For
+beams, mark one voice only, and always close with `\pt` so the following
+notes go back to merging into chords. Worked examples are in
+`docs/how-to-new-song.md`; read its appendix table before deciding
+something is broken.
+
+### Structural fixes
+
+The converter reads notes and syllables, not musical intent.
 
 | The converter did this | Actually | Example |
 |---|---|---|
-| Emitted N verses | Verses span two staff systems (call-and-response, leader/all) | `all-creatures-worship-god-most-high`, `when-israel-was-in-egypts-land` |
-| Repeated a chorus in every verse | One chorus, tagged so the extractor sees it once | `when-israel-was-in-egypts-land` (`\SB`, `\SC`) |
+| Emitted N verses | Verses span two staff systems | `all-creatures-worship-god-most-high` |
+| Repeated a chorus in every verse | One chorus, tagged (`\SB`, `\SC`) | `when-israel-was-in-egypts-land` |
 | Split one staff into four parts | Song is unison or single-staff | `wakantanka-many-and-great` |
-| Gave both staves the same lyrics | Parts have different words | `warm-summer-sun`, `when-peace-like-a-river` |
-| Kept every verse in the score | Later verses belong in `extra_verses` below it | `religion-fit-to-last`, `we-shall-overcome` |
-| Fragmented a beam where the parts meet | Each part beams straight through | `blessed-assurance` (`\pa`, `\pt`) |
-
-**These land in the song's commit**, along with the metadata. A
-structural fix is still a different kind of claim from a transcription,
-so it needs its own reasoning — but that reasoning goes in the commit
-message rather than in a commit of its own. Say what the page shows and
-which example you followed, one bullet per fix.
-
-The converter also flags **syllabic mismatches** in the `.warn` file: a
-note where one verse sings a syllable and another holds through it (a lone
-gap in an otherwise-parallel verse). That is the signature of a per-verse
-melisma — verse 1 subdivides a beat that verses 2-3 hold. The fix is a
-phrasing slur `X\( X\)` (auto-dashed here) plus a `_` skip in each holding
-verse, following the `we-gather-together` m15 example and the how-to's
-"Dotted slur (lyrics ignore)" row. A regular slur `( )` is wrong here: it
-forces *every* verse to skip the note and shoves their syllables right.
-
-#### A tie that eats a syllable in every verse
-
-The `.warn` mismatch above is one signature of a per-verse melisma. Here
-is the other, and the converter does *not* flag it: the source ties two
-same-pitch notes **and still puts `<lyric>` text on the tie-stop note**
-for some verses.
-
-The two encodings contradict each other and the tie wins silently. A tie
-fuses the pair into one sustained note, so lyrics place exactly one
-syllable across it in *every* verse — including the verses whose own
-lyric text says otherwise — and each of them comes out a syllable short.
-`verify-xml-notes.py` reports 0.0% throughout, because the notes are
-right; only the singing is wrong.
-
-What the page prints there is a **dashed** curve — the hymnal's mark for
-"applies to some verses only." One verse holds across both notes; the
-others sing a new syllable on the second. `you-are-salt-for-the-earth`
-m1 beat 2 is the worked example: two F#4 eighths tied in the source, yet
-verses 2-4 put 'a'/'a'/'the' on the second one.
-
-The fix is the same as for a flagged mismatch — two separate notes under
-a **phrasing** slur, which lyrics ignore, plus a `_` in the holding
-verse:
-
-    %% wrong - one syllable here in all four verses
-    fs'4 fs'8~ fs'8 g'4
-
-    %% right - verse A holds, B-D sing a new syllable
-    fs'4 fs'8\( fs'8\) g'4
-
-A regular slur `( )` is equally wrong, for the reason given above: it
-makes *every* verse skip.
-
-To find them, before or after converting — it reads the source XML, so it
-works on an unconverted song:
-
-    scripts/find-tied-lyrics.py .convert-queue/xml/<song>.xml
-
-It reports only the contradiction (a tie-stop note carrying lyric text
-where verses disagree), not every tie. Because it reads the XML rather
-than the `.ly`, it keeps firing after you have fixed the `.ly` — it
-cannot confirm the fix landed, so check the engraving.
-
-Run it bare for the current backlog, which is a standing chore like the
-beams rather than something to finish — it skips songs already converted,
-since for those the `.ly` may be fixed and the XML would report a
-contradiction that no longer exists. Several songs carry it repeatedly
-(`the-lord-is-my-light` x5, `this-little-light-of-mine` x4,
-`the-first-noel-the-angel-did-say` x4). Deliberately no total is quoted
-here, for the same reason the song counts in Stage 4 are not: it would
-rot. Run the script during Stage 2 for the song at hand.
-
-#### Beams broken by part-combining
-
-`\partCombine` puts two parts on one staff and decides, note by note,
-whether to merge them into one voice. It merges where they sing the same
-pitch and splits where they do not.
-
-**Neither state is a problem on its own.** A run that stays split gets
-one beam per part; a run that stays merged gets one beam over the chord
-columns, which is what a hymnal prints where the parts move together.
-Most beamed runs are fine and want no annotation.
-
-The break happens when a run contains *both*. A merged note cannot share
-a beam with the split notes beside it, so the run fragments into flags
-and stubs. `blessed-assurance` opens with the case — soprano `fs' e' d'`
-against alto `d' d' d'`, split for two notes and merged on the third:
-
-    %% before - flag, then a two-note beam
-    \partial 4. fs'8 e'8 d'8 |
-
-    %% after - one beam per part
-    \partial 4. \pa fs'8 e'8 d'8 \pt |
-
-`\pa` (`\partCombineApart`) and `\pt` (`\partCombineAutomatic`) are
-defined in `hymn-common.ily`. Two things make this cheaper than it looks:
-
-- **Mark one voice, not both.** Annotating soprano alone is enough; alto
-  needs no matching marks.
-- **`\pt` matters as much as `\pa`.** It hands the following notes back
-  to automatic, so the dotted halves after the run still merge into
-  chords. Applying `\partCombineApart` to a whole part instead — or to
-  the `\partCombine` call in `hymn-common.ily` — fixes the beams and
-  breaks every chord in the song. It was tried; do not retry it.
-
-To find them:
-
-    scripts/find-broken-beams.py lilypond/songs/<song>/*.ly
-
-It reports only the mixed runs, skipping both the uniform ones and any
-already wrapped in `\pa`, and prints its own totals — run it without a
-song argument for the current backlog. Roughly one beamed run in four
-needs the annotation, and about a third of songs have at least one; the
-backlog grows with the corpus, so treat it as a standing chore rather
-than something to finish. Check the render against the photo before
-wrapping: the script finds what LilyPond will fragment, not what the
-hymnal disagrees with.
-
-This is engraving only — `\pa`/`\pt` emit no notes, and
-`verify-xml-notes.py` strips them, so the error rate should not move.
-Fold it into the same formatting commit as `\break` placement.
+| Gave both staves the same lyrics | Parts have different words | `when-peace-like-a-river` |
+| Kept every verse in the score | Later verses belong in `extra_verses` | `we-shall-overcome` |
+| Fragmented a beam where parts meet | Each part beams through | `blessed-assurance` |
 
 **Where to stop.** Fix structure the photo settles: verse boundaries,
-unison vs. harmony markings, which staff carries which words. Do *not*
-"fix" notes that merely look odd — that is the audio pass's job, and the
-converter's divisi bugs produce parts that are wrong in ways no amount of
-staring at the page reveals.
+unison vs. harmony, which staff carries which words. Do *not* "fix" notes
+that merely look odd - the converter's divisi bugs produce parts that are
+wrong in ways no amount of staring at the page reveals.
 
-#### Barcheck warnings: two different animals
-
-The old advice was "report the count, never edit rhythms to silence
-them." That is right for the first kind and wrong for the second, and
-conflating them cost real time.
+### Barcheck warnings are two different animals
 
 **Leave alone** a measure that is short or long because you disagree with
-the converter's *reading* of a rhythm. Silencing that by editing durations
-is how a wrong note becomes a permanent wrong note.
+the converter's *reading* of a rhythm. Editing durations to silence it is
+how a wrong note becomes a permanent wrong note.
 
-**Do investigate** a warning caused by the converter dropping something
-outright, because the photo does settle these and they are common:
+**Do investigate** a warning from the converter dropping something
+outright - dropped rests (non-uniformly across voices), a dropped measure
+where the source had a tie, an over-long chord duration. The photo settles
+these.
 
-- **Dropped rests**, and non-uniformly across voices — one part comes up
-  short while the others scan.
-- **A dropped measure** where the source content was a tie.
-- **An over-long chord duration**, which pushes the bar past its meter.
-
-Always check whether the raw conversion already produced the warning
-before assuming your edit caused it:
+Check whether the raw conversion already produced the warning before
+assuming your edit caused it:
 
     git show <the start commit> -- <the .ly>
 
-Note that `verify-xml-notes.py` reports 0.0% straight through every one of
-these, so a clean error rate is not evidence the measure is intact.
+`verify-xml-notes.py` reports 0.0% straight through every one of these, so
+a clean error rate is not evidence the measure is intact.
 
 ### The commit message carries the confidence notes
 
-This is where uncertainty lives - not in a sidecar file, because it
-belongs with the change it describes and survives in the history:
-
-    Add metadata for <song> from <hymnal>, p.<n>
+    Add song "<song>" from <hymnal>, p.<n>
 
     Copyright-Status: copyrighted | public-domain | unknown | mixed
     Copyright-Notice: <verbatim, or "none visible">
@@ -317,24 +143,24 @@ belongs with the change it describes and survives in the history:
     Copyright-Reasoning: <dates and why>
 
     Confidence: composer=low, meter=high
-    Uncertain: the composer's death year is illegible; read as 1­923 but
-      could be 1928. Meter is not printed; inferred from the syllable
-      count and marked low.
+    Uncertain: composer's death year illegible; read as 1923, could be 1928
     Source: photos IMG_4471-4473
 
-`Copyright-Status` is machine-read by the publish gate. The prose lines
-are for you — with one exception.
+`Copyright-Status` is machine-read by the publish gate. Two traps:
 
-**`Copyright-Notice` has a magic value.** `publish --public` refuses when
-that line has content that is not literally `none visible`. So on a song
-with no notice, write exactly that. Writing `(none)`, `n/a` or `-` reads
-fine to a human but blocks the publish, and the refusal says *"a copyright
-notice is recorded (none)"* — which sounds like the opposite of what
-happened, and sent me looking at the wrong thing for a while. Omitting the
-line entirely also passes, but say `none visible` instead: it records that
-you looked.
+- **`Copyright-Notice` has a magic value.** `--public` refuses when that
+  line holds anything other than literally `none visible`. `(none)`, `n/a`
+  and `-` all block the publish, and the refusal reads *"a copyright
+  notice is recorded (none)"*, which sounds like the opposite of what
+  happened.
+- **`Copyright-Reasoning` may not argue from a missing notice.** The gate
+  greps the field for no/without/absent/missing near "notice" and rejects
+  it, including in a subordinate clause. Say "prints attribution only" and
+  cite dates.
 
-### Copyright determination
+---
+
+## Copyright determination
 
 | Status | Meaning | Consequence |
 |---|---|---|
@@ -357,381 +183,167 @@ Applied in order:
 
 **The bias is one-directional.** `copyrighted`, `unknown` and `mixed` all
 route to private, which is the safe outcome. Only positive dated evidence
-sends a song public, so an unsure agent costs you nothing.
+sends a song public, so an unsure agent costs nothing.
+
+A copyrighted song is a **normal outcome, not a decision point** - it
+publishes to `main` only and reaches the private host without ever
+touching `public-main`. Findings already worked out are recorded in
+`scripts/queue-copyright-notes.txt` so they are not re-derived; a song's
+absence from that file means nobody has checked it, not that it is clear.
 
 ---
 
-## Stage 3 - Your inspection
+## Your inspection
 
-    scripts/song-intake.sh review <song-name>
+`finish` stops with the render on disk. Check it before `--go`.
 
-Shows the song's commit message, the confidence notes, the header fields
-it set, and any converter warnings. The commit carries the whole song, so
-`review` prints the metadata fields rather than the full diff — use the
-visual pass below to check the music.
-
-### Visual pass
-
-    scripts/convert-queue.sh review <song-name>
-
-**This opens whatever PDF is on disk; it does not rebuild first.** After
-editing the `.ly` you can spend a full pass reviewing the previous render
-and conclude the fix did not take. Regenerate before reviewing if you have
-touched the source since the last build.
+    scripts/song-intake.sh listen <song>     # the audio pass
 
 - [ ] Title, key signature, time signature
 - [ ] Note accuracy, **especially alto and tenor** - the converter is
       weakest in inner voices
 - [ ] Verse count, and verse text under the right notes
-- [ ] Every verse has a syllable under each note the page gives one (a
-      verse that quietly loses one usually means a tie where the page
-      draws a dashed curve — see "A tie that eats a syllable")
+- [ ] Every verse has a syllable under each note the page gives one
 - [ ] Repeats, endings, fermatas, chord symbols
 - [ ] Attribution lines read as the hymnal prints them
-- [ ] Line breaks fall where the hymnal's do, and beams run one per part
-      (a lone flag next to a short beam means the parts merged
-      mid-run — see "Beams broken by part-combining")
-
-### Auditory pass
-
-    scripts/song-intake.sh listen <song-name>
-
-- [ ] Melody sounds like the hymn you know
-- [ ] No part leaps oddly (usually a dropped or misassigned note)
-- [ ] Cadences are clean, phrase lengths feel right
+- [ ] Line breaks fall where the hymnal's do
+- [ ] Melody sounds like the hymn you know; no part leaps oddly
 
 The converter's known weak spot is divisi passages, which produce parts
 that look plausible but sound wrong. **The listen step is what catches
-this**, so do not skip it.
+this.**
 
-### If something is wrong
+If something is wrong:
 
-    git commit --amend                     # fix the message in place
-    scripts/song-intake.sh transcribe <song>  # re-transcribe; amends, does not stack
-    git branch -D intake/<song>            # abandon entirely
+    scripts/song-intake.sh transcribe <song>   # re-run; squashes, does not stack
+    git branch -D intake/<song>                # abandon entirely
 
-There is one commit now, so `git reset --hard HEAD~1` drops the **whole
-song**, conversion included, not just the metadata. To redo the metadata,
-edit the `.ly` and run `transcribe` again.
+There is one commit, so `git reset --hard HEAD~1` drops the **whole
+song**, conversion included.
 
 ---
 
-## Stage 4 - Publish
+## What `finish` does
 
-    scripts/song-intake.sh publish <song-name> [--public]
+1. `transcribe` - folds the metadata into the song's commit, squashing the
+   branch to one commit. Validates `Copyright-Status`, and for
+   `public-domain` requires a four-digit date and no missing-notice
+   argument.
+2. `publish` - refuses unless the `.ly` compiles, no placeholder metadata
+   remains, `Copyright-Status` is present and not `unknown`, and the
+   branch carries no other song's files. `public-domain` merges into
+   `public-main` first, then the song's files are copied into `main`;
+   anything else touches `main` only.
+3. `republish-all.sh` on each branch the song landed on.
 
-Refuses unless:
+Then it stops. `--go` re-checks the copyright invariant against the live
+tree and pushes both branches.
 
-1. The branch is `intake/<song>` and carries the song's commit
-2. The `.ly` compiles
-3. No placeholder metadata remains
-4. `Copyright-Status` is present and is not `unknown`
+**Only the branch you forked from can receive a real merge.**
+`intake/<song>` forks from `public-main`, so `git merge --no-ff` there
+carries nothing else. Relative to `main` the merge base is `public-main`'s
+own ancient base, so a merge would replay ~1700 files including the 1400+
+generated assets each branch keeps in a different directory. `main` takes
+the song by file copy instead.
 
-**Public first, then `main`.** With `--public` on an eligible song the
-branch is merged into `public-main`, checked, and then the song's files
-are taken into `main`. Without it, only `main` is touched and
-`public-main` never sees the song. Either way `main` ends up a superset of
-`public-main`.
-
-Promotion to `public-main` needs **both** `Copyright-Status: public-domain`
-**and** an explicit `--public`. Every precondition is checked before
-anything is merged, so a refusal never leaves a half-finished publish
-behind, and after the public merge the script re-greps the whole tree for
-a copyright field - rolling the merge back if one appears, which catches a
-mislabelled song that cleared the earlier gates.
-
-### Why one side merges and the other copies
-
-Only the branch you forked from can receive a real merge.
-
-`intake/<song>` forks from `public-main`, so relative to `public-main` it
-differs by exactly this song and `git merge --no-ff` carries nothing else.
-Relative to `main` it is a different story: the branch's merge base with
-`main` is `public-main`'s own ancient base, `db622afa`, so a merge would
-replay every file the two branches disagree about - around 1700, including
-the 1400+ generated assets each keeps in a different directory for a
-different host. That is the wholesale cross-branch merge forbidden below,
-arrived at from the happy path. Publishing `when-jesus-wept` hit it as a
-rename conflict across the whole of `docs/local-lilypond-outputs/`.
-
-So `main` takes the song by file copy:
-
-    git checkout "$branch" -- "lilypond/songs/$song"
-
-This is inherent, not a wart. The two branches cannot share a recent
-ancestor while their `docs/` layouts are dictated by different hosts, and
-the fork point decides which side gets the honest merge. It used to be
-`main`; it is now `public-main`. The copy always guards the other side,
-and the stray-song check above is what keeps it honest either way.
-
-The invariant to protect: **no `.ly` on `public-main` carries a copyright
-field.** `main` is a superset and does carry them.
-
-To check it at any time:
+**The invariant: no `.ly` on `public-main` carries a copyright field.**
+`main` is a superset and does carry them.
 
     scripts/song-intake.sh check
 
-It prints both song counts, how many on `main` carry a copyright field,
-whether the shared toolchain has drifted, and then the invariant itself.
-It exits non-zero on a leak, so it works in a script.
+Prints both song counts, how many on `main` carry a copyright field,
+whether the shared toolchain has drifted, and the invariant itself. Exits
+non-zero on a leak. Deliberately no counts are quoted in this document:
+they rotted before, and a reader could not tell a real leak from a stale
+sentence.
 
-Deliberately no counts are quoted here. They used to be, and they rotted:
-once the sentence said 146/127/12 and the tree said 177/140/30, a reader
-could not tell a real leak from a stale doc — which is the one distinction
-this section exists to make. Derive them; do not memorise them.
+Two things the grep has to get right, both handled by `check`: the field
+is indented inside `\header { }`, so anchoring to the line start finds
+zero matches on both branches and looks like a pass; and
+`hymn-of-breaking-strain` discusses copyright in a `%%` comment, so
+comment lines must be excluded.
 
-Two things the grep has to get right, both of which have caught me, and
-both of which `check` already handles:
+### Publishing source is not publishing a song
 
-- The field is indented inside `\header { }`, so anchoring to the start of
-  the line finds zero matches on *both* branches and looks like a pass.
-- `hymn-of-breaking-strain` discusses copyright in a `%%` comment, so the
-  pattern must exclude comment lines or it reports a leak that is not one.
+`publish` commits the `.ly` and nothing else. Until `republish-all.sh`
+runs, the song is invisible on hymnsinger.com - not broken-looking, simply
+absent. `finish` runs it for you; the warning exists for when the stages
+are run by hand.
 
-Nothing is pushed. Both merges are left for you to review and push.
+The assets cannot ride along on the intake branch: the two branches keep
+them in different places, so one branch cannot satisfy both. `docs/`
+assets are load-bearing, not build clutter - Pages does not run LilyPond,
+so an asset that is not committed does not exist to a visitor.
 
-Private-only is also the resting state for songs that are probably public
-domain but unconfirmed, and several sit on `main` that way. Not being
-public is not a judgement; it is the default.
+`generate-all-outputs.sh` **takes no song argument** - it globs the whole
+tree and ignores a name passed to it silently. Use it bare. It decides
+"up to date" by content, not mtime: it fingerprints each `.ly` together
+with the files it `\include`s. The older mtime test is what produced
+~200-file diffs of identical-but-for-the-date PDFs, because `git checkout`
+rewrites the mtime of every file that differs between branches.
 
----
-
-## Stage 5 - Generate the site assets
-
-**`publish` ships source, not a song on the site.** It commits the `.ly`
-and nothing else. Until you run this stage the song is invisible on
-hymnsinger.com - not broken-looking, simply absent.
-
-    scripts/republish-all.sh
-
-This regenerates outputs, rebuilds the listing and index pages, and
-commits `docs/`. It does not push - review, then push the branch you are
-on.
-
-**Run it once per branch the song landed on.** A `--public` song is now on
-both, and the two branches build their assets into different directories
-for different hosts, so generating on one does nothing for the other:
-
-    git checkout public-main && scripts/republish-all.sh
-    git push public-origin public-main:main
-
-    git checkout main && scripts/republish-all.sh
-    git push origin main
-
-A private song is only on `main`, so only the second pair applies.
-
-The script is incremental, so the second run normally builds only the new
-song.
-
-**`generate-all-outputs.sh` takes no song argument.** It globs the whole
-tree, and a name passed to it is ignored silently rather than rejected —
-so `generate-all-outputs.sh <song>` looks targeted and rebuilds
-everything. Use it bare, and let the fingerprinting below decide what is
-stale.
-
-It decides "up to date" by **content, not
-mtime**: it fingerprints each `.ly` together with the files it
-`\include`s and compares that against a stored `.inputhash`. The older
-mtime test (`.mp3` newer than `.ly`) is what produced the ~200-file diffs
-of identical-but-for-the-date PDFs, because `git checkout` rewrites the
-mtime of every file that differs between the branches.
-
-The exception is a change to a shared `lilypond/lib/*.ily`, which
-legitimately invalidates every song that includes it - usually all of
-them. That is a 20-30 minute rebuild and a reason to batch lib edits; see
-[Batch changes to `lilypond/lib/`](#batch-changes-to-lilypondlib---each-one-costs-a-full-rebuild).
-
-### Why publish does not do this
-
-The `lilypond` call in Stage 4 is a **gate, not a build** - it compiles to
-`/dev/null` to prove the file is valid, and discards the result.
-
-And the intake branch only ever contains the `.ly`: Stage 1 commits the
-source and Stage 2 folds the metadata into that commit, and neither
-generates anything under `docs/`. So there is nothing for the merge to
-carry.
-
-The generated assets could not ride along even in principle, because the
-two branches keep them in different places - `docs/local-lilypond-outputs/`
-on `public-main`, `docs/_site/local-lilypond-outputs/` on `main`. A single
-intake branch cannot satisfy both. See
-[Keeping `main` and `public-main` in sync](#keeping-main-and-public-main-in-sync)
-for why those layouts are load-bearing rather than accidental.
-
-### What a published-but-not-generated song is missing
-
-`we-gather-together` was published 2026-07 and is the worked example -
-it reached `public-main` with only:
-
-    lilypond/songs/we-gather-together/we-gather-together.ly
-
-and none of:
-
-    docs/local-lilypond-outputs/we-gather-together-*.{pdf,png,mp3,odp}
-    docs/listing/we-gather-together.md
-    docs/_data/songs/we-gather-together.json
-
-The listing and `_data` files are the ones that matter most. Jekyll builds
-the song's page from them, so without them there is no page to link to -
-the missing PDFs and MP3s are a second-order problem.
-
-`docs/` assets are load-bearing, not build clutter: hymnsinger.com is a
-GitHub Pages site served from this repo, and Pages does not run LilyPond.
-An asset that is not committed does not exist to a visitor. The
-`.gitignore` rules for `*.pdf`/`*.png`/`*.mp3`/`*.midi` are scoped to
-`/lilypond/**`, the source scratch tree; `docs/**` outputs are tracked on
-purpose.
-
-### Checking
-
-`publish` warns you at the end when a song has no `docs/listing/<song>.md`
-and `docs/_data/songs/<song>.json`, so the gap announces itself rather
-than waiting to be noticed on the site.
-
-It keys on those two files only, deliberately not on
-`docs/local-lilypond-outputs/`: that directory exists on `public-main`
-but not on `main`, so checking it from `main` would warn on every song
-and train you to ignore the warning.
-
-Running it after a batch of publishes is cheap and safe, for the
-incremental reason noted above.
-
-To find songs that have source but no page:
-
-    comm -13 \
-      <(ls docs/listing/*.md | xargs -n1 basename | sed 's/\.md$//' | sort) \
-      <(ls -d lilypond/songs/*/ | xargs -n1 basename | sort)
-
-Note `scripts/publish-song.sh` is the **older, pre-protocol** path. It
-built `docs/` first and refused to commit without
-`docs/listing/<song>.md` and `docs/_data/songs/<song>.json` - the check
-that has no equivalent in the intake flow. It also pushes directly and
-knows nothing about copyright status, so do not use it for intake songs.
+`scripts/publish-song.sh` is the **older, pre-protocol** path. It pushes
+directly and knows nothing about copyright status - do not use it.
 
 ---
 
-## Keeping `main` and `public-main` in sync
+## Keeping the branches in sync
 
-The stages above move *songs* one at a time. Nothing in them moves a fix
-to a **script**, a layout, or this document - and the two branches share
-those files while carrying different content. This section is about that
-second kind of change.
-
-### The branches are not forks of each other
-
-Their merge base is `db622afa`, and they have never been reconciled
-wholesale. Treat them as two long-lived siblings that happen to share some
-files:
+The intake path moves *songs*. Nothing in it moves a fix to a script, a
+layout, or this document.
 
 |  | `main` | `public-main` |
 |---|---|---|
 | Remote | `origin` (private) | `public-origin` (public) |
-| Songs | a superset, incl. every copyrighted one | public domain only |
-| Served by | a private host with no build step | GitHub Pages, `build_type: legacy` |
-| Therefore commits | the **built** site, `docs/_site/` | **source**; Pages runs Jekyll |
-| Outputs live in | `docs/_site/local-lilypond-outputs/` | `docs/local-lilypond-outputs/` |
-| Listing page front matter | written whole by the parser | written whole by the parser |
+| Songs | superset, incl. every copyrighted one | public domain only |
+| Served by | private host, no build step | GitHub Pages, `build_type: legacy` |
+| Commits | the **built** site, `docs/_site/` | **source**; Pages runs Jekyll |
+| Outputs in | `docs/_site/local-lilypond-outputs/` | `docs/local-lilypond-outputs/` |
 
-### The differing layouts are required, not drift
+**The differing layouts are required, not drift. Do not "consolidate"
+them.** The private host serves `main` with no build step, so `main` must
+commit the pre-built `docs/_site/`; its `_config.yml` carries
+`keep_files: [local-lilypond-outputs]` so a local Jekyll run does not wipe
+the assets sitting inside `_site`. Pages builds `public-main` itself and
+treats `_site` as its own output, rebuilding it - so anything committed
+there is discarded, and the assets must live outside it. Moving either
+branch to the other's layout takes that site down.
 
-This is the row that looks like a mess and is not. **Do not "consolidate"
-these.** Each branch's layout is what its host demands:
-
-- The private host serves `main` with no build step of its own, so `main`
-  has to commit the pre-built `docs/_site/`. Its `_config.yml` carries
-  `keep_files: [local-lilypond-outputs]` precisely so a local Jekyll run
-  does not wipe the assets sitting inside `_site`.
-- GitHub Pages builds `public-main` itself (`source: main /docs`,
-  `build_type: legacy`). Jekyll treats `_site` as *its own output* and
-  rebuilds it, so anything committed there is discarded. The assets have
-  to live outside it, at `docs/local-lilypond-outputs/`, which Pages copies
-  through and serves at `/local-lilypond-outputs/`.
-
-Moving `public-main` to `main`'s layout would 404 every asset on
-hymnsinger.com. Moving `main` to `public-main`'s would take the private
-site down. There is no shared layout that satisfies both hosts.
-
-What this does cost: a script written against one branch's `docs/` path
-runs happily on the other and silently stages nothing. That is a real
-hazard - `republish-all.sh` sat broken on `main` for exactly this reason -
-so scripts that touch `docs/` should detect the directory rather than
-hardcode it.
+A script written against one branch's `docs/` path runs happily on the
+other and silently stages nothing - `republish-all.sh` sat broken on
+`main` for exactly this reason. Scripts touching `docs/` should detect the
+directory rather than hardcode it.
 
 ### Never merge `main` into `public-main`
 
-This is the prohibition the whole protocol exists to enforce, and it was
-previously only implied. A wholesale merge in that direction carries every
-copyrighted song across in one commit, to a public remote.
+This is the prohibition the whole protocol exists to enforce. A wholesale
+merge in that direction carries every copyrighted song across in one
+commit, to a public remote. There is no flag for it and no reviewed
+version of it.
 
-There is no flag for it and no reviewed version of it. Songs reach
-`public-main` only through Stage 4, from a branch forked from
-`public-main` that differs from it by one song.
-
-The other direction, `public-main` into `main`, carries no copyright risk,
-but it would drag `docs/local-lilypond-outputs/` (1536 files) onto `main`,
-where it is git-ignored and serves nothing. It is also how a
-`public-main`-shaped script arrived on `main` and sat broken. Port
-individual files instead.
+The other direction carries no copyright risk but drags 1536 ignored files
+onto `main`, and is how a `public-main`-shaped script once arrived on
+`main` and sat broken. Port individual files instead.
 
 ### Moving a shared fix across
 
-Cherry-pick when the file is genuinely identical on both sides:
+Cherry-pick when the file is genuinely identical on both sides; otherwise
+port by hand and test on the target branch. The test is not "did it run"
+but "did it reproduce the pages already committed" - run the generator and
+check that `git status` shows only what you meant to change.
 
-    git checkout public-main
-    git cherry-pick <sha>
+The **intake toolchain must stay byte-identical**; the authoritative list
+is `TOOLCHAIN_SHARED` in `scripts/song-intake.sh`, which is what the drift
+check reads. `start` runs whichever copy the intake branch inherited from
+`public-main`, so a fix made only on `main` is not the tool the next song
+runs. Both `finish` and `check` warn on drift without blocking.
 
-When it is not, **port the change by hand and test it on the target
-branch**. Copying `main`'s file wholesale is the tempting mistake, and the
-test is not "did it run" but "did it reproduce the pages already
-committed" - run the generator and check that `git status` shows only the
-files you meant to change.
+Host-specific scripts are *supposed* to differ - they encode a branch's
+`docs/` path or push target. `scripts/build.sh` exists on `main` only and
+deliberately: it ends in `jekyll build`, which writes the directory Pages
+discards.
 
-The page-generation pair is no longer in this category — as of 2026-07-28
-`generate-all-hymn-indexes.py` and `generate-all-hymn-pages.sh` are
-byte-identical on both branches, and `docs/_data/song-template.md` is
-gone. Worth knowing only for the failure it produced: a mismatched
-wrapper and parser truncated *every* listing page to a two-line stub,
-because the wrapper copied a template into place before the parser died.
-If `git status` ever shows a mass edit of `docs/listing/`,
-`git checkout -- docs/` restores it.
-
-To see which shared files have diverged and need the by-hand treatment,
-run the blob-hash comparison at the end of this section rather than
-trusting a list here — the membership changes.
-
-The stable part is *why* the current ones differ: they encode a
-branch's `docs/` output path or its push target. `generate-all-outputs.sh`
-writes to `docs/_site/local-lilypond-outputs/` on `main` and
-`docs/local-lilypond-outputs/` on `public-main`; `republish-all.sh` prints
-the push command for the branch it is on; `publish-song.sh` pushes to a
-different remote. Divergence there is not a bug to be closed. The question
-is only ever whether a given *fix* is missing from one side.
-
-`scripts/build.sh` exists on `main` only, and deliberately. It ends in
-`jekyll build`, which writes `docs/_site/` - the directory `main` commits
-and Pages discards. Having it on `public-main` would only invite
-committing a `_site` that must never be committed there. To regenerate
-listing pages on `public-main`, run `generate-all-hymn-pages.sh`, which is
-now the same script on both branches.
-
-The intake toolchain is the opposite case. Those scripts carry no
-host-specific paths and **must stay byte-identical**; the authoritative
-list is `TOOLCHAIN_SHARED` in `scripts/song-intake.sh`, which is also what
-the drift check reads, so there is one list rather than two that disagree.
-Stage 1 runs whichever copy the intake branch inherited from
-`public-main`; if the two drift, an intake branch runs a different tool
-than the one you last edited on `main`. Change them on one branch, then
-copy across verbatim.
-
-Both `publish` and `check` compare them and warn. Publish is the moment
-the gap is easiest to create and hardest to notice — it merges the intake
-branch into `public-main` but copies only the song across to `main`, so a
-tooling fix made on the intake branch lands on one branch and not the
-other. The warning does not block the publish; it tells you a port is
-owed. Host-specific scripts are deliberately excluded, since those are
-supposed to differ.
-
-To see the full state of the split, including files outside that list:
+To see the full split:
 
     for f in $(comm -12 \
         <(git ls-tree --name-only main -- scripts/ | sort) \
@@ -741,80 +353,34 @@ To see the full state of the split, including files outside that list:
     done
 
 Compare blob hashes, not `git diff main public-main -- <path>`, which
-reports paths as differing when they are byte-identical.
+reports byte-identical paths as differing.
 
-### Batch changes to `lilypond/lib/` - each one costs a full rebuild
+### Batch changes to `lilypond/lib/`
 
-**A one-line edit to a shared `.ily` rebuilds every song on the branch.**
-Not because anything is broken - because `generate-all-outputs.sh` decides
-"up to date" by hashing each `.ly` *together with the files it
-`\include`s*, so that editing a lib still invalidates the songs that use
-it. Four lib files are included by essentially every song:
+**A one-line edit to a shared `.ily` rebuilds every song on the branch**,
+because the fingerprint hashes each `.ly` together with its includes.
+`hymn-common.ily`, `header.ily`, `all-notation-outputs.ily` and
+`midi-output.ily` are included by essentially every song. Budget **20-30
+minutes per branch**.
 
-    hymn-common.ily   all-notation-outputs.ily
-    header.ily        midi-output.ily
+The cost is per branch, not per change, and does not compound - two lib
+edits in one republish cost the same as one. So collect lib changes and
+apply them together, do the song work first, and batch the second branch's
+republish with whatever else is pending there.
 
-Touch any of them and essentially every song on the branch gets a new
-fingerprint and re-renders. That is ~7.4s per song for the PDF and 400dpi
-PNG passes alone, before the ODP build and the MIDI→MP3, so budget
-**20-30 minutes per branch** and expect that to grow with the corpus.
+Do not narrow the fingerprint to the `.ly` alone; it would serve stale
+output after a lib change. LilyPond's `-ddump-signatures` is not a way out
+either: it missed a real change (`tradStaffZoom` 1 → 1.05 altered the PDFs
+while every signature stayed identical) and costs more than just rendering
+the PDF.
 
-The cost is per branch, not per change, and it does not compound: two lib
-edits in one republish cost the same as one. So:
+### The public branch drifts from its own remote
 
-- **Collect lib changes and apply them together.** Adding `\SH` on Monday
-  and a beam tweak on Tuesday is two full rebuilds; the same two edits in
-  one sitting is one.
-- **Do the song work first.** A lib change plus a new song is one rebuild
-  if the lib commit lands before you republish, two if after.
-- **Remember the second branch.** Porting a lib fix across leaves the
-  other branch needing its own full republish. Batch that with whatever
-  else is pending there rather than paying it immediately - the branches
-  do not have to be regenerated at the same time, only before each is
-  pushed.
-
-Do not try to dodge this by narrowing the fingerprint to the `.ly` alone.
-The script's own comment explains why: it would serve stale output after
-a lib change, which is worse than rebuilding too often. The mtime-based
-test it replaced is what produced the ~200-file diffs of
-identical-but-for-the-date PDFs.
-
-LilyPond's `-ddump-signatures` looks like a way out - it dumps grob
-positions and genuinely ignores unused definitions - but it fails both
-tests that matter. It missed a real change (`tradStaffZoom` 1 → 1.05
-altered the PDFs while every signature file stayed byte-identical,
-because signatures do not capture staff magnification), and it costs
-2765ms per song against 2472ms to just render the PDF. It is a
-regression-testing tool, not a build cache.
-
-### The public branch also drifts from its own remote
-
-`public-main` tracks `public-origin/main`. It has diverged before - the
-now-deleted `../hymn-singer` working copy published to that remote
-independently, leaving `public-main` 1 ahead and 9 behind. Before
+`public-main` tracks `public-origin/main` and has diverged before. Before
 publishing:
 
     git fetch public-origin
     git log --oneline --left-right public-main...public-origin/main
-
-Merge and push if it has drifted. `../hymn-singer` is gone, so the usual
-cause is fixed, but a second clone would recreate it.
-
-### A worked example
-
-`we-gather-together` reached `public-main` in 2026-07 and still had no
-page, for a reason that had nothing to do with Stage 5. Its header uses
-
-    poet = \twoLineSmallText \markup { "Text:" ... }
-
-and `public-main`'s parser matched only the non-`\markup` spellings, so
-`get_poet_info` raised and `generate-all-hymn-pages.sh` stopped. `main`'s
-parser had learned that form; `public-main`'s never did, because no stage
-carries a parser fix across. Fixed in `683d740b`.
-
-The lesson is the shape, not the bug: a song can clear every gate in
-Stages 1-5 and still be invisible because the *tooling* on the two
-branches is not the same.
 
 ---
 
@@ -830,40 +396,35 @@ you can read one at a time. Every path where it is uncertain leads to
 private, and going public needs a positive determination plus an explicit
 flag from you.
 
-Forking intake from `public-main` serves the same end, though it reads
-backwards at first. The branch that a song is built on now contains
-*only* public-domain material, so the question at publish time is whether
-to merge it - not whether the merge would smuggle something along. The
-default is still private: no `--public`, no public merge, and a
-copyrighted song's commits never enter `public-main`'s history at all.
+A song can clear every gate and still be invisible because the *tooling*
+on the two branches is not the same. `we-gather-together` reached
+`public-main` with no page because `public-main`'s parser had never
+learned the `\twoLineSmallText \markup` spelling its header used, and the
+page generator stopped. Fixed in `683d740b`; the lesson is the shape, not
+the bug.
 
 ---
 
 ## Resuming the photo indexing
 
-Four agents indexed `~/Downloads/hymnal_a_worship_book` in batches
-(file lists were in `/tmp/hymnal-batches/batch{1..4}.txt`, 81 photos each,
-in sorted filename order).
-
-If `.hymnal-index.json` is missing, restore the committed snapshot:
+Four agents indexed `~/Downloads/hymnal_a_worship_book` in batches. If
+`.hymnal-index.json` is missing, restore the committed snapshot:
 
     cp docs/hymnal-index/hymnal-index.json .hymnal-index.json
 
-Then:
-
     python3 scripts/index-hymnal-photos.py verify        # resolve conflicts
-    python3 scripts/index-hymnal-photos.py list --unindexed   # what is left
+    python3 scripts/index-hymnal-photos.py list --unindexed
     python3 scripts/index-hymnal-photos.py plan          # review renames
-    python3 scripts/index-hymnal-photos.py apply         # rename in place
+    python3 scripts/index-hymnal-photos.py apply
 
 `apply` refuses to run while `verify` fails, never overwrites, and is
-idempotent, so it is safe to re-run.
+idempotent.
 
 **Conflicts are usually bleed-through.** These pages are thin enough that
-the next leaf's hymn number shows faintly at the top corner. IMG_3022 was
-recorded as 221-222 for that reason when it shows only 221. When two
+the next leaf's hymn number shows faintly at the top corner. When two
 photos claim one hymn, open both and keep the one where the number sits
 beside a title.
 
-The prompt for indexing agents is `docs/agent-prompt-song-intake.md`
-(Prompt A).
+The photos are stored renamed as `h<page>__IMG_*`, so grep the directory
+by zero-padded page number rather than trusting the older index entries.
+The prompt for indexing agents is `docs/agent-prompt-song-intake.md`.
