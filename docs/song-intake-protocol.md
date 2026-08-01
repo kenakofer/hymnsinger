@@ -62,13 +62,20 @@ Edit `lilypond/songs/<song>/<song>.ly`: `composer`, `poet`, `meter`,
 `tags`, and a `\header { copyright = "..." }` block when a notice is
 present.
 
-1. **Transcribe, do not recall.** Every value must be visible in a photo.
-   Outside knowledge goes in the commit message, never in a field.
-2. **Null over guess.** A gap costs a minute of review; a wrong value can
+1. **Transcribe, do not recall.** Every text value must be visible in a
+   photo. Outside knowledge goes in the commit message, never in a field.
+2. **Never read notes from the image.** Pitches, rhythms, ties and beaming
+   come from the MuseScore/MusicXML source, never from the photo - the
+   notes printed on the page may themselves be wrong, and the XML is what
+   the corpus is verified against. When a passage looks wrong or unclear,
+   dump the XML for those measures rather than zooming into the photo.
+   Words are the opposite: lyrics, title, attributions, meter, tune name
+   and the copyright notice are read from the photo and only from it.
+3. **Null over guess.** A gap costs a minute of review; a wrong value can
    survive for years.
-3. **Quote the copyright notice verbatim** - symbol, years, holder, and
+4. **Quote the copyright notice verbatim** - symbol, years, holder, and
    any "admin." clause.
-4. **Say what you changed to the music.** Hand fixes belong in the commit
+5. **Say what you changed to the music.** Hand fixes belong in the commit
    alongside the metadata, but the message must name them and say why the
    page justifies each one. Nothing refuses a diff that touches the music,
    so the message is the only record that a change was deliberate.
@@ -109,10 +116,13 @@ The converter reads notes and syllables, not musical intent.
 | Kept every verse in the score | Later verses belong in `extra_verses` | `we-shall-overcome` |
 | Fragmented a beam where parts meet | Each part beams through | `blessed-assurance` |
 
-**Where to stop.** Fix structure the photo settles: verse boundaries,
-unison vs. harmony, which staff carries which words. Do *not* "fix" notes
-that merely look odd - the converter's divisi bugs produce parts that are
-wrong in ways no amount of staring at the page reveals.
+**Where to stop.** The photo settles *structure* the XML cannot express:
+verse boundaries, unison vs. harmony, which staff carries which words,
+where a system breaks, whether a second text line exists. It does not
+settle notes. Do *not* "fix" a pitch or rhythm that merely looks odd on
+the page - check it against the XML, and if the two disagree the XML wins.
+The converter's divisi bugs produce parts that are wrong in ways no amount
+of staring at the page reveals.
 
 ### Barcheck warnings are two different animals
 
