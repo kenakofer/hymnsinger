@@ -45,7 +45,7 @@ Here are a list of common Lilypond tasks that are easy to forget, and an example
 | Single column lyrics at the end | We shall overcome |
 | Alternating Leader/All or Unison/Harmony | When Israel was in Egypt's land |
 | Chorus / Refrain lines condensed to one line without ruining the lyrics extractor | All creatures worship God most high |
-| Beam each part straight through where the parts meet mid-run (`\pa` ... `\pt`) | Blessed assurance |
+| Beam each part straight through where the parts meet mid-run (`\pa` ... `\pt` — Kenan applies these by hand; agents leave beaming alone) | Blessed assurance |
 | Hide verse numbers in first staff (e.g. songs starting with chorus) | All things bright and beautiful |
 | Fermatas (up and down facing) | All creatures worship God most high |
 | Alternate title | All creatures worship God most high |

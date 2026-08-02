@@ -95,16 +95,21 @@ flag. Two things neither script knows:
   firing after you fix the `.ly`. It cannot confirm the fix landed - check
   the engraving.
 - **A beam report spanning many notes across several measures is the known
-  positional desync**, not a real finding. Verify against the engraving
-  before adding `\pa`/`\pt`.
+  positional desync**, not a real finding.
 
 The fixes themselves: a tie whose stop-note carries lyric text becomes
 `X\( X\)` (phrasing slur, which lyrics ignore) plus a `_` in each holding
-verse. A regular slur `( )` is wrong - it makes *every* verse skip. For
-beams, mark one voice only, and always close with `\pt` so the following
-notes go back to merging into chords. Worked examples are in
-`docs/how-to-new-song.md`; read its appendix table before deciding
-something is broken.
+verse. A regular slur `( )` is wrong - it makes *every* verse skip.
+Worked examples are in `docs/how-to-new-song.md`; read its appendix table
+before deciding something is broken.
+
+**Do not write `\pa` / `\pt` (`\partCombineApart` /
+`\partCombineAutomatic`).** Report what `find-broken-beams.py` flags and
+leave the beaming alone - Kenan applies these by hand. Whether a passage
+needs them turns on conditions that are not worth trying to codify, and
+guessing produces inert markup at best: a whole song's melismas were once
+wrapped in them when rendering with and without was byte-identical,
+because nothing there had a beam to merge into.
 
 ### Structural fixes
 
