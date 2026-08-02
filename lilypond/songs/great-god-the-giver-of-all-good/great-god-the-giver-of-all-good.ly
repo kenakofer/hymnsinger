@@ -27,7 +27,8 @@ quarternoteTempo = 120
 \include "../../lib/header.ily"
 
 soprano = { \globalParts
-  \partial 4 e'8( f'8) | g'2 g'4 g'4( f'4) e'4 | a'2 a'4 g'2 b'8( c''8) | d''2 d''4 d''4( c''4) b'4 | c''2 e''4 d''2 d''4 | e''2 d''4 c''2 a'4 | g'2 e'4 d'2 e'8( f'8) | g'2 g'4 g'4( f'4) e'4 | a'2. b'2. | c''2.~ c''2
+  \partial 4 e'8( f'8) | g'2 g'4 g'4( f'4) e'4 | a'2 a'4 g'2 b'8( c''8) | d''2 d''4 d''4( c''4) b'4 | c''2 e''4 d''2 \bar "" \break
+  \partial 4 d''4 | e''2 d''4 c''2 a'4 | g'2 e'4 d'2 e'8( f'8) | g'2 g'4 g'4( f'4) e'4 | a'2. b'2. | c''2.~ c''2
 \bar "|."
 }
 alto = { \globalParts
@@ -47,12 +48,10 @@ songChords = \chords {
 
 verseA = \lyricmode {
 \l Great God, the giv -- er of all good,
-\l ac -- cept our thanks and bless this food.
+ac -- cept our thanks and bless this food.
 \l Grace, health, and strength to us af -- ford,
-\l through Je -- sus Christ, our ris -- en Lord.
+through Je -- sus Christ, our ris -- en Lord.
 }
-
-
 
 % Set up music-aligned verses. Change to the correct number
 \include "../../lib/1verse.ily"
