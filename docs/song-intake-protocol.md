@@ -295,8 +295,14 @@ with the files it `\include`s. The older mtime test is what produced
 ~200-file diffs of identical-but-for-the-date PDFs, because `git checkout`
 rewrites the mtime of every file that differs between branches.
 
-`scripts/publish-song.sh` is the **older, pre-protocol** path. It pushes
-directly and knows nothing about copyright status - do not use it.
+`scripts/publish-song.sh` was the **older, pre-protocol** path: it pushed
+directly and knew nothing about copyright status. It is deleted. The note
+survives because the name still turns up in old commits and transcripts -
+it is not a script to go looking for. On `main` it had additionally rotted
+into running the page generator inside an 18-month-old container image,
+whose baked-in `generate-all-hymn-indexes.py` predated the CHORUS/REFRAIN
+and comment-stripping fixes and rewrote a dozen songs' lyrics with raw
+`% CHORUS` markers before dying on an unrelated song.
 
 ---
 
