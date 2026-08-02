@@ -135,6 +135,7 @@ class Score:
         self._discover_voices(root)
         self._read_notes(root)
         self._fill_implied_parts()
+        self._spread_chord_slurs()
         self._detect_pickup()
         if self.time_sig is None:
             self.time_sig = (4, 4)
@@ -381,6 +382,100 @@ class Score:
             self.measures.append((measure_start, length, implicit))
             measure_start = measure_end
         return self
+
+    def _spread_chord_slurs(self):
+        """Give every part on a staff the slurs written on its chord root.
+
+        MusicXML writes a chord bottom-up and hangs the chord's notations on
+        its root, which is therefore always the LOWEST note. Across this
+        corpus that is absolute: 3621 chords are ordered low-to-high and
+        none the other way, and all 1490 slurs sit on a root, none on a
+        stacked note. So a slur that belongs to the upper voice arrives
+        attached to the lower one, and the parts land in alto and bass while
+        soprano and tenor never receive a slur at all.
+
+        MuseScore does record how many voices were slurred, by stacking that
+        many <slur> elements on the one root: 1209 roots carry a single slur,
+        278 carry two, 3 carry three. But the count is not worth reading,
+        because a melisma is sung by every voice on the staff - the held
+        syllable is the same syllable for all of them - so the answer is the
+        whole staff either way.
+
+        Spreading to the whole staff is also the only option that preserves
+        the engraving. \\partCombine merges the two parts of a staff into
+        chords; a slur present in just one of them forces the pair to split
+        into separate stems for that span, which is a visible and wrong
+        change to the notation. With the slur in both, the merge is
+        unaffected and the two identical curves render as one.
+        """
+        if not self.staff_parts:
+            return
+
+        # Work in terms of whole spans, not loose endpoints. Pair each part's
+        # own starts with its own stops by walking that part in time order,
+        # so a span is only ever (start tick, stop tick) for one real slur.
+        #
+        # Reconstructing spans by matching a start to "the next stop anywhere
+        # on the staff" is not good enough. Sources carry slurs that never
+        # reach a given part - one voice's phrase mark, a stop whose start
+        # sits in a part the converter routed elsewhere - and pairing across
+        # parts spread stops to voices that had received no start, leaving
+        # slur depth negative and the file unparseable.
+        def spans_of(part):
+            """(start, stop) pairs for the slurs already written in a part."""
+            ev = sorted((e for e in self.events
+                         if e.get('kind') == 'note' and e.get('part') == part),
+                        key=lambda e: e['tick'])
+            spans, open_ticks = [], []
+            for event in ev:
+                if event.get('slur_start'):
+                    open_ticks.append(event['tick'])
+                if event.get('slur_stop') and open_ticks:
+                    spans.append((open_ticks.pop(), event['tick']))
+            return spans
+
+        # A part may only receive a span it can actually carry: it needs a
+        # note starting at the start tick that ENDS at the stop tick, so the
+        # slur covers one real pair of its own notes. Testing onsets alone
+        # was not enough - a part holding one long note through the span also
+        # has an onset at the stop, from the overlapping clone
+        # _fill_implied_parts leaves behind. The emitter drops that clone as
+        # starting before the cursor, and the closing paren went with it.
+        onsets = collections.defaultdict(dict)
+        for event in self.events:
+            if event.get('kind') == 'note':
+                ends = onsets[event.get('part')].setdefault(event['tick'], set())
+                ends.add(event['tick'] + event['duration'])
+
+        spreadable = set()
+        for parts in self.staff_parts:
+            wanted = set()
+            for part in parts:
+                wanted.update(spans_of(part))
+            for start, stop in wanted:
+                for part in parts:
+                    ends = onsets[part].get(start)
+                    if ends and stop in ends:
+                        spreadable.add((part, start, 'start'))
+                        spreadable.add((part, stop, 'stop'))
+
+        spread = 0
+        for event in self.events:
+            if event.get('kind') != 'note':
+                continue
+            part = event.get('part')
+            if (part, event['tick'], 'start') in spreadable \
+                    and not event.get('slur_start'):
+                event['slur_start'] = True
+                spread += 1
+            if (part, event['tick'], 'stop') in spreadable \
+                    and not event.get('slur_stop'):
+                event['slur_stop'] = True
+                spread += 1
+        if spread:
+            self.warnings.append(
+                f'{spread} chord-root slur endpoints spread to stafffellows '
+                '(MusicXML hangs a chord\'s slurs on its lowest note)')
 
     def _fill_implied_parts(self):
         """Give a part its notes back where the source left them implied.
@@ -735,7 +830,47 @@ def render_part(score, part):
             out.append(text)
             cursor += ticks
             bar_to(cursor)
-    return ' '.join(out)
+    return ' '.join(_balance_slurs(out))
+
+
+def _balance_slurs(tokens):
+    """Drop slur parens that no longer have a partner in this part.
+
+    A slur endpoint can survive on the event while the note carrying it does
+    not reach the output: overlapping events are skipped as starting before
+    the cursor, and simultaneous ones are merged into a single chord token
+    that takes only the group's first opener. Either way the partner paren is
+    gone and LilyPond rejects the file outright, so the part is worth strictly
+    less than the same part with one slur missing.
+
+    This is deliberately a last-resort net rather than the primary fix. It
+    runs on the emitted tokens, which is the only place that knows what was
+    actually written, and it removes parens rather than inventing them: an
+    unpaired paren is a slur that was already lost, not one to guess at.
+    """
+    depth = 0
+    keep = []
+    for token in tokens:
+        # Closers first: ')' before any '(' in the same token closes an
+        # earlier slur, and a token can carry both, as in "c'4)( d'4".
+        for char in token:
+            if char == '(':
+                depth += 1
+            elif char == ')':
+                if depth > 0:
+                    depth -= 1
+                else:
+                    token = token.replace(')', '', 1)
+        keep.append(token)
+    if depth > 0:
+        # Unclosed openers: strip from the last one backwards.
+        for index in range(len(keep) - 1, -1, -1):
+            while depth > 0 and '(' in keep[index]:
+                keep[index] = ''.join(keep[index].rsplit('(', 1))
+                depth -= 1
+            if depth == 0:
+                break
+    return keep
 
 
 def render_chords(score):
