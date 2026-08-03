@@ -3,8 +3,8 @@
 \include "../../lib/hymn-common.ily"
 
 %% MANUAL INFO
-composer = \smallText \markup { "Music: African-American spiritual," \italic "Folk Songs..." "1907" }
-poet = \smallText \markup { "Text: African-American spiritual," \italic "Folk Songs..." "1907" }
+composer = \twoLineSmallText \markup { "Music: African-American spiritual," } \markup { \italic "Folk Songs of the American Negro," "1907" }
+poet = \twoLineSmallText \markup { "Text: African-American spiritual," } \markup { \italic "Folk Songs of the American Negro," "1907" }
 meter = \smallText "LORD, I WANT TO BE irregular"
 
 %arranger = \smallText "arr. Name, year"
