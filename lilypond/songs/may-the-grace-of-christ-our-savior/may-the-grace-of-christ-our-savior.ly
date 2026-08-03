@@ -27,7 +27,7 @@ quarternoteTempo = 150
 \include "../../lib/header.ily"
 
 soprano = { \globalParts
-  fs'2 fs'4 a'2 fs'4 | e'4( fs'4) g'4 g'4 fs'2 | a'2 a'4 fs'2 g'4 | fs'2 e'4 fs'2. | b'2 b'4 g'2 b'4 | d''2 b'4 b'4 a'2 | a'2 b'4 a'2 g'4 | fs'2 e'4 fs'2. | g'2. fs'2. | e'2. d'2.
+  fs'2 fs'4 a'2 fs'4 | e'4( fs'4) g'4 g'4 fs'2 | a'2 a'4 fs'2 g'4 | fs'2 e'4 fs'2. | b'2 b'4 g'2 b'4 | d''2 b'4 b'4 a'2 | a'2 b'4 a'2 g'4 | fs'2 e'4 fs'2. \bar "||" | g'2. fs'2. | e'2. d'2.
 \bar "|."
 }
 alto = { \globalParts
