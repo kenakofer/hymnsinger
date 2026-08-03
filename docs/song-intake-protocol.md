@@ -62,6 +62,17 @@ Edit `lilypond/songs/<song>/<song>.ly`: `composer`, `poet`, `meter`,
 `tags`, and a `\header { copyright = "..." }` block when a notice is
 present.
 
+**The `\header { copyright = ... }` line is not optional metadata** for
+`copyrighted`/`mixed` songs - it is what suppresses the generated page's
+default public-domain waiver footer and prints the real notice instead.
+A `mixed`/`copyrighted` song transcribed without it will still pass
+`publish` (the `Copyright-Status:` field is what the tooling checks, not
+the `\header` block), compile fine, and build fine - the only symptom is
+a wrong, misleading footer on the rendered page claiming a public-domain
+dedication that was never made. Check the rendered PDF's footer text
+matches the copyright status before calling a song done, not just its
+`Copyright-Status:` field.
+
 1. **Transcribe, do not recall.** Every value must come from the photo or
    the source file. Outside knowledge - what you know the hymn to say -
    goes in the commit message, never in a field.
@@ -256,6 +267,18 @@ song**, conversion included.
 
 Then it stops. `--go` re-checks the copyright invariant against the live
 tree and pushes both branches.
+
+**`--go` only pushes - it does not publish.** If `transcribe`/`review`/
+`publish` were run individually instead of through plain `finish`, the
+song's files may never have reached `main`/`public-main` at all. `--go`
+will still print `pushed` and `done`, because there is nothing wrong with
+pushing whatever already happened to be committed - it does not check
+that *this song* is among the commits it pushed. Always run plain
+`finish <song>` (no `--go`) at least once, see `added ... -> main`
+(or `merged ... -> public-main`) in its output, and only then run
+`finish <song> --go`. If you ever run `--go` without having seen that
+line first, verify afterward with `git log main -3 --stat` that the
+song's own commit is actually there.
 
 **Only the branch you forked from can receive a real merge.**
 `intake/<song>` forks from `public-main`, so `git merge --no-ff` there
