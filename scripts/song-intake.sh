@@ -610,7 +610,7 @@ cmd_finish() {
               | sed 's/^[^:]*:\s*//' | awk '{print $1}')"
 
     if git -C "$REPO" ls-tree -d --name-only "$PUBLIC_BRANCH" \
-         -- "lilypond/songs/$song/" 2>/dev/null | grep -q .; then
+         -- "lilypond/songs/$song" 2>/dev/null | grep -q .; then
       # Last point where a copyrighted song could still be stopped, so
       # re-check the invariant against the real tree before pushing.
       local offenders; offenders="$(public_branch_clean)"
