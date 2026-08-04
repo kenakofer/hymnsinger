@@ -8,6 +8,53 @@ pa = \partCombineApart
 pt = \partCombineAutomatic
 bb = { \bar "" \break }
 
+%% La-based shape notes. \globalParts calls \relativeMajorShapes just after
+%% \hymnKey; only the shapenote books set hs-rotation-enabled, so every other
+%% output leaves note heads alone.
+#(define hs-rotation-enabled #f)
+shapeNoteBaseStyles = ##(doThin reThin miThin faThin sol laThin tiThin)
+
+#(define (hs-signature-fifths alterations)
+   "Net sharps (positive) or flats (negative) in the key signature."
+   (inexact->exact
+     (* 2 (fold (lambda (entry acc) (+ acc (cdr entry))) 0 alterations))))
+
+#(define (hs-rotate-vector vec n)
+   (let* ((len (vector-length vec))
+          (out (make-vector len)))
+     (let loop ((i 0))
+       (if (< i len)
+           (begin
+             (vector-set! out i (vector-ref vec (modulo (+ i n) len)))
+             (loop (1+ i)))))
+     out))
+
+%% Key the shapes to the relative major, so minor tunes read la-do-re-mi rather
+%% than do-re-mi-fa. LilyPond's shapeNoteStyles always counts up from the tonic,
+%% and its stock \*HeadsMinor variants only cover minor; deriving the rotation
+%% from the printed key signature covers the church modes too.
+relativeMajorShapes = \applyContext
+  #(lambda (ctx)
+     (if hs-rotation-enabled
+         (let ((tonic (ly:context-property ctx 'tonic))
+               (alterations (ly:context-property ctx 'keyAlterations '())))
+           (if (ly:pitch? tonic)
+               ;; Each step around the circle of fifths moves the major tonic
+               ;; four diatonic steps, so the signature names the relative major.
+               (let* ((major-degree
+                        (modulo (* 4 (hs-signature-fifths alterations)) 7))
+                      (offset
+                        (modulo (- (ly:pitch-notename tonic) major-degree) 7)))
+                 ;; Indexed by distance above the tonic, so slot 0 is the
+                 ;; tonic's own shape -- 'la' for a minor key.
+                 ;; Set it on the Staff, not this Voice: \partCombine spawns
+                 ;; several voices (shared/one/two/solo) and only one of them
+                 ;; runs this music, so a Voice-local set leaves the divergent
+                 ;; passages do-based.
+                 (ly:context-set-property!
+                   (ly:context-find ctx 'Staff) 'shapeNoteStyles
+                   (hs-rotate-vector shapeNoteBaseStyles offset)))))))
+
 globalLyrics =
 #(define-music-function
   (parser location firstLabel laterLabel)
