@@ -50,7 +50,7 @@ find ./lilypond/songs -type f -iname "*.ly" -print0 | sort -z | while IFS= read 
 
         # If it was a multi-page score, the images should be vertically joined
         echo "     --> (Optimizing PNGs)"
-        for TYPE in -trad -clairnote -shapenote -lead; do
+        for TYPE in -trad -clairnote -shapenote -4shapenote -lead; do
             if [ -e "$OUTPUT_DIR$BASE$TYPE-page3.png" ] ; then # 3 page case
                 convert -append "$OUTPUT_DIR$BASE$TYPE-page1.png" "$OUTPUT_DIR$BASE$TYPE-page2.png" "$OUTPUT_DIR$BASE$TYPE-page3.png" -strip "$OUTPUT_DIR$BASE$TYPE.png" &&
                 rm "$OUTPUT_DIR$BASE$TYPE-page1.png" "$OUTPUT_DIR$BASE$TYPE-page2.png" "$OUTPUT_DIR$BASE$TYPE-page3.png" ||

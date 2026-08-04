@@ -42,6 +42,10 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('shapenote').checked = true;
         changeImage('shapenote');
     }
+    if (urlParams.has("4shapenote")) {
+        document.getElementById('4shapenote').checked = true;
+        changeImage('4shapenote');
+    }
     if (urlParams.has("clairenote")) {
         document.getElementById('clairenote').checked = true;
         changeImage('clairenote');

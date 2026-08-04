@@ -9,7 +9,10 @@
     <label for="lead">Leadsheet</label>
     </td><td>
     <input type="radio" id="shapenote" name="variant-radio" onclick="changeImage('shapenote');">
-    <label for="shapenote">Shapenote</label>
+    <label for="shapenote">Shapenote (7)</label>
+    </td><td>
+    <input type="radio" id="4shapenote" name="variant-radio" onclick="changeImage('4shapenote');">
+    <label for="4shapenote">Shapenote (4)</label>
     </td><td>
     <input type="radio" id="clairnote" name="variant-radio" onclick="changeImage('clairnote');">
     <label for="clairnote">Clairnote</label>
@@ -25,6 +28,13 @@
         (<div class="tooltip">
             ?
             <span class="tooltiptext">(Beta) Shapenotes mean that each pitch in "do, re, mi, fa, so, la, ti" get one of 7 shapes. This supplemental data may improve sight-reading over time.
+            </span>
+        </div>)
+    </td><td>
+    (<a href="/local-lilypond-outputs/{{ page.song_file }}-4shapenote.pdf">PDF</a>)
+        (<div class="tooltip">
+            ?
+            <span class="tooltiptext">(Beta) The older four-shape system of the Sacred Harp and Southern Harmony: "fa, sol, la" repeats for each tetrachord, with "mi" on the seventh. Minor tunes begin on la.
             </span>
         </div>)
     </td><td>

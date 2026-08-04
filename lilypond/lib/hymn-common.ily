@@ -9,10 +9,16 @@ pt = \partCombineAutomatic
 bb = { \bar "" \break }
 
 %% La-based shape notes. \globalParts calls \relativeMajorShapes just after
-%% \hymnKey; only the shapenote books set hs-rotation-enabled, so every other
-%% output leaves note heads alone.
-#(define hs-rotation-enabled #f)
+%% \hymnKey; it does nothing until a book sets hs-active-shapes, so every other
+%% output leaves note heads alone. Both shape books share this one code path --
+%% the rotation is the same, only the glyph vector differs.
+#(define hs-active-shapes #f)
+
+%% 7-shape (Aiken) and 4-shape (Southern Harmony) glyph sets, both in the
+%% thin-notehead style. Written major-first: slot N is scale degree N of the
+%% major scale, which \relativeMajorShapes then rotates onto the actual tonic.
 shapeNoteBaseStyles = ##(doThin reThin miThin faThin sol laThin tiThin)
+fourShapeNoteBaseStyles = ##(faThin sol laThin faThin sol laThin miThin)
 
 #(define (hs-signature-fifths alterations)
    "Net sharps (positive) or flats (negative) in the key signature."
@@ -35,7 +41,7 @@ shapeNoteBaseStyles = ##(doThin reThin miThin faThin sol laThin tiThin)
 %% from the printed key signature covers the church modes too.
 relativeMajorShapes = \applyContext
   #(lambda (ctx)
-     (if hs-rotation-enabled
+     (if (vector? hs-active-shapes)
          (let ((tonic (ly:context-property ctx 'tonic))
                (alterations (ly:context-property ctx 'keyAlterations '())))
            (if (ly:pitch? tonic)
@@ -53,7 +59,7 @@ relativeMajorShapes = \applyContext
                  ;; passages do-based.
                  (ly:context-set-property!
                    (ly:context-find ctx 'Staff) 'shapeNoteStyles
-                   (hs-rotate-vector shapeNoteBaseStyles offset)))))))
+                   (hs-rotate-vector hs-active-shapes offset)))))))
 
 globalLyrics =
 #(define-music-function
@@ -592,3 +598,4 @@ tradLeadSheetStaffZoom = #1
 clairStaffZoom = #1
 slidesStaffZoom = #0.8
 shapeStaffZoom = #1.1 %% A bit larger by default to help see the shapes
+

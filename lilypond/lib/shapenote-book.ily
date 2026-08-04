@@ -6,7 +6,7 @@
 %% \globalParts is shared with every other book, so gate the rotation to this
 %% one. The books included after this one (slides, MIDI) must stay unrotated,
 %% hence the reset at the end -- these run at parse time, in file order.
-#(set! hs-rotation-enabled #t)
+#(set! hs-active-shapes shapeNoteBaseStyles)
 
 \book {
   \prescore_text
@@ -30,4 +30,4 @@
   \extra_verses
 }
 
-#(set! hs-rotation-enabled #f)
+#(set! hs-active-shapes #f)
