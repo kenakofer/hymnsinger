@@ -7,75 +7,37 @@
 %% transpose-common.ily for why the spelling cannot just be hard-coded.
 \include "transpose-common.ily"
 
-%% One book per shift. This is spelled out four times rather than generated in
-%% a loop because \bookOutputSuffix is a parse-time setting on the enclosing
-%% \book: a Scheme loop would need to build whole \book objects, which is a
-%% lot of machinery to save twenty lines.
-
-\book {
-  \prescore_text
-  \bookOutputSuffix "trad-up1" \score {
-    \removeWithTag #'(midionly slidesOnly capoOnly)
-    \transpose \htTransposeFrom \hymnKey \htTransposeTo \hymnKey #1
-    \fillTradScore
-      { \removeWithTag #'(midionly slidesOnly) \soprano }
-      { \removeWithTag #'(midionly slidesOnly) \alto }
-      { \removeWithTag #'(midionly slidesOnly) \tenor }
-      { \removeWithTag #'(midionly slidesOnly) \bass }
-      \songChords
-      \tradStaffZoom
+%% The four books differ only in output suffix and semitone shift, so the
+%% source is built once as a template and fed to the parser per shift. It used
+%% to be four copy-pasted blocks; that was fine until -dht-books arrived and
+%% each one needed its own gate, at which point the duplication was four
+%% places to keep in step instead of one.
+%%
+%% \bookOutputSuffix is a parse-time setting on the enclosing \book, which is
+%% why this is string generation rather than a Scheme loop over \book objects.
+#(define (ht-transposed-book suffix shift)
+   (format #f "
+\\book {
+  \\prescore_text
+  \\bookOutputSuffix \"~a\" \\score {
+    \\removeWithTag #'(midionly slidesOnly capoOnly)
+    \\transpose \\htTransposeFrom \\hymnKey \\htTransposeTo \\hymnKey #~a
+    \\fillTradScore
+      { \\removeWithTag #'(midionly slidesOnly) \\soprano }
+      { \\removeWithTag #'(midionly slidesOnly) \\alto }
+      { \\removeWithTag #'(midionly slidesOnly) \\tenor }
+      { \\removeWithTag #'(midionly slidesOnly) \\bass }
+      \\songChords
+      \\tradStaffZoom
   }
-  \postscore_text
-  \extra_verses
+  \\postscore_text
+  \\extra_verses
 }
+" suffix shift))
 
-\book {
-  \prescore_text
-  \bookOutputSuffix "trad-up2" \score {
-    \removeWithTag #'(midionly slidesOnly capoOnly)
-    \transpose \htTransposeFrom \hymnKey \htTransposeTo \hymnKey #2
-    \fillTradScore
-      { \removeWithTag #'(midionly slidesOnly) \soprano }
-      { \removeWithTag #'(midionly slidesOnly) \alto }
-      { \removeWithTag #'(midionly slidesOnly) \tenor }
-      { \removeWithTag #'(midionly slidesOnly) \bass }
-      \songChords
-      \tradStaffZoom
-  }
-  \postscore_text
-  \extra_verses
-}
-
-\book {
-  \prescore_text
-  \bookOutputSuffix "trad-dn1" \score {
-    \removeWithTag #'(midionly slidesOnly capoOnly)
-    \transpose \htTransposeFrom \hymnKey \htTransposeTo \hymnKey #-1
-    \fillTradScore
-      { \removeWithTag #'(midionly slidesOnly) \soprano }
-      { \removeWithTag #'(midionly slidesOnly) \alto }
-      { \removeWithTag #'(midionly slidesOnly) \tenor }
-      { \removeWithTag #'(midionly slidesOnly) \bass }
-      \songChords
-      \tradStaffZoom
-  }
-  \postscore_text
-  \extra_verses
-}
-
-\book {
-  \prescore_text
-  \bookOutputSuffix "trad-dn2" \score {
-    \removeWithTag #'(midionly slidesOnly capoOnly)
-    \transpose \htTransposeFrom \hymnKey \htTransposeTo \hymnKey #-2
-    \fillTradScore
-      { \removeWithTag #'(midionly slidesOnly) \soprano }
-      { \removeWithTag #'(midionly slidesOnly) \alto }
-      { \removeWithTag #'(midionly slidesOnly) \tenor }
-      { \removeWithTag #'(midionly slidesOnly) \bass }
-      \songChords
-      \tradStaffZoom
-  }
-  \postscore_text
-  \extra_verses
-}
+#(for-each
+  (lambda (spec)
+    (if (ht-book? (car spec))
+        (ly:parser-include-string
+         (ht-transposed-book (car spec) (cdr spec)))))
+  '(("trad-up1" . 1) ("trad-up2" . 2) ("trad-dn1" . -1) ("trad-dn2" . -2)))

@@ -6,6 +6,24 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 # with JOBS=1 to get the old serial behaviour back when debugging a build.
 JOBS="${JOBS:-$(nproc)}"
 
+# Optional: rebuild only some notation books, and/or only some songs. Both are
+# empty by default, which means "everything", exactly as before.
+#
+#   BOOKS=transposed ./scripts/generate-all-outputs.sh
+#   BOOKS=trad,lead SONGS='abide-with-me come-o-thou-traveller' ...
+#   SONGS="$(grep -rl 'minor' lilypond/songs --include='*.ly' | ...)"
+#
+# The point is that a change is usually confined to a few books: the minor-key
+# spelling fix altered only the four transposed books of the 12 minor and modal
+# songs, but rebuilding it the blunt way re-engraves 9 books x 150 songs.
+#
+# A partial run deliberately does NOT write the .inputhash stamp - see the end
+# of build_song. The stamp means "every output for this song is current", and
+# after building 4 of 9 books that is false. Leaving it unwritten means the
+# next full run rebuilds the song and puts it right.
+BOOKS="${BOOKS:-}"
+SONGS="${SONGS:-}"
+
 # Decide "up to date" by content, not by mtime.
 #
 # The old test was `mp3 -nt ly`, which broke every time you switched between
@@ -29,6 +47,20 @@ song_fingerprint() {
     } | sha256sum | cut -d' ' -f1
 }
 
+# Map a BOOKS selection onto the output suffixes the post-processing steps
+# walk. Must stay in step with ht-book? in lib/all-notation-outputs.ily.
+books_to_types() {
+    local sel="$1" out="" b
+    for b in ${sel//,/ }; do
+        case "$b" in
+            all) out="-trad -clairnote -shapenote -4shapenote -lead -trad-up1 -trad-up2 -trad-dn1 -trad-dn2"; break ;;
+            transposed) out="$out -trad-up1 -trad-up2 -trad-dn1 -trad-dn2" ;;
+            *) out="$out -${b}" ;;
+        esac
+    done
+    echo "$out"
+}
+
 build_song() {
     local file="$1"
     local BASE; BASE=$(basename "${file%.*}") # This only strips the final ly, not any earlier "extension"
@@ -39,7 +71,10 @@ build_song() {
     local STAMP="$OUTPUT_DIR$BASE.inputhash"
     local FINGERPRINT; FINGERPRINT="$(song_fingerprint "$INPUT")"
 
-    if [ -e "$MP3_OUTPUT" ] && [ -e "$STAMP" ] \
+    # A partial build has no valid "up to date" answer: the stamp covers the
+    # whole song, so it cannot say "the trad book is current but clairnote is
+    # not". Skip the cache check entirely and always rebuild the named books.
+    if [ -z "$BOOKS" ] && [ -e "$MP3_OUTPUT" ] && [ -e "$STAMP" ] \
        && [ "$(cat "$STAMP" 2>/dev/null)" = "$FINGERPRINT" ] ; then
         echo "     ---- $BASE.mp3 exists and is up to date."
         return 0
@@ -54,13 +89,25 @@ build_song() {
     # and the file size larger. We disable it for the pdfs.
     echo "     --> (PDF, MIDI, PNG)"
     # Adding svg here is how you'd get a third format without a third parse.
+    local BOOKOPT=()
+    [ -n "$BOOKS" ] && BOOKOPT=(-dht-books="$BOOKS")
     lilypond -s -o "$OUTPUT_DIR" -dno-point-and-click \
-        --formats=pdf,png -dresolution=400 "$INPUT"
+        "${BOOKOPT[@]}" --formats=pdf,png -dresolution=400 "$INPUT"
 
     # If it was a multi-page score, the images should be vertically joined
     echo "     --> (Optimizing PNGs)"
-    for TYPE in -trad -clairnote -shapenote -4shapenote -lead \
-                -trad-up1 -trad-up2 -trad-dn1 -trad-dn2; do
+    # Only walk the books this run actually emitted. Walking all nine looks
+    # harmless because of the [ -e ] guards below, but it is not: a skipped
+    # book's .png is still on disk from an earlier build, so the guard passes
+    # and mogrify rewrites a file this run never regenerated. That silently
+    # dirtied 5 books x 14 songs on the first partial run.
+    local TYPES
+    if [ -n "$BOOKS" ]; then
+        TYPES=$(books_to_types "$BOOKS")
+    else
+        TYPES="-trad -clairnote -shapenote -4shapenote -lead -trad-up1 -trad-up2 -trad-dn1 -trad-dn2"
+    fi
+    for TYPE in $TYPES; do
         if [ -e "$OUTPUT_DIR$BASE$TYPE-page3.png" ] ; then # 3 page case
             convert -append "$OUTPUT_DIR$BASE$TYPE-page1.png" "$OUTPUT_DIR$BASE$TYPE-page2.png" "$OUTPUT_DIR$BASE$TYPE-page3.png" -strip "$OUTPUT_DIR$BASE$TYPE.png" &&
             rm "$OUTPUT_DIR$BASE$TYPE-page1.png" "$OUTPUT_DIR$BASE$TYPE-page2.png" "$OUTPUT_DIR$BASE$TYPE-page3.png" ||
@@ -86,14 +133,49 @@ build_song() {
         done
     done
 
-    # We use 3 colors instead of 2 for slides since the image is smaller
-    echo "     --> (Building ODP)"
-    mogrify -colorspace gray +dither -posterize 3 "$OUTPUT_DIR$BASE-slides*.png"
-    "$SCRIPT_DIR/build-odp-presentation-from-images.sh" "$BASE"
+    # Slides and MIDI are included directly by each song, not through
+    # all-notation-outputs.ily, so -dht-books cannot suppress them - LilyPond
+    # re-emits them on every run whatever the selection. Gating them properly
+    # would mean touching the \include line in all 150 song files.
+    #
+    # They are cheap (slides is one small book, MIDI is not engraved at all),
+    # so a partial run just lets them regenerate and then puts the files back
+    # the way they were. Skipping the ODP and MP3 steps below is what actually
+    # saves the time; this only stops the rebuilt-but-unchanged slides from
+    # showing up as noise in git status.
+    if [ -n "$BOOKS" ]; then
+        # The intermediate page PNGs are always disposable - a full run merges
+        # and deletes them anyway.
+        rm -f "$OUTPUT_DIR$BASE"-slides-page[0-9]*.png
+        # Restore the committed slides PDF if it is tracked and unchanged in
+        # content. Without this a partial run shows 150 modified slides files
+        # that differ only by rebuild metadata.
+        git checkout -q -- "$OUTPUT_DIR$BASE-slides.pdf" 2>/dev/null || true
+    fi
 
-    echo "     --> (Midi to MP3)"
-    # Timidity should be configured to use YDP Grand Piano soundfont, available for download at http://freepats.zenvoid.org/Piano/acoustic-grand-piano.html
-    timidity --quiet --quiet "$MIDI_OUTPUT" -Ow -o - | ffmpeg -loglevel error -y -i - -acodec libmp3lame -ab 64k "$MP3_OUTPUT"
+    if [ -z "$BOOKS" ]; then
+        # We use 3 colors instead of 2 for slides since the image is smaller.
+        # Shell-glob and guard, same reason as the loop above: a "*" that
+        # reaches mogrify unmatched hangs rather than erroring.
+        echo "     --> (Building ODP)"
+        for png in "$OUTPUT_DIR$BASE"-slides*.png; do
+            [ -e "$png" ] && mogrify -colorspace gray +dither -posterize 3 "$png"
+        done
+        "$SCRIPT_DIR/build-odp-presentation-from-images.sh" "$BASE"
+
+        echo "     --> (Midi to MP3)"
+        # Timidity should be configured to use YDP Grand Piano soundfont, available for download at http://freepats.zenvoid.org/Piano/acoustic-grand-piano.html
+        timidity --quiet --quiet "$MIDI_OUTPUT" -Ow -o - | ffmpeg -loglevel error -y -i - -acodec libmp3lame -ab 64k "$MP3_OUTPUT"
+    fi
+
+    if [ -n "$BOOKS" ]; then
+        # Partial build: the stamp asserts every output for this song is
+        # current, which is not true after rebuilding a subset. Clear it so the
+        # next full run redoes this song rather than trusting a stale hash.
+        rm -f "$STAMP"
+        echo "     --> Done (partial: $BOOKS; stamp cleared)."
+        return 0
+    fi
 
     # Record the fingerprint only once the outputs exist, so a build that
     # died partway is not cached as good and gets retried next run.
@@ -106,11 +188,36 @@ build_song() {
 
     echo "     --> Done."
 }
-export -f build_song song_fingerprint
-export SCRIPT_DIR
+export -f build_song song_fingerprint books_to_types
+export SCRIPT_DIR BOOKS
+
+# Which songs to build. SONGS is a whitespace-separated list of slugs; empty
+# means all of them.
+song_list() {
+    if [ -z "$SONGS" ]; then
+        find ./lilypond/songs -type f -iname "*.ly" -print0 | sort -z
+        return
+    fi
+    local missing=0 s path
+    for s in $SONGS; do
+        path="./lilypond/songs/$s/$s.ly"
+        if [ -f "$path" ]; then
+            printf '%s\0' "$path"
+        else
+            echo "     --> WARNING: no such song: $s" >&2
+            missing=1
+        fi
+    done
+    # A typo in SONGS would otherwise look like a fast, successful build.
+    [ "$missing" = 1 ] && echo "     --> (some songs in SONGS were not found)" >&2
+    return 0
+}
+
+if [ -n "$BOOKS" ] || [ -n "$SONGS" ]; then
+    echo "==> Partial build: books=${BOOKS:-all} songs=${SONGS:-all}"
+fi
 
 # Songs are independent - each writes only files named after itself - so they
 # parallelise cleanly. The per-song output is buffered by xargs into whole
 # lines, so progress from concurrent builds stays readable.
-find ./lilypond/songs -type f -iname "*.ly" -print0 | sort -z |
-    xargs -0 -P "$JOBS" -I{} bash -c 'build_song "$@"' _ {}
+song_list | xargs -0 -P "$JOBS" -I{} bash -c 'build_song "$@"' _ {}
