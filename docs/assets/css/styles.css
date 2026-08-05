@@ -77,6 +77,67 @@ section {
     max-width: 900px; /* To prevent awkward spacing while loading */
     min-height: 550px;
 }
+/* Positioning context for the transpose overlay. display:block keeps the
+   frame from inheriting the inline-image baseline gap under the score. */
+#music-frame {
+    position: relative;
+    display: block;
+}
+/* Layered over the top left of the score. LilyPond leaves that corner blank
+   on every song - the title block is centred and the first staff starts well
+   below - so this covers nothing. It is deliberately not inside
+   #score-variants: that table is the notation picker, and pitch is a
+   separate axis that only applies to one of those tabs. */
+#transpose-control {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+    padding: 2px;
+    border-radius: 4px;
+    background-color: rgba(247, 247, 238, 0.85);
+    line-height: 1;
+}
+#transpose-control button {
+    width: 26px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #444;
+    font-size: 10px;
+    cursor: pointer;
+}
+#transpose-control button:hover:not(:disabled) {
+    background-color: #ffecec;
+    border-color: #ff5555;
+    color: #ff5555;
+}
+#transpose-control button:disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+#transpose-readout {
+    font-size: 11px;
+    color: #777;
+    min-height: 13px;
+}
+/* Once off the printed key, make that obvious - it is easy to send someone a
+   link, or walk away from the screen, without noticing the pitch moved. */
+#transpose-control.transposed {
+    background-color: rgba(255, 236, 236, 0.95);
+    box-shadow: 0 0 0 1px #ff5555;
+}
+#transpose-control.transposed #transpose-readout {
+    color: #ff5555;
+    font-weight: bold;
+}
 body {
     background-color: #F7F7EE; /* Body should match music-image color after filters */
     width: 100%;

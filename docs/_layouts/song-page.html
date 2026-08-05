@@ -19,21 +19,69 @@
     <script>
     window.song_filename = "{{ page.song_file }}";
     window.midi_url = "{{ site.baseurl }}/local-lilypond-outputs/{{ page.song_file }}.midi";
+    // The score is picked on two axes: which notation book, and how many half
+    // steps off the printed key. Only the traditional book is engraved
+    // transposed (-trad-up1 ... -trad-dn2), so every other notation forces the
+    // offset back to 0 rather than asking for a file that was never built.
+    window.currentVariant = "trad";
+    window.currentTranspose = 0;
+
+    var TRANSPOSE_SUFFIX = {"-2": "-dn2", "-1": "-dn1", "0": "", "1": "-up1", "2": "-up2"};
+    var TRANSPOSE_LIMIT = 2;
+
+    function variantSupportsTranspose(variant) {
+        return variant == "trad";
+    }
+
+    function renderScore() {
+        var suffix = window.currentVariant + TRANSPOSE_SUFFIX[String(window.currentTranspose)];
+        document.getElementById("music-image").src =
+            "/local-lilypond-outputs/{{ page.song_file }}-" + suffix + ".png";
+
+        var supported = variantSupportsTranspose(window.currentVariant);
+        var control = document.getElementById("transpose-control");
+        if (control) {
+            control.style.display = supported ? "" : "none";
+            document.getElementById("transpose-readout").textContent =
+                window.currentTranspose == 0
+                    ? "♪"
+                    : (window.currentTranspose > 0 ? "+" : "−") + Math.abs(window.currentTranspose);
+            control.classList.toggle("transposed", window.currentTranspose != 0);
+            // Don't offer a step that has no engraving behind it.
+            document.getElementById("transpose-up").disabled =
+                window.currentTranspose >= TRANSPOSE_LIMIT;
+            document.getElementById("transpose-down").disabled =
+                window.currentTranspose <= -TRANSPOSE_LIMIT;
+        }
+
+        // Set the query for sharing. Valueless params, matching the older
+        // ?lead / ?shapenote links that are already out in the wild.
+        var new_query;
+        if (suffix == "trad")
+          new_query = location.pathname; // Clears out parameters
+        else
+          new_query = "?" + suffix
+        history.replaceState(null, null, new_query);
+    }
+
     function changeImage(variant) {
-        var img = document.getElementById("music-image");
-        img.src="/local-lilypond-outputs/{{ page.song_file }}-"+variant+".png";
+        window.currentVariant = variant;
+        if (!variantSupportsTranspose(variant))
+            window.currentTranspose = 0;
 
         // Get the right checkboxes
         document.getElementById(variant).checked = true;
 
-        // Set the query for sharing
-        var new_query;
-        if (variant == "trad")
-          new_query = location.pathname; // Clears out parameters
-        else
-          new_query = "?" + variant
-        history.replaceState(null, null, new_query);
+        renderScore();
+        return false;
+    }
 
+    function changeTranspose(delta) {
+        if (!variantSupportsTranspose(window.currentVariant)) return false;
+        var next = window.currentTranspose + delta;
+        if (next < -TRANSPOSE_LIMIT || next > TRANSPOSE_LIMIT) return false;
+        window.currentTranspose = next;
+        renderScore();
         return false;
     }
     function copyLyrics() {

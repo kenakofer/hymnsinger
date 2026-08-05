@@ -50,6 +50,17 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('clairnote').checked = true;
         changeImage('clairnote');
     }
+    // The transposed trad views, e.g. ?trad-up1. Kept as valueless params to
+    // match the notation links above.
+    Object.keys(TRANSPOSE_SUFFIX).forEach(function (steps) {
+        if (steps == "0") return;
+        if (urlParams.has("trad" + TRANSPOSE_SUFFIX[steps])) {
+            document.getElementById('trad').checked = true;
+            window.currentVariant = 'trad';
+            window.currentTranspose = parseInt(steps, 10);
+            renderScore();
+        }
+    });
 }, false);
 
 var click_play = function() {

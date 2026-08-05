@@ -47,5 +47,17 @@
     </td>
     </tr>
     </table>
-    <img src="/local-lilypond-outputs/{{ page.song_file }}-trad.png" alt="Loading the sheet music..." id="music-image">
+    <div id="music-frame">
+        <!-- Only the traditional books are engraved at other pitches, so this
+             control hides itself on every other tab. It sits over the top left
+             of the score, which LilyPond always leaves blank. -->
+        <div id="transpose-control" role="group" aria-label="Transpose">
+            <button type="button" id="transpose-up" onclick="changeTranspose(1);"
+                    title="Up a half step">&#9650;</button>
+            <span id="transpose-readout" aria-live="polite">&#9834;</span>
+            <button type="button" id="transpose-down" onclick="changeTranspose(-1);"
+                    title="Down a half step">&#9660;</button>
+        </div>
+        <img src="/local-lilypond-outputs/{{ page.song_file }}-trad.png" alt="Loading the sheet music..." id="music-image">
+    </div>
 </div>
