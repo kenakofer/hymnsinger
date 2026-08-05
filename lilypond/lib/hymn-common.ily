@@ -239,8 +239,6 @@ postscoreText =
       }
     #})
 
-date = #(strftime "%Y-%m-%d" (localtime (current-time)))
-
   tagline =
   #(define-scheme-function
     (parser location) ()
@@ -267,8 +265,6 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
           \bold "https://hymnsinger.com"
           "on"
           \dateAdded
-          ", updated"
-          \date
         }
       }
     #})
