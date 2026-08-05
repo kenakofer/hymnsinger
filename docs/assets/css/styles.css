@@ -94,16 +94,21 @@ section {
     left: 6px;
     z-index: 2;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 1px;
-    padding: 2px;
+    gap: 2px;
+    padding: 2px 3px;
     border-radius: 4px;
-    background-color: rgba(247, 247, 238, 0.85);
+    /* Opaque, so it covers rather than blends: the corner is blank on 150 of
+       151 scores, but bwana-awabariki's title is long enough to reach into it.
+       #F7F7F0 is white paper *after* #music-image's sepia(.5) brightness(.97)
+       filter, which is what the eye actually sees - the body's #F7F7EE is the
+       unfiltered colour and would read as a faint patch against the score. */
+    background-color: #F7F7F0;
     line-height: 1;
 }
 #transpose-control button {
-    width: 26px;
+    width: 20px;
     height: 20px;
     padding: 0;
     margin: 0;
@@ -123,15 +128,18 @@ section {
     opacity: 0.35;
     cursor: default;
 }
+/* Fixed width: the label swaps between a note glyph and "+1"/"-2", and
+   without it the buttons shift sideways on every click. */
 #transpose-readout {
     font-size: 11px;
     color: #777;
-    min-height: 13px;
+    min-width: 18px;
+    text-align: center;
 }
 /* Once off the printed key, make that obvious - it is easy to send someone a
    link, or walk away from the screen, without noticing the pitch moved. */
 #transpose-control.transposed {
-    background-color: rgba(255, 236, 236, 0.95);
+    background-color: #FFECEC;
     box-shadow: 0 0 0 1px #ff5555;
 }
 #transpose-control.transposed #transpose-readout {
