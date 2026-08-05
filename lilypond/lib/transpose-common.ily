@@ -51,16 +51,41 @@
    (let ((t (ly:music-property keymusic 'tonic)))
      (if (ly:pitch? t) t (ly:make-pitch 0 0 0))))
 
+%% How many sharps (+) or flats (-) the signature actually prints. Read from
+%% the key's pitch-alist rather than assumed from the tonic: \key d \major and
+%% \key d \minor share a tonic but sit five positions apart on the circle, and
+%% treating d minor as D major is what produced eight-flat signatures with
+%% double flats a semitone down.
+%%
+%% Taking it from the alist also means the modes need no special casing -
+%% mixolydian and phrygian fall out of the same arithmetic as minor.
+#(define (ht-key-fifths keymusic)
+   (let ((alist (ly:music-property keymusic 'pitch-alist)))
+     (if (pair? alist)
+         (apply + (map (lambda (entry)
+                         (inexact->exact (* 2 (cdr entry))))
+                       alist))
+         0)))
+
+%% The major tonic whose signature matches this key - the relative major.
+%% Everything downstream reasons in major, then the shift is applied to that.
+#(define (ht-relative-major keymusic)
+   (ht-fifths->pitch (ht-key-fifths keymusic)))
+
 %% The two pitches to hand \transpose so the music moves SHIFT semitones and
 %% lands in the best-spelled key. Both are octave 0, so only the interval
 %% matters and the music stays in its original octave.
+%%
+%% The pair is expressed relative-major to relative-major. \transpose only
+%% cares about the interval between the two pitches, so shifting the relative
+%% major by the same interval carries the real tonic along with it and keeps
+%% the mode intact - a d minor song stays minor, it just changes pitch.
 htTransposeFrom =
 #(define-scheme-function (keymusic) (ly:music?)
-   (let ((t (ht-key-tonic keymusic)))
-     (ly:make-pitch 0 (ly:pitch-notename t) (ly:pitch-alteration t))))
+   (ht-relative-major keymusic))
 
 htTransposeTo =
 #(define-scheme-function (keymusic shift) (ly:music? integer?)
-   (let* ((t (ht-key-tonic keymusic))
-          (from (ht-pitch-semitone (ly:pitch-notename t) (ly:pitch-alteration t))))
+   (let* ((rm (ht-relative-major keymusic))
+          (from (ht-pitch-semitone (ly:pitch-notename rm) (ly:pitch-alteration rm))))
      (ht-best-spelling (+ from shift))))
