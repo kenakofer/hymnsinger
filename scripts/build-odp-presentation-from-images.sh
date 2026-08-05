@@ -4,7 +4,11 @@
 BASE=$1
 OUTPUT_DIR="docs/local-lilypond-outputs/"
 SKELETON_DIR="scripts/odp-skeleton"
-TEMP_DIR="/tmp/lilypond-odp-build"
+# Per-song build dir. This used to be a single fixed path, which was fine
+# while generate-all-outputs.sh built one song at a time; now that it builds
+# several at once, two songs sharing one dir would rm -fr each other's
+# Pictures mid-zip and cross-contaminate the .odp files.
+TEMP_DIR="/tmp/lilypond-odp-build-$BASE.$$"
 PICTURES_DIR="$TEMP_DIR/Pictures"
 
 MANIFEST_ENTRY_TEMPLATE='<manifest:file-entry manifest:full-path="FILE_NAME" manifest:media-type="image/png"/>'
@@ -48,3 +52,6 @@ zip -q0 "$BASE.odp" mimetype # The mimetype must be stored first, with 0 compres
 zip -qru "$BASE.odp" *
 cd - > /dev/null
 mv "$TEMP_DIR/$BASE.odp" $OUTPUT_DIR
+# The dir is per-song now, so it has to be cleaned up here; nothing else
+# will reuse the name and clear it out.
+rm -fr "$TEMP_DIR"
