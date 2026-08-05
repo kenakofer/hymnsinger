@@ -145,7 +145,7 @@ songChords =
 %   \override ChordNames.ChordName.color = #white
 %   \chordmode { a1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 }
 % }
-\new ChordNames {
+\CP \new ChordNames {
   \once \override InstrumentName.extra-offset = #'(10 . 0.7)
   \override ChordNames.ChordName.font-shape = #'italic
   \override ChordNames.ChordName.font-size = #-1

@@ -3,3 +3,4 @@
 \include "shapenote-book.ily"
 \include "four-shapenote-book.ily"
 \include "lead-sheet-book.ily"
+\include "transposed-books.ily"

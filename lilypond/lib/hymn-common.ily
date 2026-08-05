@@ -273,7 +273,7 @@ date = #(strftime "%Y-%m-%d" (localtime (current-time)))
       }
     #})
 
-\tagGroup #'(slidesOnly verseA verseB verseC verseD verseE verseF verseG verseH slidesOmit midionly printonly)
+\tagGroup #'(slidesOnly verseA verseB verseC verseD verseE verseF verseG verseH slidesOmit midionly printonly capoOnly)
 S = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'slidesOnly { $exp } #})
 SA = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'(verseA slidesOnly) { $exp } #})
 SB = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'(verseB slidesOnly) { $exp } #})
@@ -285,6 +285,11 @@ SG = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'(verseG
 SH = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'(verseH slidesOnly) { $exp } #})
 
 SO = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'slidesOmit { $exp } #})
+
+%% Wraps the "Capo N:" chord line. The transposed trad books strip it: the
+%% capo number was chosen to suit the printed key, so carrying it onto a
+%% chart in a different key would assert a fret nobody picked.
+CP = #(define-music-function (parser location exp) (ly:music?) #{ \tag #'capoOnly { $exp } #})
 
 dropLyricsSmall = {
   \SO {

@@ -59,7 +59,8 @@ build_song() {
 
     # If it was a multi-page score, the images should be vertically joined
     echo "     --> (Optimizing PNGs)"
-    for TYPE in -trad -clairnote -shapenote -4shapenote -lead; do
+    for TYPE in -trad -clairnote -shapenote -4shapenote -lead \
+                -trad-up1 -trad-up2 -trad-dn1 -trad-dn2; do
         if [ -e "$OUTPUT_DIR$BASE$TYPE-page3.png" ] ; then # 3 page case
             convert -append "$OUTPUT_DIR$BASE$TYPE-page1.png" "$OUTPUT_DIR$BASE$TYPE-page2.png" "$OUTPUT_DIR$BASE$TYPE-page3.png" -strip "$OUTPUT_DIR$BASE$TYPE.png" &&
             rm "$OUTPUT_DIR$BASE$TYPE-page1.png" "$OUTPUT_DIR$BASE$TYPE-page2.png" "$OUTPUT_DIR$BASE$TYPE-page3.png" ||
@@ -71,7 +72,18 @@ build_song() {
                 echo "Failed to merge images for $BASE"
             fi
         fi
-        mogrify -colorspace gray +dither -posterize 2 "$OUTPUT_DIR$BASE$TYPE*.png"
+        # Posterize this variant's own files only, and let the shell do the
+        # globbing. Two traps here:
+        #   - "$BASE$TYPE*.png" (the old pattern) matches -trad-up1 and friends
+        #     under -trad, so each transposed png got posterized several times.
+        #     Harmless - posterize is idempotent - but wasted work.
+        #   - a "*" that reaches mogrify unmatched is expanded by ImageMagick
+        #     itself, and it hangs on a literal non-matching pattern rather
+        #     than erroring out. Never pass it one.
+        # The -page files are anything a 4+ page score left unmerged above.
+        for png in "$OUTPUT_DIR$BASE$TYPE.png" "$OUTPUT_DIR$BASE$TYPE"-page[0-9]*.png; do
+            [ -e "$png" ] && mogrify -colorspace gray +dither -posterize 2 "$png"
+        done
     done
 
     # We use 3 colors instead of 2 for slides since the image is smaller
