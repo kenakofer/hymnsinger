@@ -9,6 +9,9 @@
 %%   \include "fret-books.ily"
 %%   #(ht-fret-books "uke" "ukulele-tuning")
 %%
+%% An optional third argument sets the fingering-number style; see
+%% ht-fret-books below.
+%%
 %% A guitar book would differ only in those three tokens.
 
 \include "transpose-common.ily"
@@ -92,7 +95,7 @@ htChordMusic =
 %% does it: \bookOutputSuffix is a parse-time setting on the enclosing \book,
 %% and a \book is not a music expression, so it cannot be produced from a
 %% Scheme loop over book objects.
-#(define (ht-fret-book suffix tuning shift)
+#(define (ht-fret-book suffix tuning finger-code shift)
    (format #f "
 \\book {
   \\prescore_text
@@ -103,6 +106,7 @@ htChordMusic =
       { \\removeWithTag #'(midionly slidesOnly) \\soprano }
       { \\htChordMusic \\chordSymbols \\songChords }
       #~a
+      #'~a
       \\tradLeadSheetStaffZoom
   }
   \\postscore_text
@@ -114,11 +118,17 @@ htChordMusic =
                ""
                (format #f "\\transpose \\htTransposeFrom \\hymnKey \\htTransposeTo \\hymnKey #~a"
                        shift))
-           tuning))
+           tuning
+           finger-code))
 
 %% NAME is the book's base output suffix ("uke"); the transposed ones append
 %% the same -up1/-up2/-dn1/-dn2 the trad books use, so the site's transpose
 %% control needs no per-instrument special casing.
+%%
+%% FINGER-CODE is optional and defaults to 'below-string, LilyPond's own
+%% default: a fingering number under each string. Pass 'none to drop them.
+%% Guitar does - six strings of digits under an already-dense grid is noise,
+%% where four strings have the room for it.
 %%
 %% Call this from a bare top-level #(...), never from a music function.
 %% ly:parser-include-string splices at the parser's current position, and
@@ -127,7 +137,7 @@ htChordMusic =
 %% desyncs, taking the *next* \include down with it. The books still get
 %% written before it fails, which makes the breakage look unrelated to this
 %% file. transposed-books.ily calls its generator the same way.
-#(define (ht-fret-books name tuning)
+#(define* (ht-fret-books name tuning #:optional (finger-code 'below-string))
    (if (ht-song-has-chords? (ly:parser-lookup 'chordSymbols)
                             (ly:parser-lookup 'songChords))
        (for-each
@@ -137,5 +147,5 @@ htChordMusic =
                             (string-append name (car spec)))))
             (if (ht-book? suffix)
                 (ly:parser-include-string
-                 (ht-fret-book suffix tuning (cdr spec))))))
+                 (ht-fret-book suffix tuning finger-code (cdr spec))))))
         '(("" . 0) ("-up1" . 1) ("-up2" . 2) ("-dn1" . -1) ("-dn2" . -2)))))

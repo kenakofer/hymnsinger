@@ -461,10 +461,16 @@ fillTradLeadSheetScore =
 %% expression the other books take: FretBoards has to read chord events
 %% itself, and handing it an already-built ChordNames renders nothing. See
 %% fret-books.ily for how the two forms are told apart.
+%%
+%% $fingerCode is the fret-diagram-details finger-code: 'below-string prints
+%% a fingering number under each string, 'none omits them. Per-instrument
+%% because the two behave differently at this size - four strings have room
+%% for the numbers, six do not, and on guitar the row of digits reads as
+%% clutter under diagrams that are already dense.
 fillFretLeadSheetScore =
   #(define-music-function
-    (parser location topA chordMusic tuning zoomLevel)
-    (ly:music? ly:music? list? number?)
+    (parser location topA chordMusic tuning fingerCode zoomLevel)
+    (ly:music? ly:music? list? symbol? number?)
     #{
       <<
         \removeWithTag #'midionly
@@ -474,6 +480,7 @@ fillFretLeadSheetScore =
         }
         \new FretBoards \with {
           stringTunings = #tuning
+          \override FretBoard.fret-diagram-details.finger-code = #fingerCode
         } {
           %% Only diagram a chord where the symbol above it changes; a
           %% diagram under every beat is unreadable and repeats itself.

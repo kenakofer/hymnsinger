@@ -13,4 +13,7 @@
 \include "predefined-guitar-fretboards.ly"
 \include "fret-books.ily"
 
-#(ht-fret-books "guitar" "guitar-tuning")
+%% No fingering numbers: six strings' worth of digits under a grid this size
+%% reads as clutter rather than help. The uke books keep them - four strings
+%% leave the room for it.
+#(ht-fret-books "guitar" "guitar-tuning" 'none)
