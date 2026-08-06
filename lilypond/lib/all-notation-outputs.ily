@@ -51,14 +51,18 @@
    (or (eq? ht-book-selection 'all)
        (and (member name ht-book-selection) #t)
        ;; "transposed" is shorthand for every \transpose book, trad and fret
-       ;; alike. "uke" on its own means the whole uke family, since the five
-       ;; are one feature and are almost never wanted apart.
+       ;; alike. A fret instrument's own name means its whole family, since
+       ;; the five are one feature and are almost never wanted apart.
        (and (member "transposed" ht-book-selection)
             (member name '("trad-up1" "trad-up2" "trad-dn1" "trad-dn2"
-                           "uke-up1" "uke-up2" "uke-dn1" "uke-dn2"))
+                           "uke-up1" "uke-up2" "uke-dn1" "uke-dn2"
+                           "guitar-up1" "guitar-up2" "guitar-dn1" "guitar-dn2"))
             #t)
        (and (member "uke" ht-book-selection)
             (member name '("uke-up1" "uke-up2" "uke-dn1" "uke-dn2"))
+            #t)
+       (and (member "guitar" ht-book-selection)
+            (member name '("guitar-up1" "guitar-up2" "guitar-dn1" "guitar-dn2"))
             #t)))
 
 %% Warn on a name that matches nothing, so a typo fails loudly instead of
@@ -66,7 +70,9 @@
 #(if (not (eq? ht-book-selection 'all))
      (let ((known '("trad" "clairnote" "shapenote" "4shapenote" "lead"
                     "trad-up1" "trad-up2" "trad-dn1" "trad-dn2" "transposed"
-                    "uke" "uke-up1" "uke-up2" "uke-dn1" "uke-dn2")))
+                    "uke" "uke-up1" "uke-up2" "uke-dn1" "uke-dn2"
+                    "guitar" "guitar-up1" "guitar-up2" "guitar-dn1"
+                    "guitar-dn2")))
        (for-each
         (lambda (n)
           (if (not (member n known))
@@ -102,9 +108,14 @@
      (ly:parser-include-string
       (format #f "\\include \"~a/transposed-books.ily\"" ht-lib-dir)))
 
-%% Same arrangement for the ukulele family: one file, five books, its own
+%% Same arrangement for each fretted instrument: one file, five books, its own
 %% gating - plus it emits nothing at all for a song with no chords.
 #(if (or (ht-book? "uke") (ht-book? "uke-up1") (ht-book? "uke-up2")
          (ht-book? "uke-dn1") (ht-book? "uke-dn2"))
      (ly:parser-include-string
       (format #f "\\include \"~a/ukulele-book.ily\"" ht-lib-dir)))
+
+#(if (or (ht-book? "guitar") (ht-book? "guitar-up1") (ht-book? "guitar-up2")
+         (ht-book? "guitar-dn1") (ht-book? "guitar-dn2"))
+     (ly:parser-include-string
+      (format #f "\\include \"~a/guitar-book.ily\"" ht-lib-dir)))

@@ -13,6 +13,9 @@
     <input type="radio" id="uke" name="variant-radio" onclick="changeImage('uke');">
     <label for="uke">Ukulele</label>
     </td><td>
+    <input type="radio" id="guitar" name="variant-radio" onclick="changeImage('guitar');">
+    <label for="guitar">Guitar</label>
+    </td><td>
     {% endif %}
     <input type="radio" id="shapenote" name="variant-radio" onclick="changeImage('shapenote');">
     <label for="shapenote">7 Shape</label>
@@ -35,6 +38,13 @@
         (<div class="tooltip">
             ?
             <span class="tooltiptext">(Beta) The melody and chords of the leadsheet, with a ukulele fretboard diagram for each chord change. Standard GCEA tuning. Transposes with the arrows.
+            </span>
+        </div>)
+    </td><td>
+    (<a href="/local-lilypond-outputs/{{ page.song_file }}-guitar.pdf">PDF</a>)
+        (<div class="tooltip">
+            ?
+            <span class="tooltiptext">(Beta) The melody and chords of the leadsheet, with a guitar fretboard diagram for each chord change. Standard EADGBE tuning. Transposes with the arrows.
             </span>
         </div>)
     </td><td>

@@ -21,16 +21,16 @@
     window.midi_url = "{{ site.baseurl }}/local-lilypond-outputs/{{ page.song_file }}.midi";
     // The score is picked on two axes: which notation book, and how many half
     // steps off the printed key. Only some books are engraved transposed
-    // (-trad-up1 ... -trad-dn2, and the same five for -uke), so every other
-    // notation forces the offset back to 0 rather than asking for a file that
-    // was never built.
+    // (-trad-up1 ... -trad-dn2, and the same four for -uke and -guitar), so
+    // every other notation forces the offset back to 0 rather than asking for
+    // a file that was never built.
     window.currentVariant = "trad";
     window.currentTranspose = 0;
 
     var TRANSPOSE_SUFFIX = {"-2": "-dn2", "-1": "-dn1", "0": "", "1": "-up1", "2": "-up2"};
     var TRANSPOSE_LIMIT = 2;
 
-    var TRANSPOSABLE = ["trad", "uke"];
+    var TRANSPOSABLE = ["trad", "uke", "guitar"];
 
     function variantSupportsTranspose(variant) {
         return TRANSPOSABLE.indexOf(variant) != -1;
