@@ -50,16 +50,23 @@
    "Should the book with output suffix NAME be emitted this run?"
    (or (eq? ht-book-selection 'all)
        (and (member name ht-book-selection) #t)
-       ;; "transposed" is shorthand for the four \transpose books
+       ;; "transposed" is shorthand for every \transpose book, trad and fret
+       ;; alike. "uke" on its own means the whole uke family, since the five
+       ;; are one feature and are almost never wanted apart.
        (and (member "transposed" ht-book-selection)
-            (member name '("trad-up1" "trad-up2" "trad-dn1" "trad-dn2"))
+            (member name '("trad-up1" "trad-up2" "trad-dn1" "trad-dn2"
+                           "uke-up1" "uke-up2" "uke-dn1" "uke-dn2"))
+            #t)
+       (and (member "uke" ht-book-selection)
+            (member name '("uke-up1" "uke-up2" "uke-dn1" "uke-dn2"))
             #t)))
 
 %% Warn on a name that matches nothing, so a typo fails loudly instead of
 %% quietly producing an empty build that then gets cached as good.
 #(if (not (eq? ht-book-selection 'all))
      (let ((known '("trad" "clairnote" "shapenote" "4shapenote" "lead"
-                    "trad-up1" "trad-up2" "trad-dn1" "trad-dn2" "transposed")))
+                    "trad-up1" "trad-up2" "trad-dn1" "trad-dn2" "transposed"
+                    "uke" "uke-up1" "uke-up2" "uke-dn1" "uke-dn2")))
        (for-each
         (lambda (n)
           (if (not (member n known))
@@ -94,3 +101,10 @@
          (ht-book? "trad-dn1") (ht-book? "trad-dn2"))
      (ly:parser-include-string
       (format #f "\\include \"~a/transposed-books.ily\"" ht-lib-dir)))
+
+%% Same arrangement for the ukulele family: one file, five books, its own
+%% gating - plus it emits nothing at all for a song with no chords.
+#(if (or (ht-book? "uke") (ht-book? "uke-up1") (ht-book? "uke-up2")
+         (ht-book? "uke-dn1") (ht-book? "uke-dn2"))
+     (ly:parser-include-string
+      (format #f "\\include \"~a/ukulele-book.ily\"" ht-lib-dir)))

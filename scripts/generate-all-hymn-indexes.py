@@ -85,6 +85,20 @@ def get_stanza_count(all_lines):
             line = line[index:].strip()
             return line
 
+def get_has_chords(all_lines):
+    # The ukulele books are only engraved for songs that define chords, so the
+    # site needs to know which songs have them - a tab whose PNG was never
+    # built is a broken image, not an empty one.
+    #
+    # all_lines already has any shared-tunes include prepended by the caller,
+    # which matters: about half the corpus inherits its chords from a shared
+    # tune rather than declaring them in the song file. Checking the song file
+    # alone would call those songs chordless and hide a tab that does exist.
+    for line in all_lines:
+        if line.startswith("songChords") or line.startswith("chordSymbols"):
+            return True
+    return False
+
 def get_tune_and_meter(all_lines):
     for line in all_lines:
         search_for = "meter = \\smallText"
@@ -379,6 +393,7 @@ if __name__ == "__main__":
             "key": get_key(lines),
             "date_added": get_date_added(lines),
             "tags": get_tags(lines),
+            "has_chords": get_has_chords(lines),
             "lyrics": get_lyrics(lines),
             "image": get_image(song_file_base)
         }

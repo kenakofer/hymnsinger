@@ -450,6 +450,54 @@ fillTradLeadSheetScore =
     #})
 
 
+%% Lead sheet with a fretboard diagram row under the chord symbols.
+%%
+%% Same shape as \fillTradLeadSheetScore, plus a FretBoards context. The
+%% tuning is a parameter rather than baked in so a guitar book can reuse this
+%% verbatim - the only per-instrument facts are the tuning vector and which
+%% predefined-*-fretboards.ly the book included.
+%%
+%% $chordMusic is the raw \chordmode music, NOT the \songChords context
+%% expression the other books take: FretBoards has to read chord events
+%% itself, and handing it an already-built ChordNames renders nothing. See
+%% fret-books.ily for how the two forms are told apart.
+fillFretLeadSheetScore =
+  #(define-music-function
+    (parser location topA chordMusic tuning zoomLevel)
+    (ly:music? ly:music? list? number?)
+    #{
+      <<
+        \removeWithTag #'midionly
+        \new ChordNames {
+          \globalChordSymbols
+          $chordMusic
+        }
+        \new FretBoards \with {
+          stringTunings = #tuning
+        } {
+          %% Only diagram a chord where the symbol above it changes; a
+          %% diagram under every beat is unreadable and repeats itself.
+          \set chordChanges = ##t
+          $chordMusic
+        }
+        \new Lyrics = "topVerse" \with {
+          % lyrics above a staff should have this override
+          \override VerticalAxisGroup.staff-affinity = #DOWN
+        }
+        \new TradStaff = "top" \with {
+          printPartCombineTexts = ##f
+          \magnifyStaff $zoomLevel
+          \RemoveAllEmptyStaves
+        }
+        <<
+          \new Voice \with {
+
+          } << $topA >>
+          \removeWithTag #'slidesOnly \all_verses
+        >>
+      >>
+    #})
+
 fillTradScoreSingleStaff =
   #(define-music-function
     (parser location topA topB bottomA bottomB songChords)
@@ -575,6 +623,16 @@ hymnKey = \key c \major
 hymnTime = \time 4/4
 quarternoteTempo = 120
 songChords = { }
+%% The raw \chordmode music, when a song keeps it separate from \songChords.
+%%
+%% Most songs write the chords straight into \songChords and stop there. The
+%% few that need a capo line build \songChords out of several \new ChordNames
+%% blocks instead, and keep the underlying music here so those blocks can each
+%% reference it. The fret books need the raw music - a built ChordNames
+%% context renders no diagrams - so they prefer this when the song defines it
+%% and fall back to \songChords when it does not. Empty by default, which is
+%% the signal for "this song uses the plain form".
+chordSymbols = { }
 %% These usually don't need to be changed
 hymnBaseMoment = \set Timing.baseMoment = #(ly:make-moment 1/4)
 hymnBeatStructure = \set Timing.beatStructure = 1,1,1,1

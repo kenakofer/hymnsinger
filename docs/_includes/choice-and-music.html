@@ -1,3 +1,4 @@
+{% assign has_chords = site.data.songs[page.song_file].has_chords %}
 <div id="choice-and-music">
     <table id="score-variants">
     <tr>
@@ -8,6 +9,11 @@
     <input type="radio" id="lead" name="variant-radio" onclick="changeImage('lead');">
     <label for="lead">Leadsheet</label>
     </td><td>
+    {% if has_chords %}
+    <input type="radio" id="uke" name="variant-radio" onclick="changeImage('uke');">
+    <label for="uke">Ukulele</label>
+    </td><td>
+    {% endif %}
     <input type="radio" id="shapenote" name="variant-radio" onclick="changeImage('shapenote');">
     <label for="shapenote">7 Shape</label>
     </td><td>
@@ -24,6 +30,15 @@
     </td><td>
     (<a href="/local-lilypond-outputs/{{ page.song_file }}-lead.pdf">PDF</a>)
     </td><td>
+    {% if has_chords %}
+    (<a href="/local-lilypond-outputs/{{ page.song_file }}-uke.pdf">PDF</a>)
+        (<div class="tooltip">
+            ?
+            <span class="tooltiptext">(Beta) The melody and chords of the leadsheet, with a ukulele fretboard diagram for each chord change. Standard GCEA tuning. Transposes with the arrows.
+            </span>
+        </div>)
+    </td><td>
+    {% endif %}
     (<a href="/local-lilypond-outputs/{{ page.song_file }}-shapenote.pdf">PDF</a>)
         (<div class="tooltip">
             ?

@@ -47,14 +47,24 @@ song_fingerprint() {
     } | sha256sum | cut -d' ' -f1
 }
 
+# Every output suffix a full run can produce. Single source of truth for the
+# post-processing loops - it used to be spelled out twice and the two copies
+# had to be edited together.
+#
+# The -uke* books only exist for songs that define chords, so these globs are
+# expected to miss for most songs; every consumer below is guarded by [ -e ].
+ALL_TYPES="-trad -clairnote -shapenote -4shapenote -lead -trad-up1 -trad-up2 -trad-dn1 -trad-dn2 -uke -uke-up1 -uke-up2 -uke-dn1 -uke-dn2"
+
 # Map a BOOKS selection onto the output suffixes the post-processing steps
 # walk. Must stay in step with ht-book? in lib/all-notation-outputs.ily.
 books_to_types() {
     local sel="$1" out="" b
     for b in ${sel//,/ }; do
         case "$b" in
-            all) out="-trad -clairnote -shapenote -4shapenote -lead -trad-up1 -trad-up2 -trad-dn1 -trad-dn2"; break ;;
-            transposed) out="$out -trad-up1 -trad-up2 -trad-dn1 -trad-dn2" ;;
+            all) out="$ALL_TYPES"; break ;;
+            transposed) out="$out -trad-up1 -trad-up2 -trad-dn1 -trad-dn2 -uke-up1 -uke-up2 -uke-dn1 -uke-dn2" ;;
+            # "uke" means the whole family, matching ht-book? in the .ily.
+            uke) out="$out -uke -uke-up1 -uke-up2 -uke-dn1 -uke-dn2" ;;
             *) out="$out -${b}" ;;
         esac
     done
@@ -105,7 +115,7 @@ build_song() {
     if [ -n "$BOOKS" ]; then
         TYPES=$(books_to_types "$BOOKS")
     else
-        TYPES="-trad -clairnote -shapenote -4shapenote -lead -trad-up1 -trad-up2 -trad-dn1 -trad-dn2"
+        TYPES="$ALL_TYPES"
     fi
     for TYPE in $TYPES; do
         if [ -e "$OUTPUT_DIR$BASE$TYPE-page3.png" ] ; then # 3 page case
@@ -189,7 +199,7 @@ build_song() {
     echo "     --> Done."
 }
 export -f build_song song_fingerprint books_to_types
-export SCRIPT_DIR BOOKS
+export SCRIPT_DIR BOOKS ALL_TYPES
 
 # Which songs to build. SONGS is a whitespace-separated list of slugs; empty
 # means all of them.
