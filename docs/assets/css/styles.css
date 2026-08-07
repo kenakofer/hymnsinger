@@ -160,8 +160,13 @@ section {
 }
 /* Same plate and button treatment as the transpose control directly above it,
    so the two read as one cluster over the score's blank corner. */
+/* Hidden until renderScore() decides otherwise. The page opens on the
+   traditional tab, where fretboards do not apply, so shipping this visible
+   meant a flash of three buttons over a four-part score on every load - and
+   they stayed until the first click, since nothing re-rendered before that.
+   Defaulting to hidden makes the correct state the one that needs no JS. */
 #frets-control {
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: center;
     gap: 2px;

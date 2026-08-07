@@ -85,6 +85,15 @@ document.addEventListener('DOMContentLoaded', function() {
             renderScore();
         });
     });
+
+    // Sync the controls to whatever state the params left us in - including
+    // the common case of no params at all, which lands on the traditional tab
+    // and runs none of the branches above.
+    //
+    // Without this the frets toggle keeps whatever its markup said until the
+    // first click: it ships visible, so a plain page load showed three
+    // fretboard buttons over a four-part score they do not apply to.
+    renderScore();
 }, false);
 
 var click_play = function() {

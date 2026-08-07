@@ -81,10 +81,12 @@
                 window.currentTranspose <= -TRANSPOSE_LIMIT;
         }
 
-        // The frets toggle only means anything on the chord tab.
+        // The frets toggle only means anything on the chord tab. Showing it
+        // sets "flex" rather than "" because the stylesheet defaults it to
+        // display:none - "" would fall back to that rule and hide it again.
         var frets = document.getElementById("frets-control");
         if (frets) {
-            frets.style.display = window.currentVariant == "lead" ? "" : "none";
+            frets.style.display = window.currentVariant == "lead" ? "flex" : "none";
             for (var key in FRETS_BUTTONS) {
                 var btn = document.getElementById(FRETS_BUTTONS[key]);
                 if (btn) btn.classList.toggle("selected", key == window.currentFrets);
