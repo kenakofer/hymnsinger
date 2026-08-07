@@ -20,5 +20,189 @@
   "lyrics": "Now the day is over,\nnight is drawing nigh,\nshadows of the evening\nsteal across the sky.\n\nNow the leafless landscape\nsettles in repose,\nwaiting for the quiet\nof the winter snows.\n\nNow as twilight gathers\nlet us pause and hear\nall the slowing pulsebeats\nof the waning year.\n\nMay the season's rhythms,\nslow and strong and deep\nsoothe the mind and spirit\nlulling us to sleep.\n\nSleep until the rising\nof another spring\nkeeps the ancient promise\nfall and winter bring.\n",
   "image": "/local-lilypond-outputs/now-the-day-is-over-trad.png",
   "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: Now the day is over, night is drawing nigh, shadows of the evening steal across the sky.  Now the leafless landscape settles in repose, waiting for th... english secular 4part evening autumn",
-  "songs_with_same_tune": []
+  "songs_with_same_tune": [],
+  "landmarks": {
+    "trad": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09666,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.43774,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "clairnote": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09185,
+        "w": 0.0136,
+        "h": 0.02929
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.45563,
+        "w": 0.00912,
+        "h": 0.0355
+      }
+    },
+    "lead-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08779,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.30496,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.0851,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.30624,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08678,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.31009,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08779,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.30924,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09666,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.30004,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.09778,
+        "w": 0.00839,
+        "h": 0.01603
+      },
+      "lastbar": {
+        "x": 0.95063,
+        "y": 0.4497,
+        "w": 0.00175,
+        "h": 0.02603
+      }
+    },
+    "4shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.09778,
+        "w": 0.00839,
+        "h": 0.01603
+      },
+      "lastbar": {
+        "x": 0.95063,
+        "y": 0.4497,
+        "w": 0.00175,
+        "h": 0.02603
+      }
+    },
+    "trad-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08779,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.44415,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.0851,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.44565,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08678,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.43688,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08779,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.43688,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    }
+  }
 }

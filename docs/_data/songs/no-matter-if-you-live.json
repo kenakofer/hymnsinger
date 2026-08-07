@@ -5,7 +5,7 @@
   "tune": "INDIA",
   "meter": "10.10.10.10",
   "stanza_count": "4",
-  "composer": "Old Indian song;\narr. Fr\u00e9d\u00e9ric Mathil, 1950",
+  "composer": "Old Indian song;\narr. Frédéric Mathil, 1950",
   "poet": "Metta Sutta, from Sutta Nipata, alt.",
   "key": "E minor",
   "date_added": "2021/03/23",
@@ -18,5 +18,189 @@
   "lyrics": "No matter if you live now far or near,\nno matter what your weakness or your strength,\nthere is not one alive we count outside.\nMay deeper joy for all now come at length,\nmay deeper joy for all now come at length.\n\nLet none among us lie or selfdeceive;\nnor cultivate a hatred all or part,\nmay never one of us live by our rage\nnor wish another injury of heart,\nnor wish another injury of heart.\n\nJust as the goodly mother will protect\nher children, e'en at risk of her own life,\nso may we nurture an old mindfulness,\na boundless heart beyond all fear and strife,\na boundless heart beyond all fear and strife.\n",
   "image": "/local-lilypond-outputs/no-matter-if-you-live-trad.png",
   "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: No matter if you live now far or near, no matter what your weakness or your strength, there is not one alive we count outside. May deeper joy for all ... english secular 4part",
-  "songs_with_same_tune": []
+  "songs_with_same_tune": [],
+  "landmarks": {
+    "trad": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08764,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.75439,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "clairnote": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09735,
+        "w": 0.02025,
+        "h": 0.02704
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.81633,
+        "w": 0.00159,
+        "h": 0.0355
+      }
+    },
+    "lead-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09752,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.42405,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08865,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.41571,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08617,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.42363,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08865,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.4155,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08764,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.41807,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.08784,
+        "w": 0.01013,
+        "h": 0.01953
+      },
+      "lastbar": {
+        "x": 0.95063,
+        "y": 0.78389,
+        "w": 0.00175,
+        "h": 0.02603
+      }
+    },
+    "4shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.08784,
+        "w": 0.01013,
+        "h": 0.01953
+      },
+      "lastbar": {
+        "x": 0.95063,
+        "y": 0.78389,
+        "w": 0.00175,
+        "h": 0.02603
+      }
+    },
+    "trad-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09752,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.76166,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08865,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.75439,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08617,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.75397,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08865,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.75268,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    }
+  }
 }

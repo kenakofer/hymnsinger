@@ -15,7 +15,7 @@
     "4part"
   ],
   "has_chords": false,
-  "lyrics": "Come, Thou Fount of ev'ry blessing, tune my heart to sing thy grace;\nStreams of mercy, never ceasing, call for songs of loudest praise.\nTeach me some melodious sonnet, sung by flaming tongues above.\nPraise the mount! I\u2019m fixed upon it, mount of God\u2019s unchanging love.\n\nHere I raise my Ebenezer; here by Thy great help I\u2019ve come;\nAnd I hope, by thy good pleasure, safely to arrive at home.\nJesus sought me when a stranger, wand\u2019ring from the fold of God;\nHe, to rescue me from danger, interposed his precious blood; }\nO to grace how great a debtor daily I\u2019m constrained to be!\nLet that grace now, like a fetter, bind my wand\u2019ring heart to thee.\nProne to wander, Lord, I feel it, prone to leave the God I love;\nHere\u2019s my heart, O take and seal it, seal it for thy courts above.\n",
+  "lyrics": "Come, Thou Fount of ev'ry blessing, tune my heart to sing thy grace;\nStreams of mercy, never ceasing, call for songs of loudest praise.\nTeach me some melodious sonnet, sung by flaming tongues above.\nPraise the mount! I’m fixed upon it, mount of God’s unchanging love.\n\nHere I raise my Ebenezer; here by Thy great help I’ve come;\nAnd I hope, by thy good pleasure, safely to arrive at home.\nJesus sought me when a stranger, wand’ring from the fold of God;\nHe, to rescue me from danger, interposed his precious blood; }\nO to grace how great a debtor daily I’m constrained to be!\nLet that grace now, like a fetter, bind my wand’ring heart to thee.\nProne to wander, Lord, I feel it, prone to leave the God I love;\nHere’s my heart, O take and seal it, seal it for thy courts above.\n",
   "image": "/local-lilypond-outputs/come-thou-fount-trad.png",
   "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: Come, Thou Fount of ev'ry blessing, tune my heart to sing thy grace; Streams of mercy, never ceasing, call for songs of loudest praise. Teach me some ... english christian 4part",
   "songs_with_same_tune": [
@@ -23,5 +23,177 @@
       "t": "NETTLETON",
       "s": "Summoned by the God who made us"
     }
-  ]
+  ],
+  "landmarks": {
+    "trad": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08593,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.73515,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "clairnote": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09804,
+        "w": 0.01962,
+        "h": 0.02929
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.78233,
+        "w": 0.0,
+        "h": 0.0355
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08694,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.42256,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08425,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.42854,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08694,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.42063,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08593,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.42384,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.08613,
+        "w": 0.02025,
+        "h": 0.02929
+      },
+      "lastbar": {
+        "x": 0.94235,
+        "y": 0.76059,
+        "w": 0.01003,
+        "h": 0.02603
+      }
+    },
+    "4shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.08613,
+        "w": 0.02025,
+        "h": 0.02929
+      },
+      "lastbar": {
+        "x": 0.94235,
+        "y": 0.76059,
+        "w": 0.01003,
+        "h": 0.02603
+      }
+    },
+    "trad-dn2": {
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.73878,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08694,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.73515,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08425,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.73494,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08694,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.73365,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-dn2": {
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.42726,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    }
+  }
 }

@@ -16,8 +16,346 @@
     "chords"
   ],
   "has_chords": true,
-  "lyrics": "Wade in the water,\nwade in the water, children,\nwade in the water.\nGod's gonna trouble the water.\n\nSee that host all dressed in white,\nGod's gonna trouble the water.\nThe leader looks like the Israelite.\nGod's gonna trouble the water.\n\nSee that band all dressed in red\u2026\nLooks like the band that Moses led\u2026\n\nIf you don't believe I've been redeemed\u2026\nJust follow me down to Jordan's stream\u2026\n",
+  "lyrics": "Wade in the water,\nwade in the water, children,\nwade in the water.\nGod's gonna trouble the water.\n\nSee that host all dressed in white,\nGod's gonna trouble the water.\nThe leader looks like the Israelite.\nGod's gonna trouble the water.\n\nSee that band all dressed in red…\nLooks like the band that Moses led…\n\nIf you don't believe I've been redeemed…\nJust follow me down to Jordan's stream…\n",
   "image": "/local-lilypond-outputs/wade-in-the-water-trad.png",
   "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: Wade in the water, wade in the water, children, wade in the water. God's gonna trouble the water.  See that host all dressed in white, God's gonna tro... english christian 4part chords",
-  "songs_with_same_tune": []
+  "songs_with_same_tune": [],
+  "landmarks": {
+    "trad": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09833,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.76658,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "clairnote": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10655,
+        "w": 0.02025,
+        "h": 0.02704
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.80478,
+        "w": 0.00569,
+        "h": 0.0355
+      }
+    },
+    "lead-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10628,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.47173,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09527,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.47131,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09729,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.47815,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09484,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.46233,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09063,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.46382,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.09128,
+        "w": 0.01013,
+        "h": 0.01953
+      },
+      "lastbar": {
+        "x": 0.94612,
+        "y": 0.77128,
+        "w": 0.00626,
+        "h": 0.02603
+      }
+    },
+    "4shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.09128,
+        "w": 0.01013,
+        "h": 0.01953
+      },
+      "lastbar": {
+        "x": 0.94612,
+        "y": 0.77128,
+        "w": 0.00626,
+        "h": 0.02603
+      }
+    },
+    "trad-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.11205,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.78091,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10296,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.77385,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10392,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.77941,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10169,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.76594,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "uke-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.15503,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.67485,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "uke-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13932,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.66587,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "uke-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14647,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.68533,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "uke-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14401,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.67208,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "uke": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13981,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.66887,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "guitar-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14776,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.65625,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "guitar-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14231,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.66245,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "guitar-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14134,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.66865,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "guitar-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13931,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.65647,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "guitar": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13767,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.65561,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "roman": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09833,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.77,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    }
+  }
 }

@@ -20,5 +20,343 @@
   "lyrics": "We three kings of Orient are;\nbearing gifts we traverse afar,\nfield and fountain, moor and mountain,\nfollowing yonder star.\n\n  O star of wonder, star of light,\n  star with royal beauty bright,\n  westward leading still proceeding,\n  guide us to thy perfect light.\n\nBorn a King on Bethlehem's plain,\ngold I bring to crown him again,\nKing forever, ceasing never,\nover us all to reign.\n\n  O star of wonder, star of light,\n  star with royal beauty bright,\n  westward leading still proceeding,\n  guide us to thy perfect light.\n\nFrankincense to offer have I;\nincense owns a deity nigh;\nprayer and praising, voices raising,\nworshiping God on high.\n\n  O star of wonder, star of light,\n  star with royal beauty bright,\n  westward leading still proceeding,\n  guide us to thy perfect light.\n\nMyrrh is mine; its bitter perfume\nbreathes a life of gathering gloom;\nsorrowing, sighing, bleeding, dying,\nsealed in the stonecold tomb.\n\n  O star of wonder, star of light,\n  star with royal beauty bright,\n  westward leading still proceeding,\n  guide us to thy perfect light.\n\nGlorious now behold him arise;\nKing and God and sacrifice:\nAlleluia, Alleluia,\nsounds through the earth and skies.\n\n  O star of wonder, star of light,\n  star with royal beauty bright,\n  westward leading still proceeding,\n  guide us to thy perfect light.\n",
   "image": "/local-lilypond-outputs/we-three-kings-trad.png",
   "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: We three kings of Orient are; bearing gifts we traverse afar, field and fountain, moor and mountain, following yonder star.    O star of wonder, star ... english christian winter 4part chords",
-  "songs_with_same_tune": []
+  "songs_with_same_tune": [],
+  "landmarks": {
+    "trad": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.0964,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.75632,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "clairnote": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08697,
+        "w": 0.01962,
+        "h": 0.02929
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.79452,
+        "w": 0.00159,
+        "h": 0.0355
+      }
+    },
+    "lead-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10436,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.48456,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10104,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.49162,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09472,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.49867,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09249,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.48756,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.0964,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.47793,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.08613,
+        "w": 0.01013,
+        "h": 0.01953
+      },
+      "lastbar": {
+        "x": 0.95063,
+        "y": 0.76892,
+        "w": 0.00175,
+        "h": 0.02603
+      }
+    },
+    "4shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.08613,
+        "w": 0.01013,
+        "h": 0.01953
+      },
+      "lastbar": {
+        "x": 0.95063,
+        "y": 0.76892,
+        "w": 0.00175,
+        "h": 0.02603
+      }
+    },
+    "trad-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10436,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.75803,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10104,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.76081,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10199,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.76295,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09955,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.75632,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "uke-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.15332,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.68747,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "uke-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14487,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.6864,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "uke-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14347,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.70735,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "uke-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14123,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.69538,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "uke": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14536,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.68661,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "guitar-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14584,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.66481,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "guitar-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14231,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.67143,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "guitar-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13941,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.67635,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "guitar-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13717,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.67079,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "guitar": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13788,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.66203,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "roman": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09961,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.75952,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    }
+  }
 }

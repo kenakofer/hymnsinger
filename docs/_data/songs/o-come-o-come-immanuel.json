@@ -19,5 +19,189 @@
   "lyrics": "O come, O come, Immanuel,\nand ransom captive Israel,\nthat mourns in lonely exile here,\nuntil the Son of God appear.\n\n  Rejoice! Rejoice!\n  Immanuel shall come to thee, O Israel.\n\nO come, O come, thou God of law,\nin cloud and majesty and awe.\nThy precepts, taught on Sinai's height,\ncall us to lives both just and right.\n\n  Rejoice! Rejoice!\n  Immanuel shall come to thee, O Israel.\n\nO come, thou Rod of Jesse, free\nthine own from Satan's tyranny.\nFrom depths of hell thy people save,\nand give them vict'ry o'er the grave.\nRejoice! Rejoice!\nImmanuel shall come to thee, O Israel.\n\nO come, thou Dayspring, come and cheer\nour spirits by thine advent here.\nDisperse the gloomy clouds of night,\nand death's dark shadow put to flight.\nRejoice! Rejoice!\nImmanuel shall come to thee, O Israel.\n\nO come, thou Key of David come\nand open wide our heav'nly home.\nMake safe the way that leads to thee\nand close the path to misery.\nRejoice! Rejoice!\nImmanuel shall come to thee, O Israel.\n\nO come, thou Wisdom from on high,\nand order all things far and nigh.\nTo us the path of knowledge show,\nand cause us in thy ways to go.\nRejoice! Rejoice!\nImmanuel shall come to thee, O Israel.\n\nO come, Desire of nations, bind\nall peoples in one heart and mind.\nBid envy, strife and quarrels cease,\nand fill the world with heaven's peace.\nRejoice! Rejoice!\nImmanuel shall come to thee, O Israel.\n",
   "image": "/local-lilypond-outputs/o-come-o-come-immanuel-trad.png",
   "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: O come, O come, Immanuel, and ransom captive Israel, that mourns in lonely exile here, until the Son of God appear.    Rejoice! Rejoice!   Immanuel sh... english christian winter 4part",
-  "songs_with_same_tune": []
+  "songs_with_same_tune": [],
+  "landmarks": {
+    "trad": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08678,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.58834,
+        "w": 0.00912,
+        "h": 0.01183
+      }
+    },
+    "clairnote": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09756,
+        "w": 0.02025,
+        "h": 0.02704
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.61464,
+        "w": 0.00912,
+        "h": 0.01183
+      }
+    },
+    "lead-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09666,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.49311,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08779,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.48884,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.0851,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.50252,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08779,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.49654,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08678,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.49418,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.08699,
+        "w": 0.01013,
+        "h": 0.01953
+      },
+      "lastbar": {
+        "x": 0.94235,
+        "y": 0.60694,
+        "w": 0.01003,
+        "h": 0.01183
+      }
+    },
+    "4shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.08699,
+        "w": 0.01013,
+        "h": 0.01953
+      },
+      "lastbar": {
+        "x": 0.94235,
+        "y": 0.60694,
+        "w": 0.01003,
+        "h": 0.01183
+      }
+    },
+    "trad-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09666,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.59411,
+        "w": 0.00912,
+        "h": 0.01183
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08779,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.58834,
+        "w": 0.00912,
+        "h": 0.01183
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.0851,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.59818,
+        "w": 0.00912,
+        "h": 0.01183
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08779,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.59689,
+        "w": 0.00912,
+        "h": 0.01183
+      }
+    }
+  }
 }

@@ -18,5 +18,177 @@
   "lyrics": "God be with you till we meet again;\nloving counsels guide, uphold you,\nmay the Shepherd's care enfold you;\nGod be with you till we meet again.\n\nGod be with you till we meet again;\nunseen wings, protecting, hide you,\ndaily manna still provide you;\nGod be with you till we meet again.\n\nGod be with you till we meet again;\nwhen life's perils thick confound you,\nput unfailing arms around you;\nGod be with you till we meet again.\n\nGod be with you till we meet again;\nkeep love's banner floating o'er you,\nsmite death's threat'ning wave before you;\nGod be with you till we meet again.\n",
   "image": "/local-lilypond-outputs/god-be-with-you-williams-trad.png",
   "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: God be with you till we meet again; loving counsels guide, uphold you, may the Shepherd's care enfold you; God be with you till we meet again.  God be... english theist 4part",
-  "songs_with_same_tune": []
+  "songs_with_same_tune": [],
+  "landmarks": {
+    "trad": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08721,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.41764,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "clairnote": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10381,
+        "w": 0.01962,
+        "h": 0.02929
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.43938,
+        "w": 0.00159,
+        "h": 0.0355
+      }
+    },
+    "lead-dn2": {
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.27567,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08694,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.27438,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08425,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.27503,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08694,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.27374,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08593,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.27438,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.08764,
+        "w": 0.02025,
+        "h": 0.02929
+      },
+      "lastbar": {
+        "x": 0.95063,
+        "y": 0.43153,
+        "w": 0.00175,
+        "h": 0.02603
+      }
+    },
+    "4shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.08764,
+        "w": 0.02025,
+        "h": 0.02929
+      },
+      "lastbar": {
+        "x": 0.95063,
+        "y": 0.43153,
+        "w": 0.00175,
+        "h": 0.02603
+      }
+    },
+    "trad-dn2": {
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.41785,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08822,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.41764,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08639,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.41614,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09036,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.41614,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    }
+  }
 }

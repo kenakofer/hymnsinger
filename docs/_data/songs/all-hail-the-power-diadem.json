@@ -16,8 +16,346 @@
     "chords"
   ],
   "has_chords": true,
-  "lyrics": "All hail the pow\u2019r of Jesus\u2019 name!\nLet angels prostrate fall,\nlet angels prostrate fall.\nBring forth the royal diadem,\n\n  and crown him, crown him, crown him,\n  crown him, and crown him Lord of all\n\nLet ev'ry kindred, ev'ry tribe,\non this terrestrial ball,\non this terrestrial ball,\nto him all majesty ascribe,\n\n  and crown him, crown him, crown him,\n  crown him, and crown him Lord of all\n\nOh, that with yonder sacred throng\nwe at his feet may fall,\nwe at his feet may fall!\nWe'll join the everlasting song,\n\n  and crown him, crown him, crown him,\n  crown him, and crown him Lord of all\n",
+  "lyrics": "All hail the pow’r of Jesus’ name!\nLet angels prostrate fall,\nlet angels prostrate fall.\nBring forth the royal diadem,\n\n  and crown him, crown him, crown him,\n  crown him, and crown him Lord of all\n\nLet ev'ry kindred, ev'ry tribe,\non this terrestrial ball,\non this terrestrial ball,\nto him all majesty ascribe,\n\n  and crown him, crown him, crown him,\n  crown him, and crown him Lord of all\n\nOh, that with yonder sacred throng\nwe at his feet may fall,\nwe at his feet may fall!\nWe'll join the everlasting song,\n\n  and crown him, crown him, crown him,\n  crown him, and crown him Lord of all\n",
   "image": "/local-lilypond-outputs/all-hail-the-power-diadem-trad.png",
-  "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: All hail the pow\u2019r of Jesus\u2019 name! Let angels prostrate fall, let angels prostrate fall. Bring forth the royal diadem,    and crown him, crown him, cr... english christian 4part chords",
-  "songs_with_same_tune": []
+  "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: All hail the pow’r of Jesus’ name! Let angels prostrate fall, let angels prostrate fall. Bring forth the royal diadem,    and crown him, crown him, cr... english christian 4part chords",
+  "songs_with_same_tune": [],
+  "landmarks": {
+    "trad": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10265,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.78582,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "clairnote": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09344,
+        "w": 0.01962,
+        "h": 0.02929
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.81013,
+        "w": 0.0,
+        "h": 0.0355
+      }
+    },
+    "lead-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09448,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.44736,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10104,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.46083,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09816,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.44094,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10105,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.43645,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09816,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.45099,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.09293,
+        "w": 0.03038,
+        "h": 0.03254
+      },
+      "lastbar": {
+        "x": 0.95063,
+        "y": 0.77876,
+        "w": 0.00175,
+        "h": 0.02603
+      }
+    },
+    "4shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.09293,
+        "w": 0.03038,
+        "h": 0.03254
+      },
+      "lastbar": {
+        "x": 0.95063,
+        "y": 0.77876,
+        "w": 0.00175,
+        "h": 0.02603
+      }
+    },
+    "trad-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10303,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.78262,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.11109,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.79373,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10456,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.80934,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.11302,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.81041,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "uke-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14387,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.64171,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "uke-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.15001,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.65134,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "uke-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14926,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.63594,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "uke-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14873,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.6291,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "uke": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14903,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.65518,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "guitar-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13638,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.61285,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "guitar-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14231,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.77727,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "guitar-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14305,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.7653,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "guitar-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14381,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.75461,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "guitar": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13685,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.76572,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "roman": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09665,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.78133,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    }
+  }
 }

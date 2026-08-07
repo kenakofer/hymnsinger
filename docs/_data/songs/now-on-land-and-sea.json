@@ -17,8 +17,346 @@
     "chords"
   ],
   "has_chords": true,
-  "lyrics": "Now, on land and sea descending, brings the night its peace profound.\nLet our vesper hymn be blending with the holy calm around.\n\n  Jubilate! Jubilate! Jubilate! Amen!\n\nLet our vesper hymn be blending with the holy calm around.\n\nSoon as dies the sunset glory, stars of heav'n shine out above,\ntelling still the ancient story\u2013 their Creator's endless love.\n\n  Jubilate! Jubilate! Jubilate! Amen!\n\nTelling still the ancient story\u2013 their Creator's endless love.\n\nNow, our wants and burdens leaving to our God who cares for all,\ncease we fearing, cease we grieving; touched by God our burdens fall.\n\n  Jubilate! Jubilate! Jubilate! Amen!\n\nCease we fearing, cease we grieving; touched by God our burdens fall.\n\nAs the darkness deepens o'er us, lo! Eternal stars arise.\nHope and faith and love rise glorious, shining in the Spirit's skies.\n\n  Jubilate! Jubilate! Jubilate! Amen!\n\nHope and faith and love rise glorious, shining in the Spirit's skies.\n",
+  "lyrics": "Now, on land and sea descending, brings the night its peace profound.\nLet our vesper hymn be blending with the holy calm around.\n\n  Jubilate! Jubilate! Jubilate! Amen!\n\nLet our vesper hymn be blending with the holy calm around.\n\nSoon as dies the sunset glory, stars of heav'n shine out above,\ntelling still the ancient story– their Creator's endless love.\n\n  Jubilate! Jubilate! Jubilate! Amen!\n\nTelling still the ancient story– their Creator's endless love.\n\nNow, our wants and burdens leaving to our God who cares for all,\ncease we fearing, cease we grieving; touched by God our burdens fall.\n\n  Jubilate! Jubilate! Jubilate! Amen!\n\nCease we fearing, cease we grieving; touched by God our burdens fall.\n\nAs the darkness deepens o'er us, lo! Eternal stars arise.\nHope and faith and love rise glorious, shining in the Spirit's skies.\n\n  Jubilate! Jubilate! Jubilate! Amen!\n\nHope and faith and love rise glorious, shining in the Spirit's skies.\n",
   "image": "/local-lilypond-outputs/now-on-land-and-sea-trad.png",
   "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: Now, on land and sea descending, brings the night its peace profound. Let our vesper hymn be blending with the holy calm around.    Jubilate! Jubilate... english theist 4part evening chords",
-  "songs_with_same_tune": []
+  "songs_with_same_tune": [],
+  "landmarks": {
+    "trad": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10104,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.78262,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "clairnote": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09542,
+        "w": 0.01962,
+        "h": 0.02929
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.82274,
+        "w": 0.00912,
+        "h": 0.0355
+      }
+    },
+    "lead-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09912,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.49397,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09448,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.48285,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10437,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.48969,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09816,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.49354,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10104,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.49482,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.08716,
+        "w": 0.02517,
+        "h": 0.02905
+      },
+      "lastbar": {
+        "x": 0.94235,
+        "y": 0.79137,
+        "w": 0.01003,
+        "h": 0.02603
+      }
+    },
+    "4shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.08716,
+        "w": 0.02517,
+        "h": 0.02905
+      },
+      "lastbar": {
+        "x": 0.94235,
+        "y": 0.79137,
+        "w": 0.01003,
+        "h": 0.02603
+      }
+    },
+    "trad-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09912,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.78069,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09448,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.77706,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10863,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.78112,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09816,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.78091,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "uke-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14295,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.68041,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "uke-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14323,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.6849,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "uke-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.15353,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.69495,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "uke-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14903,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.69752,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "uke": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.15001,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.69709,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "guitar-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.07457,
+        "w": 0.03849,
+        "h": 0.01467
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.58877,
+        "w": 0.00912,
+        "h": 0.01183
+      }
+    },
+    "guitar-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.07236,
+        "w": 0.01841,
+        "h": 0.01331
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.59037,
+        "w": 0.00912,
+        "h": 0.01183
+      }
+    },
+    "guitar-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.07762,
+        "w": 0.0077,
+        "h": 0.00728
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.59037,
+        "w": 0.00912,
+        "h": 0.01183
+      }
+    },
+    "guitar-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.07184,
+        "w": 0.03682,
+        "h": 0.01479
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.59037,
+        "w": 0.00912,
+        "h": 0.01183
+      }
+    },
+    "guitar": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.07457,
+        "w": 0.0231,
+        "h": 0.01319
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.58877,
+        "w": 0.00912,
+        "h": 0.01183
+      }
+    },
+    "roman": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09763,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.77898,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    }
+  }
 }

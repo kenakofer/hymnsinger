@@ -2,7 +2,7 @@
   "song_file": "we-plow-the-fields",
   "exclude_from_index": false,
   "title": "We plow the fields and scatter",
-  "tune": "WIR PFL\u00dcGEN",
+  "tune": "WIR PFLÜGEN",
   "meter": "76.76 D with refrain",
   "stanza_count": "3",
   "composer": "Johann A. P. Schulz, 1800",
@@ -20,8 +20,192 @@
   "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: We plow the fields and scatter the good seed on the land, but it is fed and watered by God's almighty hand. God sends the snow in winter, the warmth t... english theist 4part",
   "songs_with_same_tune": [
     {
-      "t": "WIR PFL\u00dcGEN",
+      "t": "WIR PFLÜGEN",
       "s": "Again the morn of gladness"
     }
-  ]
+  ],
+  "landmarks": {
+    "trad": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.04342,
+        "w": 0.02761,
+        "h": 0.01479
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.56504,
+        "w": 0.00912,
+        "h": 0.01183
+      }
+    },
+    "clairnote": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.0447,
+        "w": 0.01962,
+        "h": 0.01464
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.66591,
+        "w": 0.0,
+        "h": 0.01775
+      }
+    },
+    "lead-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08849,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.57586,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.0895,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.55897,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08681,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.54977,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.0895,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.55149,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08681,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.57116,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.04348,
+        "w": 0.03038,
+        "h": 0.01627
+      },
+      "lastbar": {
+        "x": 0.94235,
+        "y": 0.56919,
+        "w": 0.01003,
+        "h": 0.01302
+      }
+    },
+    "4shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.04348,
+        "w": 0.03038,
+        "h": 0.01627
+      },
+      "lastbar": {
+        "x": 0.94235,
+        "y": 0.56919,
+        "w": 0.01003,
+        "h": 0.01302
+      }
+    },
+    "trad-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.04425,
+        "w": 0.0092,
+        "h": 0.00888
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.56589,
+        "w": 0.00912,
+        "h": 0.01183
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.04475,
+        "w": 0.0308,
+        "h": 0.01319
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.56439,
+        "w": 0.00912,
+        "h": 0.01183
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.04342,
+        "w": 0.04602,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.56375,
+        "w": 0.00912,
+        "h": 0.01183
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.0454,
+        "w": 0.0154,
+        "h": 0.01172
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.56375,
+        "w": 0.00912,
+        "h": 0.01183
+      }
+    }
+  }
 }

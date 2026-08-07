@@ -1,8 +1,8 @@
 {
   "song_file": "gott-ist-gegenwartig",
   "exclude_from_index": false,
-  "title": "Gott ist gegenw\u00e4rtig",
-  "tune": "WUNDERBARER K\u00d6NIG",
+  "title": "Gott ist gegenwärtig",
+  "tune": "WUNDERBARER KÖNIG",
   "meter": "66.86.66.86.666",
   "stanza_count": "3",
   "composer": "Joachim Neander, 1680",
@@ -16,14 +16,352 @@
     "chords"
   ],
   "has_chords": true,
-  "lyrics": "Gott ist gegenw\u00e4rtig. Lasset uns anbeten und in Ehrfurcht vor ihn treten.\nGott ist in der Mitte. Alles in uns schweige und sich innigst vor ihm beuge.\nWer ihn kennt, wer ihn nennt, schlag die Augen nieder; kommt, ergebt euch wieder.\n\nGott ist gegenw\u00e4rtig, dem die Cherubinen Tag und Nacht geb\u00fccket dienen.\n\"Heilig, heilig, heilig!\" singen ihm zur Ehre aller Engel hohe Ch\u00f6re.\nHerr, vernimm unsre Stimm, da auch wir Geringen unsre Opfer bringen.\n\nHerr, komm in mir wohnen; lass mein Herz auf Erden dir ein Heiligtum noch werden.\nKomm, du nahes Wesen; dich in mir verkl\u00e4re, dass ich dich stets lieb und ehre.\nWo ich geh, sitz und steh, lass mich dich erblicken und vor dir mich b\u00fccken.\n",
+  "lyrics": "Gott ist gegenwärtig. Lasset uns anbeten und in Ehrfurcht vor ihn treten.\nGott ist in der Mitte. Alles in uns schweige und sich innigst vor ihm beuge.\nWer ihn kennt, wer ihn nennt, schlag die Augen nieder; kommt, ergebt euch wieder.\n\nGott ist gegenwärtig, dem die Cherubinen Tag und Nacht gebücket dienen.\n\"Heilig, heilig, heilig!\" singen ihm zur Ehre aller Engel hohe Chöre.\nHerr, vernimm unsre Stimm, da auch wir Geringen unsre Opfer bringen.\n\nHerr, komm in mir wohnen; lass mein Herz auf Erden dir ein Heiligtum noch werden.\nKomm, du nahes Wesen; dich in mir verkläre, dass ich dich stets lieb und ehre.\nWo ich geh, sitz und steh, lass mich dich erblicken und vor dir mich bücken.\n",
   "image": "/local-lilypond-outputs/gott-ist-gegenwartig-trad.png",
-  "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: Gott ist gegenw\u00e4rtig. Lasset uns anbeten und in Ehrfurcht vor ihn treten. Gott ist in der Mitte. Alles in uns schweige und sich innigst vor ihm beuge.... german christian 4part chords",
+  "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: Gott ist gegenwärtig. Lasset uns anbeten und in Ehrfurcht vor ihn treten. Gott ist in der Mitte. Alles in uns schweige und sich innigst vor ihm beuge.... german christian 4part chords",
   "songs_with_same_tune": [
     {
-      "t": "WUNDERBARER K\u00d6NIG",
+      "t": "WUNDERBARER KÖNIG",
       "s": "God is here among us",
       "i": "god-is-here-among-us"
     }
-  ]
+  ],
+  "landmarks": {
+    "trad": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.11758,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.60194,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "clairnote": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10771,
+        "w": 0.01962,
+        "h": 0.02929
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.6286,
+        "w": 0.00912,
+        "h": 0.0355
+      }
+    },
+    "lead-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.12681,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.39775,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.11986,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.50808,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.1189,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.40289,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.11794,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.39711,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.11522,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.39113,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.10687,
+        "w": 0.01013,
+        "h": 0.01953
+      },
+      "lastbar": {
+        "x": 0.94235,
+        "y": 0.61113,
+        "w": 0.01003,
+        "h": 0.02603
+      }
+    },
+    "4shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.10687,
+        "w": 0.01013,
+        "h": 0.01953
+      },
+      "lastbar": {
+        "x": 0.94235,
+        "y": 0.61113,
+        "w": 0.01003,
+        "h": 0.02603
+      }
+    },
+    "trad-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.12681,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.60173,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.12178,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.77428,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.1189,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.76551,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.1237,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.76744,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "uke-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.17598,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.54357,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "uke-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.16348,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.69795,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "uke-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.16786,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.54977,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "uke-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.16861,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.54742,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "uke": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.16461,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.53887,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "guitar-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.17,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.52497,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "guitar-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.16113,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.82303,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "guitar-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.16016,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.66887,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "guitar-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.16049,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.81576,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "guitar": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.15712,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.5145,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "roman": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.11842,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.6028,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    }
+  }
 }

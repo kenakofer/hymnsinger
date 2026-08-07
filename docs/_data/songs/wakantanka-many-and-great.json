@@ -17,14 +17,352 @@
     "chords"
   ],
   "has_chords": true,
-  "lyrics": "Wakantanka taku nitawa tankaya qa ota;\nmahpiya kin eyahnake \u00e7a, maka kin he duowanca;\nmniowanca \u015bbeya wanke cin, hena oyakihi.\n\nWoehdaku nitawa kin he mina\u0121i kin qu wo;\nmahpiya kin iwankam yati, wicowa\u015bte yuha nanka,\nwiconi kin he mayaqu nun, owihanke wanin.\n\nMany and great, O God, are your works, maker of earth and sky.\nYour hands have set the heavens with stars; your fingers spread the mountains and plains\nLo, at your word the waters were formed; deep seas obey your voice.\n\nGrant unto us communion with you, O starabiding One.\nCome unto us and dwell with us; with you are found the gifts of life.\nBless us with life that has no end, eternal life with you.\n",
+  "lyrics": "Wakantanka taku nitawa tankaya qa ota;\nmahpiya kin eyahnake ça, maka kin he duowanca;\nmniowanca śbeya wanke cin, hena oyakihi.\n\nWoehdaku nitawa kin he minaġi kin qu wo;\nmahpiya kin iwankam yati, wicowaśte yuha nanka,\nwiconi kin he mayaqu nun, owihanke wanin.\n\nMany and great, O God, are your works, maker of earth and sky.\nYour hands have set the heavens with stars; your fingers spread the mountains and plains\nLo, at your word the waters were formed; deep seas obey your voice.\n\nGrant unto us communion with you, O starabiding One.\nCome unto us and dwell with us; with you are found the gifts of life.\nBless us with life that has no end, eternal life with you.\n",
   "image": "/local-lilypond-outputs/wakantanka-many-and-great-trad.png",
-  "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: Wakantanka taku nitawa tankaya qa ota; mahpiya kin eyahnake \u00e7a, maka kin he duowanca; mniowanca \u015bbeya wanke cin, hena oyakihi.  Woehdaku nitawa kin he... dakota english theist 1part chords",
+  "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: Wakantanka taku nitawa tankaya qa ota; mahpiya kin eyahnake ça, maka kin he duowanca; mniowanca śbeya wanke cin, hena oyakihi.  Woehdaku nitawa kin he... dakota english theist 1part chords",
   "songs_with_same_tune": [
     {
       "t": "LACQUIPARLE",
       "s": "Singer of Life",
       "i": "singer-of-life"
     }
-  ]
+  ],
+  "landmarks": {
+    "trad": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09227,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.41529,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "clairnote": {
+      "keysig": {
+        "x": 0.08,
+        "y": 0.08628,
+        "w": 0.01823,
+        "h": 0.02753
+      },
+      "lastbar": {
+        "x": 0.95095,
+        "y": 0.40572,
+        "w": 0.00143,
+        "h": 0.03195
+      }
+    },
+    "lead-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09527,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.42876,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09063,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.41657,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10372,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.40994,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09452,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.43346,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09227,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.414,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.08909,
+        "w": 0.02517,
+        "h": 0.02905
+      },
+      "lastbar": {
+        "x": 0.95063,
+        "y": 0.39775,
+        "w": 0.00175,
+        "h": 0.02603
+      }
+    },
+    "4shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.08909,
+        "w": 0.02517,
+        "h": 0.02905
+      },
+      "lastbar": {
+        "x": 0.95063,
+        "y": 0.39796,
+        "w": 0.00175,
+        "h": 0.02603
+      }
+    },
+    "trad-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09527,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.4294,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09063,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.41849,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10372,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.41251,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09452,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.4341,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "uke-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13932,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.56025,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "uke-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13981,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.56367,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "uke-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.15268,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.55683,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "uke-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14348,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.58056,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "uke": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14123,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.56111,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "guitar-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14231,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.56923,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "guitar-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13767,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.55769,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "guitar-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14777,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.54208,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "guitar-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14156,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.57458,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "guitar": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13846,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.55277,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "roman": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09206,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.41465,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    }
+  }
 }

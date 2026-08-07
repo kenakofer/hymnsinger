@@ -16,7 +16,7 @@
     "accompanied"
   ],
   "has_chords": false,
-  "lyrics": "A voice within cries out, distressed, to see you taste the fruit,\nforbidden by your God and creed, respected since your youth:\n\"Prodigal, I'll fight in you, restore your faith to thrive.\nI'll bring you back within the fold. Without you can't survive.\nWithout you can't survive!\"\n\n\"You'd loose the bond of family!\" your instinct diatribes.\nDecide: Be shunned to wilderness, or rest in harmless lies.\nAct against evolv\u00e9d traits? Your logic might agree,\nbut in your gut, you crave not truth, you crave community.\nYou crave community!\n\nIf earthly fears don't faze you, try a sample of Pascal:\nA slim chance of unfathomed bliss is worth more than your all.\nWalk along the Roman Road, elude eternal pain.\nSalvation's path is mark\u00e9d well, with brimstone in the drain,\nwith brimstone in the drain:\n\nStep one: believe, O wretch, your life is worthless, justly lost,\nand second: faith's your only hope, at seemingly no cost!\nThird, since faith is proved by work, pay up in duties due:\nTwo hands on plow, and don't look back, for Brother's watching you.\nYour God is watching you!\n\nHeed not the sluggish, skeptic thought, the votes have all been cast.\nReligions of today are the religions fit to last.\nMembers true through power, fear, or friendly company\nrebuke again their wayward young, \"Eat not from yonder tree.\"\n\"Eat not from yonder tree!\"\n",
+  "lyrics": "A voice within cries out, distressed, to see you taste the fruit,\nforbidden by your God and creed, respected since your youth:\n\"Prodigal, I'll fight in you, restore your faith to thrive.\nI'll bring you back within the fold. Without you can't survive.\nWithout you can't survive!\"\n\n\"You'd loose the bond of family!\" your instinct diatribes.\nDecide: Be shunned to wilderness, or rest in harmless lies.\nAct against evolvéd traits? Your logic might agree,\nbut in your gut, you crave not truth, you crave community.\nYou crave community!\n\nIf earthly fears don't faze you, try a sample of Pascal:\nA slim chance of unfathomed bliss is worth more than your all.\nWalk along the Roman Road, elude eternal pain.\nSalvation's path is markéd well, with brimstone in the drain,\nwith brimstone in the drain:\n\nStep one: believe, O wretch, your life is worthless, justly lost,\nand second: faith's your only hope, at seemingly no cost!\nThird, since faith is proved by work, pay up in duties due:\nTwo hands on plow, and don't look back, for Brother's watching you.\nYour God is watching you!\n\nHeed not the sluggish, skeptic thought, the votes have all been cast.\nReligions of today are the religions fit to last.\nMembers true through power, fear, or friendly company\nrebuke again their wayward young, \"Eat not from yonder tree.\"\n\"Eat not from yonder tree!\"\n",
   "image": "/local-lilypond-outputs/religion-fit-to-last-trad.png",
   "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: A voice within cries out, distressed, to see you taste the fruit, forbidden by your God and creed, respected since your youth: \\\"Prodigal, I'll fight i... english secular 1part accompanied",
   "songs_with_same_tune": [
@@ -25,5 +25,177 @@
       "s": "'Twas in the moon of wintertime",
       "e": "https://digitalsongsandhymns.com/songs/7291"
     }
-  ]
+  ],
+  "landmarks": {
+    "trad": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.04442,
+        "w": 0.0154,
+        "h": 0.01172
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.59743,
+        "w": 0.00912,
+        "h": 0.01183
+      }
+    },
+    "clairnote": {
+      "keysig": {
+        "x": 0.08,
+        "y": 0.04641,
+        "w": 0.0183,
+        "h": 0.01219
+      },
+      "lastbar": {
+        "x": 0.94417,
+        "y": 0.59649,
+        "w": 0.00821,
+        "h": 0.01598
+      }
+    },
+    "lead-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08886,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.6849,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08617,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.69602,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.67421,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08617,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.67999,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08886,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.67892,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.04455,
+        "w": 0.01678,
+        "h": 0.0129
+      },
+      "lastbar": {
+        "x": 0.94235,
+        "y": 0.6018,
+        "w": 0.01003,
+        "h": 0.01302
+      }
+    },
+    "4shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.04455,
+        "w": 0.01678,
+        "h": 0.0129
+      },
+      "lastbar": {
+        "x": 0.94235,
+        "y": 0.6018,
+        "w": 0.01003,
+        "h": 0.01302
+      }
+    },
+    "trad-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.04442,
+        "w": 0.0308,
+        "h": 0.01319
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.59935,
+        "w": 0.00912,
+        "h": 0.01183
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.0431,
+        "w": 0.02761,
+        "h": 0.01479
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.59999,
+        "w": 0.00912,
+        "h": 0.01183
+      }
+    },
+    "trad-up2": {
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.59647,
+        "w": 0.00912,
+        "h": 0.01183
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.0431,
+        "w": 0.04602,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.59743,
+        "w": 0.00912,
+        "h": 0.01183
+      }
+    }
+  }
 }

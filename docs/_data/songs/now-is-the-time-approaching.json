@@ -18,5 +18,189 @@
   "lyrics": "Now is the time approaching,\nby prophets long foretold,\nwhen all shall dwell together,\nsecure and manifold.\nLet war be learned no longer,\nlet strife and tumult cease,\nall each a blessed garden,\nto please the god of peace.\n\nLet all that now divides us remove and pass away,\nlike mists of early morning\nbeneath the blaze of day.\nLet all that now unites us\nmore sweet and lasting prove,\na closer bond of union, in blessed lands of love.\n\nO longexpected dawning,\ncome with your cheering ray!\nYet shall the promise beckon\nand lead us not astray.\nO sweet anticipation!\nIt cheers the watchers on\nto pray, and hope, and labor,\ntill all our work is done.\n",
   "image": "/local-lilypond-outputs/now-is-the-time-approaching-trad.png",
   "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: Now is the time approaching, by prophets long foretold, when all shall dwell together, secure and manifold. Let war be learned no longer, let strife a... english secular 4part",
-  "songs_with_same_tune": []
+  "songs_with_same_tune": [],
+  "landmarks": {
+    "trad": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08425,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.708,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "clairnote": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08682,
+        "w": 0.01962,
+        "h": 0.02929
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.74962,
+        "w": 0.0,
+        "h": 0.0355
+      }
+    },
+    "lead-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08593,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.42427,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08694,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.41486,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08425,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.42619,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08694,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.42491,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08425,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.42106,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.08438,
+        "w": 0.03038,
+        "h": 0.03254
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.73193,
+        "w": 0.0,
+        "h": 0.02603
+      }
+    },
+    "4shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.08438,
+        "w": 0.03038,
+        "h": 0.03254
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.73193,
+        "w": 0.0,
+        "h": 0.02603
+      }
+    },
+    "trad-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08593,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.73494,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08694,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.70671,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08425,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.70457,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08822,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.70457,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    }
+  }
 }

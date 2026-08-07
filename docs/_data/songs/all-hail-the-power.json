@@ -15,13 +15,197 @@
     "4part"
   ],
   "has_chords": false,
-  "lyrics": "All hail the pow\u2019r of Jesus\u2019 name! Let angels prostrate fall.\nBring forth the royal diadem, and crown him Lord of all.\nBring forth the royal diadem, and crown him Lord of all!\n\nO chosen seed of Israel\u2019s race now ransomed from the fall,\nhail him who saves you by his grace, and crown him Lord of all.\nHail him who saves you by his grace, and crown him Lord of all!\n\nLet ev\u2019ry tongue and ev\u2019ry tribe responsive to his call,\nto him all majesty ascribe, and crown him Lord of all.\nTo him all majesty ascribe, and crown him Lord of all!\n\nOh, that with all the sacred throng we at his feet may fall!\nWe\u2019ll join the everlasting song and crown him Lord of all.\nWe\u2019ll join the everlasting song and crown him Lord of all!\n",
+  "lyrics": "All hail the pow’r of Jesus’ name! Let angels prostrate fall.\nBring forth the royal diadem, and crown him Lord of all.\nBring forth the royal diadem, and crown him Lord of all!\n\nO chosen seed of Israel’s race now ransomed from the fall,\nhail him who saves you by his grace, and crown him Lord of all.\nHail him who saves you by his grace, and crown him Lord of all!\n\nLet ev’ry tongue and ev’ry tribe responsive to his call,\nto him all majesty ascribe, and crown him Lord of all.\nTo him all majesty ascribe, and crown him Lord of all!\n\nOh, that with all the sacred throng we at his feet may fall!\nWe’ll join the everlasting song and crown him Lord of all.\nWe’ll join the everlasting song and crown him Lord of all!\n",
   "image": "/local-lilypond-outputs/all-hail-the-power-trad.png",
-  "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: All hail the pow\u2019r of Jesus\u2019 name! Let angels prostrate fall. Bring forth the royal diadem, and crown him Lord of all. Bring forth the royal diadem, a... english christian 4part",
+  "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: All hail the pow’r of Jesus’ name! Let angels prostrate fall. Bring forth the royal diadem, and crown him Lord of all. Bring forth the royal diadem, a... english christian 4part",
   "songs_with_same_tune": [
     {
       "t": "CORONATION",
       "s": "Now blessed be the Lord our God"
     }
-  ]
+  ],
+  "landmarks": {
+    "trad": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08593,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.60943,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "clairnote": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08697,
+        "w": 0.01962,
+        "h": 0.02929
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.65127,
+        "w": 0.00912,
+        "h": 0.0355
+      }
+    },
+    "lead-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09581,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.38172,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08694,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.37787,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08425,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.38642,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08694,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.38086,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08593,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.37787,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.08613,
+        "w": 0.01013,
+        "h": 0.01953
+      },
+      "lastbar": {
+        "x": 0.94235,
+        "y": 0.62781,
+        "w": 0.01003,
+        "h": 0.02603
+      }
+    },
+    "4shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.08613,
+        "w": 0.01013,
+        "h": 0.01953
+      },
+      "lastbar": {
+        "x": 0.94235,
+        "y": 0.62781,
+        "w": 0.01003,
+        "h": 0.02603
+      }
+    },
+    "trad-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09581,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.61435,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08694,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.60943,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08425,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.61435,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08694,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.61306,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    }
+  }
 }

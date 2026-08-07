@@ -19,5 +19,295 @@
   "lyrics": "God be with you till we meet again;\nloving counsels guide, uphold you,\nmay the Shepherd's care enfold you;\nGod be with you till we meet again.\n\n  Till we meet, till we meet,\n  till we meet at Jesus' feet.\n  Till we meet, till we meet,\n  God be with you till we meet again.\n\nGod be with you till we meet again;\nunseen wings, protecting, hide you,\ndaily manna still provide you;\nGod be with you till we meet again.\n\n  Till we meet, till we meet,\n  till we meet at Jesus' feet.\n  Till we meet, till we meet,\n  God be with you till we meet again.\n\nGod be with you till we meet again;\nwhen life's perils thick confound you,\nput unfailing arms around you;\nGod be with you till we meet again.\n\n  Till we meet, till we meet,\n  till we meet at Jesus' feet.\n  Till we meet, till we meet,\n  God be with you till we meet again.\n\nGod be with you till we meet again;\nkeep love's banner floating o'er you,\nsmite death's threat'ning wave before you;\nGod be with you till we meet again.\n\n  Till we meet, till we meet,\n  till we meet at Jesus' feet.\n  Till we meet, till we meet,\n  God be with you till we meet again.\n",
   "image": "/local-lilypond-outputs/god-be-with-you-trad.png",
   "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: God be with you till we meet again; loving counsels guide, uphold you, may the Shepherd's care enfold you; God be with you till we meet again.    Till... english theist 4part chords",
-  "songs_with_same_tune": []
+  "songs_with_same_tune": [],
+  "landmarks": {
+    "trad": {
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.7437,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "clairnote": {
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.79431,
+        "w": 0.00569,
+        "h": 0.0355
+      }
+    },
+    "lead-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09613,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.49311,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.0926,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.49183,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09684,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.47686,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10104,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.49098,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.47793,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "lastbar": {
+        "x": 0.94612,
+        "y": 0.75887,
+        "w": 0.00626,
+        "h": 0.02603
+      }
+    },
+    "4shapenote": {
+      "lastbar": {
+        "x": 0.94612,
+        "y": 0.75887,
+        "w": 0.00626,
+        "h": 0.02603
+      }
+    },
+    "trad-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09613,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.74798,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.0926,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.74841,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09684,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.73814,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10104,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.74648,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "uke-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14509,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.68875,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "uke-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.1392,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.69025,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "uke-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14387,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.67165,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "uke-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14766,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.67849,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "uke": {
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.67421,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "guitar-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14017,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.66694,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "guitar-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13449,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.8241,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "guitar-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13831,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.64385,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "guitar-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14017,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.81469,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "guitar": {
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.64492,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "roman": {
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.74327,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    }
+  }
 }

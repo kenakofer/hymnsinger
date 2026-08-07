@@ -16,9 +16,9 @@
     "chords"
   ],
   "has_chords": true,
-  "lyrics": "When, rising from the bed of death,\no\u2019erwhelmed with guilt and fear,\nI view my Maker face to face,\nO how shall I appear?\nIf yet, while pardon may be found,\nand mercy may be sought,\nmy heart with inward horror shrinks,\nand trembles at the thought.\n\nWhen thou, O Lord, shalt stand disclosed\nin majesty severe,\nand sit in judgement on my soul,\nO how shall I appear?\nBut thou hast told the troubled mind\nwho does her sins lament,\nthe timely tribute of her tears,\nshall endless woe prevent.\n\nThen see the sorrow of my heart,\nere yet it be too late;\nand hear my Saviour\u2019s dying groans,\nto give those sorrows weight.\nFor never shall my soul despair\nher pardon to procure,\nwho knows thine only Son has died\nto make her pardon sure.\n",
+  "lyrics": "When, rising from the bed of death,\no’erwhelmed with guilt and fear,\nI view my Maker face to face,\nO how shall I appear?\nIf yet, while pardon may be found,\nand mercy may be sought,\nmy heart with inward horror shrinks,\nand trembles at the thought.\n\nWhen thou, O Lord, shalt stand disclosed\nin majesty severe,\nand sit in judgement on my soul,\nO how shall I appear?\nBut thou hast told the troubled mind\nwho does her sins lament,\nthe timely tribute of her tears,\nshall endless woe prevent.\n\nThen see the sorrow of my heart,\nere yet it be too late;\nand hear my Saviour’s dying groans,\nto give those sorrows weight.\nFor never shall my soul despair\nher pardon to procure,\nwho knows thine only Son has died\nto make her pardon sure.\n",
   "image": "/local-lilypond-outputs/when-rising-from-the-bed-of-death-trad.png",
-  "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: When, rising from the bed of death, o\u2019erwhelmed with guilt and fear, I view my Maker face to face, O how shall I appear? If yet, while pardon may be f... english christian 4part chords",
+  "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: When, rising from the bed of death, o’erwhelmed with guilt and fear, I view my Maker face to face, O how shall I appear? If yet, while pardon may be f... english christian 4part chords",
   "songs_with_same_tune": [
     {
       "t": "THIRD MODE MELODY",
@@ -30,5 +30,295 @@
       "s": "To mock your reign, O dearest Lord",
       "e": "https://digitalsongsandhymns.com/songs/7641"
     }
-  ]
+  ],
+  "landmarks": {
+    "trad": {
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.76957,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "clairnote": {
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.81013,
+        "w": 0.00912,
+        "h": 0.0355
+      }
+    },
+    "lead-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.0972,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.47473,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09816,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.49418,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09556,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.47408,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09335,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.47195,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.47237,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "lastbar": {
+        "x": 0.94235,
+        "y": 0.77577,
+        "w": 0.01003,
+        "h": 0.02603
+      }
+    },
+    "4shapenote": {
+      "lastbar": {
+        "x": 0.94235,
+        "y": 0.77577,
+        "w": 0.01003,
+        "h": 0.02603
+      }
+    },
+    "trad-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.0972,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.78946,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09816,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.79416,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10495,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.77877,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10147,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.77428,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "uke-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14809,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.6725,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "uke-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14712,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.6926,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "uke-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14451,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.67528,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "uke-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14103,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.66096,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "uke": {
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.66844,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "guitar-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13975,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.64556,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "guitar-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13942,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.66609,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "guitar-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14237,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.64599,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "guitar-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13889,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.64706,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "guitar": {
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.63936,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "roman": {
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.76979,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    }
+  }
 }

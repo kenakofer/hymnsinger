@@ -17,8 +17,180 @@
     "death"
   ],
   "has_chords": false,
-  "lyrics": "H\u00f3son z\u00eais, pha\u00ednou\nm\u0113d\u00e8n h\u00f3l\u014ds s\u00f9 lupo\u00fb\npr\u00f2s ol\u00edgon \u00e9sti t\u00f2 z\u00ean\nt\u00f2 t\u00e9los ho khr\u00f3nos apaite\u00ee.\n\nWhile you live, shine bright.\nLet not grief sour your guest, Life,\nstaying with you, but for a while.\nSoon will come due all demands of Time.\n",
+  "lyrics": "Hóson zêis, phaínou\nmēdèn hólōs sù lupoû\npròs olígon ésti tò zên\ntò télos ho khrónos apaiteî.\n\nWhile you live, shine bright.\nLet not grief sour your guest, Life,\nstaying with you, but for a while.\nSoon will come due all demands of Time.\n",
   "image": "/local-lilypond-outputs/epitaph-of-seikilos-trad.png",
-  "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: H\u00f3son z\u00eais, pha\u00ednou m\u0113d\u00e8n h\u00f3l\u014ds s\u00f9 lupo\u00fb pr\u00f2s ol\u00edgon \u00e9sti t\u00f2 z\u00ean t\u00f2 t\u00e9los ho khr\u00f3nos apaite\u00ee.  While you live, shine bright. Let not grief sour your g... english greek secular 1part death",
-  "songs_with_same_tune": []
+  "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: Hóson zêis, phaínou mēdèn hólōs sù lupoû pròs olígon ésti tò zên tò télos ho khrónos apaiteî.  While you live, shine bright. Let not grief sour your g... english greek secular 1part death",
+  "songs_with_same_tune": [],
+  "landmarks": {
+    "trad": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10923,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.26348,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "clairnote": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10804,
+        "w": 0.02033,
+        "h": 0.0271
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.2493,
+        "w": 0.00159,
+        "h": 0.0355
+      }
+    },
+    "lead-dn2": {
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.26455,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.11024,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.26348,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10755,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.26947,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.11024,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.26818,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10923,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.26348,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.10944,
+        "w": 0.02025,
+        "h": 0.02929
+      },
+      "lastbar": {
+        "x": 0.94235,
+        "y": 0.26882,
+        "w": 0.01003,
+        "h": 0.02603
+      }
+    },
+    "4shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.10944,
+        "w": 0.02025,
+        "h": 0.02929
+      },
+      "lastbar": {
+        "x": 0.94235,
+        "y": 0.26882,
+        "w": 0.01003,
+        "h": 0.02603
+      }
+    },
+    "trad-dn2": {
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.26455,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.11024,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.26348,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10755,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.26947,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.11024,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.26818,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    }
+  }
 }

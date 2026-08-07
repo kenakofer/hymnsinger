@@ -16,7 +16,7 @@
     "chords"
   ],
   "has_chords": true,
-  "lyrics": "The sands of time are sinking,\nthe dawn of heaven breaks.\nthe summer morn I've sighed for,\nthe fair sweet morn awakes;\ndark, dark hath been the midnight,\nbut dayspring is at hand,\nand glory, glory dwelleth\nin Emmanuel's land.\n\nThe King there in his beaty\nwithout a veil is seen;\nit were a wellspent journey,\nthough sev'n deaths lay between:\nthe Lamb with his fair army\ndoth on Mount Zion stand.\nand glory, glory dwelleth\nin Emmanuel's land.\n\nO Christ, he is the fountain,\nthe deep sweet well of love!\nThe streams on earth I've tasted,\nmore deep I'll drink above:\nthere to an ocean fullness\nhis mercy doth expand,\nand glory, glory dwelleth\nin Emmanuel's land.\n\nThe bride eyes not her garment,\nbut her dear bridegroom's face;\nI will not gaze at glory,\nbut on my King of grace;\nnot at the crown he gifteth,\nbut on his pierc\u00e8d hand:\nthe Lamb is all the glory\nof Emmanuel's land.\n",
+  "lyrics": "The sands of time are sinking,\nthe dawn of heaven breaks.\nthe summer morn I've sighed for,\nthe fair sweet morn awakes;\ndark, dark hath been the midnight,\nbut dayspring is at hand,\nand glory, glory dwelleth\nin Emmanuel's land.\n\nThe King there in his beaty\nwithout a veil is seen;\nit were a wellspent journey,\nthough sev'n deaths lay between:\nthe Lamb with his fair army\ndoth on Mount Zion stand.\nand glory, glory dwelleth\nin Emmanuel's land.\n\nO Christ, he is the fountain,\nthe deep sweet well of love!\nThe streams on earth I've tasted,\nmore deep I'll drink above:\nthere to an ocean fullness\nhis mercy doth expand,\nand glory, glory dwelleth\nin Emmanuel's land.\n\nThe bride eyes not her garment,\nbut her dear bridegroom's face;\nI will not gaze at glory,\nbut on my King of grace;\nnot at the crown he gifteth,\nbut on his piercèd hand:\nthe Lamb is all the glory\nof Emmanuel's land.\n",
   "image": "/local-lilypond-outputs/the-sands-of-time-are-sinking-trad.png",
   "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: The sands of time are sinking, the dawn of heaven breaks. the summer morn I've sighed for, the fair sweet morn awakes; dark, dark hath been the midnig... english christian 4part chords",
   "songs_with_same_tune": [
@@ -25,5 +25,343 @@
       "s": "O God, in restless living",
       "i": "o-god-in-restless-living"
     }
-  ]
+  ],
+  "landmarks": {
+    "trad": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09323,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.81512,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "clairnote": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09318,
+        "w": 0.01962,
+        "h": 0.02929
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.85032,
+        "w": 0.0,
+        "h": 0.0355
+      }
+    },
+    "lead-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09191,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.53524,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09912,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.54742,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09912,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.55533,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10992,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.53481,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09323,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.54357,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.08438,
+        "w": 0.0405,
+        "h": 0.03254
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.8305,
+        "w": 0.0,
+        "h": 0.02603
+      }
+    },
+    "4shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.08438,
+        "w": 0.0405,
+        "h": 0.03254
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.8305,
+        "w": 0.0,
+        "h": 0.02603
+      }
+    },
+    "trad-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09191,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.81383,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09912,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.81896,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10296,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.82581,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10992,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.82089,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "uke-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14087,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.73173,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "uke-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14809,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.74349,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "uke-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14701,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.74926,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "uke-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.15738,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.73109,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "uke": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.1469,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.74734,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "guitar-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13617,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.71013,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "guitar-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14039,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.71505,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "guitar-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14039,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.72018,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "guitar-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.15118,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.70671,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "guitar": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13963,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.7204,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "roman": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09173,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.81362,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    }
+  }
 }

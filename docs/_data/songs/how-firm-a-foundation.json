@@ -6,7 +6,7 @@
   "meter": "11 11. 11 11",
   "stanza_count": "5",
   "composer": "American folk melody, in Joseph Funk's Genuine Church Music, 1st ed., 1832",
-  "poet": "\u201cK\u201d in Rippon's Selection of Hymns, 1787",
+  "poet": "“K” in Rippon's Selection of Hymns, 1787",
   "key": "A major",
   "date_added": "2026/07/27",
   "tags": [
@@ -16,8 +16,346 @@
     "chords"
   ],
   "has_chords": true,
-  "lyrics": "How firm a foundation, ye saints of the Lord,\nis laid for your faith in his excellent Word!\nWhat more can he say than to you he hath said,\nto you who for refuge to Jesus have fled?\n\n\u201cFear not, I am with thee; O be not dismayed,\nfor I am thy God, and will still give thee aid.\nI'll strengthen thee, help thee, and cause thee to stand,\nupheld by my righteous, omnipotent hand.\n\n\u201cWhen through the deep waters I call thee to go,\nthe rivers of sorrow shall not overflow,\nfor I will be with thee, thy troubles to bless,\nand sanctify to thee thy deepest distress.\n\n\u201cWhen through fiery trials thy pathway shall lie,\nmy grace, allsufficient, shall be thy supply.\nThe flame shall not hurt thee. I only design\nthy dross to consume, and thy gold to refine.\n\n\u201cThe soul that on Jesus still leans for repose,\nI will not, I will not desert to its foes.\nThat soul, though all hell should endeavor to shake,\nI'll never, no never, no never forsake!\u201d\n",
+  "lyrics": "How firm a foundation, ye saints of the Lord,\nis laid for your faith in his excellent Word!\nWhat more can he say than to you he hath said,\nto you who for refuge to Jesus have fled?\n\n“Fear not, I am with thee; O be not dismayed,\nfor I am thy God, and will still give thee aid.\nI'll strengthen thee, help thee, and cause thee to stand,\nupheld by my righteous, omnipotent hand.\n\n“When through the deep waters I call thee to go,\nthe rivers of sorrow shall not overflow,\nfor I will be with thee, thy troubles to bless,\nand sanctify to thee thy deepest distress.\n\n“When through fiery trials thy pathway shall lie,\nmy grace, allsufficient, shall be thy supply.\nThe flame shall not hurt thee. I only design\nthy dross to consume, and thy gold to refine.\n\n“The soul that on Jesus still leans for repose,\nI will not, I will not desert to its foes.\nThat soul, though all hell should endeavor to shake,\nI'll never, no never, no never forsake!”\n",
   "image": "/local-lilypond-outputs/how-firm-a-foundation-trad.png",
   "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: How firm a foundation, ye saints of the Lord, is laid for your faith in his excellent Word! What more can he say than to you he hath said, to you who ... english christian 4part chords",
-  "songs_with_same_tune": []
+  "songs_with_same_tune": [],
+  "landmarks": {
+    "trad": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08617,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.84548,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "clairnote": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08874,
+        "w": 0.01962,
+        "h": 0.02929
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.90399,
+        "w": 0.0,
+        "h": 0.0355
+      }
+    },
+    "lead-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08785,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.56538,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08886,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.55255,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08617,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.55619,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08886,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.55491,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08617,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.55747,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.08631,
+        "w": 0.03038,
+        "h": 0.03254
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.86642,
+        "w": 0.0,
+        "h": 0.02603
+      }
+    },
+    "4shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.08631,
+        "w": 0.03038,
+        "h": 0.03254
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.86642,
+        "w": 0.0,
+        "h": 0.02603
+      }
+    },
+    "trad-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08785,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.8675,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08886,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.84419,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08617,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.8474,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09014,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.8474,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "uke-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14109,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.61862,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "uke-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14209,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.60579,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "uke-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13963,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.60943,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "uke-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14209,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.60815,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "uke": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13963,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.61071,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "guitar-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14109,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.61862,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "guitar-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14209,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.60579,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "guitar-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13963,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.60943,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "guitar-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14209,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.60815,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "guitar": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13963,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.61071,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "roman": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08617,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.84548,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    }
+  }
 }

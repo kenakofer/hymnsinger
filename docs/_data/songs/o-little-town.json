@@ -20,5 +20,189 @@
   "lyrics": "O little town of Bethlehem, how still we see thee lie!\nAbove thy deep and dreamless sleep the silent stars go by.\nYet in thy dark streets shineth the everlasting light;\nthe hopes and fears of all the years are met in thee tonight.\n\nFor Christ is born of Mary, and gathered all above,\nwhile mortals sleep, the angels keep their watch of wond'ring love.\nO morning stars, together proclaim the holy birth!\nand praises sing to God the King, and peace to all the earth!\n\nHow silently, how silently, the wondrous gift is giv'n!\nSo God imparts to human hearts the blessings of the heav'ns.\nNo ear may hear his coming, but in this world of sin,\nwhere meek souls will receive him still the dear Christ enters in.\n\nO holy Child of Bethlehem, descend to us we pray,\ncast out our sin, and enter in, be born in us today!\nWe hear the Christmas angels the great glad tidings tell.\nO come to us, abide with us, our Lord Immanuel!\n",
   "image": "/local-lilypond-outputs/o-little-town-trad.png",
   "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: O little town of Bethlehem, how still we see thee lie! Above thy deep and dreamless sleep the silent stars go by. Yet in thy dark streets shineth the ... english christian 4part winter evening",
-  "songs_with_same_tune": []
+  "songs_with_same_tune": [],
+  "landmarks": {
+    "trad": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09581,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.81084,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "clairnote": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09377,
+        "w": 0.0136,
+        "h": 0.02929
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.86208,
+        "w": 0.0,
+        "h": 0.0355
+      }
+    },
+    "lead-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08694,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.48884,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08425,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.49033,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08593,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.49119,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08694,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.49076,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09581,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.48371,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.09692,
+        "w": 0.00839,
+        "h": 0.01603
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.83948,
+        "w": 0.0,
+        "h": 0.02603
+      }
+    },
+    "4shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.09692,
+        "w": 0.00839,
+        "h": 0.01603
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.83948,
+        "w": 0.0,
+        "h": 0.02603
+      }
+    },
+    "trad-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08694,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.81597,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08425,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.81683,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08721,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.80549,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08822,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.80699,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    }
+  }
 }

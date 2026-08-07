@@ -19,5 +19,177 @@
   "lyrics": "O sacred Head, now wounded,\nwith grief and shame weighed down,\nnow scornfully surrounded\nwith thorns, thine only crown!\nO sacred Head, what glory,\nwhat bliss till now was thine!\nYet, though despised and gory,\nI joy to call thee mine.\n\nWhat thou, my Lord, hast suffered\nwas all for sinners' gain.\nMine, mine was the transgression,\nbut thine the deadly pain.\nLo, here I fall, my Savior!\n'Tis I deserve thy place.\nLook on me with thy favor,\nand grant to me thy grace.\n\nWhat language shall I borrow\nto thank thee, dearest Friend,\nfor this, thy dying sorrow,\nthy pity without end?\nOh, make me thine forever,\nand should I fainting be,\nLord, let me never, never\noutlive my love to thee.\n\nBe near when I am dying,\noh, show thy cross to me,\nand for my rescue, flying,\ncome, Lord, and set me free!\nThese eyes, new faith receiving,\nfrom Jesus shall not move,\nfor one who dies believing\ndies safely, through thy love.\n",
   "image": "/local-lilypond-outputs/o-sacred-head-now-wounded-trad.png",
   "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: O sacred Head, now wounded, with grief and shame weighed down, now scornfully surrounded with thorns, thine only crown! O sacred Head, what glory, wha... english christian 4part death",
-  "songs_with_same_tune": []
+  "songs_with_same_tune": [],
+  "landmarks": {
+    "trad": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09191,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.87562,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "clairnote": {
+      "keysig": {
+        "x": 0.08,
+        "y": 0.10444,
+        "w": 0.01766,
+        "h": 0.02636
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.88979,
+        "w": 0.0,
+        "h": 0.03195
+      }
+    },
+    "lead-dn2": {
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.48756,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08865,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.4882,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08617,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.48862,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08865,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.4867,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08764,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.4882,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.09234,
+        "w": 0.02025,
+        "h": 0.02929
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.90534,
+        "w": 0.0,
+        "h": 0.02603
+      }
+    },
+    "4shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.09234,
+        "w": 0.02025,
+        "h": 0.02929
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.90534,
+        "w": 0.0,
+        "h": 0.02603
+      }
+    },
+    "trad-dn2": {
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.8784,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09292,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.87541,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09173,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.87391,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.0957,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.87413,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    }
+  }
 }

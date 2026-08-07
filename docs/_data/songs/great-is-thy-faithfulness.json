@@ -18,5 +18,189 @@
   "lyrics": "Great is thy faithfulness, O God my Maker.\nThere is no shadow of turning with thee.\nThou changest not, thy compassions, they fail not.\nAs thou hast been thou forever wilt be.\n\n  Great is thy faithfulness! Great is thy faithfulness!\n  Morning by morning new mercies I see.\n  All I have needed thy hand hath provided.\n  Great is thy faithfulness! Lord unto me!\n\nSummer and winter, and springtime and harvest,\nsun, moon, and stars in their courses above,\njoin with all nature in manifold witness\nto thy great faithfulness, mercy, and love.\n\n  Great is thy faithfulness! Great is thy faithfulness!\n  Morning by morning new mercies I see.\n  All I have needed thy hand hath provided.\n  Great is thy faithfulness! Lord unto me!\n\nPardon for sin and a peace that endureth,\nthine own dear presence to cheer and to guide,\nstrength for today and bright hope for tomorrow;\nblessings all mine, with ten thousand beside!\n\n  Great is thy faithfulness! Great is thy faithfulness!\n  Morning by morning new mercies I see.\n  All I have needed thy hand hath provided.\n  Great is thy faithfulness! Lord unto me!\n",
   "image": "/local-lilypond-outputs/great-is-thy-faithfulness-trad.png",
   "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: Great is thy faithfulness, O God my Maker. There is no shadow of turning with thee. Thou changest not, thy compassions, they fail not. As thou hast be... english theist 4part",
-  "songs_with_same_tune": []
+  "songs_with_same_tune": [],
+  "landmarks": {
+    "trad": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.04346,
+        "w": 0.0231,
+        "h": 0.01319
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.62929,
+        "w": 0.00159,
+        "h": 0.01183
+      }
+    },
+    "clairnote": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.04771,
+        "w": 0.01962,
+        "h": 0.01464
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.72386,
+        "w": 0.00159,
+        "h": 0.01775
+      }
+    },
+    "lead-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08694,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.68897,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08593,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.68897,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09581,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.69709,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08425,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.69046,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08694,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.68918,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.04359,
+        "w": 0.02517,
+        "h": 0.01452
+      },
+      "lastbar": {
+        "x": 0.95063,
+        "y": 0.72399,
+        "w": 0.00175,
+        "h": 0.01302
+      }
+    },
+    "4shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.04359,
+        "w": 0.02517,
+        "h": 0.01452
+      },
+      "lastbar": {
+        "x": 0.95063,
+        "y": 0.72399,
+        "w": 0.00175,
+        "h": 0.01302
+      }
+    },
+    "trad-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.04346,
+        "w": 0.03849,
+        "h": 0.01467
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.72283,
+        "w": 0.00159,
+        "h": 0.01183
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.04296,
+        "w": 0.01841,
+        "h": 0.01331
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.6295,
+        "w": 0.00159,
+        "h": 0.01183
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.0479,
+        "w": 0.0077,
+        "h": 0.00728
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.62939,
+        "w": 0.00159,
+        "h": 0.01183
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.04213,
+        "w": 0.03682,
+        "h": 0.01479
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.62907,
+        "w": 0.00159,
+        "h": 0.01183
+      }
+    }
+  }
 }

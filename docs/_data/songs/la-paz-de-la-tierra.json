@@ -17,8 +17,298 @@
     "chords"
   ],
   "has_chords": true,
-  "lyrics": "La paz de la tierra est\u00e9 contigo, la paz de los cielos tambi\u00e9n.\nLa paz de los r\u00edos est\u00e9 contigo, la paz de los mares tambi\u00e9n.\nPaz profunda cayendo sobre ti.\nPaz profunda creciendo en ti.\n\nThe peace of the earth be with you, the peace of the heavens too;\nThe peace of the rivers be with you, the peace of the oceans too.\nDeep peace falling over you.\nDeep peace growing in you.\n",
+  "lyrics": "La paz de la tierra esté contigo, la paz de los cielos también.\nLa paz de los ríos esté contigo, la paz de los mares también.\nPaz profunda cayendo sobre ti.\nPaz profunda creciendo en ti.\n\nThe peace of the earth be with you, the peace of the heavens too;\nThe peace of the rivers be with you, the peace of the oceans too.\nDeep peace falling over you.\nDeep peace growing in you.\n",
   "image": "/local-lilypond-outputs/la-paz-de-la-tierra-trad.png",
-  "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: La paz de la tierra est\u00e9 contigo, la paz de los cielos tambi\u00e9n. La paz de los r\u00edos est\u00e9 contigo, la paz de los mares tambi\u00e9n. Paz profunda cayendo sob... spanish english secular 4part chords",
-  "songs_with_same_tune": []
+  "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: La paz de la tierra esté contigo, la paz de los cielos también. La paz de los ríos esté contigo, la paz de los mares también. Paz profunda cayendo sob... spanish english secular 4part chords",
+  "songs_with_same_tune": [],
+  "landmarks": {
+    "trad": {
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.5517,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "clairnote": {
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.56531,
+        "w": 0.00912,
+        "h": 0.0355
+      }
+    },
+    "lead-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10104,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.40802,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09537,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.417,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09619,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.41742,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09912,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.42705,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.39754,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "lastbar": {
+        "x": 0.94235,
+        "y": 0.53095,
+        "w": 0.01003,
+        "h": 0.02603
+      }
+    },
+    "4shapenote": {
+      "lastbar": {
+        "x": 0.94235,
+        "y": 0.53095,
+        "w": 0.01003,
+        "h": 0.02603
+      }
+    },
+    "trad-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10104,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.56047,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09537,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.56496,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09619,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.56132,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09912,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.56902,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "uke-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.15001,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.60408,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "uke-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14882,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.61199,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "uke-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14537,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.62333,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "uke-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14658,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.61648,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "uke": {
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.59596,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "guitar-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14188,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.58099,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "guitar-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14091,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.5966,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "guitar-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14194,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.59168,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "guitar-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14039,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.59254,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "guitar": {
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.56688,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "roman": {
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.55341,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    }
+  }
 }

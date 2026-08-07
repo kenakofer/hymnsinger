@@ -18,5 +18,159 @@
   "lyrics": "The Lord bless you and keep you;\nthe Lord lift his countenance upon you,\nand give you peace, and give you peace;\nthe Lord make his face to shine upon you,\nand be gracious, and be gracious,\nthe Lord be gracious, gracious unto you.\n\nAmen, amen, amen, amen, amen.\n",
   "image": "/local-lilypond-outputs/the-lord-bless-you-and-keep-you-trad.png",
   "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: The Lord bless you and keep you; the Lord lift his countenance upon you, and give you peace, and give you peace; the Lord make his face to shine upon ... english theist 4part",
-  "songs_with_same_tune": []
+  "songs_with_same_tune": [],
+  "landmarks": {
+    "trad": {
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.78836,
+        "w": 0.00912,
+        "h": 0.01183
+      }
+    },
+    "clairnote": {
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.88347,
+        "w": 0.00159,
+        "h": 0.01775
+      }
+    },
+    "lead-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08886,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.52177,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08617,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.52305,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08785,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.52005,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08886,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.52005,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.52134,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "lastbar": {
+        "x": 0.94235,
+        "y": 0.78803,
+        "w": 0.01003,
+        "h": 0.01302
+      }
+    },
+    "4shapenote": {
+      "lastbar": {
+        "x": 0.94235,
+        "y": 0.78803,
+        "w": 0.01003,
+        "h": 0.01302
+      }
+    },
+    "trad-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.04442,
+        "w": 0.0154,
+        "h": 0.01172
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.78537,
+        "w": 0.00912,
+        "h": 0.01183
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.0431,
+        "w": 0.04602,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.78526,
+        "w": 0.00912,
+        "h": 0.01183
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.04585,
+        "w": 0.01841,
+        "h": 0.01331
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.79392,
+        "w": 0.00912,
+        "h": 0.01183
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.04635,
+        "w": 0.03849,
+        "h": 0.01467
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.79349,
+        "w": 0.00912,
+        "h": 0.01183
+      }
+    }
+  }
 }

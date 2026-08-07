@@ -18,5 +18,189 @@
   "lyrics": "On Jordan's stormy banks I stand and cast a wishful eye\nto Canaan's fair and happy land where my possessions lie.\n\n  I'm bound for the promised land, I'm bound for the promised land;\n  O who will come and go with me? I'm bound for the promised land.\n\nAll o'er those wide extended plains shines one eternal day;\nthere God the Son forever reigns and scatters night away.\n\n  I'm bound for the promised land, I'm bound for the promised land;\n  O who will come and go with me? I'm bound for the promised land.\n\nNo chilling winds nor poisonous breath can reach that healthful shore;\nsickness and sorrow, pain and death are felt and feared no more.\n\n  I'm bound for the promised land, I'm bound for the promised land;\n  O who will come and go with me? I'm bound for the promised land.\n\nWhen shall I reach that happy place and be forever blest?\nWhen shall I see my Father's face and in God's bosom rest?\n\n  I'm bound for the promised land, I'm bound for the promised land;\n  O who will come and go with me? I'm bound for the promised land.\n",
   "image": "/local-lilypond-outputs/on-jordans-stormy-banks-trad.png",
   "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: On Jordan's stormy banks I stand and cast a wishful eye to Canaan's fair and happy land where my possessions lie.    I'm bound for the promised land, ... english theist 4part",
-  "songs_with_same_tune": []
+  "songs_with_same_tune": [],
+  "landmarks": {
+    "trad": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.12018,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.75867,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "clairnote": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.11451,
+        "w": 0.0136,
+        "h": 0.02929
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.79088,
+        "w": 0.00569,
+        "h": 0.0355
+      }
+    },
+    "lead-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10767,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.42555,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10499,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.4264,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10666,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.42085,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10767,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.42085,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.11654,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.42961,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.1213,
+        "w": 0.00839,
+        "h": 0.01603
+      },
+      "lastbar": {
+        "x": 0.94612,
+        "y": 0.78624,
+        "w": 0.00626,
+        "h": 0.02603
+      }
+    },
+    "4shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.1213,
+        "w": 0.00839,
+        "h": 0.01603
+      },
+      "lastbar": {
+        "x": 0.94612,
+        "y": 0.78624,
+        "w": 0.00626,
+        "h": 0.02603
+      }
+    },
+    "trad-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10767,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.75461,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10499,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.75568,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.1103,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.75974,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.1113,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.75931,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    }
+  }
 }

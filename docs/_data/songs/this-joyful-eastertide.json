@@ -19,5 +19,189 @@
   "lyrics": "This joyful Eastertide, away with sin and sorrow!\nMy love, the crucified, hath sprung to life this morrow.\n\n  Had Christ, who once was slain, ne'er burst his threeday prison,\n  our faith had been in vain. But now hath Christ arisen,\n  arisen, arisen, arisen.\n\nMy flesh in hope shall rest and for a season slumber\ntill trumpets east to west shall wake the dead in number.\n\n  Had Christ, who once was slain, ne'er burst his threeday prison,\n  our faith had been in vain. But now hath Christ arisen,\n  arisen, arisen, arisen.\n\nDeath's flood hath lost its chill since Jesus crossed the river.\nLover of souls, from ill my passing soul deliver.\n\n  Had Christ, who once was slain, ne'er burst his threeday prison,\n  our faith had been in vain. But now hath Christ arisen,\n  arisen, arisen, arisen.\n",
   "image": "/local-lilypond-outputs/this-joyful-eastertide-trad.png",
   "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: This joyful Eastertide, away with sin and sorrow! My love, the crucified, hath sprung to life this morrow.    Had Christ, who once was slain, ne'er bu... english christian easter 4part",
-  "songs_with_same_tune": []
+  "songs_with_same_tune": [],
+  "landmarks": {
+    "trad": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09901,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.8953,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "clairnote": {
+      "keysig": {
+        "x": 0.08,
+        "y": 0.10189,
+        "w": 0.01224,
+        "h": 0.02636
+      },
+      "lastbar": {
+        "x": 0.94726,
+        "y": 0.92251,
+        "w": 0.00512,
+        "h": 0.03195
+      }
+    },
+    "lead-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08993,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.45719,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08617,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.45741,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09148,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.45014,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09249,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.44907,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.0988,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.45185,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.10014,
+        "w": 0.00839,
+        "h": 0.01603
+      },
+      "lastbar": {
+        "x": 0.94612,
+        "y": 0.92843,
+        "w": 0.00626,
+        "h": 0.02603
+      }
+    },
+    "4shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.10014,
+        "w": 0.00839,
+        "h": 0.01603
+      },
+      "lastbar": {
+        "x": 0.94612,
+        "y": 0.92843,
+        "w": 0.00626,
+        "h": 0.02603
+      }
+    },
+    "trad-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08993,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.8985,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08617,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.89337,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09148,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.89444,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09249,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.89893,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    }
+  }
 }

@@ -16,9 +16,9 @@
     "chords"
   ],
   "has_chords": true,
-  "lyrics": "Once to ev\u2019ry soul and nation\ncomes the moment to decide,\nin the strife of truth with falsehood,\nfor the good or evil side;\n\nThen to side with truth is noble,\nwhen we share her wretched crust,\nere her cause bring fame and profit,\nand \u2019tis prosp\u2019rous to be just;\n\nNew occasions teach new duties,\ntime makes ancient good uncouth;\nthey must upward still and onward\nwho would keep abreast of truth.\n\nLo, before us gleam her campfires!\nWe ourselves must pilgrims be,\nnor attempt the future's portal\nwith the past's bloodrusted key.\n\nThough the cause of evil prosper,\nyet \u2019tis truth alone is strong;\nthough her portion be the scaffold,\nand upon the throne be wrong.\n\nThen it is the brave one chooses,\nwhile the coward stands aside\ntill the multitude make virtue\nof the faith they had denied.\n",
+  "lyrics": "Once to ev’ry soul and nation\ncomes the moment to decide,\nin the strife of truth with falsehood,\nfor the good or evil side;\n\nThen to side with truth is noble,\nwhen we share her wretched crust,\nere her cause bring fame and profit,\nand ’tis prosp’rous to be just;\n\nNew occasions teach new duties,\ntime makes ancient good uncouth;\nthey must upward still and onward\nwho would keep abreast of truth.\n\nLo, before us gleam her campfires!\nWe ourselves must pilgrims be,\nnor attempt the future's portal\nwith the past's bloodrusted key.\n\nThough the cause of evil prosper,\nyet ’tis truth alone is strong;\nthough her portion be the scaffold,\nand upon the throne be wrong.\n\nThen it is the brave one chooses,\nwhile the coward stands aside\ntill the multitude make virtue\nof the faith they had denied.\n",
   "image": "/local-lilypond-outputs/once-to-every-soul-trad.png",
-  "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: Once to ev\u2019ry soul and nation comes the moment to decide, in the strife of truth with falsehood, for the good or evil side;  Then to side with truth i... english secular 4part chords",
+  "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: Once to ev’ry soul and nation comes the moment to decide, in the strife of truth with falsehood, for the good or evil side;  Then to side with truth i... english secular 4part chords",
   "songs_with_same_tune": [
     {
       "t": "EBENEZER",
@@ -37,5 +37,343 @@
       "s": "O the deep, deep love of Jesus",
       "i": "o-the-deep-deep-love"
     }
-  ]
+  ],
+  "landmarks": {
+    "trad": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13553,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.83265,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "clairnote": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14054,
+        "w": 0.02025,
+        "h": 0.02704
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.88518,
+        "w": 0.00912,
+        "h": 0.0355
+      }
+    },
+    "lead-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14455,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.51963,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13931,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.53053,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13856,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.53844,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13782,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.52561,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13489,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.51706,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.12654,
+        "w": 0.01013,
+        "h": 0.01953
+      },
+      "lastbar": {
+        "x": 0.94235,
+        "y": 0.85509,
+        "w": 0.01003,
+        "h": 0.02603
+      }
+    },
+    "4shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.12654,
+        "w": 0.01013,
+        "h": 0.01953
+      },
+      "lastbar": {
+        "x": 0.94235,
+        "y": 0.85509,
+        "w": 0.01003,
+        "h": 0.02603
+      }
+    },
+    "trad-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14733,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.83414,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14253,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.83863,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14048,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.83607,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14616,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.83799,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "uke-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.19373,
+        "w": 0.0077,
+        "h": 0.01456
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.71676,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "uke-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.18827,
+        "w": 0.04619,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.72082,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "uke-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.18731,
+        "w": 0.02761,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.73558,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "uke-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.18828,
+        "w": 0.0308,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.72553,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "uke": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.18428,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.71398,
+        "w": 0.00159,
+        "h": 0.02367
+      }
+    },
+    "guitar-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09697,
+        "w": 0.0077,
+        "h": 0.00728
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.75116,
+        "w": 0.00159,
+        "h": 0.01183
+      }
+    },
+    "guitar-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09253,
+        "w": 0.04619,
+        "h": 0.01467
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.75276,
+        "w": 0.00159,
+        "h": 0.01183
+      }
+    },
+    "guitar-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09205,
+        "w": 0.02761,
+        "h": 0.01479
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.75127,
+        "w": 0.00159,
+        "h": 0.01183
+      }
+    },
+    "guitar-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09254,
+        "w": 0.0308,
+        "h": 0.01319
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.75255,
+        "w": 0.00159,
+        "h": 0.01183
+      }
+    },
+    "guitar": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09054,
+        "w": 0.0092,
+        "h": 0.00888
+      },
+      "lastbar": {
+        "x": 0.95079,
+        "y": 0.75201,
+        "w": 0.00159,
+        "h": 0.01183
+      }
+    },
+    "roman": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13874,
+        "w": 0.0092,
+        "h": 0.01775
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.83607,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    }
+  }
 }

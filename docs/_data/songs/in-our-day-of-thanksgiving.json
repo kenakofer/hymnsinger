@@ -17,7 +17,7 @@
     "chords"
   ],
   "has_chords": true,
-  "lyrics": "In our day of thanksgiving\none psalm let us offer\nfor the saints who before us\nhave found the reward;\nwhen the shadow of death\nfell upon them, we sorrowed,\nbut now we rejoice\nthat they rest in the Lord\n\nIn the morning of life,\nand at noon, and at evening,\nthey were gathered to heav'n\nfrom our worship below;\nbut not before God's love\nat the font and the altar,\nhad clothed them with grace\nfor the way they should go.\n\nCommon stones that have echoed\ntheir praises are holy,\nand the dust of the ground\nwhere their feet have once trod;\nyet in this place confessed\nthey were stargers and pilgrims,\nand still they were seeking\nthe city of God.\n\nSing praise, then, and thanks\nthat God's love here has found them\nwhose journey is ended,\nwhose perils are past;\nthey believed in the light;\nand its glory is round them,\nwhere the clouds of earth\u2019s\nsorrows are lifted at last.\n",
+  "lyrics": "In our day of thanksgiving\none psalm let us offer\nfor the saints who before us\nhave found the reward;\nwhen the shadow of death\nfell upon them, we sorrowed,\nbut now we rejoice\nthat they rest in the Lord\n\nIn the morning of life,\nand at noon, and at evening,\nthey were gathered to heav'n\nfrom our worship below;\nbut not before God's love\nat the font and the altar,\nhad clothed them with grace\nfor the way they should go.\n\nCommon stones that have echoed\ntheir praises are holy,\nand the dust of the ground\nwhere their feet have once trod;\nyet in this place confessed\nthey were stargers and pilgrims,\nand still they were seeking\nthe city of God.\n\nSing praise, then, and thanks\nthat God's love here has found them\nwhose journey is ended,\nwhose perils are past;\nthey believed in the light;\nand its glory is round them,\nwhere the clouds of earth’s\nsorrows are lifted at last.\n",
   "image": "/local-lilypond-outputs/in-our-day-of-thanksgiving-trad.png",
   "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: In our day of thanksgiving one psalm let us offer for the saints who before us have found the reward; when the shadow of death fell upon them, we sorr... english theist 4part death chords",
   "songs_with_same_tune": [
@@ -31,5 +31,319 @@
       "s": "The works of the Lord are created in wisdom",
       "e": "https://www.hopepublishing.com/find-hymns-hw/hw4575.aspx#FullDescription"
     }
-  ]
+  ],
+  "landmarks": {
+    "trad": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09684,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.85232,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "clairnote": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09804,
+        "w": 0.01962,
+        "h": 0.02929
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.88411,
+        "w": 0.0,
+        "h": 0.0355
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10104,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.5269,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08574,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.51514,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09335,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.52112,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09684,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.5177,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.08613,
+        "w": 0.02025,
+        "h": 0.02929
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.86706,
+        "w": 0.0,
+        "h": 0.02603
+      }
+    },
+    "4shapenote": {
+      "keysig": {
+        "x": 0.0872,
+        "y": 0.08613,
+        "w": 0.02025,
+        "h": 0.02929
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.86706,
+        "w": 0.0,
+        "h": 0.02603
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10104,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.85766,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09538,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.8474,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.10296,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.85104,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "uke-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14487,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.71099,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "uke-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13471,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.71548,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "uke-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14253,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.7174,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "uke": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14579,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.70415,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "guitar-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14231,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.69773,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "guitar-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13278,
+        "w": 0.03682,
+        "h": 0.02958
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.6973,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "guitar-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13975,
+        "w": 0.0231,
+        "h": 0.02639
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.69688,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "guitar": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13831,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.68448,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "roman": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.0964,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.85189,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-dn2": {
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.52048,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "trad-dn2": {
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.84997,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "uke-dn2": {
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.7142,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "guitar-dn2": {
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.69581,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    }
+  }
 }

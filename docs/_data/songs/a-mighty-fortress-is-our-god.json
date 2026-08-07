@@ -18,5 +18,159 @@
   "lyrics": "A mighty fortress is our God,\na bulwark never failing.\nOur helper he amid the flood\nof mortal ills prevailing,\n\nfor still our ancient foe doth seek to work us woe.\nHis craft and pow'r are great, and arm'd with cruel hate,\non earth is not his equal.\n\nDid we in our own strength confide,\nour striving would be losing,\nwere not the right one on our side,\nthe one of God's own choosing.\n\nDost ask who that may be? Christ Jesus, it is he!\nLord Sabaoth, his name, from age to age the same,\nand he must win the battle.\n\nAnd though this world, with devils filled,\nshould threaten to undo us,\nwe will not fear, for God hath willed\nhis truth to triumph through us.\n\nThe prince of darkness grim, we tremble not for him.\nHis rage we can endure, for lo, his doom is sure.\nOne little word shall fell him.\n\nThat word above all earthly pow'rs,\nno thanks to them, abideth.\nThe Spirit and the gifts are ours,\nthrough him who with us sideth.\n\nLet goods and kindred go, this mortal life also.\nThe body they may kill, God's truth abideth still.\nHis kingdom is forever.\n",
   "image": "/local-lilypond-outputs/a-mighty-fortress-is-our-god-trad.png",
   "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: A mighty fortress is our God, a bulwark never failing. Our helper he amid the flood of mortal ills prevailing,  for still our ancient foe doth seek to... english christian 4part",
-  "songs_with_same_tune": []
+  "songs_with_same_tune": [],
+  "landmarks": {
+    "lead-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08971,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.51043,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08724,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.51193,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.0887,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.49589,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08971,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.49718,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.50209,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "trad-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08971,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.87498,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.08724,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.87605,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.0902,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.86322,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09121,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.86301,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "trad": {
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.86451,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "clairnote": {
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.91896,
+        "w": 0.0,
+        "h": 0.0355
+      }
+    },
+    "shapenote": {
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.89294,
+        "w": 0.0,
+        "h": 0.02603
+      }
+    },
+    "4shapenote": {
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.89294,
+        "w": 0.0,
+        "h": 0.02603
+      }
+    }
+  }
 }

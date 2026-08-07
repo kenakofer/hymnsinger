@@ -16,8 +16,298 @@
     "chords"
   ],
   "has_chords": true,
-  "lyrics": "When peace like a river attendeth my way,\nwhen sorrows like sea billows roll,\nwhatever my lot, thou hast taught me to say,\n\"It is well, it is well with my soul.\"\n\n  It is well with my soul, it is well, it is well with my soul.\n\nThough Satan should buffet, though trials should come,\nlet this blest assurance control,\nthat Christ hath regarded my helpless estate,\nand hath shed his own blood for my soul.\n\n  It is well with my soul, it is well, it is well with my soul.\n\nRedeemed! Oh, the bliss of this glorious thought:\nMy sin\u2013 not in part, but the whole\u2013\nis nailed to his cross, and I bear it no more,\npraise the Lord, praise the Lord, O my soul!\n\n  It is well with my soul, it is well, it is well with my soul.\n\nAnd, Lord, haste the day when my faith shall be sight,\nthe clouds be rolled back as a scroll,\nthe trumpet shall sound, and the Lord shall descend,\neven so, it is well with my soul.\n\n  It is well with my soul, it is well, it is well with my soul.\n",
+  "lyrics": "When peace like a river attendeth my way,\nwhen sorrows like sea billows roll,\nwhatever my lot, thou hast taught me to say,\n\"It is well, it is well with my soul.\"\n\n  It is well with my soul, it is well, it is well with my soul.\n\nThough Satan should buffet, though trials should come,\nlet this blest assurance control,\nthat Christ hath regarded my helpless estate,\nand hath shed his own blood for my soul.\n\n  It is well with my soul, it is well, it is well with my soul.\n\nRedeemed! Oh, the bliss of this glorious thought:\nMy sin– not in part, but the whole–\nis nailed to his cross, and I bear it no more,\npraise the Lord, praise the Lord, O my soul!\n\n  It is well with my soul, it is well, it is well with my soul.\n\nAnd, Lord, haste the day when my faith shall be sight,\nthe clouds be rolled back as a scroll,\nthe trumpet shall sound, and the Lord shall descend,\neven so, it is well with my soul.\n\n  It is well with my soul, it is well, it is well with my soul.\n",
   "image": "/local-lilypond-outputs/when-peace-like-a-river-trad.png",
   "description": "View, play, and download the PDF sheet music, slideshow, and audio. Lyrics: When peace like a river attendeth my way, when sorrows like sea billows roll, whatever my lot, thou hast taught me to say, \\\"It is well, it is well wit... english christian 4part chords",
-  "songs_with_same_tune": []
+  "songs_with_same_tune": [],
+  "landmarks": {
+    "trad": {
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.91541,
+        "w": 0.0,
+        "h": 0.0213
+      }
+    },
+    "clairnote": {
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.92428,
+        "w": 0.0,
+        "h": 0.03018
+      }
+    },
+    "lead-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09335,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.63744,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.0926,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.65668,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09448,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.61157,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.09912,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.62931,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "lead": {
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.61328,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "shapenote": {
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.93079,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "4shapenote": {
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.93079,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "trad-dn2": {
+      "keysig": {
+        "x": 0.08,
+        "y": 0.0942,
+        "w": 0.014,
+        "h": 0.02107
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.93123,
+        "w": 0.0,
+        "h": 0.0213
+      }
+    },
+    "trad-dn1": {
+      "keysig": {
+        "x": 0.08,
+        "y": 0.04688,
+        "w": 0.04142,
+        "h": 0.01598
+      },
+      "lastbar": {
+        "x": 0.94417,
+        "y": 0.57659,
+        "w": 0.00821,
+        "h": 0.01065
+      }
+    },
+    "trad-up2": {
+      "keysig": {
+        "x": 0.08,
+        "y": 0.09473,
+        "w": 0.01657,
+        "h": 0.02396
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.92054,
+        "w": 0.0,
+        "h": 0.0213
+      }
+    },
+    "trad-up1": {
+      "keysig": {
+        "x": 0.08,
+        "y": 0.09934,
+        "w": 0.03501,
+        "h": 0.0264
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.92396,
+        "w": 0.0,
+        "h": 0.0213
+      }
+    },
+    "uke-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13718,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.87498,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "uke-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13642,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.8861,
+        "w": 0.0,
+        "h": 0.02367
+      }
+    },
+    "uke-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14344,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.8566,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "uke-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14274,
+        "w": 0.03849,
+        "h": 0.02935
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.85852,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "uke": {
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.85852,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "guitar-dn2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.14017,
+        "w": 0.0154,
+        "h": 0.02343
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.85168,
+        "w": 0.00912,
+        "h": 0.02367
+      }
+    },
+    "guitar-dn1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13449,
+        "w": 0.04602,
+        "h": 0.0355
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.86151,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "guitar-up2": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.13596,
+        "w": 0.01841,
+        "h": 0.02663
+      },
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.82516,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "guitar-up1": {
+      "keysig": {
+        "x": 0.0836,
+        "y": 0.07436,
+        "w": 0.03849,
+        "h": 0.01467
+      },
+      "lastbar": {
+        "x": 0.94326,
+        "y": 0.57188,
+        "w": 0.00912,
+        "h": 0.01183
+      }
+    },
+    "guitar": {
+      "lastbar": {
+        "x": 0.94669,
+        "y": 0.8273,
+        "w": 0.00569,
+        "h": 0.02367
+      }
+    },
+    "roman": {
+      "lastbar": {
+        "x": 0.95238,
+        "y": 0.91605,
+        "w": 0.0,
+        "h": 0.0213
+      }
+    }
+  }
 }
