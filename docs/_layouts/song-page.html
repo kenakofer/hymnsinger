@@ -24,9 +24,10 @@
     // fretboard diagrams are drawn and for which instrument.
     //
     // The frets axis is not a tab. -lead, -guitar and -uke are the same music
-    // at the same pitch; they differ only in the diagram row, so switching
-    // between them should not move the tab selection. currentFrets holds
-    // which of the three the chord tab is currently showing.
+    // at the same pitch, differing only in the diagram row, and -roman is the
+    // same chords again on the four-part score. Switching between them should
+    // not move the tab selection; currentFrets holds which one the chord tab
+    // is currently showing.
     //
     // Only trad and the three chord books are engraved transposed, so every
     // other notation forces the offset back to 0 rather than asking for a

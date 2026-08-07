@@ -6,14 +6,13 @@
     <input type="radio" id="trad" name="variant-radio" checked onclick="changeImage('trad');">
     <label for="trad">Traditional</label>
     </td><td>
-    <!-- One tab for the melody-and-chords family. Which of the three books it
-         shows - plain, guitar frets, uke frets - is the frets toggle over the
-         score, not a tab of its own: they are the same music at the same
-         pitch, differing only in whether diagrams are drawn. Three tabs for
-         that made the row too wide to read.
+    <!-- One tab for the chord family. Which of the four books it shows -
+         plain, guitar frets, uke frets, Roman numerals - is the toggle over
+         the score, not a tab of its own: they are the same chords, drawn or
+         named differently. A tab apiece made the row too wide to read.
 
-         Songs with no chords have no fret books to switch between, so the
-         tab keeps its old "Leadsheet" name there and the toggle is absent. -->
+         Songs with no chords have none of those books, so the tab keeps its
+         old "Leadsheet" name there and the toggle is absent. -->
     <input type="radio" id="lead" name="variant-radio" onclick="changeImage('lead');">
     <label for="lead">{% if has_chords %}Chords{% else %}Leadsheet{% endif %}</label>
     </td><td>
@@ -37,7 +36,7 @@
     {% if has_chords %}
         (<div class="tooltip">
             ?
-            <span class="tooltiptext">The melody with chord symbols. Gtr and Uke add a fretboard diagram at each chord change, in standard tuning; the arrows transpose those three. Rom names each chord by its scale degree instead of its letter, which does not change with key, so it is not transposed.
+            <span class="tooltiptext">The melody with chord symbols. Gtr and Uke add fretboard diagrams. Rom names each chord by its scale degree, on the full four-part score.
             </span>
         </div>)
     {% endif %}
@@ -90,13 +89,13 @@
                         title="Guitar fretboard diagrams">Gtr</button>
                 <button type="button" id="frets-uke" onclick="changeFrets('uke');"
                         title="Ukulele fretboard diagrams">Uke</button>
-                <!-- Roman is a chord *spelling*, not a diagram row, but it
-                     belongs on this toggle for the same reason the others do:
-                     it is the same melody with the chords written differently.
-                     It is the one book here with no transpositions, so
-                     selecting it hides the transpose arrows. -->
+                <!-- Roman sits on this toggle because it is the other way of
+                     reading the same chords, but unlike its neighbours it is
+                     the four-part score rather than a lead sheet. It is also
+                     the one book here with no transpositions, so selecting it
+                     hides the transpose arrows. -->
                 <button type="button" id="frets-roman" onclick="changeFrets('roman');"
-                        title="Chords as Roman numerals (scale degrees)">Rom</button>
+                        title="Roman numerals on the four-part score">Rom</button>
                 <button type="button" id="frets-none" onclick="changeFrets('lead');"
                         title="No fretboard diagrams">No tabs</button>
             </div>
