@@ -275,28 +275,6 @@ button {
     background: #f7f7ee;
     cursor: pointer;
 }
-#play-button, #stop-button {
-    width: 30%;
-    padding: 6px 0;
-    font-size: 11px;
-}
-#loop-span {
-    width: 40%;
-    text-align: center;
-    display: inline-block;
-}
-#play-bar-background {
-    border:1px solid #ccc;
-    margin-bottom:12px;
-    background:#c7c7be;
-    border-radius: 2px;
-}
-#play-bar {
-    height:10px;
-    background:#c33333;
-    border-radius: 3px;
-    width:2%;
-}
 .tempo-panel {
     background: #ccc;
     margin-bottom: 10px;
@@ -573,7 +551,9 @@ header ul {
 /* The scrim and the sheet's head belong to the narrow layout only; above 961px
    the header is a permanent sidebar and there is nothing to open, so the wide
    transport inside #drawer-grid does the job instead. */
-#drawer-scrim, #sheet-head {
+/* The scrim only exists to dismiss the phone sheet; both breakpoints re-show
+   #sheet-head, which is the transport on either layout. */
+#drawer-scrim {
     display: none;
 }
 /* The back link and the notation gloss share one line: the link is short, and
@@ -743,12 +723,6 @@ header ul {
         border-color: #c33333;
         color: #fff;
     }
-    /* The old Play/Reset/Loop row and its bar; #sheet-transport replaces them
-       here, and duplicating a transport inside the same sheet is the "outdated"
-       half of the pair. */
-    #wide-transport {
-        display: none;
-    }
     /* Two columns, so the sheet is roughly half as tall. A grid rather than
        CSS columns: each block keeps its own cell, so opening a <details> grows
        that cell instead of reflowing every block after it into a new column. */
@@ -835,22 +809,112 @@ header ul {
 @media print, screen and (min-width: 961px) {
     section {
         float: left;
-        margin-left: 290px;
+        /* Clears the fixed sidebar: its 380px content box plus the 60px of
+           padding either side of it, plus a 25px gutter. */
+        margin-left: 465px;
         width: initial;
         padding-right: 20px;
     }
     .wrapper {
         width: 100%;
-        max-width: 1190px;
+        max-width: 1400px;
     }
     header {
         padding: 10px 25px 10px 35px;
-        width: 185px;
+        /* Wide enough for #drawer-grid to run two-across, which roughly halves
+           the sidebar's height - at 185px its contents were 475px tall in an
+           80vh box and needed a scrollbar of their own. */
+        width: 380px;
         max-height: 80vh;
         overflow-y: auto;
         overflow-x: hidden;
         scrollbar-color: #aaa #171717;
         scrollbar-width: thin;
+    }
+    /* The same two-column grid the sheet uses, at the width that earns it. */
+    #drawer-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4px 14px;
+        align-items: start;
+    }
+    #drawer-grid > .drawer-wide {
+        grid-column: 1 / -1;
+    }
+    /* The sheet's transport, adopted here too, so there is one transport in
+       the codebase rather than a phone copy and a desktop copy. Sticky, so it
+       stays put while the rest of the sidebar scrolls under it. */
+    #sheet-head {
+        display: block;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background: #171717;
+        padding: 4px 0 10px 0;
+        margin-bottom: 6px;
+        border-bottom: 1px solid #333;
+    }
+    #sheet-transport {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    #sheet-bar-background {
+        flex: 1 1 auto;
+        height: 10px;
+        border: 1px solid #ccc;
+        background: #c7c7be;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+    #sheet-bar {
+        height: 100%;
+        width: 2%;
+        background: #c33333;
+        border-radius: 3px;
+    }
+    #sheet-loop {
+        flex: 0 0 auto;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        min-height: 36px;
+        border: none;
+        padding: 0;
+        color: #f7f7ee;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    #sheet-loop input {
+        width: 18px;
+        height: 18px;
+        margin: 0;
+        accent-color: #c33333;
+    }
+    .dock-icon {
+        flex: 0 0 auto;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        border: 2px solid #ccc;
+        border-radius: 20px;
+        background: #f7f7ee;
+        color: #232323;
+        font-size: 15px;
+        line-height: 1;
+        cursor: pointer;
+    }
+    .dock-icon:disabled {
+        opacity: 0.4;
+        cursor: default;
+    }
+    .dock-icon[hidden] {
+        display: none;
+    }
+    /* No sheet to open on desktop - the sidebar is always visible - so the
+       handle has nothing to toggle. */
+    #drawer-handle {
+        display: none;
     }
     header::-webkit-scrollbar {
         width: 5px;

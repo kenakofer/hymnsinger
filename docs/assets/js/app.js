@@ -21,11 +21,6 @@ window.addEventListener('keydown', function(e) {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('play-bar-background').addEventListener("click", function(event){
-        var percentage = (event.clientX-this.offsetLeft) / this.offsetWidth * 100;
-        Player.skipToPercent(percentage);
-    });
-
     // Show the advanced playback settings iff the window is wide enough for the
     // wide css and the height is tall enough to not show a scroll bar with the
     // panel open
@@ -125,10 +120,8 @@ var stop = function() {
 	Player.stop();
 	// Player.stop() emits no events, so the bars and the buttons it should
 	// have reset are set here instead.
-	['play-bar', 'sheet-bar'].forEach(function (id) {
-		var el = document.getElementById(id);
-		if (el) el.style.width = '2%';
-	});
+	var bar = document.getElementById('sheet-bar');
+	if (bar) bar.style.width = '2%';
 	syncPlayButtons('Play');
 	syncStopButtons(true);
 }
@@ -166,12 +159,10 @@ Soundfont.instrument(ac, 'https://raw.githubusercontent.com/gleitz/midi-js-sound
 			document.getElementById('tempo-display').innerHTML = Player.tempo + ' BPM';
 			var done = 100 - (.98 * Player.getSongPercentRemaining());
 			var pct = done + '%';
-			// Two views of one transport: the wide sidebar's and the
-			// sheet's, whose head stays on screen at either position.
-			['play-bar', 'sheet-bar'].forEach(function (id) {
-				var el = document.getElementById(id);
-				if (el) el.style.width = pct;
-			});
+			// One transport on both layouts: the sheet head, which is
+			// the phone's peeking dock and the desktop sidebar's top row.
+			var bar = document.getElementById('sheet-bar');
+			if (bar) bar.style.width = pct;
 			// 2% is the bar's own resting width, so anything above it means
 			// the playhead has left the start and "back to start" has a job.
 			syncStopButtons(done <= 2);
@@ -179,10 +170,7 @@ Soundfont.instrument(ac, 'https://raw.githubusercontent.com/gleitz/midi-js-sound
 
 		Player.loadArrayBuffer(buffer);
 
-		['play-button', 'sheet-play'].forEach(function (id) {
-			var el = document.getElementById(id);
-			if (el) el.removeAttribute('disabled');
-		});
+		document.getElementById('sheet-play').removeAttribute('disabled');
 
 		//play();
 	}

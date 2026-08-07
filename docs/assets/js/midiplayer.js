@@ -1018,8 +1018,8 @@ var MidiPlayer = (function () {
         this.resetTracks();
 
         // UI update
-        document.getElementById('play-button').innerHTML = 'Play';
-        document.getElementById('play-bar').style.width = '2%';
+        syncPlayButtons('Play');
+        document.getElementById('sheet-bar').style.width = '2%';
 
         return this;
       }
@@ -1029,7 +1029,7 @@ var MidiPlayer = (function () {
         if (document.getElementById('loop-checkbox').checked == true) {
           this.stop();
           this.play();
-          document.getElementById('play-button').innerHTML = 'Pause';
+          syncPlayButtons('Pause');
         }
         return this;
       }
@@ -1065,7 +1065,7 @@ var MidiPlayer = (function () {
       value: function skipToPercent(percent) {
         if (percent < 0 || percent > 100) throw "Percent must be number between 1 and 100.";
         this.skipToTick(Math.round(percent / 100 * this.totalTicks));
-        document.getElementById('play-bar').style.width = percent + '%';
+        document.getElementById('sheet-bar').style.width = percent + '%';
         return this;
       }
       /**

@@ -242,12 +242,8 @@
         if (btn) btn.hidden = atStart;
     }
 
-    // Two play buttons, one transport: the wide sidebar's and the sheet's.
-    // app.js calls this after every state change rather than writing a single
-    // button's label.
+    // One transport on both layouts now, so this writes a single button.
     function syncPlayButtons(label) {
-        var full = document.getElementById("play-button");
-        if (full) full.innerHTML = label;
         var playing = label == "Pause";
         var btn = document.getElementById("sheet-play");
         if (btn) {
@@ -284,23 +280,6 @@
         if (e.key == "Escape" && drawerIsOpen()) closeDrawer();
     });
 
-    // midiplayer.js reads #loop-checkbox directly - that is the sheet head's
-    // copy, the one on screen at every sheet position. The wide sidebar's
-    // mirrors into it and it back, so the two can never disagree.
-    var LOOP_BOXES = ["loop-checkbox", "wide-loop-checkbox"];
-    document.addEventListener("DOMContentLoaded", function () {
-        LOOP_BOXES.forEach(function (id) {
-            var box = document.getElementById(id);
-            if (!box) return;
-            box.addEventListener("change", function () {
-                LOOP_BOXES.forEach(function (other) {
-                    if (other == id) return;
-                    var el = document.getElementById(other);
-                    if (el) el.checked = box.checked;
-                });
-            });
-        });
-    });
     </script>
     <script src="{{ site.baseurl }}/assets/js/midiplayer.js"></script>
     <script src="{{ site.baseurl }}/assets/js/soundfont-player.js"></script>
@@ -338,17 +317,6 @@
         </div>
 
         <div id="drawer-grid">
-          <!-- The wide sidebar's transport. Hidden on narrow, where
-               #sheet-transport does this job in the sheet head. -->
-          <div id="wide-transport">
-          <button class="button button-primary" id="play-button" onclick="click_play()" disabled="disabled" title="Shortcut: Space">Play</button><!--
-          --><button class="button button-primary" id="stop-button" onclick="stop()">Reset</button><!--
-          --><span id='loop-span'>Loop<input type="checkbox" id="wide-loop-checkbox"></span>
-
-        <div id="play-bar-background">
-            <div id="play-bar"></div>
-        </div>
-          </div>
 
         <details id="playback-settings">
           <summary>Playback Settings</summary>
