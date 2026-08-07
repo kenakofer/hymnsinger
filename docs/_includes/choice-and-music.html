@@ -81,14 +81,17 @@
                         title="Up a half step">&#9654;</button>
             </div>
             {% if has_chords %}
+            <!-- No visible "Frets" caption: sitting beside the transpose
+                 arrows the row has to stay narrow, and "Gtr / Uke / No tabs"
+                 already says what it is. The aria-label carries the name for
+                 screen readers. -->
             <div id="frets-control" role="group" aria-label="Fretboard diagrams">
-                <span class="frets-label">Frets</span>
                 <button type="button" id="frets-guitar" onclick="changeFrets('guitar');"
                         title="Guitar fretboard diagrams">Gtr</button>
                 <button type="button" id="frets-uke" onclick="changeFrets('uke');"
                         title="Ukulele fretboard diagrams">Uke</button>
                 <button type="button" id="frets-none" onclick="changeFrets('lead');"
-                        title="No fretboard diagrams">Off</button>
+                        title="No fretboard diagrams">No tabs</button>
             </div>
             {% endif %}
         </div>
