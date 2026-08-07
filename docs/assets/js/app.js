@@ -40,12 +40,14 @@ document.addEventListener('DOMContentLoaded', function() {
     if (urlParams.has("lead")) {
         changeFrets('lead');
     }
-    // ?guitar / ?uke select the chord tab with that instrument's diagrams.
-    // On a song with no chords those books were never engraved, so the link
-    // falls back to the plain sheet rather than requesting a missing image.
-    if (urlParams.has("guitar") || urlParams.has("uke")) {
+    // ?guitar / ?uke select the chord tab with that instrument's diagrams, and
+    // ?roman the numeral spelling. On a song with no chords none of those
+    // books were engraved, so the link falls back to the plain sheet rather
+    // than requesting a missing image.
+    if (urlParams.has("guitar") || urlParams.has("uke") || urlParams.has("roman")) {
         if (window.hasChords)
-            changeFrets(urlParams.has("guitar") ? 'guitar' : 'uke');
+            changeFrets(urlParams.has("guitar") ? 'guitar'
+                        : urlParams.has("uke") ? 'uke' : 'roman');
         else
             changeImage('lead');
     }

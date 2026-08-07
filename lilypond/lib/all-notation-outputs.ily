@@ -77,7 +77,7 @@
                     "lead-up1" "lead-up2" "lead-dn1" "lead-dn2"
                     "uke" "uke-up1" "uke-up2" "uke-dn1" "uke-dn2"
                     "guitar" "guitar-up1" "guitar-up2" "guitar-dn1"
-                    "guitar-dn2")))
+                    "guitar-dn2" "roman")))
        (for-each
         (lambda (n)
           (if (not (member n known))
@@ -131,3 +131,8 @@
          (ht-book? "guitar-dn1") (ht-book? "guitar-dn2"))
      (ly:parser-include-string
       (format #f "\\include \"~a/guitar-book.ily\"" ht-lib-dir)))
+
+%% The Roman numeral sheet is a single book with no transposed siblings - a
+%% numeral is already relative to the tonic, so transposing would reprint the
+%% same page. It gates itself on the song having chords, like the fret books.
+#(ht-include-book "roman" "roman-book.ily")

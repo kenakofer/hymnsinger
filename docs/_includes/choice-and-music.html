@@ -37,7 +37,7 @@
     {% if has_chords %}
         (<div class="tooltip">
             ?
-            <span class="tooltiptext">The melody with chord symbols. The Frets buttons add a guitar or ukulele fretboard diagram at each chord change, in standard tuning. The arrows transpose all three.
+            <span class="tooltiptext">The melody with chord symbols. Gtr and Uke add a fretboard diagram at each chord change, in standard tuning; the arrows transpose those three. Rom names each chord by its scale degree instead of its letter, which does not change with key, so it is not transposed.
             </span>
         </div>)
     {% endif %}
@@ -90,6 +90,13 @@
                         title="Guitar fretboard diagrams">Gtr</button>
                 <button type="button" id="frets-uke" onclick="changeFrets('uke');"
                         title="Ukulele fretboard diagrams">Uke</button>
+                <!-- Roman is a chord *spelling*, not a diagram row, but it
+                     belongs on this toggle for the same reason the others do:
+                     it is the same melody with the chords written differently.
+                     It is the one book here with no transpositions, so
+                     selecting it hides the transpose arrows. -->
+                <button type="button" id="frets-roman" onclick="changeFrets('roman');"
+                        title="Chords as Roman numerals (scale degrees)">Rom</button>
                 <button type="button" id="frets-none" onclick="changeFrets('lead');"
                         title="No fretboard diagrams">No tabs</button>
             </div>

@@ -51,10 +51,13 @@ song_fingerprint() {
 # post-processing loops - it used to be spelled out twice and the two copies
 # had to be edited together.
 #
-# The fret books (-uke*, -guitar*) only exist for songs that define chords, so
-# these globs are expected to miss for most songs; every consumer below is
-# guarded by [ -e ].
-ALL_TYPES="-trad -clairnote -shapenote -4shapenote -lead -trad-up1 -trad-up2 -trad-dn1 -trad-dn2 -lead-up1 -lead-up2 -lead-dn1 -lead-dn2 -uke -uke-up1 -uke-up2 -uke-dn1 -uke-dn2 -guitar -guitar-up1 -guitar-up2 -guitar-dn1 -guitar-dn2"
+# The fret books (-uke*, -guitar*) and -roman only exist for songs that define
+# chords, so these globs are expected to miss for most songs; every consumer
+# below is guarded by [ -e ].
+#
+# -roman has no transposed siblings on purpose: a Roman numeral is relative to
+# the tonic, so every transposition would engrave the same page.
+ALL_TYPES="-trad -clairnote -shapenote -4shapenote -lead -trad-up1 -trad-up2 -trad-dn1 -trad-dn2 -lead-up1 -lead-up2 -lead-dn1 -lead-dn2 -uke -uke-up1 -uke-up2 -uke-dn1 -uke-dn2 -guitar -guitar-up1 -guitar-up2 -guitar-dn1 -guitar-dn2 -roman"
 
 # Map a BOOKS selection onto the output suffixes the post-processing steps
 # walk. Must stay in step with ht-book? in lib/all-notation-outputs.ily.

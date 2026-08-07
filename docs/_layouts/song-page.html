@@ -41,11 +41,18 @@
     var TRANSPOSE_SUFFIX = {"-2": "-dn2", "-1": "-dn1", "0": "", "1": "-up1", "2": "-up2"};
     var TRANSPOSE_LIMIT = 2;
 
+    // Transposability belongs to the *book*, not the tab. Every book here is
+    // engraved at five pitches except -roman: a numeral says where a chord
+    // sits relative to the tonic, so transposing it would reprint the same
+    // page, and those files are not built.
     var TRANSPOSABLE = ["trad", "lead", "uke", "guitar"];
-    var FRETS_BUTTONS = {"guitar": "frets-guitar", "uke": "frets-uke", "lead": "frets-none"};
+    var FRETS_BUTTONS = {"guitar": "frets-guitar", "uke": "frets-uke",
+                         "roman": "frets-roman", "lead": "frets-none"};
 
-    function variantSupportsTranspose(variant) {
-        return TRANSPOSABLE.indexOf(variant) != -1;
+    // Takes a book name, so the chord tab is judged by whichever of its books
+    // the frets toggle currently resolves to.
+    function bookSupportsTranspose(book) {
+        return TRANSPOSABLE.indexOf(book) != -1;
     }
 
     // Which book the current tab actually resolves to. Every tab is its own
@@ -56,6 +63,11 @@
 
     function renderScore() {
         var book = currentBook();
+        // Force the offset back to 0 for a book with no transposed engravings,
+        // so switching to it while transposed asks for a file that exists
+        // rather than a -roman-up1 that was never built.
+        if (!bookSupportsTranspose(book))
+            window.currentTranspose = 0;
         var suffix = book + TRANSPOSE_SUFFIX[String(window.currentTranspose)];
         document.getElementById("music-image").src =
             "/local-lilypond-outputs/{{ page.song_file }}-" + suffix + ".png";
@@ -65,7 +77,7 @@
         if (pdfLink)
             pdfLink.href = "/local-lilypond-outputs/{{ page.song_file }}-" + suffix + ".pdf";
 
-        var supported = variantSupportsTranspose(window.currentVariant);
+        var supported = bookSupportsTranspose(book);
         var control = document.getElementById("transpose-control");
         if (control) {
             control.style.display = supported ? "" : "none";
@@ -107,8 +119,8 @@
 
     function changeImage(variant) {
         window.currentVariant = variant;
-        if (!variantSupportsTranspose(variant))
-            window.currentTranspose = 0;
+        // renderScore resets the offset for any book without transpositions,
+        // so no clamp is needed here.
 
         // Get the right checkboxes
         document.getElementById(variant).checked = true;
@@ -129,7 +141,7 @@
     }
 
     function changeTranspose(delta) {
-        if (!variantSupportsTranspose(window.currentVariant)) return false;
+        if (!bookSupportsTranspose(currentBook())) return false;
         var next = window.currentTranspose + delta;
         if (next < -TRANSPOSE_LIMIT || next > TRANSPOSE_LIMIT) return false;
         window.currentTranspose = next;
