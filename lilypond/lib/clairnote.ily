@@ -249,6 +249,23 @@
          #f
          rotn)))
 
+%% Up to 2.22 a stem-attachment x of 1 meant "the far edge of the note head as
+%% seen from the stem", so one pair served both stem directions. 2.23 made it
+%% literal -- x is the right edge whichever way the stem points -- which hangs
+%% down stems off the wrong side of the head. Mirror x ourselves there, and
+%% only there: doing it on 2.22 double-flips and breaks the output.
+#(define cn-attachment-needs-flip?
+   (ly:version? >= '(2 23 0)))
+
+#(define (cn-flip-attach-for-down-stem grob attach)
+   (if (not cn-attachment-needs-flip?)
+       attach
+       (let ((stem (ly:grob-object grob 'stem)))
+         (if (and (ly:grob? stem)
+                  (eqv? DOWN (ly:grob-property stem 'direction)))
+             (cons (- (car attach)) (cdr attach))
+             attach))))
+
 #(define (cn-make-stem-attachment-callback black-attach white-attach)
    ;; Returns a callback function for stem attachment,
    ;; that excludes whole notes and stylish notes.
@@ -257,9 +274,11 @@
      (if (or (cn-whole-note? grob)
              (cn-stylish-note? grob))
          (ly:note-head::calc-stem-attachment grob)
-         (if (cn-white-note? grob)
-             white-attach
-             black-attach))))
+         (cn-flip-attach-for-down-stem
+          grob
+          (if (cn-white-note? grob)
+              white-attach
+              black-attach)))))
 
 
 %--- ACCIDENTAL STYLE ----------------
