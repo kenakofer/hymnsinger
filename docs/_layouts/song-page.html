@@ -372,21 +372,97 @@
           </div>
           <!-- Was a table with nested <tr>s and three empty spacer rows, and
                the part names were hover tooltips - invisible on a touch screen.
-               The clef says which two voices a pair is; the sliders are wedges,
-               so the level reads as a shape rather than a dot on a line. -->
+               The label is a real LilyPond grand staff (see the .ly beside this
+               layout): same clefs and note heads as the scores, rather than SVG
+               drawn by hand. Rendered with -dbackend=svg -dcrop, then stripped of
+               its point-and-click <a> wrappers and mm sizing. Every stroke is
+               currentColor, so CSS colours it. -->
           <div class="part-volume">
-            <div class="part-group"><svg class="part-clef" viewBox="0 0 30 42" aria-hidden="true" focusable="false"><g class="stave"><line x1="1" y1="6" x2="29" y2="6"/><line x1="1" y1="12" x2="29" y2="12"/><line x1="1" y1="18" x2="29" y2="18"/><line x1="1" y1="24" x2="29" y2="24"/><line x1="1" y1="30" x2="29" y2="30"/></g><path class="clef" d="M15.5 33.5 C11 32 9 28.5 9 25 C9 20 13.5 17.5 13.5 12 C13.5 8 12 5.5 10.5 5.5 C8.5 5.5 7.5 8.5 7.5 12 C7.5 18 13.5 23 13.5 29.5 C13.5 34 11.5 36.5 9.5 36.5 C8 36.5 7 35.5 7 34.2"/><circle class="note" cx="22" cy="18" r="3"/><circle class="note" cx="22" cy="24" r="3"/><line class="stem" x1="24.8" y1="18" x2="24.8" y2="5"/></svg><div class="part-sliders">
+            <svg class="part-clef" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" viewBox="-1.3842 -0.0260 20.1617 17.8307">
+            <g transform="translate(0.0000, 7.5140)">
+            <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1103" stroke="currentColor" x1="0.0551" y1="0" x2="18.7224" y2="0"/>
+            </g>
+            <g transform="translate(0.0000, 6.2140)">
+            <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1103" stroke="currentColor" x1="0.0551" y1="0" x2="18.7224" y2="0"/>
+            </g>
+            <g transform="translate(0.0000, 4.9140)">
+            <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1103" stroke="currentColor" x1="0.0551" y1="0" x2="18.7224" y2="0"/>
+            </g>
+            <g transform="translate(0.0000, 3.6140)">
+            <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1103" stroke="currentColor" x1="0.0551" y1="0" x2="18.7224" y2="0"/>
+            </g>
+            <g transform="translate(0.0000, 2.3140)">
+            <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1103" stroke="currentColor" x1="0.0551" y1="0" x2="18.7224" y2="0"/>
+            </g>
+            <g transform="translate(18.5680, -0.0000)">
+            <rect x="0.0000" y="7.5691" width="0.2095" height="4.9460" ry="0.0000" fill="currentColor"/>
+            </g>
+            <g transform="translate(0.0000, 17.7152)">
+            <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1103" stroke="currentColor" x1="0.0551" y1="0" x2="18.7224" y2="0"/>
+            </g>
+            <g transform="translate(0.0000, 16.4152)">
+            <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1103" stroke="currentColor" x1="0.0551" y1="0" x2="18.7224" y2="0"/>
+            </g>
+            <g transform="translate(0.0000, 15.1152)">
+            <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1103" stroke="currentColor" x1="0.0551" y1="0" x2="18.7224" y2="0"/>
+            </g>
+            <g transform="translate(0.0000, 13.8152)">
+            <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1103" stroke="currentColor" x1="0.0551" y1="0" x2="18.7224" y2="0"/>
+            </g>
+            <g transform="translate(0.0000, 12.5152)">
+            <line stroke-linejoin="round" stroke-linecap="round" stroke-width="0.1103" stroke="currentColor" x1="0.0551" y1="0" x2="18.7224" y2="0"/>
+            </g>
+            <g transform="translate(0.0000, 11.2152)">
+            <rect x="5.1537" y="-0.1201" width="3.8780" height="0.2403" ry="0.1201" fill="currentColor"/>
+            </g>
+            <g transform="translate(0.0000, 8.8140)">
+            <rect x="5.1537" y="-0.1201" width="3.8780" height="0.2403" ry="0.1201" fill="currentColor"/>
+            </g>
+            <g transform="translate(-0.3765, 10.0146)">
+            <path transform="scale(0.0052, -0.0052)" d="M-180 -1041c0 243 99 480 99 708c0 123 -30 240 -120 327c-3 3 -3 3 -3 6s0 3 3 6c90 87 120 204 120 327c0 228 -99 465 -99 708c0 174 45 336 168 456c3 3 9 6 12 6c9 0 15 -6 15 -15c0 -3 0 -9 -3 -12c-93 -90 -123 -204 -123 -327c0 -225 93 -456 93 -693
+            c0 -171 -42 -336 -162 -456c120 -120 162 -285 162 -456c0 -237 -93 -468 -93 -693c0 -123 30 -237 123 -327c3 -3 3 -9 3 -12c0 -9 -6 -15 -15 -15c-3 0 -9 3 -12 6c-123 120 -168 282 -168 456z" fill="currentColor"/>
+            </g>
+            <g transform="translate(-0.0765, 10.0146)">
+            <rect x="0.0000" y="-7.7557" width="0.1765" height="15.5114" ry="0.0551" fill="currentColor"/>
+            </g>
+            <g transform="translate(5.8000, 8.8140)">
+            <path transform="scale(0.0052, -0.0052)" d="M215 114c-50 0 -71 -42 -71 -88c0 -79 60 -140 139 -140c50 0 70 42 70 88c0 79 -59 140 -138 140zM497 0c0 -43 -35 -74 -73 -95c-54 -29 -114 -40 -175 -40s-122 11 -176 40c-38 21 -73 52 -73 95s35 74 73 95c54 29 115 40 176 40s121 -11 175 -40
+            c38 -21 73 -52 73 -95z" fill="currentColor"/>
+            </g>
+            <g transform="translate(5.8000, 5.5640)">
+            <path transform="scale(0.0052, -0.0052)" d="M215 114c-50 0 -71 -42 -71 -88c0 -79 60 -140 139 -140c50 0 70 42 70 88c0 79 -59 140 -138 140zM497 0c0 -43 -35 -74 -73 -95c-54 -29 -114 -40 -175 -40s-122 11 -176 40c-38 21 -73 52 -73 95s35 74 73 95c54 29 115 40 176 40s121 -11 175 -40
+            c38 -21 73 -52 73 -95z" fill="currentColor"/>
+            </g>
+            <g transform="translate(0.8000, 6.2140)">
+            <path transform="scale(0.0052, -0.0052)" d="M374 260c5 0 10 1 15 1c154 0 254 -127 254 -259c0 -76 -33 -153 -107 -208c-22 -17 -47 -29 -73 -37c3 -36 5 -72 5 -108c0 -19 0 -37 -1 -56c-7 -120 -88 -226 -206 -226c-108 0 -195 87 -195 195c0 58 53 104 112 104c54 0 95 -48 95 -104c0 -52 -43 -95 -95 -95
+            c-12 0 -24 4 -35 9c26 -41 70 -70 121 -70c96 0 157 93 163 193c1 18 2 35 2 53c0 32 -2 64 -5 96c-29 -5 -58 -8 -89 -8c-188 0 -333 171 -333 372c0 178 133 306 251 440c-18 63 -35 126 -42 191c-6 51 -7 102 -7 154c0 116 55 226 150 295c2 2 5 3 8 3s6 -1 8 -3
+            c70 -84 132 -246 132 -359c0 -144 -87 -256 -183 -365c20 -69 39 -138 55 -208zM459 -205c69 24 117 96 117 166c0 92 -69 184 -179 193c25 -117 48 -235 62 -359zM71 31c0 -136 131 -251 267 -251c28 0 55 2 82 6c-15 128 -38 247 -64 367c-79 -9 -125 -62 -125 -121
+            c0 -44 26 -92 82 -124c4 -4 7 -9 7 -14c0 -11 -9 -21 -20 -21c-3 0 -6 1 -9 2c-80 43 -116 114 -116 184c0 88 57 173 158 196c-14 60 -30 119 -46 178c-108 -121 -216 -242 -216 -402zM411 1050c-99 -50 -161 -151 -161 -262c0 -76 15 -137 33 -200c82 97 149 198 149 325
+            c0 58 -4 84 -21 137z" fill="currentColor"/>
+            </g>
+            <g transform="translate(5.8000, 14.4652)">
+            <path transform="scale(0.0052, -0.0052)" d="M215 114c-50 0 -71 -42 -71 -88c0 -79 60 -140 139 -140c50 0 70 42 70 88c0 79 -59 140 -138 140zM497 0c0 -43 -35 -74 -73 -95c-54 -29 -114 -40 -175 -40s-122 11 -176 40c-38 21 -73 52 -73 95s35 74 73 95c54 29 115 40 176 40s121 -11 175 -40
+            c38 -21 73 -52 73 -95z" fill="currentColor"/>
+            </g>
+            <g transform="translate(5.8000, 11.2152)">
+            <path transform="scale(0.0052, -0.0052)" d="M215 114c-50 0 -71 -42 -71 -88c0 -79 60 -140 139 -140c50 0 70 42 70 88c0 79 -59 140 -138 140zM497 0c0 -43 -35 -74 -73 -95c-54 -29 -114 -40 -175 -40s-122 11 -176 40c-38 21 -73 52 -73 95s35 74 73 95c54 29 115 40 176 40s121 -11 175 -40
+            c38 -21 73 -52 73 -95z" fill="currentColor"/>
+            </g>
+            <g transform="translate(0.8000, 13.8152)">
+            <path transform="scale(0.0052, -0.0052)" d="M556 -125c0 29 23 52 52 52s52 -23 52 -52s-23 -52 -52 -52s-52 23 -52 52zM556 125c0 29 23 52 52 52s52 -23 52 -52s-23 -52 -52 -52s-52 23 -52 52zM233 261c171 0 292 -86 292 -248c0 -263 -264 -415 -517 -521c-2 -2 -5 -3 -8 -3c-6 0 -11 5 -11 11c0 3 1 6 3 8
+            c203 118 415 265 415 494c0 121 -64 237 -174 237c-79 0 -138 -57 -164 -133c14 8 28 13 43 13c55 0 100 -45 100 -100c0 -58 -44 -107 -100 -107c-60 0 -112 48 -112 107c0 132 103 242 233 242z" fill="currentColor"/>
+            </g>
+            </svg>
+            <div class="part-sliders">
               <input class="wedge" type="range" aria-label="Soprano volume" title="Soprano"
                      onchange="channel_to_velocity[1]=this.value" min="0" max="200" value="200">
               <input class="wedge" type="range" aria-label="Alto volume" title="Alto"
                      onchange="channel_to_velocity[2]=this.value" min="0" max="200" value="90">
-            </div></div>
-            <div class="part-group"><svg class="part-clef" viewBox="0 0 30 42" aria-hidden="true" focusable="false"><g class="stave"><line x1="1" y1="6" x2="29" y2="6"/><line x1="1" y1="12" x2="29" y2="12"/><line x1="1" y1="18" x2="29" y2="18"/><line x1="1" y1="24" x2="29" y2="24"/><line x1="1" y1="30" x2="29" y2="30"/></g><path class="clef" d="M8.5 11 C13 11 16 14.5 16 19 C16 25 12 29.5 7 32.5"/><circle class="clefdot" cx="8.5" cy="11" r="2.1"/><circle class="clefdot" cx="19" cy="14" r="1.1"/><circle class="clefdot" cx="19" cy="20" r="1.1"/><circle class="note" cx="24" cy="21" r="3"/><circle class="note" cx="24" cy="27" r="3"/><line class="stem" x1="21.2" y1="27" x2="21.2" y2="40"/></svg><div class="part-sliders">
               <input class="wedge" type="range" aria-label="Tenor volume" title="Tenor"
                      onchange="channel_to_velocity[3]=this.value" min="0" max="200" value="105">
               <input class="wedge" type="range" aria-label="Bass volume" title="Bass"
                      onchange="channel_to_velocity[4]=this.value" min="0" max="200" value="120">
-            </div></div>
+            </div>
           </div>
         </details>
 

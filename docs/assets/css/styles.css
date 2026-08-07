@@ -305,40 +305,24 @@ button {
     width: 100%;
     margin: 0;
 }
+/* The staff labels the group from above. -dcrop trims to the ink, so the
+   shape is whatever the brace, clefs and chords occupy - roughly square once
+   the chords have room to breathe. */
 .part-volume {
     display: grid;
-    gap: 10px;
-}
-/* One clef, then the two voices that read from it. */
-.part-group {
-    display: grid;
-    grid-template-columns: 30px 1fr;
-    align-items: center;
-    gap: 9px;
+    justify-items: start;
+    gap: 7px;
 }
 .part-clef {
-    width: 30px;
-    height: 42px;
+    display: block;
+    width: 52px;
+    height: auto;
+    margin-left: 1px;
+    /* LilyPond draws every stroke with currentColor. */
+    color: #e2e2d9;
 }
-.part-clef .stave {
-    stroke: #55554f;
-    stroke-width: 0.9;
-}
-.part-clef .clef {
-    fill: none;
-    stroke: #dcdcd3;
-    stroke-width: 2;
-    stroke-linecap: round;
-}
-.part-clef .clefdot {
-    fill: #cfcfc6;
-}
-.part-clef .note {
-    fill: #f55;
-}
-.part-clef .stem {
-    stroke: #f55;
-    stroke-width: 1.4;
+.part-sliders {
+    width: 100%;
 }
 .part-sliders {
     display: grid;
