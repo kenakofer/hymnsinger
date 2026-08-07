@@ -83,16 +83,25 @@ section {
     position: relative;
     display: block;
 }
-/* Layered over the top left of the score. LilyPond leaves that corner blank
-   on every song - the title block is centred and the first staff starts well
-   below - so this covers nothing. It is deliberately not inside
-   #score-variants: that table is the notation picker, and pitch is a
-   separate axis that only applies to one of those tabs. */
-#transpose-control {
+/* Layered over the top left of the score via #score-controls. LilyPond leaves
+   that corner blank on every song - the title block is centred and the first
+   staff starts well below - so this covers nothing. These are deliberately
+   not inside #score-variants: that table is the notation picker, and pitch
+   and fretting are separate axes that only apply to some of those tabs. */
+/* Holds the transpose and frets controls in one column so they stack down the
+   blank corner rather than fighting for the same spot. Either child may be
+   hidden depending on the tab, and the column collapses when both are. */
+#score-controls {
     position: absolute;
     top: 6px;
     left: 6px;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+}
+#transpose-control {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -145,6 +154,48 @@ section {
 #transpose-control.transposed #transpose-readout {
     color: #ff5555;
     font-weight: bold;
+}
+/* Same plate and button treatment as the transpose control directly above it,
+   so the two read as one cluster over the score's blank corner. */
+#frets-control {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+    padding: 2px 3px;
+    border-radius: 4px;
+    background-color: #F7F7F0;
+    line-height: 1;
+}
+#frets-control .frets-label {
+    font-size: 11px;
+    color: #777;
+    margin-right: 1px;
+}
+#frets-control button {
+    height: 20px;
+    padding: 0 5px;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #444;
+    font-size: 10px;
+    cursor: pointer;
+}
+#frets-control button:hover:not(.selected) {
+    background-color: #ffecec;
+    border-color: #ff5555;
+    color: #ff5555;
+}
+/* The selected instrument is the one thing here that must be readable at a
+   glance - it changes what the diagrams under every chord mean. */
+#frets-control button.selected {
+    background-color: #ff5555;
+    border-color: #ff5555;
+    color: #fff;
+    font-weight: bold;
+    cursor: default;
 }
 body {
     background-color: #F7F7EE; /* Body should match music-image color after filters */

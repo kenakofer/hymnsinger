@@ -35,8 +35,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const urlParams = new URLSearchParams(window.location.search);
 
+    // ?lead is an old link and must keep meaning the plain sheet, so it sets
+    // the frets toggle off rather than falling through to the guitar default.
     if (urlParams.has("lead")) {
-        changeImage('lead');
+        changeFrets('lead');
+    }
+    // ?guitar / ?uke select the chord tab with that instrument's diagrams.
+    // On a song with no chords those books were never engraved, so the link
+    // falls back to the plain sheet rather than requesting a missing image.
+    if (urlParams.has("guitar") || urlParams.has("uke")) {
+        if (window.hasChords)
+            changeFrets(urlParams.has("guitar") ? 'guitar' : 'uke');
+        else
+            changeImage('lead');
     }
     if (urlParams.has("shapenote")) {
         document.getElementById('shapenote').checked = true;
@@ -50,16 +61,29 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('clairnote').checked = true;
         changeImage('clairnote');
     }
-    // The transposed trad views, e.g. ?trad-up1. Kept as valueless params to
-    // match the notation links above.
-    Object.keys(TRANSPOSE_SUFFIX).forEach(function (steps) {
-        if (steps == "0") return;
-        if (urlParams.has("trad" + TRANSPOSE_SUFFIX[steps])) {
-            document.getElementById('trad').checked = true;
-            window.currentVariant = 'trad';
+    // The transposed views, e.g. ?trad-up1 or ?guitar-dn2. Kept as valueless
+    // params to match the notation links above.
+    //
+    // The chord books name a book, not a tab: ?guitar-up1 means the chord tab
+    // with guitar frets, up a semitone. Each is checked against the same
+    // suffix table so a new transposable book only needs adding to this list.
+    ['trad', 'lead', 'guitar', 'uke'].forEach(function (book) {
+        Object.keys(TRANSPOSE_SUFFIX).forEach(function (steps) {
+            if (steps == "0") return;
+            if (!urlParams.has(book + TRANSPOSE_SUFFIX[steps])) return;
+            if (book == 'trad') {
+                document.getElementById('trad').checked = true;
+                window.currentVariant = 'trad';
+            } else {
+                // Chord books share the one tab; the book picks the frets.
+                if (!window.hasChords && book != 'lead') return;
+                document.getElementById('lead').checked = true;
+                window.currentVariant = 'lead';
+                window.currentFrets = book;
+            }
             window.currentTranspose = parseInt(steps, 10);
             renderScore();
-        }
+        });
     });
 }, false);
 

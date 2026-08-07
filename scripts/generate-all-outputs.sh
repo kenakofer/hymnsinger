@@ -54,7 +54,7 @@ song_fingerprint() {
 # The fret books (-uke*, -guitar*) only exist for songs that define chords, so
 # these globs are expected to miss for most songs; every consumer below is
 # guarded by [ -e ].
-ALL_TYPES="-trad -clairnote -shapenote -4shapenote -lead -trad-up1 -trad-up2 -trad-dn1 -trad-dn2 -uke -uke-up1 -uke-up2 -uke-dn1 -uke-dn2 -guitar -guitar-up1 -guitar-up2 -guitar-dn1 -guitar-dn2"
+ALL_TYPES="-trad -clairnote -shapenote -4shapenote -lead -trad-up1 -trad-up2 -trad-dn1 -trad-dn2 -lead-up1 -lead-up2 -lead-dn1 -lead-dn2 -uke -uke-up1 -uke-up2 -uke-dn1 -uke-dn2 -guitar -guitar-up1 -guitar-up2 -guitar-dn1 -guitar-dn2"
 
 # Map a BOOKS selection onto the output suffixes the post-processing steps
 # walk. Must stay in step with ht-book? in lib/all-notation-outputs.ily.
@@ -63,9 +63,10 @@ books_to_types() {
     for b in ${sel//,/ }; do
         case "$b" in
             all) out="$ALL_TYPES"; break ;;
-            transposed) out="$out -trad-up1 -trad-up2 -trad-dn1 -trad-dn2 -uke-up1 -uke-up2 -uke-dn1 -uke-dn2 -guitar-up1 -guitar-up2 -guitar-dn1 -guitar-dn2" ;;
-            # A fret instrument's name means its whole family, matching
-            # ht-book? in the .ily.
+            transposed) out="$out -trad-up1 -trad-up2 -trad-dn1 -trad-dn2 -lead-up1 -lead-up2 -lead-dn1 -lead-dn2 -uke-up1 -uke-up2 -uke-dn1 -uke-dn2 -guitar-up1 -guitar-up2 -guitar-dn1 -guitar-dn2" ;;
+            # A chord book's name means its whole family, matching ht-book?
+            # in the .ily.
+            lead) out="$out -lead -lead-up1 -lead-up2 -lead-dn1 -lead-dn2" ;;
             uke) out="$out -uke -uke-up1 -uke-up2 -uke-dn1 -uke-dn2" ;;
             guitar) out="$out -guitar -guitar-up1 -guitar-up2 -guitar-dn1 -guitar-dn2" ;;
             *) out="$out -${b}" ;;

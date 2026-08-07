@@ -55,8 +55,12 @@
        ;; the five are one feature and are almost never wanted apart.
        (and (member "transposed" ht-book-selection)
             (member name '("trad-up1" "trad-up2" "trad-dn1" "trad-dn2"
+                           "lead-up1" "lead-up2" "lead-dn1" "lead-dn2"
                            "uke-up1" "uke-up2" "uke-dn1" "uke-dn2"
                            "guitar-up1" "guitar-up2" "guitar-dn1" "guitar-dn2"))
+            #t)
+       (and (member "lead" ht-book-selection)
+            (member name '("lead-up1" "lead-up2" "lead-dn1" "lead-dn2"))
             #t)
        (and (member "uke" ht-book-selection)
             (member name '("uke-up1" "uke-up2" "uke-dn1" "uke-dn2"))
@@ -70,6 +74,7 @@
 #(if (not (eq? ht-book-selection 'all))
      (let ((known '("trad" "clairnote" "shapenote" "4shapenote" "lead"
                     "trad-up1" "trad-up2" "trad-dn1" "trad-dn2" "transposed"
+                    "lead-up1" "lead-up2" "lead-dn1" "lead-dn2"
                     "uke" "uke-up1" "uke-up2" "uke-dn1" "uke-dn2"
                     "guitar" "guitar-up1" "guitar-up2" "guitar-dn1"
                     "guitar-dn2")))
@@ -93,7 +98,14 @@
 
 #(ht-include-book "trad" "traditional-book.ily")
 #(ht-include-book "clairnote" "clairnote-book.ily")
-#(ht-include-book "lead" "lead-sheet-book.ily")
+
+%% The lead sheet is a family of five now, like the fret books, and does its
+%% own per-book gating inside the file - so include it whenever any of the
+%% five is wanted, not just the base name.
+#(if (or (ht-book? "lead") (ht-book? "lead-up1") (ht-book? "lead-up2")
+         (ht-book? "lead-dn1") (ht-book? "lead-dn2"))
+     (ly:parser-include-string
+      (format #f "\\include \"~a/lead-sheet-book.ily\"" ht-lib-dir)))
 
 %% The shape-note books set hs-active-shapes on entry and reset it on exit,
 %% both inside their own file - so skipping the file skips the pair and the

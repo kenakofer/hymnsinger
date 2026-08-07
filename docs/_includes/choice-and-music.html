@@ -6,17 +6,17 @@
     <input type="radio" id="trad" name="variant-radio" checked onclick="changeImage('trad');">
     <label for="trad">Traditional</label>
     </td><td>
+    <!-- One tab for the melody-and-chords family. Which of the three books it
+         shows - plain, guitar frets, uke frets - is the frets toggle over the
+         score, not a tab of its own: they are the same music at the same
+         pitch, differing only in whether diagrams are drawn. Three tabs for
+         that made the row too wide to read.
+
+         Songs with no chords have no fret books to switch between, so the
+         tab keeps its old "Leadsheet" name there and the toggle is absent. -->
     <input type="radio" id="lead" name="variant-radio" onclick="changeImage('lead');">
-    <label for="lead">Leadsheet</label>
+    <label for="lead">{% if has_chords %}Chords{% else %}Leadsheet{% endif %}</label>
     </td><td>
-    {% if has_chords %}
-    <input type="radio" id="uke" name="variant-radio" onclick="changeImage('uke');">
-    <label for="uke">Ukulele</label>
-    </td><td>
-    <input type="radio" id="guitar" name="variant-radio" onclick="changeImage('guitar');">
-    <label for="guitar">Guitar</label>
-    </td><td>
-    {% endif %}
     <input type="radio" id="shapenote" name="variant-radio" onclick="changeImage('shapenote');">
     <label for="shapenote">7 Shape</label>
     </td><td>
@@ -31,24 +31,17 @@
     <td>
     (<a href="/local-lilypond-outputs/{{ page.song_file }}-trad.pdf">PDF</a>)
     </td><td>
-    (<a href="/local-lilypond-outputs/{{ page.song_file }}-lead.pdf">PDF</a>)
-    </td><td>
+    <!-- Points at whichever of the three the frets toggle currently shows, so
+         the PDF matches what is on screen. -->
+    (<a id="lead-pdf-link" href="/local-lilypond-outputs/{{ page.song_file }}-{% if has_chords %}guitar{% else %}lead{% endif %}.pdf">PDF</a>)
     {% if has_chords %}
-    (<a href="/local-lilypond-outputs/{{ page.song_file }}-uke.pdf">PDF</a>)
         (<div class="tooltip">
             ?
-            <span class="tooltiptext">(Beta) The melody and chords of the leadsheet, with a ukulele fretboard diagram for each chord change. Standard GCEA tuning. Transposes with the arrows.
+            <span class="tooltiptext">The melody with chord symbols. The Frets buttons add a guitar or ukulele fretboard diagram at each chord change, in standard tuning. The arrows transpose all three.
             </span>
         </div>)
-    </td><td>
-    (<a href="/local-lilypond-outputs/{{ page.song_file }}-guitar.pdf">PDF</a>)
-        (<div class="tooltip">
-            ?
-            <span class="tooltiptext">(Beta) The melody and chords of the leadsheet, with a guitar fretboard diagram for each chord change. Standard EADGBE tuning. Transposes with the arrows.
-            </span>
-        </div>)
-    </td><td>
     {% endif %}
+    </td><td>
     (<a href="/local-lilypond-outputs/{{ page.song_file }}-shapenote.pdf">PDF</a>)
         (<div class="tooltip">
             ?
@@ -73,17 +66,31 @@
     </tr>
     </table>
     <div id="music-frame">
-        <!-- Only the traditional books are engraved at other pitches, so this
-             control hides itself on every other tab. It sits over the top left
-             of the score, which LilyPond always leaves blank. -->
-        <div id="transpose-control" role="group" aria-label="Transpose">
-            <!-- Down on the left, up on the right, so the control reads
-                 low-to-high the same way the keyboard and the staff do. -->
-            <button type="button" id="transpose-down" onclick="changeTranspose(-1);"
-                    title="Down a half step">&#9664;</button>
-            <span id="transpose-readout" aria-live="polite">&#9834;</span>
-            <button type="button" id="transpose-up" onclick="changeTranspose(1);"
-                    title="Up a half step">&#9654;</button>
+        <!-- Both controls sit over the top left of the score, which LilyPond
+             leaves blank, and each hides itself on tabs it does not apply to:
+             transpose on trad and the chord books, frets on the chord books
+             of songs that have chords. -->
+        <div id="score-controls">
+            <div id="transpose-control" role="group" aria-label="Transpose">
+                <!-- Down on the left, up on the right, so the control reads
+                     low-to-high the same way the keyboard and the staff do. -->
+                <button type="button" id="transpose-down" onclick="changeTranspose(-1);"
+                        title="Down a half step">&#9664;</button>
+                <span id="transpose-readout" aria-live="polite">&#9834;</span>
+                <button type="button" id="transpose-up" onclick="changeTranspose(1);"
+                        title="Up a half step">&#9654;</button>
+            </div>
+            {% if has_chords %}
+            <div id="frets-control" role="group" aria-label="Fretboard diagrams">
+                <span class="frets-label">Frets</span>
+                <button type="button" id="frets-guitar" onclick="changeFrets('guitar');"
+                        title="Guitar fretboard diagrams">Gtr</button>
+                <button type="button" id="frets-uke" onclick="changeFrets('uke');"
+                        title="Ukulele fretboard diagrams">Uke</button>
+                <button type="button" id="frets-none" onclick="changeFrets('lead');"
+                        title="No fretboard diagrams">Off</button>
+            </div>
+            {% endif %}
         </div>
         <img src="/local-lilypond-outputs/{{ page.song_file }}-trad.png" alt="Loading the sheet music..." id="music-image">
     </div>

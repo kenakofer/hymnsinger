@@ -19,27 +19,51 @@
     <script>
     window.song_filename = "{{ page.song_file }}";
     window.midi_url = "{{ site.baseurl }}/local-lilypond-outputs/{{ page.song_file }}.midi";
-    // The score is picked on two axes: which notation book, and how many half
-    // steps off the printed key. Only some books are engraved transposed
-    // (-trad-up1 ... -trad-dn2, and the same four for -uke and -guitar), so
-    // every other notation forces the offset back to 0 rather than asking for
-    // a file that was never built.
+    // The score is picked on three axes: which notation tab, how many half
+    // steps off the printed key, and - on the chord tab only - whether
+    // fretboard diagrams are drawn and for which instrument.
+    //
+    // The frets axis is not a tab. -lead, -guitar and -uke are the same music
+    // at the same pitch; they differ only in the diagram row, so switching
+    // between them should not move the tab selection. currentFrets holds
+    // which of the three the chord tab is currently showing.
+    //
+    // Only trad and the three chord books are engraved transposed, so every
+    // other notation forces the offset back to 0 rather than asking for a
+    // file that was never built.
     window.currentVariant = "trad";
     window.currentTranspose = 0;
+    window.hasChords = {% if site.data.songs[page.song_file].has_chords %}true{% else %}false{% endif %};
+    // Guitar by default where there are chords to diagram; the plain sheet is
+    // the only option where there are not.
+    window.currentFrets = window.hasChords ? "guitar" : "lead";
 
     var TRANSPOSE_SUFFIX = {"-2": "-dn2", "-1": "-dn1", "0": "", "1": "-up1", "2": "-up2"};
     var TRANSPOSE_LIMIT = 2;
 
-    var TRANSPOSABLE = ["trad", "uke", "guitar"];
+    var TRANSPOSABLE = ["trad", "lead", "uke", "guitar"];
+    var FRETS_BUTTONS = {"guitar": "frets-guitar", "uke": "frets-uke", "lead": "frets-none"};
 
     function variantSupportsTranspose(variant) {
         return TRANSPOSABLE.indexOf(variant) != -1;
     }
 
+    // Which book the current tab actually resolves to. Every tab is its own
+    // book except the chord tab, which defers to the frets toggle.
+    function currentBook() {
+        return window.currentVariant == "lead" ? window.currentFrets : window.currentVariant;
+    }
+
     function renderScore() {
-        var suffix = window.currentVariant + TRANSPOSE_SUFFIX[String(window.currentTranspose)];
+        var book = currentBook();
+        var suffix = book + TRANSPOSE_SUFFIX[String(window.currentTranspose)];
         document.getElementById("music-image").src =
             "/local-lilypond-outputs/{{ page.song_file }}-" + suffix + ".png";
+
+        // Keep the tab's PDF link on whichever book is showing.
+        var pdfLink = document.getElementById("lead-pdf-link");
+        if (pdfLink)
+            pdfLink.href = "/local-lilypond-outputs/{{ page.song_file }}-" + suffix + ".pdf";
 
         var supported = variantSupportsTranspose(window.currentVariant);
         var control = document.getElementById("transpose-control");
@@ -57,8 +81,20 @@
                 window.currentTranspose <= -TRANSPOSE_LIMIT;
         }
 
+        // The frets toggle only means anything on the chord tab.
+        var frets = document.getElementById("frets-control");
+        if (frets) {
+            frets.style.display = window.currentVariant == "lead" ? "" : "none";
+            for (var key in FRETS_BUTTONS) {
+                var btn = document.getElementById(FRETS_BUTTONS[key]);
+                if (btn) btn.classList.toggle("selected", key == window.currentFrets);
+            }
+        }
+
         // Set the query for sharing. Valueless params, matching the older
-        // ?lead / ?shapenote links that are already out in the wild.
+        // ?lead / ?shapenote links that are already out in the wild - which
+        // is also why the param is the resolved book name: ?guitar-up1 names
+        // exactly one engraving, and ?lead still means the plain sheet.
         var new_query;
         if (suffix == "trad")
           new_query = location.pathname; // Clears out parameters
@@ -75,6 +111,17 @@
         // Get the right checkboxes
         document.getElementById(variant).checked = true;
 
+        renderScore();
+        return false;
+    }
+
+    function changeFrets(which) {
+        if (!window.hasChords) return false;
+        window.currentFrets = which;
+        // Selecting frets implies the chord tab, so a ?guitar link that lands
+        // straight here selects the tab too.
+        window.currentVariant = "lead";
+        document.getElementById("lead").checked = true;
         renderScore();
         return false;
     }
