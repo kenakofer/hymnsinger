@@ -21,13 +21,6 @@ window.addEventListener('keydown', function(e) {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Show the advanced playback settings iff the window is wide enough for the
-    // wide css and the height is tall enough to not show a scroll bar with the
-    // panel open
-    if (window.innerWidth >= 961 && window.innerHeight >= 754) {
-        document.getElementById('playback-settings').open = true;
-    }
-
     const urlParams = new URLSearchParams(window.location.search);
 
     // ?lead is an old link and must keep meaning the plain sheet, so it sets
