@@ -44,7 +44,10 @@
       proportionalNotationDuration = #(ly:make-moment 1/4)
     }
     \context { \PianoStaff
-      \override StaffGrouper.staff-staff-spacing.basic-distance = #10
+      % Wide gap between the staves: the label sits in a narrow column beside
+      % the sliders, so it wants to be taller than wide, and the air between
+      % the staves is what separates SA from TB at a glance.
+      \override StaffGrouper.staff-staff-spacing.basic-distance = #18
       \override StaffGrouper.staff-staff-spacing.padding = #1
     }
   }

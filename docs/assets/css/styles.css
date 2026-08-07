@@ -305,28 +305,26 @@ button {
     width: 100%;
     margin: 0;
 }
-/* The staff labels the group from above. -dcrop trims to the ink, so the
-   shape is whatever the brace, clefs and chords occupy - roughly square once
-   the chords have room to breathe. */
+/* The staff sits to the left of the sliders it labels: treble stave against
+   the soprano and alto wedges, bass stave against tenor and bass. The wide
+   staff-staff gap in the .ly is what makes the two halves line up with their
+   pairs, and what makes the shape tall enough for a side column. */
 .part-volume {
     display: grid;
-    justify-items: start;
-    gap: 7px;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 10px;
 }
 .part-clef {
     display: block;
-    width: 52px;
+    width: 42px;
     height: auto;
-    margin-left: 1px;
     /* LilyPond draws every stroke with currentColor. */
     color: #e2e2d9;
 }
 .part-sliders {
-    width: 100%;
-}
-.part-sliders {
     display: grid;
-    gap: 5px;
+    gap: 9px;
 }
 /* Wedge sliders: the track is a triangle that grows left-to-right, so the
    level reads as an area rather than as a dot on a line - and the four of
