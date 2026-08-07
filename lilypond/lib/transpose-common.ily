@@ -73,13 +73,18 @@
    (ht-fifths->pitch (ht-key-fifths keymusic)))
 
 %% The two pitches to hand \transpose so the music moves SHIFT semitones and
-%% lands in the best-spelled key. Both are octave 0, so only the interval
-%% matters and the music stays in its original octave.
+%% lands in the best-spelled key.
 %%
 %% The pair is expressed relative-major to relative-major. \transpose only
 %% cares about the interval between the two pitches, so shifting the relative
 %% major by the same interval carries the real tonic along with it and keeps
 %% the mode intact - a d minor song stays minor, it just changes pitch.
+%%
+%% The target's octave has to be set explicitly. ht-best-spelling names a
+%% tonic, not a direction, and it always hands back octave 0, so c -1 comes
+%% out as b in the same octave - eleven semitones *up*. Leaving both pitches
+%% at octave 0 is only right when the target happens to sit above the source
+%% within that octave; every key whose shift crosses c needs the correction.
 htTransposeFrom =
 #(define-scheme-function (keymusic) (ly:music?)
    (ht-relative-major keymusic))
@@ -87,5 +92,11 @@ htTransposeFrom =
 htTransposeTo =
 #(define-scheme-function (keymusic shift) (ly:music? integer?)
    (let* ((rm (ht-relative-major keymusic))
-          (from (ht-pitch-semitone (ly:pitch-notename rm) (ly:pitch-alteration rm))))
-     (ht-best-spelling (+ from shift))))
+          (from (ht-pitch-semitone (ly:pitch-notename rm) (ly:pitch-alteration rm)))
+          (to (ht-best-spelling (+ from shift)))
+          ;; Semitones the pair spans with both at octave 0, then drop or lift
+          ;; whole octaves until that span is the shift that was asked for.
+          (span (- (ly:pitch-semitones to) (ly:pitch-semitones rm))))
+     (ly:make-pitch (/ (- shift span) 12)
+                    (ly:pitch-notename to)
+                    (ly:pitch-alteration to))))
