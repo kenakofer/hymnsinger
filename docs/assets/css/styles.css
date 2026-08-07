@@ -317,7 +317,9 @@ button {
 }
 .part-clef {
     display: block;
-    width: 42px;
+    /* The stem directions are the point of this label, so it needs enough
+       size to read them; 44px is where they resolve at a glance. */
+    width: 44px;
     height: auto;
     /* LilyPond draws every stroke with currentColor. */
     color: #e2e2d9;
