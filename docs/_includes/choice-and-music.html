@@ -57,14 +57,28 @@
              transpose on trad and the chord books, frets on the chord tab of
              songs that have chords. -->
         <div id="score-controls">
+            <!-- Two layouts, one control. When the build has found the key
+                 signature for the current book, #music-frame gets .keyed and
+                 this moves onto the signature itself - up arrow above it, down
+                 arrow below - so the buttons point at the thing they change.
+                 Without it - a song in C major has no signature to print, and
+                 the books with no transposed engravings hide the control
+                 anyway - it stays a left-to-right row in the blank corner,
+                 which is where it has always been. -->
             <div id="transpose-control" role="group" aria-label="Transpose">
-                <!-- Down on the left, up on the right, so the control reads
-                     low-to-high the same way the keyboard and the staff do. -->
+                <!-- Source order is down, readout, up: that is the corner
+                     layout's low-to-high reading order, matching the keyboard
+                     and the staff. The anchored layout reverses it in CSS,
+                     where up must sit above. -->
+                <!-- The glyph is a span rather than button text so the
+                     anchored layout can swap the arrow's direction: pointing
+                     left/right beside a readout, but up/down when the buttons
+                     straddle the key signature. renderScore() sets both. -->
                 <button type="button" id="transpose-down" onclick="changeTranspose(-1);"
-                        title="Down a half step">&#9664;</button>
+                        title="Down a half step"><span class="arrow">&#9664;</span></button>
                 <span id="transpose-readout" aria-live="polite">&#9834;</span>
                 <button type="button" id="transpose-up" onclick="changeTranspose(1);"
-                        title="Up a half step">&#9654;</button>
+                        title="Up a half step"><span class="arrow">&#9654;</span></button>
             </div>
             {% if has_chords %}
             <!-- No visible "Frets" caption: sitting beside the transpose

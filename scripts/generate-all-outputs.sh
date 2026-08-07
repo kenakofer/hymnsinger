@@ -105,11 +105,20 @@ build_song() {
     # Point and click bloats the file size, makes every note into a "link",
     # and the file size larger. We disable it for the pdfs.
     echo "     --> (PDF, MIDI, PNG)"
-    # Adding svg here is how you'd get a third format without a third parse.
+    # Adding svg here does NOT work, despite reading like it should: the SVG
+    # backend cannot share a run with the PDF one, and --formats=pdf,png,svg
+    # silently emits no SVG at all rather than erroring.
     local BOOKOPT=()
     [ -n "$BOOKS" ] && BOOKOPT=(-dht-books="$BOOKS")
+    # Where the key signature and final bar line land in each book, for the
+    # song page to hang the transpose arrows and (later) autoscroll on. Written
+    # by lib/keysig-position.ily during this same run - it reads numbers the
+    # layout has already computed, and costs well under 1%. Per-song file
+    # because songs build in parallel.
+    local LANDMARKS; LANDMARKS="$(mktemp -t "ht-landmarks-$BASE.XXXXXX")"
     lilypond -s -o "$OUTPUT_DIR" -dno-point-and-click \
-        "${BOOKOPT[@]}" --formats=pdf,png -dresolution=400 "$INPUT"
+        "${BOOKOPT[@]}" -dht-landmarks="$LANDMARKS" \
+        --formats=pdf,png -dresolution=400 "$INPUT"
 
     # If it was a multi-page score, the images should be vertically joined
     echo "     --> (Optimizing PNGs)"
@@ -184,6 +193,20 @@ build_song() {
         # Timidity should be configured to use YDP Grand Piano soundfont, available for download at http://freepats.zenvoid.org/Piano/acoustic-grand-piano.html
         timidity --quiet --quiet "$MIDI_OUTPUT" -Ow -o - | ffmpeg -loglevel error -y -i - -acodec libmp3lame -ab 64k "$MP3_OUTPUT"
     fi
+
+    # Fold this run's landmark positions into the song's page data. Safe on a
+    # partial build too: the merge is per book, so rebuilding two books updates
+    # those two entries and leaves the rest of the song's alone.
+    if [ -s "$LANDMARKS" ]; then
+        echo "     --> (Landmarks)"
+        local PARTIALOPT=()
+        [ -n "$BOOKS" ] && PARTIALOPT=(--partial)
+        python3 "$SCRIPT_DIR/extract-keysig.py" --base "$BASE" \
+            --into "docs/_data/songs/$BASE.json" --landmarks "$LANDMARKS" \
+            "${PARTIALOPT[@]}" \
+            || echo "     --> WARNING: landmark merge failed for $BASE"
+    fi
+    rm -f "$LANDMARKS"
 
     if [ -n "$BOOKS" ]; then
         # Partial build: the stamp asserts every output for this song is

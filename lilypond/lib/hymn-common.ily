@@ -581,8 +581,15 @@ scoreWithVerse =
         >>
     #})
 
+%% Landmark positions for the song pages to hang UI on - where the key
+%% signature is, where the music ends. Off unless -dht-landmarks=<file> names
+%% somewhere to write them; generate-all-outputs.sh turns it on.
+\include "keysig-position.ily"
+
 \paper {
   indent = 0
+  %% Always installed; it returns immediately unless -dht-landmarks is set.
+  page-post-process = #ht:page-post-process
 }
 
 \layout {
@@ -590,6 +597,12 @@ scoreWithVerse =
     \Score
     \remove "Bar_number_engraver"
     \override ChordName #'font-size = #.5
+    %% These callbacks return '() and only stash a reference, so they cost
+    %% nothing when -dht-landmarks is off - ht:report does the work, and it is
+    %% only reached under the option.
+    \override KeySignature.after-line-breaking = #ht:grab-keysig
+    \override StaffSymbol.after-line-breaking = #ht:grab-staff
+    \override BarLine.after-line-breaking = #ht:grab-bar
   }
   \context {
     \Voice

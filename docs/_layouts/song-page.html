@@ -45,6 +45,31 @@
     var TRANSPOSE_SUFFIX = {"-2": "-dn2", "-1": "-dn1", "0": "", "1": "-up1", "2": "-up2"};
     var TRANSPOSE_LIMIT = 2;
 
+    // Where things sit in each engraving, as fractions of the image, measured
+    // at build time by lilypond/lib/keysig-position.ily. Keyed by the resolved
+    // book name (the same string as the file suffix) because the geometry
+    // moves between books: the shape-note books set a larger staff, and each
+    // transposition has its own number of accidentals.
+    //
+    //   LANDMARKS["trad"].keysig   the first key signature
+    //   LANDMARKS["trad"].lastbar  the final bar line of the last system
+    //
+    // Either may be missing: a song in C major has no key signature to print.
+    // The transpose control falls back to its old spot in the corner when
+    // keysig is absent.
+    //
+    // Clairnote does report one, despite drawing its own notation rather than
+    // accidentals, so it is anchored like any other book. The arrows still do
+    // not follow it - that is the transpose control being hidden on the books
+    // that have no transposed engravings, not a missing landmark.
+    var LANDMARKS = {{ site.data.songs[page.song_file].landmarks | jsonify }};
+
+    // The key signature box for a given engraving, or null.
+    function keysigFor(suffix) {
+        var book = LANDMARKS ? LANDMARKS[suffix] : null;
+        return (book && book.keysig) ? book.keysig : null;
+    }
+
     // A one-line gloss per notation, shown beside the back link. Kept to ~35
     // characters so it never wraps onto a second line and pushes the score
     // down. Traditional has no entry: it is the default and needs no gloss,
@@ -85,6 +110,43 @@
         return window.currentVariant == "lead" ? window.currentFrets : window.currentVariant;
     }
 
+    // The engraving actually on screen, as a file suffix - "trad", "guitar-up1".
+    // Books with no transposed engravings render at the printed pitch however
+    // the offset is set, so the suffix is derived, not assumed.
+    function currentSuffix() {
+        var book = currentBook();
+        var steps = bookSupportsTranspose(book) ? window.currentTranspose : 0;
+        return book + TRANSPOSE_SUFFIX[String(steps)];
+    }
+
+    // The signature's height in real pixels. Kept apart from renderScore so a
+    // resize can refresh it without reloading the image, and so the value can
+    // be recomputed once the PNG has actually decoded - before that the frame
+    // has no height to take a fraction of.
+    function setKeyHeight(box) {
+        var frame = document.getElementById("music-frame");
+        var img = document.getElementById("music-image");
+        if (!frame || !img || !box) return;
+        var rect = img.getBoundingClientRect();
+        if (!rect.height) return;
+        frame.style.setProperty("--key-h", (box.h * rect.height) + "px");
+        // Vertical anchor in pixels for the same reason as the height, and
+        // measured off the image rather than the frame so the narrow layout's
+        // crop - which widens and shifts the image inside a clipping box - is
+        // already accounted for. The horizontal half of that correction is in
+        // the stylesheet, where the crop itself is defined.
+        var top = rect.top - frame.getBoundingClientRect().top;
+        frame.style.setProperty("--key-y-px", (top + box.y * rect.height) + "px");
+    }
+
+    // Re-derive it whenever the image's size can have changed. Gated the same
+    // way as renderScore: no anchoring on books that cannot transpose.
+    function refreshKeyHeight() {
+        if (!bookSupportsTranspose(currentBook())) return;
+        var box = keysigFor(currentSuffix());
+        if (box) setKeyHeight(box);
+    }
+
     function renderScore() {
         var book = currentBook();
         // A book with no transposed engravings renders at the printed pitch,
@@ -93,7 +155,7 @@
         // the *rendered* offset is forced to 0 here.
         var supported = bookSupportsTranspose(book);
         var steps = supported ? window.currentTranspose : 0;
-        var suffix = book + TRANSPOSE_SUFFIX[String(steps)];
+        var suffix = currentSuffix();
         document.getElementById("music-image").src =
             "/local-lilypond-outputs/{{ page.song_file }}-" + suffix + ".png";
 
@@ -109,6 +171,31 @@
             var url = VIEW_LINKS[window.currentVariant];
             noteLink.hidden = !url;
             if (url) noteLink.href = url;
+        }
+
+        // Anchor the transpose arrows to this book's key signature. Keyed on
+        // the file suffix rather than the book, so each transposition gets its
+        // own box - the accidentals change with the key.
+        var frame = document.getElementById("music-frame");
+        if (frame) {
+            // Only when the control is actually on screen. The shape-note and
+            // Clairnote books print a key signature but are not transposable,
+            // so the control is hidden there - anchoring it anyway would leave
+            // #score-controls positioned over the staff for the frets row,
+            // which still lives in it and is not about pitch.
+            var box = supported ? keysigFor(suffix) : null;
+            if (box) {
+                // x/w stay percentages, which resolve against the frame's
+                // width and so track the image as it scales. The height must
+                // be pixels: a percentage margin resolves against the
+                // *width* too, which silently collapses the gap to a couple
+                // of pixels and drops both arrows onto the signature.
+                frame.style.setProperty("--key-x", (box.x * 100) + "%");
+                frame.style.setProperty("--key-w", (box.w * 100) + "%");
+                // Sets --key-h and --key-y-px, both in pixels.
+                setKeyHeight(box);
+            }
+            frame.classList.toggle("keyed", !!box);
         }
 
         var control = document.getElementById("transpose-control");
@@ -279,6 +366,17 @@
     window.addEventListener("orientationchange", measureSheetHead);
     document.addEventListener("DOMContentLoaded", measureSheetHead);
     window.addEventListener("load", measureSheetHead);
+
+    // --key-h is in pixels, so it has to be recomputed whenever the image's
+    // rendered size changes - including the first decode, since renderScore()
+    // can run while the frame still has no height.
+    window.addEventListener("resize", refreshKeyHeight);
+    window.addEventListener("orientationchange", refreshKeyHeight);
+    document.addEventListener("DOMContentLoaded", function () {
+        var img = document.getElementById("music-image");
+        if (img) img.addEventListener("load", refreshKeyHeight);
+        refreshKeyHeight();
+    });
 
     // Chrome and Safari have no ::-moz-range-progress, so the wedge's filled
     // portion is a gradient stop the CSS reads from --fill. Firefox paints it

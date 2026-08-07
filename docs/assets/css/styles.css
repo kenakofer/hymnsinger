@@ -182,11 +182,109 @@ input[type="radio"]:checked + .variant-chip {
     min-width: 18px;
     text-align: center;
 }
+/* Anchored layout: the arrows straddle the key signature they act on.
+   renderScore() sets --key-x/--key-y/--key-w/--key-h from the build-time
+   coordinates and adds .keyed; when the current book has no signature the
+   class is absent and everything above still applies.
+
+   The percentages are fractions of the *image*, which is why this is hung on
+   #music-frame - it is the image's positioning context, and #score-controls
+   is already absolute within it. */
+/* --- The knobs ------------------------------------------------------------
+   Everything the build stores is objective: where the key signature's ink sits
+   in the engraving. How the arrows are placed against it is taste, and lives
+   here, so retuning the look is a stylesheet edit - no re-extraction, no
+   rebuild, no touching 150 songs' data.
+
+   --arrow-gap    clearance between the signature's ink and the nearer edge of
+                  each arrow. Expressed in --key-h (the ink's own height) so it
+                  tracks the engraving's scale rather than fighting it; add a
+                  px term for a floor at small sizes.
+   --arrow-shift  moves the whole pair up (negative) or down. Key signatures
+                  sit high on the staff, so a small negative value centres the
+                  pair on the ink rather than on the staff.
+   -------------------------------------------------------------------------- */
+#music-frame.keyed {
+    --arrow-gap: calc(var(--key-h) + 3px);
+    --arrow-shift: 0px;
+}
+#music-frame.keyed #score-controls {
+    /* Centred on the signature horizontally; the stack's own height is what
+       puts one arrow above the staff and one below. --key-y-px is measured
+       from the image in JS, so it already carries any crop offset. */
+    left: calc(var(--key-x) + var(--key-w) / 2);
+    top: calc(var(--key-y-px) + var(--key-h) / 2 + var(--arrow-shift));
+    transform: translate(-50%, -50%);
+    /* The frets control keeps its own place in the corner, so this row must
+       not try to lay both out together any more. */
+    display: block;
+    width: 0;
+}
+#music-frame.keyed #transpose-control {
+    /* column-reverse: source order is down/readout/up for the corner layout,
+       but anchored to the staff, up has to be on top. */
+    flex-direction: column-reverse;
+    gap: 0;
+    padding: 0;
+    background: none;
+    /* Let the staff show between the arrows rather than plating over it. */
+    position: relative;
+}
+#music-frame.keyed #transpose-control button {
+    position: relative;
+    background-color: #F7F7F0;
+    border-color: #bbb;
+}
+/* Push each arrow clear of the signature's ink, by --arrow-gap above. The
+   button is a fixed 20px - already the floor for a touch target - while the
+   engraving scales with the viewport, so on a phone the button is nearly twice
+   the height of the signature it points at. The default gap is a full ink
+   height, which keeps the arrowheads off the staff at every size. */
+#music-frame.keyed #transpose-up {
+    margin-bottom: var(--arrow-gap);
+}
+#music-frame.keyed #transpose-down {
+    margin-top: var(--arrow-gap);
+}
+/* Straddling the staff, the arrows have to point the way they move the pitch.
+   The glyphs in the markup are the corner layout's left/right pair; rotating
+   is enough to make them up/down and keeps one set of characters. */
+#music-frame.keyed #transpose-up .arrow {
+    display: inline-block;
+    transform: rotate(-90deg);
+}
+#music-frame.keyed #transpose-down .arrow {
+    display: inline-block;
+    transform: rotate(-90deg);
+}
+/* The readout would sit over the signature and the time signature next to it,
+   so in this layout it is dropped: .transposed already tints the buttons, and
+   the printed key is right there to read. Kept in the DOM and announced, so
+   the live region still tells a screen reader the pitch moved. */
+#music-frame.keyed #transpose-readout {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
 /* Once off the printed key, make that obvious - it is easy to send someone a
    link, or walk away from the screen, without noticing the pitch moved. */
 #transpose-control.transposed {
     background-color: #FFECEC;
     box-shadow: 0 0 0 1px #ff5555;
+}
+/* The anchored layout has no plate to tint, so the cue moves to the buttons
+   and the readout, which are the only painted surfaces left. */
+#music-frame.keyed #transpose-control.transposed {
+    background: none;
+    box-shadow: none;
+}
+#music-frame.keyed #transpose-control.transposed button {
+    background-color: #FFECEC;
+    border-color: #ff5555;
+    color: #ff5555;
 }
 #transpose-control.transposed #transpose-readout {
     color: #ff5555;
@@ -843,8 +941,11 @@ header ul {
        cropping the file, so the PNGs and the .ly stay untouched and the same
        image still serves the wide layout uncropped. Percentages, not pixels:
        both scale with whatever width the image lands at. */
-    #music-clip {
-        overflow: hidden;
+    /* Set on the frame, not on #music-clip, because the transpose anchoring
+       below has to undo the same crop: its key-signature fractions are of the
+       whole engraving, while the visible image is a widened, shifted slice of
+       it. Both rules read these, so they cannot drift apart. */
+    #music-frame {
         /* Fraction of the image shaved off each side, unitless so it can drive
            both the width and the offset below. LilyPond's margin measures
            .0474; .045 leaves a sliver of white at the barline. */
@@ -852,10 +953,23 @@ header ul {
         /* Widening factor that puts the remaining width back to 100%. */
         --zoom: calc(1 / (1 - 2 * var(--crop)));
     }
+    #music-clip {
+        overflow: hidden;
+    }
     #music-clip > #music-image {
         width: calc(100% * var(--zoom));
         max-width: none;
         margin-left: calc(-100% * var(--crop) * var(--zoom));
+    }
+    /* Re-anchor the transpose arrows onto the *cropped* image. --key-x and
+       --key-w are fractions of the whole engraving, but here the visible image
+       is a slice of it: the paper margin is clipped away and what remains is
+       widened by --zoom. Without this the arrows sit a margin's width to the
+       right of the key signature - about 16px on a phone, which is more than
+       the signature itself. The wide layout crops nothing and needs no
+       correction, so this lives inside the narrow media query. */
+    #music-frame.keyed #score-controls {
+        left: calc((var(--key-x) + var(--key-w) / 2 - 100% * var(--crop)) * var(--zoom));
     }
     /* Phone screens are short: 30px of dead space above the back link, plus
        the chips' own padding, cost most of a staff before the score starts. */
