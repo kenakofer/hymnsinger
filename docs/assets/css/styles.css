@@ -305,28 +305,34 @@ button {
     width: 100%;
     margin: 0;
 }
-/* The staff sits to the left of the sliders it labels: treble stave against
-   the soprano and alto wedges, bass stave against tenor and bass. The wide
-   staff-staff gap in the .ly is what makes the two halves line up with their
-   pairs, and what makes the shape tall enough for a side column. */
+/* The staff sits left of the sliders, and each wedge is centred on the note
+   head for that voice - so the label is not just decorative, it points at the
+   thing each control moves.
+
+   Heads sit at y = 4.26 / 6.86 / 12.25 / 14.85 in a 12.0 x 19.0 viewBox, gaps
+   of 2.60 / 5.39 / 2.60 units. At 84px wide that is 7.0px per unit: 18.2px
+   between the voices of one staff and 37.7px between staves. With 14px wedges
+   that leaves the pair and group gaps below. Re-measure if the .ly changes. */
 .part-volume {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    gap: 10px;
+    gap: 11px;
 }
 .part-clef {
     display: block;
-    /* The stem directions are the point of this label, so it needs enough
-       size to read them; 44px is where they resolve at a glance. */
-    width: 44px;
+    width: 84px;
     height: auto;
     /* LilyPond draws every stroke with currentColor. */
     color: #e2e2d9;
 }
 .part-sliders {
     display: grid;
-    gap: 9px;
+    gap: 23.7px;
+}
+.part-pair {
+    display: grid;
+    gap: 4.2px;
 }
 /* Wedge sliders: the track is a triangle that grows left-to-right, so the
    level reads as an area rather than as a dot on a line - and the four of
@@ -338,7 +344,7 @@ input[type="range"].wedge {
     -webkit-appearance: none;
     appearance: none;
     width: 100%;
-    height: 16px;
+    height: 14px;
     margin: 0;
     padding: 0;
     background: none;
@@ -347,20 +353,20 @@ input[type="range"].wedge {
 /* WebKit has no ::-moz-range-progress, so the filled portion is a hard-stopped
    gradient driven by --fill, which paintWedges() keeps in sync with the value. */
 input[type="range"].wedge::-webkit-slider-runnable-track {
-    height: 16px;
+    height: 14px;
     background: linear-gradient(to right,
         #c33333 0 var(--fill, 50%), #3a3a36 var(--fill, 50%) 100%);
     /* Apex at the left, full height at the right. */
     clip-path: polygon(0 100%, 100% 0, 100% 100%);
 }
 input[type="range"].wedge::-moz-range-track {
-    height: 16px;
+    height: 14px;
     background: #3a3a36;
     clip-path: polygon(0 100%, 100% 0, 100% 100%);
 }
 /* Firefox fills the wedge up to the thumb for free. */
 input[type="range"].wedge::-moz-range-progress {
-    height: 16px;
+    height: 14px;
     background: #c33333;
     clip-path: polygon(0 100%, 100% 0, 100% 100%);
 }
@@ -368,14 +374,14 @@ input[type="range"].wedge::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 4px;
-    height: 16px;
+    height: 14px;
     border: none;
     border-radius: 1px;
     background: #f7f7ee;
 }
 input[type="range"].wedge::-moz-range-thumb {
     width: 4px;
-    height: 16px;
+    height: 14px;
     border: none;
     border-radius: 1px;
     background: #f7f7ee;

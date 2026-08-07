@@ -26,7 +26,7 @@ grandStaffLabel = \new PianoStaff <<
     \override Staff.TimeSignature.stencil = ##f
     \omit Staff.BarLine
     \new Voice { \voiceOne c''2 }
-    \new Voice { \voiceTwo a'2 }
+    \new Voice { \voiceTwo f'2 }
   >>
   \new Staff <<
     \clef bass
@@ -55,7 +55,7 @@ grandStaffLabel = \new PianoStaff <<
       % Wide gap between the staves: the label sits in a narrow column beside
       % the sliders, so it wants to be taller than wide, and the air between
       % the staves is what separates SA from TB at a glance.
-      \override StaffGrouper.staff-staff-spacing.basic-distance = #18
+      \override StaffGrouper.staff-staff-spacing.basic-distance = #8
       \override StaffGrouper.staff-staff-spacing.padding = #1
     }
   }
@@ -67,3 +67,16 @@ grandStaffLabel = \new PianoStaff <<
 % <style> block, and the mm width/height (keep the viewBox, so CSS sizes it).
 % Check the exit status: a failed run leaves the previous .cropped.svg in place,
 % so a stale file reads as "that override did nothing".
+
+% Rebuild the SVG inlined in _layouts/song-page.html with:
+%   lilypond -dbackend=svg -dcrop -o out part-volume-grandstaff.ly
+% then strip from out.cropped.svg: the point-and-click <a> wrappers, the tspan
+% <style> block, and the mm width/height (keep the viewBox, so CSS sizes it).
+% Check the exit status: a failed run leaves the previous .cropped.svg in place,
+% so a stale file reads as "that override did nothing".
+%
+% The CSS lines each volume wedge up with the note head for that voice, so the
+% pitches here and the sizing there are coupled. Current geometry: heads at
+% y = 4.26 / 6.86 / 12.25 / 14.85 in a 12.0 x 19.0 viewBox, i.e. gaps of
+% 2.60 / 5.39 / 2.60 units. If you move a voice, re-measure and update
+% .part-sliders / .part-pair in styles.css.
