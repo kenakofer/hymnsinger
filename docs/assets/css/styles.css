@@ -275,37 +275,130 @@ button {
     background: #f7f7ee;
     cursor: pointer;
 }
-.tempo-panel {
-    background: #ccc;
-    margin-bottom: 10px;
-    padding: 0 10px 0 5px;
-    color: black;
+/* Tempo and the part volumes sit on the panel like Song Details does, rather
+   than on light-grey slabs of their own. */
+.tempo-row {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 2px 8px;
+    margin: 4px 0 10px 0;
+    font-size: 12px;
 }
-.tempo-panel input {
-    width: 100%;
+.tempo-row label {
+    border: none;
+    padding: 0;
+    color: #9a9a92;
 }
 #tempo-display {
-    background: #232323;
-    border-radius: 4px;
-    padding: 2px 4px;
+    justify-self: start;
+    padding: 1px 5px;
+    border-radius: 3px;
+    background: #262626;
     font-family: monospace;
-    color: #c33333;
+    font-size: 11px;
+    color: #f55;
     font-weight: bold;
-    align-content: right;
-    align-self: right;
-    margin-left: 7px;
 }
-.part-volume {
-    background: #ccc;
+.tempo-row input {
+    grid-column: 1 / -1;
+    width: 100%;
     margin: 0;
 }
-.part-volume td, .part-volume th{
-    /*max-width: 100px;*/
-    padding: 0 10px;
+.part-volume {
+    display: grid;
+    gap: 10px;
 }
-.part-volume input {
-    /*max-width: 100px;*/
+/* One clef, then the two voices that read from it. */
+.part-group {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+    gap: 9px;
+}
+.part-clef {
+    width: 30px;
+    height: 42px;
+}
+.part-clef .stave {
+    stroke: #55554f;
+    stroke-width: 0.9;
+}
+.part-clef .clef {
+    fill: none;
+    stroke: #dcdcd3;
+    stroke-width: 2;
+    stroke-linecap: round;
+}
+.part-clef .clefdot {
+    fill: #cfcfc6;
+}
+.part-clef .note {
+    fill: #f55;
+}
+.part-clef .stem {
+    stroke: #f55;
+    stroke-width: 1.4;
+}
+.part-sliders {
+    display: grid;
+    gap: 5px;
+}
+/* Wedge sliders: the track is a triangle that grows left-to-right, so the
+   level reads as an area rather than as a dot on a line - and the four of
+   them together show the balance between voices at a glance.
+
+   The input keeps its native behaviour and is simply made invisible; the
+   wedge is drawn by the track pseudo-elements underneath the thumb. */
+input[type="range"].wedge {
+    -webkit-appearance: none;
+    appearance: none;
     width: 100%;
+    height: 16px;
+    margin: 0;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+}
+/* WebKit has no ::-moz-range-progress, so the filled portion is a hard-stopped
+   gradient driven by --fill, which paintWedges() keeps in sync with the value. */
+input[type="range"].wedge::-webkit-slider-runnable-track {
+    height: 16px;
+    background: linear-gradient(to right,
+        #c33333 0 var(--fill, 50%), #3a3a36 var(--fill, 50%) 100%);
+    /* Apex at the left, full height at the right. */
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
+input[type="range"].wedge::-moz-range-track {
+    height: 16px;
+    background: #3a3a36;
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
+/* Firefox fills the wedge up to the thumb for free. */
+input[type="range"].wedge::-moz-range-progress {
+    height: 16px;
+    background: #c33333;
+    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+}
+input[type="range"].wedge::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 4px;
+    height: 16px;
+    border: none;
+    border-radius: 1px;
+    background: #f7f7ee;
+}
+input[type="range"].wedge::-moz-range-thumb {
+    width: 4px;
+    height: 16px;
+    border: none;
+    border-radius: 1px;
+    background: #f7f7ee;
+}
+input[type="range"].wedge:focus-visible {
+    outline: 2px solid #f55;
+    outline-offset: 2px;
 }
 footer {
     width: 100%;
@@ -334,42 +427,6 @@ img {
     border: none;
     width: 100%;
 }
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted #c33333;
-  padding: 0 2px;
-  color: #c33333;
-  font-weight: 200;
-  cursor: help;
-}
-
-/* Tooltip text */
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 150px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  padding: 5px 4px;
-  border-radius: 4px;
-  line-height: 1.4;
-  font-size: 12px;
-  font-weight: 200;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  /* Position the tooltip text - see examples below! */
-  position: absolute;
-  z-index: 1;
-}
-.tooltip .tooltiptext-rightside {
-  right: 9px;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-
 h4 {
     margin-top: 10px;
     margin-bottom: 0px;
@@ -392,16 +449,26 @@ details summary {
     cursor: pointer;
     font-size: 15px;
 }
+/* A plain list on the panel, like the other two blocks. The 2px white border
+   and inset dark box made it the loudest thing in the sidebar, which is not
+   what a list of secondary links should be. */
+#misc-download-list {
+    display: grid;
+    gap: 2px;
+    margin: 4px 0 0 0;
+    background: none;
+    border: none;
+    padding: 0;
+}
 #misc-download-list a {
     color: #f55;
     font-weight: 500;
-    font-size: 13px;
-}
-#misc-download-list {
-    background: #232323;
-    border-radius: 4px;
-    padding: 2px 6px;
-    border: 2px solid #f7f7ee;
+    font-size: 12px;
+    line-height: 1.5;
+    /* Comfortably tappable without the rows drifting apart. */
+    min-height: 24px;
+    display: inline-flex;
+    align-items: center;
 }
 /* Reads as part of the dark panel rather than a light slab dropped into it.
    The old table escaped its container with margin-left:-35px and width:130% to
@@ -470,14 +537,16 @@ details summary {
   font-size: 18px;
   font-family: Arvo, sans-serif;
 }
+/* Same escape hack Song Details had - margin-left:-35px with width:130% - and
+   the same fix: stay inside the panel. */
 #song-lyrics .lyric-box {
     background: #232323;
     border-radius: 4px;
     padding: 0px 2px 2px 2px;
-    border: 2px solid #f7f7ee;
-    margin-left: -35px;
-    width: 130%;
-    height: 100px
+    border: 1px solid #3a3a3a;
+    margin-left: 0;
+    width: 100%;
+    height: 100px;
 }
 .composer-box {
     white-space: pre-wrap
@@ -789,10 +858,6 @@ header ul {
     }
     #score-variants {
         padding-bottom: 4px;
-    }
-    #song-lyrics .lyric-box {
-        margin-left: 0px;
-        width: 100%;
     }
 }
 @media print, screen and (max-width: 720px) {

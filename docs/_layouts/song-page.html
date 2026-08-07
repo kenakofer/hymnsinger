@@ -276,6 +276,25 @@
     document.addEventListener("DOMContentLoaded", measureSheetHead);
     window.addEventListener("load", measureSheetHead);
 
+    // Chrome and Safari have no ::-moz-range-progress, so the wedge's filled
+    // portion is a gradient stop the CSS reads from --fill. Firefox paints it
+    // natively and ignores this.
+    function paintWedge(el) {
+        var pct = (el.value - el.min) / (el.max - el.min) * 100;
+        el.style.setProperty("--fill", pct + "%");
+    }
+    function paintWedges() {
+        var all = document.querySelectorAll("input[type=range].wedge");
+        for (var i = 0; i < all.length; i++) paintWedge(all[i]);
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+        paintWedges();
+        document.addEventListener("input", function (e) {
+            if (e.target.classList && e.target.classList.contains("wedge"))
+                paintWedge(e.target);
+        });
+    });
+
     window.addEventListener("keydown", function (e) {
         if (e.key == "Escape" && drawerIsOpen()) closeDrawer();
     });
@@ -318,6 +337,59 @@
 
         <div id="drawer-grid">
 
+        <details id="misc-downloads" open>
+          <summary>Downloads</summary>
+          <div id="misc-download-list">
+            <!-- Follows the selected notation and transposition, so it is
+                 whatever is on screen. renderScore() rewrites the href. -->
+            <a id="view-pdf-link" href="/local-lilypond-outputs/{{ page.song_file }}-trad.pdf">
+              Sheet music (PDF)
+            </a>
+            <a href="/local-lilypond-outputs/{{ page.song_file }}.odp">
+              Projection Slides (ODP)
+            </a>
+            <a href="/local-lilypond-outputs/{{ page.song_file }}-slides.pdf">
+              Projection Slides (PDF)
+            </a>
+            <a href="/local-lilypond-outputs/{{ page.song_file }}.mp3">
+              Audio (MP3)
+            </a>
+            <a href="/local-lilypond-outputs/{{ page.song_file }}.midi">
+              Audio (MIDI)
+            </a>
+            <a href="https://github.com/kenakofer/hymnsinger/blob/main/lilypond/songs/{{ page.song_file }}/{{ page.song_file }}.ly">
+              Source code (LY)
+            </a>
+          </div>
+        </details>
+
+        <details id="playback-settings" open>
+          <summary>Playback Settings</summary>
+          <div class="tempo-row">
+            <label for="tempo-input">Tempo</label>
+            <span id="tempo-display">___ BPM</span>
+            <input id="tempo-input" type="range" onchange="changeTempo(this.value);" min="50" max="200">
+          </div>
+          <!-- Was a table with nested <tr>s and three empty spacer rows, and
+               the part names were hover tooltips - invisible on a touch screen.
+               The clef says which two voices a pair is; the sliders are wedges,
+               so the level reads as a shape rather than a dot on a line. -->
+          <div class="part-volume">
+            <div class="part-group"><svg class="part-clef" viewBox="0 0 30 42" aria-hidden="true" focusable="false"><g class="stave"><line x1="1" y1="6" x2="29" y2="6"/><line x1="1" y1="12" x2="29" y2="12"/><line x1="1" y1="18" x2="29" y2="18"/><line x1="1" y1="24" x2="29" y2="24"/><line x1="1" y1="30" x2="29" y2="30"/></g><path class="clef" d="M15.5 33.5 C11 32 9 28.5 9 25 C9 20 13.5 17.5 13.5 12 C13.5 8 12 5.5 10.5 5.5 C8.5 5.5 7.5 8.5 7.5 12 C7.5 18 13.5 23 13.5 29.5 C13.5 34 11.5 36.5 9.5 36.5 C8 36.5 7 35.5 7 34.2"/><circle class="note" cx="22" cy="18" r="3"/><circle class="note" cx="22" cy="24" r="3"/><line class="stem" x1="24.8" y1="18" x2="24.8" y2="5"/></svg><div class="part-sliders">
+              <input class="wedge" type="range" aria-label="Soprano volume" title="Soprano"
+                     onchange="channel_to_velocity[1]=this.value" min="0" max="200" value="200">
+              <input class="wedge" type="range" aria-label="Alto volume" title="Alto"
+                     onchange="channel_to_velocity[2]=this.value" min="0" max="200" value="90">
+            </div></div>
+            <div class="part-group"><svg class="part-clef" viewBox="0 0 30 42" aria-hidden="true" focusable="false"><g class="stave"><line x1="1" y1="6" x2="29" y2="6"/><line x1="1" y1="12" x2="29" y2="12"/><line x1="1" y1="18" x2="29" y2="18"/><line x1="1" y1="24" x2="29" y2="24"/><line x1="1" y1="30" x2="29" y2="30"/></g><path class="clef" d="M8.5 11 C13 11 16 14.5 16 19 C16 25 12 29.5 7 32.5"/><circle class="clefdot" cx="8.5" cy="11" r="2.1"/><circle class="clefdot" cx="19" cy="14" r="1.1"/><circle class="clefdot" cx="19" cy="20" r="1.1"/><circle class="note" cx="24" cy="21" r="3"/><circle class="note" cx="24" cy="27" r="3"/><line class="stem" x1="21.2" y1="27" x2="21.2" y2="40"/></svg><div class="part-sliders">
+              <input class="wedge" type="range" aria-label="Tenor volume" title="Tenor"
+                     onchange="channel_to_velocity[3]=this.value" min="0" max="200" value="105">
+              <input class="wedge" type="range" aria-label="Bass volume" title="Bass"
+                     onchange="channel_to_velocity[4]=this.value" min="0" max="200" value="120">
+            </div></div>
+          </div>
+        </details>
+
         <details id="song-info" class="drawer-wide" open>
           <summary>Song Details</summary>
           {% assign song_data = site.data.songs[page.song_file] %}
@@ -330,96 +402,6 @@
             <dt>Meter</dt><dd>{{ song_data.meter }}</dd>
             <dt>Date Added</dt><dd>{{ song_data.date_added }}</dd>
           </dl>
-        </details>
-
-        <details id="misc-downloads" open>
-          <summary>Downloads</summary>
-          <div id="misc-download-list">
-            <!-- Follows the selected notation and transposition, so it is
-                 whatever is on screen. renderScore() rewrites the href. -->
-            <a id="view-pdf-link" href="/local-lilypond-outputs/{{ page.song_file }}-trad.pdf">
-              Sheet music (PDF)
-            </a><br />
-            <a href="/local-lilypond-outputs/{{ page.song_file }}.odp">
-              Projection Slides (ODP)
-            </a><br />
-            <a href="/local-lilypond-outputs/{{ page.song_file }}-slides.pdf">
-              Projection Slides (PDF)
-            </a><br />
-            <a href="/local-lilypond-outputs/{{ page.song_file }}.mp3">
-              Audio (MP3)
-            </a><br />
-            <a href="/local-lilypond-outputs/{{ page.song_file }}.midi">
-              Audio (MIDI)
-            </a><br />
-            <a href="https://github.com/kenakofer/hymnsinger/blob/main/lilypond/songs/{{ page.song_file }}/{{ page.song_file }}.ly">
-              Source code (LY)
-            </a><br />
-          </div>
-        </details>
-
-        <details id="playback-settings" open>
-          <summary>Playback Settings</summary>
-          <div class="tempo-panel">
-              Tempo <span id="tempo-display">___ BPM</span><br />
-              <!--<input id='tempo-input' type="range" onchange="Player.pause();Player.setTempo(this.value);Player.play()" min="50" max="200">-->
-              <input id='tempo-input' type="range" onchange="changeTempo(this.value);" min="50" max="200">
-          </div>
-          <table class='part-volume'>
-              <tr>
-                  <tr>
-                  <th>
-                    <div class="tooltip">
-                      S
-                      <span class="tooltiptext">
-                        Soprano volume adjust. Soprano sings the highest, most important notes (the melody). Their notes are seen above the lyrics.
-                      </span>
-                    </div>
-                  </th>
-                  <td ><input type="range" onchange="channel_to_velocity[1]=this.value" min="0" max="200" value="200"></td>
-                  </tr>
-
-                  <tr>
-                    <th>
-                      <div class="tooltip">
-                        A
-                        <span class="tooltiptext">
-                          Alto volume adjust. Alto is lower than soprano, on the staff above the lyrics. They sing a harmony that supports the soprano's melody, so their notes might not sound song-like by themselves.
-                        </span>
-                      </div>
-                    </th>
-                  <td ><input type="range" onchange="channel_to_velocity[2]=this.value" min="0" max="200" value="90"></td>
-                  </tr>
-
-                  <tr></tr>
-                  <tr></tr>
-                  <tr></tr>
-
-                  <tr>
-                    <th>
-                    <div class="tooltip">
-                      T
-                      <span class="tooltiptext">
-                        Tenor volume adjust. Tenor is higher than bass, on the staff below the lyrics. They sing a harmony that supports the soprano's melody, so their notes might not sound song-like by themselves.
-                      </span>
-                    </div>
-                    </th>
-                  <td ><input type="range" onchange="channel_to_velocity[3]=this.value" min="0" max="200" value="105"></td>
-                  </tr>
-
-                  <tr>
-                    <th>
-                    <div class="tooltip">
-                      B
-                      <span class="tooltiptext">
-                        Bass volume adjust. Bass sings the lowest notes on the staff below the lyrics. Their notes provide a foundation for all the other parts.
-                      </span>
-                    </div>
-                    </th>
-                  <td ><input type="range" onchange="channel_to_velocity[4]=this.value" min="0" max="200" value="120"></td>
-                  </tr>
-              </tr>
-          </table>
         </details>
 
         <details id="song-lyrics" class="drawer-wide">
