@@ -598,9 +598,20 @@ header ul {
     font-size: 14px;
     white-space: nowrap;
 }
+/* Holds the gloss and its optional external link on one line. min-width:0 is
+   what lets the gloss inside actually shrink and ellipsize rather than forcing
+   the row wider than the screen. */
+#view-note-wrap {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    gap: 6px;
+    min-width: 0;
+}
 /* One line, always. Ellipsis rather than wrap: a second line here would push
    the score down on some tabs and not others, so the row would jump as you
-   change notation. The glosses are written to fit; this is the backstop. */
+   change notation. The glosses are written to fit; this is the backstop - and
+   the gloss is what gives way, so the link stays whole. */
 #view-note {
     min-width: 0;
     overflow: hidden;
@@ -610,6 +621,16 @@ header ul {
     font-size: 12px;
     line-height: 1.2;
     color: #666;
+}
+#view-note-link {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    font-size: 12px;
+    font-weight: bold;
+    color: #c33333;
+}
+#view-note-link[hidden] {
+    display: none;
 }
 @media print, screen and (max-width: 960px) {
     .dock-icon {

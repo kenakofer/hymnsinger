@@ -6,7 +6,12 @@
      as tall as it was before the note existed. -->
 <div id="page-top-row">
   <a id="back-link" href="{{ site.baseurl }}/hymn-index">&larr; Back to list</a>
-  <span id="view-note"></span>
+  <span id="view-note-wrap">
+    <span id="view-note"></span><!--
+    Shown only for notations with a home page of their own; renderScore()
+    sets the href and hides it again for the rest.
+ --><a id="view-note-link" hidden target="_blank" rel="noopener">learn&nbsp;more&nbsp;&#8599;</a>
+  </span>
 </div>
 <div id="choice-and-music">
     <!-- A horizontally scrolling chip row rather than a fixed table of cells.

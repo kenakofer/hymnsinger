@@ -50,7 +50,15 @@
         "roman": "Chords as scale degrees",
         "shapenote": "7 shapes, one per scale degree",
         "4shapenote": "Sacred Harp fa-sol-la, mi on 7",
-        "clairnote": "No key signatures; pitch = position"
+        // Shorter than the rest: this is the one row that also carries a link.
+        "clairnote": "No key signatures"
+    };
+
+    // Notations with a canonical home page of their own. Only Clairnote has
+    // one; the shape-note systems are traditions rather than projects, with no
+    // single site to point at.
+    var VIEW_LINKS = {
+        "clairnote": "https://clairnote.org/"
     };
 
     // Transposability belongs to the *book*, not the tab. Every book here is
@@ -92,6 +100,12 @@
         var note = document.getElementById("view-note");
         if (note)
             note.textContent = VIEW_NOTES[window.currentVariant] || "";
+        var noteLink = document.getElementById("view-note-link");
+        if (noteLink) {
+            var url = VIEW_LINKS[window.currentVariant];
+            noteLink.hidden = !url;
+            if (url) noteLink.href = url;
+        }
 
         var control = document.getElementById("transpose-control");
         if (control) {
