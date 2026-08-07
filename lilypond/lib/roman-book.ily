@@ -1,8 +1,8 @@
-%% Roman numeral lead sheet: melody with each chord named by its scale degree
-%% rather than by letter (-roman).
+%% Roman numeral score: the full four-part engraving with each chord named by
+%% its scale degree rather than by letter (-roman).
 %%
 %% Songs without chords emit nothing here - a numeral book with no numerals in
-%% it is just the lead sheet, which already exists. Same test the fret books
+%% it is just the trad book, which already exists. Same test the fret books
 %% use, so the site's "does this file exist?" check works the same way.
 %%
 %% Unlike every other chord book this one has no transpositions. A numeral says
@@ -147,17 +147,27 @@ htRomanChordNames =
 %%
 %% capoOnly is stripped as it is in the fret books: a capo instruction names a
 %% fret for a letter chord, which says nothing about a numeral.
+%%
+%% Built on the full four-part layout, not the lead sheet. The numerals name
+%% the harmony the four voices are actually singing, so the parts that make
+%% each chord should be on the page under them - a melody line asks the reader
+%% to take the analysis on faith. This is the one chord book that is not a
+%% lead sheet, which is why it calls \fillTradScore rather than
+%% \fillTradLeadSheetScore.
 #(define (ht-roman-book)
    "
 \\book {
   \\prescore_text
   \\bookOutputSuffix \"roman\" \\score {
     \\removeWithTag #'(midionly slidesOnly capoOnly)
-    \\fillTradLeadSheetScore
+    \\fillTradScore
       { \\removeWithTag #'(midionly slidesOnly) \\soprano }
+      { \\removeWithTag #'(midionly slidesOnly) \\alto }
+      { \\removeWithTag #'(midionly slidesOnly) \\tenor }
+      { \\removeWithTag #'(midionly slidesOnly) \\bass }
       { \\htRomanChordNames \\htRomanTonic \\hymnKey
           { \\htChordMusic \\chordSymbols \\songChords } }
-      \\tradLeadSheetStaffZoom
+      \\tradStaffZoom
   }
   \\postscore_text
   \\extra_verses
