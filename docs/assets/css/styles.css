@@ -833,6 +833,30 @@ header ul {
     #music-image {
         min-height: 0;
     }
+    /* Crop LilyPond's paper margin off the sides. The PNGs are a full A4 page,
+       so every book of every song carries an identical 157px/158px of white on
+       a 3309px canvas - 4.74% a side, measured across trad, lead, shapenote and
+       clairnote alike. Clipping 4.5% keeps a sliver of white so the outer
+       barline never sits flush against the screen edge.
+
+       Done by over-widening the image inside a clipping box rather than by
+       cropping the file, so the PNGs and the .ly stay untouched and the same
+       image still serves the wide layout uncropped. Percentages, not pixels:
+       both scale with whatever width the image lands at. */
+    #music-clip {
+        overflow: hidden;
+        /* Fraction of the image shaved off each side, unitless so it can drive
+           both the width and the offset below. LilyPond's margin measures
+           .0474; .045 leaves a sliver of white at the barline. */
+        --crop: .045;
+        /* Widening factor that puts the remaining width back to 100%. */
+        --zoom: calc(1 / (1 - 2 * var(--crop)));
+    }
+    #music-clip > #music-image {
+        width: calc(100% * var(--zoom));
+        max-width: none;
+        margin-left: calc(-100% * var(--crop) * var(--zoom));
+    }
     /* Phone screens are short: 30px of dead space above the back link, plus
        the chips' own padding, cost most of a staff before the score starts. */
     section {

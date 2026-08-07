@@ -81,6 +81,11 @@
             </div>
             {% endif %}
         </div>
-        <img src="/local-lilypond-outputs/{{ page.song_file }}-trad.png" alt="Loading the sheet music..." id="music-image">
+        <!-- Wraps the image alone, not #music-frame: the transpose and frets
+             controls above are positioned against the frame and must not be
+             clipped along with the paper margin. -->
+        <div id="music-clip">
+            <img src="/local-lilypond-outputs/{{ page.song_file }}-trad.png" alt="Loading the sheet music..." id="music-image">
+        </div>
     </div>
 </div>
