@@ -368,6 +368,9 @@
           <div class="tempo-row">
             <label for="tempo-input">Tempo</label>
             <span id="tempo-display">___ BPM</span>
+            <!-- onchange, not oninput like the volume sliders below:
+                 changeTempo() pauses and restarts the Player, so firing it per
+                 drag pixel would stutter the audio the whole way. -->
             <input id="tempo-input" type="range" onchange="changeTempo(this.value);" min="50" max="200">
           </div>
           <!-- Was a table with nested <tr>s and three empty spacer rows, and
@@ -459,15 +462,15 @@
             <div class="part-sliders">
               <div class="part-pair">
                 <input class="wedge" type="range" aria-label="Soprano volume" title="Soprano"
-                       onchange="channel_to_velocity[1]=this.value" min="0" max="200" value="200">
+                       oninput="channel_to_velocity[1]=this.value" min="0" max="200" value="200">
                 <input class="wedge" type="range" aria-label="Alto volume" title="Alto"
-                       onchange="channel_to_velocity[2]=this.value" min="0" max="200" value="90">
+                       oninput="channel_to_velocity[2]=this.value" min="0" max="200" value="90">
               </div>
               <div class="part-pair">
                 <input class="wedge" type="range" aria-label="Tenor volume" title="Tenor"
-                       onchange="channel_to_velocity[3]=this.value" min="0" max="200" value="105">
+                       oninput="channel_to_velocity[3]=this.value" min="0" max="200" value="105">
                 <input class="wedge" type="range" aria-label="Bass volume" title="Bass"
-                       onchange="channel_to_velocity[4]=this.value" min="0" max="200" value="120">
+                       oninput="channel_to_velocity[4]=this.value" min="0" max="200" value="120">
               </div>
             </div>
           </div>
