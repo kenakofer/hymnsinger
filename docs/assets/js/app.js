@@ -40,16 +40,24 @@ document.addEventListener('DOMContentLoaded', function() {
     if (urlParams.has("lead")) {
         changeFrets('lead');
     }
-    // ?guitar / ?uke select the chord tab with that instrument's diagrams, and
-    // ?roman the numeral spelling. On a song with no chords none of those
-    // books were engraved, so the link falls back to the plain sheet rather
-    // than requesting a missing image.
-    if (urlParams.has("guitar") || urlParams.has("uke") || urlParams.has("roman")) {
+    // ?guitar / ?uke select the chord tab with that instrument's diagrams. On a
+    // song with no chords neither book was engraved, so the link falls back to
+    // the plain sheet rather than requesting a missing image.
+    if (urlParams.has("guitar") || urlParams.has("uke")) {
         if (window.hasChords)
-            changeFrets(urlParams.has("guitar") ? 'guitar'
-                        : urlParams.has("uke") ? 'uke' : 'roman');
+            changeFrets(urlParams.has("guitar") ? 'guitar' : 'uke');
         else
             changeImage('lead');
+    }
+    // ?roman is its own tab now rather than a frets setting, but the old links
+    // are the same string and must keep landing on the same engraving.
+    if (urlParams.has("roman")) {
+        if (window.hasChords) {
+            document.getElementById('roman').checked = true;
+            changeImage('roman');
+        } else {
+            changeImage('lead');
+        }
     }
     if (urlParams.has("shapenote")) {
         document.getElementById('shapenote').checked = true;
@@ -105,16 +113,24 @@ var click_play = function() {
 var play = function() {
     ac.resume(); // Needed for safari, which doesn't allow audio to play on page load, only on UI events
 	Player.play();
-	document.getElementById('play-button').innerHTML = 'Pause';
+	syncPlayButtons('Pause');
 }
 
 var pause = function() {
 	Player.pause();
-	document.getElementById('play-button').innerHTML = 'Play';
+	syncPlayButtons('Play');
 }
 
 var stop = function() {
 	Player.stop();
+	// Player.stop() emits no events, so the bars and the buttons it should
+	// have reset are set here instead.
+	['play-bar', 'sheet-bar'].forEach(function (id) {
+		var el = document.getElementById(id);
+		if (el) el.style.width = '2%';
+	});
+	syncPlayButtons('Play');
+	syncStopButtons(true);
 }
 var channel_to_velocity = {
     1: 200,
@@ -148,12 +164,25 @@ Soundfont.instrument(ac, 'https://raw.githubusercontent.com/gleitz/midi-js-sound
 			}
 
 			document.getElementById('tempo-display').innerHTML = Player.tempo + ' BPM';
-			document.getElementById('play-bar').style.width = 100 - (.98 * Player.getSongPercentRemaining()) + '%';
+			var done = 100 - (.98 * Player.getSongPercentRemaining());
+			var pct = done + '%';
+			// Two views of one transport: the wide sidebar's and the
+			// sheet's, whose head stays on screen at either position.
+			['play-bar', 'sheet-bar'].forEach(function (id) {
+				var el = document.getElementById(id);
+				if (el) el.style.width = pct;
+			});
+			// 2% is the bar's own resting width, so anything above it means
+			// the playhead has left the start and "back to start" has a job.
+			syncStopButtons(done <= 2);
 		});
 
 		Player.loadArrayBuffer(buffer);
 
-		document.getElementById('play-button').removeAttribute('disabled');
+		['play-button', 'sheet-play'].forEach(function (id) {
+			var el = document.getElementById(id);
+			if (el) el.removeAttribute('disabled');
+		});
 
 		//play();
 	}

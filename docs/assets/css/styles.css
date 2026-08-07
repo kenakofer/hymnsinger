@@ -54,19 +54,50 @@ p.header {
 section {
     margin-top: 30px;
 }
+/* A scroller, not a wrapping row: wrapping reflows the chips every time a tab
+   is added and pushes the score down a line on the narrowest phones. Scrolling
+   keeps the row exactly one line tall at any width. */
 #score-variants {
     border: none;
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding: 2px 8px 6px 8px;
 }
-#score-variants td {
-    background-color: transparent;
-    text-align: center;
-    padding: 0px;
-    margin: 0px;
+#score-variants::-webkit-scrollbar {
+    display: none;
+}
+/* min-height 44px is the touch target floor; the chips used to be ~20px table
+   cells sharing their row with a PDF link and a tooltip. */
+.variant-chip {
+    flex: 0 0 auto;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 14px;
+    border: solid 2px lightgray;
+    border-radius: 22px;
+    white-space: nowrap;
+    font-size: 14px;
+    cursor: pointer;
+    user-select: none;
+}
+/* Beats the generic input[type=radio]:checked + label rule, which only draws a
+   black border - too weak to find at a glance in a scrolling row. */
+input[type="radio"]:checked + .variant-chip {
+    background-color: #ff5555;
+    border-color: #ff5555;
+    color: #fff;
+    font-weight: bold;
 }
 #choice-and-music {
     padding-top: 10px;
-    margin-top: 30px;
+    /* The back link sits directly above; 30px here left it stranded. */
+    margin-top: 8px;
     box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.1);
     max-width: 900px;
 }
@@ -74,7 +105,10 @@ section {
     -filter: sepia(.5) brightness(.97);
     filter: sepia(.5) brightness(.97);
     -webkit-filter: sepia(.5) brightness(.97);
-    max-width: 900px; /* To prevent awkward spacing while loading */
+    /* 900px is the engraving's own width; 100% keeps it inside a phone rather
+       than widening the page under the fixed dock. */
+    max-width: min(900px, 100%);
+    height: auto;
     min-height: 550px;
 }
 /* Positioning context for the transpose overlay. display:block keeps the
@@ -536,11 +570,207 @@ header nav {
 header ul {
     position: static;
 }
+/* The scrim and the sheet's head belong to the narrow layout only; above 961px
+   the header is a permanent sidebar and there is nothing to open, so the wide
+   transport inside #drawer-grid does the job instead. */
+#drawer-scrim, #sheet-head {
+    display: none;
+}
+/* Above the chips on every width now, rather than inside the sheet - leaving
+   the page should not require opening the controls first. */
+#back-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: 36px;
+    padding: 0 10px;
+    color: #ff5555;
+    font-weight: bold;
+    font-size: 14px;
+}
+/* Kramdown wraps the bare link in a <p> whose 22px bottom margin, plus
+   #choice-and-music's own margin-top, left the chips floating 40px below it.
+   :has() targets that generated wrapper without needing markup for it. */
+p:has(> #back-link) {
+    margin: 0;
+}
 @media print, screen and (max-width: 960px) {
-    header {
-        max-width: 400px;
-        padding-right: 34px;
-        padding-bottom: 22px;
+    .dock-icon {
+        flex: 0 0 auto;
+        width: 44px;
+        height: 44px;
+        padding: 0;
+        border: 2px solid #ccc;
+        border-radius: 22px;
+        background: #f7f7ee;
+        color: #232323;
+        font-size: 16px;
+        line-height: 1;
+        cursor: pointer;
+    }
+    .dock-icon:disabled {
+        opacity: 0.4;
+        cursor: default;
+    }
+    /* The stop buttons toggle on [hidden]; without this the flex context would
+       keep laying them out. */
+    .dock-icon[hidden] {
+        display: none;
+    }
+    /* One sheet, two positions. Closed, it is translated down by its own
+       height less the head, so exactly the head - the transport - sits above
+       the bottom edge and acts as the dock. Open, the translate goes to zero
+       and the whole sheet is on screen. Nothing else moves, and there is only
+       ever one transport in the DOM.
+
+       --sheet-head-h is measured from the real element by JS, since the head's
+       height depends on the font and the safe-area inset. */
+    #song-controls {
+        --sheet-head-h: 60px;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: auto;
+        z-index: 50;
+        max-height: 88vh;
+        max-width: none;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        background: #171717;
+        border-top: 2px solid #711;
+        border-radius: 14px 14px 0 0;
+        padding: 0 12px calc(20px + env(safe-area-inset-bottom, 0px)) 12px;
+        transform: translateY(calc(100% - var(--sheet-head-h)));
+        transition: transform 0.24s ease-out;
+        box-shadow: 0 -4px 18px rgba(0, 0, 0, 0.45);
+    }
+    body.drawer-open #song-controls {
+        transform: translateY(0);
+    }
+    /* Sticky, so it stays put as the sheet's contents scroll under it - and it
+       is the same element that peeks out when the sheet is down. */
+    #sheet-head {
+        display: block;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        background: #171717;
+        padding: 8px 0 10px 0;
+        margin-bottom: 4px;
+        border-bottom: 1px solid #333;
+    }
+    #sheet-transport {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    #sheet-bar-background {
+        flex: 1 1 auto;
+        height: 10px;
+        border: 1px solid #ccc;
+        background: #c7c7be;
+        border-radius: 2px;
+        cursor: pointer;
+    }
+    #sheet-bar {
+        height: 100%;
+        width: 2%;
+        background: #c33333;
+        border-radius: 3px;
+    }
+    #sheet-loop {
+        flex: 0 0 auto;
+        display: inline-flex;
+        align-items: center;
+        gap: 4px;
+        min-height: 44px;
+        /* Beats the generic `label` rule's border and padding, which framed
+           this in a box the size of the buttons beside it. */
+        border: none;
+        padding: 0;
+        color: #f7f7ee;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    #sheet-loop input {
+        width: 18px;
+        height: 18px;
+        margin: 0;
+        accent-color: #c33333;
+    }
+    /* Inverted while open: the same ☰ button, now meaning "close". */
+    #drawer-handle.open {
+        background: #c33333;
+        border-color: #c33333;
+        color: #fff;
+    }
+    /* The old Play/Reset/Loop row and its bar; #sheet-transport replaces them
+       here, and duplicating a transport inside the same sheet is the "outdated"
+       half of the pair. */
+    #wide-transport {
+        display: none;
+    }
+    /* Two columns, so the sheet is roughly half as tall. A grid rather than
+       CSS columns: each block keeps its own cell, so opening a <details> grows
+       that cell instead of reflowing every block after it into a new column. */
+    #drawer-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4px 14px;
+        align-items: start;
+    }
+    /* The short, self-contained blocks pair up two-across. Everything else
+       spans, either because it is wide by nature (the lyric box, the info
+       table) or because it is a wrapping list of chips that reads badly in a
+       half-width column. */
+    #drawer-grid > .drawer-wide {
+        grid-column: 1 / -1;
+    }
+    /* A button, not a div: tapping outside a sheet to dismiss it is expected,
+       and this way the behaviour is keyboard-reachable too. */
+    #drawer-scrim {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 45;
+        border: none;
+        padding: 0;
+        background: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+    }
+    #drawer-scrim[hidden] {
+        display: none;
+    }
+    /* Clears the peeking sheet head so the last staff is not trapped under it.
+       measureSheetHead() overwrites this with the head's measured height; the
+       value here is the no-JS fallback. */
+    .wrapper {
+        padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px));
+    }
+    /* The 550px reservation is sized for the full-width engraving; scaled to
+       a phone the image is far shorter, and the difference prints as a blank
+       band under every score. */
+    #music-image {
+        min-height: 0;
+    }
+    /* Phone screens are short: 30px of dead space above the back link, plus
+       the chips' own padding, cost most of a staff before the score starts. */
+    section {
+        margin-top: 8px;
+    }
+    #back-link {
+        min-height: 30px;
+        font-size: 13px;
+    }
+    #choice-and-music {
+        margin-top: 2px;
+        padding-top: 4px;
+    }
+    #score-variants {
+        padding-bottom: 4px;
     }
     #song-info table {
         table-layout: fixed;

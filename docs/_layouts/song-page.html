@@ -24,14 +24,13 @@
     // fretboard diagrams are drawn and for which instrument.
     //
     // The frets axis is not a tab. -lead, -guitar and -uke are the same music
-    // at the same pitch, differing only in the diagram row, and -roman is the
-    // same chords again on the four-part score. Switching between them should
-    // not move the tab selection; currentFrets holds which one the chord tab
-    // is currently showing.
+    // at the same pitch, differing only in the diagram row. Switching between
+    // them should not move the tab selection; currentFrets holds which one the
+    // chord tab is currently showing.
     //
-    // Only trad and the three chord books are engraved transposed, so every
-    // other notation forces the offset back to 0 rather than asking for a
-    // file that was never built.
+    // Only trad and the lead-sheet chord books are engraved transposed, so
+    // every other notation renders at the printed pitch rather than asking for
+    // a file that was never built.
     window.currentVariant = "trad";
     window.currentTranspose = 0;
     window.hasChords = {% if site.data.songs[page.song_file].has_chords %}true{% else %}false{% endif %};
@@ -48,7 +47,7 @@
     // page, and those files are not built.
     var TRANSPOSABLE = ["trad", "lead", "uke", "guitar"];
     var FRETS_BUTTONS = {"guitar": "frets-guitar", "uke": "frets-uke",
-                         "roman": "frets-roman", "lead": "frets-none"};
+                         "lead": "frets-none"};
 
     // Takes a book name, so the chord tab is judged by whichever of its books
     // the frets toggle currently resolves to.
@@ -64,34 +63,34 @@
 
     function renderScore() {
         var book = currentBook();
-        // Force the offset back to 0 for a book with no transposed engravings,
-        // so switching to it while transposed asks for a file that exists
-        // rather than a -roman-up1 that was never built.
-        if (!bookSupportsTranspose(book))
-            window.currentTranspose = 0;
-        var suffix = book + TRANSPOSE_SUFFIX[String(window.currentTranspose)];
+        // A book with no transposed engravings renders at the printed pitch,
+        // but the offset itself is kept: someone reading in +2 who looks at
+        // Roman and comes back should not have to find their key again. Only
+        // the *rendered* offset is forced to 0 here.
+        var supported = bookSupportsTranspose(book);
+        var steps = supported ? window.currentTranspose : 0;
+        var suffix = book + TRANSPOSE_SUFFIX[String(steps)];
         document.getElementById("music-image").src =
             "/local-lilypond-outputs/{{ page.song_file }}-" + suffix + ".png";
 
-        // Keep the tab's PDF link on whichever book is showing.
-        var pdfLink = document.getElementById("lead-pdf-link");
+        // Keep the PDF link on whichever view is showing.
+        var pdfLink = document.getElementById("view-pdf-link");
         if (pdfLink)
             pdfLink.href = "/local-lilypond-outputs/{{ page.song_file }}-" + suffix + ".pdf";
 
-        var supported = bookSupportsTranspose(book);
         var control = document.getElementById("transpose-control");
         if (control) {
             control.style.display = supported ? "" : "none";
+            // Reads the rendered offset, not the remembered one, so the
+            // control never claims a transposition the image does not show.
             document.getElementById("transpose-readout").textContent =
-                window.currentTranspose == 0
-                    ? "♪"
-                    : (window.currentTranspose > 0 ? "+" : "−") + Math.abs(window.currentTranspose);
-            control.classList.toggle("transposed", window.currentTranspose != 0);
+                steps == 0 ? "♪" : (steps > 0 ? "+" : "−") + Math.abs(steps);
+            control.classList.toggle("transposed", steps != 0);
             // Don't offer a step that has no engraving behind it.
             document.getElementById("transpose-up").disabled =
-                window.currentTranspose >= TRANSPOSE_LIMIT;
+                steps >= TRANSPOSE_LIMIT;
             document.getElementById("transpose-down").disabled =
-                window.currentTranspose <= -TRANSPOSE_LIMIT;
+                steps <= -TRANSPOSE_LIMIT;
         }
 
         // The frets toggle only means anything on the chord tab. Showing it
@@ -131,7 +130,7 @@
     }
 
     function changeFrets(which) {
-        if (!window.hasChords) return false;
+        if (!window.hasChords && which != "lead") return false;
         window.currentFrets = which;
         // Selecting frets implies the chord tab, so a ?guitar link that lands
         // straight here selects the tab too.
@@ -168,24 +167,159 @@
         copyButton = document.getElementById("copy-lyrics-button").textContent = "Copy all"
       }, 1500);
     }
+
+    // The drawer is CSS-driven; JS only flips the class and the ARIA state, so
+    // the wide layout - which never adds the class - is unaffected.
+    function drawerIsOpen() {
+        return document.body.classList.contains("drawer-open");
+    }
+    function setDrawer(open) {
+        document.body.classList.toggle("drawer-open", open);
+        var handle = document.getElementById("drawer-handle");
+        var scrim = document.getElementById("drawer-scrim");
+        if (handle) {
+            // The glyph stays ☰ in both states - it is one persistent control
+            // that floats above the sheet, so a swap would read as a different
+            // button appearing rather than the same one still being there.
+            // Only the label and the pressed state change.
+            handle.setAttribute("aria-expanded", open ? "true" : "false");
+            handle.setAttribute("aria-label", open ? "Close controls" : "Open controls");
+            handle.title = open ? "Close" : "Settings, downloads, lyrics";
+            handle.classList.toggle("open", open);
+        }
+        if (scrim) scrim.hidden = !open;
+        // Stop the page behind the drawer scrolling under the reader's finger.
+        document.body.style.overflow = open ? "hidden" : "";
+    }
+    function toggleDrawer() { setDrawer(!drawerIsOpen()); return false; }
+    function closeDrawer() { setDrawer(false); return false; }
+
+    function seekFromSheet(event) {
+        if (typeof Player === "undefined" || !Player) return;
+        var rect = document.getElementById("sheet-bar-background").getBoundingClientRect();
+        var pct = (event.clientX - rect.left) / rect.width * 100;
+        Player.skipToPercent(pct);
+        // Scrubbing while paused fires no MIDI events, so the stop button
+        // would otherwise stay hidden at a non-zero position.
+        syncStopButtons(pct <= 2);
+    }
+
+    // "Back to start" is meaningless at the start, so it stays hidden until the
+    // playhead has actually moved. Driven from the position readout in app.js,
+    // which fires on every MIDI event, so it appears as soon as playback begins
+    // and disappears again on stop().
+    function syncStopButtons(atStart) {
+        var btn = document.getElementById("sheet-stop");
+        if (btn) btn.hidden = atStart;
+    }
+
+    // Two play buttons, one transport: the wide sidebar's and the sheet's.
+    // app.js calls this after every state change rather than writing a single
+    // button's label.
+    function syncPlayButtons(label) {
+        var full = document.getElementById("play-button");
+        if (full) full.innerHTML = label;
+        var playing = label == "Pause";
+        var btn = document.getElementById("sheet-play");
+        if (btn) {
+            btn.innerHTML = playing ? "&#10074;&#10074;" : "&#9654;";
+            btn.setAttribute("aria-label", playing ? "Pause" : "Play");
+            btn.title = playing ? "Pause (Space)" : "Play (Space)";
+        }
+    }
+
+    // How far the sheet sits down when closed is "its own height minus the
+    // head", so the head has to be measured rather than guessed - it depends
+    // on the font and on the safe-area inset. Also drives the score's bottom
+    // padding, so the last staff is never trapped under the peeking head.
+    function measureSheetHead() {
+        var sheet = document.getElementById("song-controls");
+        var head = document.getElementById("sheet-head");
+        if (!sheet || !head) return;
+        // Only meaningful in the narrow layout; the wide sidebar is static.
+        if (window.innerWidth > 960) {
+            sheet.style.removeProperty("--sheet-head-h");
+            document.querySelector(".wrapper").style.paddingBottom = "";
+            return;
+        }
+        var h = Math.round(head.getBoundingClientRect().height);
+        sheet.style.setProperty("--sheet-head-h", h + "px");
+        document.querySelector(".wrapper").style.paddingBottom = (h + 16) + "px";
+    }
+    window.addEventListener("resize", measureSheetHead);
+    window.addEventListener("orientationchange", measureSheetHead);
+    document.addEventListener("DOMContentLoaded", measureSheetHead);
+    window.addEventListener("load", measureSheetHead);
+
+    window.addEventListener("keydown", function (e) {
+        if (e.key == "Escape" && drawerIsOpen()) closeDrawer();
+    });
+
+    // midiplayer.js reads #loop-checkbox directly - that is the sheet head's
+    // copy, the one on screen at every sheet position. The wide sidebar's
+    // mirrors into it and it back, so the two can never disagree.
+    var LOOP_BOXES = ["loop-checkbox", "wide-loop-checkbox"];
+    document.addEventListener("DOMContentLoaded", function () {
+        LOOP_BOXES.forEach(function (id) {
+            var box = document.getElementById(id);
+            if (!box) return;
+            box.addEventListener("change", function () {
+                LOOP_BOXES.forEach(function (other) {
+                    if (other == id) return;
+                    var el = document.getElementById(other);
+                    if (el) el.checked = box.checked;
+                });
+            });
+        });
+    });
     </script>
     <script src="{{ site.baseurl }}/assets/js/midiplayer.js"></script>
     <script src="{{ site.baseurl }}/assets/js/soundfont-player.js"></script>
     <script src="{{ site.baseurl }}/assets/js/app.js"></script>
     <div class="wrapper">
-      <header>
-          &larr; <a href="{{ site.baseurl }}/hymn-index" style="color:#ff5555;">Back to list</a>
+      <!-- Phone-only. One sheet in two positions: closed, only #sheet-head
+           shows above the bottom edge and is the transport dock; open, the
+           whole thing slides up. There is no separate dock element, so there
+           is only ever one play button, one progress bar and one Loop box.
+           Above 961px the header is a static sidebar and none of this applies. -->
+      <button type="button" id="drawer-scrim" hidden aria-hidden="true" tabindex="-1"
+              onclick="closeDrawer();"></button>
 
-          <hr>
+      <header id="song-controls">
+        <!-- The part that stays visible when the sheet is down. Narrow only;
+             the wide sidebar hides it and uses the Play/Reset/Loop row below. -->
+        <div id="sheet-head">
+          <div id="sheet-transport">
+            <button type="button" id="sheet-play" class="dock-icon" onclick="click_play();"
+                    disabled="disabled" title="Play (Space)" aria-label="Play">&#9654;</button>
+            <!-- Only meaningful once the playhead has left the start, so it is
+                 hidden at position zero rather than sitting there inert. -->
+            <button type="button" id="sheet-stop" class="dock-icon" onclick="stop();"
+                    hidden title="Back to start" aria-label="Back to start">&#9632;</button>
+            <div id="sheet-bar-background" onclick="seekFromSheet(event);">
+                <div id="sheet-bar"></div>
+            </div>
+            <label id="sheet-loop" title="Loop">
+              <input type="checkbox" id="loop-checkbox"> Loop
+            </label>
+            <button type="button" id="drawer-handle" class="dock-icon" onclick="toggleDrawer();"
+                    aria-expanded="false" aria-controls="song-controls"
+                    title="Settings, downloads, lyrics" aria-label="Open controls">&#9776;</button>
+          </div>
+        </div>
 
+        <div id="drawer-grid">
+          <!-- The wide sidebar's transport. Hidden on narrow, where
+               #sheet-transport does this job in the sheet head. -->
+          <div id="wide-transport">
           <button class="button button-primary" id="play-button" onclick="click_play()" disabled="disabled" title="Shortcut: Space">Play</button><!--
           --><button class="button button-primary" id="stop-button" onclick="stop()">Reset</button><!--
-          --><span id='loop-span'>Loop<input type="checkbox" id="loop-checkbox"></span>
-          <br/>
+          --><span id='loop-span'>Loop<input type="checkbox" id="wide-loop-checkbox"></span>
 
         <div id="play-bar-background">
             <div id="play-bar"></div>
         </div>
+          </div>
 
         <details id="playback-settings">
           <summary>Playback Settings</summary>
@@ -254,6 +388,11 @@
         <details id="misc-downloads">
           <summary>Downloads</summary>
           <div id="misc-download-list">
+            <!-- Follows the selected notation and transposition, so it is
+                 whatever is on screen. renderScore() rewrites the href. -->
+            <a id="view-pdf-link" href="/local-lilypond-outputs/{{ page.song_file }}-trad.pdf">
+              Sheet music (PDF)
+            </a><br />
             <a href="/local-lilypond-outputs/{{ page.song_file }}.odp">
               Projection Slides (ODP)
             </a><br />
@@ -272,7 +411,7 @@
           </div>
         </details>
 
-        <details id="song-info">
+        <details id="song-info" class="drawer-wide">
           <summary>Song Details</summary>
           {% assign song_data = site.data.songs[page.song_file] %}
           <table>
@@ -307,14 +446,18 @@
           </table>
         </details>
 
-        <details id="song-lyrics">
+        <details id="song-lyrics" class="drawer-wide">
           <summary>Lyrics <button id="copy-lyrics-button" onclick="copyLyrics()">Copy all</button></summary>
           {% assign song_data = site.data.songs[page.song_file] %}
             <div class='lyric-box'><textarea id="copy-me" readonly>{{ song_data.lyrics }}</textarea></div>
         </details>
 
+        <!-- Alternate words and Tags both navigate *away* from this song, so
+             they sit last and closed. They used to be open because they are
+             short, which on a phone put two link lists between the reader and
+             the score. -->
         {% if site.data.songs[page.song_file].songs_with_same_tune[0] %}
-        <details open=true>
+        <details>
           <summary>Alternate words</summary>
           <div class='same-tune-box'>
             {% for other in site.data.songs[page.song_file].songs_with_same_tune %}
@@ -331,13 +474,13 @@
 
         {% endif %}
 
-        <details open=true>
+        <details>
           <summary>Tags</summary>
           {% for tag in site.data.songs[page.song_file].tags %}
             <a class="taglink large" href="{{ site.baseurl }}/hymn-index?s={{ tag }}">{{ tag }}</a>
           {% endfor %}
         </details>
-
+        </div>
       </header>
 
       <section class="small-no-pad">

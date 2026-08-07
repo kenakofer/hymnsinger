@@ -1,74 +1,50 @@
 {% assign has_chords = site.data.songs[page.song_file].has_chords %}
+<!-- Above the chips and outside the sheet, so getting back to the index never
+     means opening the controls first. -->
+<a id="back-link" href="{{ site.baseurl }}/hymn-index">&larr; Back to list</a>
 <div id="choice-and-music">
-    <table id="score-variants">
-    <tr>
-    <td>
+    <!-- A horizontally scrolling chip row rather than a fixed table of cells.
+         Five notations already overflowed 375px once each cell carried a PDF
+         link and a tooltip; a scroller absorbs the next one too. The PDF link
+         moved out to #view-download below, so a chip is one whole tap target
+         instead of three small ones stacked. -->
+    <div id="score-variants" role="tablist" aria-label="Notation">
     <input type="radio" id="trad" name="variant-radio" checked onclick="changeImage('trad');">
-    <label for="trad">Traditional</label>
-    </td><td>
-    <!-- One tab for the chord family. Which of the four books it shows -
-         plain, guitar frets, uke frets, Roman numerals - is the toggle over
-         the score, not a tab of its own: they are the same chords, drawn or
-         named differently. A tab apiece made the row too wide to read.
+    <label class="variant-chip" for="trad">Traditional</label>
+
+    <!-- One tab for the chord family. Whether it draws guitar or uke
+         fretboards is the toggle over the score, not a tab of its own: those
+         are the same lead sheet with a different diagram row.
 
          Songs with no chords have none of those books, so the tab keeps its
          old "Leadsheet" name there and the toggle is absent. -->
     <input type="radio" id="lead" name="variant-radio" onclick="changeImage('lead');">
-    <label for="lead">{% if has_chords %}Chords{% else %}Leadsheet{% endif %}</label>
-    </td><td>
-    <input type="radio" id="shapenote" name="variant-radio" onclick="changeImage('shapenote');">
-    <label for="shapenote">7 Shape</label>
-    </td><td>
-    <input type="radio" id="4shapenote" name="variant-radio" onclick="changeImage('4shapenote');">
-    <label for="4shapenote">4 Shape</label>
-    </td><td>
-    <input type="radio" id="clairnote" name="variant-radio" onclick="changeImage('clairnote');">
-    <label for="clairnote">Clairnote</label>
-    </td>
-    </tr>
-    <tr>
-    <td>
-    (<a href="/local-lilypond-outputs/{{ page.song_file }}-trad.pdf">PDF</a>)
-    </td><td>
-    <!-- Points at whichever of the three the frets toggle currently shows, so
-         the PDF matches what is on screen. -->
-    (<a id="lead-pdf-link" href="/local-lilypond-outputs/{{ page.song_file }}-{% if has_chords %}guitar{% else %}lead{% endif %}.pdf">PDF</a>)
+    <label class="variant-chip" for="lead">{% if has_chords %}Chords{% else %}Leadsheet{% endif %}</label>
+
     {% if has_chords %}
-        (<div class="tooltip">
-            ?
-            <span class="tooltiptext">The melody with chord symbols. Gtr and Uke add fretboard diagrams. Rom names each chord by its scale degree, on the full four-part score.
-            </span>
-        </div>)
+    <!-- Roman is a tab, not a frets option: unlike Gtr/Uke it is the four-part
+         score rather than the lead sheet, and it is the one book with no
+         transpositions. Sitting on the frets toggle it looked like a third
+         instrument and silently dropped the reader's transposition. -->
+    <input type="radio" id="roman" name="variant-radio" onclick="changeImage('roman');">
+    <label class="variant-chip" for="roman">Roman</label>
     {% endif %}
-    </td><td>
-    (<a href="/local-lilypond-outputs/{{ page.song_file }}-shapenote.pdf">PDF</a>)
-        (<div class="tooltip">
-            ?
-            <span class="tooltiptext">(Beta) Shapenotes mean that each pitch in "do, re, mi, fa, so, la, ti" get one of 7 shapes. This supplemental data may improve sight-reading over time.
-            </span>
-        </div>)
-    </td><td>
-    (<a href="/local-lilypond-outputs/{{ page.song_file }}-4shapenote.pdf">PDF</a>)
-        (<div class="tooltip">
-            ?
-            <span class="tooltiptext">(Beta) The older four-shape system of the Sacred Harp and Southern Harmony: "fa, sol, la" repeats for each tetrachord, with "mi" on the seventh. Minor tunes begin on la.
-            </span>
-        </div>)
-    </td><td>
-        (<a href="/local-lilypond-outputs/{{ page.song_file }}-clairnote.pdf">PDF</a>)
-        (<div class="tooltip">
-            <a href="https://clairnote.org/" target="_blank">?</a>
-            <span class="tooltiptext tooltiptext-rightside">Clairnotes is easier than normal music, without any ♯ or ♭ signs or key signatures. Every pitch has its own vertical position. Click for more details.
-            </span>
-        </div>)
-    </td>
-    </tr>
-    </table>
+
+    <input type="radio" id="shapenote" name="variant-radio" onclick="changeImage('shapenote');">
+    <label class="variant-chip" for="shapenote">7 Shape</label>
+
+    <input type="radio" id="4shapenote" name="variant-radio" onclick="changeImage('4shapenote');">
+    <label class="variant-chip" for="4shapenote">4 Shape</label>
+
+    <input type="radio" id="clairnote" name="variant-radio" onclick="changeImage('clairnote');">
+    <label class="variant-chip" for="clairnote">Clairnote</label>
+    </div>
+
     <div id="music-frame">
         <!-- Both controls sit over the top left of the score, which LilyPond
              leaves blank, and each hides itself on tabs it does not apply to:
-             transpose on trad and the chord books, frets on the chord books
-             of songs that have chords. -->
+             transpose on trad and the chord books, frets on the chord tab of
+             songs that have chords. -->
         <div id="score-controls">
             <div id="transpose-control" role="group" aria-label="Transpose">
                 <!-- Down on the left, up on the right, so the control reads
@@ -89,13 +65,6 @@
                         title="Guitar fretboard diagrams">Gtr</button>
                 <button type="button" id="frets-uke" onclick="changeFrets('uke');"
                         title="Ukulele fretboard diagrams">Uke</button>
-                <!-- Roman sits on this toggle because it is the other way of
-                     reading the same chords, but unlike its neighbours it is
-                     the four-part score rather than a lead sheet. It is also
-                     the one book here with no transpositions, so selecting it
-                     hides the transpose arrows. -->
-                <button type="button" id="frets-roman" onclick="changeFrets('roman');"
-                        title="Roman numerals on the four-part score">Rom</button>
                 <button type="button" id="frets-none" onclick="changeFrets('lead');"
                         title="No fretboard diagrams">No tabs</button>
             </div>
