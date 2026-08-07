@@ -5,7 +5,10 @@
 
 #(define (define-grob-property symbol type? description)
   (if (not (equal? (object-property symbol 'backend-doc) #f))
-      (ly:error (_ "symbol ~S redefined") symbol))
+      ;; No gettext call here: 2.22 spells the wrapper `_' and 2.26 spells it
+      ;; `G_', and under Guile 3 a bare `_' is a syntactic keyword and fails to
+      ;; parse. This message is untranslated so the file loads under both.
+      (ly:error "symbol ~S redefined" symbol))
 
   (set-object-property! symbol 'backend-type? type?)
   (set-object-property! symbol 'backend-doc description)

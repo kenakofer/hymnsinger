@@ -452,8 +452,17 @@
    ;; accidental lasts over that many bar lines.  @w{@code{-1}} is `forget
    ;; immediately', that is, only look at key signature.  @code{#t} is `forever'.
 
-   (lambda (context pitch barnum measurepos)
-     (cn-check-pitch-against-signature context pitch barnum measurepos laziness)))
+   ;; LilyPond 2.23 dropped the measurepos argument from accidental rules.
+   ;; Accept either arity so this file still works under 2.22: measurepos is
+   ;; only ever stored, never used in a decision, so when the caller does not
+   ;; supply it we read it off the context instead.
+   (lambda (context pitch barnum . rest)
+     (cn-check-pitch-against-signature
+      context pitch barnum
+      (if (pair? rest)
+          (car rest)
+          (ly:context-property context 'measurePosition))
+      laziness)))
 
 accidental-styles.clairnote-default =
 #`(#t (Staff ,(cn-make-accidental-rule 0)) ())
