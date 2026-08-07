@@ -1,7 +1,13 @@
 {% assign has_chords = site.data.songs[page.song_file].has_chords %}
 <!-- Above the chips and outside the sheet, so getting back to the index never
-     means opening the controls first. -->
-<a id="back-link" href="{{ site.baseurl }}/hymn-index">&larr; Back to list</a>
+     means opening the controls first. The notation note shares the row rather
+     than taking one of its own: the link is short and the rest was dead space.
+     Empty on Traditional, which needs no gloss, so the default view is exactly
+     as tall as it was before the note existed. -->
+<div id="page-top-row">
+  <a id="back-link" href="{{ site.baseurl }}/hymn-index">&larr; Back to list</a>
+  <span id="view-note"></span>
+</div>
 <div id="choice-and-music">
     <!-- A horizontally scrolling chip row rather than a fixed table of cells.
          Five notations already overflowed 375px once each cell carried a PDF

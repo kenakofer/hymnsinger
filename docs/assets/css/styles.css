@@ -576,6 +576,16 @@ header ul {
 #drawer-scrim, #sheet-head {
     display: none;
 }
+/* The back link and the notation gloss share one line: the link is short, and
+   the space to its right was empty. The gloss is right-aligned so it reads as
+   a caption on the chips below rather than as part of the link. */
+#page-top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding-right: 10px;
+}
 /* Above the chips on every width now, rather than inside the sheet - leaving
    the page should not require opening the controls first. */
 #back-link {
@@ -586,12 +596,20 @@ header ul {
     color: #ff5555;
     font-weight: bold;
     font-size: 14px;
+    white-space: nowrap;
 }
-/* Kramdown wraps the bare link in a <p> whose 22px bottom margin, plus
-   #choice-and-music's own margin-top, left the chips floating 40px below it.
-   :has() targets that generated wrapper without needing markup for it. */
-p:has(> #back-link) {
-    margin: 0;
+/* One line, always. Ellipsis rather than wrap: a second line here would push
+   the score down on some tabs and not others, so the row would jump as you
+   change notation. The glosses are written to fit; this is the backstop. */
+#view-note {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: right;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #666;
 }
 @media print, screen and (max-width: 960px) {
     .dock-icon {

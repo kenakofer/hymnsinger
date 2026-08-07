@@ -41,6 +41,18 @@
     var TRANSPOSE_SUFFIX = {"-2": "-dn2", "-1": "-dn1", "0": "", "1": "-up1", "2": "-up2"};
     var TRANSPOSE_LIMIT = 2;
 
+    // A one-line gloss per notation, shown beside the back link. Kept to ~35
+    // characters so it never wraps onto a second line and pushes the score
+    // down. Traditional has no entry: it is the default and needs no gloss,
+    // which is what keeps the common view as short as it was.
+    var VIEW_NOTES = {
+        "lead": {% if site.data.songs[page.song_file].has_chords %}"Melody + chord symbols"{% else %}"Melody only, no harmony parts"{% endif %},
+        "roman": "Chords as scale degrees",
+        "shapenote": "7 shapes, one per scale degree",
+        "4shapenote": "Sacred Harp fa-sol-la, mi on 7",
+        "clairnote": "No key signatures; pitch = position"
+    };
+
     // Transposability belongs to the *book*, not the tab. Every book here is
     // engraved at five pitches except -roman: a numeral says where a chord
     // sits relative to the tonic, so transposing it would reprint the same
@@ -73,10 +85,13 @@
         document.getElementById("music-image").src =
             "/local-lilypond-outputs/{{ page.song_file }}-" + suffix + ".png";
 
-        // Keep the PDF link on whichever view is showing.
+        // Keep the PDF link and the gloss on whichever view is showing.
         var pdfLink = document.getElementById("view-pdf-link");
         if (pdfLink)
             pdfLink.href = "/local-lilypond-outputs/{{ page.song_file }}-" + suffix + ".pdf";
+        var note = document.getElementById("view-note");
+        if (note)
+            note.textContent = VIEW_NOTES[window.currentVariant] || "";
 
         var control = document.getElementById("transpose-control");
         if (control) {
