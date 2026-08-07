@@ -1,11 +1,11 @@
-# LilyPond upgrade — findings
+# LilyPond upgrade — 2.22.1 to 2.24.4
 
-Scoping spike on branch `lilypond-2.26`. Current production compiler is
-2.22.1 (Ubuntu jammy package). 2.24.4 and 2.26.0 were tested from the
-upstream binary tarballs under `~/.local/lilypond/`, which install
-alongside the system package and do not disturb it.
+**Outcome: the corpus is on 2.24.4.** 2.24.4 and 2.26.0 were tested from
+the upstream binary tarballs under `~/.local/lilypond/`, which install
+alongside the Ubuntu package and do not disturb it. The 2.22.1 system
+package is still present and still works on this source.
 
-## Recommendation: go to 2.24.4, not 2.26
+## Why 2.24.4 and not 2.26
 
 **2.24.4 builds the entire corpus with only the two small fixes below.**
 Full build of `abide-with-me` emits all 24 books, exit 0, no errors; the
@@ -38,9 +38,23 @@ died with an arity error during "Interpreting music". It now accepts
 either arity, reading `measurePosition` off the context when the caller
 does not supply it, so the file still loads under 2.22.
 
+**`lib/clairnote.ily` — down stems on the wrong side of the note head.**
+Up to 2.22, a `NoteHead.stem-attachment` x of 1 meant "the far edge of
+the head as seen from the stem", so the single pair `'(1 . 0.2)` that
+`\cnNoteheadStyle "funksol"` installs served both stem directions. 2.23
+made the coordinate literal — x is the right edge whichever way the stem
+points — so every down stem in the Clairnote books moved to the wrong
+side. Clairnote now mirrors x itself, gated on `ly:version? >= 2.23`:
+2.22 already mirrors internally, and applying ours there double-flips
+(110408 pixels off baseline on `amazing-grace` before the gate,
+byte-identical after).
+
+This one is not a parse or arity error — it compiles clean and simply
+engraves wrongly, which is why only a visual check caught it.
+
 Note that only the first is Guile-3 specific. The arity change landed in
-2.23, so it bites on 2.24 too — which is why unmodified `public-main`
-does not build there either.
+2.23 and the attachment change in 2.23 as well, so both bite on 2.24 —
+which is why unmodified `public-main` does not build there either.
 
 ## Outstanding on 2.26 only: the shape-note books
 
@@ -125,14 +139,33 @@ reporting upstream rather than only patching around locally.
 Either way, nothing found suggests the songs themselves need editing —
 all three problems are in vendored library code or in LilyPond itself.
 
-## Still to do before switching
+## How 2.24 is installed
 
-The spike only checked that pages *compile*. Before adopting 2.24:
+The binary lives at `~/.local/lilypond/lilypond-2.24.4/`, with
+`~/.local/bin/lilypond` symlinked to it. That directory precedes
+`/usr/bin` on PATH, so the build scripts — which call plain `lilypond` —
+pick up 2.24.4 without needing a `$LILYPOND` override. The Ubuntu 2.22.1
+package is untouched and is still what `/usr/bin/lilypond` runs, which is
+how the before/after comparisons below were produced.
 
-- Rebuild the full corpus and diff the engravings against 2.22 output.
-  Spacing and line-breaking changed between the series, so pages will
-  shift even where nothing errors; the footer date already makes every
-  rebuild differ, so compare deliberately rather than by file hash.
-- Decide how the 2.24 binary is installed for real (the tarball under
-  `~/.local` is fine for testing, but the build scripts call plain
-  `lilypond` and will pick up the system 2.22).
+## What was actually verified
+
+Worth being precise about, because the engraving check was a sample:
+
+- **Compiles: all 150 songs.** Verified for the shape-note book under
+  both 2.24 and 2.26; 2.24 is 150/150, 2.26 is 22/150.
+- **Engravings reviewed: 12 songs** (218 book renders, 312 pages per
+  side), rendered under both compilers and compared page by page. The
+  remaining ~138 songs compile but their engravings have not been
+  eyeballed against 2.22.
+
+Across those 312 pages there were **zero page-count or geometry
+changes** — every page is the same size, so nothing reflowed. What
+remains is a global spacing and kerning drift from the Guile version
+change: ink boxes shift by a pixel or two and stave spacing grows very
+slightly, which inflates pixel-diff counts (5-20% of pixels on dense
+pages) without changing what is on the page.
+
+The one real regression this sample caught was the Clairnote stem side,
+below. That is the argument for looking at renders and not just exit
+codes — it would not have surfaced any other way.
