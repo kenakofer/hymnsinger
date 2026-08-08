@@ -2,6 +2,7 @@
 \include "clairnote.ily"
 \include "left-align-lyrics.ily"
 \include "global-chord-symbols.ily"
+\include "vertical-spacing.ily"
 #(ly:set-option 'midi-extension "midi")
 
 pa = \partCombineApart
