@@ -55,7 +55,9 @@
         <!-- Both controls sit over the top left of the score, which LilyPond
              leaves blank, and each hides itself on tabs it does not apply to:
              transpose on trad and the chord books, frets on the chord tab of
-             songs that have chords. -->
+             songs that have chords. They are siblings, each positioned against
+             #music-frame on its own, because the transpose control leaves the
+             corner to hang on the clef and the frets row does not. -->
         <div id="score-controls">
             <!-- Two layouts, one control. When the build has found the opening
                  clef for the current book, #music-frame gets .keyed and this
@@ -82,21 +84,26 @@
                 <button type="button" id="transpose-up" onclick="changeTranspose(1);"
                         title="Up a half step"><span class="arrow">&#9654;</span></button>
             </div>
-            {% if has_chords %}
-            <!-- No visible "Frets" caption: sitting beside the transpose
-                 arrows the row has to stay narrow, and "Gtr / Uke / No tabs"
-                 already says what it is. The aria-label carries the name for
-                 screen readers. -->
-            <div id="frets-control" role="group" aria-label="Fretboard diagrams">
-                <button type="button" id="frets-guitar" onclick="changeFrets('guitar');"
-                        title="Guitar fretboard diagrams">Gtr</button>
-                <button type="button" id="frets-uke" onclick="changeFrets('uke');"
-                        title="Ukulele fretboard diagrams">Uke</button>
-                <button type="button" id="frets-none" onclick="changeFrets('lead');"
-                        title="No fretboard diagrams">No tabs</button>
-            </div>
-            {% endif %}
         </div>
+        {% if has_chords %}
+        <!-- Outside #score-controls, not in it. That wrapper is the transpose
+             arrows' anchor and gets moved onto the clef, which would drag the
+             frets row along with it - and because switching instrument also
+             switches book, the clef it anchors to moves, so the whole cluster
+             jumped on every press. The corner is this row's own place.
+
+             No visible "Frets" caption: the row has to stay narrow to fit the
+             blank corner, and "Gtr / Uke / No tabs" already says what it is.
+             The aria-label carries the name for screen readers. -->
+        <div id="frets-control" role="group" aria-label="Fretboard diagrams">
+            <button type="button" id="frets-guitar" onclick="changeFrets('guitar');"
+                    title="Guitar fretboard diagrams">Gtr</button>
+            <button type="button" id="frets-uke" onclick="changeFrets('uke');"
+                    title="Ukulele fretboard diagrams">Uke</button>
+            <button type="button" id="frets-none" onclick="changeFrets('lead');"
+                    title="No fretboard diagrams">No tabs</button>
+        </div>
+        {% endif %}
         <!-- Wraps the image alone, not #music-frame: the transpose and frets
              controls above are positioned against the frame and must not be
              clipped along with the paper margin. -->

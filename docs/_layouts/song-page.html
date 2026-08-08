@@ -185,9 +185,8 @@
         if (frame) {
             // Only when the control is actually on screen. The shape-note and
             // Clairnote books print a clef but are not transposable, so the
-            // control is hidden there - anchoring it anyway would leave
-            // #score-controls positioned over the staff for the frets row,
-            // which still lives in it and is not about pitch.
+            // control is hidden there, and .keyed would only move an empty box
+            // onto the staff.
             var box = supported ? anchorFor(suffix) : null;
             if (box) {
                 // x/w stay percentages, which resolve against the frame's

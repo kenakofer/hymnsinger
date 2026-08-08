@@ -122,11 +122,9 @@ input[type="radio"]:checked + .variant-chip {
    staff starts well below - so this covers nothing. These are deliberately
    not inside #score-variants: that table is the notation picker, and pitch
    and fretting are separate axes that only apply to some of those tabs. */
-/* Holds the transpose and frets controls side by side along the top of the
-   blank corner. Stacking them vertically pushed the frets buttons down over
-   the first staff on shorter title blocks; running rightward keeps both on
-   the one blank line. Either child may be hidden depending on the tab, and
-   the row collapses when both are. */
+/* Holds the transpose control alone. The frets row is a sibling with its own
+   corner position: this box is the transpose arrows' anchor and moves onto the
+   clef under .keyed, which is no place for a fretboard toggle. */
 #score-controls {
     position: absolute;
     top: 6px;
@@ -231,8 +229,8 @@ input[type="radio"]:checked + .variant-chip {
     left: calc(var(--key-x) + var(--key-w) / 2);
     top: calc(var(--key-y-px) + var(--key-h) / 2 + var(--arrow-shift));
     transform: translate(-50%, -50%);
-    /* The frets control keeps its own place in the corner, so this row must
-       not try to lay both out together any more. */
+    /* Zero-width so the translate centres on the clef rather than on a box
+       stretched by the flex row's own content. */
     display: block;
     width: 0;
 }
@@ -306,15 +304,25 @@ input[type="radio"]:checked + .variant-chip {
     color: #ff5555;
     font-weight: bold;
 }
-/* Same plate and button treatment as the transpose control directly above it,
-   so the two read as one cluster over the score's blank corner. */
-/* Hidden until renderScore() decides otherwise. The page opens on the
+/* Same plate and button treatment as the transpose control, so the two read as
+   one family over the score's blank corner - but positioned independently. The
+   top left corner is this row's fixed home: it applies to one tab only, and on
+   that tab the transpose arrows have gone off to hang on the clef, so nothing
+   else is up here to collide with. Sharing a wrapper with them meant every
+   press of Gtr/Uke - which changes book, and so changes which clef is anchored
+   - dragged this row across the score with the arrows.
+
+   Hidden until renderScore() decides otherwise. The page opens on the
    traditional tab, where fretboards do not apply, so shipping this visible
    meant a flash of three buttons over a four-part score on every load - and
    they stayed until the first click, since nothing re-rendered before that.
    Defaulting to hidden makes the correct state the one that needs no JS. */
 #frets-control {
     display: none;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    z-index: 2;
     flex-direction: row;
     align-items: center;
     gap: 2px;
