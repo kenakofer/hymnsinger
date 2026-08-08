@@ -72,6 +72,33 @@ lyricsCentered =
           (padding . 0) (stretchability . 0))
    #})
 
+%% Spacing for ONE system, in the soprano part just before its \break.
+%%
+%% Everything above is score-wide: a \layout block cannot say "this system
+%% only". Nor can a mid-music \override of these alists -- the page-layout
+%% pass reads them once and never sees the change, so writing one into the
+%% music stream silently does nothing at all. Per-system control has to go
+%% through line-break-system-details on the column that carries the break,
+%% which is a different property with a different shape.
+%%
+%% The argument is a LIST of the gaps between adjacent stacked contexts, top
+%% to bottom, for the system AFTER this break. A four-part score with lyrics
+%% between the staves stacks treble / lyrics / bass, so it takes two numbers:
+%%
+%%   \systemGaps #'(20 20) \break
+%%
+%% Count the contexts that actually print on that system, not the parts --
+%% \RemoveAllEmptyStaves means a staff that falls silent is not in the stack
+%% and does not get an entry. Too few numbers is not an error; the gaps you
+%% did not name just keep their default, which looks like the override was
+%% partly ignored.
+%%
+%% Goes in soprano only, like \break itself: these are Score-level.
+systemGaps =
+#(define-music-function (dists) (list?)
+   #{ \once \override Score.NonMusicalPaperColumn.line-break-system-details =
+        #`((alignment-distances . ,dists)) #})
+
 %% No default is defined for \spacing_overrides on purpose.
 %% all-notation-outputs.ily emits its \layout hook only when a song has set
 %% it, because substituting even an empty \layout variable perturbs the score
