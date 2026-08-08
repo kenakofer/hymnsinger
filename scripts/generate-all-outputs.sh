@@ -153,10 +153,26 @@ build_song() {
         #   - a "*" that reaches mogrify unmatched is expanded by ImageMagick
         #     itself, and it hangs on a literal non-matching pattern rather
         #     than erroring out. Never pass it one.
+        # -strip because this rewrite is what otherwise makes every rebuild
+        # dirty every PNG. ImageMagick stamps tIME and date:create/date:modify
+        # chunks on write, so a song whose engraving has not changed by a
+        # single pixel still comes out as a modified file - 707 of them on one
+        # run here, all bit-identical in image data, differing in 30 bytes of
+        # timestamp. The multi-page branches above already strip during their
+        # `convert -append`; single-page songs never passed through one, which
+        # is why they were the ones churning.
+        #
         # The -page files are anything a 4+ page score left unmerged above.
         for png in "$OUTPUT_DIR$BASE$TYPE.png" "$OUTPUT_DIR$BASE$TYPE"-page[0-9]*.png; do
-            [ -e "$png" ] && mogrify -colorspace gray +dither -posterize 2 "$png"
+            [ -e "$png" ] && mogrify -strip -colorspace gray +dither -posterize 2 "$png"
         done
+
+        # Same problem in the PDFs, four fields of it, and no build flag that
+        # turns it off - see normalize-pdf-metadata.py. Inside this loop rather
+        # than a glob over the song, so a partial run leaves the books it did
+        # not rebuild alone, exactly like the PNG walk above.
+        [ -e "$OUTPUT_DIR$BASE$TYPE.pdf" ] &&
+            python3 "$SCRIPT_DIR/normalize-pdf-metadata.py" "$OUTPUT_DIR$BASE$TYPE.pdf"
     done
 
     # Slides and MIDI are included directly by each song, not through
@@ -169,14 +185,21 @@ build_song() {
     # the way they were. Skipping the ODP and MP3 steps below is what actually
     # saves the time; this only stops the rebuilt-but-unchanged slides from
     # showing up as noise in git status.
+    # The slides book is not in ALL_TYPES, so the per-book loop above did not
+    # reach its PDF. Normalise it here instead, on every run: it is re-emitted
+    # whatever -dht-books says, so a partial build would otherwise still leave
+    # one dirty file per song.
+    [ -e "$OUTPUT_DIR$BASE-slides.pdf" ] &&
+        python3 "$SCRIPT_DIR/normalize-pdf-metadata.py" "$OUTPUT_DIR$BASE-slides.pdf"
+
     if [ -n "$BOOKS" ]; then
         # The intermediate page PNGs are always disposable - a full run merges
         # and deletes them anyway.
         rm -f "$OUTPUT_DIR$BASE"-slides-page[0-9]*.png
-        # Restore the committed slides PDF if it is tracked and unchanged in
-        # content. Without this a partial run shows 150 modified slides files
-        # that differ only by rebuild metadata.
-        git checkout -q -- "$OUTPUT_DIR$BASE-slides.pdf" 2>/dev/null || true
+        # The slides PDF used to be restored from git here, because a rebuild
+        # produced a byte-different file from identical music. Normalising it
+        # above fixes that at the source, so an unchanged song now rebuilds to
+        # an unchanged file and there is nothing to put back.
     fi
 
     if [ -z "$BOOKS" ]; then
@@ -184,8 +207,11 @@ build_song() {
         # Shell-glob and guard, same reason as the loop above: a "*" that
         # reaches mogrify unmatched hangs rather than erroring.
         echo "     --> (Building ODP)"
+        # -strip for the same reason as the posterize loop above: these become
+        # the ODP's Pictures, and a timestamp chunk in each one would make the
+        # zip differ on every build even after its entry mtimes are pinned.
         for png in "$OUTPUT_DIR$BASE"-slides*.png; do
-            [ -e "$png" ] && mogrify -colorspace gray +dither -posterize 3 "$png"
+            [ -e "$png" ] && mogrify -strip -colorspace gray +dither -posterize 3 "$png"
         done
         "$SCRIPT_DIR/build-odp-presentation-from-images.sh" "$BASE"
 

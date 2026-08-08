@@ -48,8 +48,17 @@ echo $MANIFEST_FOOTER >> $TEMP_DIR/META-INF/manifest.xml
 
 # zip up the temp dir into $BASE.odp
 cd $TEMP_DIR
-zip -q0 "$BASE.odp" mimetype # The mimetype must be stored first, with 0 compression
-zip -qru "$BASE.odp" *
+# Flatten every mtime to a fixed date first. zip stamps each entry with the
+# file's modification time, so without this an .odp whose slides are identical
+# still comes out a different file on every build, and all 151 of them show up
+# as modified in git. zip has no switch for this - the timestamps it writes
+# come from the filesystem - so the tree is normalised before it runs.
+# The date is arbitrary and only has to be constant; this is the repo's first
+# commit. Nothing reads it: the meta.xml dates LibreOffice shows are their own
+# fields, carried in from the skeleton.
+find . -exec touch -t 202101010000.00 {} +
+zip -qX0 "$BASE.odp" mimetype # The mimetype must be stored first, with 0 compression
+zip -qruX "$BASE.odp" *
 cd - > /dev/null
 mv "$TEMP_DIR/$BASE.odp" $OUTPUT_DIR
 # The dir is per-song now, so it has to be cleaned up here; nothing else
