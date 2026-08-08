@@ -600,6 +600,7 @@ scoreWithVerse =
     %% These callbacks return '() and only stash a reference, so they cost
     %% nothing when -dht-landmarks is off - ht:report does the work, and it is
     %% only reached under the option.
+    \override Clef.after-line-breaking = #ht:grab-clef
     \override KeySignature.after-line-breaking = #ht:grab-keysig
     \override StaffSymbol.after-line-breaking = #ht:grab-staff
     \override BarLine.after-line-breaking = #ht:grab-bar

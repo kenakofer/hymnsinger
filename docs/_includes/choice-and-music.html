@@ -57,14 +57,16 @@
              transpose on trad and the chord books, frets on the chord tab of
              songs that have chords. -->
         <div id="score-controls">
-            <!-- Two layouts, one control. When the build has found the key
-                 signature for the current book, #music-frame gets .keyed and
-                 this moves onto the signature itself - up arrow above it, down
-                 arrow below - so the buttons point at the thing they change.
-                 Without it - a song in C major has no signature to print, and
-                 the books with no transposed engravings hide the control
-                 anyway - it stays a left-to-right row in the blank corner,
-                 which is where it has always been. -->
+            <!-- Two layouts, one control. When the build has found the opening
+                 clef for the current book, #music-frame gets .keyed and this
+                 moves onto the clef - up arrow above it, down arrow below,
+                 sharing its left edge - so the buttons sit against the key
+                 signature they change. The clef and not the signature itself
+                 because the signature's box changes size with every
+                 transposition, and the control would shuffle about with it.
+                 Without the landmark - the books with no transposed engravings
+                 hide the control anyway - it stays a left-to-right row in the
+                 blank corner, which is where it has always been. -->
             <div id="transpose-control" role="group" aria-label="Transpose">
                 <!-- Source order is down, readout, up: that is the corner
                      layout's low-to-high reading order, matching the keyboard
@@ -73,7 +75,7 @@
                 <!-- The glyph is a span rather than button text so the
                      anchored layout can swap the arrow's direction: pointing
                      left/right beside a readout, but up/down when the buttons
-                     straddle the key signature. renderScore() sets both. -->
+                     straddle the clef. renderScore() sets both. -->
                 <button type="button" id="transpose-down" onclick="changeTranspose(-1);"
                         title="Down a half step"><span class="arrow">&#9664;</span></button>
                 <span id="transpose-readout" aria-live="polite">&#9834;</span>

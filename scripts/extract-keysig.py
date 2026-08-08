@@ -8,12 +8,11 @@ the ordinary PDF/PNG run:
 
 as fractions of the engraving. This collects them under "landmarks" in
 docs/_data/songs/<song>.json, which the song page reads to position UI against
-the music - the transpose arrows on the key signature, and eventually
-autoscroll on where the music ends.
+the music - the transpose arrows on the opening clef, and eventually autoscroll
+on where the music ends.
 
-Only the geometry is stored. How far the arrows sit from the key signature is
-taste, and lives in the stylesheet, so retuning the look never means rebuilding
-150 songs.
+Only the geometry is stored. How far the arrows sit from the clef is taste, and
+lives in the stylesheet, so retuning the look never means rebuilding 150 songs.
 """
 import argparse
 import json
@@ -30,9 +29,9 @@ FIELDS = ('x', 'y', 'w', 'h')
 REFERENCE = 'staffref'
 
 # Landmarks that stay usable with no width, because nothing is positioned
-# against their horizontal centre. The final bar line is wanted for where the
-# music ends vertically; the arrows, which do need a width, are on the key
-# signature.
+# against their horizontal extent. The final bar line is wanted for where the
+# music ends vertically; the clef, which the arrows take a left edge and a width
+# from, does need one.
 ZERO_WIDTH_OK = frozenset({'lastbar'})
 
 # How much of the image's width a row must be dark across to count as a staff
@@ -195,7 +194,7 @@ def anchor(found, image_for_book):
             if measured is not None:
                 shift = measured - ref['y']
                 # Only landmarks on the first system share this error.
-                for what in ('keysig',):
+                for what in ('keysig', 'clef'):
                     if what in marks:
                         marks[what]['y'] = round(marks[what]['y'] + shift, 5)
         if 'lastbar' in marks:

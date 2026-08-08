@@ -182,36 +182,52 @@ input[type="radio"]:checked + .variant-chip {
     min-width: 18px;
     text-align: center;
 }
-/* Anchored layout: the arrows straddle the key signature they act on.
-   renderScore() sets --key-x/--key-y/--key-w/--key-h from the build-time
-   coordinates and adds .keyed; when the current book has no signature the
-   class is absent and everything above still applies.
+/* Anchored layout: the arrows straddle the opening clef, immediately left of
+   the key signature they act on. renderScore() sets --key-x/--key-w/--key-h/
+   --key-y-px from the build-time coordinates and adds .keyed; without a
+   landmark the class is absent and everything above still applies.
+
+   The clef, not the signature, because the signature is not a stable box: its
+   width runs six times over across one book's transpositions as accidentals
+   come and go, so a control placed against it moved every time the pitch
+   changed and sat differently on every song. The clef is the same box in all
+   five, and is printed even in C major where there is no signature at all.
 
    The percentages are fractions of the *image*, which is why this is hung on
    #music-frame - it is the image's positioning context, and #score-controls
    is already absolute within it. */
 /* --- The knobs ------------------------------------------------------------
-   Everything the build stores is objective: where the key signature's ink sits
-   in the engraving. How the arrows are placed against it is taste, and lives
-   here, so retuning the look is a stylesheet edit - no re-extraction, no
-   rebuild, no touching 150 songs' data.
+   Everything the build stores is objective: where the clef's ink sits in the
+   engraving. How the arrows are placed against it is taste, and lives here, so
+   retuning the look is a stylesheet edit - no re-extraction, no rebuild, no
+   touching 150 songs' data.
 
-   --arrow-gap    clearance between the signature's ink and the nearer edge of
-                  each arrow. Expressed in --key-h (the ink's own height) so it
+   --arrow-gap    clearance between the clef's ink and the nearer edge of each
+                  arrow. Expressed in --key-h (the ink's own height) so it
                   tracks the engraving's scale rather than fighting it; add a
-                  px term for a floor at small sizes.
-   --arrow-shift  moves the whole pair up (negative) or down. Key signatures
-                  sit high on the staff, so a small negative value centres the
-                  pair on the ink rather than on the staff.
+                  px term for a floor at small sizes. A treble clef is about
+                  two and a half times the height of a one-flat signature, so
+                  this is a fraction of it where the signature took a whole
+                  one.
+   --arrow-shift  moves the whole pair up (negative) or down. The clef is
+                  centred on the staff it sits on, so unlike the signature it
+                  needs no correction by default.
    -------------------------------------------------------------------------- */
 #music-frame.keyed {
-    --arrow-gap: calc(var(--key-h) + 3px);
+    --arrow-gap: calc(var(--key-h) * 0.4 + 3px);
     --arrow-shift: 0px;
 }
 #music-frame.keyed #score-controls {
-    /* Centred on the signature horizontally; the stack's own height is what
-       puts one arrow above the staff and one below. --key-y-px is measured
-       from the image in JS, so it already carries any crop offset. */
+    /* Centred on the clef, directly above and below it, so the control lands
+       in the same place whatever the signature beside it is doing; the stack's
+       own height is what puts one arrow above the staff and one below.
+       --key-y-px is measured from the image in JS, so it already carries any
+       crop offset.
+
+       Centred rather than left-aligned on the clef's edge because a phone has
+       no margin to spare: the crop takes the paper margin, and hanging a fixed
+       20px button off a ~24px clef put it on the first lyric syllable or off
+       the image entirely. Over the clef it clears the words at every width. */
     left: calc(var(--key-x) + var(--key-w) / 2);
     top: calc(var(--key-y-px) + var(--key-h) / 2 + var(--arrow-shift));
     transform: translate(-50%, -50%);
@@ -235,11 +251,11 @@ input[type="radio"]:checked + .variant-chip {
     background-color: #F7F7F0;
     border-color: #bbb;
 }
-/* Push each arrow clear of the signature's ink, by --arrow-gap above. The
-   button is a fixed 20px - already the floor for a touch target - while the
-   engraving scales with the viewport, so on a phone the button is nearly twice
-   the height of the signature it points at. The default gap is a full ink
-   height, which keeps the arrowheads off the staff at every size. */
+/* Push each arrow clear of the clef's ink, by --arrow-gap above. The button is
+   a fixed 20px - already the floor for a touch target - while the engraving
+   scales with the viewport, so on a phone the button can outgrow the ink it
+   points at. The gap is a fraction of the ink's own height, which keeps the
+   arrowheads off the staff at every size. */
 #music-frame.keyed #transpose-up {
     margin-bottom: var(--arrow-gap);
 }
@@ -257,10 +273,10 @@ input[type="radio"]:checked + .variant-chip {
     display: inline-block;
     transform: rotate(-90deg);
 }
-/* The readout would sit over the signature and the time signature next to it,
-   so in this layout it is dropped: .transposed already tints the buttons, and
-   the printed key is right there to read. Kept in the DOM and announced, so
-   the live region still tells a screen reader the pitch moved. */
+/* The readout would sit over the clef and the signature beside it, so in this
+   layout it is dropped: .transposed already tints the buttons, and the printed
+   key is right there to read. Kept in the DOM and announced, so the live
+   region still tells a screen reader the pitch moved. */
 #music-frame.keyed #transpose-readout {
     position: absolute;
     width: 1px;
@@ -980,11 +996,19 @@ header ul {
        --key-w are fractions of the whole engraving, but here the visible image
        is a slice of it: the paper margin is clipped away and what remains is
        widened by --zoom. Without this the arrows sit a margin's width to the
-       right of the key signature - about 16px on a phone, which is more than
-       the signature itself. The wide layout crops nothing and needs no
-       correction, so this lives inside the narrow media query. */
+       right of the clef - about 16px on a phone, which is most of the clef
+       itself. The wide layout crops nothing and needs no correction, so this
+       lives inside the narrow media query.
+
+       Nothing else here is narrow-specific: the arrows centre on the clef at
+       every width. Anchoring them to its left edge instead was tried and needs
+       margin the phone does not have - the crop takes the paper margin, and a
+       fixed 20px button hung off a ~24px clef lands on the first lyric
+       syllable, which starts about a quarter of a staff below the clef with
+       four more verses stacked under it. */
     #music-frame.keyed #score-controls {
-        left: calc((var(--key-x) + var(--key-w) / 2 - 100% * var(--crop)) * var(--zoom));
+        left: calc((var(--key-x) + var(--key-w) / 2 - 100% * var(--crop))
+                   * var(--zoom));
     }
     /* Phone screens are short: 30px of dead space above the back link, plus
        the chips' own padding, cost most of a staff before the score starts. */

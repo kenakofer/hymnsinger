@@ -51,23 +51,27 @@
     // moves between books: the shape-note books set a larger staff, and each
     // transposition has its own number of accidentals.
     //
+    //   LANDMARKS["trad"].clef     the opening clef
     //   LANDMARKS["trad"].keysig   the first key signature
     //   LANDMARKS["trad"].lastbar  the final bar line of the last system
     //
-    // Either may be missing: a song in C major has no key signature to print.
-    // The transpose control falls back to its old spot in the corner when
-    // keysig is absent.
+    // The arrows hang on the clef rather than on the key signature they change.
+    // The signature was the obvious anchor and it moved: its width runs from
+    // 0.008 to 0.046 of the page across one book's five transpositions - six
+    // times over - so a control centred on it slid sideways every time the
+    // pitch changed, and sat differently on every song. The clef is the same
+    // box in every transposition of a book, is always printed where a song in
+    // C major has no signature at all, and is immediately left of the
+    // signature, so it points at the same place without the drift.
     //
-    // Clairnote does report one, despite drawing its own notation rather than
-    // accidentals, so it is anchored like any other book. The arrows still do
-    // not follow it - that is the transpose control being hidden on the books
-    // that have no transposed engravings, not a missing landmark.
+    // Any of the three may be missing, and the control falls back to its old
+    // spot in the corner when clef is.
     var LANDMARKS = {{ site.data.songs[page.song_file].landmarks | jsonify }};
 
-    // The key signature box for a given engraving, or null.
-    function keysigFor(suffix) {
+    // The box the transpose arrows anchor to for a given engraving, or null.
+    function anchorFor(suffix) {
         var book = LANDMARKS ? LANDMARKS[suffix] : null;
-        return (book && book.keysig) ? book.keysig : null;
+        return (book && book.clef) ? book.clef : null;
     }
 
     // A one-line gloss per notation, shown beside the back link. Kept to ~35
@@ -119,7 +123,7 @@
         return book + TRANSPOSE_SUFFIX[String(steps)];
     }
 
-    // The signature's height in real pixels. Kept apart from renderScore so a
+    // The anchor box's height in real pixels. Kept apart from renderScore so a
     // resize can refresh it without reloading the image, and so the value can
     // be recomputed once the PNG has actually decoded - before that the frame
     // has no height to take a fraction of.
@@ -143,7 +147,7 @@
     // way as renderScore: no anchoring on books that cannot transpose.
     function refreshKeyHeight() {
         if (!bookSupportsTranspose(currentBook())) return;
-        var box = keysigFor(currentSuffix());
+        var box = anchorFor(currentSuffix());
         if (box) setKeyHeight(box);
     }
 
@@ -173,23 +177,24 @@
             if (url) noteLink.href = url;
         }
 
-        // Anchor the transpose arrows to this book's key signature. Keyed on
-        // the file suffix rather than the book, so each transposition gets its
-        // own box - the accidentals change with the key.
+        // Anchor the transpose arrows to this book's opening clef. Still keyed
+        // on the file suffix rather than the book: the clef's box is the same
+        // in every transposition, but not between books, which set different
+        // staff sizes.
         var frame = document.getElementById("music-frame");
         if (frame) {
             // Only when the control is actually on screen. The shape-note and
-            // Clairnote books print a key signature but are not transposable,
-            // so the control is hidden there - anchoring it anyway would leave
+            // Clairnote books print a clef but are not transposable, so the
+            // control is hidden there - anchoring it anyway would leave
             // #score-controls positioned over the staff for the frets row,
             // which still lives in it and is not about pitch.
-            var box = supported ? keysigFor(suffix) : null;
+            var box = supported ? anchorFor(suffix) : null;
             if (box) {
                 // x/w stay percentages, which resolve against the frame's
                 // width and so track the image as it scales. The height must
                 // be pixels: a percentage margin resolves against the
                 // *width* too, which silently collapses the gap to a couple
-                // of pixels and drops both arrows onto the signature.
+                // of pixels and drops both arrows onto the clef.
                 frame.style.setProperty("--key-x", (box.x * 100) + "%");
                 frame.style.setProperty("--key-w", (box.w * 100) + "%");
                 // Sets --key-h and --key-y-px, both in pixels.

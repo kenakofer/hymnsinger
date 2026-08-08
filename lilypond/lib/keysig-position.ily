@@ -1,6 +1,7 @@
 %% Reports landmark positions in each engraving, for the song pages to hang UI
-%% on: the first key signature (the transpose arrows point at it) and the end
-%% of the last system (autoscroll needs to know where the music stops).
+%% on: the first clef (the transpose arrows sit on it), the first key signature,
+%% and the end of the last system (autoscroll needs to know where the music
+%% stops).
 %%
 %% Runs inside the ordinary PDF/PNG pass. The obvious alternative - render SVG
 %% and read the coordinates out of it - costs more than twice the build again:
@@ -13,6 +14,7 @@
 %% Not stdout: the build runs LilyPond with -s, which suppresses ly:message
 %% entirely. One line per book per landmark,
 %%
+%%   <book> clef <x> <y> <w> <h>
 %%   <book> keysig <x> <y> <w> <h>
 %%   <book> lastbar <x> <y> <w> <h>
 %%
@@ -36,6 +38,7 @@
 %% regardless, so declaring buys nothing and would have to be guarded against
 %% running twice.
 
+#(define ht:clef #f)
 #(define ht:keysig #f)
 #(define ht:staff #f)
 #(define ht:bars '())
@@ -67,6 +70,17 @@
             (pair? (ly:grob-property grob 'alteration-alist))
             (not (grob::has-interface grob 'key-cancellation-interface)))
        (set! ht:keysig grob))
+   '())
+
+%% The clef is what the arrows hang on: unlike the key signature it is the same
+%% box in every transposition of a book, so the control does not shuffle
+%% sideways as accidentals come and go.
+%%
+%% First one wins, and it is on the first system by construction. The mid-line
+%% clefs a piece may change to are drawn smaller and are not what is wanted.
+#(define (ht:grab-clef grob)
+   (if (and (ht:on?) (not ht:clef))
+       (set! ht:clef grob))
    '())
 
 #(define (ht:grab-staff grob)
@@ -181,6 +195,16 @@
                 (sys-y (if (pair? conf) (car conf) 0)))
            (ht:emit port book "keysig"
                     (ht:ink-box ht:keysig sys layout sys-y) pw ph 0)))
+     ;; The clef, on the same system and so sharing the same correctable error.
+     ;; Reported for every book including the ones the arrows never appear on:
+     ;; it costs a line, and which books are transposable is the page's business
+     ;; rather than the engraver's.
+     (if (and ht:clef ht:staff (pair? pages))
+         (let* ((sys (ly:grob-system ht:staff))
+                (conf (ly:prob-property (car pages) 'configuration))
+                (sys-y (if (pair? conf) (car conf) 0)))
+           (ht:emit port book "clef"
+                    (ht:ink-box ht:clef sys layout sys-y) pw ph 0)))
      ;; The last bar line. Each system has its own placement offset within its
      ;; page, so every candidate is resolved against the page it actually sits
      ;; on before they are compared - otherwise a two-page score measures the
@@ -222,6 +246,7 @@
            (ht:report layout pages book))
        ;; Cleared so the next book starts empty rather than reporting this
        ;; book's numbers for all nine.
+       (set! ht:clef #f)
        (set! ht:keysig #f)
        (set! ht:staff #f)
        (set! ht:bars '()))))
