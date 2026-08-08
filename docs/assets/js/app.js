@@ -107,6 +107,9 @@ var play = function() {
 var pause = function() {
 	Player.pause();
 	syncPlayButtons('Play');
+	// The follow runs off its own clock between note events, so without this
+	// it carries on scrolling against a song that has stopped.
+	if (typeof scrollFollowStop == 'function') scrollFollowStop();
 }
 
 var stop = function() {
@@ -117,6 +120,10 @@ var stop = function() {
 	if (bar) bar.style.width = '2%';
 	syncPlayButtons('Play');
 	syncStopButtons(true);
+	// The playhead is back at the start, so the page should be too - otherwise
+	// pressing stop leaves the view halfway down a song that is no longer
+	// playing there.
+	if (typeof scrollFollowToStart == 'function') scrollFollowToStart();
 }
 var channel_to_velocity = {
     1: 200,
@@ -152,6 +159,30 @@ Soundfont.instrument(ac, 'https://raw.githubusercontent.com/gleitz/midi-js-sound
 			document.getElementById('tempo-display').innerHTML = Player.tempo + ' BPM';
 			var done = 100 - (.98 * Player.getSongPercentRemaining());
 			var pct = done + '%';
+			// Follow the music, when asked to.
+			//
+			// Position comes from the tick counter, not from the seconds
+			// helpers: getSongTimeRemaining rounds to whole seconds, so the
+			// fraction it implies only moves in one-second quanta, and the
+			// rounding goes up as often as down. Feeding that to the follower
+			// made it lurch back and forth by half a second's worth of page on
+			// every note. Ticks are exact.
+			if (typeof scrollFollowProgress == 'function') {
+				var totalTicks = Player.totalTicks;
+				var doneTicks = Player.getCurrentTick();
+				var totalSecs = Player.getSongTime();
+				// Whole seconds are precise enough to decide "about to loop",
+				// which is all this is used for.
+				var leftSecs = Player.getSongTimeRemaining();
+				if (totalTicks > 0 && totalSecs > 0)
+					scrollFollowProgress(doneTicks / totalTicks,
+					                     totalSecs * (1 - doneTicks / totalTicks));
+				// Loop restarts only once the song has ended, so the trip back
+				// to the top has to be started before that or it lands after
+				// the repeat's first note.
+				if (document.getElementById('loop-checkbox').checked)
+					scrollFollowLoopAhead(leftSecs);
+			}
 			// One transport on both layouts: the sheet head, which is
 			// the phone's peeking dock and the desktop sidebar's top row.
 			var bar = document.getElementById('sheet-bar');

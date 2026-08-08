@@ -397,6 +397,272 @@
         });
     });
 
+    // --- Scroll follow ------------------------------------------------------
+    // Keeps the playhead's rough place in the music on screen while it plays.
+    //
+    // The music is one tall image, so there is no per-note position to follow -
+    // what there is, is where the last bar line sits, measured at build time.
+    // Between the top of the image and that point the song advances more or
+    // less evenly, so the played fraction maps onto that span directly. It
+    // drifts against a rubato or a long fermata; the aim is that the current
+    // system is on screen, not that a cursor is on the beat.
+    //
+    // The MIDI player only reports progress on note events, which at a slow
+    // tempo is a few times a second - and not at all through a held chord.
+    // Position is therefore extrapolated between events; see
+    // scrollFollowProgress.
+    var scrollRaf = 0;
+
+    function scrollFollowOn() {
+        var box = document.getElementById("scroll-checkbox");
+        return !!(box && box.checked);
+    }
+
+    // How far down the page the music's last bar line is, in document
+    // coordinates, and where the music starts. Recomputed per frame rather
+    // than cached: the drawer opening, a resize, or a notation change all move
+    // it, and it is two getBoundingClientRect calls.
+    // The first and last musical ink, in document coordinates.
+    //
+    // Both ends are landmarks measured at build time, not the image's edges:
+    // the top of the file is paper margin and title block, which is not where
+    // the music starts and differs per book.
+    function musicSpan() {
+        var img = document.getElementById("music-image");
+        if (!img) return null;
+        var rect = img.getBoundingClientRect();
+        if (!rect.height) return null;
+        var top = rect.top + window.pageYOffset;
+        var marks = LANDMARKS ? LANDMARKS[currentSuffix()] : null;
+        var first = marks && marks.keysig;
+        var last = marks && marks.lastbar;
+        // The key signature is on the first system, so its top is the first
+        // ink. Where it is missing - a song in C major prints none - the
+        // image's own top is the fallback, which starts the follow a title
+        // block early rather than not at all.
+        var startFrac = first ? first.y : 0;
+        // Without a measured end, the image's bottom overshoots by the footer,
+        // which costs a little accuracy rather than breaking the follow.
+        var endFrac = last ? (last.y + last.h) : 1;
+        return {start: top + startFrac * rect.height,
+                end: top + endFrac * rect.height,
+                top: top, height: rect.height};
+    }
+
+    // Where the page should sit for a given fraction of the song.
+    //
+    // The music travels at a constant rate from the top of the score to the
+    // last bar line, and the page follows it at that rate. Nothing here tries
+    // to put the sung line at a particular place on the screen.
+    //
+    // That was the previous design and it could not work. Holding the line at
+    // a fixed fraction of the viewport means the useful thing - how much music
+    // is visible *below* the note being sung - depends entirely on how tall
+    // the screen is. On a short landscape phone, 55% of the viewport is barely
+    // 200px of lead, so the reading position was correct by the numbers and
+    // still too late to read from. Every attempt to fix it by moving that
+    // fraction traded one screen shape for another.
+    //
+    // A constant rate plus a user-owned offset does work: the machine keeps
+    // the pace, which is the part it can measure, and the reader chooses the
+    // offset, which is the part only they can judge. Scrolling by hand does
+    // not fight the follow any more - it shifts it, and the shift is kept.
+    // Where the follow starts before anyone touches it. Negative scrolls less,
+    // which puts the played ink lower on the screen and leaves the music that
+    // is coming above the fold. At zero the sung note sits hard against the
+    // top edge with nothing visible ahead of it, which is too high to read
+    // from. This is a starting point, not a policy: one drag replaces it, and
+    // the drag is what survives for the rest of the song.
+    var SCROLL_INITIAL_OFFSET = -220;
+    var scrollUserOffset = SCROLL_INITIAL_OFFSET;
+
+    // Unclamped: the clamping belongs at the point of scrolling, not here -
+    // comparing a clamped position against an unclamped projection is what
+    // made the follow oscillate, since every event near an edge reported the
+    // clamped value while the projection had legitimately moved on.
+    // Where the page should sit when the song is `fraction` through.
+    //
+    // The played ink is at start + fraction * (end - start); putting it at the
+    // top of the window means scrolling to exactly that, and the reader's
+    // offset - a plain pixel displacement - moves it from there to wherever
+    // they want to read.
+    //
+    // Nothing here refers to the height of the window. Every version that did
+    // was wrong in a way that depended on the screen: holding the line at a
+    // fraction of the viewport gave a short landscape phone almost no music to
+    // read ahead into, and subtracting a screenful from the travel made the
+    // whole thing run 73% fast on a tall screen and 31% on a short one. The
+    // song's pace is a property of the song, so the only screen-dependent term
+    // belongs to the reader.
+    function scrollYForRaw(fraction) {
+        var span = musicSpan();
+        if (!span) return null;
+        return span.start + fraction * (span.end - span.start) + scrollUserOffset;
+    }
+
+    function scrollClamp(y) {
+        var max = document.documentElement.scrollHeight - window.innerHeight;
+        return Math.max(0, Math.min(max, y));
+    }
+
+    // Where the page should actually sit for a given fraction.
+    function scrollYFor(fraction) {
+        var y = scrollYForRaw(fraction);
+        return y === null ? null : scrollClamp(y);
+    }
+
+    // Called from the player's event callback. The events are the only word we
+    // get on where the song is, but they arrive on notes - a few times a second
+    // at best, and not at all through a long held chord.
+    //
+    // So the events set a *rate*, not a position: each one says where the song
+    // was and when, and the frame loop carries on from there at the speed the
+    // song is going. Easing toward each event's position instead is what made
+    // this step - the ease converges, the loop ends, and the next note starts
+    // it again, so every note is one small glide with a stop at the end of it.
+    var scrollAnchorY = null;     // page y at the last event
+    var scrollAnchorAt = 0;       // when that event arrived
+    var scrollRate = 0;           // page px per ms, from the song's own pace
+
+    function scrollFollowProgress(fraction, secondsLeft) {
+        if (!scrollFollowOn()) return;
+        // Raw throughout: see scrollYForRaw. The anchor tracks the song, which
+        // carries on past both ends of what the page can show.
+        var y = scrollYForRaw(fraction);
+        if (y === null) return;
+        var now = performance.now();
+        // How fast the page has to move to cover what is left in the time that
+        // is left. Derived per event rather than once, so a tempo change is
+        // picked up without any special handling.
+        var msLeft = secondsLeft * 1000;
+        var end = scrollYForRaw(1);
+        scrollRate = (msLeft > 250 && end !== null && end > y)
+            ? (end - y) / msLeft
+            : 0;
+        // A jump means a seek or a loop restart, not the song creeping on.
+        var jump = (scrollAnchorY === null ||
+                    Math.abs(y - scrollProjected(now)) > window.innerHeight * 1.5);
+        scrollAnchorY = jump ? y : scrollProjected(now);
+        // Nudge the anchor toward where the event says we are, so small
+        // disagreements are absorbed over the next second rather than snapped.
+        if (!jump) scrollAnchorY += (y - scrollAnchorY) * 0.25;
+        scrollAnchorAt = now;
+        if (!scrollRaf) scrollRaf = requestAnimationFrame(scrollStep);
+    }
+
+    // Where the song should be right now, extrapolated from the last event.
+    function scrollProjected(now) {
+        if (scrollAnchorY === null) return window.pageYOffset;
+        return scrollAnchorY + scrollRate * (now - scrollAnchorAt);
+    }
+
+    // What this loop last told the page to do. Anything the page has done
+    // since that does not match is the reader scrolling, and becomes their
+    // offset. Catching it here rather than in the wheel handler is the only
+    // way that works: this runs every frame and scrolls every frame, so a
+    // user's scroll is overwritten before any later callback could measure it.
+    var scrollLastCommanded = null;
+    function scrollStep() {
+        scrollRaf = 0;
+        if (!scrollFollowOn() || scrollAnchorY === null) return;
+        // Never scroll a song that is not playing. The pause button routes
+        // through app.js's pause(), which stops the follow directly, but that
+        // is not the only way playback can halt - the tempo control pauses and
+        // resumes the player itself, and a stall or an ended song leaves this
+        // loop with a perfectly good rate and nothing to follow. Asking the
+        // player on every frame is the reliable answer rather than trying to
+        // hook every route into it.
+        if (window.Player && Player.isPlaying && !Player.isPlaying()) {
+            scrollLastCommanded = null;   // resume must not read this as a nudge
+            return;
+        }
+        var now = performance.now();
+        if (scrollLastCommanded !== null) {
+            var drift = window.pageYOffset - scrollLastCommanded;
+            // A pixel of slack for rounding and for the browser's own
+            // sub-pixel scrolling; a real nudge is far larger.
+            if (Math.abs(drift) > 1) {
+                scrollUserOffset += drift;
+                scrollAnchorY += drift;
+            }
+        }
+        // The one place the projection meets the page's real limits.
+        var y = Math.round(scrollClamp(scrollProjected(now)));
+        window.scrollTo(0, y);
+        scrollLastCommanded = y;
+        // Keep running while the song is playing: there is no "arrived" to
+        // stop at any more, which is the whole point.
+        scrollRaf = requestAnimationFrame(scrollStep);
+    }
+
+    function scrollFollowStop() {
+        if (scrollRaf) { cancelAnimationFrame(scrollRaf); scrollRaf = 0; }
+        scrollAnchorY = null;
+        scrollRate = 0;
+        // Forget what was commanded, so the next deliberate jump - a loop
+        // restart, the stop button - is not read back as the reader nudging.
+        scrollLastCommanded = null;
+    }
+
+    // Loop restarts at the end, by which time the last system has been on
+    // screen for a moment and the top is a page away. Going back early means
+    // the first system is in place before the first note of the repeat, so the
+    // jump lands in the gap between the two rather than over the downbeat.
+    var SCROLL_LOOP_LEAD = 1.0;   // seconds
+    function scrollFollowLoopAhead(secondsLeft) {
+        if (!scrollFollowOn()) return;
+        if (secondsLeft > SCROLL_LOOP_LEAD) return;
+        var y = scrollYFor(0);
+        if (y === null) return;
+        // Re-anchor at the top and hold there: the repeat's first note will
+        // set the rate going again.
+        scrollAnchorY = y;
+        scrollAnchorAt = performance.now();
+        scrollRate = 0;
+        window.scrollTo(0, Math.round(y));
+        scrollLastCommanded = Math.round(y);
+    }
+
+    // Back to the top of the music, for the stop button. Snaps rather than
+    // glides: the playhead is already back at the start, so a slow trip up the
+    // page would be showing a position nothing is playing at any more.
+    function scrollFollowToStart() {
+        if (!scrollFollowOn()) return;
+        var y = scrollYFor(0);
+        if (y === null) return;
+        scrollFollowStop();
+        window.scrollTo(0, Math.round(y));
+        // After the stop, not before: scrollFollowStop clears the baseline,
+        // so setting it first would leave the next frame reading this jump
+        // back as the reader having scrolled. The offset itself is kept - it
+        // is the reader's, and stop is not a request to forget it.
+        scrollLastCommanded = Math.round(y);
+    }
+
+    // A scroll by hand adjusts the follow rather than interrupting it: however
+    // far the reader moves the page, that much is added to the offset and kept
+    // for the rest of the song. Drag the music to where you want to read it
+    // and the follow carries on from there at the same pace.
+    //
+    // This replaces a four-second suspend that threw the anchor away. That
+    // made the offset impossible to set: the correction was wiped by the next
+    // note, so the only way to read ahead was to keep scrolling.
+    // No input listeners: scrollStep compares the page against what it last
+    // commanded, which catches every way a reader can move it - wheel, touch,
+    // keys, a scrollbar drag, find-in-page - without having to enumerate them.
+
+    // Ticking the box mid-song should catch up rather than wait for the next
+    // note; unticking it should stop moving the page at once.
+    function scrollFollowChanged() {
+        scrollFollowStop();
+        if (!scrollFollowOn()) return;
+        if (window.Player && Player.isPlaying && Player.isPlaying()) {
+            var total = Player.getSongTime();
+            var left = Player.getSongTimeRemaining();
+            if (total > 0) scrollFollowProgress(1 - (left / total), left);
+        }
+    }
+
     window.addEventListener("keydown", function (e) {
         if (e.key == "Escape" && drawerIsOpen()) closeDrawer();
     });
@@ -428,9 +694,18 @@
             <div id="sheet-bar-background" onclick="seekFromSheet(event);">
                 <div id="sheet-bar"></div>
             </div>
-            <label id="sheet-loop" title="Loop">
-              <input type="checkbox" id="loop-checkbox"> Loop
-            </label>
+            <!-- Stacked, not a third item in the row: the transport is already
+                 tight on a phone, and these two are the same kind of thing -
+                 switches that change what happens as the song plays. -->
+            <div id="sheet-toggles">
+              <label id="sheet-loop" title="Loop">
+                <input type="checkbox" id="loop-checkbox"> Loop
+              </label>
+              <label id="sheet-scroll" title="Follow the music while it plays">
+                <input type="checkbox" id="scroll-checkbox"
+                       onchange="scrollFollowChanged();"> Scroll
+              </label>
+            </div>
             <button type="button" id="drawer-handle" class="dock-icon" onclick="toggleDrawer();"
                     aria-expanded="false" aria-controls="song-controls"
                     title="Settings, downloads, lyrics" aria-label="Open controls">&#9776;</button>

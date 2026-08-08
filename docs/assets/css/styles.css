@@ -859,12 +859,26 @@ header ul {
         background: #c33333;
         border-radius: 3px;
     }
-    #sheet-loop {
+    /* Loop and Scroll stack in the slot Loop used to hold alone. Stacking
+       rather than extending the row keeps the progress bar its width - a third
+       item inline costs it about a third on a narrow phone. */
+    #sheet-toggles {
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2px;
+    }
+    #sheet-loop,
+    #sheet-scroll {
         flex: 0 0 auto;
         display: inline-flex;
         align-items: center;
         gap: 4px;
-        min-height: 44px;
+        /* Halved from the 44px this had when it was a lone control: two of
+           them stacked still clear the touch target together, and full height
+           each would make the dock taller than the play button. */
+        min-height: 22px;
         /* Beats the generic `label` rule's border and padding, which framed
            this in a box the size of the buttons beside it. */
         border: none;
@@ -873,7 +887,8 @@ header ul {
         font-size: 12px;
         cursor: pointer;
     }
-    #sheet-loop input {
+    #sheet-loop input,
+    #sheet-scroll input {
         width: 18px;
         height: 18px;
         margin: 0;
@@ -1066,19 +1081,29 @@ header ul {
         background: #c33333;
         border-radius: 3px;
     }
-    #sheet-loop {
+    /* Same stack as the narrow dock; see the note there. */
+    #sheet-toggles {
+        flex: 0 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2px;
+    }
+    #sheet-loop,
+    #sheet-scroll {
         flex: 0 0 auto;
         display: inline-flex;
         align-items: center;
         gap: 5px;
-        min-height: 36px;
+        min-height: 18px;
         border: none;
         padding: 0;
         color: #f7f7ee;
         font-size: 12px;
         cursor: pointer;
     }
-    #sheet-loop input {
+    #sheet-loop input,
+    #sheet-scroll input {
         width: 18px;
         height: 18px;
         margin: 0;
