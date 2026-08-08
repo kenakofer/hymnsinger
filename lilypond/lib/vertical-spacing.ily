@@ -100,6 +100,15 @@ lyricsCentered =
 %% partly ignored.
 %%
 %% Goes in soprano only, like \break itself: these are Score-level.
+%%
+%% Reach for this LAST. It pins a fixed distance, which takes away the
+%% compression LilyPond uses to fit a page, so on a page that is anywhere near
+%% full it tends to force a second one -- and it does that even when there is
+%% obvious free space, which makes the extra page look like a bug somewhere
+%% else. On angels every value tried (14, 16, 18, alone and combined with a
+%% tighter \systemSpacing) spilled to two pages, while the flexible \layout
+%% helpers above got the same widening on one. Use those unless one system
+%% genuinely has to differ from its neighbours.
 systemGaps =
 #(define-music-function (dists) (list?)
    #{ \once \override Score.NonMusicalPaperColumn.line-break-system-details =
