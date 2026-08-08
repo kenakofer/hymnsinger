@@ -25,3 +25,13 @@ __pycache__/
 .convert-queue/
 .song-intake/
 .hymnal-index.json
+
+# The build cache's "this song is current" stamps. Each holds a fingerprint of
+# one song's inputs and answers a question only this machine can ask - whether
+# the outputs sitting in this working tree need re-engraving. Nothing on the
+# site reads them, and a stamp from another checkout is meaningless.
+#
+# Ignored because they were not, and drifted in and out of the branch for it:
+# a `git add` over the outputs directory picks them up, so past "Republish all"
+# commits added all 150 and later ones deleted them again.
+docs/local-lilypond-outputs/*.inputhash
