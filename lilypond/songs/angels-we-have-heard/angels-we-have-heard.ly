@@ -82,6 +82,9 @@ verseD = \lyricmode {
 \include "../../lib/4verse.ily"
 
 %% All sheet music outputs
+%% The systems sat loosely stacked with the page still two-thirds full; this
+%% closes the gaps between them without touching anything inside a system.
+\paper { \systemSpacing #8 }
 clairStaffZoom = #.9
 \include "../../lib/all-notation-outputs.ily"
 % Slides output

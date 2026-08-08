@@ -26,9 +26,15 @@
 %% built on: they shift glyphs with extra-offset, which moves the ink without
 %% telling the spacing engine anything, so the reserved space stays put.
 %%
-%% Nothing here is a floor at zero. Negative values overlap staves outright,
-%% which is occasionally what a cramped system wants and is never what you
-%% want by accident.
+%% Zero behaves as a floor in practice. Padding is enforced between the inked
+%% outlines and these helpers pin it at 0, so a negative distance buys nothing
+%% -- the gap stops where the outlines touch. Going past that would mean
+%% negative padding too, which is deliberately not offered: overlapping ink is
+%% never what a hymn page wants.
+%%
+%% These control the space INSIDE a system. The space BETWEEN systems -- below
+%% one system's bass staff and above the next system's treble -- is a \paper
+%% property, not a context one; see \systemSpacing at the bottom of this file.
 
 %% Distance to the next staff DOWN. Belongs on the upper staff of the pair.
 staffGap =
@@ -98,6 +104,33 @@ systemGaps =
 #(define-music-function (dists) (list?)
    #{ \once \override Score.NonMusicalPaperColumn.line-break-system-details =
         #`((alignment-distances . ,dists)) #})
+
+%% Space BETWEEN systems: below one system's lowest staff, above the next
+%% system's highest. Goes in a \paper block, not \spacing_overrides:
+%%
+%%   \paper { \systemSpacing #8 }
+%%
+%% placed before the output includes, like \spacing_overrides.
+%%
+%% This is the one to reach for when a page looks loosely stacked. It is a
+%% different property from everything above -- \staffGap and friends only ever
+%% move staves within one system, and no value of them closes the gap between
+%% systems.
+%%
+%% Two things it will not do. It sets an upper bound, not the gap: anything
+%% hanging below a system (lyrics, a slur that dips under the bass staff) keeps
+%% its own clearance, so tightening past roughly 7 stops moving those gaps
+%% while the clean ones keep closing, and the spacing goes deliberately uneven.
+%% And it does not free vertical room for anything else -- it takes space off
+%% the page bottom, so a score that already fits keeps fitting and one that
+%% does not is not rescued by it.
+systemSpacing =
+#(define-scheme-function (dist) (number?)
+   #{ \paper {
+        system-system-spacing =
+          #`((basic-distance . ,dist) (minimum-distance . ,dist)
+             (padding . 0) (stretchability . 0))
+      } #})
 
 %% No default is defined for \spacing_overrides on purpose.
 %% all-notation-outputs.ily emits its \layout hook only when a song has set
