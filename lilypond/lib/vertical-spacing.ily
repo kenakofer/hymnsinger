@@ -117,13 +117,16 @@ systemGaps =
 %% move staves within one system, and no value of them closes the gap between
 %% systems.
 %%
-%% Two things it will not do. It sets an upper bound, not the gap: anything
-%% hanging below a system (lyrics, a slur that dips under the bass staff) keeps
-%% its own clearance, so tightening past roughly 7 stops moving those gaps
-%% while the clean ones keep closing, and the spacing goes deliberately uneven.
-%% And it does not free vertical room for anything else -- it takes space off
-%% the page bottom, so a score that already fits keeps fitting and one that
-%% does not is not rescued by it.
+%% It sets an upper bound, not the gap: anything hanging below a system
+%% (lyrics, a slur that dips under the bass staff) keeps its own clearance, so
+%% tightening past roughly 7 stops moving those gaps while the clean ones keep
+%% closing, and the spacing goes deliberately uneven.
+%%
+%% Tightening here does buy room the rest of the page can spend -- that is how
+%% angels affords its refrain margin. But the room only reaches things that are
+%% still free to move: a gap already pressed against its own contents will not
+%% grow just because the page has slack. Pair it with the \layout helpers above
+%% rather than expecting it to loosen anything by itself.
 systemSpacing =
 #(define-scheme-function (dist) (number?)
    #{ \paper {
