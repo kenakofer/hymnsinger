@@ -22,6 +22,12 @@
       { \removeWithTag #'(midionly slidesOnly) \bass }
       {}
       \shapeStaffZoom
+    #(let ((sp (ht-spacing-for "4shapenote")))
+       (if sp
+           (begin
+             (ly:parser-define! 'ht-this-book-spacing sp)
+             (ly:parser-include-string
+              "\\layout { $ht-this-book-spacing \\context { \\Score \\remove \"Bar_number_engraver\" } }"))))
   }
   \postscore_text
   \extra_verses

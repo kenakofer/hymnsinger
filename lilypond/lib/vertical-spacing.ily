@@ -132,6 +132,68 @@ systemSpacing =
              (padding . 0) (stretchability . 0))
       } #})
 
+%% Which books a set of overrides applies to.
+%%
+%% \spacing_overrides alone reaches every book in the song, which is usually
+%% what you want and is what most songs should keep using. When one book needs
+%% different treatment, name it in \spacing_overrides_by_book instead -- an
+%% alist keyed by the book's output suffix, the same names \-dht-books takes:
+%%
+%%   spacing_overrides = \layout {              %% all books ...
+%%     \context { \Lyrics \lyricGap #8 }
+%%   }
+%%   spacing_overrides_by_book = #`(            %% ... except these
+%%     ("slides" . #f)                          %% opts out entirely
+%%     ("clairnote" . ,#{ \layout {
+%%        \context { \Lyrics \lyricGap #4 } } #}))
+%%
+%% A book named here uses its own entry INSTEAD of \spacing_overrides, not in
+%% addition to it. #f is how a book opts out -- NOT \layout { }, which still
+%% emits a block and still perturbs the page for the reason spelled out in
+%% all-notation-outputs.ily.
+%%
+%% Opting out is the common case for the slides book, which prints one verse
+%% much larger and paginates a system per slide, and for the two shape-note
+%% books, which run at a bigger staff zoom and sit close to the page bottom
+%% already. Margin added for the notation books tends to cost those a page.
+%%
+%% Suffixes are the printed ones: "trad", "clairnote", "shapenote",
+%% "4shapenote", "lead", "roman", "uke", "guitar", "slides", and the
+%% transposed forms like "trad-up1". A name that matches no book is silently
+%% ignored, so a typo reads as the override not applying.
+#(define (ht-spacing-for suffix)
+   "The \\layout this book should use: its own entry if it has one, otherwise
+the song-wide \\spacing_overrides, otherwise #f.
+
+#f means emit no \\layout at all, which is not the same as emitting an empty
+one -- a \\layout holding only a substituted variable re-resolves \\Score from
+the built-in defaults and perturbs the page (see all-notation-outputs.ily).
+So a book opts out with #f, not with \\layout { }."
+   (let* ((by-book (if (defined? 'spacing_overrides_by_book)
+                       (ly:parser-lookup 'spacing_overrides_by_book)
+                       '()))
+          (hit (and (list? by-book) (assoc suffix by-book))))
+     (cond
+      (hit (cdr hit))
+      ((defined? 'spacing_overrides) (ly:parser-lookup 'spacing_overrides))
+      (else #f))))
+
+%% The same lookup, as a snippet to splice into the books that build their
+%% \score from a format string. Returns "" when the book has nothing to add,
+%% so it is always safe to interpolate.
+%%
+%% It stashes the value in a parser variable rather than returning the \layout
+%% itself: the books are re-parsed from strings, and a Scheme-local binding is
+%% not visible to that parse. The variable is per-book and read immediately, so
+%% the books cannot collide.
+#(define (ht-spacing-snippet suffix)
+   (let ((sp (ht-spacing-for suffix)))
+     (if sp
+         (begin
+           (ly:parser-define! 'ht-this-book-spacing sp)
+           "\\layout { $ht-this-book-spacing \\context { \\Score \\remove \"Bar_number_engraver\" } }")
+         "")))
+
 %% No default is defined for \spacing_overrides on purpose.
 %% all-notation-outputs.ily emits its \layout hook only when a song has set
 %% it, because substituting even an empty \layout variable perturbs the score

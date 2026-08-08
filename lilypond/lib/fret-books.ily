@@ -108,6 +108,7 @@ htChordMusic =
       #~a
       #'~a
       \\tradLeadSheetStaffZoom
+    ~a
   }
   \\postscore_text
   \\extra_verses
@@ -119,7 +120,8 @@ htChordMusic =
                (format #f "\\transpose \\htTransposeFrom \\hymnKey \\htTransposeTo \\hymnKey #~a"
                        shift))
            tuning
-           finger-code))
+           finger-code
+           (ht-spacing-snippet suffix)))
 
 %% NAME is the book's base output suffix ("uke"); the transposed ones append
 %% the same -up1/-up2/-dn1/-dn2 the trad books use, so the site's transpose

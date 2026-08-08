@@ -24,33 +24,27 @@
 %% valid. generate-all-outputs.sh tracks that with the .inputhash stamp, and
 %% deliberately does not write one after a partial build.
 
-%% Per-song vertical spacing, emitted only when the song set \spacing_overrides.
+%% Per-song vertical spacing is NOT emitted here.
 %%
-%% A top-level \layout merges into every \score, including the two books that
-%% declare a \layout of their own, so this one hook reaches all of them and no
-%% book file needs to know it exists.
+%% It used to be: one top-level \layout, applied before any book was included.
+%% That reached every book in the song at once, which made "all books" easy and
+%% "this book only" impossible -- and it leaked into the slides deck, so songs
+%% had to hand-restore the stock lyric alist before that include.
 %%
-%% It lives here rather than in hymn-common.ily because $ substitutes at parse
-%% time: hymn-common is included at the top of a song, before the song has said
-%% anything, so a hook there would only ever capture an empty default.
+%% Each book now asks for its own, at its own \score, via ht-spacing-for in
+%% vertical-spacing.ily. \spacing_overrides still means "every book"; naming a
+%% book in \spacing_overrides_by_book overrides it for that one, and #f opts it
+%% out. The Bar_number_engraver \remove that used to ride along with the global
+%% hook moved to the same place, so it applies wherever a \layout is emitted.
 %%
-%% The emit is conditional because substituting a \layout variable is not free
-%% even when that variable is empty. It re-resolves \Score from the built-in
-%% defaults, which undoes hymn-common.ily's \remove of Bar_number_engraver and
-%% nudges the lyric-alignment engraver enough to move leading syllables by a
-%% pixel. A bare \layout { } costs nothing; \layout { $empty } does. So for
-%% songs that set nothing the hook has to be absent rather than empty -- that
-%% is what keeps their output pixel-identical. The \remove is restated inside
-%% the hook (not in a default) because a song's own \spacing_overrides
-%% replaces the default wholesale and would otherwise lose it.
-%%
-%% The symptom, if this ever regresses: a measure number at the left of every
-%% system after the first. Those stick out past the staff, so the whole page's
-%% ink shifts LEFT by ~8px at 72dpi with nothing moving vertically, which
-%% reads as a margin bug rather than anything to do with spacing.
-#(if (defined? 'spacing_overrides)
-     (ly:parser-include-string
-      "\\layout { $spacing_overrides \\context { \\Score \\remove \"Bar_number_engraver\" } }"))
+%% One thing that has to stay true: a book with nothing to add must emit NO
+%% \layout, not an empty one. A \layout holding only a substituted variable
+%% re-resolves \Score from the built-in defaults, which undoes hymn-common's
+%% \remove of Bar_number_engraver and nudges lyric alignment by a pixel. The
+%% symptom is a measure number at the left of every system after the first;
+%% because those stick out past the staff, the whole page's ink shifts LEFT by
+%% ~8px at 72dpi with nothing moving vertically, which reads as a margin bug
+%% rather than a spacing one.
 
 #(define ht-book-selection
    (let ((opt (ly:get-option 'ht-books)))

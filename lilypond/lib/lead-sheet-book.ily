@@ -31,6 +31,7 @@
       { \\removeWithTag #'(midionly slidesOnly) \\soprano }
       \\songChords
       \\tradLeadSheetStaffZoom
+    ~a
   }
   \\postscore_text
   \\extra_verses
@@ -41,7 +42,8 @@
            (if (= shift 0)
                ""
                (format #f "\\transpose \\htTransposeFrom \\hymnKey \\htTransposeTo \\hymnKey #~a"
-                       shift))))
+                       shift))
+           (ht-spacing-snippet suffix)))
 
 #(for-each
   (lambda (spec)

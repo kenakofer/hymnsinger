@@ -1,4 +1,18 @@
 \bookOutputSuffix "slides"
+
+%% Per-song spacing, same hook the notation books use. It sits here rather than
+%% in each slides-book-Nverse.ily because this file is the one they all share,
+%% and it is inside the \book, so the \layout reaches every \bookpart.
+%%
+%% Most songs will want ("slides" . #f) in \spacing_overrides_by_book: a deck
+%% paginates one system per slide, so margin added for a printed page usually
+%% just costs a slide here.
+#(let ((sp (ht-spacing-for "slides")))
+   (if sp
+       (begin
+         (ly:parser-define! 'ht-this-book-spacing sp)
+         (ly:parser-include-string
+              "\\layout { $ht-this-book-spacing \\context { \\Score \\remove \"Bar_number_engraver\" } }"))))
 %% Make a landscape 16:9 aspect. We make the lyrics appear larger by making
 %% the paper size small, and choosing a small zoom later, so that lyrics are relatively larger
 #(set! paper-alist (cons '("my size" . (cons (* 7 in) (* 3.9375 in))) paper-alist))

@@ -29,11 +29,12 @@
       { \\removeWithTag #'(midionly slidesOnly) \\bass }
       \\songChords
       \\tradStaffZoom
+    ~a
   }
   \\postscore_text
   \\extra_verses
 }
-" suffix shift))
+" suffix shift (ht-spacing-snippet suffix)))
 
 #(for-each
   (lambda (spec)

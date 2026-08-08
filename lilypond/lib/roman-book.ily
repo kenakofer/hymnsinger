@@ -155,7 +155,7 @@ htRomanChordNames =
 %% lead sheet, which is why it calls \fillTradScore rather than
 %% \fillTradLeadSheetScore.
 #(define (ht-roman-book)
-   "
+   (format #f "
 \\book {
   \\prescore_text
   \\bookOutputSuffix \"roman\" \\score {
@@ -168,11 +168,13 @@ htRomanChordNames =
       { \\htRomanChordNames \\htRomanTonic \\hymnKey
           { \\htChordMusic \\chordSymbols \\songChords } }
       \\tradStaffZoom
+    ~a
   }
   \\postscore_text
   \\extra_verses
 }
-")
+"
+           (ht-spacing-snippet "roman")))
 
 %% Call from a bare top-level #(...), never from a music function - see the
 %% note on ht-fret-books for what goes wrong otherwise.
