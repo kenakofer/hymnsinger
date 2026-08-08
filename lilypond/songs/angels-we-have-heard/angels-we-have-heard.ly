@@ -81,12 +81,36 @@ verseD = \lyricmode {
 % Set up music-aligned verses. Change to the correct number
 \include "../../lib/4verse.ily"
 
+%% The Gloria refrain carries one lyric line where the verses carry four, and
+%% the alto/tenor slurs crowd it from both sides. This widens the margin around
+%% every lyric line, but only the refrain has room to use it -- the verse
+%% systems are already at their minimum, so they do not move.
+spacing_overrides = \layout {
+  \context { \Lyrics \lyricGap #8 \lyricGapFar #8 }
+}
+
 %% All sheet music outputs
 %% The systems sat loosely stacked with the page still two-thirds full; this
 %% closes the gaps between them without touching anything inside a system.
 \paper { \systemSpacing #8 }
 clairStaffZoom = #.9
 \include "../../lib/all-notation-outputs.ily"
+%% Put the lyric spacing back to LilyPond's stock values before the slides
+%% book. \spacing_overrides is a top-level \layout, so it reaches every book in
+%% this file, and the slides do not want it: they print one verse much larger
+%% and paginate a system per slide, so the extra margin buys nothing there and
+%% pushes the deck from 13 slides to 14.
+%%
+%% These are the built-in numbers, spelled out rather than approximated with
+%% \lyricGap -- the helper pins padding at 0 and stretchability at 0, so no
+%% scalar it accepts reproduces the stock alist, and picking one that merely
+%% restores the page count leaves the slides subtly re-spaced.
+\layout { \context { \Lyrics
+  \override VerticalAxisGroup.nonstaff-relatedstaff-spacing =
+    #'((basic-distance . 5.5) (minimum-distance . 2.5) (padding . 0.5) (stretchability . 1))
+  \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing =
+    #'((basic-distance . 5.5) (minimum-distance . 2.5) (padding . 0.5) (stretchability . 1)) } }
+
 % Slides output
 \include "../../lib/slides-book-4verse.ily"
 %% MIDI output
