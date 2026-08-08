@@ -1,10 +1,57 @@
 #!/bin/bash
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
+# Make the build killable as one thing.
+#
+# The work runs under `xargs -P`, which is a child of this script's pipeline
+# rather than a job of the shell. Kill this script alone and xargs is
+# reparented to init and carries on feeding new songs - and it does not match
+# `pkill -f generate-all-outputs.sh`, because that string is not in its command
+# line. Every worker you then kill is simply replaced. Twice now that has meant
+# a build that could not be stopped without hunting the orphan down by hand.
+#
+# Killing the whole process group fixes it, since xargs and every lilypond,
+# mogrify and convert it spawns are all in this script's group. Running in our
+# own group (setsid, only when we are not already a leader) keeps that signal
+# off the caller's terminal and other jobs.
+if [ -z "${HT_BUILD_GROUP:-}" ] && command -v setsid >/dev/null 2>&1; then
+    if [ "$(ps -o pgid= -p $$ | tr -d ' ')" != "$$" ]; then
+        export HT_BUILD_GROUP=1
+        exec setsid "$0" "$@"
+    fi
+fi
+ht_cleanup() {
+    trap - INT TERM EXIT
+    # Negative pid = the whole process group. Ignore it ourselves first, or
+    # this shell dies before it can send it.
+    trap '' TERM
+    kill -TERM -$$ 2>/dev/null
+    sleep 2
+    kill -KILL -$$ 2>/dev/null
+}
+trap ht_cleanup INT TERM
+
 # How many songs to build at once. LilyPond is single-threaded, so the only
-# way to use the other cores is to run several songs side by side. Override
-# with JOBS=1 to get the old serial behaviour back when debugging a build.
-JOBS="${JOBS:-$(nproc)}"
+# way to use the other cores is to run several songs side by side.
+#
+# Not nproc, though that is what this used to be. The repo lives on a FUSE
+# NTFS mount, and each book writes a multi-megabyte PNG and a PDF through a
+# single mount.ntfs daemon; at nproc the writes queue behind the kernel flush
+# path and the whole thing collapses - measured: load average 38 on 8 cores
+# with mount.ntfs itself at 0.3% CPU, a dozen processes stuck in uninterruptible
+# D state, and forward progress of one song per eight minutes.
+#
+# 2 is measured, not guessed. Same four songs, cold, on this mount:
+#
+#   JOBS=1   158s   39.5s/song
+#   JOBS=2   108s   27.0s/song   <- best
+#   JOBS=4   123s   30.8s/song
+#
+# So the curve turns over almost immediately: one job leaves the CPU idle
+# waiting on IO, four already spend more time queueing than they save. Raise it
+# with JOBS= on a normal filesystem, where this ceiling does not apply, or
+# JOBS=1 to serialise when debugging a build.
+JOBS="${JOBS:-2}"
 
 # Optional: rebuild only some notation books, and/or only some songs. Both are
 # empty by default, which means "everything", exactly as before.
@@ -286,4 +333,13 @@ fi
 # Songs are independent - each writes only files named after itself - so they
 # parallelise cleanly. The per-song output is buffered by xargs into whole
 # lines, so progress from concurrent builds stays readable.
-song_list | xargs -0 -P "$JOBS" -I{} bash -c 'build_song "$@"' _ {}
+#
+# Backgrounded and waited on rather than run in the foreground, so the trap at
+# the top of this file can actually fire. Bash runs a trap between commands, so
+# a foreground xargs holds the signal pending until it returns on its own -
+# which for a full build is hours, and is why killing this script used to leave
+# xargs orphaned onto init, still spawning songs. `wait` is interruptible, so
+# the handler runs immediately and takes the process group down with it.
+# Verified: 10 processes in the group, one TERM to the script, 0 left.
+song_list | xargs -0 -P "$JOBS" -I{} bash -c 'build_song "$@"' _ {} &
+wait $!
