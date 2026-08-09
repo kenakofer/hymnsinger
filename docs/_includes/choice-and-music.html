@@ -119,33 +119,29 @@
             <img src="/local-lilypond-outputs/{{ page.song_file }}-trad.png" alt="Loading the sheet music..." id="music-image">
         </div>
         <!-- The deck is its own element rather than another src for
-             #music-image: it pages one slide at a time instead of scrolling a
-             single tall picture, so it needs one <img> per slide. Hidden until
-             the Slideshow tab is chosen; renderScore() swaps the two.
+             #music-image, because it is one <img> per slide rather than one
+             picture. They stack, so it reads like every other notation: one
+             tall column you scroll. Hidden until the Slideshow tab is chosen;
+             renderScore() swaps the two.
 
-             Slides are counted at site-build time by looking for the files the
-             deck actually produced, so a song's deck is however long its verses
-             make it and nothing has to record the number anywhere. -->
+             Separate files rather than the single stitched image this used to
+             be: a strip taller than 16000px cannot be written at all, which a
+             deck reaches at eleven slides. Stacking them in the page gets the
+             same column with no ceiling, and lets the phone decode only the
+             slides actually scrolled to.
+
+             Counted at site-build time from the files the deck produced, so a
+             song's deck is however long its verses make it and nothing has to
+             record the number anywhere. -->
         {% assign slide_prefix = '/local-lilypond-outputs/' | append: page.song_file | append: '-slide-' %}
         {% assign slides = site.static_files | where_exp: "f", "f.path contains slide_prefix" %}
         {% if slides.size > 0 %}
         <div id="slide-deck" hidden>
-          <!-- Horizontal scroll-snap: the browser does the paging, so it stays
-               smooth under a finger without a scroll handler driving it. -->
-          <div id="slide-track">
-            {% for n in (1..slides.size) %}
-            <img src="{{ slide_prefix }}{{ n }}.png"
-                 alt="Slide {{ n }} of {{ slides.size }}"
-                 {% unless forloop.first %}loading="lazy"{% endunless %}>
-            {% endfor %}
-          </div>
-          <div id="slide-status">
-            <button type="button" id="slide-prev" onclick="stepSlide(-1);"
-                    aria-label="Previous slide">&#9664;</button>
-            <span id="slide-count" aria-live="polite">1 / {{ slides.size }}</span>
-            <button type="button" id="slide-next" onclick="stepSlide(1);"
-                    aria-label="Next slide">&#9654;</button>
-          </div>
+          {% for n in (1..slides.size) %}
+          <img src="{{ slide_prefix }}{{ n }}.png"
+               alt="Slide {{ n }} of {{ slides.size }}"
+               {% unless forloop.first %}loading="lazy"{% endunless %}>
+          {% endfor %}
         </div>
         {% endif %}
     </div>
