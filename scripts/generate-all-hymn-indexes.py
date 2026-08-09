@@ -297,9 +297,23 @@ def join_verse_line(line, remove_quotes):
     return " ".join(words)
 
 def add_song_json(data):
+    # Keep fields this script does not own. Landmark positions are written
+    # into the same file by extract-keysig.py during the build, which runs
+    # first; a plain overwrite here dropped every one of them on a full
+    # republish, and they only come back by re-engraving the whole corpus.
     output_file = SONG_DATA_DIR + data['song_file'] + ".json"
+    try:
+        with open(output_file) as f:
+            merged = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        merged = {}
+    merged.update(data)
+    # ensure_ascii=False and the trailing newline match extract-keysig.py,
+    # which writes this same file. Escaping the non-ASCII titles would churn
+    # every accented and CJK song on each run without changing their content.
     with open(output_file, 'w') as f:
-        f.write(json.dumps(data, indent=2))
+        f.write(json.dumps(merged, indent=2, ensure_ascii=False))
+        f.write('\n')
 
 def get_description(lyrics, tags):
     tag_string = " ".join(tags)
