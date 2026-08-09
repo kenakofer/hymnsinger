@@ -153,6 +153,22 @@ merge_page_pngs() {
     fi
 }
 
+# Recompress a PNG losslessly. Same pixels, ~16-29% fewer bytes: ImageMagick
+# picks quick filter/deflate settings, and optipng searches harder.
+#
+# -o2 rather than -o7. Measured on this corpus they produce byte-identical
+# output, and -o7 costs many times the CPU searching strategies that never win
+# on two-colour line art. -strip all because the point is to stop metadata
+# churn, not add more; the result is idempotent (verified: three runs, one
+# hash), so a rebuild of unchanged music stays a no-op in git.
+#
+# Missing optipng is not fatal. It is a size optimisation, not a correctness
+# one, and a build on a machine without it should still produce working files.
+optimize_png() {
+    command -v optipng >/dev/null 2>&1 || return 0
+    optipng -quiet -o2 -strip all "$1" 2>/dev/null || true
+}
+
 build_song() {
     local file="$1"
     local BASE; BASE=$(basename "${file%.*}") # This only strips the final ly, not any earlier "extension"
@@ -230,7 +246,9 @@ build_song() {
         # The -page glob is a belt-and-braces sweep: merge_page_pngs deletes
         # every page it merges, so it should no longer match anything.
         for png in "$OUTPUT_DIR$BASE$TYPE.png" "$OUTPUT_DIR$BASE$TYPE"-page[0-9]*.png; do
-            [ -e "$png" ] && mogrify -strip -colorspace gray +dither -posterize 2 "$png"
+            [ -e "$png" ] || continue
+            mogrify -strip -colorspace gray +dither -posterize 2 "$png"
+            optimize_png "$png"
         done
 
         # Same problem in the PDFs, four fields of it, and no build flag that
@@ -344,7 +362,7 @@ build_song() {
 }
 # Every function build_song calls has to be exported too: each song runs in its
 # own `bash -c` under xargs, which inherits only what is exported here.
-export -f build_song song_fingerprint books_to_types merge_page_pngs
+export -f build_song song_fingerprint books_to_types merge_page_pngs optimize_png
 export SCRIPT_DIR BOOKS ALL_TYPES
 
 # Which songs to build. SONGS is a whitespace-separated list of slugs; empty
