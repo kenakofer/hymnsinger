@@ -117,6 +117,89 @@ input[type="radio"]:checked + .variant-chip {
     position: relative;
     display: block;
 }
+
+/* ---- Slideshow tab ------------------------------------------------------
+   One image per slide, paged sideways. The scrolling is CSS scroll-snap, not
+   script: the browser keeps a finger-drag smooth and lands on a slide by
+   itself, where a scroll handler would fight it. JS only reads the position
+   to update the counter, and writes it when the arrows are used. */
+#slide-deck {
+    /* Not 100%: on a phone #music-frame is deliberately wider than the screen
+       so #music-clip can crop the sheet's paper margin out of it, and a
+       percentage here would inherit that overhang and push the deck off the
+       right edge. The deck has no margin to crop, so it is sized against the
+       viewport instead and simply fits. The 16px trim keeps a desktop
+       scrollbar from making 100vw a hair wider than the usable page. */
+    max-width: min(900px, calc(100vw - 16px));
+    margin: 8px auto 0;
+}
+#slide-track {
+    display: flex;
+    /* Pin the box to its parent. Without this the flex container sizes to its
+       content - nine slides side by side - and overflow-x has nothing to
+       scroll inside, so the whole deck simply runs off the screen. */
+    width: 100%;
+    /* So the 1px border below comes out of this width rather than adding to
+       it; otherwise each 100%-wide slide is 2px too wide to snap flush. */
+    box-sizing: border-box;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    /* The scrollbar is redundant next to the "3 / 9" readout and eats a slice
+       of a short slide on desktop. */
+    scrollbar-width: none;
+    /* Slides carry their own white; a shared frame reads as one deck rather
+       than nine loose pictures. */
+    border: 1px solid rgba(0, 0, 0, .12);
+    border-radius: 4px;
+    background: #fff;
+}
+#slide-track::-webkit-scrollbar { display: none; }
+#slide-track img {
+    /* Exactly one slide per view, whatever the width.
+       max-width and the box properties below are not redundant: the dinky
+       theme ships `img { max-width: 650px; padding: 5px; margin: 10px 0 32px;
+       border: 1px solid #ccc }`, and this stylesheet's own `img { width:100% }`
+       overrides only the width. Left alone the cap wins over flex-basis and
+       every slide sits at 650px inside a wider track, so the next one peeks in
+       at the right edge and the snap never lands flush. */
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    height: auto;
+    display: block;
+    scroll-snap-align: center;
+    /* Match the sheet music's warmth so switching tabs is not a flash of
+       cold white. */
+    filter: sepia(.5) brightness(.97);
+    -webkit-filter: sepia(.5) brightness(.97);
+}
+#slide-status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 6px 0 0;
+    font-size: 13px;
+    color: #555;
+}
+#slide-status button {
+    /* 44px is the touch-target floor the notation chips already use. */
+    min-width: 44px;
+    min-height: 36px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 4px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 13px;
+    line-height: 1;
+}
+#slide-status button:disabled { opacity: .35; cursor: default; }
+#slide-count { min-width: 4.5em; text-align: center; font-variant-numeric: tabular-nums; }
 /* Layered over the top left of the score via #score-controls. LilyPond leaves
    that corner blank on every song - the title block is centred and the first
    staff starts well below - so this covers nothing. These are deliberately
@@ -991,15 +1074,6 @@ header ul {
         --crop: .045;
         /* Widening factor that puts the remaining width back to 100%. */
         --zoom: calc(1 / (1 - 2 * var(--crop)));
-    }
-    /* The slide deck is not an A4 page and does not have A4's margin. Its
-       pages are 16:9 with about 1.6% of white a side, so the 4.5% above would
-       cut ~3% of real ink off each edge - the outer barline and the ends of
-       the longer lyric lines. Zeroing --crop leaves --zoom at 1 and the two
-       rules below become no-ops, so the deck shows uncropped at every width
-       without either rule needing to know it exists. */
-    #music-frame.uncropped {
-        --crop: 0;
     }
     #music-clip {
         overflow: hidden;

@@ -276,30 +276,43 @@ build_song() {
     [ -e "$OUTPUT_DIR$BASE-slides.pdf" ] &&
         python3 "$SCRIPT_DIR/normalize-pdf-metadata.py" "$OUTPUT_DIR$BASE-slides.pdf"
 
-    # The slide deck as one tall image, for the song page's Slideshow tab. This
-    # has to run here, before either branch below: the ODP builder *moves* the
-    # page PNGs into its zip and a partial build deletes them outright, so by
-    # the time we know which of those happened there is nothing left to stitch.
+    # The deck as one image per slide, for the song page's Slideshow tab.
+    #
+    # This has to run here, before either branch below: the ODP builder *moves*
+    # the page PNGs into its zip and a partial build deletes them outright, so
+    # by the time we know which of those happened there is nothing left to
+    # copy from.
+    #
+    # One file per slide rather than the single tall strip this used to build.
+    # The strip hit a wall on both ends: ImageMagick refuses to write past
+    # 16000px and WebP's format limit is 16383px, which a deck reaches at
+    # eleven slides - measured, after a lyric change quietly took one song's
+    # deck to fifteen and the stitch started failing. Per-slide files have no
+    # such ceiling, let the page lazy-load what the reader has not reached, and
+    # let it page one slide at a time, which is what a deck is for.
     #
     # Posterized to 3 like the ODP's copies rather than 2 like the sheet-music
     # PNGs - a slide is a much smaller image blown up to fill a screen, and two
-    # levels visibly stair-step the stems. Done here rather than reusing the
-    # ODP's own pass so the stitch sees the same pixels the deck ships.
-    echo "     --> (Stitching slides PNG)"
+    # levels visibly stair-step the stems.
+    echo "     --> (Slide images)"
     for png in "$OUTPUT_DIR$BASE"-slides-page[0-9]*.png; do
         [ -e "$png" ] && mogrify -strip -colorspace gray +dither -posterize 3 "$png"
     done
-    # Not merge_page_pngs: that deletes the pages it merges, and the ODP
-    # builder below still needs them - it moves each one into the deck's
-    # Pictures. Same -v ordering and -strip, but the parts are left in place.
-    local SLIDE_PAGES=()
+    # Copied, not moved or renamed: the ODP builder below still needs the
+    # -page files, and it consumes them. Numbered from 1 in engraved order,
+    # which -v gets right past page9 where a lexical sort does not.
+    #
+    # Stale slides from a previous, longer build have to go first. A song that
+    # loses a verse would otherwise keep serving the orphaned tail, and the
+    # page counts files to know how many slides there are.
+    rm -f "$OUTPUT_DIR$BASE"-slide-[0-9]*.png
+    local SLIDE_N=0
     while IFS= read -r png; do
-        [ -e "$png" ] && SLIDE_PAGES+=("$png")
+        [ -e "$png" ] || continue
+        SLIDE_N=$((SLIDE_N + 1))
+        cp "$png" "$OUTPUT_DIR$BASE-slide-$SLIDE_N.png"
+        optimize_png "$OUTPUT_DIR$BASE-slide-$SLIDE_N.png"
     done < <(ls -v "$OUTPUT_DIR$BASE"-slides-page[0-9]*.png 2>/dev/null)
-    if [ ${#SLIDE_PAGES[@]} -gt 0 ]; then
-        convert -append "${SLIDE_PAGES[@]}" -strip "$OUTPUT_DIR$BASE-slides.png" ||
-            echo "Failed to stitch slides image for $BASE"
-    fi
 
     if [ -n "$BOOKS" ]; then
         # The intermediate page PNGs are always disposable - a full run merges
