@@ -139,6 +139,26 @@ var note_playing_on_channel = {
     1: 0
 }
 
+// How far the playback is shifted, in half steps. Read per note rather than
+// applied to the file, so pressing an arrow bends the following notes and
+// leaves the ones already sounding where they are - the same thing a
+// transposing player does mid-phrase.
+//
+// This is the *rendered* offset, not the remembered one, for the same reason
+// the readout is: on a book with no transposed engravings the image is at the
+// printed pitch and the control is hidden, so playing the remembered offset
+// would sing a key the reader can neither see nor correct. The offset itself
+// is still kept - going back to a transposable tab restores it.
+function playbackTranspose() {
+    var steps = window.currentTranspose;
+    if (typeof steps != 'number') return 0;
+    // Defined by the song page. Guarded so app.js keeps working on any page
+    // that loads the player without the score controls.
+    if (typeof bookSupportsTranspose == 'function' && typeof currentBook == 'function')
+        return bookSupportsTranspose(currentBook()) ? steps : 0;
+    return steps;
+}
+
 //Soundfont.instrument(ac, 'https://raw.githubusercontent.com/gleitz/midi-js-soundfonts/gh-pages/MusyngKite/acoustic_guitar_nylon-mp3.js').then(function (instrument) {
 
 // Ogg does not work in safari for some reason, so we'll stick with mp3 for now.
@@ -150,13 +170,31 @@ Soundfont.instrument(ac, 'https://raw.githubusercontent.com/gleitz/midi-js-sound
                         //console.log(event);
 			if (event.name == 'Note on') {
                             my_velocity = channel_to_velocity[event.channel]
+                            // Keyed on the note as written, never on the
+                            // transposed one. A note off is matched to its note
+                            // on by this string, and the offset can change
+                            // between the two - keying on the sounding pitch
+                            // left the voice hanging until the song was
+                            // stopped, once per arrow press during a held note.
                             note_index = event.channel +' '+ event.noteName;
                             if (event.velocity == 0) {
                                 if (note_playing_on_channel[note_index])
                                     note_playing_on_channel[note_index].stop(ac.currentTime);
                                 note_playing_on_channel[note_index] = 0;
                             } else {
-                                note_playing_on_channel[note_index] = instrument.play(event.noteName, ac.currentTime, {gain:my_velocity/100})
+                                // Numbers, not names: the player's buffers are
+                                // keyed by MIDI number, and its NOTES table
+                                // stores one spelling per pitch, so shifting a
+                                // name through that table would respell the
+                                // note as well as move it. Out-of-range notes
+                                // are dropped rather than folded back into an
+                                // octave that would sound wrong against the
+                                // other parts.
+                                var midi = event.noteNumber + playbackTranspose();
+                                if (midi >= 0 && midi <= 127)
+                                    note_playing_on_channel[note_index] = instrument.play(midi, ac.currentTime, {gain:my_velocity/100})
+                                else
+                                    note_playing_on_channel[note_index] = 0;
                             }
 			}
 
