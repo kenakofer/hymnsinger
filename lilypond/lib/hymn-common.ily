@@ -62,6 +62,29 @@ relativeMajorShapes = \applyContext
                    (ly:context-find ctx 'Staff) 'shapeNoteStyles
                    (hs-rotate-vector hs-active-shapes offset)))))))
 
+%% Lyric size, as the \set fontSize globalLyrics applies below.
+%%
+%% A variable rather than a literal so the slides deck can raise it: a deck is
+%% read off a screen across a room, where the words are the point and the staff
+%% is only a reminder of the tune, while the printed books have their own
+%% reasons for -1. slides-book-common.ily sets it before the deck's \bookparts
+%% and the printed books never touch it.
+%%
+%% It has to travel this way - through the lyric music - rather than as a
+%% \layout on \Lyrics. A per-score \layout that names \context { \Lyrics }
+%% *redefines* that context, discarding the top-level \Lyrics settings in this
+%% file (the X-offset callback, and the Lyric_text_align_engraver the \Score
+%% block adds). Measured: an otherwise empty \context { \Lyrics } in a slides
+%% \score takes abide-with-me's deck from 9 slides to 15, because each slide
+%% loses the second of its two systems. The size itself was never the cause.
+%%
+%% Read through a callback rather than as a plain variable so the value is
+%% fetched when the music is *interpreted*, not when \globalLyrics is parsed.
+%% The songs \include Nverse.ily - which expands \globalLyrics - several lines
+%% before they include the slides book, so a plain \lyricFontSize would already
+%% have been substituted by the time the deck could set it.
+#(define ht:lyric-font-size -1)
+
 globalLyrics =
 #(define-music-function
   (parser location firstLabel laterLabel)
@@ -69,7 +92,9 @@ globalLyrics =
   #{
     {
           \override LyricHyphen.minimum-distance = #1.0 % Ensure hyphens are visible
-          \set fontSize = #-1
+          \applyContext
+            #(lambda (ctx)
+               (ly:context-set-property! ctx 'fontSize ht:lyric-font-size))
           \override LyricText.font-family = #'roman
           \override InstrumentName.font-family = #'roman
           \override InstrumentName.font-series = #'regular
@@ -679,4 +704,57 @@ tradLeadSheetStaffZoom = #1
 clairStaffZoom = #1
 slidesStaffZoom = #0.8
 shapeStaffZoom = #1.1 %% A bit larger by default to help see the shapes
+
+%% ---- Slides-deck \layout blocks -------------------------------------------
+%%
+%% These live here rather than in slides-book-common.ily, which would be the
+%% obvious home, because that file is \included *inside* \book { } - and a
+%% \layout is only legal at top level or inside a \score. Defining one there is
+%% a syntax error. (The spacing \layout in that file gets away with it only
+%% because ht-spacing-for returns #f for every song in the corpus, so its
+%% include never fires.) Applied per \score in the slides-book-Nverse.ily files.
+
+%% Rewrite a final-ending bar into a light double.
+%%
+%% A song carries one \bar "|." at the end of its music, and the deck engraves
+%% that same music once per verse under a different \keepWithTag - so the
+%% "the song is over" glyph landed at the foot of every slide, seven times over
+%% in an eight-verse deck. Only the last verse should close.
+%%
+%% A glyph rewrite at engrave time rather than an edit to the songs: the "|."
+%% is right in the source, where it is one bar per song rather than one per
+%% verse, and 114 songs carry one.
+%%
+%% It rewrites the glyph from the *stencil* callback, which is the only one of
+%% the three obvious hooks that both fires and still matters. The other two
+%% were tried and measured:
+%%
+%%   before-line-breaking  never runs. The \Score \layout above binds
+%%                         BarLine.after-line-breaking to ht:grab-bar, and a
+%%                         per-score \override replaces a property rather than
+%%                         adding to it - so binding a second callback to the
+%%                         *other* hook silently got zero invocations.
+%%   after-line-breaking   runs, and is too late: it reported 6 rewrites on a
+%%                         four-verse deck while every printed bar stayed
+%%                         heavy, because the stencil was already built.
+%%
+%% BarLine.stencil is a different property from the one ht:grab-bar owns, so
+%% the landmark the song page hangs its transpose arrows on keeps working -
+%% verified by counting ht:grab-bar's calls with this override installed.
+#(define (ht:soften-nonfinal-bar grob)
+   (if (equal? (ly:grob-property grob 'glyph-name) "|.")
+       (ly:grob-set-property! grob 'glyph-name "||"))
+   (ly:bar-line::print grob))
+
+%% Every verse but the last. Softening is opt-in per \score rather than a
+%% book-wide default with the last verse opting out, because \layout is only
+%% legal per \score here anyway - so each one has to name what it wants, and
+%% "mid-verse" is the honest name for what N-1 of them are.
+slidesMidVerse = \layout {
+  \context {
+    \Score
+    \override BarLine.stencil = #ht:soften-nonfinal-bar
+  }
+}
+
 

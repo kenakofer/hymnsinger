@@ -49,6 +49,14 @@
 
     <input type="radio" id="clairnote" name="variant-radio" onclick="changeImage('clairnote');">
     <label class="variant-chip" for="clairnote">Clairnote</label>
+
+    <!-- Last on purpose: it is the projection deck rather than another way of
+         notating the same page, so it reads as the end of the list rather than
+         as one more notation among the five. Same one-tall-image treatment as
+         every other tab - the slides are stacked into a single PNG at build
+         time - so no separate viewer is needed. -->
+    <input type="radio" id="slides" name="variant-radio" onclick="changeImage('slides');">
+    <label class="variant-chip" for="slides">Slideshow</label>
     </div>
 
     <div id="music-frame">

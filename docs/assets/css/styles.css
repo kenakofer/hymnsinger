@@ -992,6 +992,15 @@ header ul {
         /* Widening factor that puts the remaining width back to 100%. */
         --zoom: calc(1 / (1 - 2 * var(--crop)));
     }
+    /* The slide deck is not an A4 page and does not have A4's margin. Its
+       pages are 16:9 with about 1.6% of white a side, so the 4.5% above would
+       cut ~3% of real ink off each edge - the outer barline and the ends of
+       the longer lyric lines. Zeroing --crop leaves --zoom at 1 and the two
+       rules below become no-ops, so the deck shows uncropped at every width
+       without either rule needing to know it exists. */
+    #music-frame.uncropped {
+        --crop: 0;
+    }
     #music-clip {
         overflow: hidden;
     }

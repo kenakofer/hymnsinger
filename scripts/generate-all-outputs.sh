@@ -125,6 +125,34 @@ books_to_types() {
     echo "$out"
 }
 
+# Join a book's per-page PNGs into the single tall image the song page shows,
+# and delete the parts. Takes the output prefix, e.g. ".../abide-with-me-trad"
+# or ".../abide-with-me-slides"; a single-page book has no -page files and is
+# left alone, having been written straight to $prefix.png already.
+#
+# This used to be an if/else ladder spelling out the 2- and 3-page cases by
+# hand, which meant a 4-page score merged into nothing at all: the pages were
+# left on disk, $prefix.png was never written, and the song page requested an
+# image that did not exist. The longest score in the corpus is 3 pages, so that
+# was one system break away from shipping. The slide decks reach nine pages
+# routinely, which is what forced the general version.
+#
+# -v so page10 sorts after page9 rather than between page1 and page2.
+merge_page_pngs() {
+    local prefix="$1"
+    local pages=()
+    while IFS= read -r png; do
+        [ -e "$png" ] && pages+=("$png")
+    done < <(ls -v "$prefix"-page[0-9]*.png 2>/dev/null)
+    [ ${#pages[@]} -eq 0 ] && return 0
+    # -strip: see the posterize loop's note on ImageMagick's timestamp chunks.
+    if convert -append "${pages[@]}" -strip "$prefix.png"; then
+        rm -f "${pages[@]}"
+    else
+        echo "Failed to merge images for $(basename "$prefix")"
+    fi
+}
+
 build_song() {
     local file="$1"
     local BASE; BASE=$(basename "${file%.*}") # This only strips the final ly, not any earlier "extension"
@@ -181,17 +209,7 @@ build_song() {
         TYPES="$ALL_TYPES"
     fi
     for TYPE in $TYPES; do
-        if [ -e "$OUTPUT_DIR$BASE$TYPE-page3.png" ] ; then # 3 page case
-            convert -append "$OUTPUT_DIR$BASE$TYPE-page1.png" "$OUTPUT_DIR$BASE$TYPE-page2.png" "$OUTPUT_DIR$BASE$TYPE-page3.png" -strip "$OUTPUT_DIR$BASE$TYPE.png" &&
-            rm "$OUTPUT_DIR$BASE$TYPE-page1.png" "$OUTPUT_DIR$BASE$TYPE-page2.png" "$OUTPUT_DIR$BASE$TYPE-page3.png" ||
-            echo "Failed to merge images for $BASE"
-        else
-            if [ -e "$OUTPUT_DIR$BASE$TYPE-page2.png" ] ; then # 2 page case
-                convert -append "$OUTPUT_DIR$BASE$TYPE-page1.png" "$OUTPUT_DIR$BASE$TYPE-page2.png" -strip "$OUTPUT_DIR$BASE$TYPE.png" &&
-                rm "$OUTPUT_DIR$BASE$TYPE-page1.png" "$OUTPUT_DIR$BASE$TYPE-page2.png" ||
-                echo "Failed to merge images for $BASE"
-            fi
-        fi
+        merge_page_pngs "$OUTPUT_DIR$BASE$TYPE"
         # Posterize this variant's own files only, and let the shell do the
         # globbing. Two traps here:
         #   - "$BASE$TYPE*.png" (the old pattern) matches -trad-up1 and friends
@@ -205,11 +223,12 @@ build_song() {
         # chunks on write, so a song whose engraving has not changed by a
         # single pixel still comes out as a modified file - 707 of them on one
         # run here, all bit-identical in image data, differing in 30 bytes of
-        # timestamp. The multi-page branches above already strip during their
-        # `convert -append`; single-page songs never passed through one, which
-        # is why they were the ones churning.
+        # timestamp. merge_page_pngs already strips during its `convert
+        # -append`; single-page songs never passed through one, which is why
+        # they were the ones churning.
         #
-        # The -page files are anything a 4+ page score left unmerged above.
+        # The -page glob is a belt-and-braces sweep: merge_page_pngs deletes
+        # every page it merges, so it should no longer match anything.
         for png in "$OUTPUT_DIR$BASE$TYPE.png" "$OUTPUT_DIR$BASE$TYPE"-page[0-9]*.png; do
             [ -e "$png" ] && mogrify -strip -colorspace gray +dither -posterize 2 "$png"
         done
@@ -239,6 +258,31 @@ build_song() {
     [ -e "$OUTPUT_DIR$BASE-slides.pdf" ] &&
         python3 "$SCRIPT_DIR/normalize-pdf-metadata.py" "$OUTPUT_DIR$BASE-slides.pdf"
 
+    # The slide deck as one tall image, for the song page's Slideshow tab. This
+    # has to run here, before either branch below: the ODP builder *moves* the
+    # page PNGs into its zip and a partial build deletes them outright, so by
+    # the time we know which of those happened there is nothing left to stitch.
+    #
+    # Posterized to 3 like the ODP's copies rather than 2 like the sheet-music
+    # PNGs - a slide is a much smaller image blown up to fill a screen, and two
+    # levels visibly stair-step the stems. Done here rather than reusing the
+    # ODP's own pass so the stitch sees the same pixels the deck ships.
+    echo "     --> (Stitching slides PNG)"
+    for png in "$OUTPUT_DIR$BASE"-slides-page[0-9]*.png; do
+        [ -e "$png" ] && mogrify -strip -colorspace gray +dither -posterize 3 "$png"
+    done
+    # Not merge_page_pngs: that deletes the pages it merges, and the ODP
+    # builder below still needs them - it moves each one into the deck's
+    # Pictures. Same -v ordering and -strip, but the parts are left in place.
+    local SLIDE_PAGES=()
+    while IFS= read -r png; do
+        [ -e "$png" ] && SLIDE_PAGES+=("$png")
+    done < <(ls -v "$OUTPUT_DIR$BASE"-slides-page[0-9]*.png 2>/dev/null)
+    if [ ${#SLIDE_PAGES[@]} -gt 0 ]; then
+        convert -append "${SLIDE_PAGES[@]}" -strip "$OUTPUT_DIR$BASE-slides.png" ||
+            echo "Failed to stitch slides image for $BASE"
+    fi
+
     if [ -n "$BOOKS" ]; then
         # The intermediate page PNGs are always disposable - a full run merges
         # and deletes them anyway.
@@ -250,16 +294,13 @@ build_song() {
     fi
 
     if [ -z "$BOOKS" ]; then
-        # We use 3 colors instead of 2 for slides since the image is smaller.
-        # Shell-glob and guard, same reason as the loop above: a "*" that
-        # reaches mogrify unmatched hangs rather than erroring.
         echo "     --> (Building ODP)"
-        # -strip for the same reason as the posterize loop above: these become
-        # the ODP's Pictures, and a timestamp chunk in each one would make the
-        # zip differ on every build even after its entry mtimes are pinned.
-        for png in "$OUTPUT_DIR$BASE"-slides*.png; do
-            [ -e "$png" ] && mogrify -strip -colorspace gray +dither -posterize 3 "$png"
-        done
+        # The posterize pass that used to live here has moved up to the stitch
+        # step, which runs on every build and leaves the pages in place; the
+        # deck takes those same files. It also narrowed the glob from -slides*
+        # to -slides-page[0-9]*, which now matters: the old pattern would also
+        # match the stitched -slides.png, and rewriting that on every build is
+        # exactly the timestamp churn -strip was added to stop.
         "$SCRIPT_DIR/build-odp-presentation-from-images.sh" "$BASE"
 
         echo "     --> (Midi to MP3)"
@@ -301,7 +342,9 @@ build_song() {
 
     echo "     --> Done."
 }
-export -f build_song song_fingerprint books_to_types
+# Every function build_song calls has to be exported too: each song runs in its
+# own `bash -c` under xargs, which inherits only what is exported here.
+export -f build_song song_fingerprint books_to_types merge_page_pngs
 export SCRIPT_DIR BOOKS ALL_TYPES
 
 # Which songs to build. SONGS is a whitespace-separated list of slugs; empty

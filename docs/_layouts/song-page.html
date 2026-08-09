@@ -84,7 +84,8 @@
         "shapenote": "7 shapes, one per scale degree",
         "4shapenote": "Sacred Harp fa-sol-la, mi on 7",
         // Shorter than the rest: this is the one row that also carries a link.
-        "clairnote": "No key signatures"
+        "clairnote": "No key signatures",
+        "slides": "Projection deck, one verse a slide"
     };
 
     // Notations with a canonical home page of their own. Only Clairnote has
@@ -200,6 +201,10 @@
                 setKeyHeight(box);
             }
             frame.classList.toggle("keyed", !!box);
+            // The narrow layout crops an A4 paper margin off the sides. The
+            // slide deck is 16:9 with a much smaller margin, so the same crop
+            // would eat into the engraving itself.
+            frame.classList.toggle("uncropped", book == "slides");
         }
 
         var control = document.getElementById("transpose-control");

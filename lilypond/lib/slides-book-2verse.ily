@@ -4,6 +4,7 @@
     \score {
       \scoreWithVerse {\soprano} {\alto} {\tenor} {\bass} #'(verseA printonly)
       \header { breakbefore = ##t }
+      \slidesMidVerse
     }
   }
   \bookpart {

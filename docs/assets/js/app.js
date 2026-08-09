@@ -59,6 +59,10 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('clairnote').checked = true;
         changeImage('clairnote');
     }
+    if (urlParams.has("slides")) {
+        document.getElementById('slides').checked = true;
+        changeImage('slides');
+    }
     // The transposed views, e.g. ?trad-up1 or ?guitar-dn2. Kept as valueless
     // params to match the notation links above.
     //

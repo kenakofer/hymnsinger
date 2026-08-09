@@ -4,11 +4,13 @@
     \score {
       \scoreWithVerse {\soprano} {\alto} {\tenor} {\bass} #'(verseA printonly)
       \header { breakbefore = ##t }
+      \slidesMidVerse
     }
   }
   \bookpart {
     \score {
       \scoreWithVerse {\soprano} {\alto} {\tenor} {\bass} #'(verseB printonly)
+      \slidesMidVerse
     }
     \empty_header
   }
