@@ -10,12 +10,14 @@
 %%
 %% Distances are in staff-spaces.
 %%
-%% \staffGap governs the gap between two staves only when nothing sits between
-%% them. In this repo's four-part scores a Lyrics context almost always does,
-%% and then the lyrics' own nonstaff-* distances set the spacing and \staffGap
-%% alone changes nothing at all -- even at absurd values, which makes it look
-%% like the override never arrived. Reach for \lyricGap / \lyricGapFar (or
-%% \lyricsCentered) there, and use \staffGap for the genuinely empty gaps.
+%% To widen the gap between the two staves of a system, use \gapBetweenStaves.
+%% It is the only helper here that does that, and it works regardless of what
+%% sits in the gap -- lyrics, fretboards, or nothing.
+%%
+%% \staffGap is measured inert in this repo and documented as such at its
+%% definition; it is not the tool for that job. \lyricGap does work, but it
+%% moves the lyrics relative to their own staff rather than moving the staves
+%% apart.
 %%
 %% Every helper writes all four keys of the spacing alist, not just one. The
 %% distances are measured between reference points, padding between the inked
@@ -37,9 +39,52 @@
 %% property, not a context one; see \systemSpacing at the bottom of this file.
 
 %% Distance to the next staff DOWN. Belongs on the upper staff of the pair.
+%%
+%% Measured inert in this repo's scores -- see \gapBetweenStaves below, which
+%% is the one that actually moves them. staff-staff-spacing is only consulted
+%% for a staff whose parent is a StaffGrouper, and fillTradScore puts its two
+%% TradStaves loose in a << >> with no \new StaffGroup around them, so nothing
+%% ever reads this property. Kept because a future score that does group its
+%% staves would use it.
 staffGap =
 #(define-music-function (dist) (number?)
    #{ \override VerticalAxisGroup.staff-staff-spacing =
+        #`((basic-distance . ,dist) (minimum-distance . ,dist)
+           (padding . 0) (stretchability . 0)) #})
+
+%% Distance between the two staves of a system -- the treble/bass pair and
+%% everything hanging between them. This is the working "\systemSpacer": it
+%% widens the gap whether lyrics sit in it, fretboards sit above it, or the
+%% gap is empty.
+%%
+%% Goes on \Score, not \Staff:
+%%
+%%   spacing_overrides = \layout {
+%%     \context { \Score \gapBetweenStaves #14 }
+%%   }
+%%
+%% default-staff-staff-spacing is the fallback LilyPond uses for a staff with
+%% no StaffGrouper parent, which is every staff in this repo -- so here the
+%% "default" is not a default at all, it is the only one in play. That is why
+%% this works where \staffGap does not.
+%%
+%% It sets the distance between the staves themselves, so anything between
+%% them rides along inside the wider gap rather than being pushed by it. To
+%% move lyrics relative to their own staff, use \lyricGap; to move the two
+%% apart with the lyrics keeping their position, use this.
+%%
+%% Like everything here the distance is a floor, so a value under the gap the
+%% contents already force does nothing -- which reads as the override being
+%% ignored until you pass the threshold. Whatever is in the gap sets that
+%% threshold, so it differs per book: on tis-a-gift the lyric-filled trad gap
+%% is already ~15 and only starts moving at 16, while the uke book responds
+%% from 0 up. Sweep a few values rather than concluding from one.
+%%
+%% Going too far costs a page rather than degrading gently (trad spills at 20
+%% here), so raise it a little at a time and check the page count.
+gapBetweenStaves =
+#(define-music-function (dist) (number?)
+   #{ \override VerticalAxisGroup.default-staff-staff-spacing =
         #`((basic-distance . ,dist) (minimum-distance . ,dist)
            (padding . 0) (stretchability . 0)) #})
 
@@ -51,21 +96,23 @@ lyricGap =
         #`((basic-distance . ,dist) (minimum-distance . ,dist)
            (padding . 0) (stretchability . 0)) #})
 
-%% Distance from a Lyrics line to the staff on its far side.
-lyricGapFar =
-#(define-music-function (dist) (number?)
-   #{ \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing =
-        #`((basic-distance . ,dist) (minimum-distance . ,dist)
-           (padding . 0) (stretchability . 0)) #})
-
 %% Equal space above and below a line of lyrics sitting between two staves.
 %%
-%% staff-affinity #CENTER is the half that is easy to miss: with #UP or #DOWN
-%% the far side is only ever a minimum, so the lyrics ride against their own
-%% staff no matter what the two distances say. \globalLyrics already sets
-%% #CENTER on every verse, so the inner verses are centred candidates that
-%% only lack matching distances -- which is why their spacing looks arbitrary
-%% until both sides are set together.
+%% \globalLyrics already sets #CENTER on every verse, so the inner verses are
+%% centred candidates that only lack matching distances.
+%%
+%% Only the relatedstaff half does any work here. nonstaff-unrelatedstaff-
+%% spacing is inert in this repo at every value: fillTradScore nests the verse
+%% Lyrics INSIDE the top staff's << >>, so it is a child of that staff rather
+%% than a sibling sitting between two staves, and there is no "unrelated staff
+%% on the far side" for the property to describe. It is set below anyway, to
+%% keep this helper correct for a score that does stack its contexts that way.
+%%
+%% staff-affinity is NOT the reason, though it looks like the obvious suspect:
+%% forcing the Lyrics to #UP or #DOWN and setting the far distance to 20 still
+%% moves nothing. A \lyricGapFar helper wrapping that property alone used to
+%% live here and was deleted 2026-08-11 for being inert -- do not reintroduce
+%% it. To widen the gap between staves, use \gapBetweenStaves.
 lyricsCentered =
 #(define-music-function (dist) (number?)
    #{

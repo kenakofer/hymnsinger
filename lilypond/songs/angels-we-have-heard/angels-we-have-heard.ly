@@ -85,8 +85,12 @@ verseD = \lyricmode {
 %% the alto/tenor slurs crowd it from both sides. This widens the margin around
 %% every lyric line, but only the refrain has room to use it -- the verse
 %% systems are already at their minimum, so they do not move.
+%%
+%% This is the gap above each lyric line, to the staff it hangs from. It had a
+%% matching \lyricGapFar #8 for the far side; that helper was inert at every
+%% value and is gone, and dropping it left the engraving byte-identical.
 spacing_overrides = \layout {
-  \context { \Lyrics \lyricGap #8 \lyricGapFar #8 }
+  \context { \Lyrics \lyricGap #8 }
 }
 
 %% Three books opt out with #f.
