@@ -801,56 +801,48 @@ header ul {
     font-size: 14px;
     white-space: nowrap;
 }
-/* The frets row's mirror image, in the score's other top corner. Same box:
-   same offset, radius, padding and opaque paper colour, and the same 20px
-   inner height, so the two read as one pair of corner overlays rather than as
-   a control on one side and a label on the other.
+/* Below 1200px the gloss is not an overlay at all: it rides in #page-top-row
+   beside the back link, above the chips. The corner it used to sit in is over
+   the score, which on a phone is the scarce thing on the page - and at 11px
+   over an engraving it was the smallest text here. In the row it is reading
+   text on the page's own background, so it takes the back link's size.
 
-   right, not left - and note the frets row keeps the left corner even on the
-   tabs where it is hidden, so the two never collide.
-
-   Both corners are equally safe on a phone: the crop shaves the same 4.5% off
-   each side, and both overlays are positioned against the frame, which is the
-   clipping box - so 6px in from its edge is 6px inside what is actually on
-   screen, at any width. */
+   The JS moves the node between the two parents (see placeViewNote); this is
+   the narrow form because that is where the markup itself puts it, so the
+   pre-script paint is already right. */
 #view-note-wrap {
-    position: absolute;
-    top: 6px;
-    right: 6px;
-    z-index: 2;
     display: flex;
     align-items: center;
     gap: 6px;
-    /* Never across the title, which is centred just below. The glosses are
-       written to fit; on a narrow screen the gloss ellipsizes and the link,
-       which cannot usefully be truncated, keeps its width. */
-    max-width: calc(100% - 12px);
+    /* Takes the rest of the row after the back link, and is what gives way
+       when the two together do not fit. */
+    flex: 1 1 auto;
     min-width: 0;
-    height: 20px;
-    padding: 2px 5px;
-    border-radius: 4px;
-    background-color: #F7F7F0;
-    line-height: 1;
+    /* Hard right, against the score's edge rather than the window's: the row
+       is centred to the same 900px column as the score below 1200px. That
+       puts the gloss over the end of the top staff and keeps the left of the
+       row for the back link, so the two never read as one run of text. */
+    justify-content: flex-end;
+    line-height: 1.2;
 }
 #view-note-wrap[hidden] {
     display: none;
 }
-/* One line, always. Ellipsis rather than wrap: the box is a fixed height in a
-   blank corner, and a second line would grow it onto the credits below. The
-   gloss is what gives way, so the link stays whole. */
+/* One line, always. Ellipsis rather than wrap: a second line would grow the
+   row and push the score further down the phone screen. The gloss is what
+   gives way, so the link stays whole. */
 #view-note {
     min-width: 0;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    text-align: right;
-    font-size: 11px;
+    font-size: 13px;
     color: #666;
 }
 #view-note-link {
     flex: 0 0 auto;
     white-space: nowrap;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: bold;
     color: #c33333;
 }
@@ -1200,6 +1192,43 @@ header ul {
     #back-link {
         min-height: 0;
         padding: 0;
+    }
+    /* The frets row's mirror image, in the score's other top corner. Same box:
+       same offset, radius, padding and opaque paper colour, and the same 20px
+       inner height, so the two read as one pair of corner overlays rather than
+       as a control on one side and a label on the other.
+
+       right, not left - and note the frets row keeps the left corner even on
+       the tabs where it is hidden, so the two never collide.
+
+       This layout only. #page-top-row is fixed to the band above the sidebar
+       here, which is nowhere near the score, so the gloss goes back into the
+       frame - the JS moves the node, and these rules restyle it once it is
+       there. */
+    #view-note-wrap {
+        position: absolute;
+        top: 6px;
+        right: 6px;
+        z-index: 2;
+        flex: 0 0 auto;
+        /* Never across the title, which is centred just below. The glosses are
+           written to fit; the gloss ellipsizes and the link, which cannot
+           usefully be truncated, keeps its width. */
+        max-width: calc(100% - 12px);
+        height: 20px;
+        padding: 2px 5px;
+        border-radius: 4px;
+        background-color: #F7F7F0;
+        line-height: 1;
+    }
+    /* 11px against the engraving, where it is a caption on the score rather
+       than a line of the page's own text. */
+    #view-note {
+        text-align: right;
+        font-size: 11px;
+    }
+    #view-note-link {
+        font-size: 11px;
     }
     header {
         /* float/position used to come from the theme's base rule, which meant

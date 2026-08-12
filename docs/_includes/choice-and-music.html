@@ -3,6 +3,20 @@
      means opening the controls first. -->
 <div id="page-top-row">
   <a id="back-link" href="{{ site.baseurl }}/hymn-index">&larr; Back to list</a>
+  <!-- Authored here, which is where the narrow layouts keep it: on the back
+       link's row, above the chips, rather than over the score. At 1200px and
+       up the script moves it into #music-frame, where it becomes the corner
+       overlay that mirrors the frets row - no ancestor holds both slots, so
+       it is a move rather than a restyle.
+
+       Hidden until renderScore() fills it, so Traditional - which needs no
+       gloss, and is what the page opens on - shows nothing at all. -->
+  <div id="view-note-wrap" hidden>
+    <span id="view-note"></span><!--
+    Shown only for notations with a home page of their own; renderScore()
+    sets the href and hides it again for the rest.
+ --><a id="view-note-link" hidden target="_blank" rel="noopener">learn&nbsp;more&nbsp;&#8599;</a>
+  </div>
 </div>
 <div id="choice-and-music">
     <!-- A horizontally scrolling chip row rather than a fixed table of cells.
@@ -103,21 +117,12 @@
                     title="No fretboard diagrams">No tabs</button>
         </div>
         {% endif %}
-        <!-- The mirror of the frets row, in the opposite corner: LilyPond
-             leaves the same band blank at both ends - the title is centred
-             above it and the credit lines sit below - so this covers nothing
-             on either side. A sibling of the controls rather than part of
-             them, for the same reason the frets row is: it is a caption on the
-             notation, not a control, and nothing may drag it onto the clef.
-
-             Hidden until renderScore() fills it, so Traditional - which needs
-             no gloss, and is what the page opens on - shows nothing at all. -->
-        <div id="view-note-wrap" hidden>
-          <span id="view-note"></span><!--
-          Shown only for notations with a home page of their own; renderScore()
-          sets the href and hides it again for the rest.
-       --><a id="view-note-link" hidden target="_blank" rel="noopener">learn&nbsp;more&nbsp;&#8599;</a>
-        </div>
+        <!-- #view-note-wrap is inserted here by placeViewNote() at 1200px and
+             up, as the mirror of the frets row in the opposite corner:
+             LilyPond leaves the same band blank at both ends - the title is
+             centred above it and the credit lines sit below - so it covers
+             nothing on either side. It is authored in #page-top-row, which is
+             where the narrow layouts keep it. -->
         <!-- Wraps the image alone, not #music-frame: the transpose and frets
              controls above are positioned against the frame and must not be
              clipped along with the paper margin. -->
