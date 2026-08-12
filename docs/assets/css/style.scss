@@ -1,0 +1,8 @@
+---
+exclude_from_index: true
+---
+
+// Was jekyll-theme-dinky's entry point, arriving from the gem. Now ours, so
+// the base rules and the overrides in styles.css sit in one repository with
+// one set of breakpoints. See _sass/dinky-base.scss for what came across.
+@import 'dinky-base';

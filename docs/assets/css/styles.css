@@ -858,21 +858,26 @@ header ul {
     display: none;
 }
 @media print, screen and (max-width: 1199px) {
-    /* The dinky theme switches to its own one-column layout at 960px and no
-       higher - `header, section, footer { float:none; position:static;
-       width:auto }` - and that width:auto is the only thing overriding its
-       unconditional `header { width: 170px }`. This layout's narrow band now
-       starts at 1199px, so between 961 and 1199 the theme still believed it
-       was wide and the bottom sheet docked at 170px in the corner. Restating
-       the reset here puts the two breakpoints back in step. */
+    /* One column. The base stylesheet no longer floats or fixes anything -
+       that belongs to the wide layout and is stated there - so this only has
+       to undo the fixed .wrapper width. */
     .wrapper {
         width: auto;
         margin: 0;
     }
-    header, section, footer {
-        float: none;
-        position: static;
-        width: auto;
+    /* The prose gutter, from the theme's own narrow block. It keeps text off
+       the window edge on the doc pages; the song page zeroes it below via
+       .small-no-pad, which is why the score can still run full bleed. 84px on
+       the right is the theme's asymmetry, kept as it was. */
+    section {
+        padding: 20px 84px 20px 50px;
+        margin: 0 0 20px;
+    }
+    /* Also the theme's: with the header in flow rather than a sidebar, this is
+       what keeps its centred logo and byline off to the left rather than
+       centred on the whole window. The 800px block drops it again. */
+    header {
+        padding-right: 320px;
     }
     /* Centred once the column is wider than the score. Below 960px this band
        always was the full width of a phone, so the question never came up;
@@ -1135,20 +1140,11 @@ header ul {
     body {
         padding: 0;
     }
-    /* The theme's own full-bleed switch is hard-coded at 720px, and its wide
-       rules - `section { padding: 10px 0 10px 20px }` on top of the 50px from
-       its base rule - keep 134px of gutter that this block is trying to give
-       back to the score. Restated here so both breakpoints land at 800px;
-       without it 721-800px reads as the wide layout with none of the room. */
+    /* Full bleed: the score gets the whole viewport rather than sitting in
+       the base stylesheet's gutter. */
     header {
         padding: 10px 20px 0;
         margin-right: 0;
-    }
-    footer {
-        margin: 0 0 0 30px;
-    }
-    header ul, header p.view {
-        position: static;
     }
 }
 @media print, screen and (min-width: 1200px) {
@@ -1206,15 +1202,19 @@ header ul {
         padding: 0;
     }
     header {
+        /* float/position used to come from the theme's base rule, which meant
+           they applied at every width and had to be undone below. They belong
+           to this layout alone, so they are stated here. */
+        float: left;
+        position: fixed;
         padding: 10px 25px 10px 35px;
         /* Wide enough for #drawer-grid to run two-across, which roughly halves
            the sidebar's height - at 185px its contents were 475px tall in an
            80vh box and needed a scrollbar of their own. */
         width: 380px;
         /* Level with the chip row across the gutter, rather than with the
-           back link that now sits above it. The theme's own margin-top is
-           30px; this replaces it. 80vh has to come down by the same amount or
-           the sidebar's bottom runs off the screen. */
+           back link that now sits above it. 80vh has to come down by the same
+           amount or the sidebar's bottom runs off the screen. */
         margin-top: var(--sidebar-top);
         max-height: calc(80vh - var(--sidebar-top) + 30px);
         overflow-y: auto;
