@@ -773,9 +773,9 @@ header nav {
 header ul {
     position: static;
 }
-/* The scrim and the sheet's head belong to the narrow layout only; above 961px
-   the header is a permanent sidebar and there is nothing to open, so the wide
-   transport inside #drawer-grid does the job instead. */
+/* The scrim and the sheet's head belong to the narrow layout only; at 1200px
+   and up the header is a permanent sidebar and there is nothing to open, so the
+   wide transport inside #drawer-grid does the job instead. */
 /* The scrim only exists to dismiss the phone sheet; both breakpoints re-show
    #sheet-head, which is the transport on either layout. */
 #drawer-scrim {
@@ -851,7 +851,31 @@ header ul {
 #view-note-link[hidden] {
     display: none;
 }
-@media print, screen and (max-width: 960px) {
+@media print, screen and (max-width: 1199px) {
+    /* The dinky theme switches to its own one-column layout at 960px and no
+       higher - `header, section, footer { float:none; position:static;
+       width:auto }` - and that width:auto is the only thing overriding its
+       unconditional `header { width: 170px }`. This layout's narrow band now
+       starts at 1199px, so between 961 and 1199 the theme still believed it
+       was wide and the bottom sheet docked at 170px in the corner. Restating
+       the reset here puts the two breakpoints back in step. */
+    .wrapper {
+        width: auto;
+        margin: 0;
+    }
+    header, section, footer {
+        float: none;
+        position: static;
+        width: auto;
+    }
+    /* Centred once the column is wider than the score. Below 960px this band
+       always was the full width of a phone, so the question never came up;
+       now it runs to 1199px, where a left-flush score leaves 200px of empty
+       page down one side. */
+    #choice-and-music {
+        margin-left: auto;
+        margin-right: auto;
+    }
     .dock-icon {
         flex: 0 0 auto;
         width: 44px;
@@ -1113,7 +1137,7 @@ header ul {
         padding: 0;
     }
 }
-@media print, screen and (min-width: 961px) {
+@media print, screen and (min-width: 1200px) {
     section {
         float: left;
         /* Clears the fixed sidebar: its 380px content box plus the 60px of
@@ -1125,6 +1149,19 @@ header ul {
     .wrapper {
         width: 100%;
         max-width: 1400px;
+    }
+    /* The sidebar takes a fixed 465px, so the score column gets whatever is
+       left rather than an unconditional 900px: the two together need 1340px,
+       and between here and there the score used to run off the right edge.
+       It still stops at 900px, the engraving's own width - this only shrinks
+       it. 20px is the section's own padding-right. */
+    #choice-and-music {
+        max-width: min(900px, calc(100vw - 465px - 20px));
+    }
+    /* The deck sizes against the viewport rather than its parent (see the note
+       on the base rule), so it has to subtract the sidebar itself. */
+    #slide-deck {
+        max-width: min(900px, calc(100vw - 465px - 20px));
     }
     header {
         padding: 10px 25px 10px 35px;

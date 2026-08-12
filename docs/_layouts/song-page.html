@@ -386,7 +386,7 @@
         var head = document.getElementById("sheet-head");
         if (!sheet || !head) return;
         // Only meaningful in the narrow layout; the wide sidebar is static.
-        if (window.innerWidth > 960) {
+        if (window.innerWidth >= 1200) {
             sheet.style.removeProperty("--sheet-head-h");
             document.querySelector(".wrapper").style.paddingBottom = "";
             return;
@@ -709,7 +709,8 @@
            shows above the bottom edge and is the transport dock; open, the
            whole thing slides up. There is no separate dock element, so there
            is only ever one play button, one progress bar and one Loop box.
-           Above 961px the header is a static sidebar and none of this applies. -->
+           At 1200px and up the header is a static sidebar and none of this
+           applies. -->
       <button type="button" id="drawer-scrim" hidden aria-hidden="true" tabindex="-1"
               onclick="closeDrawer();"></button>
 
