@@ -807,7 +807,12 @@ header ul {
    a control on one side and a label on the other.
 
    right, not left - and note the frets row keeps the left corner even on the
-   tabs where it is hidden, so the two never collide. */
+   tabs where it is hidden, so the two never collide.
+
+   Both corners are equally safe on a phone: the crop shaves the same 4.5% off
+   each side, and both overlays are positioned against the frame, which is the
+   clipping box - so 6px in from its edge is 6px inside what is actually on
+   screen, at any width. */
 #view-note-wrap {
     position: absolute;
     top: 6px;
@@ -816,9 +821,10 @@ header ul {
     display: flex;
     align-items: center;
     gap: 6px;
-    /* Never over the music: the corner is blank, the middle of the title is
-       not. The glosses are written to fit well inside this. */
-    max-width: 45%;
+    /* Never across the title, which is centred just below. The glosses are
+       written to fit; on a narrow screen the gloss ellipsizes and the link,
+       which cannot usefully be truncated, keeps its width. */
+    max-width: calc(100% - 12px);
     min-width: 0;
     height: 20px;
     padding: 2px 5px;
@@ -1117,20 +1123,6 @@ header ul {
     }
     #score-variants {
         padding-bottom: 4px;
-    }
-    /* Not an overlay here. The narrow layout deliberately renders the score
-       wider than the screen and crops the paper margin away, which takes the
-       blank corner with it - the box landed on the title instead. In flow
-       under the chips it has a line of its own, which is what the width can
-       afford. */
-    #view-note-wrap {
-        position: static;
-        max-width: none;
-        height: auto;
-        justify-content: flex-end;
-        margin: 0 10px 2px 0;
-        padding: 0;
-        background: none;
     }
 }
 @media print, screen and (max-width: 720px) {
