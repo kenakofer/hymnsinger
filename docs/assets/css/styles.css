@@ -871,8 +871,15 @@ header ul {
     /* Centred once the column is wider than the score. Below 960px this band
        always was the full width of a phone, so the question never came up;
        now it runs to 1199px, where a left-flush score leaves 200px of empty
-       page down one side. */
-    #choice-and-music {
+       page down one side.
+
+       The back link is centred to the same width, not just the score: it is
+       the head of that column, and the theme drops section's 50px of padding
+       above 960px, so left alone it stayed at the page edge while the score
+       moved - a gap that grew to 150px by 1199. */
+    #choice-and-music,
+    #page-top-row {
+        max-width: 900px;
         margin-left: auto;
         margin-right: auto;
     }
