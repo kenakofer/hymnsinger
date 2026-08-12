@@ -1125,7 +1125,7 @@ header ul {
         padding-bottom: 4px;
     }
 }
-@media print, screen and (max-width: 720px) {
+@media print, screen and (max-width: 800px) {
     section {
         padding: 0 8px;
     }
@@ -1134,6 +1134,21 @@ header ul {
     }
     body {
         padding: 0;
+    }
+    /* The theme's own full-bleed switch is hard-coded at 720px, and its wide
+       rules - `section { padding: 10px 0 10px 20px }` on top of the 50px from
+       its base rule - keep 134px of gutter that this block is trying to give
+       back to the score. Restated here so both breakpoints land at 800px;
+       without it 721-800px reads as the wide layout with none of the room. */
+    header {
+        padding: 10px 20px 0;
+        margin-right: 0;
+    }
+    footer {
+        margin: 0 0 0 30px;
+    }
+    header ul, header p.view {
+        position: static;
     }
 }
 @media print, screen and (min-width: 1200px) {
