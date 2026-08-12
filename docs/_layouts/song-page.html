@@ -377,6 +377,20 @@
         }
     }
 
+    // The one place the wide layout's breakpoint is written in script. It has
+    // to stay in step with the 1200px media queries in styles.css, and
+    // matchMedia is what keeps it honest: innerWidth counts the scrollbar and
+    // a media query does not, so the two disagree by a dozen pixels exactly at
+    // the boundary - long enough to hand the sheet measurement and the gloss's
+    // placement two different answers about which layout is on screen.
+    var wideLayout = window.matchMedia("(min-width: 1200px)");
+    // addListener, not addEventListener: Safari before 14 has only the former
+    // on MediaQueryList, and this page is read on old phones.
+    function onLayoutChange(fn) {
+        if (wideLayout.addEventListener) wideLayout.addEventListener("change", fn);
+        else wideLayout.addListener(fn);
+    }
+
     // How far the sheet sits down when closed is "its own height minus the
     // head", so the head has to be measured rather than guessed - it depends
     // on the font and on the safe-area inset. Also drives the score's bottom
@@ -386,7 +400,7 @@
         var head = document.getElementById("sheet-head");
         if (!sheet || !head) return;
         // Only meaningful in the narrow layout; the wide sidebar is static.
-        if (window.innerWidth >= 1200) {
+        if (wideLayout.matches) {
             sheet.style.removeProperty("--sheet-head-h");
             document.querySelector(".wrapper").style.paddingBottom = "";
             return;
@@ -452,7 +466,6 @@
     // No ancestor contains both slots, so the node is moved rather than
     // restyled. Its id, and so everything renderScore() does to it, is
     // untouched by the move.
-    var glossWide = window.matchMedia("(min-width: 1200px)");
     function placeViewNote() {
         var wrap = document.getElementById("view-note-wrap");
         var frame = document.getElementById("music-frame");
@@ -461,15 +474,12 @@
         // Back to the corner it is engraved against, ahead of #music-clip so
         // source order still matches the stacking: overlay first, sheet under
         // it. Appending would leave it after the slide deck.
-        var home = glossWide.matches ? frame : topRow;
+        var home = wideLayout.matches ? frame : topRow;
         if (wrap.parentNode === home) return;
         if (home === frame) frame.insertBefore(wrap, document.getElementById("music-clip"));
         else topRow.appendChild(wrap);
     }
-    // addListener, not addEventListener: Safari before 14 has only the former
-    // on MediaQueryList, and this page is read on old phones.
-    if (glossWide.addEventListener) glossWide.addEventListener("change", placeViewNote);
-    else glossWide.addListener(placeViewNote);
+    onLayoutChange(placeViewNote);
     document.addEventListener("DOMContentLoaded", placeViewNote);
 
     // --key-h is in pixels, so it has to be recomputed whenever the image's

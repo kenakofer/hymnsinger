@@ -1152,12 +1152,16 @@ header ul {
            above it, so the panel sits evenly in the window rather than looking
            dropped against the bottom edge. */
         --sidebar-bottom: 18px;
+        /* Everything the sidebar occupies across the page: its 380px content
+           box, the 60px of padding either side of it, and a 25px gutter. The
+           score column clears it and sizes against it, so the figure is named
+           once here rather than restated as 465 wherever it is needed. */
+        --sidebar-span: 465px;
     }
     section {
         float: left;
-        /* Clears the fixed sidebar: its 380px content box plus the 60px of
-           padding either side of it, plus a 25px gutter. */
-        margin-left: 465px;
+        /* Clears the fixed sidebar. */
+        margin-left: var(--sidebar-span);
         width: initial;
         padding-right: 20px;
     }
@@ -1165,18 +1169,18 @@ header ul {
         width: 100%;
         max-width: 1400px;
     }
-    /* The sidebar takes a fixed 465px, so the score column gets whatever is
+    /* The sidebar takes --sidebar-span, so the score column gets whatever is
        left rather than an unconditional 900px: the two together need 1340px,
        and between here and there the score used to run off the right edge.
        It still stops at 900px, the engraving's own width - this only shrinks
-       it. 20px is the section's own padding-right. */
-    #choice-and-music {
-        max-width: min(900px, calc(100vw - 465px - 20px));
-    }
-    /* The deck sizes against the viewport rather than its parent (see the note
-       on the base rule), so it has to subtract the sidebar itself. */
+       it. 20px is the section's own padding-right.
+
+       #slide-deck needs the same figure rather than inheriting it: the deck
+       sizes against the viewport rather than its parent (see the note on the
+       base rule), so it has to subtract the sidebar for itself. */
+    #choice-and-music,
     #slide-deck {
-        max-width: min(900px, calc(100vw - 465px - 20px));
+        max-width: min(900px, calc(100vw - var(--sidebar-span) - 20px));
     }
     /* The back link moves out of the content column and into the band above
        the sidebar, aligned to the sidebar's own text indent rather than to the
