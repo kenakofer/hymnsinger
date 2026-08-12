@@ -781,13 +781,11 @@ header ul {
 #drawer-scrim {
     display: none;
 }
-/* The back link and the notation gloss share one line: the link is short, and
-   the space to its right was empty. The gloss is right-aligned so it reads as
-   a caption on the chips below rather than as part of the link. */
+/* Holds the back link alone. The notation gloss used to share this line; it is
+   now an overlay in the score's top-right corner, mirroring the frets row. */
 #page-top-row {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 10px;
     padding-right: 10px;
 }
@@ -803,34 +801,50 @@ header ul {
     font-size: 14px;
     white-space: nowrap;
 }
-/* Holds the gloss and its optional external link on one line. min-width:0 is
-   what lets the gloss inside actually shrink and ellipsize rather than forcing
-   the row wider than the screen. */
+/* The frets row's mirror image, in the score's other top corner. Same box:
+   same offset, radius, padding and opaque paper colour, and the same 20px
+   inner height, so the two read as one pair of corner overlays rather than as
+   a control on one side and a label on the other.
+
+   right, not left - and note the frets row keeps the left corner even on the
+   tabs where it is hidden, so the two never collide. */
 #view-note-wrap {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    z-index: 2;
     display: flex;
-    align-items: baseline;
-    justify-content: flex-end;
+    align-items: center;
     gap: 6px;
+    /* Never over the music: the corner is blank, the middle of the title is
+       not. The glosses are written to fit well inside this. */
+    max-width: 45%;
     min-width: 0;
+    height: 20px;
+    padding: 2px 5px;
+    border-radius: 4px;
+    background-color: #F7F7F0;
+    line-height: 1;
 }
-/* One line, always. Ellipsis rather than wrap: a second line here would push
-   the score down on some tabs and not others, so the row would jump as you
-   change notation. The glosses are written to fit; this is the backstop - and
-   the gloss is what gives way, so the link stays whole. */
+#view-note-wrap[hidden] {
+    display: none;
+}
+/* One line, always. Ellipsis rather than wrap: the box is a fixed height in a
+   blank corner, and a second line would grow it onto the credits below. The
+   gloss is what gives way, so the link stays whole. */
 #view-note {
     min-width: 0;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
     text-align: right;
-    font-size: 12px;
-    line-height: 1.2;
+    font-size: 11px;
     color: #666;
 }
 #view-note-link {
     flex: 0 0 auto;
     white-space: nowrap;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bold;
     color: #c33333;
 }
@@ -1072,6 +1086,20 @@ header ul {
     }
     #score-variants {
         padding-bottom: 4px;
+    }
+    /* Not an overlay here. The narrow layout deliberately renders the score
+       wider than the screen and crops the paper margin away, which takes the
+       blank corner with it - the box landed on the title instead. In flow
+       under the chips it has a line of its own, which is what the width can
+       afford. */
+    #view-note-wrap {
+        position: static;
+        max-width: none;
+        height: auto;
+        justify-content: flex-end;
+        margin: 0 10px 2px 0;
+        padding: 0;
+        background: none;
     }
 }
 @media print, screen and (max-width: 720px) {

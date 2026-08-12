@@ -74,10 +74,10 @@
         return (book && book.clef) ? book.clef : null;
     }
 
-    // A one-line gloss per notation, shown beside the back link. Kept to ~35
-    // characters so it never wraps onto a second line and pushes the score
-    // down. Traditional has no entry: it is the default and needs no gloss,
-    // which is what keeps the common view as short as it was.
+    // A one-line gloss per notation, shown in the score's top-right corner.
+    // Kept to ~35 characters so it stays inside the blank corner rather than
+    // reaching across the title. Traditional has no entry: it is the default
+    // and needs no gloss, so the common view carries no overlay at all.
     var VIEW_NOTES = {
         "lead": {% if site.data.songs[page.song_file].has_chords %}"Melody + chord symbols"{% else %}"Melody only, no harmony parts"{% endif %},
         "roman": "Chords as scale degrees",
@@ -191,14 +191,20 @@
         if (pdfLink)
             pdfLink.href = "/local-lilypond-outputs/{{ page.song_file }}-" + suffix + ".pdf";
         var note = document.getElementById("view-note");
+        var text = VIEW_NOTES[window.currentVariant] || "";
         if (note)
-            note.textContent = VIEW_NOTES[window.currentVariant] || "";
+            note.textContent = text;
         var noteLink = document.getElementById("view-note-link");
+        var url = VIEW_LINKS[window.currentVariant];
         if (noteLink) {
-            var url = VIEW_LINKS[window.currentVariant];
             noteLink.hidden = !url;
             if (url) noteLink.href = url;
         }
+        // The whole corner box goes, not just its text: an empty overlay would
+        // still paint a small blank patch over the score on Traditional.
+        var noteWrap = document.getElementById("view-note-wrap");
+        if (noteWrap)
+            noteWrap.hidden = !text && !url;
 
         // Anchor the transpose arrows to this book's opening clef. Still keyed
         // on the file suffix rather than the book: the clef's box is the same
