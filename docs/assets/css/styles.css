@@ -498,8 +498,12 @@ button {
    level reads as an area rather than as a dot on a line - and the four of
    them together show the balance between voices at a glance.
 
-   The input keeps its native behaviour and is simply made invisible; the
-   wedge is drawn by the track pseudo-elements underneath the thumb. */
+   The input keeps its native behaviour; the wedge is painted on the input
+   itself, underneath the thumb.
+
+   The gradient belongs here on the element, not on the track pseudo-elements:
+   Firefox does not inherit custom properties into ::-moz-range-track, so a
+   var(--fill) there silently freezes at its fallback. */
 input[type="range"].wedge {
     -webkit-appearance: none;
     appearance: none;
@@ -507,28 +511,24 @@ input[type="range"].wedge {
     height: 14px;
     margin: 0;
     padding: 0;
-    background: none;
-    cursor: pointer;
-}
-/* WebKit has no ::-moz-range-progress, so the filled portion is a hard-stopped
-   gradient driven by --fill, which paintWedges() keeps in sync with the value. */
-input[type="range"].wedge::-webkit-slider-runnable-track {
-    height: 14px;
     background: linear-gradient(to right,
         #c33333 0 var(--fill, 50%), #3a3a36 var(--fill, 50%) 100%);
-    /* Apex at the left, full height at the right. */
+    /* Apex at the left, full height at the right. This also clips the thumb,
+       which trims its top corner near the quiet end - deliberate, it keeps the
+       thumb inside the wedge. */
     clip-path: polygon(0 100%, 100% 0, 100% 100%);
+    cursor: pointer;
+}
+input[type="range"].wedge::-webkit-slider-runnable-track {
+    height: 14px;
+    background: none;
 }
 input[type="range"].wedge::-moz-range-track {
     height: 14px;
-    background: #3a3a36;
-    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+    background: none;
 }
-/* Firefox fills the wedge up to the thumb for free. */
 input[type="range"].wedge::-moz-range-progress {
-    height: 14px;
-    background: #c33333;
-    clip-path: polygon(0 100%, 100% 0, 100% 100%);
+    background: none;
 }
 input[type="range"].wedge::-webkit-slider-thumb {
     -webkit-appearance: none;

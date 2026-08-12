@@ -405,9 +405,9 @@
         refreshKeyHeight();
     });
 
-    // Chrome and Safari have no ::-moz-range-progress, so the wedge's filled
-    // portion is a gradient stop the CSS reads from --fill. Firefox paints it
-    // natively and ignores this.
+    // The wedge's filled portion is a gradient stop the CSS reads from --fill.
+    // It must be set on the input itself: Firefox does not inherit custom
+    // properties into the track pseudo-elements.
     function paintWedge(el) {
         var pct = (el.value - el.min) / (el.max - el.min) * 100;
         el.style.setProperty("--fill", pct + "%");
