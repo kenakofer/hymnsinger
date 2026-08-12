@@ -489,6 +489,7 @@ button {
 .part-sliders {
     display: grid;
     gap: 23.7px;
+    margin-top: -10px;
 }
 .part-pair {
     display: grid;
