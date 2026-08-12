@@ -1148,6 +1148,10 @@ header ul {
     :root {
         --sidebar-top: 48px;
         --back-link-top: 18px;
+        /* Breathing room under the sidebar, and the same distance as the gap
+           above it, so the panel sits evenly in the window rather than looking
+           dropped against the bottom edge. */
+        --sidebar-bottom: 18px;
     }
     section {
         float: left;
@@ -1242,10 +1246,20 @@ header ul {
            80vh box and needed a scrollbar of their own. */
         width: 380px;
         /* Level with the chip row across the gutter, rather than with the
-           back link that now sits above it. 80vh has to come down by the same
-           amount or the sidebar's bottom runs off the screen. */
+           back link that now sits above it. */
         margin-top: var(--sidebar-top);
-        max-height: calc(80vh - var(--sidebar-top) + 30px);
+        /* Down to the bottom of the window, less the gutter. The old 80vh cap
+           was measured from the page top while the sidebar starts 48px down,
+           so its bottom edge landed at 80vh + 30px - about 240px short of the
+           fold on a 1000px screen, and the panel stopped growing while that
+           much of the window sat empty under it. The panel is content-sized
+           until it hits this, so on a short screen it still scrolls and on a
+           tall one it simply gets the room.
+
+           The stylesheet is content-box throughout, so max-height caps the
+           content alone: the 10px of padding at each end has to come out of
+           the budget by hand, or the box overruns the fold by 20px. */
+        max-height: calc(100vh - var(--sidebar-top) - var(--sidebar-bottom) - 20px);
         overflow-y: auto;
         overflow-x: hidden;
         scrollbar-color: #aaa #171717;
