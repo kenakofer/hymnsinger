@@ -400,6 +400,50 @@
     document.addEventListener("DOMContentLoaded", measureSheetHead);
     window.addEventListener("load", measureSheetHead);
 
+    // Song Details opens only if it does not cost the reader a scrollbar.
+    // Lyrics is open unconditionally - it is the reason the panel is there -
+    // and Details is the nice-to-have that yields when the screen is short.
+    //
+    // Measured rather than guessed from a breakpoint: the panel's height is
+    // 88vh on a phone and 80vh on the desktop sidebar, and what is already
+    // stacked above Details varies by song - a long tune name wraps, and the
+    // Alternate words block only exists for some. So the test is simply
+    // whether the panel overflows with it open, which is the thing actually
+    // being avoided.
+    //
+    // Runs once, at load, and deliberately not on resize: re-deciding would
+    // pull the section open or shut under a reader who is looking at it, and
+    // rotating a phone is not a request to rearrange the panel.
+    var songDetailsFitted = false;
+    function fitSongDetails() {
+        var panel = document.getElementById("song-controls");
+        var info = document.getElementById("song-info");
+        if (!panel || !info || songDetailsFitted) return;
+        // The phone sheet is transformed off-screen until opened, but it is
+        // laid out at full height the whole time, so scrollHeight is honest
+        // here whether or not the sheet has ever been raised.
+        info.open = true;
+        // A pixel of slack: sub-pixel layout rounding can leave scrollHeight a
+        // hair over clientHeight on a panel that visually fits exactly.
+        if (panel.scrollHeight > panel.clientHeight + 1) info.open = false;
+        songDetailsFitted = true;
+    }
+    // Fit first, then start listening. <details> fires "toggle" for a
+    // programmatic .open too, so binding first would have fitSongDetails' own
+    // probe register as a reader decision.
+    //
+    // Both disclosures are watched, not just Details: closing Lyrics or opening
+    // Details by hand is equally a statement about how the reader wants the
+    // panel, and the auto-fit must not answer back.
+    document.addEventListener("DOMContentLoaded", function () {
+        fitSongDetails();
+        var own = function () { songDetailsFitted = true; };
+        var info = document.getElementById("song-info");
+        var lyrics = document.getElementById("song-lyrics");
+        if (info) info.addEventListener("toggle", own);
+        if (lyrics) lyrics.addEventListener("toggle", own);
+    });
+
     // The notation gloss has two homes, and which one it is in is a DOM
     // question rather than a CSS one: in the wide layout it is an overlay in
     // the score's top-right corner, which means it must be a child of
@@ -915,7 +959,21 @@
           </div>
         </details>
 
-        <details id="song-info" class="drawer-wide" open>
+        <!-- Lyrics first and open: it is what a singer standing at the score
+             actually reaches for, and it was the one block below the fold that
+             had to be opened by hand every time. Song Details is reference
+             material - it is read once, if at all - so it follows, and opens
+             only when the sidebar has the room (see fitSongDetails). -->
+        <details id="song-lyrics" class="drawer-wide" open>
+          <summary>Lyrics <button id="copy-lyrics-button" onclick="copyLyrics()">Copy all</button></summary>
+          {% assign song_data = site.data.songs[page.song_file] %}
+            <div class='lyric-box'><textarea id="copy-me" readonly>{{ song_data.lyrics }}</textarea></div>
+        </details>
+
+        <!-- Closed in the markup, opened by fitSongDetails() when it fits. The
+             no-JS state is the conservative one: closed costs a reader one tap,
+             where wrongly open costs every short-screen reader a scroll. -->
+        <details id="song-info" class="drawer-wide">
           <summary>Song Details</summary>
           {% assign song_data = site.data.songs[page.song_file] %}
           <dl class="song-info-list">
@@ -927,12 +985,6 @@
             <dt>Meter</dt><dd>{{ song_data.meter }}</dd>
             <dt>Date Added</dt><dd>{{ song_data.date_added }}</dd>
           </dl>
-        </details>
-
-        <details id="song-lyrics" class="drawer-wide">
-          <summary>Lyrics <button id="copy-lyrics-button" onclick="copyLyrics()">Copy all</button></summary>
-          {% assign song_data = site.data.songs[page.song_file] %}
-            <div class='lyric-box'><textarea id="copy-me" readonly>{{ song_data.lyrics }}</textarea></div>
         </details>
 
         <!-- Alternate words and Tags both navigate *away* from this song, so
