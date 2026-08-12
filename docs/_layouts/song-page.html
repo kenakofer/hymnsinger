@@ -784,7 +784,12 @@
 
     </script>
     <script src="{{ site.baseurl }}/assets/js/midiplayer.js"></script>
-    <script src="{{ site.baseurl }}/assets/js/soundfont-player.js"></script>
+    <!-- The .min build of the same vendored version: 40KB down to 22KB, and
+         12.6KB down to 7KB over the wire. Neither file is source - both are
+         browserify bundles, and the unminified one only differs in that the
+         module bodies kept their comments - so there is nothing to read here
+         that the minified file loses. -->
+    <script src="{{ site.baseurl }}/assets/js/soundfont-player.min.js"></script>
     <script src="{{ site.baseurl }}/assets/js/app.js"></script>
     <div class="wrapper">
       <!-- Phone-only. One sheet in two positions: closed, only #sheet-head
