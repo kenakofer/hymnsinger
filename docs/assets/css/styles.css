@@ -1198,9 +1198,9 @@ header ul {
         padding: 0;
     }
     /* The frets row's mirror image, in the score's other top corner. Same box:
-       same offset, radius, padding and opaque paper colour, and the same 20px
-       inner height, so the two read as one pair of corner overlays rather than
-       as a control on one side and a label on the other.
+       same offset, radius, padding and opaque paper colour, so the two read as
+       one pair of corner overlays rather than as a control on one side and a
+       label on the other.
 
        right, not left - and note the frets row keeps the left corner even on
        the tabs where it is hidden, so the two never collide.
@@ -1208,7 +1208,12 @@ header ul {
        This layout only. #page-top-row is fixed to the band above the sidebar
        here, which is nowhere near the score, so the gloss goes back into the
        frame - the JS moves the node, and these rules restyle it once it is
-       there. */
+       there.
+
+       The type stays at the base 13px: this corner is blank paper with room to
+       spare, and there was never a reason for the wide layout to set the
+       smallest text on the page. The box is sized by its content rather than
+       pinned to the frets row's 20px, so it follows the text up. */
     #view-note-wrap {
         position: absolute;
         top: 6px;
@@ -1219,20 +1224,13 @@ header ul {
            written to fit; the gloss ellipsizes and the link, which cannot
            usefully be truncated, keeps its width. */
         max-width: calc(100% - 12px);
-        height: 20px;
-        padding: 2px 5px;
+        padding: 3px 6px;
         border-radius: 4px;
         background-color: #F7F7F0;
-        line-height: 1;
+        line-height: 1.2;
     }
-    /* 11px against the engraving, where it is a caption on the score rather
-       than a line of the page's own text. */
     #view-note {
         text-align: right;
-        font-size: 11px;
-    }
-    #view-note-link {
-        font-size: 11px;
     }
     header {
         /* float/position used to come from the theme's base rule, which meant
