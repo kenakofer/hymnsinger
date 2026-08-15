@@ -287,6 +287,22 @@ own ancient base, so a merge would replay ~1700 files including the 1400+
 generated assets each branch keeps in a different directory. `main` takes
 the song by file copy instead.
 
+**A worktree per branch is supported, and is the better way to work.**
+The stages used to reach a branch by checking it out in the main clone,
+which fails outright once a worktree holds it - *"fatal: 'main' is
+already checked out at ..."* - and took `finish` down mid-song. Each
+stage now resolves a branch to whichever working directory has it, and
+only falls back to a checkout when no worktree does; both paths are
+exercised, so a single-clone setup keeps working unchanged.
+
+Two things follow from this. `republish-all.sh` is run from the copy
+inside the target branch's own working directory, not the one you invoked
+`song-intake.sh` from, because that script derives its repo root from its
+own path - which is also what keeps the two branches' differing `docs/`
+layouts straight. And the post-merge copyright check reads the *branch*
+rather than a working tree, since the directory the check runs from is no
+longer guaranteed to be the one holding `public-main`.
+
 **The invariant: no `.ly` on `public-main` carries a copyright field.**
 `main` is a superset and does carry them.
 

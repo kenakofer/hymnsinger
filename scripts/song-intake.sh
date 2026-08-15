@@ -54,16 +54,21 @@ assets_warning() {
   local song="$1"
   # Key on the listing page and _data entry only. They exist on both
   # branches and are what Jekyll builds the song's page from - without them
-  # there is no page for a PDF to hang off. This runs after the final
-  # checkout, so it is reading $MAIN_BRANCH's working tree.
+  # there is no page for a PDF to hang off.
+  #
+  # $2 is the working directory holding $MAIN_BRANCH. It used to be assumed
+  # to be $REPO, on the grounds that publish had just checked main out
+  # there; with a worktree per branch that is no longer true, and reading
+  # $REPO would test whichever branch happens to be parked there.
   #
   # Deliberately NOT checking the outputs directory: the two branches keep
   # it in different places ($PUBLIC_BRANCH in docs/local-lilypond-outputs/,
   # $MAIN_BRANCH in docs/_site/local-lilypond-outputs/) because their hosts
   # differ, so a single path would warn on every song on one branch and
   # train you to ignore the warning.
-  [ -f "$REPO/docs/listing/$song.md" ] \
-    && [ -f "$REPO/docs/_data/songs/$song.json" ] && return 0
+  local where="${2:-$REPO}"
+  [ -f "$where/docs/listing/$song.md" ] \
+    && [ -f "$where/docs/_data/songs/$song.json" ] && return 0
 
   echo "${c_yel}warning${c_off} $song has no site page: it will not appear on the site"
   note "  the .ly is committed, but docs/listing/$song.md and"
@@ -119,6 +124,54 @@ toolchain_warning() {
 require_clean() {
   git -C "$REPO" diff --quiet && git -C "$REPO" diff --cached --quiet \
     || die "working tree has uncommitted changes; commit or stash first"
+}
+
+# Where does a branch live?
+#
+# `git checkout <branch>` in $REPO fails outright when another worktree
+# already has that branch checked out - "fatal: 'main' is already checked
+# out at ...". Keeping a worktree per branch is the natural way to work
+# here, since the two branches carry different layouts and switching
+# between them rewrites the mtime of every file that differs, so this has
+# to be the normal path rather than an error.
+#
+# Prints the working directory for $1 and leaves the caller to cd/-C into
+# it. If a worktree holds the branch, that is the answer and no checkout
+# happens; otherwise $REPO is switched to it as before. Either way the
+# returned directory has the branch checked out when this returns.
+worktree_for() {
+  local want="$1" dir="" br=""
+  # --porcelain emits "worktree <path>" then "branch refs/heads/<name>"
+  while IFS= read -r line; do
+    case "$line" in
+      "worktree "*) dir="${line#worktree }" ;;
+      "branch refs/heads/"*)
+        br="${line#branch refs/heads/}"
+        if [ "$br" = "$want" ]; then echo "$dir"; return 0; fi
+        ;;
+    esac
+  done < <(git -C "$REPO" worktree list --porcelain 2>/dev/null)
+
+  # No worktree holds it: fall back to switching $REPO, which is what this
+  # script did before worktrees were in the picture.
+  git -C "$REPO" checkout -q "$want" || return 1
+  echo "$REPO"
+}
+
+# Same, but never falls back to a checkout - used where we only need to
+# know whether a branch is parked in a worktree.
+worktree_holding() {
+  local want="$1" dir="" br=""
+  while IFS= read -r line; do
+    case "$line" in
+      "worktree "*) dir="${line#worktree }" ;;
+      "branch refs/heads/"*)
+        br="${line#branch refs/heads/}"
+        [ "$br" = "$want" ] && { echo "$dir"; return 0; }
+        ;;
+    esac
+  done < <(git -C "$REPO" worktree list --porcelain 2>/dev/null)
+  return 1
 }
 
 # Only the .ly is tracked; pdf/midi/mp3 are git-ignored.
@@ -529,33 +582,40 @@ $(echo "$stray" | sed 's/^/    /')
   # guard the public side and now guards the private one. The direction that
   # gets a real merge is whichever branch the intake fork came from.
   if [ "$want_public" = "1" ]; then
-    git -C "$REPO" checkout -q "$PUBLIC_BRANCH" || die "could not switch to $PUBLIC_BRANCH"
-    if ! git -C "$REPO" merge --no-ff -q -m "Add song \"$song\"" "$branch"; then
-      git -C "$REPO" merge --abort 2>/dev/null
-      git -C "$REPO" checkout -q "$MAIN_BRANCH"
+    local pub_wt; pub_wt="$(worktree_for "$PUBLIC_BRANCH")" \
+      || die "could not switch to $PUBLIC_BRANCH"
+    if ! git -C "$pub_wt" merge --no-ff -q -m "Add song \"$song\"" "$branch"; then
+      git -C "$pub_wt" merge --abort 2>/dev/null
       die "merge into $PUBLIC_BRANCH failed"
     fi
     # Post-condition: this merge must not have put a copyright field on
     # public-main. Belt-and-suspenders against a mislabelled song or a
     # stray file, checked against the real tree after merging. On failure
     # roll the branch back to where it was rather than leaving it dirty.
-    if git -C "$REPO" grep -qE 'copyright\s*=' -- 'lilypond/songs/**/*.ly'; then
-      git -C "$REPO" reset -q --hard HEAD~1
-      git -C "$REPO" checkout -q "$MAIN_BRANCH"
+    #
+    # Read the BRANCH, not the working tree: with a worktree per branch
+    # this may be running from a directory that is not the one holding
+    # $PUBLIC_BRANCH, and an unqualified `git grep` would then search
+    # whatever tree it happens to sit in.
+    if git -C "$REPO" grep -qE 'copyright\s*=' "$PUBLIC_BRANCH" \
+         -- 'lilypond/songs/**/*.ly'; then
+      git -C "$pub_wt" reset -q --hard HEAD~1 \
+        || die "aborted, AND could not roll $PUBLIC_BRANCH back; it is one merge ahead"
       die "aborted: publishing $song would put a copyright field on $PUBLIC_BRANCH"
     fi
     echo "${c_grn}merged${c_off}   $branch -> $PUBLIC_BRANCH"
   fi
 
-  git -C "$REPO" checkout -q "$MAIN_BRANCH" || die "could not switch to $MAIN_BRANCH"
-  if ! git -C "$REPO" checkout "$branch" -- "lilypond/songs/$song" 2>/dev/null; then
+  local main_wt; main_wt="$(worktree_for "$MAIN_BRANCH")" \
+    || die "could not switch to $MAIN_BRANCH"
+  if ! git -C "$main_wt" checkout "$branch" -- "lilypond/songs/$song" 2>/dev/null; then
     die "could not take lilypond/songs/$song from $branch"
   fi
-  git -C "$REPO" add "lilypond/songs/$song" || die "git add failed"
-  if git -C "$REPO" diff --cached --quiet; then
+  git -C "$main_wt" add "lilypond/songs/$song" || die "git add failed"
+  if git -C "$main_wt" diff --cached --quiet; then
     note "$song is already on $MAIN_BRANCH and unchanged"
   else
-    git -C "$REPO" commit -q -m "Add song \"$song\" ($status)" \
+    git -C "$main_wt" commit -q -m "Add song \"$song\" ($status)" \
       || die "commit into $MAIN_BRANCH failed"
     echo "${c_grn}added${c_off}    $song -> $MAIN_BRANCH ${c_dim}(files only, no merge)${c_off}"
   fi
@@ -564,20 +624,20 @@ $(echo "$stray" | sed 's/^/    /')
     [ "$status" = "public-domain" ] \
       && note "public-domain: pass --public to also promote to $PUBLIC_BRANCH"
     echo
-    assets_warning "$song"
+    assets_warning "$song" "$main_wt"
     toolchain_warning
     note "not pushed - review, then: git push origin $MAIN_BRANCH"
     return 0
   fi
 
   echo
-  assets_warning "$song"
+  assets_warning "$song" "$main_wt"
   toolchain_warning
   note "not pushed. the song is on both branches, and each builds its"
   note "assets separately, so stage 5 runs once per branch:"
-  note "  git checkout $PUBLIC_BRANCH && scripts/republish-all.sh"
+  note "  (in the $PUBLIC_BRANCH worktree)  scripts/republish-all.sh"
   note "  git push public-origin $PUBLIC_BRANCH:main"
-  note "  git checkout $MAIN_BRANCH && scripts/republish-all.sh"
+  note "  (in the $MAIN_BRANCH worktree)    scripts/republish-all.sh"
   note "  git push origin $MAIN_BRANCH"
 }
 
@@ -644,14 +704,23 @@ cmd_finish() {
   fi
 
   # Build both branches now, so --go is a push and not a build-and-push.
+  #
+  # Each branch is built by the republish-all.sh sitting in ITS OWN
+  # working directory, not by $REPO's copy. That script derives its repo
+  # root from its own path, so the copy inside a worktree operates on that
+  # worktree - which is exactly what is wanted, and is also why the two
+  # branches' differing docs/ layouts keep working.
+  local wt
   if [ "$status" = "public-domain" ]; then
-    git -C "$REPO" checkout -q "$PUBLIC_BRANCH" || die "could not switch to $PUBLIC_BRANCH"
-    "$REPO/scripts/republish-all.sh" >/dev/null 2>&1 || die "republish failed on $PUBLIC_BRANCH"
-    echo "${c_grn}built${c_off}    $PUBLIC_BRANCH"
+    wt="$(worktree_for "$PUBLIC_BRANCH")" || die "could not switch to $PUBLIC_BRANCH"
+    "$wt/scripts/republish-all.sh" >/dev/null 2>&1 \
+      || die "republish failed on $PUBLIC_BRANCH"
+    echo "${c_grn}built${c_off}    $PUBLIC_BRANCH ${c_dim}($wt)${c_off}"
   fi
-  git -C "$REPO" checkout -q "$MAIN_BRANCH" || die "could not switch to $MAIN_BRANCH"
-  "$REPO/scripts/republish-all.sh" >/dev/null 2>&1 || die "republish failed on $MAIN_BRANCH"
-  echo "${c_grn}built${c_off}    $MAIN_BRANCH"
+  wt="$(worktree_for "$MAIN_BRANCH")" || die "could not switch to $MAIN_BRANCH"
+  "$wt/scripts/republish-all.sh" >/dev/null 2>&1 \
+    || die "republish failed on $MAIN_BRANCH"
+  echo "${c_grn}built${c_off}    $MAIN_BRANCH ${c_dim}($wt)${c_off}"
 
   echo
   echo "${c_bold}render${c_off} $SONGS/$song/$song-trad.pdf"
