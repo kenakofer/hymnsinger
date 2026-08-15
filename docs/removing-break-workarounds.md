@@ -112,6 +112,9 @@ not. A workable split:
 MIDI differing is always a bug, never a judgement call — the agent should
 revert and report rather than escalate.
 
+The prompt to hand an agent, with the thresholds written as a decision
+table, is `agent-prompt-break-workaround.md`.
+
 ## Status
 
 - `\bar " "` — **done**, 11 files (commit "Drop the \bar " " break
