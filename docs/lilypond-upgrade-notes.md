@@ -21,6 +21,13 @@ Both fixes below are still required on 2.24 — unmodified `public-main`
 fails there with the same arity error. They are just sufficient on 2.24,
 and not sufficient on 2.26.
 
+## Source simplifications 2.24 makes available
+
+2.24 changed `\break` to always insert a break rather than only breaking
+at barlines, which retires the `\bar ""` / `\bar " "` workaround used to
+force mid-measure breaks. That is a source cleanup rather than a fix, so
+it is written up separately in `removing-break-workarounds.md`.
+
 ## Fixed (committed, works under 2.22, 2.24 and 2.26)
 
 **`lib/left-align-lyrics.ily` — `(_ "...")` no longer parses.**
