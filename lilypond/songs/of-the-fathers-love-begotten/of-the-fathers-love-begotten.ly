@@ -32,7 +32,7 @@ quarternoteTempo = 120
 %% it - m2 and m4 are 11/4, m5 is 15/4, m6 is 10/4 - which is four failed
 %% barchecks, not four wrong phrases. \cadenzaOn stops LilyPond counting
 %% altogether, which is what unmetered chant wants: the barlines below
-%% then fall exactly where the hymnal draws them, and \bar "" \break puts
+%% then fall exactly where the hymnal draws them, and \break puts
 %% one phrase pair per system as printed.
 %%
 %% hymnTime stays 12/4 for the MIDI tempo to key off; the signature is

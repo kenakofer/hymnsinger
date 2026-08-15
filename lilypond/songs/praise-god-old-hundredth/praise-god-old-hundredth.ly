@@ -23,9 +23,9 @@ dateAdded = "2021-03-30"
 soprano = {
   \globalParts
   \relative g' {
-    \partial 4 g4 | g fs e d | g a \m b2. b4\fermata \bar ""
-    \partial 4 b4 | b b a g | c b \m a2. a4\fermata \bar "" \break
-    \partial 4 g4 | a b a g | e fs \m g2. g4\fermata \bar ""
+    \partial 4 g4 | g fs e d | g a \m b2. b4\fermata
+    \partial 4 b4 | b b a g | c b \m a2. a4\fermata \break
+    \partial 4 g4 | a b a g | e fs \m g2. g4\fermata
     \partial 4 d'4 | b g a c | \partial 2. b a \m g2. g4\fermata \bar "||" \m {g1 g } {g2 g}
     \bar "|."
   }

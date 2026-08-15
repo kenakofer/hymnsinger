@@ -24,11 +24,11 @@ soprano = {
   \globalParts
   \phrasingSlurSolid
   \relative g' {
-    \partial 4 d8( f) | g4. bf8 a8. f16 | bf8( c) bf4 a | g8 a g4 f | d2 \bar "" \break
-    \partial 4 d8( f) | g4. bf8 a8. f16 | bf8( c) d4 d | 8 c bf4 c | bf2 \bar "" \break
-    \partial 4 f8( d) | c4. 8 bf d | c4 f4 8( d) | c4. 8 d f | g2 \bar "" \break
-    \partial 4 g8( a) | bf8. 16 a4 g | f bf d, | c8 bf c4 d | f2 \bar "" \break
-    \partial 4 d8( f) | g4. bf8 a8. f16 | bf8\( c\) bf4 a | g8 a g4 f | d2 \bar "" \break
+    \partial 4 d8( f) | g4. bf8 a8. f16 | bf8( c) bf4 a | g8 a g4 f | d2 \break
+    \partial 4 d8( f) | g4. bf8 a8. f16 | bf8( c) d4 d | 8 c bf4 c | bf2 \break
+    \partial 4 f8( d) | c4. 8 bf d | c4 f4 8( d) | c4. 8 d f | g2 \break
+    \partial 4 g8( a) | bf8. 16 a4 g | f bf d, | c8 bf c4 d | f2 \break
+    \partial 4 d8( f) | g4. bf8 a8. f16 | bf8\( c\) bf4 a | g8 a g4 f | d2 \break
     \partial 4 d8\( f\) | g4. bf8 a8. f16 | bf8\( c\) d4 d | 8 c bf4 c | \partial 2 bf2 \bar "|."
   }
 }

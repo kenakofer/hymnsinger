@@ -37,18 +37,18 @@ soprano = { \globalParts
   %% rest of all five verses by one.
   %%
   %% Four systems, each starting on its pickup, as the page prints them.
-  %% \bar "" \break because the break falls mid-measure, before the upbeat.
-  \partial 2 e'4( fs'4) | a'2 fs'4 a'4 | e'2 a'4 a'4 | cs''2 a'4 cs''4 | e'2 \bar "" \break e'4( fs'4) | a'2 fs'4 a'4 | e'2 a'4 a'4 | cs''2 b'4 b'4 | a'2 \bar "" \break cs''2 | e''2 cs''4 e''4 | a'2 a'4 a'4 | cs''2 a'4 cs''4 | e'2 \bar "" \break e'4( fs'4) | a'2 fs'4 a'4 | e'2 a'4 a'4 | cs''2 b'4 b'4 | a'2
+  %% \break because the break falls mid-measure, before the upbeat.
+  \partial 2 e'4( fs'4) | a'2 fs'4 a'4 | e'2 a'4 a'4 | cs''2 a'4 cs''4 | e'2 \break e'4( fs'4) | a'2 fs'4 a'4 | e'2 a'4 a'4 | cs''2 b'4 b'4 | a'2 \break cs''2 | e''2 cs''4 e''4 | a'2 a'4 a'4 | cs''2 a'4 cs''4 | e'2 \break e'4( fs'4) | a'2 fs'4 a'4 | e'2 a'4 a'4 | cs''2 b'4 b'4 | a'2
 \bar "|."
 }
 alto = { \globalParts
-  \partial 2 cs'4( d'4) | e'2 d'4 fs'4 | e'2 cs'4 cs'4 | e'2 cs'4 a4 | b2 \bar "" \break cs'4( d'4) | e'2 d'4 fs'4 | e'2 cs'4 cs'4 | e'2 e'4 e'4 | cs'2 \bar "" \break e'2 | a'2 e'4 e'4 | fs'2 fs'4 fs'4 | e'2 cs'4 a4 | b2 \bar "" \break cs'4( d'4) | e'2 d'4 fs'4 | e'2 cs'4 cs'4 | e'2 e'4 e'4 | cs'2
+  \partial 2 cs'4( d'4) | e'2 d'4 fs'4 | e'2 cs'4 cs'4 | e'2 cs'4 a4 | b2 \break cs'4( d'4) | e'2 d'4 fs'4 | e'2 cs'4 cs'4 | e'2 e'4 e'4 | cs'2 \break e'2 | a'2 e'4 e'4 | fs'2 fs'4 fs'4 | e'2 cs'4 a4 | b2 \break cs'4( d'4) | e'2 d'4 fs'4 | e'2 cs'4 cs'4 | e'2 e'4 e'4 | cs'2
 }
 tenor = { \globalParts
-  \partial 2 a2 | cs'2 a4 a4 | a2 e4 e4 | a2 a4 a4 | gs2 \bar "" \break a2 | cs'2 a4 a4 | a2 a4 a4 | a2 gs4 gs4 | a2 \bar "" \break a2 | cs'2 a4 b4 | cs'2 d'4 a4 | a2 a4 a4 | gs2 \bar "" \break a2 | cs'2 a4 a4 | a2 a4 a4 | a2 gs4 gs4 | a2
+  \partial 2 a2 | cs'2 a4 a4 | a2 e4 e4 | a2 a4 a4 | gs2 \break a2 | cs'2 a4 a4 | a2 a4 a4 | a2 gs4 gs4 | a2 \break a2 | cs'2 a4 b4 | cs'2 d'4 a4 | a2 a4 a4 | gs2 \break a2 | cs'2 a4 a4 | a2 a4 a4 | a2 gs4 gs4 | a2
 }
 bass = { \globalParts
-  \partial 2 a,2 | a,2 d4 d4 | cs2 a,4 a,4 | a,2 a,4 a,4 | e2 \bar "" \break a,2 | a,2 d4 d4 | cs2 fs4 fs4 | e2 e4 e4 | a,2 \bar "" \break a2 | a2 a4 gs4 | fs2 d4 d4 | a,2 a,4 a,4 | e2 \bar "" \break a,2 | a,2 d4 d4 | cs2 fs4 fs4 | e2 e4 e4 | a,2
+  \partial 2 a,2 | a,2 d4 d4 | cs2 a,4 a,4 | a,2 a,4 a,4 | e2 \break a,2 | a,2 d4 d4 | cs2 fs4 fs4 | e2 e4 e4 | a,2 \break a2 | a2 a4 gs4 | fs2 d4 d4 | a,2 a,4 a,4 | e2 \break a,2 | a,2 d4 d4 | cs2 fs4 fs4 | e2 e4 e4 | a,2
 }
 
 %CHORDS

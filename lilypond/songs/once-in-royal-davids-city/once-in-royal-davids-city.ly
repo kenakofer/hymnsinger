@@ -27,8 +27,8 @@ me = \melismaEnd
 soprano = {
   \globalParts
   \phrasingSlurSolid
-  \relative g' { \partial 2 c,4 e | f4. 8 8\m e\me f\m g\me | g4 f f a | c4. a8 a\m g\me f\m e\me | f2 \bar "" } \break
-  \relative g' { \partial 2 c,4 e | f4. 8 8\m e\me f\m g\me | g4 f f a | c4. a8 a\m g\me f\m e\me | f2 \bar "" } \break
+  \relative g' { \partial 2 c,4 e | f4. 8 8\m e\me f\m g\me | g4 f f a | c4. a8 a\m g\me f\m e\me | f2 } \break
+  \relative g' { \partial 2 c,4 e | f4. 8 8\m e\me f\m g\me | g4 f f a | c4. a8 a\m g\me f\m e\me | f2 } \break
   \relative g' { \partial 2 d'4 d | c4. f,8 bf4 4 | a\( a\) d d | c4. a8 a\m g\me f\m e\me | \partial 2 f4\( f\) | } \break
   \bar "|."
 }

@@ -7,9 +7,9 @@ hymnTime = \time 3/4
 %% NOTES
 soprano = {
   \globalParts
-  \relative f' { \partial 4 c8 e | g2 e8 d | e2 g4 | c2 a8 g | e2 c8 e | g2 c,4 | e2 d4 | c2.~ | c2 \bar "" } \break
-  \relative f' { c8 e | g2 e8 d | e2 g4 | c2 a8 g | e2 c8 e | g2 c,4 | e2 d4 | c2.~ | c2 \bar "" } \break
-  \relative f' { g4 | c2 e8 c | a2 c4 | d2 c8 a | g2 e8 g | a2 g8 a | c2 d4 | c2.~ | c2 \bar "" } \break
+  \relative f' { \partial 4 c8 e | g2 e8 d | e2 g4 | c2 a8 g | e2 c8 e | g2 c,4 | e2 d4 | c2.~ | c2 } \break
+  \relative f' { c8 e | g2 e8 d | e2 g4 | c2 a8 g | e2 c8 e | g2 c,4 | e2 d4 | c2.~ | c2 } \break
+  \relative f' { g4 | c2 e8 c | a2 c4 | d2 c8 a | g2 e8 g | a2 g8 a | c2 d4 | c2.~ | c2 } \break
   \relative f' { c8 e | g2 e8 d | e2 g4 | c2 a8 g | e2 c8 e | g2 c,4 | e2 d4 | c2.~ | \partial 2 c2 | } \break
   \bar "|."
 }

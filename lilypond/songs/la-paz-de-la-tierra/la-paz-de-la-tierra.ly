@@ -25,7 +25,7 @@ dateAdded = "2021-03-09"
 soprano_spanish = {
   \globalParts
   \phrasingSlurSolid
-  \relative g' { \partial 4 e4 | a4 8 8 4 b4 | c4 b c a4 | g4 8 a e4 d4 | \partial 2. e2. \bar "" } \break
+  \relative g' { \partial 4 e4 | a4 8 8 4 b4 | c4 b c a4 | g4 8 a e4 d4 | \partial 2. e2. } \break
   \relative g' { \partial 4 e4 | a4 8 8 4 b4 | c4 b c a | g4 8 a e4 d4 | e2. r4 } \break
   \relative g' { c2. 4 | b2 4 4 | a4 g e g | a2. r4 } \break
   \relative g' { c2. 4 | b2 4 4 | a4( g) e g | \partial 2. a2. | } \break
@@ -35,7 +35,7 @@ soprano_spanish = {
 soprano = {
   \globalParts
   \phrasingSlurSolid
-  \relative g' { \partial 4 e4 | a4 8 8 4 b4 | c4 b c a4 | g4 8 a e4 d4 | \partial 2. e2. \bar "" } \break
+  \relative g' { \partial 4 e4 | a4 8 8 4 b4 | c4 b c a4 | g4 8 a e4 d4 | \partial 2. e2. } \break
   \relative g' { \partial 4 e4 | a4 8 8 4 b4 | c4 b c a | g4 8 a e4 d4 | e2. r4 } \break
   \relative g' { c1 | b1 | a4 g e g | a2. r4 | } \break
   \relative g' {  c1 | b1 | a4( g) e g | \partial 2. a2. | } \break

@@ -21,9 +21,16 @@ mid-measure break is not discarded:
 %% \bar " " (a space) — 11 files, all converted
 \relative g' { ... | \partial 2 d2 \bar " " | } \break
 
-%% \bar "" (empty) — 64 files, not yet converted
+%% \bar "" (empty), at a block boundary — 25 files
 \relative g' { ... | b2. \bar "" } \break
+
+%% \bar "" (empty), inline mid-stream — 39 files, the easy majority
+  ... | fs'4 d'4 \bar "" \break
 ```
+
+There was also a `bb = { \bar "" \break }` shortcut in
+`lib/hymn-common.ily`, used by three songs. Retiring the workaround there
+is a one-line library edit rather than three file edits.
 
 Both are now redundant. `\break` alone does the job.
 
@@ -134,6 +141,57 @@ table, is `agent-prompt-break-workaround.md`.
   workaround from the 11 files that used it"). One deliberate output
   change: `o-little-town` gains a natural sign that the removed barline
   used to cancel; judged correct to keep.
-- `\bar ""` — **not started**, 64 files.
+- `\bar ""` — **done**, 64 files, plus the `bb` macro in
+  `lib/hymn-common.ily` (`bb = { \bar "" \break }` → `bb = { \break }`),
+  which covers three more songs without editing them.
+
+### What the `\bar ""` sweep actually needed
+
+Far less than the `\bar " "` set. Two thirds of the files spell it
+inline as `\bar "" \break` mid-stream, where deleting the `\bar ""` is
+the *entire* edit — no block boundary, so no trailing bar checks to
+remove and no `\relative` anywhere near it. The rest sit at a block
+boundary and match the `\bar " "` shape. No file needed a `\partial`
+removed, and none needed a `\relative` touched.
+
+Results across all 64: **MIDI byte-identical everywhere**, bar-check
+counts unchanged (including the six songs with pre-existing failures),
+and lyric/marker content identical in every book. The visible change is
+horizontal respacing, plus the two deliberate improvements below.
+
+### Two output changes, both kept
+
+**Stem directions flip on some pickup notes.** Removing the invisible
+barline changes which measure an anacrusis belongs to, and LilyPond
+chooses stem direction per measure context. Clearest in
+`when-jesus-wept`, where the canon-entry pickups flip from down-stem to
+up-stem. Approved and kept.
+
+**`praise-god-old-hundredth`'s slide deck goes from 9 slides to 8.** The
+two French-verse systems now share a slide, comfortably spaced. Character
+content is identical (724 either way); nothing was dropped.
+
+### On the verification thresholds
+
+The ink-percentage rule below is **not** a sufficient gate on its own.
+The `when-jesus-wept` stem flip moved 18 px on a 30 000 px page — 0.06%,
+well inside the "benign respacing" band — while being a real, visible
+change. Ink volume tells you *how much* moved, never *what*. Compare
+lyric/marker text separately, and look at a render when anything is
+flagged.
+
+Two pixel-forensics traps, both hit during this sweep:
+
+- **Fixed y-band probes go stale.** Measuring "barlines in rows 215-244"
+  reads garbage once the systems shift vertically; it once reported a
+  system losing all four barlines when it had lost none. Find the staff
+  rows per image first.
+- **Full-height dark columns are not all barlines.** A note stem passes
+  the same test, which turned a stem into a phantom "added barline".
+
+`pdftotext` needs care too: word *order* and word *grouping* both shift
+with spacing on pixel-identical pages, and LilyPond glyphs extract as
+control bytes. Compare the multiset of alphanumeric characters, not the
+word sequence.
 
 See also `lilypond-upgrade-notes.md` for the 2.24.4 switch itself.

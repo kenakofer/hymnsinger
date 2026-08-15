@@ -25,7 +25,7 @@ soprano = {
   \relative g' {
     e4. 8 8 8 8 8 | g4 d e2 | a4. 8 8 8 8 8 | 2 g | \break
     g4. 8 8 8 8 8 | 2 e | 4. 8 a g c, d e4 d \m c2. c4\fermata \bar "||" \break
-    \partial 4 e8. f16 | g4( c e) d8. c16 | a4( c2) b8. a16 | g4. a8 g( e) c( e) | d2. \bar "" \break
+    \partial 4 e8. f16 | g4( c e) d8. c16 | a4( c2) b8. a16 | g4. a8 g( e) c( e) | d2. \break
     \partial 4 e8. f16 | g4( c e) d8. c16 | a4( \m { c2.) \partial 2 4. a8 } { c2)\fermata c8.\fermata a16 } | g8 e c d e4 d | c1 \bar "|."
   }
 }

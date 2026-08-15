@@ -24,7 +24,7 @@ soprano = {
   \globalParts
   \relative g' { e2~ 8 g4 e8 | g4. e8~ 2 | b'2~ 8 ds4 8 | e4 d b8( a) g4 | } \break
   \relative g' { e2~ 8 g4 e8 | g4. e8~ 2 | e4 8 8 8 4 b8 | ds4. e8~ 2 \mark "Fine" \bar "|."  } \break
-  \relative g' { g4^\markup { \italic Leader } e g e | b'8( a) g8 8( e2) | e4^\markup { \italic All } 8 8 8 4 b8 | \partial 2.. ds4. e8~ 4 r8 \bar "" }
+  \relative g' { g4^\markup { \italic Leader } e g e | b'8( a) g8 8( e2) | e4^\markup { \italic All } 8 8 8 4 b8 | \partial 2.. ds4. e8~ 4 r8 }
   \relative g' { \partial 8 g8 | b4^\markup { \italic Leader } g b g8 g | b8( a) g8 8( e2) | e4^\markup { \italic All } 8 8 8 4 b8 | ds4. e8~ 2 \mark "D.C." |} \break
   \bar "||"
 }

@@ -7,7 +7,7 @@
 
 pa = \partCombineApart
 pt = \partCombineAutomatic
-bb = { \bar "" \break }
+bb = { \break }
 
 %% La-based shape notes. \globalParts calls \relativeMajorShapes just after
 %% \hymnKey; it does nothing until a book sets hs-active-shapes, so every other

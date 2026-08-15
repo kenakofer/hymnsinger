@@ -26,12 +26,12 @@ soprano = {
   \globalParts
   \relative g' {
     \partial 4 a8( g) | f4. d8 d c4 d8 | f4 8( g) g4 \fermata  \m r8. {}
-     f8( g) | a4. 8 8( g) f( g) | a8. f16 f4\( e\)\fermata \bar "" \break \m r8. {}
+     f8( g) | a4. 8 8( g) f( g) | a8. f16 f4\( e\)\fermata \break \m r8. {}
     a8( g) | f4. d8 \appoggiatura d16 c4. d8 | f4 8( g) g4 \fermata  \m r8. {}
-     f8( g) | a4 d8( c8) c4 a8( g) | f4. d8 d4\fermata\bar "" \break \m r8. {}
+     f8( g) | a4 d8( c8) c4 a8( g) | f4. d8 d4\fermata \break \m r8. {}
 
      r8 c'8 | c8( a) d( c) c4. c8 | c8( a) d( c) c4 r8 \fermata 
-     a8 | \appoggiatura a16 bf4. a8 g4 f8( g) | a4. e8 e4 \fermata \bar "" \break \m r8. {}
+     a8 | \appoggiatura a16 bf4. a8 g4 f8( g) | a4. e8 e4 \fermata \break \m r8. {}
     \partial 4 a8( g) | f4. d8 d4 \appoggiatura c8 d4 | f4 8( g) g4 \fermata  \m r8. {}
      f8( g) | a8 r8 d( c) c4 a8( g) | \partial 2. f4. d8 d4\fermata \bar ":|." \break \m r8. {}
 
@@ -64,7 +64,7 @@ tenor = {
     c4 | f4 f f a, | a4. bf8 4_\fermata\m r8. {}
 
     r8 f'8 | f4 4 4. 8 | f4 4 4 _\fermata
-    r8 f8 | d4. c8 c4 c | c4. c8 c4 _\fermata \bar "" \break\m r8. {}
+    r8 f8 | d4. c8 c4 c | c4. c8 c4 _\fermata \break\m r8. {}
     c4 | a4. 8 bf4 4 | c c4 c4 _\fermata \m r8. {}
     c4 | f8 r8 4 4 a,4 | a4. bf8 4 _\fermata\m r8. {}
 

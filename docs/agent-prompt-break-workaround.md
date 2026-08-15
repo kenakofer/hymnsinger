@@ -1,5 +1,17 @@
 # Agent prompt — removing a `\bar ""` break workaround
 
+> **The sweep this was written for is done** — see the status section of
+> `removing-break-workarounds.md`. In the end no agents were dispatched:
+> the edit turned out to be a one-line deletion per occurrence, so a
+> scripted pass over all 64 files plus one batch verification was faster
+> and more consistent than 64 agent runs. Keep this as a template if a
+> similar per-song sweep comes up.
+>
+> **If you do reuse it, fix the decision table first.** The ink-delta
+> thresholds below are not a sufficient gate: a real stem-direction flip
+> measured 0.06% of page ink, which the table says to keep silently.
+> Compare lyric/marker text separately and look at a render.
+
 Hand one song per agent. The agent does the mechanical pass and reports
 numbers; it does not decide whether an output change is acceptable.
 

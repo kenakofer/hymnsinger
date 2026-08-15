@@ -24,12 +24,12 @@ dateAdded = "2021-07-29"
 soprano = {
   \globalParts
   \relative g' {
-    \partial 4 d8( f) | g4. bf8 a8. f16 | bf8( c) bf4 a | g8 a g4 f | d2 \bar "" \break
-    d8( f) | g4. bf8 a8. f16 | bf8( c) d4 d | d8 c bf4 c | bf2 \bar "" \break
-    f8( d) | c4 4 bf8 d | c4 f f8 d | c4. 8 d f | g2 \bar "" \break
-    g8( a) | bf4 a g | f bf d, | c8 bf c4 d | f2 \bar "" \break
-    d8\( f\) | g4. bf8 a8. f16 | bf8( c) bf4 a | g8 a g4 f | d2 \bar "" \break
-    d8\( f\) | g4. bf8 a8. f16 | bf8 c d4 d | d8 c bf4 c | bf2 \bar "" \break
+    \partial 4 d8( f) | g4. bf8 a8. f16 | bf8( c) bf4 a | g8 a g4 f | d2 \break
+    d8( f) | g4. bf8 a8. f16 | bf8( c) d4 d | d8 c bf4 c | bf2 \break
+    f8( d) | c4 4 bf8 d | c4 f f8 d | c4. 8 d f | g2 \break
+    g8( a) | bf4 a g | f bf d, | c8 bf c4 d | f2 \break
+    d8\( f\) | g4. bf8 a8. f16 | bf8( c) bf4 a | g8 a g4 f | d2 \break
+    d8\( f\) | g4. bf8 a8. f16 | bf8 c d4 d | d8 c bf4 c | bf2 \break
     \bar "|."
   }
 }

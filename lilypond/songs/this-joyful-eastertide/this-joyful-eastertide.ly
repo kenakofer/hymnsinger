@@ -24,11 +24,11 @@ dateAdded = "2021-04-04"
 soprano = {
   \globalParts
   \relative g' {
-    \partial 4 c,4 | f g a bf | c2. 4 | d4. c8 bf4 d | c4.( bf8 a4 g8 f | g2) \m f2. f4\fermata \bar "" \break
+    \partial 4 c,4 | f g a bf | c2. 4 | d4. c8 bf4 d | c4.( bf8 a4 g8 f | g2) \m f2. f4\fermata \break
     \partial 4 c4 | f g a bf | c2. 4 | d4. c8 bf4 d | c4.( bf8 a4 g8 f | g2) \m f2. f4\fermata \bar "||" \break
-    \partial 4 f4 | g a bf a | g4. a8 bf4 c | d c c( b) | c2. \bar "" \break
+    \partial 4 f4 | g a bf a | g4. a8 bf4 c | d c c( b) | c2. \break
     \partial 4 c4 | bf bf a a | g2. f4 | e f g a | bf2 g4 g | \break
-    c2 a4 a | d2 c4 c | f4.( e8 d4 c8 bf | a4 g8 f g2) | f2. \bar "" \break
+    c2 a4 a | d2 c4 c | f4.( e8 d4 c8 bf | a4 g8 f g2) | f2. \break
     \bar "|."
   }
 }

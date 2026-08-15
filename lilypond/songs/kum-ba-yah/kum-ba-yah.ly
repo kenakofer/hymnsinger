@@ -24,7 +24,7 @@ dateAdded = "2021-07-27"
 soprano = {
   \globalParts
   \relative g' {
-    \partial 4 c,8 e | g8. 16 4 a8 a | g2 c,8 e | g8. 16 4 f8 e | d2 \bar "" \break
+    \partial 4 c,8 e | g8. 16 4 a8 a | g2 c,8 e | g8. 16 4 f8 e | d2 \break
     c8 e | g8. 16 4 a8 a | g2 f4 | e8( c4.) d8 8 | c2
     \bar "|."
   }

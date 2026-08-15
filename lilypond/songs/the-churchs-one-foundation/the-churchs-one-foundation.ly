@@ -33,13 +33,13 @@ soprano = { \globalParts
   %% the upbeat to the next line ("She", "From", "with"). Breaking at the
   %% barline instead drags that upbeat onto the wrong system, which is what
   %% the first render did.
-  %% So each break is \bar "" \break after the dotted half - an invisible
+  %% So each break is \break after the dotted half - an invisible
   %% barline that gives LilyPond a legal break point mid-measure - and the
   %% next system opens \partial 4 with the upbeat. Breaks are Score-level,
   %% so soprano alone carries them and the other three voices follow.
-  \partial 4 g'4 | g'4 g'4 af'4 g'4 | g'2 f'4 ef'4 | ef'4 c''4 bf'4 af'4 | g'2. \bar "" \break
-  \partial 4 af'4 | bf'4 ef''4 ef''4 d''4 | d''2 c''4 bf'4 | af'4 bf'4 g'4 ef'4 | f'2. \bar "" \break
-  \partial 4 f'4 | g'4 af'4 bf'4 c''4 | c''2 bf'4 ef''4 | ef''4. d''8 c''4 g'4 | af'2. \bar "" \break
+  \partial 4 g'4 | g'4 g'4 af'4 g'4 | g'2 f'4 ef'4 | ef'4 c''4 bf'4 af'4 | g'2. \break
+  \partial 4 af'4 | bf'4 ef''4 ef''4 d''4 | d''2 c''4 bf'4 | af'4 bf'4 g'4 ef'4 | f'2. \break
+  \partial 4 f'4 | g'4 af'4 bf'4 c''4 | c''2 bf'4 ef''4 | ef''4. d''8 c''4 g'4 | af'2. \break
   \partial 4 f'4 | g'4 g'4 af'4 g'4 | g'2 f'4 ef'4 | ef'4 f'4 ef'4 d'4 | ef'2.
 \bar "|."
 }

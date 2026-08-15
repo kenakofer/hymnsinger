@@ -31,7 +31,7 @@ quarternoteTempo = 90
 %% across the break ("...our fool-ish | ways.") and ("...ful mind, in |
 %% pur-er lives"), so a break per phrase would be five systems and a
 %% layout the singer is not reading from. Both land at a barline, so
-%% plain \break is enough - no \bar "" needed.
+%% plain \break is enough - no needed.
 soprano = { \globalParts
   \partial 4 fs'4 | fs'4. fs'8 es'4 fs'4 | a'4 a'4 gs'4 g'4 | fs'4. d'8 d'4 e'4 \break | e'2. fs'4 | fs'4. g'8 a'4 d''4 | d''4. cs''8 b'4 b'4 | b'4. a'8 g'4 gs'4 \break | a'4 g'4 fs'4 a'4 | d'4. d'8 d'4 e'4 | fs'2.
 \bar "|."

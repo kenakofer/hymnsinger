@@ -32,8 +32,8 @@ soprano = { \globalParts
   c''2. c''8. d''16 | e''4 c''4 d''8. c''16 b'8. a'16 | g'2. b'8. c''16 | d''4 d''4 d''8. c''16 d''8. e''16 | \break
   c''4 a'4 g'4 g'8. g'16 | a'4 a'4 a'8. d''16 d''8. c''16 |
   %% m16 is split so the "He a-" pickup opens the last system, as the page
-  %% prints it; \bar "" hides the barline the split would otherwise draw.
-  b'4 c''4 d''4 \bar "" \break
+  %% prints it; hides the barline the split would otherwise draw.
+  b'4 c''4 d''4 \break
   g'8. g'16 | e''2. d''8. c''16 | f''2. e''8. d''16 | c''4 g'4 e''4 d''4 | c''1
 \bar "|."
 }

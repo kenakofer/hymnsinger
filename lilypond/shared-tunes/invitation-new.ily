@@ -12,9 +12,9 @@ soprano = {
   \transpose g e
   \relative g' {
     \partial 2
-    g4 g | b2 4.( a8) | g4 4 a8( g4.) | e2 g4 g | b2 d | g,4 8( e) g2~ | 2 \bar "" \break
-    g4 g | b2 4.( a8) | g4 4 a8( g4.) | e2 g4 g | b2 d | g,4 8( e) g2~ | 2 \bar "" \break
-    d'4 e8( fs) | g2 8( d4.) | e4 d d2 | b2 d4 e8( fs) | g2 8( d4.) | b4 d e2~ | 2 \bar "" \break
+    g4 g | b2 4.( a8) | g4 4 a8( g4.) | e2 g4 g | b2 d | g,4 8( e) g2~ | 2 \break
+    g4 g | b2 4.( a8) | g4 4 a8( g4.) | e2 g4 g | b2 d | g,4 8( e) g2~ | 2 \break
+    d'4 e8( fs) | g2 8( d4.) | e4 d d2 | b2 d4 e8( fs) | g2 8( d4.) | b4 d e2~ | 2 \break
     g4 8( e) | d2 b4.( a8) | g4 4 a8( g4.) | e2 g4 4 | b2 d | g,4 8( e) g2~ | \partial 2 2 \bar "|."
   }
 }

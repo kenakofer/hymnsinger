@@ -29,9 +29,9 @@ quarternoteTempo = 68
 \include "../../lib/header.ily"
 
 soprano = { \globalParts
-  \partial 8 d'8 | fs'4 g'8 a'4 a'8 | b'4 cs''8 d''4 b'8 | a'4 fs'8 \pa fs'8( e'8) d'8 \pt | e'4 fs'8 e'4 \bar "" \break
-  \partial 8 d'8 | fs'4 g'8 a'4 a'8 | b'4 cs''8 d''4 b'8 | a'4 fs'8 fs'4 d'8 | fs'4 e'8 d'4 \bar "" \break 
-  \partial 8 a'8 | d''4 cs''8 d''4 b'8 | a'4 fs'8 a'4 a'8 | d''4 cs''8 d''4 b'8 | a'4 fs'8 e'4 \bar "" \break
+  \partial 8 d'8 | fs'4 g'8 a'4 a'8 | b'4 cs''8 d''4 b'8 | a'4 fs'8 \pa fs'8( e'8) d'8 \pt | e'4 fs'8 e'4 \break
+  \partial 8 d'8 | fs'4 g'8 a'4 a'8 | b'4 cs''8 d''4 b'8 | a'4 fs'8 fs'4 d'8 | fs'4 e'8 d'4 \break 
+  \partial 8 a'8 | d''4 cs''8 d''4 b'8 | a'4 fs'8 a'4 a'8 | d''4 cs''8 d''4 b'8 | a'4 fs'8 e'4 \break
   \partial 8 d'8 | fs'4 g'8 a'4 a'8 | b'4 cs''8 d''4 b'8 | a'4 fs'8 fs'4 d'8 | fs'4 e'8 d'4
 \bar "|."
 }

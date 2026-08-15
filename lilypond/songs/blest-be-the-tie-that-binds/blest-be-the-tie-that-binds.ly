@@ -26,7 +26,7 @@ dateAdded = "2021-03-09"
 %% NOTES
 soprano = {
   \globalParts
-  \relative g' { \partial 4 a4 | a( f) a | g( e) g | f2 4 | f( d) f | f( c) f | \partial 2 e2 \bar "" } \break
+  \relative g' { \partial 4 a4 | a( f) a | g( e) g | f2 4 | f( d) f | f( c) f | \partial 2 e2 } \break
   \relative g' { \partial 4 g4 | g( e) g | f( a) c | c( g) bf | a( c) d | c( a) bf | a( f) g | \partial 2 f2 | } \break
   \bar "|."
 }

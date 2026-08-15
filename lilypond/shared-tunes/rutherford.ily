@@ -9,9 +9,9 @@ quarternoteTempo = 96
 soprano = {
   \globalParts
   \relative g' {
-    \partial 4 a4 | a a g4. 8 | f2 4 4 | bf4. 8 a4 bf | g2. \bar "" \break
-    g4 | c4. 8 bf4 4 | a2 g4 4 | f4 4 e8( f) g( e) | f2. \bar "" \break
-    f4 | 4. 8 4 g | a2 4 f | 4. 8 4 g | a2. \bar "" \break
+    \partial 4 a4 | a a g4. 8 | f2 4 4 | bf4. 8 a4 bf | g2. \break
+    g4 | c4. 8 bf4 4 | a2 g4 4 | f4 4 e8( f) g( e) | f2. \break
+    f4 | 4. 8 4 g | a2 4 f | 4. 8 4 g | a2. \break
     a8( bf) | c4 4 d4. c8 | 2 bf | a4 4 g4. f8 | \partial 2. f2. \bar "|."
   }
 }

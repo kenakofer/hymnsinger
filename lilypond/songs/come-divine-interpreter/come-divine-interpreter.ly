@@ -30,7 +30,7 @@ quarternoteTempo = 110
 
 %% Three systems of four measures, matching the hymnal. Two poetic lines
 %% per system, and every break lands on a barline, so plain \break is
-%% enough - no \bar "" needed.
+%% enough - no needed.
 soprano = { \globalParts
   bf'4. bf'8 a'4 bf'4 | g'4 bf'4 f'2 | d''4 bf'4 ef''4 c''4 | bf'4 a'4 bf'2 \break | d''4. d''8 c''4 d''4 | ef''4 d''4 c''2 | d''4. d''8 c''4 d''4 | ef''4 d''4 c''2 \break | bf'4. bf'8 a'4 bf'4 | g'4 bf'4 f'2 | d''4 bf'4 ef''4 c''4 | bf'4 a'4 bf'2
 \bar "|."

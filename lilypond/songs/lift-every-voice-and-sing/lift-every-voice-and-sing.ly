@@ -24,15 +24,15 @@ dateAdded = "2021-01-16"
 %% NOTES
 soprano = {
   \globalParts
-  \relative g' { \partial 4. fs8 g a | b4. b | b b8 c d | b4. a | g \bar "" } \break
-  \relative g' { g8 a b | c4. b | g a | g4.~ 4 8 | fs4. \bar "" } \break
-  \relative g' { fs8 g a | b4. b | e4. 8 d b | c4. b4( a8) | g4. \bar "" } \break
+  \relative g' { \partial 4. fs8 g a | b4. b | b b8 c d | b4. a | g } \break
+  \relative g' { g8 a b | c4. b | g a | g4.~ 4 8 | fs4. } \break
+  \relative g' { fs8 g a | b4. b | e4. 8 d b | c4. b4( a8) | g4. } \break
   \relative g' { g8 a as | b4. 8 a g | a4.~ 4 g8 | g4.~ g } \pageBreak
 
   \relative g' { g4. d | e e8 d b | e d b e d b | d4. d } \break
-  \relative g' { g4. d | ef ef8 d c | ef d c ef d c | b'4.~ b | c4.~ c~ | c4. \bar "" } \break
+  \relative g' { g4. d | ef ef8 d c | ef d c ef d c | b'4.~ b | c4.~ c~ | c4. } \break
 
-  \relative g' { fs8 g a | b4. b | e4. 8 d b | c4. b4( a8) | g4. \bar "" } \break
+  \relative g' { fs8 g a | b4. b | e4. 8 d b | c4. b4( a8) | g4. } \break
   \relative g' { g8 a as | b4. 8 a g | a4.~ 4 g8 | g4.~ g }\break
   \bar "|."
 }

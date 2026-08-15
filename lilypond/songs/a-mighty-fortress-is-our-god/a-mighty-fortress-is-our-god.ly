@@ -24,9 +24,9 @@ soprano = {
   \globalParts
   \override Staff.TimeSignature #'stencil = ##f
   \relative g' {
-    \partial 2 r4 c | 2 2 g a4 c2( b4) a2 g r4 c | b2 a g a4 f2( e4 d2) c2 \bar "" \break
-    \partial 2 r4 c' | 2 2 g a4 c2( b4) a2 g r4 c | b2 a g a4 f2( e4 d2) c2 \bar "" \break
-    \partial 2 r4 c | e4.( f8) g4 a2( g) fs4 g2 \partial 2 r4 c,4 | g'2 g a b \partial 1 c2 r4 b4 | c2 b4 a2 a4 g2 \bar "" \break
+    \partial 2 r4 c | 2 2 g a4 c2( b4) a2 g r4 c | b2 a g a4 f2( e4 d2) c2 \break
+    \partial 2 r4 c' | 2 2 g a4 c2( b4) a2 g r4 c | b2 a g a4 f2( e4 d2) c2 \break
+    \partial 2 r4 c | e4.( f8) g4 a2( g) fs4 g2 \partial 2 r4 c,4 | g'2 g a b \partial 1 c2 r4 b4 | c2 b4 a2 a4 g2 \break
     \partial 2 r4 a | a2 g4 a2 g4 \partial 1 e2 r4 c' | b2 a g a4 f2( e4 \partial 1 d2) c
     \bar "|."
   }

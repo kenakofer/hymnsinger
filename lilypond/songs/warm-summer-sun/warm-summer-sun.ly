@@ -25,7 +25,7 @@ soprano = {
   \stemUp
   \relative g' { b2 a4 gs | e1 | fs2 a4 gs | fs1 | } \break
   \relative g' {  b2 gs4 e | a2. cs4 | cs2. b4 | b1 | } \break
-  \relative g' { b2 a4 gs | e2. 4 | a2. gs4 | \partial 2. fs2. \bar "" } \break
+  \relative g' { b2 a4 gs | e2. 4 | a2. gs4 | \partial 2. fs2. } \break
   \relative g' { \partial 4 b4 | b4 gs4 2~ | 4 r gs2 | a1 | gs1 | e1 | } \break
   \bar "|."
 }

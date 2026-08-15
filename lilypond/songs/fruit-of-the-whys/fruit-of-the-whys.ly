@@ -30,24 +30,24 @@ soprano = {
   \transpose g f {
   \relative g' {
     \partial 8
-    g8 | g8 8 8 b a g | e d c d4 \bar "" \break
-    fs8 | g8 8 8 b a g | c8 8 8 fs,4 \bar "" \break
-    fs8 | g8 8 8 b a g | c b c cs4 \bar "" \break
+    g8 | g8 8 8 b a g | e d c d4 \break
+    fs8 | g8 8 8 b a g | c8 8 8 fs,4 \break
+    fs8 | g8 8 8 b a g | c b c cs4 \break
     cs8 | d8 8 8 c b a | fs8 g a g4. \bar "||" \break
 
-    r4. r4 g8 | b a g fs e fs | g fs e b'4 \bar "" \break
+    r4. r4 g8 | b a g fs e fs | g fs e b'4 \break
     b8 | d8. 16 8 c b a | fs g a g4 \bar "||" \break
 
-    g8 | fs8 d fs f f f |  e8 c e fs4 \bar "" \break
-    fs8 | f d f e e e | e8 c e fs4 \bar "" \break
+    g8 | fs8 d fs f f f |  e8 c e fs4 \break
+    fs8 | f d f e e e | e8 c e fs4 \break
 
-    fs8 | g8. 16 8 b a g | g8 8 8 4 \bar "" \break
-    g8 | fs8 8 g a a fs | g g a bf( b) \bar "" \break
+    fs8 | g8. 16 8 b a g | g8 8 8 4 \break
+    g8 | fs8 8 g a a fs | g g a bf( b) \break
 
-    g8 | fs8 d fs f f f |  e8 c e fs4 \bar "" \break
-    fs8 | f8 d f e e e | e8 c e fs4 \bar "" \break
+    g8 | fs8 d fs f f f |  e8 c e fs4 \break
+    fs8 | f8 d f e e e | e8 c e fs4 \break
 
-    fs16 16 | g8. 16 8 b a g | g8 8 8 4.~ | 4.~ 4 \bar "" \break
+    fs16 16 | g8. 16 8 b a g | g8 8 8 4.~ | 4.~ 4 \break
 
     g8 | d'8 8 8 c b a | fs g a g4 \bar "||" \break
   }

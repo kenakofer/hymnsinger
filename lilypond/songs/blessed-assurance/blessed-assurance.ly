@@ -40,9 +40,9 @@ quarternoteTempo = 120
 %% dotted halves back so they still merge into chords.
 soprano = { \globalParts
   \partial 4. \pa fs'8 e'8 d'8 \pt | a'4. a'4. g'8 a'8 b'8 | a'4.~ a'4. a'8 fs'8 a'8 | d''4. cs''4 cs''8 b'8 a'8 gs'8
-  | a'4.~ a'4. \bar "" \break \pa fs'8 e'8 d'8 \pt | a'4. a'4. g'8 a'8 b'8 | a'4.~ a'4. \pa d'8 e'8 fs'8 | g'4. e'4. d'8 e'8 cs'8 \pt
-  | d'4.~ d'4. \bar "" \break | a'8 a'8 a'8 | d''4. a'4. b'8 b'8 b'8 | a'4.~ a'4. a'8 a'8 a'8 | b'4. d''4. cs''8 cs''8 b'8
-  | cs''4.~ cs''4. \bar "" \break cs''8 d''8 e''8 | d''4. a'4. b'8 a'8 b'8 | a'4.~ a'4. \pa d'8 e'8 fs'8 | g'4. e'4. d'8. e'16 cs'8 \pt | d'4.~ d'4.
+  | a'4.~ a'4. \break \pa fs'8 e'8 d'8 \pt | a'4. a'4. g'8 a'8 b'8 | a'4.~ a'4. \pa d'8 e'8 fs'8 | g'4. e'4. d'8 e'8 cs'8 \pt
+  | d'4.~ d'4. \break | a'8 a'8 a'8 | d''4. a'4. b'8 b'8 b'8 | a'4.~ a'4. a'8 a'8 a'8 | b'4. d''4. cs''8 cs''8 b'8
+  | cs''4.~ cs''4. \break cs''8 d''8 e''8 | d''4. a'4. b'8 a'8 b'8 | a'4.~ a'4. \pa d'8 e'8 fs'8 | g'4. e'4. d'8. e'16 cs'8 \pt | d'4.~ d'4.
 \bar "|."
 }
 alto = { \globalParts

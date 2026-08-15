@@ -27,7 +27,7 @@ soprano = \relative g' {
     \partial 4 a4 | a2 e4 a |
     b2 e, |
     cs'4 b cs d |
-    cs2 b4 \bar "" \break
+    cs2 b4 \break
  %5
     a4 a2 gs4 fs |
     gs4( a) b cs |
@@ -44,8 +44,7 @@ soprano = \relative g' {
     a | a gs a b |
     a2 e4 cs' |
     cs b cs d |
-    cs2 b4
-    \bar "" \break
+    cs2 b4 \break
  %17
     cs4 |
     d4 cs b a |

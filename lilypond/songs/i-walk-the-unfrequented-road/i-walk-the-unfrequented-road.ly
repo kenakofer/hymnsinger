@@ -24,7 +24,7 @@ soprano = {
   \globalParts
   \stemUp
   \relative g' { \partial 4 c,4 | f g af bf8( af) | \partial 2. g4 f8( ef) c4 }
-  \relative g' { \partial 4 c,4 | f g af bf | \partial 2. c2. \bar "" } \break
+  \relative g' { \partial 4 c,4 | f g af bf | \partial 2. c2. } \break
   \relative g' { \partial 4 af8( bf) | c4 df8( c) bf4 af | \partial 2. g4 f8( ef) c4 }
   \relative g' { \partial 4 c,4 | f g af8( f) g4 | \partial 2. f2. } \break
   \bar "|."

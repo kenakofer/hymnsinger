@@ -24,10 +24,10 @@ dateAdded = "2021-03-12"
 %% NOTES
 soprano = {
   \globalParts
-  \relative g' { \partial 2 e4 fs | gs2 gs fs4 e | gs2 b cs4 4 | b2 gs fs4 e | \partial 1 fs2. r4 \bar "" } \break
-  \relative g' { \partial 2 e4 fs | gs2 gs fs4 e | gs2 b cs4 4 | b2 gs fs4 fs | \partial 1 e2. r4 \bar "" } \break
-  \relative g' { \partial 2 b4 b | e2 b gs4 gs | b2 gs gs4 4 | fs2 gs a4 gs | \partial 1 fs2. r4 \bar "" } \break
-  \relative g' { \partial 2 b4 b | e2 b gs4 gs | b2 gs cs4 4 | b2 gs fs4 4 | \partial 1 e2. r4 \bar "" } \break
+  \relative g' { \partial 2 e4 fs | gs2 gs fs4 e | gs2 b cs4 4 | b2 gs fs4 e | \partial 1 fs2. r4 } \break
+  \relative g' { \partial 2 e4 fs | gs2 gs fs4 e | gs2 b cs4 4 | b2 gs fs4 fs | \partial 1 e2. r4 } \break
+  \relative g' { \partial 2 b4 b | e2 b gs4 gs | b2 gs gs4 4 | fs2 gs a4 gs | \partial 1 fs2. r4 } \break
+  \relative g' { \partial 2 b4 b | e2 b gs4 gs | b2 gs cs4 4 | b2 gs fs4 4 | \partial 1 e2. r4 } \break
   \bar "|."
 }
 alto = {

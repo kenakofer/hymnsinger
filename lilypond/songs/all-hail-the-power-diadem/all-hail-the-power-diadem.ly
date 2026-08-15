@@ -25,7 +25,7 @@ soprano = {
   \transpose bf a {
     \relative g' {
       \partial 4 f4 | bf2 c4 | d8.( ef16 f4) bf, | c( bf) a | bf2 a8( g) | f4. 8 g g | \break
-      f4( bf) bf | g( ef') 4 | d2 c4 | bf2 8( c) | d2 4 | 4( c) bf | c( bf) a | bf8.( c16 d4) \bar "" \break
+      f4( bf) bf | g( ef') 4 | d2 c4 | bf2 8( c) | d2 4 | 4( c) bf | c( bf) a | bf8.( c16 d4) \break
       f4 | ef4.( d8 c ef | d4. c8 bf d | c4. bf8 a c | bf4) 4 r4 | \break
       ef4 4 r4 | c4 4 r4 | d4 4 f | bf,8.( c16 d4) ef | d2 c4 | \partial 2 bf2 \bar "|."
     }

@@ -22,9 +22,9 @@ dateAdded = "2021-03-23"
 %% NOTES
 soprano = {
   \globalParts
-  \relative g' { \partial 4 e4 | a4. 8 cs4 a | 2 fs4 a | e a b cs | b2. \bar "" } \break
-  \relative g' { e4 | a4. 8 cs4 a | 2 fs4 a | e a cs b | a2. \bar "" } \break
-  \relative g' { e4 | b'4. 8 a4 b | cs2 4 4 | d cs fs, b | a2( gs4) \bar "" } \break
+  \relative g' { \partial 4 e4 | a4. 8 cs4 a | 2 fs4 a | e a b cs | b2. } \break
+  \relative g' { e4 | a4. 8 cs4 a | 2 fs4 a | e a cs b | a2. } \break
+  \relative g' { e4 | b'4. 8 a4 b | cs2 4 4 | d cs fs, b | a2( gs4) } \break
   \relative g' { e4 | a4. 8 cs4 a | 2 fs4 a | e a cs b | \partial 2. a2. | } \break
   \bar "|."
 }
