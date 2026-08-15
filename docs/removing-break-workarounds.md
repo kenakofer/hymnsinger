@@ -35,8 +35,11 @@ Both are now redundant. `\break` alone does the job.
    voices, plus the chord line if it has one.** Once the invisible barline
    is gone, the break point is no longer a measure boundary, so a bar check
    sitting there fails.
-3. **Keep one `\relative` block per phrase.** Do *not* merge them (see the
-   trap below).
+3. **Do not touch the `\relative` blocks at all.** Not merging, not
+   splitting, not adjusting octave marks, not changing a reference pitch.
+   The note content stays byte-for-byte as it was; the only edits are
+   removing the invisible barline and the trailing bar checks. See the
+   trap below for why this is a hard rule and not a preference.
 4. **Leave `\partial` alone** unless it is provably redundant. A `\partial`
    that declares a real anacrusis is load-bearing; one that only existed to
    split a measure across a system break can go, but only if step 2 is
@@ -78,11 +81,21 @@ the measure structure that alto/tenor/bass are still checking against, and
 they fail — in files you never touched. Symptom: dozens of
 `barcheck failed` in voices you did not edit. Always do all four.
 
-**Merging `\relative` blocks.** Each block resets its octave reference.
-Concatenating them re-anchors block 2's first note to block 1's *last*
-note, silently transposing whole phrases by an octave. Bar checks still
-pass — durations are unaffected — so only the MIDI comparison catches it.
-Keep one block per phrase.
+**Editing `\relative` blocks at all.** Each block resets its octave
+reference. Concatenating two blocks re-anchors block 2's first note to
+block 1's *last* note, silently transposing whole phrases by an octave.
+Bar checks still pass — durations are unaffected — so only the MIDI
+comparison catches it.
+
+Hand-computing replacement octave marks to compensate does not work
+either: it was attempted here across several rounds and produced wrong
+pitches every time, each caught only by MIDI. The rule that survives is
+simply to leave the blocks alone. Removing `\bar ""` needs no `\relative`
+change, so there is never a reason to make one.
+
+`help-us-to-help-each-other-lord.ly` is the one file in the corpus with
+merged blocks, from before this rule existed. It was verified clean and
+is deliberately kept that way — it is not a template to copy.
 
 **Moving `\bar "|."` inside the final block.** Shortens the last system.
 Keep it on its own line.

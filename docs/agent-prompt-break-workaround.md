@@ -28,8 +28,13 @@ own, so the invisible barline is redundant.
    changed — **in all four voices** (soprano, alto, tenor, bass) and in
    the chord line if it has one. Missing a voice is the single most
    common failure.
-3. Do **not** merge `\relative` blocks. One block per phrase. Merging
-   silently transposes phrases by an octave.
+3. **Do not touch the `\relative` blocks at all** — do not merge them, do
+   not split them, do not add or remove octave marks (`'` / `,`), do not
+   change a block's reference pitch. Leave the note content exactly as it
+   is. Your edits are limited to removing `\bar ""` and the trailing bar
+   checks. Any `\relative` edit risks silently transposing a phrase by an
+   octave, and bar checks will still pass when it happens — only the MIDI
+   comparison catches it.
 4. Do **not** remove `\partial` unless it is provably redundant. When in
    doubt, leave it.
 5. Delete any comment in the file that claims `\bar ""` is required for a
