@@ -228,5 +228,3 @@ Two pixel-forensics traps, both hit during this sweep:
 with spacing on pixel-identical pages, and LilyPond glyphs extract as
 control bytes. Compare the multiset of alphanumeric characters, not the
 word sequence.
-
-See also `lilypond-upgrade-notes.md` for the 2.24.4 switch itself.
