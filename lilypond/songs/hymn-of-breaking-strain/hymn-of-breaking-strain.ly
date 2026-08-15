@@ -56,7 +56,7 @@ soprano = {
     r8 e8 | e4. 8 4 fs | g8 e4. r4 r8 fs8 | e4 fs8 e4 fs4 g8~ | 2. \break
     r8 a8 | b4 b4 a4 g | b8 e,4. r4 r8 g8 | g4 g a a | b2. \break
     r8 b8 | b8( e,8) e4 e fs | g8 e4. r4 r8 fs8 | g4. g8 fs4 d8 e8~ | 4 r4 \break
-    r2 | e2~ 4. e8 | fs4 4 g fs8 e~ | e1 | \partial 2. r2 r4 \bar "|."
+    r2 | e2~ 4. e8 | fs4 4 g fs8 e~ | e1 | r2 r4 \bar "|."
   }
 }
 alto = {

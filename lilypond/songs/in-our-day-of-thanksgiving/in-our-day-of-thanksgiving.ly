@@ -25,9 +25,9 @@ soprano = {
   \globalParts
   \relative g' {
     \partial 4 d8[ e] | fs4 d e | fs d e | fs g a | b a \break
-    \partial 4 b8 cs | d4 fs, b | a cs, d | e e fs | e2 \break
-    \partial 4 d8[ e] | fs4 d e | fs as b | cs d e | e d \break
-    \partial 4 cs8( b) | a4 b d | d d, a' | g8( fs) e4. d8 | d2
+    b8 cs | d4 fs, b | a cs, d | e e fs | e2 \break
+    d8[ e] | fs4 d e | fs as b | cs d e | e d \break
+    cs8( b) | a4 b d | d d, a' | g8( fs) e4. d8 | d2
     \bar "|."
   }
 }

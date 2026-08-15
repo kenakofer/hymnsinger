@@ -29,7 +29,7 @@ soprano = {
   \transpose c d {
     \relative g' {
       \partial 4. c,8 e g | c4. d b8 a g | a4. g c,8 d e | g4. a g8[( e) c] | d2. \break
-      \partial 4. g8 e g | c4. a g8[ e c] | c4. d e8 d e | g4. a d,8([ e) d] | \partial 2. c2.
+      g8 e g | c4. a g8[ e c] | c4. d e8 d e | g4. a d,8([ e) d] | c2.
       \bar "|."
     }
   }

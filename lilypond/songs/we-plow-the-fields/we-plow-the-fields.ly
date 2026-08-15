@@ -30,7 +30,7 @@ soprano = {
     e,4 | a a e e | fs2 cs4 4 | d4. b8 e4 gs | a1 \bar "||" \break
 
     a4 4 4 4 | b2 4 4 | cs4. e8 d4 cs | b2. \break
-    b4 | cs b cs4. b8 | a4 gs a4. e8 | fs4( b a) gs | \partial 2. a2.
+    b4 | cs b cs4. b8 | a4 gs a4. e8 | fs4( b a) gs | a2.
     \bar "|."
   }
 }

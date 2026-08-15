@@ -23,9 +23,9 @@ dateAdded = "2021-01-16"
 soprano = {
   \globalParts
   \relative g' { \partial 2. ef2 g4 | bf2 4 c4( bf) af | bf2. } \break
-  \relative g' { \partial 2. ef2 g4 | bf2 4 c4( bf) af | bf2. } \break
-  \relative g' { \partial 2. <df' bf>2 4 | <c af>2 4 <bf f>2 af4 | bf2. } \break
-  \relative g' { \partial 2. af2 4 | g2 4 f4( g af | g4 f ef f2) 4 | ef1. } \break
+  \relative g' { ef2 g4 | bf2 4 c4( bf) af | bf2. } \break
+  \relative g' { <df' bf>2 4 | <c af>2 4 <bf f>2 af4 | bf2. } \break
+  \relative g' { af2 4 | g2 4 f4( g af | g4 f ef f2) 4 | ef1. } \break
   \bar "|."
 }
 alto = {

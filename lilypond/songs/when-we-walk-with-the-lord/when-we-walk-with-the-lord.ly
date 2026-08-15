@@ -26,7 +26,7 @@ soprano = {
     \partial 4 f8 g | a4 a g | f2 8[ a] | c4 c bf | a2 8 8 | bf4 d bf | a c a | g2 \break
     f8 g | a4 a g | f2 8[ a] | c4 c bf | a2 8 8 | bf4 d bf | a f g | f2. \bar "||" \break
     c'4 g c | a2 8 8 | d4 a c | bf2 \break
-    8 8 | bf4 a g | a \m c2. c4\fermata f,8 g | a4 f g | \partial 2 f2 \bar "|."
+    8 8 | bf4 a g | a \m c2. c4\fermata f,8 g | a4 f g | f2 \bar "|."
   }
 }
 alto = {

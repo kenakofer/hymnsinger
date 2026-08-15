@@ -23,9 +23,10 @@ dateAdded = "2021-01-16"
 soprano = {
   \globalParts
   \relative g' { \partial 4 d4 | b'( c) b | d4( b) a | g( a) e | g fs } \break
-  \relative g' { \partial 4 e4 | d2 4 | g( a) b | a2 g4 | fs2 } \break
-  \relative g' { \partial 4 d4 | b'( c) b | d4( b) a | g( a) e | g fs } \break
-  \relative g' { \partial 4 e4 | d( e) fs | g( b) a | e( g) fs | g2 \bar "|." }
+  \relative g' { e4 | d2 4 | g( a) b | a2 g4 | fs2 } \break
+  \relative g' { d4 | b'( c) b | d4( b) a | g( a) e | g fs } \break
+  \relative g' { e4 | d( e) fs | g( b) a | e( g) fs | g2 }
+  \bar "|."
 }
 alto = {
   \globalParts
