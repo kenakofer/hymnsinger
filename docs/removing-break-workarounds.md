@@ -50,7 +50,8 @@ Both are now redundant. `\break` alone does the job.
 4. **Leave `\partial` alone** unless it is provably redundant. A `\partial`
    that declares a real anacrusis is load-bearing; one that only existed to
    split a measure across a system break can go, but only if step 2 is
-   applied consistently.
+   applied consistently. See "Repeated `\partial`" below — "provably" means
+   built and verified, not reasoned about.
 5. **Keep `\bar "|."` on its own line** after the last block. Moving it
    inside the final `\relative` block shortens the last system so it no
    longer justifies to the right margin.
@@ -170,6 +171,40 @@ up-stem. Approved and kept.
 **`praise-god-old-hundredth`'s slide deck goes from 9 slides to 8.** The
 two French-verse systems now share a slide, comfortably spaced. Character
 content is identical (724 either way); nothing was dropped.
+
+### Repeated `\partial` — the other half of the workaround
+
+A `\partial` repeated at every system break was the companion trick: it
+split a measure so the next phrase could open on its upbeat. Now that
+`\break` breaks wherever it is written, those repeats are often dead
+weight. **Often, not always** — and the split is not predictable from
+reading the file.
+
+Of 51 songs with a repeated `\partial` in soprano, **20 tolerate dropping
+all but the first and 31 do not**. Where it fails it fails loudly: a
+`\partial` declares a genuinely short measure, so removing it leaves the
+next measure overfull and every later bar check in that voice fails —
+141 of them in `a-mighty-fortress-is-our-god`, 132 in
+`take-my-life-and-let-it-be`.
+
+Two things that look like they should predict the split and don't:
+
+- **Lower-voice `\partial` counts.** The intuition is that if alto,
+  tenor and bass have no `\partial` at the block boundaries, soprano's
+  repeats must be scaffolding. A classifier built on this labelled all 62
+  candidate files removable, including ones already known to break.
+  Useless as a gate.
+- **Whether the song previously used `\bar ""`.** `we-gather-together`
+  reflowed its lead sheet when its partials were dropped *while the
+  invisible barline was still there*, and converts cleanly once it is
+  gone. So a file's history says nothing about its current state.
+
+The only reliable method is to drop them, build, and compare. Bar checks
+alone separate the two groups cleanly here, which makes this cheap to
+test even though it is impossible to predict.
+
+`scripts/drop-repeated-partial.py` does the mechanical edit — soprano
+only, since a `\partial` in a lower voice is that voice's own pickup.
 
 ### On the verification thresholds
 
