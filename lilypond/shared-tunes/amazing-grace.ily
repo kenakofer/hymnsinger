@@ -8,24 +8,31 @@ quarternoteTempo = 120
 %% NOTES
 soprano = {
   \globalParts
-  \relative g' { \partial 4 d4 | g2 b8( g) | b2 a4 | g2 e4 | d2 d4 | g2 b8( g) | b2 a4 | d2.~ | \partial 2 d2 \bar " " } \break
-  \relative g' { \partial 4 b4 | d4.( b8) d( b) | g2 d4 | e4.( g8) g( e) | d2 d4 | g2 b8( g) | b2 a4 | g2.~ | 2 }
-  \bar "|."
+  \relative g' {
+    \partial 4 d4 | g2 b8( g) | b2 a4 | g2 e4 | d2 d4 | g2 b8( g) | b2 a4 | d2.~ | d2 \break
+    b4 | d4.( b8) d( b) | g2 d4 | e4.( g8) g( e) | d2 d4 | g2 b8( g) | b2 a4 | g2.~ | 2 \bar "|."
+  }
 }
 alto = {
   \globalParts
-  \relative e' { b4 | b2 d4 | d2 c4 | b2 c4 | b2 b4 | b2 d4 | d2 4 | fs2( g4 | a2) }
-  \relative e' { fs4 | d2 4 | 2 4 | c4.( d8) c4 | b2 d4 | b2 d4 | g2 fs4 | d2.~ | 2 }
+  \relative e' {
+    b4 | b2 d4 | d2 c4 | b2 c4 | b2 b4 | b2 d4 | d2 4 | fs2( g4 | a2)
+    fs4 | d2 4 | 2 4 | c4.( d8) c4 | b2 d4 | b2 d4 | g2 fs4 | d2.~ | 2
+  }
 }
 tenor = {
   \globalParts
-  \relative a { g4 | d2 g4 | g2 fs4 | g2 4 | 2 4 | d2 g4 | g2 fs4 | a2( b4 | c2) }
-  \relative a { d4 | b4.( g8) b( g) | g2 4 | g2 e8( g) | g2 g4 | g2 g8( b) | d2 c4 | b2.~ | 2 }
+  \relative a {
+    g4 | d2 g4 | g2 fs4 | g2 4 | 2 4 | d2 g4 | g2 fs4 | a2( b4 | c2)
+    d4 | b4.( g8) b( g) | g2 4 | g2 e8( g) | g2 g4 | g2 g8( b) | d2 c4 | b2.~ | 2
+  }
 }
 bass = {
   \globalParts
-  \relative d { g,4 | g2 8( b) | d2 4 | e2 c4 | g2 4 | 2 8( b) | d2 d4 | d2.~ | 2 }
-  \relative d { d4 | g2 g4 | b,2 4 | c4.( b8) c4 | g2 b4 | e2 d4 | d2 4 | g2.~ | 2 }
+  \relative d {
+    g,4 | g2 8( b) | d2 4 | e2 c4 | g2 4 | 2 8( b) | d2 d4 | d2.~ | 2
+    d4 | g2 g4 | b,2 4 | c4.( b8) c4 | g2 b4 | e2 d4 | d2 4 | g2.~ | 2
+  }
 }
 songChords = \chords {
   \globalChordSymbols
