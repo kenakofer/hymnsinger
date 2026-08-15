@@ -9,7 +9,7 @@ quarternoteTempo = 120
 soprano = {
   \globalParts
   \relative g' { ef4 4 f | g2 ef4 | f2 d4 | ef2. | } \break
-  \relative g' { bf2 4 | c2 g8( af) | bf2 4 | \partial 2 g2 \bar " " } \break
+  \relative g' { bf2 4 | c2 g8( af) | bf2 4 | \partial 2 g2 } \break
   \relative g' { \partial 4 g4 | g2 f4 | af2 g4 | f4( ef) f | g2. | } \break
   \relative g' { bf2 af4 | g2 ef4 | f2 d4 | ef2. | }\break
   \bar "|."

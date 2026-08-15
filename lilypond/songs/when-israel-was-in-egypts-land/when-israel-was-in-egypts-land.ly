@@ -23,7 +23,7 @@ dateAdded = "2021-02-07"
 %% NOTES
 soprano = {
   \globalParts
-  \relative g' { \partial 4 d4^\markup { \italic Unison } | bf'4 4 a a | bf4 4 g2 | d4^\markup { \italic Harmony } d fs8 4. | g2. \bar " " } \break
+  \relative g' { \partial 4 d4^\markup { \italic Unison } | bf'4 4 a a | bf4 4 g2 | d4^\markup { \italic Harmony } d fs8 4. | g2. } \break
   \relative g' { d4^\markup { \italic Unison } | bf'4 4 a a | bf4 4 g2 | d4^\markup { \italic Harmony } d fs8 4. | g1 \bar "||" } \break
   \relative g' { g4 2. | c4 2. | d2 4. c8 | d4 d c8( bf4.) | } \break
   \relative g' { bf8( g8) 2( bf4) | g8( f) d2. | d4 d fs8 4. | \partial 2. g2. | } \break

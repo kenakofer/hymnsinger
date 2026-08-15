@@ -22,32 +22,32 @@ dateAdded = "2021-01-12"
 %% NOTES
 soprano = {
   \globalParts
-  \relative g' { \partial 4 a4 | a a gs a | c bf d, g | f e8( f) g4 c, | \partial 2. a'2. \bar " " | } \break
-  \relative g' { \partial 4 a4 | a a d c | c bf d, g | f e8( f) a4 g | \partial 2. f2. \bar " " |} \break
-  \relative g' { \partial 4 a4 | a a g f | e2 4 e | d e f g | \partial 2. a2. \bar " " | } \break
-  \relative g' { \partial 4 a4 | a a gs a | c bf d, d' | c f, a4. g8 | \partial 2. f2. | }\break
+  \relative g' { \partial 4 a4 | a a gs a | c bf d, g | f e8( f) g4 c, | a'2. } \break
+  \relative g' { a4 | a a d c | c bf d, g | f e8( f) a4 g | f2. } \break
+  \relative g' { a4 | a a g f | e2 4 e | d e f g | a2. } \break
+  \relative g' { a4 | a a gs a | c bf d, d' | c f, a4. g8 | f2. } \break
   \bar "|."
 }
 alto = {
   \globalParts
-  \relative e' { c4 | c c b c | ef d bf d | c c c c | c2. | }
-  \relative e' { c4 | c f fs fs | g d bf d | c c e e | f2. | }
-  \relative e' { f4 | f f e d | cs2 4 4 | d e f d | e2. | }
-  \relative e' { f4 | c c b c | d d bf d8 e | f4 b, c4. bf8 | a2. | }
+  \relative e' { c4 | c c b c | ef d bf d | c c c c | c2. }
+  \relative e' { c4 | c f fs fs | g d bf d | c c e e | f2. }
+  \relative e' { f4 | f f e d | cs2 4 4 | d e f d | e2. }
+  \relative e' { f4 | c c b c | d d bf d8 e | f4 b, c4. bf8 | a2. }
 }
 tenor = {
   \globalParts
-  \relative a { f4 | f f f f | fs g g bf | a g8 a bf4 bf | a2. | }
-  \relative a { f4 | f a a d | d d d bf | a gs8( a) c4 bf | a2. | }
-  \relative a { c4 | c a bf b | cs2 cs4 cs | d,4 e f d' | cs2. | }
-  \relative a { c4 | c a f f | fs g g bf | a g8 f f4. e8 | f2. | }
+  \relative a { f4 | f f f f | fs g g bf | a g8 a bf4 bf | a2. }
+  \relative a { f4 | f a a d | d d d bf | a gs8( a) c4 bf | a2. }
+  \relative a { c4 | c a bf b | cs2 cs4 cs | d,4 e f d' | cs2. }
+  \relative a { c4 | c a f f | fs g g bf | a g8 f f4. e8 | f2. }
 }
 bass = {
   \globalParts
-  \relative d { f4 | f f f f | bf,4 4 4 4 | c c c c | f,2. | }
-  \relative d { f4 | f ef d d | g g g, bf | c4. 8 4 4 | f2. | }
-  \relative d { f4 | f f g gs | a2 4 a, | d e f bf | a2. | }
-  \relative d { f4 | f f f f | bf,4 4 4 4 | c d c4. 8 | f,2. | }
+  \relative d { f4 | f f f f | bf,4 4 4 4 | c c c c | f,2. }
+  \relative d { f4 | f ef d d | g g g, bf | c4. 8 4 4 | f2. }
+  \relative d { f4 | f f g gs | a2 4 a, | d e f bf | a2. }
+  \relative d { f4 | f f f f | bf,4 4 4 4 | c d c4. 8 | f,2. }
 }
 
 

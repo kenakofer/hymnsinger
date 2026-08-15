@@ -25,7 +25,7 @@ soprano = {
   \override Staff.TimeSignature #'stencil = ##f
   \relative g' { c2 4 4 d c c2 a | bf a4 g2 f e4 f2 | } \break
   \relative g' { c2 4 4 d c c2 a | bf a4 g2 f e4 f2 | } \break
-  \relative g' { r4 a4 g e \partial 1 f4 d c2 | \partial 1 r4 c'4 c c \bar " " | } \break
+  \relative g' { r4 a4 g e \partial 1 f4 d c2 | \partial 1 r4 c'4 c c | } \break
   \relative g' { d'4 c \partial 1 c2 a | bf a4 g2 f e4 \partial 1 f1 | }\break
   \bar "|."
 }

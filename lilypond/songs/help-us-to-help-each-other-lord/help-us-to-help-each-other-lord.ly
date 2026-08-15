@@ -22,24 +22,32 @@ dateAdded = "2021-01-09"
 %% NOTES
 soprano = {
   \globalParts
-  \relative g' { \partial 4 af4 | c2 bf4 af2 f4 | ef2  f4 af2 bf4 | c2 bf4 c( ef) c | bf2.~ \partial 2 bf2 \bar " " |} \break
-  \relative g' { \partial 4 bf4 | c2 bf4 af2 f4 | ef2 c4 ef2 bf'4 | c( ef) c bf4.( af8) bf4 | af2.~ \partial 2 2 |} \break
+  \relative g' {
+    \partial 4 af4 | c2 bf4 af2 f4 | ef2  f4 af2 bf4 | c2 bf4 c( ef) c | bf2.~ bf2 \break
+    bf4 | c2 bf4 af2 f4 | ef2 c4 ef2 bf'4 | c( ef) c bf4.( af8) bf4 | af2.~ 2
+  }
   \bar "|."
 }
 alto = {
   \globalParts
-  \relative e' { ef4 | 2 df4 c2 df4 | c2 df4 c2 ef4 | 2 4 2 4 | 2.~ 2 |}
-  \relative e' { ef4 | 2 df4 c2 df4 | c2 af4 bf2 ef4 | 2 4 df4.( c8) df4 | c2.~ 2 |}
+  \relative e' {
+    ef4 | 2 df4 c2 df4 | c2 df4 c2 ef4 | 2 4 2 4 | 2.~ 2
+    ef4 | 2 df4 c2 df4 | c2 af4 bf2 ef4 | 2 4 df4.( c8) df4 | c2.~ 2
+  }
 }
 tenor = {
   \globalParts
-  \relative a { c4 | af2 g4 af2 4 | 2 4 2 g4 | af2 g4 af( c) af | g2.~ 2 |}
-  \relative a { g4 af2 g4 af2 4 | 2 4 g2 4 | af( c) af g4.( af8) g4 | af2.~ 2 |}
+  \relative a {
+    c4 | af2 g4 af2 4 | 2 4 2 g4 | af2 g4 af( c) af | g2.~ 2
+    g4 af2 g4 af2 4 | 2 4 g2 4 | af( c) af g4.( af8) g4 | af2.~ 2
+  }
 }
 bass = {
   \globalParts
-  \relative d { af4 | 2 ef'4 f2 df4 | af2 4 2 ef'4 | af2 ef4 af2 af,8. c16 | ef2.~ 2 |}
-  \relative d { ef4 | af2 ef4 f2 df4 | af2 f'4 ef2 4 | af2 af,8. c16 ef2 4 | af2.~ 2 |}
+  \relative d {
+    af4 | 2 ef'4 f2 df4 | af2 4 2 ef'4 | af2 ef4 af2 af,8. c16 | ef2.~ 2
+    ef4 | af2 ef4 f2 df4 | af2 f'4 ef2 4 | af2 af,8. c16 ef2 4 | af2.~ 2
+  }
 }
 
 %% LYRICS

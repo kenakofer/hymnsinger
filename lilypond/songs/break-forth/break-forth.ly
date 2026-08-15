@@ -38,9 +38,9 @@ alto = {
 }
 tenor = {
   \globalParts
-  \relative a { a4 | a8 b~ b c a g g4 | g g g a8 g | f g a bf c4 c | c4. bf8 \m a2. a4_\fermata \bar " "| }
-  \relative a { a4 | a8 b~ b c a g g4 | g g g a8 g | f g a bf c4 c | c4. bf8 \m a2. a4_\fermata \bar " "| }
-  \relative a { c8 d | e d c4 d e | a, d8 c bf4 f8 g | a bf c d bf4 b | a a a \bar " " | }
+  \relative a { a4 | a8 b~ b c a g g4 | g g g a8 g | f g a bf c4 c | c4. bf8 \m a2. a4_\fermata | }
+  \relative a { a4 | a8 b~ b c a g g4 | g g g a8 g | f g a bf c4 c | c4. bf8 \m a2. a4_\fermata | }
+  \relative a { c8 d | e d c4 d e | a, d8 c bf4 f8 g | a bf c d bf4 b | a a a | }
   \relative a { c4 | c f f,8 g a4 | d8 c d b c4 c | c8 bf bf a a g f4 | f8( e16 d e4) \m a2. a4_\fermata |}
 }
 bass = {

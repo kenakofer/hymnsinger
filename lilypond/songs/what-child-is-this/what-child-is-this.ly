@@ -24,32 +24,32 @@ dateAdded = "2021-01-12"
 %% NOTES
 soprano = {
   \globalParts
-  \relative g' { \partial 8 e8 | g4 a8 b8.( c16) b8 | a4 fs8 d8.( e16) fs8 | g4 e8 e8.( ds16) e8 | fs4( ds8) \partial 4 b4 \bar " "} \break
-  \relative g' { \partial 8 e8 | g4 a8 b8.( c16) b8 | a4 fs8 d8.( e16) fs8 | g8.( fs16) e8 ds8.( cs16) ds8 | e4. e | } \break
+  \relative g' { \partial 8 e8 | g4 a8 b8.( c16) b8 | a4 fs8 d8.( e16) fs8 | g4 e8 e8.( ds16) e8 | fs4( ds8) b4 } \break
+  \relative g' { e8 | g4 a8 b8.( c16) b8 | a4 fs8 d8.( e16) fs8 | g8.( fs16) e8 ds8.( cs16) ds8 | e4. e | } \break
   \relative g' { d'4. 8.( cs16) b8 a4 fs8 d8.( e16) fs8 | g4 e8 8.( ds16) e8 | fs4 ds8 b4. | } \break
-  \relative g' { d'4. 8.( cs16) b8 a4 fs8 d8.( e16) fs8 | g8.( fs16) e8 ds8.( cs16) ds8 | e4. \partial 4 e4 |} \break
+  \relative g' { d'4. 8.( cs16) b8 a4 fs8 d8.( e16) fs8 | g8.( fs16) e8 ds8.( cs16) ds8 | e4. e4 } \break
   \bar "|."
 }
 alto = {
   \globalParts
-  \relative e' { e8 | e4 d8 d4 g8 | fs4 d8 d4 d8 | b4 8 a4 e'8 | ds4( b8) 4 |}
+  \relative e' { e8 | e4 d8 d4 g8 | fs4 d8 d4 d8 | b4 8 a4 e'8 | ds4( b8) 4 }
   \relative e' { e8 | e4 d8 d4 g8 | fs4 d8 d4 d8 | b4 c8 b4 8 | b4. b | }
   \relative e' { fs4. b8.( a16) g8 | fs4 d8 4 8 | b4 8 a4 e'8 | ds4 b8 b4. | }
-  \relative e' { fs4. b8.( a16) g8 | fs4 d8 4 8 | b4 c8 b4 8 | b4. b4 | }
+  \relative e' { fs4. b8.( a16) g8 | fs4 d8 4 8 | b4 c8 b4 8 | b4. b4 }
 }
 tenor = {
   \globalParts
-  \relative a { g8 | b4 a8 g4 b8 | d4 a8 fs4 a8 | g4 8 e4 8 | b4. b4 | }
+  \relative a { g8 | b4 a8 g4 b8 | d4 a8 fs4 a8 | g4 8 e4 8 | b4. b4 }
   \relative a { g8 | b4 a8 g4 b8 | d4 a8 fs4 a8 | g4 a8 fs4 b8 | a4. g4. | }
   \relative a { d4. 4 8 | d4 a8 fs4 a8 | g4 8 e4 8 | b'4 8 4. |}
-  \relative a { d4. 4 8 | d4 a8 fs4 a8 | g4 a8 fs4 b8 | a4. g4 |}
+  \relative a { d4. 4 8 | d4 a8 fs4 a8 | g4 a8 fs4 b8 | a4. g4 }
 }
 bass = {
   \globalParts
-  \relative d { e8 | e4 fs8 g4 8 | d4 8 4 8 | e4 8 c4 8 | b4. 4 | }
+  \relative d { e8 | e4 fs8 g4 8 | d4 8 4 8 | e4 8 c4 8 | b4. 4 }
   \relative d { e8 | e4 fs8 g4 8 | d4 8 4 8 | e4 a,8 b4 8 | e4. e | }
   \relative d { b'4. g4 8 | d4 8 d4 8 | e4 8 c4 8 | b4 8 4. |}
-  \relative d { b'4. g4 8 | d4 8 d4 8 | e4 a,8 b4 8 | e4. 4 |}
+  \relative d { b'4. g4 8 | d4 8 d4 8 | e4 a,8 b4 8 | e4. 4 }
 }
 
 
