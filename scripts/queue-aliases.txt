@@ -9,11 +9,18 @@
 #
 # Format:  <source dash-name>  <existing song directory>
 # Lines starting with # are ignored.
+#
+# Two sources may map to one directory. H169 and H563 are both DUNDEE CM
+# on Psalm 121, note-for-note identical in the XML, and differ only in
+# which psalter's wording the hymnal prints ("my eyes"/"my aid" vs "mine
+# eyes"/"mine aid"). One song directory covers both.
 
 angels-we-have-heard-on-high         angels-we-have-heard
 blessd-be-the-tie-that-binds         blest-be-the-tie-that-binds
 breathe-on-me-breath-of-god          breath-on-me-breath-of-god
 i-sing-the-mighty-power-of-god       i-sing-the-mighty-power
+i-to-the-hills-will-lift-mine-eyes   i-to-the-hills
+i-to-the-hills-will-lift-my-eyes     i-to-the-hills
 in-the-rifted-rock-im-resting        in-the-rifted-rock
 let-there-be-light-lord-god          let-there-be-light
 r337-what-a-friend-we-have-in-jesus  what-a-friend-we-have-in-jesus
