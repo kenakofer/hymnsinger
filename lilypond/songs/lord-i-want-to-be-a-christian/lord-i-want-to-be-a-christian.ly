@@ -28,9 +28,9 @@ quarternoteTempo = 90
 
 soprano = { \globalParts
   \partial 2 ef'4 ef'4 | g'4. g'8 bf'4 g'4 | f'4 ef'4 ef'4 ef'4 | g'2 bf'4 c''4 | bf'4( g'4) 
-    \bb \partial 2 ef'4 ef'4 | g'4. g'8 bf'4 g'4 | f'4 ef'4 c'4 ef'4 | ef'1~ | ef'2
-    \bb \partial 2 ef''4 ef''4 | c''1( | ef''2) ef''4 c''4 | bf'1( | c''2) 
-    \bb \partial 2 ef'4 ef'4 | g'4. g'8 bf'4 g'4 | f'4 ef'4 c'4 ef'4 | ef'1~ | ef'2
+    \break \partial 2 ef'4 ef'4 | g'4. g'8 bf'4 g'4 | f'4 ef'4 c'4 ef'4 | ef'1~ | ef'2
+    \break \partial 2 ef''4 ef''4 | c''1( | ef''2) ef''4 c''4 | bf'1( | c''2) 
+    \break \partial 2 ef'4 ef'4 | g'4. g'8 bf'4 g'4 | f'4 ef'4 c'4 ef'4 | ef'1~ | ef'2
 \bar "|."
 }
 alto = { \globalParts

@@ -41,7 +41,7 @@ quarternoteTempo = 145
 %% next stanza"; this repo expands stanzas as verseA-D, so it is not a volta
 %% and is deliberately not reproduced.
 soprano = { \globalParts
-  \partial 4 ef'4 | af'4. af'8 af'4 | af'4 g'4 af'4 | bf'4. af'8 g'4 | af'2 af'4 | c''4. af'8 af'4 | af'4( g'4) af'4 | bf'2.~ | bf'2 \bb ef'4 | c''4. c''8 c''4 | af'4. af'8 af'4 | bf'4. af'8 bf'4 | c''2 df''4 | c''4. bf'8 af'4 | bf'4( af'4) g'4 | af'2.~ | af'2 \bar "||" \break ef'4 | af'2 af'4 | af'4 g'4 af'4 | bf'2.~ | bf'2 bf'4 | bf'2 bf'4 | bf'4 af'4 bf'4 | c''2.~ | c''2 \bb af'4 | c''4. c''8 c''4 | df''2 c''4 | bf'4. af'8 bf'4 | c''2 df''4 | c''2 af'4 | bf'4. af'8 g'4 | af'2.~ | af'2
+  \partial 4 ef'4 | af'4. af'8 af'4 | af'4 g'4 af'4 | bf'4. af'8 g'4 | af'2 af'4 | c''4. af'8 af'4 | af'4( g'4) af'4 | bf'2.~ | bf'2 \break ef'4 | c''4. c''8 c''4 | af'4. af'8 af'4 | bf'4. af'8 bf'4 | c''2 df''4 | c''4. bf'8 af'4 | bf'4( af'4) g'4 | af'2.~ | af'2 \bar "||" \break ef'4 | af'2 af'4 | af'4 g'4 af'4 | bf'2.~ | bf'2 bf'4 | bf'2 bf'4 | bf'4 af'4 bf'4 | c''2.~ | c''2 \break af'4 | c''4. c''8 c''4 | df''2 c''4 | bf'4. af'8 bf'4 | c''2 df''4 | c''2 af'4 | bf'4. af'8 g'4 | af'2.~ | af'2
 \bar "|."
 }
 alto = { \globalParts
