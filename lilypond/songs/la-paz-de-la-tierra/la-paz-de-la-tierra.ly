@@ -12,10 +12,10 @@ quarternoteTempo = 110
 
 %% SONG INFO
 title = \titleText "La paz de la tierra (The peace of the earth)"
-poet = \smallText "Text: Spanish; Guatemalan traditional; trans. Kenan Schaefkofer, 2021"
+poet = \smallText "Text: Spanish; Guatemalan traditional"
 typesetter = "Kenan Schaefkofer"
 verseCount = 1
-tags = "spanish english secular 4part"
+tags = "spanish secular 4part"
 dateAdded = "2021-03-09"
 \include "../../lib/header.ily"
 
@@ -77,24 +77,15 @@ verseA = \lyricmode {
   \l Paz pro -- fun -- da ca -- yen -- do so -- bre ti.
   \l Paz pro -- fun -- da cre -- cien -- do en ti.
 }
-verseB = \lyricmode {
-  \override Lyrics.LyricText.font-shape = #'italic
-  The peace of the earth _ be with you, the peace of the heav -- ens too;
-  The peace of the riv -- ers be with you, the peace of the o -- ceans too.
-  Deep peace fall -- ing o -- ver you.
-  Deep peace grow -- ing in you.
-}
 
 all_verses = <<
-  \new NullVoice = "soprano" \soprano
   \new NullVoice = "soprano_spanish" \soprano_spanish
   \tag #'verseA { \new Lyrics \lyricsto soprano_spanish  { \globalLyrics "" "" \verseA } }
-  \tag #'verseB { \new Lyrics \with \dropLyricsSmall \lyricsto soprano  { \globalLyrics "" "" \verseB } }
 >>
 
 %% All sheet music outputs
 \include "../../lib/all-notation-outputs.ily"
 % Slides output
-\include "../../lib/slides-book-2verse.ily"
+\include "../../lib/slides-book-1verse.ily"
 %% MIDI output
 \include "../../lib/midi-output.ily"
